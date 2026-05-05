@@ -317,6 +317,24 @@ COMING_SOON_TEMPLATE = """<!DOCTYPE html>
 
 # ─── Community Page Generation ────────────────────────────────────────────────
 
+def _build_maps_url(community: dict) -> str:
+    """Build a Google Maps search URL for the community."""
+    name = community.get("name", "").strip()
+    country = community.get("country", "").strip()
+    # Normalise Israel
+    if country in ("Israel/Palestine", "Palestine"):
+        country = "Israel"
+
+    # Use coordinates if available, otherwise name+country
+    coords = community.get("coordinates")
+    if coords and len(coords) == 2:
+        lat, lng = coords
+        return f"https://www.google.com/maps/search/?api=1&query={lat},{lng}"
+
+    query = f"{name} {country}".replace(" ", "+")
+    return f"https://www.google.com/maps/search/?api=1&query={query}"
+
+
 def generate_community_page(community: dict, regions: list, template_html: str,
                              all_communities: list) -> str:
     """Generate a complete community HTML page from data and optional markdown content."""
@@ -346,11 +364,17 @@ def generate_community_page(community: dict, regions: list, template_html: str,
     # Calculate calendar date for this day
     year = datetime.now().year
     try:
-        cal_date = datetime(year, 1, 1)
         from datetime import timedelta
-        cal_date = (datetime(year, 1, 1) + timedelta(days=day - 1)).strftime("%B %-d")
+        cal_dt = datetime(year, 1, 1) + timedelta(days=day - 1)
+        cal_date = cal_dt.strftime("%B %-d")          # "May 5"
+        cal_month = cal_dt.strftime("%B")             # "May"
+        cal_day = cal_dt.strftime("%-d")              # "5"
+        cal_date_full = cal_dt.strftime("%B %-d, %Y") # "May 5, 2026"
     except Exception:
         cal_date = f"Day {day}"
+        cal_month = ""
+        cal_day = str(day)
+        cal_date_full = f"Day {day}, {year}"
 
     # Coming soon page if no content file
     if not content_file.exists():
@@ -407,20 +431,32 @@ def generate_community_page(community: dict, regions: list, template_html: str,
                     fig_list.append({"name": fig, "dates": "", "description": ""})
         figures_html = build_figures_html(fig_list, region_color)
 
+    # Normalise country: never show "Israel/Palestine" or "Palestine" — always "Israel"
+    def normalise_country(raw: str) -> str:
+        raw = raw.strip()
+        if raw in ("Israel/Palestine", "Palestine"):
+            return "Israel"
+        return raw
+
     # Build replacements dict
     replacements = {
         "COMMUNITY_NAME": community.get("name", "Heritage Community"),
         "REGION_NAME": region.get("name", ""),
         "REGION_ID": region.get("id", ""),
         "REGION_COLOR": region_color,
-        "COUNTRY": community.get("country", ""),
-        "DAY_OF_YEAR": day,
+        "COUNTRY": normalise_country(community.get("country", "")),
         "CALENDAR_DATE": cal_date,
+        "CALENDAR_DATE_FULL": cal_date_full,
+        "CALENDAR_MONTH": cal_month,
+        "CALENDAR_DAY": cal_day,
+        "CALENDAR_YEAR": str(year),
+        "DAY_OF_YEAR": day,  # kept for backward-compat but not shown in template
         "FOUNDED": meta.get("founded", community.get("founded", "Ancient")),
         "PEAK_POPULATION": meta.get("peak_population", community.get("peakPopulation", "Unknown")),
         "LANGUAGES": meta.get("languages", community.get("languages", "Hebrew, Aramaic, local vernacular")),
         "STATUS": meta.get("status", community.get("status", "Historical")),
         "YEAR": year,
+        "GOOGLE_MAPS_URL": _build_maps_url(community),
         "PREV_COMMUNITY_ID": prev_community.get("id", ""),
         "PREV_COMMUNITY_NAME": prev_community.get("name", "Previous"),
         "NEXT_COMMUNITY_ID": next_community.get("id", ""),

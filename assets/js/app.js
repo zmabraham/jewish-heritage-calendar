@@ -1,7 +1,7 @@
 // Jewish Heritage Calendar — app.js
 // Dynamically populates the homepage with today's community and region
 
-// Short preview descriptions for 365 communities
+// Short preview descriptions for featured communities.
 // Major communities get custom text; all others get a generic description.
 const COMMUNITY_PREVIEWS = {
   "jerusalem": "The eternal city, center of Jewish longing for three millennia — site of the Temple Mount, the Kotel, and the ancient City of David.",
@@ -75,14 +75,14 @@ const COMMUNITY_PREVIEWS = {
 };
 
 // Default description for communities without a specific preview
-const DEFAULT_PREVIEW = "One of 365 historic Jewish communities featured in the Heritage Calendar — each telling a unique story of faith, culture, survival, and memory.";
+const DEFAULT_PREVIEW = "A historic Jewish community featured in the Jewish Heritage Calendar — a unique story of faith, culture, survival, and memory.";
 
 // Get a preview description for a community
 function getCommunityPreview(communityId) {
   return COMMUNITY_PREVIEWS[communityId] || DEFAULT_PREVIEW;
 }
 
-// Calculate day of year (1-365)
+// Calculate day of year
 function getDayOfYear(date) {
   const start = new Date(date.getFullYear(), 0, 0);
   const diff = date - start;
@@ -101,7 +101,6 @@ function getMonthFromDay(day) {
 function getCountryEmoji(country) {
   const flags = {
     "Israel": "🇮🇱",
-    "Palestinian Territories": "🇵🇸",
     "Iraq": "🇮🇶",
     "Syria": "🇸🇾",
     "Turkey": "🇹🇷",
@@ -198,12 +197,13 @@ function populateHero(community, regions) {
   const regionName = region ? region.name : (community.region || 'Heritage Region');
   const countryName = community.country || (region && region.modernCountries ? region.modernCountries[0] : '');
 
+  const dateLabel = today.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
   container.innerHTML = `
-    <span class="hero-badge">Heritage Day ${dayOfYear} of 365</span>
-    <h1>Today: ${community.name} Heritage Day</h1>
+    <span class="hero-badge">${dateLabel}</span>
+    <h1>Today: ${community.name} Jewish Heritage Day</h1>
     <p class="hero-subheading">${regionName} · ${countryFlag} ${countryName}</p>
     <p class="hero-preview">${preview.slice(0, 200)}${preview.length > 200 ? '…' : ''}</p>
-    <a href="community/${community.id}.html" class="hero-button">Read Full Heritage Story →</a>
+    <a href="community/${community.id}.html" class="hero-button">Learn about ${community.name} →</a>
   `;
   container.style.display = 'block';
 }
@@ -259,11 +259,10 @@ function populateUpcoming(communities, today) {
     return;
   }
 
-  container.innerHTML = upcoming.map(({ community, date, day }) => {
+  container.innerHTML = upcoming.map(({ community, date }) => {
     const flag = getCountryEmoji(community.country || '');
     return `
       <div class="upcoming-card" onclick="location.href='community/${community.id}.html'">
-        <div class="upcoming-day">${day}</div>
         <div class="upcoming-date">${formatShortDate(date)}</div>
         <div class="upcoming-community">${community.name}</div>
         <div class="upcoming-country">${flag} ${community.country || ''}</div>
@@ -355,11 +354,12 @@ document.addEventListener('DOMContentLoaded', async () => {
     } else {
       // Fallback: show region info in hero
       if (heroContent) {
+        const fallbackDate = today.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
         heroContent.innerHTML = `
-          <span class="hero-badge">Heritage Day ${dayOfYear} of 365</span>
+          <span class="hero-badge">${fallbackDate}</span>
           <h1>${currentRegion ? currentRegion.name : 'Jewish Heritage Calendar'}</h1>
-          <p class="hero-subheading">${currentRegion ? currentRegion.tagline : '365 communities, one per day'}</p>
-          <p class="hero-preview">Explore Jewish heritage communities from across the world, one per day throughout the year.</p>
+          <p class="hero-subheading">${currentRegion ? currentRegion.tagline : 'Celebrating Jewish communities across history'}</p>
+          <p class="hero-preview">Explore Jewish heritage communities from across the world, one Jewish Heritage Day at a time.</p>
           <a href="regions.html" class="hero-button">Explore All Regions →</a>
         `;
         heroContent.style.display = 'block';
@@ -381,7 +381,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Update footer year
     const footerYear = document.querySelector('footer p');
     if (footerYear) {
-      footerYear.textContent = `Celebrating 365 Jewish Communities Worldwide · ${today.getFullYear()}`;
+      footerYear.textContent = `Jewish Heritage Calendar · ${today.getFullYear()}`;
     }
 
   } catch (err) {

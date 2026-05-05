@@ -79,6 +79,15 @@
     margin: 0 auto;
   }
 
+  .heritage-date-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    color: #c9a227;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.75rem;
+    font-style: italic;
+  }
+
   .community-hero h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
@@ -284,25 +293,42 @@
 
   .heritage-day-badge {
     text-align: center;
-    padding: 1.5rem;
+    padding: 1.75rem 1.5rem;
     background: linear-gradient(135deg, {{REGION_COLOR}} 0%, #0d2137 100%);
     border-radius: 8px;
     color: white;
   }
 
+  .heritage-day-month {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #e8d5a3;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.1rem;
+  }
+
   .heritage-day-number {
     font-family: 'Playfair Display', serif;
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: #c9a227;
     line-height: 1;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .heritage-day-year {
+    font-size: 1rem;
+    color: #b8a88a;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
   }
 
   .heritage-day-label {
-    font-size: 0.85rem;
-    color: #b8a88a;
+    font-size: 0.8rem;
+    color: #e8d5a3;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.12em;
+    line-height: 1.4;
   }
 
   .share-buttons {
@@ -390,11 +416,11 @@
   <!-- Community Hero -->
   <div class="community-hero">
     <div class="community-hero-inner">
+      <div class="heritage-date-headline">{{CALENDAR_DATE_FULL}} — {{COMMUNITY_NAME}} Jewish Heritage Day</div>
       <h1>{{COMMUNITY_NAME}}</h1>
       <div class="community-meta">
         <span>{{REGION_NAME}}</span>
         <span>{{COUNTRY}}</span>
-        <span>Heritage Day {{DAY_OF_YEAR}} of 365</span>
       </div>
       <div class="stats-row">
         <span class="stat-badge">Founded: {{FOUNDED}}</span>
@@ -453,11 +479,11 @@
       <!-- Day Navigation -->
       <div class="day-nav">
         <a href="{{PREV_COMMUNITY_ID}}.html">
-          <span class="day-nav-label">← Yesterday's Heritage Day</span>
+          <span class="day-nav-label">← Previous Jewish Heritage Day</span>
           <span class="day-nav-name">{{PREV_COMMUNITY_NAME}}</span>
         </a>
         <a href="{{NEXT_COMMUNITY_ID}}.html" style="text-align:right;">
-          <span class="day-nav-label">Tomorrow's Heritage Day →</span>
+          <span class="day-nav-label">Next Jewish Heritage Day →</span>
           <span class="day-nav-name">{{NEXT_COMMUNITY_NAME}}</span>
         </a>
       </div>
@@ -465,11 +491,12 @@
 
     <!-- Sidebar -->
     <aside class="sidebar">
-      <!-- Heritage Day Badge -->
+      <!-- Jewish Heritage Day Badge -->
       <div class="heritage-day-badge">
-        <div class="heritage-day-number">{{DAY_OF_YEAR}}</div>
-        <div class="heritage-day-label">Heritage Day of 365</div>
-        <div style="margin-top:0.75rem; font-size:0.9rem; color:#e8d5a3;">{{CALENDAR_DATE}}</div>
+        <div class="heritage-day-month">{{CALENDAR_MONTH}}</div>
+        <div class="heritage-day-number">{{CALENDAR_DAY}}</div>
+        <div class="heritage-day-year">{{CALENDAR_YEAR}}</div>
+        <div class="heritage-day-label">{{COMMUNITY_NAME}}<br>Jewish Heritage Day</div>
       </div>
 
       <!-- Key Facts -->
@@ -499,15 +526,19 @@
           <span class="fact-label">Country Today</span>
           <span class="fact-value">{{COUNTRY}}</span>
         </div>
+        <div class="fact-row">
+          <span class="fact-label">Location</span>
+          <span class="fact-value"><a href="{{GOOGLE_MAPS_URL}}" target="_blank" rel="noopener">📍 View Map</a></span>
+        </div>
       </div>
 
       <!-- Share -->
       <div class="sidebar-card">
-        <h3>Share This Heritage Day</h3>
+        <h3>Share This Jewish Heritage Day</h3>
         <div class="share-buttons">
           <button class="share-btn share-btn-copy" onclick="copyLink()">Copy Link</button>
           <button class="share-btn share-btn-twitter"
-            onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Today is {{COMMUNITY_NAME}} Heritage Day! ' + window.location.href))">
+            onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('{{CALENDAR_DATE_FULL}} — Today is {{COMMUNITY_NAME}} Jewish Heritage Day! ' + window.location.href))">
             Share on X (Twitter)
           </button>
         </div>
@@ -516,7 +547,7 @@
   </div>
 
   <footer>
-    <p>Celebrating 365 Jewish Communities Worldwide · {{YEAR}}</p>
+    <p>Jewish Heritage Calendar · {{YEAR}}</p>
   </footer>
 
   <script>

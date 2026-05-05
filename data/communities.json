@@ -4,7 +4,7 @@
     "rank": 1,
     "name": "Jerusalem",
     "region": "holy-land",
-    "country": "Israel/Palestine",
+    "country": "Israel",
     "coordinates": [
       31.78,
       35.22
@@ -211,7 +211,7 @@
     "rank": 5,
     "name": "Hebron",
     "region": "holy-land",
-    "country": "Israel/Palestine",
+    "country": "Israel",
     "coordinates": [
       31.53,
       35.1
@@ -485,7 +485,7 @@
     "rank": 79,
     "name": "Gaza",
     "region": "holy-land",
-    "country": "Israel/Palestine",
+    "country": "Israel",
     "coordinates": [
       31.51,
       34.46
@@ -708,7 +708,7 @@
     "rank": 85,
     "name": "Bethlehem",
     "region": "holy-land",
-    "country": "Israel/Palestine",
+    "country": "Israel",
     "coordinates": [
       31.7,
       35.21
@@ -949,7 +949,7 @@
     "rank": 242,
     "name": "Beit Jibrin",
     "region": "holy-land",
-    "country": "Israel/Palestine",
+    "country": "Israel",
     "coordinates": [
       31.61,
       34.9
@@ -1012,7 +1012,7 @@
     "rank": 231,
     "name": "Herodium",
     "region": "holy-land",
-    "country": "Israel/Palestine",
+    "country": "Israel",
     "coordinates": [
       31.66,
       35.24
@@ -1088,7 +1088,7 @@
     "rank": 233,
     "name": "Narbata",
     "region": "holy-land",
-    "country": "Israel/Palestine",
+    "country": "Israel",
     "coordinates": [
       32.23,
       35.12
@@ -1313,7 +1313,7 @@
     "rank": 241,
     "name": "Gibeon",
     "region": "holy-land",
-    "country": "Israel/Palestine",
+    "country": "Israel",
     "coordinates": [
       31.87,
       35.18
@@ -1389,7 +1389,7 @@
     "rank": 243,
     "name": "Shiloh",
     "region": "holy-land",
-    "country": "Israel/Palestine",
+    "country": "Israel",
     "coordinates": [
       32.05,
       35.29
@@ -1503,7 +1503,7 @@
     "rank": 246,
     "name": "Silwan",
     "region": "holy-land",
-    "country": "Israel/Palestine",
+    "country": "Israel",
     "coordinates": [
       31.77,
       35.23
@@ -1541,7 +1541,7 @@
     "rank": 247,
     "name": "Rafah",
     "region": "holy-land",
-    "country": "Israel/Palestine",
+    "country": "Israel",
     "coordinates": [
       31.3,
       34.25

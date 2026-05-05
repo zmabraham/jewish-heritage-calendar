@@ -79,6 +79,15 @@
     margin: 0 auto;
   }
 
+  .heritage-date-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    color: #c9a227;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.75rem;
+    font-style: italic;
+  }
+
   .community-hero h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
@@ -284,25 +293,42 @@
 
   .heritage-day-badge {
     text-align: center;
-    padding: 1.5rem;
+    padding: 1.75rem 1.5rem;
     background: linear-gradient(135deg, #1a5276 0%, #0d2137 100%);
     border-radius: 8px;
     color: white;
   }
 
+  .heritage-day-month {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #e8d5a3;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.1rem;
+  }
+
   .heritage-day-number {
     font-family: 'Playfair Display', serif;
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: #c9a227;
     line-height: 1;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .heritage-day-year {
+    font-size: 1rem;
+    color: #b8a88a;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
   }
 
   .heritage-day-label {
-    font-size: 0.85rem;
-    color: #b8a88a;
+    font-size: 0.8rem;
+    color: #e8d5a3;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.12em;
+    line-height: 1.4;
   }
 
   .share-buttons {
@@ -390,11 +416,11 @@
   <!-- Community Hero -->
   <div class="community-hero">
     <div class="community-hero-inner">
+      <div class="heritage-date-headline">January 1, 2026 — Vitebsk Jewish Heritage Day</div>
       <h1>Vitebsk</h1>
       <div class="community-meta">
         <span>Holy Land & Ancient Israel</span>
         <span>Belarus</span>
-        <span>Heritage Day 1 of 365</span>
       </div>
       <div class="stats-row">
         <span class="stat-badge">Founded: Ancient</span>
@@ -412,52 +438,31 @@
         <p>Vitebsk is a major city in northeastern Belarus on the Western Dvina River. For the Jewish world, it carries two overlapping identities: it is the birthplace of Marc Chagall, whose paintings transformed Eastern European Jewish folk imagery into some of the most recognized art of the twentieth century; and it is a site of one of the Holocaust's most complete destructions, where a Jewish community of nearly 37,000 was almost entirely murdered in 1941. The city also lay within the primary orbit of the Chabad Hasidic movement, whose founder operated throughout this region of Belarus.</p>
       </section>
 
-      <section id="historical-origins">
-        <h2>Historical Origins</h2>
-        
-      </section>
+      
 
       <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Vitebsk's golden age in Jewish life spanned the nineteenth century through the early twentieth. Jews dominated the commercial life of the city and were prominent in the professions. The Hasidic character of Vitebsk was shaped by the Chabad movement — Rabbi Shneur Zalman of Liadi (1745–1812), the founder of Chabad Hasidism, had his primary sphere of activity throughout Belorussia. His revolutionary synthesis of mystical Kabbalah with philosophical rationalism permeated Jewish communities throughout the region. Though he eventually settled in Liadi, his influence was pervasive throughout the Vitebsk area.</p>
       </section>
 
-      <section id="notable-figures">
-        <h2>Notable Figures</h2>
-        
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
-      </section>
+      
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
-        <h2>Cultural Life</h2>
-        
-      </section>
+      
 
-      <section id="decline">
-        <h2>Decline &amp; Transformation</h2>
-        
-      </section>
+      
 
-      <section id="legacy">
-        <h2>Legacy &amp; Diaspora</h2>
-        
-      </section>
+      
 
       <!-- Day Navigation -->
       <div class="day-nav">
         <a href="syracuse.html">
-          <span class="day-nav-label">← Yesterday's Heritage Day</span>
+          <span class="day-nav-label">← Previous Jewish Heritage Day</span>
           <span class="day-nav-name">Syracuse (Sicily)</span>
         </a>
         <a href="hong-kong.html" style="text-align:right;">
-          <span class="day-nav-label">Tomorrow's Heritage Day →</span>
+          <span class="day-nav-label">Next Jewish Heritage Day →</span>
           <span class="day-nav-name">Hong Kong</span>
         </a>
       </div>
@@ -465,11 +470,12 @@
 
     <!-- Sidebar -->
     <aside class="sidebar">
-      <!-- Heritage Day Badge -->
+      <!-- Jewish Heritage Day Badge -->
       <div class="heritage-day-badge">
+        <div class="heritage-day-month">January</div>
         <div class="heritage-day-number">1</div>
-        <div class="heritage-day-label">Heritage Day of 365</div>
-        <div style="margin-top:0.75rem; font-size:0.9rem; color:#e8d5a3;">January 1</div>
+        <div class="heritage-day-year">2026</div>
+        <div class="heritage-day-label">Vitebsk<br>Jewish Heritage Day</div>
       </div>
 
       <!-- Key Facts -->
@@ -478,10 +484,6 @@
         <div class="fact-row">
           <span class="fact-label">Founded</span>
           <span class="fact-value">Ancient</span>
-        </div>
-        <div class="fact-row">
-          <span class="fact-label">Peak Population</span>
-          <span class="fact-value">Unknown</span>
         </div>
         <div class="fact-row">
           <span class="fact-label">Languages</span>
@@ -499,15 +501,19 @@
           <span class="fact-label">Country Today</span>
           <span class="fact-value">Belarus</span>
         </div>
+        <div class="fact-row">
+          <span class="fact-label">Location</span>
+          <span class="fact-value"><a href="https://www.google.com/maps/search/?api=1&query=55.19,30.2" target="_blank" rel="noopener">📍 View Map</a></span>
+        </div>
       </div>
 
       <!-- Share -->
       <div class="sidebar-card">
-        <h3>Share This Heritage Day</h3>
+        <h3>Share This Jewish Heritage Day</h3>
         <div class="share-buttons">
           <button class="share-btn share-btn-copy" onclick="copyLink()">Copy Link</button>
           <button class="share-btn share-btn-twitter"
-            onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Today is Vitebsk Heritage Day! ' + window.location.href))">
+            onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('January 1, 2026 — Today is Vitebsk Jewish Heritage Day! ' + window.location.href))">
             Share on X (Twitter)
           </button>
         </div>
@@ -516,7 +522,7 @@
   </div>
 
   <footer>
-    <p>Celebrating 365 Jewish Communities Worldwide · 2026</p>
+    <p>Jewish Heritage Calendar · 2026</p>
   </footer>
 
   <script>

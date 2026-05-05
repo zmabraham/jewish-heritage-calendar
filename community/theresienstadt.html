@@ -7,35 +7,570 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-  body { font-family:'Source Serif 4',Georgia,serif; background:#fdf6e3; color:#2c1810; margin:0; }
-  nav { position:sticky;top:0;background:white;border-bottom:2px solid #e8d5a3;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,0.08); }
-  .nav-logo { font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:#1a3a5c;display:flex;align-items:center;gap:0.5rem; }
-  .nav-links { display:flex;gap:2rem; }
-  .nav-links a { color:#2c1810;font-weight:600;font-size:0.95rem;text-decoration:none; }
-  .container { max-width:700px;margin:5rem auto;padding:0 2rem;text-align:center; }
-  h1 { font-family:'Playfair Display',serif;font-size:2.5rem;color:#1a3a5c;margin-bottom:1rem; }
-  p { color:#6b5d4f;font-size:1.1rem;margin-bottom:1.5rem; }
-  .badge { display:inline-block;background:#1a5276;color:white;padding:0.5rem 1.5rem;border-radius:25px;font-weight:600;font-size:0.9rem;margin-bottom:2rem; }
-  .back-link { display:inline-block;background:#1a3a5c;color:#e8d5a3;padding:0.9rem 2rem;border-radius:5px;font-weight:600;text-decoration:none; }
-  footer { background:#1a3a5c;color:#e8d5a3;padding:2rem;text-align:center;margin-top:5rem; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: #fdf6e3;
+    color: #2c1810;
+    line-height: 1.8;
+  }
+
+  a { color: #1a3a5c; text-decoration: none; transition: color 0.3s; }
+  a:hover { color: #c9a227; }
+
+  nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 2px solid #e8d5a3;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a3a5c;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: #2c1810;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    max-width: 1200px;
+    margin: 1.5rem auto 0;
+    padding: 0 2rem;
+    font-size: 0.9rem;
+    color: #6b5d4f;
+  }
+
+  .breadcrumb a { color: #1a3a5c; }
+  .breadcrumb span { margin: 0 0.5rem; color: #b8a88a; }
+
+  /* Community Hero */
+  .community-hero {
+    background: linear-gradient(135deg, #1a5276 0%, #0d2137 100%);
+    color: white;
+    padding: 3rem 2rem;
+    margin-top: 1rem;
+  }
+
+  .community-hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .heritage-date-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    color: #c9a227;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.75rem;
+    font-style: italic;
+  }
+
+  .community-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #e8d5a3;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+  }
+
+  .community-meta {
+    color: #b8a88a;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .community-meta span {
+    margin-right: 1.5rem;
+  }
+
+  .stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .stat-badge {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #e8d5a3;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+  }
+
+  /* Main Layout */
+  .page-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  /* Article Content */
+  article {
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  article section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #e8d5a3;
+  }
+
+  article section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  article h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1a3a5c;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  article h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #2c1810;
+    margin: 1.5rem 0 0.75rem;
+  }
+
+  article p {
+    margin-bottom: 1rem;
+    color: #3a2e26;
+  }
+
+  article ul, article ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  article li {
+    margin-bottom: 0.5rem;
+    color: #3a2e26;
+  }
+
+  article strong {
+    color: #1a3a5c;
+  }
+
+  article em {
+    color: #6b5d4f;
+  }
+
+  /* Notable Figures Grid */
+  .figures-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .figure-card {
+    background: #fdf6e3;
+    border-radius: 8px;
+    padding: 1.25rem;
+    border-left: 3px solid #1a5276;
+  }
+
+  .figure-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #1a3a5c;
+    margin-bottom: 0.25rem;
+  }
+
+  .figure-dates {
+    font-size: 0.8rem;
+    color: #b8a88a;
+    margin-bottom: 0.5rem;
+  }
+
+  .figure-description {
+    font-size: 0.9rem;
+    color: #4a4035;
+  }
+
+  /* Day Navigation */
+  .day-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-top: 2px solid #e8d5a3;
+    margin-top: 2rem;
+  }
+
+  .day-nav a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .day-nav-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #b8a88a;
+  }
+
+  .day-nav-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #1a3a5c;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: sticky;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sidebar-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  .sidebar-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #1a3a5c;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  .fact-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #f5eed9;
+    font-size: 0.9rem;
+  }
+
+  .fact-row:last-child { border-bottom: none; }
+
+  .fact-label { color: #6b5d4f; }
+  .fact-value { color: #2c1810; font-weight: 600; text-align: right; max-width: 55%; }
+
+  .heritage-day-badge {
+    text-align: center;
+    padding: 1.75rem 1.5rem;
+    background: linear-gradient(135deg, #1a5276 0%, #0d2137 100%);
+    border-radius: 8px;
+    color: white;
+  }
+
+  .heritage-day-month {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #e8d5a3;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.1rem;
+  }
+
+  .heritage-day-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    color: #c9a227;
+    line-height: 1;
+    margin-bottom: 0.15rem;
+  }
+
+  .heritage-day-year {
+    font-size: 1rem;
+    color: #b8a88a;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+  }
+
+  .heritage-day-label {
+    font-size: 0.8rem;
+    color: #e8d5a3;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    line-height: 1.4;
+  }
+
+  .share-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .share-btn {
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    font-family: 'Source Serif 4', serif;
+  }
+
+  .share-btn-copy {
+    background: #fdf6e3;
+    border: 2px solid #e8d5a3;
+    color: #2c1810;
+  }
+
+  .share-btn-copy:hover {
+    background: #e8d5a3;
+  }
+
+  .share-btn-twitter {
+    background: #1da1f2;
+    color: white;
+  }
+
+  .share-btn-twitter:hover { background: #0d8fd0; }
+
+  footer {
+    background: #1a3a5c;
+    color: #e8d5a3;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 900px) {
+    .page-content {
+      grid-template-columns: 1fr;
+    }
+    .sidebar {
+      position: static;
+    }
+    .community-hero h1 {
+      font-size: 2rem;
+    }
+    .figures-grid {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
 </head>
 <body>
   <nav>
-    <div class="nav-logo"><span>✡</span><span>Jewish Heritage Calendar</span></div>
+    <div class="nav-logo">
+      <span>✡</span>
+      <span>Jewish Heritage Calendar</span>
+    </div>
     <div class="nav-links">
       <a href="../index.html">Today</a>
       <a href="../calendar.html">Calendar</a>
       <a href="../regions.html">Regions</a>
+      <a href="../index.html#about">About</a>
     </div>
   </nav>
-  <div class="container">
-    <div class="badge">Heritage Day 1 of 365</div>
-    <h1>Theresienstadt</h1>
-    <p><em>Czech Republic</em></p>
-    <p>The full heritage story for this community is being written. Check back soon — each of the 365 communities will receive a complete historical profile.</p>
-    <a href="../index.html" class="back-link">← Return to Today's Heritage Day</a>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a>
+    <span>›</span>
+    <a href="../region/holy-land.html">Holy Land & Ancient Israel</a>
+    <span>›</span>
+    <span>Theresienstadt</span>
+  </nav>
+
+  <!-- Community Hero -->
+  <div class="community-hero">
+    <div class="community-hero-inner">
+      <div class="heritage-date-headline">January 1, 2026 — Theresienstadt Jewish Heritage Day</div>
+      <h1>Theresienstadt</h1>
+      <div class="community-meta">
+        <span>Holy Land & Ancient Israel</span>
+        <span>Czech Republic</span>
+      </div>
+      <div class="stats-row">
+        <span class="stat-badge">Founded: 1780</span>
+        <span class="stat-badge">Peak Population: 58,491 (September 1942)</span>
+        <span class="stat-badge">Historical</span>
+      </div>
+    </div>
   </div>
-  <footer><p>Celebrating 365 Jewish Communities Worldwide</p></footer>
+
+  <!-- Main Content -->
+  <div class="page-content">
+    <article>
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>The name Theresienstadt (Czech: <em>Terezín</em>) occupies a unique and harrowing position in the annals of Jewish history. Situated approximately 60 kilometers north of Prague in the Bohemian hinterland, this fortress town bears the distinction of being simultaneously a site of profound cultural creativity and an instrument of calculated Nazi deception. From 1941 to 1945, the walled garrison town, originally built in the 18th century by Emperor Joseph II, was converted by the SS into a <em>Ghetto</em> and concentration camp. Known in Nazi bureaucracy as the "Theresienstadt Jewish Settlement," it served a dual purpose: a transit camp for Central and Western European Jews en route to the extermination camps in the East, and a cynical propaganda tool designed to fool international observers regarding the "Final Solution."</p>
+<p>Jewish settlement in Theresienstadt was not a continuous millennium-old saga like that of Prague or Baghdad, but rather a sudden, catastrophic, and intensely concentrated episode. The community was not formed by organic migration, but by the violent coercion of the <em>Einsatzstab</em> (deployment squad). Between November 1941 and May 1945, over 155,000 people were forcibly transported to Theresienstadt. They included the intellectual and spiritual elite of Vienna, Prague, and Berlin, as well as renowned artists, musicians, and scientists. Consequently, the "heritage" of Theresienstadt is defined less by the architecture of a historic quarter and more by the incredible resilience of the human spirit manifested in its concerts, lectures, clandestine artwork, and spiritual defiance against starvation and disease.</p>
+<p>Despite the brief duration of its Jewish population—less than four years—the depth of historical documentation and cultural output left behind is staggering. It stands as a testament to the "Spiritual Resistance" of the incarcerated. Today, Theresienstadt is a site of pilgrimage and remembrance, managed by the Terezín Memorial. It serves as a somber warning against genocide and antisemitism, preserving the memory of the 33,430 individuals who perished within the ghetto walls and the nearly 88,000 who were deported from the railway station at <em>Bohušovice</em> to their deaths at Auschwitz, Treblinka, and other extermination centers.</p>
+      </section>
+
+      <section id="historical-origins">
+        <h2>Historical Origins</h2>
+        <p>The origins of Jewish settlement in Theresienstadt are inseparable from the military history of the Habsburg Empire. The town itself was founded in 1780 by Emperor Joseph II, who named it "Theresienstadt" in honor of his mother, Empress Maria Theresa. The complex consisted of two fortresses: the <em>Main Fortress</em> (an actual town) and the <em>Minor Fortress</em> (a prison). While the town was populated largely by Czech and German-speaking artisans and soldiers, the Jewish connection to the site began not as a community of choice, but as a place of confinement under the Habsburgs. For nearly a century, the Minor Fortress served as a prison for political dissidents, and notably, Gavrilo Princip, the assassin of Archduke Franz Ferdinand, was held there.</p>
+<p>However, the distinct "Jewish chapter" of Theresienstadt began on November 24, 1941. Following the Nazi occupation of the Czech lands and the commencement of <em>Kristallnacht</em> pogroms in the Greater German Reich, the SS required a location to consolidate the Jewish populations of the Protectorate of Bohemia and Moravia. Theresienstadt was selected for its isolation, its solid brick fortifications (making escape difficult), and its pre-existing barracks capable of mass accommodation. The first transport, designated <em>Aufbaukommando</em> (construction detail), arrived in November 1941. Comprised of 342 young Jewish men from Prague, these men were tasked with converting the garrison into a ghetto. They were housed in the notorious <em>Dresden</em> barracks in the <em>Small Fortress</em> before being moved to the Main Fortress.</p>
+<p>It is crucial to recognize that the Nazi designation of Theresienstadt as a "Jewish Settlement" was a euphemism. It was a hybrid institution—part ghetto, part concentration camp, part transit center. The administrative language was German; the camp administration was run by the SS, specifically the <em>Zentralstelle für die Regelung der Judenfrage</em> (Central Office for the Regulation of the Jewish Question) in Prague, while the internal self-government of the ghetto was managed by a <em>Judenrat</em> (Jewish Council) known as the <em>Ältestenrat</em> (Council of Elders). This structure placed the Jewish leadership in the impossible position of maintaining order and organizing labor transports under the direct threat of Nazi retaliation.</p>
+      </section>
+
+      <section id="golden-age">
+        <h2>Golden Age</h2>
+        <p>To apply the term "Golden Age" to a concentration camp may seem jarring, yet historians and survivors frequently refer to the blossoming of culture and intellectual life within Theresienstadt as a paradoxical flourishing of the human spirit. This period roughly spans 1942 to mid-1944. During this time, despite the crushing overcrowding (where over 50,000 people were squeezed into space designed for 7,000 soldiers), rampant typhus epidemics, and starvation, the ghetto boasted a robust cultural underground that surpassed even the normal cultural life of many free cities. This was made possible because the Nazis initially tolerated cultural activities in Theresienstadt, partly to keep the prisoners docile and partly to build a facade for the outside world.</p>
+<p>The "Golden Age" was characterized by an extraordinary density of artistic talent. The Nazis had deported a vast number of Jewish intellectuals, musicians, composers, and painters from Vienna, Prague, Berlin, and the Netherlands to Theresienstadt. Among the incarcerated were world-renowned composers such as Viktor Ullmann, Gideon Klein, Pavel Haas, and Hans Krása. The ghetto featured daily concerts, ranging from chamber music to full orchestral performances. The most famous production was the children's opera <em>Brundibár</em>, composed by Hans Krása, which was performed 55 times, featuring a rotating cast of young singers who were eventually deported to Auschwitz.</p>
+<p>This cultural flourishing was an act of defiance. Lectures were held on every conceivable topic—from physics to philosophy—conducted in secret barracks. Rafael Schächter formed a choir of 150 singers and rehearsed Giuseppe Verdi’s <em>Requiem</em> in a damp cellar with a single broken piano, using the Latin mass to secretly condemn their Nazi captors. "We are singing to the Nazis what we cannot say to them," one singer remarked. While the prisoners could not physically overthrow their captors, they maintained a spiritual superiority through the preservation of high culture. This period reached its zenith—and its tragic end—with the Red Cross visit on June 23, 1944, after which the "beautification" actions ceased and the transports to the East accelerated.</p>
+      </section>
+
+      <section id="notable-figures">
+        <h2>Notable Figures</h2>
+        <p>This community produced figures of lasting significance to Jewish history.</p>
+        <div class="figures-grid" id="figures-grid">
+              <div class="figure-card" style="border-left-color: #1a5276">
+      <div class="figure-name">name: "Rabbi Erich Wiener"</div>
+      <div class="figure-dates"></div>
+      <div class="figure-description"></div>
+    </div>
+        </div>
+      </section>
+
+      
+
+      <section id="cultural-life">
+        <h2>Cultural Life</h2>
+        <p>The cultural tapestry of Theresienstadt was defined by polyglot diversity and extreme desperation. The "language" of the ghetto was a mix of German (the language of administration), Czech, and Dutch, alongside Yiddish and Hungarian from the Eastern transports. This cacophony reflected the diverse origins of the prisoners—Czech patriots, German intellectuals, Danish Protestants of Jewish descent, and Dutch diamond traders. The daily struggle was defined by the "Hunger Service"—the endless queues for watery soup and the meager bread rations. Cuisine was non-existent; sustenance was a matter of survival. Recipes were memorized and discussed in fantasies of freedom, but food was primarily remembered for its absence, particularly by the elderly who died in droves from malnutrition.</p>
+<p>Despite this, social life persisted. "House Communities" were organized within the barracks, attempting to create family units among strangers. They organized cleaning duties and cared for the sick. The "Youth Care" department, led by teachers like Freidl Dicker-Brandeis (a student of Bauhaus), smuggled children into secret attics to teach them art, literature, and history, shielding them from the brutalization of the camp. Dicker-Brandeis hid over 5,000 children's drawings before her deportation to Auschwitz; these artworks survive as the most touching legacy of the ghetto's cultural life.</p>
+<p>Musical life was not just passive listening but active participation. Singing occurred everywhere—on the way to labor, in the barracks, and in concerts. The cabaret, a form of satire often laced with dark humor, was popular. Songs like "Der Untermensch" (reframing the Nazi slur) and "Terezín March" were composed. The irony of "High Culture" meeting "Genocide" was nowhere more apparent than in the "Beautification" action in 1944, where the prisoners were forced to paint facades, plant gardens, and open a café (visible only to the Red Cross) to perpetuate the myth of a "Jewish spa town."</p>
+      </section>
+
+      <section id="decline">
+        <h2>Decline &amp; Transformation</h2>
+        <p>The decline of the Theresienstadt community was engineered not by migration, but by the machinery of death. Between 1942 and 1944, approximately 88,000 people were deported from Theresienstadt to the East—mostly to Auschwitz, but also to Treblinka, Sobibór, and Bergen-Belsen. The first mass transport left on January 9, 1942, destined for Riga. These "transports" were the primary method by which the Nazis liquidated the ghetto population. With each transport, the community lost its scholars, its workers, and its children. The "Golden Age" of culture effectively ended in the fall of 1944. Following the Red Cross visit in June, which the SS deemed a success, they accelerated the liquidation. Between September 28 and October 28, 1944, alone, nearly 11,000 people were deported.</p>
+<p>The final transformation of Theresienstadt occurred in the last months of the war. As the Allies closed in from both sides, the SS emptied the other camps in the east and began "Death Marches" toward central Bohemia. Theresienstadt became a destination for these horrific marches, swelling with starving prisoners from camps like Auschwitz, Buchenwald, and Gross-Rosen. The physical condition of the ghetto collapsed; typhus and dysentery epidemics raged out of control. The "beautification" facades crumbled, and the ghetto resembled hell on earth.</p>
+<p>The actual end of the community came with the liberation. On May 2, 1945, the SS fled, and on May 8, the Red Army and Czech partisans entered Theresienstadt. The sight was staggering: piles of corpses in the streets and emaciated survivors who could barely walk. The "community" effectively dissolved as survivors dispersed to return to their home countries (finding no homes left), emigrated to Palestine, or moved to the Americas. The town itself was handed back to the Czechoslovak authorities, marking the end of its Jewish chapter.</p>
+      </section>
+
+      <section id="legacy">
+        <h2>Legacy &amp; Diaspora</h2>
+        <p>The legacy of Theresienstadt is complex and multifaceted. There is no active Jewish community in Terezín today; the physical town is once again a sleepy Czech settlement (Bohušovice). However, the <em>heritage</em> of the Jewish ghetto is preserved globally through the diaspora of survivors and the cultural artifacts they created. The "Spiritual Resistance" of the ghetto became a central narrative in post-war Jewish historiography, emphasizing that even in the face of total extermination, the Jewish people maintained their intellectual and spiritual dignity.</p>
+<p>The survivors, dispersed across the world, founded organizations like the <em>Theresienstadt Martyrs Remembrance Association</em> in Tel Aviv and the <em>Theresienstadt Initiative</em> in Prague. These groups worked to preserve the memory of the specific conditions of Theresienstadt, distinct from the death camps. They published chronicles, such as the "Terezín Ghetto Diary" (chronologically documenting the daily terror), and promoted the works of the composers murdered there (Ullmann, Klein, Krása). The drawings of the children and the lectures of Leo Baeck became educational cornerstones of the Holocaust.</p>
+<p>In terms of remembrance, the town has been transformed into a museum complex. The <em>Terezín Memorial</em>, established in 1947, operates the Small Fortress, the Magdeburg Barracks, and the Columbarium. Every year on January 27 (Holocaust Memorial Day) and May 8 (Victory in Europe Day), ceremonies are held. The "Day of Theresienstadt" invites reflection on the deception of the international community and the resilience of the human spirit. The site remains a cautionary tale of how prejudice and propaganda can be weaponized, making it a vital location for educational visits by students and dignitaries from around the world.</p>
+      </section>
+
+      <!-- Day Navigation -->
+      <div class="day-nav">
+        <a href="teplitz.html">
+          <span class="day-nav-label">← Previous Jewish Heritage Day</span>
+          <span class="day-nav-name">Teplitz (Teplice)</span>
+        </a>
+        <a href="usha.html" style="text-align:right;">
+          <span class="day-nav-label">Next Jewish Heritage Day →</span>
+          <span class="day-nav-name">Usha</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Jewish Heritage Day Badge -->
+      <div class="heritage-day-badge">
+        <div class="heritage-day-month">January</div>
+        <div class="heritage-day-number">1</div>
+        <div class="heritage-day-year">2026</div>
+        <div class="heritage-day-label">Theresienstadt<br>Jewish Heritage Day</div>
+      </div>
+
+      <!-- Key Facts -->
+      <div class="sidebar-card">
+        <h3>Key Facts</h3>
+        <div class="fact-row">
+          <span class="fact-label">Founded</span>
+          <span class="fact-value">1780</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Peak Population</span>
+          <span class="fact-value">58,491 (September 1942)</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Languages</span>
+          <span class="fact-value">Czech, German, Yiddish, Dutch, Danish</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Community Status</span>
+          <span class="fact-value">Historical</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Region</span>
+          <span class="fact-value"><a href="../region/holy-land.html">Holy Land & Ancient Israel</a></span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Country Today</span>
+          <span class="fact-value">Czech Republic</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Location</span>
+          <span class="fact-value"><a href="https://www.google.com/maps/search/?api=1&query=50.51,14.17" target="_blank" rel="noopener">📍 View Map</a></span>
+        </div>
+      </div>
+
+      <!-- Share -->
+      <div class="sidebar-card">
+        <h3>Share This Jewish Heritage Day</h3>
+        <div class="share-buttons">
+          <button class="share-btn share-btn-copy" onclick="copyLink()">Copy Link</button>
+          <button class="share-btn share-btn-twitter"
+            onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('January 1, 2026 — Today is Theresienstadt Jewish Heritage Day! ' + window.location.href))">
+            Share on X (Twitter)
+          </button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <p>Jewish Heritage Calendar · 2026</p>
+  </footer>
+
+  <script>
+    function copyLink() {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        const btn = document.querySelector('.share-btn-copy');
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = 'Copy Link', 2000);
+      });
+    }
+  </script>
 </body>
 </html>

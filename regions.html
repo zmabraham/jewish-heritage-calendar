@@ -291,13 +291,13 @@
   </div>
 
   <footer>
-    <p id="footer-year">Celebrating 365 Jewish Communities Worldwide · 2026</p>
+    <p id="footer-year">Celebrating Jewish Communities Worldwide · 2026</p>
   </footer>
 
   <script>
     document.addEventListener('DOMContentLoaded', async () => {
       document.getElementById('footer-year').textContent =
-        `Celebrating 365 Jewish Communities Worldwide · ${new Date().getFullYear()}`;
+        `Celebrating Jewish Communities Worldwide · ${new Date().getFullYear()}`;
 
       try {
         const res = await fetch('/data/regions.json');

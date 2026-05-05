@@ -4,7 +4,7 @@
     "name": "Holy Land & Ancient Israel",
     "month": 1,
     "monthName": "January",
-    "modernCountries": ["Israel", "Palestinian Territories"],
+    "modernCountries": ["Israel"],
     "historicalPeriods": ["Biblical Era", "First Temple", "Second Temple", "Roman-Byzantine", "Crusader", "Ottoman", "British Mandate", "Modern Israel"],
     "communities": 31,
     "tagline": "Where Jewish history began — and endures",
