@@ -247,7 +247,7 @@ function populateUpcoming(communities, today) {
   for (let i = 1; i <= 7; i++) {
     const dayNum = todayDayOfYear + i;
     const adjustedDay = ((dayNum - 1) % 365) + 1;
-    const community = communities.find(c => c.dayOfYear === adjustedDay);
+    const community = communities.find(c => (c.day || c.dayOfYear) === adjustedDay);
     if (community) {
       const date = new Date(today.getFullYear(), 0, adjustedDay);
       upcoming.push({ community, date, day: adjustedDay });
@@ -321,8 +321,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   try {
     // Fetch both data files in parallel
     const [communitiesRes, regionsRes] = await Promise.all([
-      fetch('/data/communities.json'),
-      fetch('/data/regions.json')
+      fetch('data/communities.json'),
+      fetch('data/regions.json')
     ]);
 
     // Graceful fallback if communities.json doesn't exist yet
@@ -342,7 +342,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     // Determine today's community
-    const todayCommunity = communities.find(c => c.dayOfYear === dayOfYear);
+    const todayCommunity = communities.find(c => (c.day || c.dayOfYear) === dayOfYear);
     const currentMonth = today.getMonth() + 1;
     const currentRegion = getRegionForMonth(regions, currentMonth);
 
@@ -394,7 +394,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Still try to populate month browse from fallback
     try {
-      const regionsRes = await fetch('/data/regions.json');
+      const regionsRes = await fetch('data/regions.json');
       if (regionsRes.ok) {
         const regions = await regionsRes.json();
         populateMonthBrowse(regions);
