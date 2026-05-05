@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vienna — Jewish Heritage Calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: #fdf6e3;
+    color: #2c1810;
+    line-height: 1.8;
+  }
+
+  a { color: #1a3a5c; text-decoration: none; transition: color 0.3s; }
+  a:hover { color: #c9a227; }
+
+  nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 2px solid #e8d5a3;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a3a5c;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: #2c1810;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    max-width: 1200px;
+    margin: 1.5rem auto 0;
+    padding: 0 2rem;
+    font-size: 0.9rem;
+    color: #6b5d4f;
+  }
+
+  .breadcrumb a { color: #1a3a5c; }
+  .breadcrumb span { margin: 0 0.5rem; color: #b8a88a; }
+
+  /* Community Hero */
+  .community-hero {
+    background: linear-gradient(135deg, #1a5276 0%, #0d2137 100%);
+    color: white;
+    padding: 3rem 2rem;
+    margin-top: 1rem;
+  }
+
+  .community-hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .community-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #e8d5a3;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+  }
+
+  .community-meta {
+    color: #b8a88a;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .community-meta span {
+    margin-right: 1.5rem;
+  }
+
+  .stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .stat-badge {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #e8d5a3;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+  }
+
+  /* Main Layout */
+  .page-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  /* Article Content */
+  article {
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  article section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #e8d5a3;
+  }
+
+  article section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  article h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1a3a5c;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  article h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #2c1810;
+    margin: 1.5rem 0 0.75rem;
+  }
+
+  article p {
+    margin-bottom: 1rem;
+    color: #3a2e26;
+  }
+
+  article ul, article ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  article li {
+    margin-bottom: 0.5rem;
+    color: #3a2e26;
+  }
+
+  article strong {
+    color: #1a3a5c;
+  }
+
+  article em {
+    color: #6b5d4f;
+  }
+
+  /* Notable Figures Grid */
+  .figures-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .figure-card {
+    background: #fdf6e3;
+    border-radius: 8px;
+    padding: 1.25rem;
+    border-left: 3px solid #1a5276;
+  }
+
+  .figure-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #1a3a5c;
+    margin-bottom: 0.25rem;
+  }
+
+  .figure-dates {
+    font-size: 0.8rem;
+    color: #b8a88a;
+    margin-bottom: 0.5rem;
+  }
+
+  .figure-description {
+    font-size: 0.9rem;
+    color: #4a4035;
+  }
+
+  /* Day Navigation */
+  .day-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-top: 2px solid #e8d5a3;
+    margin-top: 2rem;
+  }
+
+  .day-nav a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .day-nav-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #b8a88a;
+  }
+
+  .day-nav-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #1a3a5c;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: sticky;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sidebar-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  .sidebar-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #1a3a5c;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  .fact-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #f5eed9;
+    font-size: 0.9rem;
+  }
+
+  .fact-row:last-child { border-bottom: none; }
+
+  .fact-label { color: #6b5d4f; }
+  .fact-value { color: #2c1810; font-weight: 600; text-align: right; max-width: 55%; }
+
+  .heritage-day-badge {
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #1a5276 0%, #0d2137 100%);
+    border-radius: 8px;
+    color: white;
+  }
+
+  .heritage-day-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #c9a227;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .heritage-day-label {
+    font-size: 0.85rem;
+    color: #b8a88a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .share-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .share-btn {
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    font-family: 'Source Serif 4', serif;
+  }
+
+  .share-btn-copy {
+    background: #fdf6e3;
+    border: 2px solid #e8d5a3;
+    color: #2c1810;
+  }
+
+  .share-btn-copy:hover {
+    background: #e8d5a3;
+  }
+
+  .share-btn-twitter {
+    background: #1da1f2;
+    color: white;
+  }
+
+  .share-btn-twitter:hover { background: #0d8fd0; }
+
+  footer {
+    background: #1a3a5c;
+    color: #e8d5a3;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 900px) {
+    .page-content {
+      grid-template-columns: 1fr;
+    }
+    .sidebar {
+      position: static;
+    }
+    .community-hero h1 {
+      font-size: 2rem;
+    }
+    .figures-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+  <nav>
+    <div class="nav-logo">
+      <span>✡</span>
+      <span>Jewish Heritage Calendar</span>
+    </div>
+    <div class="nav-links">
+      <a href="../index.html">Today</a>
+      <a href="../calendar.html">Calendar</a>
+      <a href="../regions.html">Regions</a>
+      <a href="../index.html#about">About</a>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a>
+    <span>›</span>
+    <a href="../region/holy-land.html">Holy Land & Ancient Israel</a>
+    <span>›</span>
+    <span>Vienna</span>
+  </nav>
+
+  <!-- Community Hero -->
+  <div class="community-hero">
+    <div class="community-hero-inner">
+      <h1>Vienna</h1>
+      <div class="community-meta">
+        <span>Holy Land & Ancient Israel</span>
+        <span>Austria</span>
+        <span>Heritage Day 1 of 365</span>
+      </div>
+      <div class="stats-row">
+        <span class="stat-badge">Founded: Ancient</span>
+        <span class="stat-badge">Peak Population: Unknown</span>
+        <span class="stat-badge">Historical</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="page-content">
+    <article>
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>Vienna stands as the imperial capital of one of the most complex Jewish stories in modern history. The Habsburg Empire's cosmopolitan, multinational character created a unique environment in which Jews from across Central Europe could aspire to the highest levels of cultural, intellectual, and professional achievement — and in which those achievements flourished with astonishing density. Sigmund Freud, Theodor Herzl, Gustav Mahler, Arthur Schnitzler, Karl Kraus, Ludwig Wittgenstein, Stefan Zweig — the list of Vienna's Jewish intellectuals reads like a catalog of the modern mind itself. And yet this same city was a seedbed of modern political antisemitism, the city where Hitler spent his formative years, and from which the Holocaust was directed.</p>
+      </section>
+
+      <section id="historical-origins">
+        <h2>Historical Origins</h2>
+        <p>Jews lived in Vienna from medieval times; a community is documented from the twelfth century. The medieval community occupied an area near today's Judenplatz (Jews' Square), where archaeological excavations have revealed the foundations of a medieval synagogue. In 1421, Duke Albert V ordered the Wiener Gesera — the Vienna persecution — in which Jews were either expelled, converted, or burned alive. The episode effectively ended medieval Jewish life in Vienna.</p>
+<p>Jews gradually returned in the seventeenth century, many arriving as court Jews under imperial patronage. Samuel Oppenheimer (1630–1703) and Samson Wertheimer (1658–1724) were among the most powerful financial agents of the Habsburg court, managing war finance and serving as intermediaries between the imperial government and Jewish communities across the empire. Their presence in Vienna enabled a community of sorts, though Jews remained subject to severe restrictions.</p>
+      </section>
+
+      <section id="golden-age">
+        <h2>Golden Age</h2>
+        <p>The emancipation era — Joseph II's Toleranzpatent (1782) began the process, completed by the Austrian constitution of 1867 — transformed Vienna's Jewish community. Jews gained full civil and political equality, and the community exploded in size. In 1857, approximately 6,000 Jews lived in Vienna; by 1910, the number had reached 175,000 — almost 9 percent of the city's population. The community drew Jews from across the empire: from Galicia, from Hungary, from Bohemia and Moravia, from all the lands of the Habsburg realm.</p>
+<p>Jewish participation in Vienna's cultural life was staggering in its breadth. The Burgtheater, the opera, the concert halls, the universities, the coffee houses — all were sites of intense Jewish cultural production and participation. The press was disproportionately Jewish; the medical and legal faculties had Jewish student majorities by the early twentieth century.</p>
+      </section>
+
+      <section id="notable-figures">
+        <h2>Notable Figures</h2>
+        
+        <div class="figures-grid" id="figures-grid">
+          
+        </div>
+      </section>
+
+      <section id="institutions">
+        <h2>Institutions &amp; Sacred Spaces</h2>
+        
+      </section>
+
+      <section id="cultural-life">
+        <h2>Cultural Life</h2>
+        <p>The Vienna coffee house was the social institution of Vienna's Jewish intelligentsia — a neutral space where writers, journalists, physicians, politicians, and philosophers gathered to argue, read, and write. The Café Griensteidl and Café Central were legendary gathering points. The Jewish intellectual style — skeptical, dialectical, psychologically acute, socially anxious — was inseparable from the Vienna coffee house culture.</p>
+<p>The fin-de-siècle Viennese Jewish intelligentsia processed the contradictions of emancipation and antisemitism through art, literature, and science. Freud's psychoanalysis, Herzl's Zionism, Schnitzler's realism, Kraus's satire — all are in different ways responses to the specific tensions of Jewish life in a city simultaneously brilliant and hostile.</p>
+      </section>
+
+      <section id="decline">
+        <h2>Decline &amp; Transformation</h2>
+        <p>The Anschluss of March 1938 brought the catastrophic collapse of Vienna's Jewish world with stunning speed. Within days of the German annexation, Austrian Nazis and their sympathizers were humiliating Vienna's Jews in the streets, forcing them to scrub pavements on their hands and knees. Adolf Eichmann established his Central Office for Jewish Emigration in Vienna, using the community's own desperate need to emigrate to extort their property and speed their departure.</p>
+<p>Of approximately 185,000 Jews in Vienna in 1938, some 130,000 managed to emigrate before the deportations began. The approximately 55,000 who could not leave were systematically deported to ghettos and death camps between 1941 and 1945; very few returned.</p>
+      </section>
+
+      <section id="legacy">
+        <h2>Legacy &amp; Diaspora</h2>
+        <p>Vienna's Jewish diaspora is embedded in the cultural life of the twentieth century. Tel Aviv, New York, London, Buenos Aires — the dispersal of Vienna's Jews seeded the intellectual and cultural life of every city that received them.</p>
+<p>Today, Vienna has a Jewish community of approximately 8,000–10,000, small compared to its pre-war peak but active and visible. The city has undertaken substantial efforts to acknowledge its role in the Holocaust, including major museums, memorials (including Rachel Whiteread's Judenplatz Memorial), and restitution programs.</p>
+      </section>
+
+      <!-- Day Navigation -->
+      <div class="day-nav">
+        <a href="paris.html">
+          <span class="day-nav-label">← Yesterday's Heritage Day</span>
+          <span class="day-nav-name">Paris</span>
+        </a>
+        <a href="quilon.html" style="text-align:right;">
+          <span class="day-nav-label">Tomorrow's Heritage Day →</span>
+          <span class="day-nav-name">Quilon (Kollam)</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Heritage Day Badge -->
+      <div class="heritage-day-badge">
+        <div class="heritage-day-number">1</div>
+        <div class="heritage-day-label">Heritage Day of 365</div>
+        <div style="margin-top:0.75rem; font-size:0.9rem; color:#e8d5a3;">January 1</div>
+      </div>
+
+      <!-- Key Facts -->
+      <div class="sidebar-card">
+        <h3>Key Facts</h3>
+        <div class="fact-row">
+          <span class="fact-label">Founded</span>
+          <span class="fact-value">Ancient</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Peak Population</span>
+          <span class="fact-value">Unknown</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Languages</span>
+          <span class="fact-value">Hebrew, Aramaic, local vernacular</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Community Status</span>
+          <span class="fact-value">Historical</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Region</span>
+          <span class="fact-value"><a href="../region/holy-land.html">Holy Land & Ancient Israel</a></span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Country Today</span>
+          <span class="fact-value">Austria</span>
+        </div>
+      </div>
+
+      <!-- Share -->
+      <div class="sidebar-card">
+        <h3>Share This Heritage Day</h3>
+        <div class="share-buttons">
+          <button class="share-btn share-btn-copy" onclick="copyLink()">Copy Link</button>
+          <button class="share-btn share-btn-twitter"
+            onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Today is Vienna Heritage Day! ' + window.location.href))">
+            Share on X (Twitter)
+          </button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <p>Celebrating 365 Jewish Communities Worldwide · 2026</p>
+  </footer>
+
+  <script>
+    function copyLink() {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        const btn = document.querySelector('.share-btn-copy');
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = 'Copy Link', 2000);
+      });
+    }
+  </script>
+</body>
+</html>

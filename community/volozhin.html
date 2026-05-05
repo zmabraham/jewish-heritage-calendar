@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volozhin — Jewish Heritage Calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: #fdf6e3;
+    color: #2c1810;
+    line-height: 1.8;
+  }
+
+  a { color: #1a3a5c; text-decoration: none; transition: color 0.3s; }
+  a:hover { color: #c9a227; }
+
+  nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 2px solid #e8d5a3;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a3a5c;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: #2c1810;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    max-width: 1200px;
+    margin: 1.5rem auto 0;
+    padding: 0 2rem;
+    font-size: 0.9rem;
+    color: #6b5d4f;
+  }
+
+  .breadcrumb a { color: #1a3a5c; }
+  .breadcrumb span { margin: 0 0.5rem; color: #b8a88a; }
+
+  /* Community Hero */
+  .community-hero {
+    background: linear-gradient(135deg, #1a5276 0%, #0d2137 100%);
+    color: white;
+    padding: 3rem 2rem;
+    margin-top: 1rem;
+  }
+
+  .community-hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .community-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #e8d5a3;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+  }
+
+  .community-meta {
+    color: #b8a88a;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .community-meta span {
+    margin-right: 1.5rem;
+  }
+
+  .stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .stat-badge {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #e8d5a3;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+  }
+
+  /* Main Layout */
+  .page-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  /* Article Content */
+  article {
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  article section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #e8d5a3;
+  }
+
+  article section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  article h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1a3a5c;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  article h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #2c1810;
+    margin: 1.5rem 0 0.75rem;
+  }
+
+  article p {
+    margin-bottom: 1rem;
+    color: #3a2e26;
+  }
+
+  article ul, article ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  article li {
+    margin-bottom: 0.5rem;
+    color: #3a2e26;
+  }
+
+  article strong {
+    color: #1a3a5c;
+  }
+
+  article em {
+    color: #6b5d4f;
+  }
+
+  /* Notable Figures Grid */
+  .figures-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .figure-card {
+    background: #fdf6e3;
+    border-radius: 8px;
+    padding: 1.25rem;
+    border-left: 3px solid #1a5276;
+  }
+
+  .figure-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #1a3a5c;
+    margin-bottom: 0.25rem;
+  }
+
+  .figure-dates {
+    font-size: 0.8rem;
+    color: #b8a88a;
+    margin-bottom: 0.5rem;
+  }
+
+  .figure-description {
+    font-size: 0.9rem;
+    color: #4a4035;
+  }
+
+  /* Day Navigation */
+  .day-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-top: 2px solid #e8d5a3;
+    margin-top: 2rem;
+  }
+
+  .day-nav a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .day-nav-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #b8a88a;
+  }
+
+  .day-nav-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #1a3a5c;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: sticky;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sidebar-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  .sidebar-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #1a3a5c;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  .fact-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #f5eed9;
+    font-size: 0.9rem;
+  }
+
+  .fact-row:last-child { border-bottom: none; }
+
+  .fact-label { color: #6b5d4f; }
+  .fact-value { color: #2c1810; font-weight: 600; text-align: right; max-width: 55%; }
+
+  .heritage-day-badge {
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #1a5276 0%, #0d2137 100%);
+    border-radius: 8px;
+    color: white;
+  }
+
+  .heritage-day-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #c9a227;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .heritage-day-label {
+    font-size: 0.85rem;
+    color: #b8a88a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .share-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .share-btn {
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    font-family: 'Source Serif 4', serif;
+  }
+
+  .share-btn-copy {
+    background: #fdf6e3;
+    border: 2px solid #e8d5a3;
+    color: #2c1810;
+  }
+
+  .share-btn-copy:hover {
+    background: #e8d5a3;
+  }
+
+  .share-btn-twitter {
+    background: #1da1f2;
+    color: white;
+  }
+
+  .share-btn-twitter:hover { background: #0d8fd0; }
+
+  footer {
+    background: #1a3a5c;
+    color: #e8d5a3;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 900px) {
+    .page-content {
+      grid-template-columns: 1fr;
+    }
+    .sidebar {
+      position: static;
+    }
+    .community-hero h1 {
+      font-size: 2rem;
+    }
+    .figures-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+  <nav>
+    <div class="nav-logo">
+      <span>✡</span>
+      <span>Jewish Heritage Calendar</span>
+    </div>
+    <div class="nav-links">
+      <a href="../index.html">Today</a>
+      <a href="../calendar.html">Calendar</a>
+      <a href="../regions.html">Regions</a>
+      <a href="../index.html#about">About</a>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a>
+    <span>›</span>
+    <a href="../region/holy-land.html">Holy Land & Ancient Israel</a>
+    <span>›</span>
+    <span>Volozhin</span>
+  </nav>
+
+  <!-- Community Hero -->
+  <div class="community-hero">
+    <div class="community-hero-inner">
+      <h1>Volozhin</h1>
+      <div class="community-meta">
+        <span>Holy Land & Ancient Israel</span>
+        <span>Belarus</span>
+        <span>Heritage Day 1 of 365</span>
+      </div>
+      <div class="stats-row">
+        <span class="stat-badge">Founded: Ancient</span>
+        <span class="stat-badge">Peak Population: Unknown</span>
+        <span class="stat-badge">Historical</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="page-content">
+    <article>
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>Volozhin is a small Belarusian town whose name reverberates through the entire world of Jewish scholarship. The Etz Chaim Yeshiva, founded here in 1803 by Rabbi Chaim of Volozhin (a leading disciple of the Vilna Gaon), became the model and mother of all modern yeshivot — the institutional template from which every subsequent yeshiva, from those of Eastern Europe to Israel to America, descended directly or indirectly. For nearly a century, Volozhin's yeshiva was the supreme institution of Ashkenazic Torah scholarship, the place where the Gaon's intellectual legacy was institutionalized and transmitted. To study in Volozhin was the highest aspiration of Lithuanian Jewish youth; to teach there was the greatest rabbinic honor.</p>
+      </section>
+
+      <section id="historical-origins">
+        <h2>Historical Origins</h2>
+        <p>Volozhin was a small market town in the Minsk region, part of the Russian Empire's Pale of Settlement. Jews lived there from the eighteenth century in modest circumstances as merchants and craftsmen. The town's transformation came through Rabbi Chaim of Volozhin (1749–1821), born in Volozhin and a devoted student of the Vilna Gaon for many years. When the Gaon died in 1797, Rabbi Chaim determined to institutionalize the Gaon's approach to Torah study — rigorous textual analysis, mastery of the entire Talmudic corpus, and learning for its own sake (<em>Torah lishmah</em>) — in a structured institution.</p>
+<p>In 1803, Rabbi Chaim opened the Etz Chaim Yeshiva in Volozhin. Unlike earlier yeshivot, which were typically attached to local communities and primarily served local students, the Volozhin Yeshiva was explicitly designed to attract students from across Eastern Europe, to be funded by communities throughout the Jewish world, and to have no financial obligation to its students' home towns. It was a supracommunal institution — the first of its kind.</p>
+      </section>
+
+      <section id="golden-age">
+        <h2>Golden Age</h2>
+        <p>The Volozhin Yeshiva was organized around a radical principle: study Torah day and night, without interruption, for its own sake — not for professional advancement, not for communal obligation, but as a supreme religious value in itself. The concept of <em>Torah lishmah</em> was transformed from an abstract ideal into an institutional practice. The yeshiva maintained continuous Talmud study: students studied in rotating shifts so that the sound of Torah study never ceased, day or night. This idea — the <em>beis midrash</em> as a vessel for unbroken connection with the divine — became the foundational ideology of the modern yeshiva world.</p>
+<p>Students came from across Lithuania, Belorussia, Poland, and eventually from Western Europe and America. The yeshiva could have 400 or more students at peak periods. Its roshei yeshiva were among the greatest Torah scholars of their generation: Rabbi Chaim's son Rabbi Yitzchak of Volozhin continued the institution, followed by Rabbi Eliezer Yitzchak Fried, and then the towering figure of Rabbi Naftali Tzvi Yehudah Berlin, known as the <em>Netziv</em> (1817–1893), who led the yeshiva for nearly forty years and brought it to its greatest height.</p>
+<p>The Netziv was a prodigious scholar — his commentary on the Torah, <em>Ha'amek Davar</em>, and his responsa, <em>Meshiv Davar</em>, are classics of rabbinic literature. Under his leadership the yeshiva attracted students of extraordinary caliber, including the young <strong>Rabbi Chaim Soloveitchik</strong> (later of Brisk) and — remarkably — the young <strong>Chaim Nachman Bialik</strong>, who would become the greatest modern Hebrew poet. Bialik's famous poem <em>Ha-Matmid</em> (The Diligent One) captures the atmosphere of the yeshiva with devastating beauty.</p>
+      </section>
+
+      <section id="notable-figures">
+        <h2>Notable Figures</h2>
+        
+        <div class="figures-grid" id="figures-grid">
+          
+        </div>
+      </section>
+
+      <section id="institutions">
+        <h2>Institutions &amp; Sacred Spaces</h2>
+        
+      </section>
+
+      <section id="cultural-life">
+        <h2>Cultural Life</h2>
+        <p>The cultural life of Volozhin was entirely defined by the yeshiva. The town was a <em>yeshiva shtetl</em> — its economy, its social fabric, its intellectual life all oriented around the needs and rhythms of the institution. Visiting parents, merchants supplying the yeshiva's needs, and locals who hosted students shaped a community deeply identified with Torah study. The tension between this traditional world and the forces of modernity — Zionism, Haskalah, socialism — was felt acutely by students like Bialik who arrived with traditional backgrounds and departed with transformed worldviews.</p>
+      </section>
+
+      <section id="decline">
+        <h2>Decline &amp; Transformation</h2>
+        <p>The Russian government closed the Volozhin Yeshiva in 1892, objecting to the yeshiva's refusal to incorporate secular studies into its curriculum as required by new Russian educational regulations. The Netziv and the yeshiva's leadership chose closure over compromise. The institution reopened briefly under more restricted conditions but never fully recovered its former stature. The Netziv moved to Warsaw, where he died in 1893. The yeshiva continued intermittently until World War I devastated the town and Jewish life in the region.</p>
+<p>During the interwar period the yeshiva reopened and functioned until World War II. The German occupation in 1941 brought mass murder: the Jewish community of Volozhin, several thousand people, was killed in a series of shootings in 1941 and 1942.</p>
+      </section>
+
+      <section id="legacy">
+        <h2>Legacy &amp; Diaspora</h2>
+        <p>The legacy of Volozhin is the entire modern yeshiva world. Every major yeshiva in Eastern Europe — Mir, Slobodka, Telz, Radin, Ponevezh — was either founded by Volozhin alumni or modeled on its institutional structure. Every contemporary yeshiva in Israel and America descends from this tradition. The ideal of <em>Torah lishmah</em> as the supreme value of Jewish education, the organizational model of the supracommunal yeshiva, the culture of continuous study — all derive from Volozhin. Rabbi Chaim's great theological work <em>Nefesh HaChaim</em> is a cornerstone of Lithuanian Jewish thought, studied in yeshivot today.</p>
+      </section>
+
+      <!-- Day Navigation -->
+      <div class="day-nav">
+        <a href="jassy.html">
+          <span class="day-nav-label">← Yesterday's Heritage Day</span>
+          <span class="day-nav-name">Jassy (Iași)</span>
+        </a>
+        <a href="newport.html" style="text-align:right;">
+          <span class="day-nav-label">Tomorrow's Heritage Day →</span>
+          <span class="day-nav-name">Newport</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Heritage Day Badge -->
+      <div class="heritage-day-badge">
+        <div class="heritage-day-number">1</div>
+        <div class="heritage-day-label">Heritage Day of 365</div>
+        <div style="margin-top:0.75rem; font-size:0.9rem; color:#e8d5a3;">January 1</div>
+      </div>
+
+      <!-- Key Facts -->
+      <div class="sidebar-card">
+        <h3>Key Facts</h3>
+        <div class="fact-row">
+          <span class="fact-label">Founded</span>
+          <span class="fact-value">Ancient</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Peak Population</span>
+          <span class="fact-value">Unknown</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Languages</span>
+          <span class="fact-value">Hebrew, Aramaic, local vernacular</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Community Status</span>
+          <span class="fact-value">Historical</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Region</span>
+          <span class="fact-value"><a href="../region/holy-land.html">Holy Land & Ancient Israel</a></span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Country Today</span>
+          <span class="fact-value">Belarus</span>
+        </div>
+      </div>
+
+      <!-- Share -->
+      <div class="sidebar-card">
+        <h3>Share This Heritage Day</h3>
+        <div class="share-buttons">
+          <button class="share-btn share-btn-copy" onclick="copyLink()">Copy Link</button>
+          <button class="share-btn share-btn-twitter"
+            onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Today is Volozhin Heritage Day! ' + window.location.href))">
+            Share on X (Twitter)
+          </button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <p>Celebrating 365 Jewish Communities Worldwide · 2026</p>
+  </footer>
+
+  <script>
+    function copyLink() {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        const btn = document.querySelector('.share-btn-copy');
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = 'Copy Link', 2000);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+---
+id: granada
+name: Granada, Spain
+region: iberian-sephardic
+country: Spain
+---
+
+# Granada
+
+## Overview
+
+Granada's Jewish community achieved something remarkable even by the standards of medieval Iberia's remarkable Jewish history: a Jewish man, Samuel ibn Naghrela — Samuel HaNagid — rose to become the prime minister and military commander of an Islamic kingdom, personally leading its armies into battle. This extraordinary career, combined with Granada's role as a taifa kingdom of cultural sophistication, makes its Jewish community one of the most storied of the Andalusian golden age. The community's eventual destruction in a Berber-incited pogrom in 1066 stands as a sobering counterpoint to its achievements.
+
+## Historical Origins
+
+Jewish settlement in Granada (Roman Iliberis) appears to predate the Arab conquest, though it was under Islamic rule that the community truly took shape. When the Umayyad Caliphate of Córdoba fragmented into competing taifa kingdoms in the early eleventh century, Granada emerged as a major principality under the Berber Zirid dynasty. The city's Jewish community, augmented by refugees from Córdoba as Almohad pressures began building in the south, found in the Zirids relatively tolerant patrons.
+
+The ruins of what may be the earliest medieval synagogue in Iberia were excavated in Granada in the twentieth century, suggesting a substantial Jewish presence from the early Islamic period.
+
+## Golden Age
+
+The golden age of Granada's Jewish community was essentially the career of one man and his son. Samuel ibn Naghrela (993–1056), born in Córdoba, fled the Almohad disruption southward and eventually settled in Granada, where his Arabic learning and administrative gifts brought him to the attention of the Zirid ruler Habus al-Muzaffar. Samuel rose to become the king's vizier (prime minister) and, uniquely, his military commander — fighting as the general of a Muslim army. He held this position for approximately thirty years, under both Habus and his successor Badis.
+
+Samuel HaNagid was simultaneously one of the greatest Hebrew poets of the medieval period. His collections — Ben Tehillim (Son of Psalms), Ben Mishle (Son of Proverbs), and Ben Kohelet (Son of Ecclesiastes) — represent the mature flowering of the Andalusian Hebrew poetic style. He also composed an important work on Talmudic method, Mevo haTalmud, and maintained a correspondence with Jewish communities across the world, using his political position to assist and protect Jews throughout the Caliphate's former territories.
+
+His son Joseph ibn Naghrela inherited both his father's political position and his literary cultivation, though not his father's political genius. Joseph's arrogance and his very visible power as a Jewish official in an Islamic state inflamed tensions.
+
+## Notable Figures
+
+Samuel HaNagid (Samuel ibn Naghrela, 993–1056) dominates Granada's Jewish history. His combination of military command, political leadership, Torah scholarship, and Hebrew poetry makes him perhaps the most multifaceted figure of the entire Sephardic golden age. He was appointed nagid — official head — of the entire Jewish community of al-Andalus, giving him a formal religious authority to match his political one.
+
+Joseph ibn Naghrela (d. 1066), Samuel's son, served as vizier after his father's death. His fate — killed in the pogrom of 1066 — marks the end of Granada's Jewish golden age.
+
+Moses ibn Ezra (c. 1055–1138), one of the greatest Hebrew poets of the medieval period, was born and educated in Granada, though he spent most of his later life in the Christian north after the destruction of Granadan Jewish life. His poetry — both secular and liturgical — represents the finest achievement of the Andalusian Hebrew style.
+
+## Institutions & Sacred Spaces
+
+Granada's Jewish quarter, known in Arabic as Garnata al-Yahud (Jewish Granada), occupied a substantial portion of the city. The community maintained synagogues, schools, and charitable institutions commensurate with its size and wealth. Samuel HaNagid's position allowed him to support Jewish institutions throughout al-Andalus, and Granada's own institutions benefited from his patronage.
+
+The excavated remains of an early medieval synagogue found in the Realejo neighborhood (the historic Jewish quarter) offer tangible evidence of the community's physical presence.
+
+## Cultural Life
+
+Granada's Jewish community in the eleventh century was soaked in Arabic culture while maintaining vigorous Hebrew literary production. Samuel HaNagid wrote poetry in Arabic as well as Hebrew, and the tension between these two linguistic identities — between the sacred tongue of Jewish tradition and the elegant vernacular of Andalusian high culture — is one of the defining creative tensions of the entire golden age.
+
+The culture of Granada's Jewish elite was one of courtly refinement: wine poetry, love poetry, nature description, philosophical reflection, and martial verse (HaNagid wrote vivid poems from the battlefield). This aristocratic literary culture coexisted with Talmudic scholarship and synagogue life, producing figures who were equally at home in the beit midrash and the palace.
+
+## Decline & Transformation
+
+The pogrom of December 30, 1066, was one of the deadliest anti-Jewish events in al-Andalus. Berber tribesmen within the Zirid military, resentful of Jewish power and inflamed by a poem attacking Joseph ibn Naghrela, rose up and killed Joseph. The violence then spread to the Jewish quarter: according to various sources, between three thousand and five thousand Jews were killed, and the community was effectively destroyed.
+
+The surviving Jews fled north to the Christian kingdoms. Granada's Jewish community never recovered under Muslim rule. The later Nasrid kingdom of Granada (1238–1492) had no substantial Jewish community: by this point Jews had been largely expelled or converted by the Almohads, and the Nasrid rulers did not invite their return in significant numbers.
+
+When Granada fell to Ferdinand and Isabella in January 1492, the few Jews present were expelled along with those elsewhere in Spain three months later.
+
+## Legacy & Diaspora
+
+Samuel HaNagid's legacy endures in the Hebrew literary canon. His war poems, describing actual battles he fought and won, are unique in medieval Hebrew literature. His establishment of Granada as a center of Jewish scholarship and his patronage of Jewish communities throughout al-Andalus represent a model of Jewish courtier culture at its most ambitious.
+
+Moses ibn Ezra, forced north by the 1066 destruction, carried Granada's literary tradition into the Christian kingdoms, where he became a central figure in the transmission of Andalusian Hebrew poetry to later generations.
+
+The Realejo neighborhood in modern Granada, built over the historic Jewish quarter, has become a site of growing heritage interest. The city commemorates Samuel HaNagid and Moses ibn Ezra, though the community they represented left Granada nine centuries ago.
+
+## Key Facts
+- **Founded**: Pre-Islamic era; peak under Zirid dynasty, 11th century
+- **Peak Population**: Estimated 5,000–8,000 (11th century)
+- **Languages**: Judeo-Arabic, Hebrew, Arabic
+- **Status Today**: No resident Jewish community; historic Realejo (Jewish quarter) preserved

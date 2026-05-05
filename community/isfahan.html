@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isfahan — Jewish Heritage Calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: #fdf6e3;
+    color: #2c1810;
+    line-height: 1.8;
+  }
+
+  a { color: #1a3a5c; text-decoration: none; transition: color 0.3s; }
+  a:hover { color: #c9a227; }
+
+  nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 2px solid #e8d5a3;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a3a5c;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: #2c1810;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    max-width: 1200px;
+    margin: 1.5rem auto 0;
+    padding: 0 2rem;
+    font-size: 0.9rem;
+    color: #6b5d4f;
+  }
+
+  .breadcrumb a { color: #1a3a5c; }
+  .breadcrumb span { margin: 0 0.5rem; color: #b8a88a; }
+
+  /* Community Hero */
+  .community-hero {
+    background: linear-gradient(135deg, #1a5276 0%, #0d2137 100%);
+    color: white;
+    padding: 3rem 2rem;
+    margin-top: 1rem;
+  }
+
+  .community-hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .community-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #e8d5a3;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+  }
+
+  .community-meta {
+    color: #b8a88a;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .community-meta span {
+    margin-right: 1.5rem;
+  }
+
+  .stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .stat-badge {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #e8d5a3;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+  }
+
+  /* Main Layout */
+  .page-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  /* Article Content */
+  article {
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  article section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #e8d5a3;
+  }
+
+  article section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  article h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1a3a5c;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  article h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #2c1810;
+    margin: 1.5rem 0 0.75rem;
+  }
+
+  article p {
+    margin-bottom: 1rem;
+    color: #3a2e26;
+  }
+
+  article ul, article ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  article li {
+    margin-bottom: 0.5rem;
+    color: #3a2e26;
+  }
+
+  article strong {
+    color: #1a3a5c;
+  }
+
+  article em {
+    color: #6b5d4f;
+  }
+
+  /* Notable Figures Grid */
+  .figures-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .figure-card {
+    background: #fdf6e3;
+    border-radius: 8px;
+    padding: 1.25rem;
+    border-left: 3px solid #1a5276;
+  }
+
+  .figure-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #1a3a5c;
+    margin-bottom: 0.25rem;
+  }
+
+  .figure-dates {
+    font-size: 0.8rem;
+    color: #b8a88a;
+    margin-bottom: 0.5rem;
+  }
+
+  .figure-description {
+    font-size: 0.9rem;
+    color: #4a4035;
+  }
+
+  /* Day Navigation */
+  .day-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-top: 2px solid #e8d5a3;
+    margin-top: 2rem;
+  }
+
+  .day-nav a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .day-nav-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #b8a88a;
+  }
+
+  .day-nav-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #1a3a5c;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: sticky;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sidebar-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  .sidebar-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #1a3a5c;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  .fact-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #f5eed9;
+    font-size: 0.9rem;
+  }
+
+  .fact-row:last-child { border-bottom: none; }
+
+  .fact-label { color: #6b5d4f; }
+  .fact-value { color: #2c1810; font-weight: 600; text-align: right; max-width: 55%; }
+
+  .heritage-day-badge {
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #1a5276 0%, #0d2137 100%);
+    border-radius: 8px;
+    color: white;
+  }
+
+  .heritage-day-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #c9a227;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .heritage-day-label {
+    font-size: 0.85rem;
+    color: #b8a88a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .share-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .share-btn {
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    font-family: 'Source Serif 4', serif;
+  }
+
+  .share-btn-copy {
+    background: #fdf6e3;
+    border: 2px solid #e8d5a3;
+    color: #2c1810;
+  }
+
+  .share-btn-copy:hover {
+    background: #e8d5a3;
+  }
+
+  .share-btn-twitter {
+    background: #1da1f2;
+    color: white;
+  }
+
+  .share-btn-twitter:hover { background: #0d8fd0; }
+
+  footer {
+    background: #1a3a5c;
+    color: #e8d5a3;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 900px) {
+    .page-content {
+      grid-template-columns: 1fr;
+    }
+    .sidebar {
+      position: static;
+    }
+    .community-hero h1 {
+      font-size: 2rem;
+    }
+    .figures-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+  <nav>
+    <div class="nav-logo">
+      <span>✡</span>
+      <span>Jewish Heritage Calendar</span>
+    </div>
+    <div class="nav-links">
+      <a href="../index.html">Today</a>
+      <a href="../calendar.html">Calendar</a>
+      <a href="../regions.html">Regions</a>
+      <a href="../index.html#about">About</a>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a>
+    <span>›</span>
+    <a href="../region/holy-land.html">Holy Land & Ancient Israel</a>
+    <span>›</span>
+    <span>Isfahan</span>
+  </nav>
+
+  <!-- Community Hero -->
+  <div class="community-hero">
+    <div class="community-hero-inner">
+      <h1>Isfahan</h1>
+      <div class="community-meta">
+        <span>Holy Land & Ancient Israel</span>
+        <span>Iran</span>
+        <span>Heritage Day 1 of 365</span>
+      </div>
+      <div class="stats-row">
+        <span class="stat-badge">Founded: Ancient</span>
+        <span class="stat-badge">Peak Population: Unknown</span>
+        <span class="stat-badge">Historical</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="page-content">
+    <article>
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>Isfahan, the city that Persian poets called "half the world" (nisf-e jahan), was home to one of the most cultured, prosperous, and enduring Jewish communities in the entire Iranian plateau. Nestled along the Zayandeh River in central Persia, the city's Jews occupied the Jubareh quarter for centuries, building a distinct urban civilization that blended Persian aesthetics with deep Jewish learning. At its height in the Safavid period, Isfahan's Jewish population numbered in the thousands, producing scholars, physicians, poets, and merchants whose influence radiated far beyond the city's magnificent tile-domed skyline.</p>
+<p>The community's history stretches back at least two and a half millennia. Jewish settlement in the region may predate the Achaemenid empire, and local tradition holds that the original settlers were exiles brought from Judea by Nebuchadnezzar. Whatever the precise origins, by the early medieval period Isfahan's Jewish quarter was a functioning city-within-a-city, with its own synagogues, ritual baths, schools, and courts. Persian kings repeatedly found the Jews useful as intermediaries, physicians, and traders, giving the community periods of relative peace punctuated by episodes of persecution.</p>
+<p>Through Mongol invasions, Timurid resurgence, and the brilliant Safavid renaissance, Isfahan's Jews adapted and endured. Their cultural output — in Hebrew, Judeo-Persian, and classical Persian — represents one of the most significant bodies of Jewish literature produced outside the Mediterranean world, and the physical remains of Jubareh still preserve traces of centuries of continuous habitation.</p>
+      </section>
+
+      <section id="historical-origins">
+        <h2>Historical Origins</h2>
+        <p>Jewish presence in the Isfahan region is attested in tradition and partially corroborated by archaeology. The Babylonian exile of 586 BCE dispersed Jews throughout the Persian sphere, and some communities in central Persia trace their ancestry to these earliest deportees. By the Achaemenid period (6th–4th centuries BCE), Jews were present throughout the empire as merchants, soldiers, and administrators. Local lore specifically names the Jubareh and Mahaleh districts as areas of ancient Jewish residence.</p>
+<p>The Talmud mentions "Ispahan" (in various transliterations) multiple times, referring to a substantial community with its own religious leadership. The Sassanid period (224–651 CE) brought complexity: the Zoroastrian state could be tolerant or hostile depending on political circumstances, and Jews sometimes faced heavy tax burdens and restrictions. Yet the community persisted, and synagogues from this era — though extensively rebuilt — preserve the footprints of very early foundations.</p>
+<p>The Arab conquest of Persia in the 640s CE initially relaxed some Sassanid-era restrictions, and Isfahan's Jews, now under Islamic law as dhimmis, continued their communal life. Medieval Islamic geographers described a thriving Jewish presence in the city, and Judeo-Persian literary production accelerated from the 9th century onward.</p>
+      </section>
+
+      <section id="golden-age">
+        <h2>Golden Age</h2>
+        <p>The Safavid dynasty (1501–1736), which made Isfahan its capital and remade the city into one of the most spectacular in the world, produced paradoxically mixed results for the Jewish community. Shah Abbas I (r. 1588–1629) initially brought Jews under his protection, valuing them as craftsmen, physicians, and merchants. The great bazaars of the Safavid capital included Jewish silk merchants who traded with the Ottoman empire, India, and Europe. Jewish physicians served at court, and Jewish musicians performed at royal entertainments.</p>
+<p>Yet the same period saw intense pressure from Shia clerics who pushed for harsher application of dhimmi restrictions. The reign of Shah Abbas II (1642–1666) brought forced conversions in 1656, when large numbers of Isfahan's Jews were coerced into nominal Islam. Many outwardly conformed while secretly maintaining Jewish practice — a phenomenon that produced a complex crypto-Jewish culture unique to Persia. Some converted families gradually reintegrated into the Jewish community in subsequent generations.</p>
+<p>Despite these trials, the 17th and 18th centuries saw remarkable intellectual vitality. The physician and philosopher Sason ben Elijah of Isfahan composed influential commentaries, and the poet Shahin, though earlier, remained a touchstone for the community's literary identity.</p>
+      </section>
+
+      <section id="notable-figures">
+        <h2>Notable Figures</h2>
+        
+        <div class="figures-grid" id="figures-grid">
+          
+        </div>
+      </section>
+
+      <section id="institutions">
+        <h2>Institutions &amp; Sacred Spaces</h2>
+        
+      </section>
+
+      <section id="cultural-life">
+        <h2>Cultural Life</h2>
+        <p>Isfahan's Jews spoke and wrote in Judeo-Persian, a form of Persian written in Hebrew characters that served as the literary medium for a rich body of poetry, biblical commentary, and secular verse. The community's poets composed in both the classical Persian qaside and ghazal forms and in distinctly Jewish liturgical meters, creating a unique cultural hybrid.</p>
+<p>Cuisine reflected Persian-Jewish synthesis: Shabbat meals featured dishes like gondi (chickpea-and-meat dumplings), ash-e anar (pomegranate soup), and various rice preparations with herbs (sabzi polo). The community observed Persian Jewish customs for holidays that differed subtly from both Ashkenazi and Sephardic norms, preserving ancient Iranian Jewish practices.</p>
+<p>Music in Jubareh drew on Persian classical modes. Jewish musicians were known for their mastery of the tar, setar, and santur, and wedding celebrations featured both Hebrew liturgical songs and Persian classical pieces.</p>
+      </section>
+
+      <section id="decline">
+        <h2>Decline &amp; Transformation</h2>
+        <p>The 20th century brought dramatic change. The Constitutional Revolution of 1905–1911 nominally extended rights to religious minorities, and Isfahan's Jews participated cautiously in the modernizing currents. The Pahlavi era (1925–1979) brought formal legal equality but also the disruptions of rapid urbanization; many Isfahan Jews migrated to Tehran in search of economic opportunity, thinning the historic community.</p>
+<p>The 1979 Islamic Revolution proved catastrophic. Thousands of Iranian Jews, including those from Isfahan, fled to Israel, the United States, and Europe in the years following the revolution. By the early 21st century, the Jewish population of Isfahan had fallen from several thousand to a few hundred, and the Jubareh quarter, though partially preserved, had lost most of its living Jewish character.</p>
+      </section>
+
+      <section id="legacy">
+        <h2>Legacy &amp; Diaspora</h2>
+        <p>Isfahan Jews settled in large numbers in Israel (especially Tel Aviv, Ramat Gan, and Jerusalem), Los Angeles, and New York. Community organizations in Los Angeles and Israel have worked to preserve Isfahani Jewish traditions, including cooking, music, and Judeo-Persian literature. Annual gatherings commemorate the community's heritage, and younger generations maintain pride in their distinctive Persian Jewish identity.</p>
+<p>Academically, the Judeo-Persian literary tradition of Isfahan has attracted increasing scholarly attention. The poetry of Babai ibn Lutf has been published in critical editions, and the synagogues and cemetery of Jubareh are recognized as sites of world Jewish heritage, even as the living community that sustained them for millennia has largely dispersed.</p>
+      </section>
+
+      <!-- Day Navigation -->
+      <div class="day-nav">
+        <a href="nazareth.html">
+          <span class="day-nav-label">← Yesterday's Heritage Day</span>
+          <span class="day-nav-name">Nazareth</span>
+        </a>
+        <a href="kufa.html" style="text-align:right;">
+          <span class="day-nav-label">Tomorrow's Heritage Day →</span>
+          <span class="day-nav-name">Kufa</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Heritage Day Badge -->
+      <div class="heritage-day-badge">
+        <div class="heritage-day-number">1</div>
+        <div class="heritage-day-label">Heritage Day of 365</div>
+        <div style="margin-top:0.75rem; font-size:0.9rem; color:#e8d5a3;">January 1</div>
+      </div>
+
+      <!-- Key Facts -->
+      <div class="sidebar-card">
+        <h3>Key Facts</h3>
+        <div class="fact-row">
+          <span class="fact-label">Founded</span>
+          <span class="fact-value">Ancient</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Peak Population</span>
+          <span class="fact-value">Unknown</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Languages</span>
+          <span class="fact-value">Hebrew, Aramaic, local vernacular</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Community Status</span>
+          <span class="fact-value">Historical</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Region</span>
+          <span class="fact-value"><a href="../region/holy-land.html">Holy Land & Ancient Israel</a></span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Country Today</span>
+          <span class="fact-value">Iran</span>
+        </div>
+      </div>
+
+      <!-- Share -->
+      <div class="sidebar-card">
+        <h3>Share This Heritage Day</h3>
+        <div class="share-buttons">
+          <button class="share-btn share-btn-copy" onclick="copyLink()">Copy Link</button>
+          <button class="share-btn share-btn-twitter"
+            onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Today is Isfahan Heritage Day! ' + window.location.href))">
+            Share on X (Twitter)
+          </button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <p>Celebrating 365 Jewish Communities Worldwide · 2026</p>
+  </footer>
+
+  <script>
+    function copyLink() {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        const btn = document.querySelector('.share-btn-copy');
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = 'Copy Link', 2000);
+      });
+    }
+  </script>
+</body>
+</html>

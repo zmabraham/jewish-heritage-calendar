@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Girona — Jewish Heritage Calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: #fdf6e3;
+    color: #2c1810;
+    line-height: 1.8;
+  }
+
+  a { color: #1a3a5c; text-decoration: none; transition: color 0.3s; }
+  a:hover { color: #c9a227; }
+
+  nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 2px solid #e8d5a3;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a3a5c;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: #2c1810;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    max-width: 1200px;
+    margin: 1.5rem auto 0;
+    padding: 0 2rem;
+    font-size: 0.9rem;
+    color: #6b5d4f;
+  }
+
+  .breadcrumb a { color: #1a3a5c; }
+  .breadcrumb span { margin: 0 0.5rem; color: #b8a88a; }
+
+  /* Community Hero */
+  .community-hero {
+    background: linear-gradient(135deg, #1a5276 0%, #0d2137 100%);
+    color: white;
+    padding: 3rem 2rem;
+    margin-top: 1rem;
+  }
+
+  .community-hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .community-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #e8d5a3;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+  }
+
+  .community-meta {
+    color: #b8a88a;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .community-meta span {
+    margin-right: 1.5rem;
+  }
+
+  .stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .stat-badge {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #e8d5a3;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+  }
+
+  /* Main Layout */
+  .page-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  /* Article Content */
+  article {
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  article section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #e8d5a3;
+  }
+
+  article section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  article h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1a3a5c;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  article h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #2c1810;
+    margin: 1.5rem 0 0.75rem;
+  }
+
+  article p {
+    margin-bottom: 1rem;
+    color: #3a2e26;
+  }
+
+  article ul, article ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  article li {
+    margin-bottom: 0.5rem;
+    color: #3a2e26;
+  }
+
+  article strong {
+    color: #1a3a5c;
+  }
+
+  article em {
+    color: #6b5d4f;
+  }
+
+  /* Notable Figures Grid */
+  .figures-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .figure-card {
+    background: #fdf6e3;
+    border-radius: 8px;
+    padding: 1.25rem;
+    border-left: 3px solid #1a5276;
+  }
+
+  .figure-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #1a3a5c;
+    margin-bottom: 0.25rem;
+  }
+
+  .figure-dates {
+    font-size: 0.8rem;
+    color: #b8a88a;
+    margin-bottom: 0.5rem;
+  }
+
+  .figure-description {
+    font-size: 0.9rem;
+    color: #4a4035;
+  }
+
+  /* Day Navigation */
+  .day-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-top: 2px solid #e8d5a3;
+    margin-top: 2rem;
+  }
+
+  .day-nav a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .day-nav-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #b8a88a;
+  }
+
+  .day-nav-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #1a3a5c;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: sticky;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sidebar-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  .sidebar-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #1a3a5c;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  .fact-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #f5eed9;
+    font-size: 0.9rem;
+  }
+
+  .fact-row:last-child { border-bottom: none; }
+
+  .fact-label { color: #6b5d4f; }
+  .fact-value { color: #2c1810; font-weight: 600; text-align: right; max-width: 55%; }
+
+  .heritage-day-badge {
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #1a5276 0%, #0d2137 100%);
+    border-radius: 8px;
+    color: white;
+  }
+
+  .heritage-day-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #c9a227;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .heritage-day-label {
+    font-size: 0.85rem;
+    color: #b8a88a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .share-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .share-btn {
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    font-family: 'Source Serif 4', serif;
+  }
+
+  .share-btn-copy {
+    background: #fdf6e3;
+    border: 2px solid #e8d5a3;
+    color: #2c1810;
+  }
+
+  .share-btn-copy:hover {
+    background: #e8d5a3;
+  }
+
+  .share-btn-twitter {
+    background: #1da1f2;
+    color: white;
+  }
+
+  .share-btn-twitter:hover { background: #0d8fd0; }
+
+  footer {
+    background: #1a3a5c;
+    color: #e8d5a3;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 900px) {
+    .page-content {
+      grid-template-columns: 1fr;
+    }
+    .sidebar {
+      position: static;
+    }
+    .community-hero h1 {
+      font-size: 2rem;
+    }
+    .figures-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+  <nav>
+    <div class="nav-logo">
+      <span>✡</span>
+      <span>Jewish Heritage Calendar</span>
+    </div>
+    <div class="nav-links">
+      <a href="../index.html">Today</a>
+      <a href="../calendar.html">Calendar</a>
+      <a href="../regions.html">Regions</a>
+      <a href="../index.html#about">About</a>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a>
+    <span>›</span>
+    <a href="../region/holy-land.html">Holy Land & Ancient Israel</a>
+    <span>›</span>
+    <span>Girona</span>
+  </nav>
+
+  <!-- Community Hero -->
+  <div class="community-hero">
+    <div class="community-hero-inner">
+      <h1>Girona</h1>
+      <div class="community-meta">
+        <span>Holy Land & Ancient Israel</span>
+        <span>Spain</span>
+        <span>Heritage Day 1 of 365</span>
+      </div>
+      <div class="stats-row">
+        <span class="stat-badge">Founded: Ancient</span>
+        <span class="stat-badge">Peak Population: Unknown</span>
+        <span class="stat-badge">Historical</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="page-content">
+    <article>
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>Gerona (Girona in Catalan), nestled in Catalonia's inland hills at the confluence of four rivers, holds a special place in Jewish history as the birthplace and lifelong home of Nahmanides — Rabbi Moses ben Nahman, the Ramban — one of the greatest Jewish scholars of the medieval period. Gerona was also the cradle of Kabbalah in Christian Iberia, a quiet provincial city that nevertheless produced a mystical tradition of world-historical importance. The community's Call, remarkably well-preserved, allows visitors today to walk streets where medieval Jewish families lived and studied.</p>
+      </section>
+
+      <section id="historical-origins">
+        <h2>Historical Origins</h2>
+        <p>Jewish settlement in Gerona appears to date to the early medieval period, though the community emerges clearly into the historical record in the twelfth century. The city's inland location and relative isolation from major commercial routes meant that its Jewish community never grew to the size of Barcelona or Valencia, but this very quietness may have fostered an environment conducive to contemplative study.</p>
+<p>Gerona fell under the Count of Barcelona's domain, and the Jews benefited from the generally protective stance of the Catalan crown toward its Jewish communities. By the late twelfth century, Gerona had a well-established Jewish quarter and was developing a reputation for scholarship that would soon make it famous across the Jewish world.</p>
+      </section>
+
+      <section id="golden-age">
+        <h2>Golden Age</h2>
+        <p>Gerona's golden age was primarily the early-to-mid thirteenth century, the period when Nahmanides (1194–1270) dominated its intellectual life. Under his leadership, Gerona's yeshiva became a center of Talmudic study unmatched in Catalonia, and the city became the focal point of early Kabbalistic activity. The circle around Nahmanides produced the earliest comprehensive presentation of Kabbalah as a systematic tradition — the work later known as the Zohar, whose composition in Gerona and surrounding areas represents one of the most consequential literary events in Jewish history.</p>
+<p>The community supported multiple synagogues, schools, and charitable institutions. Though never large — perhaps a thousand or fifteen hundred people at its height — Gerona's Jewish population was disproportionately learned and pious, with an unusually high concentration of scholars and scribes.</p>
+      </section>
+
+      <section id="notable-figures">
+        <h2>Notable Figures</h2>
+        
+        <div class="figures-grid" id="figures-grid">
+          
+        </div>
+      </section>
+
+      <section id="institutions">
+        <h2>Institutions &amp; Sacred Spaces</h2>
+        
+      </section>
+
+      <section id="cultural-life">
+        <h2>Cultural Life</h2>
+        <p>Gerona's Jewish culture was contemplative, scholarly, and intensely spiritual. The community was less oriented to commerce or courtly culture than Barcelona or Girona; its focus was Torah study, mystical speculation, and religious observance. The quiet provincial character of Gerona may have provided exactly the environment that allowed the intensive, sustained engagement with Kabbalistic texts that produced the Zohar tradition.</p>
+<p>Hebrew was the language of scholarship and prayer, while Catalan served for daily communication. The community's intellectual world was deeply engaged with both Talmudic learning and philosophical questions — the tension between Aristotelian rationalism and the emerging Kabbalistic tradition that Nahmanides helped navigate defined Gerona's intellectual climate.</p>
+      </section>
+
+      <section id="decline">
+        <h2>Decline &amp; Transformation</h2>
+        <p>The 1391 pogroms that devastated so many Spanish Jewish communities struck Gerona as well. The Call was attacked, the community shattered. Many Jews were killed or forcibly converted. The community that reconstituted itself was a fraction of its former self, never recovering its former scholarly prominence.</p>
+<p>When the final expulsion came in 1492, Gerona's remaining Jewish population departed. The Call was gradually absorbed into the Christian city, its synagogues converted to other uses. For centuries, Gerona's Jewish heritage was largely forgotten until archaeological rediscovery and renewed scholarly interest in the twentieth century.</p>
+      </section>
+
+      <section id="legacy">
+        <h2>Legacy &amp; Diaspora</h2>
+        <p>Nahmanides' legacy as a commentator and Talmudist remains central to Jewish learning. His works are studied in yeshivot worldwide, representing the continuing influence of Gerona's vanished community. The Kabbalistic tradition that crystallized in thirteenth-century Gerona became one of the most powerful currents in Jewish spirituality, influencing Jewish practice and thought to the present day.</p>
+<p>The recovery and preservation of Gerona's Call has made the city a destination for Jewish heritage tourism. Visitors can walk through streets where Nahmanides walked, see the mikveh where medieval Jews immersed, and study the intellectual tradition that emerged from this Catalonian city.</p>
+      </section>
+
+      <!-- Day Navigation -->
+      <div class="day-nav">
+        <a href="agadir.html">
+          <span class="day-nav-label">← Yesterday's Heritage Day</span>
+          <span class="day-nav-name">Agadir</span>
+        </a>
+        <a href="pruzana.html" style="text-align:right;">
+          <span class="day-nav-label">Tomorrow's Heritage Day →</span>
+          <span class="day-nav-name">Prużana (Pruzhany)</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Heritage Day Badge -->
+      <div class="heritage-day-badge">
+        <div class="heritage-day-number">1</div>
+        <div class="heritage-day-label">Heritage Day of 365</div>
+        <div style="margin-top:0.75rem; font-size:0.9rem; color:#e8d5a3;">January 1</div>
+      </div>
+
+      <!-- Key Facts -->
+      <div class="sidebar-card">
+        <h3>Key Facts</h3>
+        <div class="fact-row">
+          <span class="fact-label">Founded</span>
+          <span class="fact-value">Ancient</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Peak Population</span>
+          <span class="fact-value">Unknown</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Languages</span>
+          <span class="fact-value">Hebrew, Aramaic, local vernacular</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Community Status</span>
+          <span class="fact-value">Historical</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Region</span>
+          <span class="fact-value"><a href="../region/holy-land.html">Holy Land & Ancient Israel</a></span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Country Today</span>
+          <span class="fact-value">Spain</span>
+        </div>
+      </div>
+
+      <!-- Share -->
+      <div class="sidebar-card">
+        <h3>Share This Heritage Day</h3>
+        <div class="share-buttons">
+          <button class="share-btn share-btn-copy" onclick="copyLink()">Copy Link</button>
+          <button class="share-btn share-btn-twitter"
+            onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Today is Girona Heritage Day! ' + window.location.href))">
+            Share on X (Twitter)
+          </button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <p>Celebrating 365 Jewish Communities Worldwide · 2026</p>
+  </footer>
+
+  <script>
+    function copyLink() {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        const btn = document.querySelector('.share-btn-copy');
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = 'Copy Link', 2000);
+      });
+    }
+  </script>
+</body>
+</html>

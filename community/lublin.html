@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lublin — Jewish Heritage Calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: #fdf6e3;
+    color: #2c1810;
+    line-height: 1.8;
+  }
+
+  a { color: #1a3a5c; text-decoration: none; transition: color 0.3s; }
+  a:hover { color: #c9a227; }
+
+  nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 2px solid #e8d5a3;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a3a5c;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: #2c1810;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    max-width: 1200px;
+    margin: 1.5rem auto 0;
+    padding: 0 2rem;
+    font-size: 0.9rem;
+    color: #6b5d4f;
+  }
+
+  .breadcrumb a { color: #1a3a5c; }
+  .breadcrumb span { margin: 0 0.5rem; color: #b8a88a; }
+
+  /* Community Hero */
+  .community-hero {
+    background: linear-gradient(135deg, #1a5276 0%, #0d2137 100%);
+    color: white;
+    padding: 3rem 2rem;
+    margin-top: 1rem;
+  }
+
+  .community-hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .community-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #e8d5a3;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+  }
+
+  .community-meta {
+    color: #b8a88a;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .community-meta span {
+    margin-right: 1.5rem;
+  }
+
+  .stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .stat-badge {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #e8d5a3;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+  }
+
+  /* Main Layout */
+  .page-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  /* Article Content */
+  article {
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  article section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #e8d5a3;
+  }
+
+  article section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  article h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1a3a5c;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  article h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #2c1810;
+    margin: 1.5rem 0 0.75rem;
+  }
+
+  article p {
+    margin-bottom: 1rem;
+    color: #3a2e26;
+  }
+
+  article ul, article ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  article li {
+    margin-bottom: 0.5rem;
+    color: #3a2e26;
+  }
+
+  article strong {
+    color: #1a3a5c;
+  }
+
+  article em {
+    color: #6b5d4f;
+  }
+
+  /* Notable Figures Grid */
+  .figures-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .figure-card {
+    background: #fdf6e3;
+    border-radius: 8px;
+    padding: 1.25rem;
+    border-left: 3px solid #1a5276;
+  }
+
+  .figure-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #1a3a5c;
+    margin-bottom: 0.25rem;
+  }
+
+  .figure-dates {
+    font-size: 0.8rem;
+    color: #b8a88a;
+    margin-bottom: 0.5rem;
+  }
+
+  .figure-description {
+    font-size: 0.9rem;
+    color: #4a4035;
+  }
+
+  /* Day Navigation */
+  .day-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-top: 2px solid #e8d5a3;
+    margin-top: 2rem;
+  }
+
+  .day-nav a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .day-nav-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #b8a88a;
+  }
+
+  .day-nav-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #1a3a5c;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: sticky;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sidebar-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  .sidebar-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #1a3a5c;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  .fact-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #f5eed9;
+    font-size: 0.9rem;
+  }
+
+  .fact-row:last-child { border-bottom: none; }
+
+  .fact-label { color: #6b5d4f; }
+  .fact-value { color: #2c1810; font-weight: 600; text-align: right; max-width: 55%; }
+
+  .heritage-day-badge {
+    text-align: center;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #1a5276 0%, #0d2137 100%);
+    border-radius: 8px;
+    color: white;
+  }
+
+  .heritage-day-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #c9a227;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .heritage-day-label {
+    font-size: 0.85rem;
+    color: #b8a88a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .share-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .share-btn {
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    font-family: 'Source Serif 4', serif;
+  }
+
+  .share-btn-copy {
+    background: #fdf6e3;
+    border: 2px solid #e8d5a3;
+    color: #2c1810;
+  }
+
+  .share-btn-copy:hover {
+    background: #e8d5a3;
+  }
+
+  .share-btn-twitter {
+    background: #1da1f2;
+    color: white;
+  }
+
+  .share-btn-twitter:hover { background: #0d8fd0; }
+
+  footer {
+    background: #1a3a5c;
+    color: #e8d5a3;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 900px) {
+    .page-content {
+      grid-template-columns: 1fr;
+    }
+    .sidebar {
+      position: static;
+    }
+    .community-hero h1 {
+      font-size: 2rem;
+    }
+    .figures-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+  <nav>
+    <div class="nav-logo">
+      <span>✡</span>
+      <span>Jewish Heritage Calendar</span>
+    </div>
+    <div class="nav-links">
+      <a href="../index.html">Today</a>
+      <a href="../calendar.html">Calendar</a>
+      <a href="../regions.html">Regions</a>
+      <a href="../index.html#about">About</a>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a>
+    <span>›</span>
+    <a href="../region/holy-land.html">Holy Land & Ancient Israel</a>
+    <span>›</span>
+    <span>Lublin</span>
+  </nav>
+
+  <!-- Community Hero -->
+  <div class="community-hero">
+    <div class="community-hero-inner">
+      <h1>Lublin</h1>
+      <div class="community-meta">
+        <span>Holy Land & Ancient Israel</span>
+        <span>Poland</span>
+        <span>Heritage Day 1 of 365</span>
+      </div>
+      <div class="stats-row">
+        <span class="stat-badge">Founded: Ancient</span>
+        <span class="stat-badge">Peak Population: Unknown</span>
+        <span class="stat-badge">Historical</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="page-content">
+    <article>
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>Lublin earned its sobriquet "the Jewish Oxford" and "the city of scholars" from the density and eminence of its Torah academies over four centuries. From the sixteenth century onward, Lublin was one of the three or four greatest centers of Jewish learning in the world, the city where the Council of Four Lands — the supreme governing body of Polish Jewry — held its sessions, where Kabbalists and legal codifiers shaped the religious life of all Ashkenazic Jews, and where, in the twentieth century, both the Lublin Yeshiva and the chassidic court of the Seer of Lublin attracted pilgrims from across Eastern Europe. The city also contained one of the largest concentrations of Jewish life in prewar Poland and was the site of the Majdanek concentration and extermination camp on its outskirts.</p>
+      </section>
+
+      <section id="historical-origins">
+        <h2>Historical Origins</h2>
+        <p>Jews lived in Lublin from at least the mid-fourteenth century, when records document Jewish merchants active in the city's trade fairs. Lublin was ideally situated for commerce: it lay at the intersection of major trade routes connecting western and eastern Poland, and its annual fairs were among the most important in Central Europe. Jews played central roles in these fairs as merchants, moneylenders, and craftsmen. By the late fifteenth century the community was substantial enough to maintain organized religious institutions, and in 1567 King Sigismund II Augustus granted the Lublin Jewish community a privilege of self-governance that became one of the foundational charters of Polish Jewish autonomy.</p>
+<p>The sixteenth century established Lublin's scholarly reputation. Rabbi Shalom Shakhna of Lublin (c. 1490–1558) founded the first great yeshiva in Poland here, attracting students from across Eastern Europe and establishing the Polish method of Talmudic study known as <em>pilpul</em> — intricate dialectical reasoning. His academy became the model for Polish Jewish education.</p>
+      </section>
+
+      <section id="golden-age">
+        <h2>Golden Age</h2>
+        <p>The apex of Lublin's influence came with the establishment of the Council of Four Lands (<em>Va'ad Arba Aratzot</em>), which from the late sixteenth century until its abolition by the Polish Sejm in 1764 served as the parliament and supreme court of Polish-Lithuanian Jewry. The Council met twice yearly, usually at the Lublin trade fair, to adjudicate disputes, allocate tax burdens, represent Jewish interests to the Polish crown, and issue religious rulings affecting all Polish Jews. Its sessions were attended by rabbinic authorities, lay leaders, and communal representatives from across the country; Lublin's centrality to Polish commerce made it the natural meeting place.</p>
+<p>Among Lublin's great scholars, Rabbi Meir ben Gedaliah of Lublin (the <em>Maharam of Lublin</em>, 1558–1616) was one of the foremost halachic authorities of his generation, whose responsa guided Jewish law across Europe. Rabbi Shlomo Luria (the <em>Maharshal</em>, 1510–1573) taught in Lublin and wrote one of the most searching critiques of the legal code <em>Shulchan Aruch</em>. The <em>Chozeh</em> (Seer) of Lublin, Rabbi Yaakov Yitzchak Horowitz (1745–1815), made Lublin the central court of Polish Hasidism and drew thousands of disciples to his <em>tish</em> (festive table). His court attracted such figures as Rabbi Menachem Mendel of Rimanov and the <em>Holy Yid</em> of Peshischa, making Lublin the seedbed from which much of Polish Hasidism grew.</p>
+<p>In 1930, Rabbi Meir Shapiro founded the Lublin Yeshiva (Yeshivat Chachmei Lublin), a magnificent purpose-built institution with its own dormitory, library, and dining hall — the grandest yeshiva building in the world at that time — and inaugurated the <em>Daf Yomi</em> program of daily Talmud study, one page per day, which would take seven and a half years to complete. The Daf Yomi cycle, which began on Rosh Hashana 1923 when Shapiro first proposed the idea at the Agudath Israel congress in Vienna, continues today with hundreds of thousands of participants worldwide.</p>
+      </section>
+
+      <section id="notable-figures">
+        <h2>Notable Figures</h2>
+        
+        <div class="figures-grid" id="figures-grid">
+          
+        </div>
+      </section>
+
+      <section id="institutions">
+        <h2>Institutions &amp; Sacred Spaces</h2>
+        
+      </section>
+
+      <section id="cultural-life">
+        <h2>Cultural Life</h2>
+        <p>Lublin's Jewish population of approximately 40,000 on the eve of World War II sustained a rich communal life: a lively Yiddish press, political parties spanning the spectrum from Agudath Israel to the Bund, Zionist youth movements, Hebrew schools, libraries, and theaters. The city had a significant Jewish working class in crafts and small industry alongside a commercial middle class. The interplay between Hasidic piety, Lithuanian-style yeshiva scholarship, and secular modernism gave Lublin's Jewish culture an unusually layered character.</p>
+      </section>
+
+      <section id="decline">
+        <h2>Decline &amp; Transformation</h2>
+        <p>Lublin was occupied by Germany in September 1939. Odilo Globocnik, the SS commander for Lublin district, made the city the headquarters for Operation Reinhard — the plan to murder all Jews in the General Government of occupied Poland. The Majdanek camp was built on the outskirts of Lublin and became both a concentration camp and extermination site. The Lublin ghetto was established in 1941 and liquidated in March–April 1942, when most of its inhabitants were transported to the Bełżec extermination camp. Majdanek continued to receive transports from across Europe until its liberation by Soviet forces in July 1944. Of Lublin's approximately 40,000 prewar Jews, the great majority perished.</p>
+      </section>
+
+      <section id="legacy">
+        <h2>Legacy &amp; Diaspora</h2>
+        <p>Lublin survivors and their descendants maintain memorial organizations. The Yeshivat Chachmei Lublin building was restored in the early 2000s and today houses a hotel, kosher restaurant, and museum dedicated to the yeshiva and Rabbi Meir Shapiro. The Majdanek museum and memorial is one of the best-preserved former Nazi camps in the world. The Daf Yomi cycle — Shapiro's enduring contribution — completed its fourteenth cycle in 2020 with worldwide Siyum HaShas celebrations gathering tens of thousands. Lublin's old cemeteries have been partially restored and are visited by descendants and scholars.</p>
+      </section>
+
+      <!-- Day Navigation -->
+      <div class="day-nav">
+        <a href="lwow.html">
+          <span class="day-nav-label">← Yesterday's Heritage Day</span>
+          <span class="day-nav-name">Lwów (Lemberg / Lviv)</span>
+        </a>
+        <a href="tarnow.html" style="text-align:right;">
+          <span class="day-nav-label">Tomorrow's Heritage Day →</span>
+          <span class="day-nav-name">Tarnów</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Heritage Day Badge -->
+      <div class="heritage-day-badge">
+        <div class="heritage-day-number">1</div>
+        <div class="heritage-day-label">Heritage Day of 365</div>
+        <div style="margin-top:0.75rem; font-size:0.9rem; color:#e8d5a3;">January 1</div>
+      </div>
+
+      <!-- Key Facts -->
+      <div class="sidebar-card">
+        <h3>Key Facts</h3>
+        <div class="fact-row">
+          <span class="fact-label">Founded</span>
+          <span class="fact-value">Ancient</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Peak Population</span>
+          <span class="fact-value">Unknown</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Languages</span>
+          <span class="fact-value">Hebrew, Aramaic, local vernacular</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Community Status</span>
+          <span class="fact-value">Historical</span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Region</span>
+          <span class="fact-value"><a href="../region/holy-land.html">Holy Land & Ancient Israel</a></span>
+        </div>
+        <div class="fact-row">
+          <span class="fact-label">Country Today</span>
+          <span class="fact-value">Poland</span>
+        </div>
+      </div>
+
+      <!-- Share -->
+      <div class="sidebar-card">
+        <h3>Share This Heritage Day</h3>
+        <div class="share-buttons">
+          <button class="share-btn share-btn-copy" onclick="copyLink()">Copy Link</button>
+          <button class="share-btn share-btn-twitter"
+            onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('Today is Lublin Heritage Day! ' + window.location.href))">
+            Share on X (Twitter)
+          </button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <p>Celebrating 365 Jewish Communities Worldwide · 2026</p>
+  </footer>
+
+  <script>
+    function copyLink() {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        const btn = document.querySelector('.share-btn-copy');
+        btn.textContent = 'Copied!';
+        setTimeout(() => btn.textContent = 'Copy Link', 2000);
+      });
+    }
+  </script>
+</body>
+</html>

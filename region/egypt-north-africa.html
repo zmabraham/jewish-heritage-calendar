@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Egypt & North Africa — Jewish Heritage Calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: #fdf6e3;
+    color: #2c1810;
+    line-height: 1.8;
+  }
+
+  a { color: #1a3a5c; text-decoration: none; transition: color 0.3s; }
+  a:hover { color: #c9a227; }
+
+  nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 2px solid #e8d5a3;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a3a5c;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: #2c1810;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    max-width: 1200px;
+    margin: 1.5rem auto 0;
+    padding: 0 2rem;
+    font-size: 0.9rem;
+    color: #6b5d4f;
+  }
+
+  .breadcrumb a { color: #1a3a5c; }
+  .breadcrumb span { margin: 0 0.5rem; color: #b8a88a; }
+
+  /* Region Hero */
+  .region-hero {
+    background: linear-gradient(135deg, #b7950b 0%, #0d2137 100%);
+    color: white;
+    padding: 4rem 2rem;
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .region-hero::after {
+    content: '✡';
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15rem;
+    opacity: 0.07;
+    color: #c9a227;
+  }
+
+  .region-hero-inner {
+    max-width: 1000px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .region-month-label {
+    display: inline-block;
+    background: rgba(201, 162, 39, 0.2);
+    border: 1px solid #c9a227;
+    color: #e8d5a3;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .region-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #e8d5a3;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+  }
+
+  .region-hero .tagline {
+    font-size: 1.3rem;
+    color: #b8a88a;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+  }
+
+  .region-hero .description {
+    font-size: 1.05rem;
+    color: #d4c5a8;
+    max-width: 800px;
+    line-height: 1.8;
+  }
+
+  .community-count-badge {
+    display: inline-block;
+    background: #c9a227;
+    color: #1a3a5c;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-top: 1.5rem;
+  }
+
+  /* Main Content */
+  .page-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+
+  /* Historical Arc */
+  .arc-section {
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  .arc-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1a3a5c;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  .arc-section p, .arc-section ul, .arc-section ol {
+    color: #3a2e26;
+    margin-bottom: 1rem;
+  }
+
+  .arc-section ul, .arc-section ol {
+    padding-left: 1.5rem;
+  }
+
+  .arc-section li { margin-bottom: 0.5rem; }
+
+  .arc-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #2c1810;
+    margin: 1.5rem 0 0.75rem;
+  }
+
+  /* Timeline */
+  .timeline {
+    position: relative;
+    padding-left: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, #b7950b, #e8d5a3);
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.375rem;
+    top: 0.4rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #b7950b;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px #b7950b;
+  }
+
+  .timeline-period {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #b7950b;
+    margin-bottom: 0.25rem;
+  }
+
+  .timeline-description {
+    color: #3a2e26;
+    font-size: 0.95rem;
+  }
+
+  /* Key Facts */
+  .key-facts-section {
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  .key-facts-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1a3a5c;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  .facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .fact-card {
+    background: #fdf6e3;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border-left: 4px solid #b7950b;
+  }
+
+  .fact-card p {
+    color: #3a2e26;
+    font-size: 0.95rem;
+  }
+
+  /* Community Grid */
+  .communities-section {
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  .communities-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1a3a5c;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  .communities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+
+  .community-tile {
+    background: #fdf6e3;
+    border-radius: 8px;
+    padding: 1.25rem;
+    border-left: 3px solid #b7950b;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .community-tile:hover {
+    background: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+
+  .community-tile-day {
+    font-size: 0.75rem;
+    color: #b8a88a;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .community-tile-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    color: #1a3a5c;
+    margin-bottom: 0.25rem;
+  }
+
+  .community-tile-country {
+    font-size: 0.8rem;
+    color: #6b5d4f;
+  }
+
+  /* Cultural Heritage */
+  .cultural-section {
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  .cultural-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1a3a5c;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  .cultural-section p, .cultural-section ul {
+    color: #3a2e26;
+    margin-bottom: 1rem;
+  }
+
+  .cultural-section ul { padding-left: 1.5rem; }
+  .cultural-section li { margin-bottom: 0.5rem; }
+
+  footer {
+    background: #1a3a5c;
+    color: #e8d5a3;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    .region-hero h1 { font-size: 2rem; }
+    .facts-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+  <nav>
+    <div class="nav-logo">
+      <span>✡</span>
+      <span>Jewish Heritage Calendar</span>
+    </div>
+    <div class="nav-links">
+      <a href="../index.html">Today</a>
+      <a href="../calendar.html">Calendar</a>
+      <a href="../regions.html">Regions</a>
+      <a href="../index.html#about">About</a>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a>
+    <span>›</span>
+    <a href="../regions.html">All Regions</a>
+    <span>›</span>
+    <span>Egypt & North Africa</span>
+  </nav>
+
+  <!-- Region Hero -->
+  <div class="region-hero">
+    <div class="region-hero-inner">
+      <span class="region-month-label">April</span>
+      <h1>Egypt & North Africa</h1>
+      <p class="tagline">From the Nile to the Atlantic, millennia of Jewish life</p>
+      <p class="description">North Africa's Jewish communities rank among the oldest in the diaspora. At Elephantine on the Nile, a Jewish military colony flourished in the 5th century BCE; at Alexandria, Philo philosophized and the Torah was translated into Greek. The Cairo Geniza — half a million documents hidden in a synagogue storeroom — revolutionized our understanding of medieval Jewish life. Morocco's Jews trace their roots to before the Roman era, Djerba's El Ghriba synagogue claims direct descent from Temple-era priests, and Kairouan produced the great codifier Rabbenu Chananel.</p>
+      <div class="community-count-badge">30 Communities This Month</div>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="page-content">
+
+    <!-- Historical Arc / Main Content -->
+    <div class="arc-section">
+      <h2>Historical Arc</h2>
+      <p>The great arc of North Africa — from Egypt's Nile delta westward through Libya, Tunisia, Algeria, and Morocco to the Atlantic coast — has been home to Jewish communities for over two millennia, and in Egypt's case considerably longer. This region produced two of the most transformative documents in Jewish intellectual history: the Septuagint, the Greek translation of the Hebrew Bible created in Alexandria in the third and second centuries BCE, and the Cairo Geniza, the extraordinary medieval archive discovered in a Cairo synagogue in the late nineteenth century, which revolutionized our understanding of medieval Mediterranean Jewish life. It also produced Maimonides, the greatest Jewish philosopher and legal codifier of the medieval world, who wrote his masterworks while serving as court physician in Cairo.</p>
+<p>The North African Jewish world was shaped by a succession of civilizations: Phoenician colonists who established Carthage (in modern Tunisia) and the Jewish communities that followed in their wake; the Roman Empire that made Africa a breadbasket and its cities cosmopolitan centers; the Byzantine period; the dramatic Islamic conquest of the seventh and eighth centuries; the Fatimid, Almohad, and other Islamic dynasties; the Ottoman Empire; French and Spanish colonial rule; and the catastrophic dislocations of the twentieth century. Through all these transformations, Jewish communities adapted while maintaining their distinctive identity, developing the Sephardic-Maghrebi culture that produced distinctive liturgy, cuisine, architecture, and legal tradition.</p>
+<p>North African Jewry numbered approximately 500,000 at its peak in the mid-twentieth century. The founding of the State of Israel in 1948 and the independence movements that swept North Africa in the 1950s and 1960s precipitated the near-total emigration of these communities, primarily to Israel, France, and Canada. Today, tiny remnants remain — most famously the community of Djerba, Tunisia — but the vibrant civilization of North African Jewry now lives primarily in its diaspora.</p>
+
+      <div class="timeline" id="timeline">
+            <div class="timeline-item">
+      <div class="timeline-period">Biblical Egypt</div>
+      <div class="timeline-description"></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-period">Persian</div>
+      <div class="timeline-description"></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-period">Hellenistic</div>
+      <div class="timeline-description"></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-period">Roman</div>
+      <div class="timeline-description"></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-period">Byzantine</div>
+      <div class="timeline-description"></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-period">Islamic</div>
+      <div class="timeline-description"></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-period">Ottoman</div>
+      <div class="timeline-description"></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-period">French Colonial</div>
+      <div class="timeline-description"></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-period">Modern Independence</div>
+      <div class="timeline-description"></div>
+    </div>
+      </div>
+    </div>
+
+    <!-- Key Facts -->
+    <div class="key-facts-section">
+      <h2>Key Facts &amp; Milestones</h2>
+      <div class="facts-grid" id="key-facts-grid">
+            <div class="fact-card">
+      <p>The Cairo Geniza, discovered 1896, preserved 400,000 manuscript fragments illuminating 1,000 years of Jewish life</p>
+    </div>
+    <div class="fact-card">
+      <p>Morocco's mellah system, originating in Fez in 1438, became the model for Jewish quarters across North Africa</p>
+    </div>
+    <div class="fact-card">
+      <p>The combined Jewish population of North Africa exceeded 600,000 before the mass emigrations of 1948–1970</p>
+    </div>
+      </div>
+    </div>
+
+    <!-- Cultural Heritage -->
+    <div class="cultural-section">
+      <h2>Cultural Heritage</h2>
+      <p>This region's cultural heritage spans music, literature, religious scholarship, cuisine, and distinctive liturgical traditions. Full cultural heritage content will be added as content files are created.</p>
+    </div>
+
+    <!-- Communities Grid (JS-rendered) -->
+    <div class="communities-section">
+      <h2>Communities This Month</h2>
+      <div class="communities-grid" id="communities-grid">
+        <p style="color:#6b5d4f; font-style:italic;">Loading communities…</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Celebrating 365 Jewish Communities Worldwide · 2026</p>
+  </footer>
+
+  <script>
+    // Load and render the communities for this region
+    document.addEventListener('DOMContentLoaded', async () => {
+      const regionId = 'egypt-north-africa';
+      const regionMonth = 4;
+
+      try {
+        const res = await fetch('../data/communities.json');
+        if (!res.ok) throw new Error('communities.json not available');
+        const communities = await res.json();
+
+        const regionCommunities = communities.filter(c =>
+          c.regionId === regionId ||
+          (c.month === regionMonth)
+        );
+
+        const grid = document.getElementById('communities-grid');
+        if (regionCommunities.length === 0) {
+          grid.innerHTML = '<p style="color:#6b5d4f; font-style:italic; grid-column:1/-1;">Community pages will appear here once generated.</p>';
+          return;
+        }
+
+        function getCountryEmoji(country) {
+          const flags = {
+            "Israel":"🇮🇱","Iraq":"🇮🇶","Syria":"🇸🇾","Turkey":"🇹🇷","Iran":"🇮🇷",
+            "Uzbekistan":"🇺🇿","Egypt":"🇪🇬","Morocco":"🇲🇦","Tunisia":"🇹🇳","Algeria":"🇩🇿",
+            "Spain":"🇪🇸","Portugal":"🇵🇹","France":"🇫🇷","Greece":"🇬🇷",
+            "Germany":"🇩🇪","Netherlands":"🇳🇱","Austria":"🇦🇹","Czech Republic":"🇨🇿",
+            "Hungary":"🇭🇺","Poland":"🇵🇱","Lithuania":"🇱🇹","Belarus":"🇧🇾",
+            "Ukraine":"🇺🇦","Russia":"🇷🇺","United Kingdom":"🇬🇧",
+            "United States":"🇺🇸","Canada":"🇨🇦","Argentina":"🇦🇷","Brazil":"🇧🇷"
+          };
+          return flags[country] || "🌍";
+        }
+
+        grid.innerHTML = regionCommunities.map(c => `
+          <div class="community-tile" onclick="location.href='../community/${c.id}.html'">
+            <div class="community-tile-day">Day ${c.dayOfYear}</div>
+            <div class="community-tile-name">${c.name}</div>
+            <div class="community-tile-country">${getCountryEmoji(c.country || '')} ${c.country || ''}</div>
+          </div>
+        `).join('');
+
+      } catch(err) {
+        document.getElementById('communities-grid').innerHTML =
+          '<p style="color:#6b5d4f; font-style:italic; grid-column:1/-1;">Community data will load here once communities.json is generated.</p>';
+      }
+    });
+  </script>
+</body>
+</html>
