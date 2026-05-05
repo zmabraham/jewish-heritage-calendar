@@ -200,7 +200,7 @@ function populateHero(community, regions) {
   const dateLabel = today.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
   container.innerHTML = `
     <span class="hero-badge">${dateLabel}</span>
-    <h1>Today: ${community.name} Jewish Heritage Day</h1>
+    <h1>${dateLabel}: ${community.name} Jewish Heritage Day</h1>
     <p class="hero-subheading">${regionName} · ${countryFlag} ${countryName}</p>
     <p class="hero-preview">${preview.slice(0, 200)}${preview.length > 200 ? '…' : ''}</p>
     <a href="community/${community.id}.html" class="hero-button">Learn about ${community.name} →</a>
