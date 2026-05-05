@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jewish Heritage Calendar — 365 Communities, One Per Day</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: #fdf6e3;
+    color: #2c1810;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  a {
+    color: #1a3a5c;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: #c9a227;
+  }
+
+  /* Navigation */
+  nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 2px solid #e8d5a3;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a3a5c;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: #2c1810;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .nav-links a:hover {
+    color: #c9a227;
+  }
+
+  .current-date {
+    color: #6b5d4f;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #1a3a5c 0%, #0d2137 100%);
+    color: white;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 500px;
+    opacity: 0.1;
+  }
+
+  .star-of-david {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 400px;
+    height: 400px;
+    opacity: 0.15;
+  }
+
+  .hero-content {
+    position: relative;
+    max-width: 800px;
+    z-index: 10;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background: rgba(201, 162, 39, 0.2);
+    border: 1px solid #c9a227;
+    color: #e8d5a3;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #e8d5a3;
+  }
+
+  .hero-subheading {
+    font-size: 1.3rem;
+    color: #b8a88a;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+
+  .hero-preview {
+    font-size: 1.1rem;
+    color: #d4c5a8;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .hero-button {
+    display: inline-block;
+    background: #c9a227;
+    color: #1a3a5c;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(201, 162, 39, 0.3);
+  }
+
+  .hero-button:hover {
+    background: #d4a82f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(201, 162, 39, 0.4);
+    color: #0d2137;
+  }
+
+  /* Loading State */
+  .loading-skeleton {
+    display: none;
+  }
+
+  .loading-skeleton.active {
+    display: block;
+  }
+
+  .skeleton-line {
+    background: linear-gradient(90deg, #2c3e50 25%, #34495e 50%, #2c3e50 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+
+  @keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+
+  /* This Month Section */
+  .this-month {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #1a3a5c;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .this-month-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+
+  .region-card {
+    background: #faf8f5;
+    padding: 2rem;
+    border-left: 5px solid #c9a227;
+  }
+
+  .region-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #1a3a5c;
+    margin-bottom: 0.5rem;
+  }
+
+  .region-month {
+    color: #c9a227;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+
+  .region-tagline {
+    font-style: italic;
+    color: #6b5d4f;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .region-description {
+    padding: 2rem;
+  }
+
+  .region-description h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #1a3a5c;
+    margin-bottom: 1rem;
+  }
+
+  .key-facts {
+    list-style: none;
+    margin-top: 1.5rem;
+  }
+
+  .key-facts li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #e8d5a3;
+    color: #4a4035;
+  }
+
+  .key-facts li:last-child {
+    border-bottom: none;
+  }
+
+  /* Upcoming Heritage Days */
+  .upcoming {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+  }
+
+  .upcoming-scroll {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    scrollbar-width: thin;
+    scrollbar-color: #c9a227 #e8d5a3;
+  }
+
+  .upcoming-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .upcoming-scroll::-webkit-scrollbar-track {
+    background: #e8d5a3;
+    border-radius: 4px;
+  }
+
+  .upcoming-scroll::-webkit-scrollbar-thumb {
+    background: #c9a227;
+    border-radius: 4px;
+  }
+
+  .upcoming-card {
+    min-width: 250px;
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+    border-top: 3px solid #c9a227;
+    cursor: pointer;
+  }
+
+  .upcoming-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  }
+
+  .upcoming-day {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #c9a227;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0.5rem;
+  }
+
+  .upcoming-date {
+    color: #6b5d4f;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .upcoming-community {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #1a3a5c;
+    margin-bottom: 0.5rem;
+  }
+
+  .upcoming-country {
+    color: #6b5d4f;
+    font-size: 0.9rem;
+  }
+
+  .region-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+
+  /* Browse by Month */
+  .month-browse {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+  }
+
+  .month-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .month-tile {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+    cursor: pointer;
+    border-left: 4px solid #c9a227;
+    text-align: center;
+  }
+
+  .month-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  }
+
+  .month-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #1a3a5c;
+    margin-bottom: 0.5rem;
+  }
+
+  .month-region {
+    color: #6b5d4f;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .month-communities {
+    color: #c9a227;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+
+  /* Footer */
+  footer {
+    background: #1a3a5c;
+    color: #e8d5a3;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .this-month-content {
+      grid-template-columns: 1fr;
+    }
+
+    .month-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-links {
+      gap: 1rem;
+    }
+
+    .star-of-david {
+      width: 200px;
+      height: 200px;
+      opacity: 0.08;
+    }
+  }
+
+  @media (max-width: 480px) {
+    nav {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .month-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">
+      <span>✡</span>
+      <span>Jewish Heritage Calendar</span>
+    </div>
+    <div class="nav-links">
+      <a href="#hero">Today</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="regions.html">Regions</a>
+      <a href="#about">About</a>
+    </div>
+    <div class="current-date" id="current-date"></div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <!-- Star of David decorative background -->
+    <svg class="star-of-david" viewBox="0 0 100 100">
+      <polygon points="50,5 95,75 5,75" fill="none" stroke="#c9a227" stroke-width="1"/>
+      <polygon points="50,95 5,25 95,25" fill="none" stroke="#c9a227" stroke-width="1"/>
+    </svg>
+
+    <!-- Loading skeleton (shown while fetching) -->
+    <div class="hero-content loading-skeleton" id="hero-loading">
+      <div class="skeleton-line" style="width: 200px; height: 30px;"></div>
+      <div class="skeleton-line" style="width: 400px; height: 50px;"></div>
+      <div class="skeleton-line" style="width: 300px; height: 30px;"></div>
+      <div class="skeleton-line" style="width: 100%; height: 80px;"></div>
+    </div>
+
+    <!-- Actual hero content (populated by JS) -->
+    <div class="hero-content" id="hero-community" style="display: none;">
+      <span class="hero-badge">Heritage Day [N] of 365</span>
+      <h1>Today is [Community] Heritage Day</h1>
+      <p class="hero-subheading">[Region] · [Country]</p>
+      <p class="hero-preview">Loading today's featured community...</p>
+      <a href="#" class="hero-button">Read Full Heritage Story →</a>
+    </div>
+  </section>
+
+  <!-- This Month Section -->
+  <section class="this-month">
+    <h2 class="section-title">This Month's Region</h2>
+    <div class="this-month-content" id="this-month-region">
+      <!-- Populated by JS -->
+      <div class="region-card">
+        <div class="region-month">[Month]</div>
+        <h3>[Region Name]</h3>
+        <p class="region-tagline">[Tagline]</p>
+      </div>
+      <div class="region-description">
+        <h4>About This Region</h4>
+        <p>[Description loading...]</p>
+        <ul class="key-facts">
+          <li>[Fact loading...]</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Heritage Days -->
+  <section class="upcoming">
+    <h2 class="section-title">Upcoming Heritage Days</h2>
+    <div class="upcoming-scroll" id="upcoming-days">
+      <!-- Populated by JS -->
+      <div class="upcoming-card">
+        <div class="upcoming-day">[N]</div>
+        <div class="upcoming-date">[Date]</div>
+        <div class="upcoming-community">[Community]</div>
+        <div class="upcoming-country">[Country]</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Browse by Month -->
+  <section class="month-browse">
+    <h2 class="section-title">Browse by Month</h2>
+    <div class="month-grid" id="month-browse">
+      <!-- Populated by JS -->
+      <div class="month-tile">
+        <div class="month-name">[Month]</div>
+        <div class="month-region">[Region]</div>
+        <div class="month-communities">[N] Communities</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Celebrating 365 Jewish Communities Worldwide · 2026</p>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

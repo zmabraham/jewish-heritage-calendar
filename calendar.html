@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All 365 Days — Jewish Heritage Calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: #fdf6e3;
+    color: #2c1810;
+    line-height: 1.7;
+  }
+
+  a { color: #1a3a5c; text-decoration: none; transition: color 0.3s; }
+  a:hover { color: #c9a227; }
+
+  nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 2px solid #e8d5a3;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a3a5c;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: #2c1810;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .nav-links a:hover { color: #c9a227; }
+
+  .page-header {
+    background: linear-gradient(135deg, #1a3a5c 0%, #0d2137 100%);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  .page-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #e8d5a3;
+    margin-bottom: 0.5rem;
+  }
+
+  .page-header p {
+    color: #b8a88a;
+    font-size: 1.1rem;
+  }
+
+  .calendar-controls {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .month-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .month-tab {
+    padding: 0.5rem 1rem;
+    border: 2px solid #e8d5a3;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Source Serif 4', serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #2c1810;
+    transition: all 0.3s;
+  }
+
+  .month-tab:hover {
+    border-color: #c9a227;
+    color: #c9a227;
+  }
+
+  .month-tab.active {
+    background: #1a3a5c;
+    border-color: #1a3a5c;
+    color: white;
+  }
+
+  .search-box {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .search-input {
+    padding: 0.6rem 1rem;
+    border: 2px solid #e8d5a3;
+    border-radius: 25px;
+    font-family: 'Source Serif 4', serif;
+    font-size: 0.9rem;
+    background: white;
+    color: #2c1810;
+    width: 280px;
+    transition: border-color 0.3s;
+  }
+
+  .search-input:focus {
+    outline: none;
+    border-color: #c9a227;
+  }
+
+  .search-input::placeholder {
+    color: #b8a88a;
+  }
+
+  .clear-search {
+    padding: 0.6rem 1.2rem;
+    background: #1a3a5c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Source Serif 4', serif;
+    font-size: 0.85rem;
+    transition: background 0.3s;
+  }
+
+  .clear-search:hover { background: #2e86c1; }
+
+  .calendar-grid {
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .day-cell {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: all 0.3s;
+    cursor: pointer;
+    border-left: 4px solid #e8d5a3;
+    position: relative;
+  }
+
+  .day-cell:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  }
+
+  .day-cell.today {
+    border: 2px solid #c9a227;
+    box-shadow: 0 4px 15px rgba(201,162,39,0.2);
+  }
+
+  .day-number {
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #c9a227;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .day-date {
+    font-size: 0.75rem;
+    color: #b8a88a;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .day-community {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: #1a3a5c;
+    margin-bottom: 0.25rem;
+    line-height: 1.3;
+  }
+
+  .day-country {
+    font-size: 0.8rem;
+    color: #6b5d4f;
+  }
+
+  .today-badge {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: #c9a227;
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+  }
+
+  .no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    color: #6b5d4f;
+    font-style: italic;
+    font-size: 1.1rem;
+  }
+
+  footer {
+    background: #1a3a5c;
+    color: #e8d5a3;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    .calendar-controls {
+      flex-direction: column;
+    }
+    .search-input {
+      width: 200px;
+    }
+    .page-header h1 {
+      font-size: 1.8rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <nav>
+    <div class="nav-logo">
+      <span>✡</span>
+      <span>Jewish Heritage Calendar</span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Today</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="regions.html">Regions</a>
+      <a href="index.html#about">About</a>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <h1>Jewish Heritage Calendar — All 365 Days</h1>
+    <p>Browse every community in the calendar, filter by month, or search by name</p>
+  </header>
+
+  <div class="calendar-controls">
+    <div class="month-tabs" id="month-tabs">
+      <button class="month-tab active" data-month="0">All</button>
+      <!-- JS populates month tabs -->
+    </div>
+    <div class="search-box">
+      <input type="text" class="search-input" id="search-input" placeholder="Search communities or countries…">
+      <button class="clear-search" id="clear-search">Clear</button>
+    </div>
+  </div>
+
+  <div class="calendar-grid" id="calendar-grid">
+    <!-- Populated by JS -->
+    <p style="grid-column:1/-1; padding:2rem; color:#6b5d4f; font-style:italic; text-align:center;">
+      Loading calendar data…
+    </p>
+  </div>
+
+  <footer>
+    <p id="footer-year">Celebrating 365 Jewish Communities Worldwide · 2026</p>
+  </footer>
+
+  <script>
+    const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+    function getDayOfYear(date) {
+      const start = new Date(date.getFullYear(), 0, 0);
+      return Math.floor((date - start) / (1000 * 60 * 60 * 24));
+    }
+
+    function getCountryEmoji(country) {
+      const flags = {
+        "Israel":"🇮🇱","Iraq":"🇮🇶","Syria":"🇸🇾","Turkey":"🇹🇷","Iran":"🇮🇷",
+        "Uzbekistan":"🇺🇿","Egypt":"🇪🇬","Morocco":"🇲🇦","Tunisia":"🇹🇳","Algeria":"🇩🇿","Libya":"🇱🇾",
+        "Spain":"🇪🇸","Portugal":"🇵🇹","France":"🇫🇷","Greece":"🇬🇷","Bulgaria":"🇧🇬",
+        "Germany":"🇩🇪","Netherlands":"🇳🇱","Austria":"🇦🇹","Czech Republic":"🇨🇿",
+        "Hungary":"🇭🇺","Slovakia":"🇸🇰","Poland":"🇵🇱","Lithuania":"🇱🇹","Belarus":"🇧🇾",
+        "Ukraine":"🇺🇦","Russia":"🇷🇺","Romania":"🇷🇴","Moldova":"🇲🇩",
+        "United Kingdom":"🇬🇧","United States":"🇺🇸","Canada":"🇨🇦","Argentina":"🇦🇷","Brazil":"🇧🇷"
+      };
+      return flags[country] || "🌍";
+    }
+
+    function getDayDate(dayOfYear) {
+      const year = new Date().getFullYear();
+      const d = new Date(year, 0, dayOfYear);
+      return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    }
+
+    function getDayMonth(dayOfYear) {
+      const year = new Date().getFullYear();
+      const d = new Date(year, 0, dayOfYear);
+      return d.getMonth() + 1;
+    }
+
+    let allCommunities = [];
+    let allRegions = [];
+    let activeMonth = 0;
+    let searchTerm = '';
+    const todayDOY = getDayOfYear(new Date());
+
+    function renderGrid() {
+      const grid = document.getElementById('calendar-grid');
+      let filtered = allCommunities;
+
+      if (activeMonth > 0) {
+        filtered = filtered.filter(c => getDayMonth(c.dayOfYear) === activeMonth);
+      }
+
+      if (searchTerm) {
+        const lc = searchTerm.toLowerCase();
+        filtered = filtered.filter(c =>
+          (c.name || '').toLowerCase().includes(lc) ||
+          (c.country || '').toLowerCase().includes(lc) ||
+          (c.region || '').toLowerCase().includes(lc)
+        );
+      }
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '<div class="no-results">No communities match your search.</div>';
+        return;
+      }
+
+      grid.innerHTML = filtered.map(c => {
+        const isToday = c.dayOfYear === todayDOY;
+        const region = allRegions.find(r => r.id === c.regionId) || {};
+        const borderColor = region.color || '#e8d5a3';
+        const flag = getCountryEmoji(c.country || '');
+        return `
+          <div class="day-cell${isToday ? ' today' : ''}"
+               style="border-left-color: ${borderColor}"
+               onclick="location.href='community/${c.id}.html'">
+            ${isToday ? '<span class="today-badge">TODAY</span>' : ''}
+            <div class="day-number">${c.dayOfYear}</div>
+            <div class="day-date">${getDayDate(c.dayOfYear)}</div>
+            <div class="day-community">${c.name}</div>
+            <div class="day-country">${flag} ${c.country || ''}</div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function buildMonthTabs(regions) {
+      const tabs = document.getElementById('month-tabs');
+      const monthButtons = regions.map(r =>
+        `<button class="month-tab" data-month="${r.month}">${r.monthName.slice(0,3)}</button>`
+      ).join('');
+      tabs.innerHTML = `<button class="month-tab active" data-month="0">All</button>${monthButtons}`;
+
+      tabs.querySelectorAll('.month-tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabs.querySelectorAll('.month-tab').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeMonth = parseInt(btn.dataset.month);
+          renderGrid();
+        });
+      });
+    }
+
+    document.getElementById('search-input').addEventListener('input', e => {
+      searchTerm = e.target.value.trim();
+      renderGrid();
+    });
+
+    document.getElementById('clear-search').addEventListener('click', () => {
+      document.getElementById('search-input').value = '';
+      searchTerm = '';
+      renderGrid();
+    });
+
+    document.addEventListener('DOMContentLoaded', async () => {
+      document.getElementById('footer-year').textContent =
+        `Celebrating 365 Jewish Communities Worldwide · ${new Date().getFullYear()}`;
+
+      try {
+        const [commRes, regRes] = await Promise.all([
+          fetch('/data/communities.json'),
+          fetch('/data/regions.json')
+        ]);
+
+        if (regRes.ok) allRegions = await regRes.json();
+        if (commRes.ok) {
+          allCommunities = await commRes.json();
+          buildMonthTabs(allRegions);
+          renderGrid();
+        } else {
+          document.getElementById('calendar-grid').innerHTML =
+            '<div class="no-results">communities.json not yet generated — run generate.py to create community files.</div>';
+          buildMonthTabs(allRegions);
+        }
+      } catch(err) {
+        document.getElementById('calendar-grid').innerHTML =
+          `<div class="no-results">Error loading data: ${err.message}</div>`;
+      }
+    });
+  </script>
+</body>
+</html>

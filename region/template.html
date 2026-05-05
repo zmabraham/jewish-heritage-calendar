@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{REGION_NAME}} — Jewish Heritage Calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: #fdf6e3;
+    color: #2c1810;
+    line-height: 1.8;
+  }
+
+  a { color: #1a3a5c; text-decoration: none; transition: color 0.3s; }
+  a:hover { color: #c9a227; }
+
+  nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 2px solid #e8d5a3;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a3a5c;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: #2c1810;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    max-width: 1200px;
+    margin: 1.5rem auto 0;
+    padding: 0 2rem;
+    font-size: 0.9rem;
+    color: #6b5d4f;
+  }
+
+  .breadcrumb a { color: #1a3a5c; }
+  .breadcrumb span { margin: 0 0.5rem; color: #b8a88a; }
+
+  /* Region Hero */
+  .region-hero {
+    background: linear-gradient(135deg, {{REGION_COLOR}} 0%, #0d2137 100%);
+    color: white;
+    padding: 4rem 2rem;
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .region-hero::after {
+    content: '✡';
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15rem;
+    opacity: 0.07;
+    color: #c9a227;
+  }
+
+  .region-hero-inner {
+    max-width: 1000px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .region-month-label {
+    display: inline-block;
+    background: rgba(201, 162, 39, 0.2);
+    border: 1px solid #c9a227;
+    color: #e8d5a3;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .region-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #e8d5a3;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+  }
+
+  .region-hero .tagline {
+    font-size: 1.3rem;
+    color: #b8a88a;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+  }
+
+  .region-hero .description {
+    font-size: 1.05rem;
+    color: #d4c5a8;
+    max-width: 800px;
+    line-height: 1.8;
+  }
+
+  .community-count-badge {
+    display: inline-block;
+    background: #c9a227;
+    color: #1a3a5c;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-top: 1.5rem;
+  }
+
+  /* Main Content */
+  .page-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+
+  /* Historical Arc */
+  .arc-section {
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  .arc-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1a3a5c;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  .arc-section p, .arc-section ul, .arc-section ol {
+    color: #3a2e26;
+    margin-bottom: 1rem;
+  }
+
+  .arc-section ul, .arc-section ol {
+    padding-left: 1.5rem;
+  }
+
+  .arc-section li { margin-bottom: 0.5rem; }
+
+  .arc-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #2c1810;
+    margin: 1.5rem 0 0.75rem;
+  }
+
+  /* Timeline */
+  .timeline {
+    position: relative;
+    padding-left: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, {{REGION_COLOR}}, #e8d5a3);
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.375rem;
+    top: 0.4rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: {{REGION_COLOR}};
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px {{REGION_COLOR}};
+  }
+
+  .timeline-period {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: {{REGION_COLOR}};
+    margin-bottom: 0.25rem;
+  }
+
+  .timeline-description {
+    color: #3a2e26;
+    font-size: 0.95rem;
+  }
+
+  /* Key Facts */
+  .key-facts-section {
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  .key-facts-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1a3a5c;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  .facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .fact-card {
+    background: #fdf6e3;
+    border-radius: 8px;
+    padding: 1.5rem;
+    border-left: 4px solid {{REGION_COLOR}};
+  }
+
+  .fact-card p {
+    color: #3a2e26;
+    font-size: 0.95rem;
+  }
+
+  /* Community Grid */
+  .communities-section {
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  .communities-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1a3a5c;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  .communities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+
+  .community-tile {
+    background: #fdf6e3;
+    border-radius: 8px;
+    padding: 1.25rem;
+    border-left: 3px solid {{REGION_COLOR}};
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .community-tile:hover {
+    background: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+
+  .community-tile-day {
+    font-size: 0.75rem;
+    color: #b8a88a;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .community-tile-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    color: #1a3a5c;
+    margin-bottom: 0.25rem;
+  }
+
+  .community-tile-country {
+    font-size: 0.8rem;
+    color: #6b5d4f;
+  }
+
+  /* Cultural Heritage */
+  .cultural-section {
+    background: white;
+    border-radius: 10px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  }
+
+  .cultural-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1a3a5c;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e8d5a3;
+  }
+
+  .cultural-section p, .cultural-section ul {
+    color: #3a2e26;
+    margin-bottom: 1rem;
+  }
+
+  .cultural-section ul { padding-left: 1.5rem; }
+  .cultural-section li { margin-bottom: 0.5rem; }
+
+  footer {
+    background: #1a3a5c;
+    color: #e8d5a3;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    .region-hero h1 { font-size: 2rem; }
+    .facts-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+  <nav>
+    <div class="nav-logo">
+      <span>✡</span>
+      <span>Jewish Heritage Calendar</span>
+    </div>
+    <div class="nav-links">
+      <a href="../index.html">Today</a>
+      <a href="../calendar.html">Calendar</a>
+      <a href="../regions.html">Regions</a>
+      <a href="../index.html#about">About</a>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a>
+    <span>›</span>
+    <a href="../regions.html">All Regions</a>
+    <span>›</span>
+    <span>{{REGION_NAME}}</span>
+  </nav>
+
+  <!-- Region Hero -->
+  <div class="region-hero">
+    <div class="region-hero-inner">
+      <span class="region-month-label">{{MONTH_NAME}}</span>
+      <h1>{{REGION_NAME}}</h1>
+      <p class="tagline">{{TAGLINE}}</p>
+      <p class="description">{{HERO_DESCRIPTION}}</p>
+      <div class="community-count-badge">{{COMMUNITY_COUNT}} Communities This Month</div>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="page-content">
+
+    <!-- Historical Arc / Main Content -->
+    <div class="arc-section">
+      <h2>Historical Arc</h2>
+      {{HISTORICAL_ARC_CONTENT}}
+
+      <div class="timeline" id="timeline">
+        {{TIMELINE_HTML}}
+      </div>
+    </div>
+
+    <!-- Key Facts -->
+    <div class="key-facts-section">
+      <h2>Key Facts &amp; Milestones</h2>
+      <div class="facts-grid" id="key-facts-grid">
+        {{KEY_FACTS_HTML}}
+      </div>
+    </div>
+
+    <!-- Cultural Heritage -->
+    <div class="cultural-section">
+      <h2>Cultural Heritage</h2>
+      {{CULTURAL_CONTENT}}
+    </div>
+
+    <!-- Communities Grid (JS-rendered) -->
+    <div class="communities-section">
+      <h2>Communities This Month</h2>
+      <div class="communities-grid" id="communities-grid">
+        <p style="color:#6b5d4f; font-style:italic;">Loading communities…</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Celebrating 365 Jewish Communities Worldwide · {{YEAR}}</p>
+  </footer>
+
+  <script>
+    // Load and render the communities for this region
+    document.addEventListener('DOMContentLoaded', async () => {
+      const regionId = '{{REGION_ID}}';
+      const regionMonth = {{REGION_MONTH}};
+
+      try {
+        const res = await fetch('../data/communities.json');
+        if (!res.ok) throw new Error('communities.json not available');
+        const communities = await res.json();
+
+        const regionCommunities = communities.filter(c =>
+          c.regionId === regionId ||
+          (c.month === regionMonth)
+        );
+
+        const grid = document.getElementById('communities-grid');
+        if (regionCommunities.length === 0) {
+          grid.innerHTML = '<p style="color:#6b5d4f; font-style:italic; grid-column:1/-1;">Community pages will appear here once generated.</p>';
+          return;
+        }
+
+        function getCountryEmoji(country) {
+          const flags = {
+            "Israel":"🇮🇱","Iraq":"🇮🇶","Syria":"🇸🇾","Turkey":"🇹🇷","Iran":"🇮🇷",
+            "Uzbekistan":"🇺🇿","Egypt":"🇪🇬","Morocco":"🇲🇦","Tunisia":"🇹🇳","Algeria":"🇩🇿",
+            "Spain":"🇪🇸","Portugal":"🇵🇹","France":"🇫🇷","Greece":"🇬🇷",
+            "Germany":"🇩🇪","Netherlands":"🇳🇱","Austria":"🇦🇹","Czech Republic":"🇨🇿",
+            "Hungary":"🇭🇺","Poland":"🇵🇱","Lithuania":"🇱🇹","Belarus":"🇧🇾",
+            "Ukraine":"🇺🇦","Russia":"🇷🇺","United Kingdom":"🇬🇧",
+            "United States":"🇺🇸","Canada":"🇨🇦","Argentina":"🇦🇷","Brazil":"🇧🇷"
+          };
+          return flags[country] || "🌍";
+        }
+
+        grid.innerHTML = regionCommunities.map(c => `
+          <div class="community-tile" onclick="location.href='../community/${c.id}.html'">
+            <div class="community-tile-day">Day ${c.dayOfYear}</div>
+            <div class="community-tile-name">${c.name}</div>
+            <div class="community-tile-country">${getCountryEmoji(c.country || '')} ${c.country || ''}</div>
+          </div>
+        `).join('');
+
+      } catch(err) {
+        document.getElementById('communities-grid').innerHTML =
+          '<p style="color:#6b5d4f; font-style:italic; grid-column:1/-1;">Community data will load here once communities.json is generated.</p>';
+      }
+    });
+  </script>
+</body>
+</html>

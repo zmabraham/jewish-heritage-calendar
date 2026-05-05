@@ -1,0 +1,4619 @@
+[
+  {
+    "id": "jerusalem",
+    "rank": 1,
+    "name": "Jerusalem",
+    "region": "holy-land",
+    "country": "Israel/Palestine",
+    "coordinates": [
+      31.78,
+      35.22
+    ],
+    "day": 1,
+    "dateNote": "Jan 1 — symbolic New Year; eternal capital of Jewish people"
+  },
+  {
+    "id": "pinsk",
+    "rank": 46,
+    "name": "Pinsk",
+    "region": "eastern-europe-poland",
+    "country": "Belarus",
+    "coordinates": [
+      52.12,
+      26.1
+    ],
+    "day": 2
+  },
+  {
+    "id": "london",
+    "rank": 71,
+    "name": "London",
+    "region": "british-isles-asia",
+    "country": "United Kingdom",
+    "coordinates": [
+      51.51,
+      -0.12
+    ],
+    "day": 3
+  },
+  {
+    "id": "przysucha",
+    "rank": 126,
+    "name": "Przysucha",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      51.36,
+      20.79
+    ],
+    "day": 4
+  },
+  {
+    "id": "slutsk",
+    "rank": 129,
+    "name": "Slutsk",
+    "region": "russia-ukraine-pale",
+    "country": "Belarus",
+    "coordinates": [
+      53.03,
+      27.56
+    ],
+    "day": 5
+  },
+  {
+    "id": "lyady",
+    "rank": 134,
+    "name": "Lyady",
+    "region": "russia-ukraine-pale",
+    "country": "Belarus",
+    "coordinates": [
+      54.1,
+      30.97
+    ],
+    "day": 6
+  },
+  {
+    "id": "altona",
+    "rank": 144,
+    "name": "Altona",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      53.55,
+      9.93
+    ],
+    "day": 7
+  },
+  {
+    "id": "posquieres",
+    "rank": 149,
+    "name": "Posquières (Vauvert)",
+    "region": "iberian-sephardic",
+    "country": "France",
+    "coordinates": [
+      43.69,
+      4.27
+    ],
+    "day": 8
+  },
+  {
+    "id": "carpentras",
+    "rank": 150,
+    "name": "Carpentras",
+    "region": "iberian-sephardic",
+    "country": "France",
+    "coordinates": [
+      44.06,
+      5.05
+    ],
+    "day": 9
+  },
+  {
+    "id": "tiberias",
+    "rank": 3,
+    "name": "Tiberias (Tveria)",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      32.79,
+      35.53
+    ],
+    "day": 10,
+    "dateNote": "Jan 10 — seat of Sanhedrin; Jerusalem Talmud redacted here"
+  },
+  {
+    "id": "perpignan",
+    "rank": 155,
+    "name": "Perpignan",
+    "region": "iberian-sephardic",
+    "country": "France",
+    "coordinates": [
+      42.7,
+      2.9
+    ],
+    "day": 11
+  },
+  {
+    "id": "wurzburg",
+    "rank": 157,
+    "name": "Würzburg",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      49.79,
+      9.95
+    ],
+    "day": 12
+  },
+  {
+    "id": "hameln",
+    "rank": 162,
+    "name": "Hameln",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      52.1,
+      9.36
+    ],
+    "day": 13
+  },
+  {
+    "id": "safed",
+    "rank": 4,
+    "name": "Safed (Tzfat)",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      32.96,
+      35.5
+    ],
+    "day": 14,
+    "dateNote": "Jan 14 — Kabbalistic renaissance under Rabbi Karo & Luria"
+  },
+  {
+    "id": "offenbach",
+    "rank": 164,
+    "name": "Offenbach",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      50.1,
+      8.76
+    ],
+    "day": 15
+  },
+  {
+    "id": "kassel",
+    "rank": 165,
+    "name": "Kassel",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      51.31,
+      9.5
+    ],
+    "day": 16
+  },
+  {
+    "id": "brunswick",
+    "rank": 166,
+    "name": "Brunswick",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      52.27,
+      10.52
+    ],
+    "day": 17
+  },
+  {
+    "id": "hebron",
+    "rank": 5,
+    "name": "Hebron",
+    "region": "holy-land",
+    "country": "Israel/Palestine",
+    "coordinates": [
+      31.53,
+      35.1
+    ],
+    "day": 18,
+    "dateNote": "Jan 18 — burial site of the Patriarchs; ancient Jewish center"
+  },
+  {
+    "id": "rotterdam",
+    "rank": 167,
+    "name": "Rotterdam",
+    "region": "western-europe",
+    "country": "Netherlands",
+    "coordinates": [
+      51.92,
+      4.48
+    ],
+    "day": 19
+  },
+  {
+    "id": "antwerp",
+    "rank": 168,
+    "name": "Antwerp",
+    "region": "western-europe",
+    "country": "Belgium",
+    "coordinates": [
+      51.22,
+      4.4
+    ],
+    "day": 20
+  },
+  {
+    "id": "brno",
+    "rank": 169,
+    "name": "Brno",
+    "region": "austro-hungarian",
+    "country": "Czech Republic",
+    "coordinates": [
+      49.2,
+      16.61
+    ],
+    "day": 21
+  },
+  {
+    "id": "yavneh",
+    "rank": 6,
+    "name": "Yavneh (Jabneh)",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      31.88,
+      34.74
+    ],
+    "day": 22,
+    "dateNote": "Jan 22 — Rabban Yochanan ben Zakkai reestablished Torah learning here after Temple destruction"
+  },
+  {
+    "id": "teplitz",
+    "rank": 170,
+    "name": "Teplitz (Teplice)",
+    "region": "austro-hungarian",
+    "country": "Czech Republic",
+    "coordinates": [
+      50.64,
+      13.83
+    ],
+    "day": 23
+  },
+  {
+    "id": "theresienstadt",
+    "rank": 172,
+    "name": "Theresienstadt",
+    "region": "austro-hungarian",
+    "country": "Czech Republic",
+    "coordinates": [
+      50.51,
+      14.17
+    ],
+    "day": 24
+  },
+  {
+    "id": "usha",
+    "rank": 7,
+    "name": "Usha",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      32.78,
+      35.12
+    ],
+    "day": 25,
+    "dateNote": "Jan 25 — Sanhedrin reconvened at Usha after Bar Kokhba revolt"
+  },
+  {
+    "id": "valencia",
+    "rank": 187,
+    "name": "Valencia",
+    "region": "iberian-sephardic",
+    "country": "Spain",
+    "coordinates": [
+      39.47,
+      -0.38
+    ],
+    "day": 26
+  },
+  {
+    "id": "oswiecim",
+    "rank": 318,
+    "name": "Auschwitz (Oświęcim)",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      50.03,
+      19.23
+    ],
+    "day": 27,
+    "dateNote": "Jan 27 — Liberation of Auschwitz; International Holocaust Remembrance Day"
+  },
+  {
+    "id": "sepphoris",
+    "rank": 8,
+    "name": "Sepphoris (Tzippori)",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      32.75,
+      35.28
+    ],
+    "day": 28,
+    "dateNote": "Jan 28 — Mishnah redacted here by Rabbi Judah HaNasi"
+  },
+  {
+    "id": "malaga",
+    "rank": 188,
+    "name": "Málaga",
+    "region": "iberian-sephardic",
+    "country": "Spain",
+    "coordinates": [
+      36.72,
+      -4.42
+    ],
+    "day": 29
+  },
+  {
+    "id": "rhodes",
+    "rank": 194,
+    "name": "Rhodes",
+    "region": "ottoman-balkans",
+    "country": "Greece",
+    "coordinates": [
+      36.44,
+      28.22
+    ],
+    "day": 30
+  },
+  {
+    "id": "lydda",
+    "rank": 9,
+    "name": "Lydda (Lod)",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      31.95,
+      34.89
+    ],
+    "day": 31,
+    "dateNote": "Jan 31 — ancient rabbinic center; seat of great halakhic authorities"
+  },
+  {
+    "id": "babylonia",
+    "rank": 2,
+    "name": "Babylonia (Sura, Pumbeditha, Nehardea)",
+    "region": "babylonia-mesopotamia",
+    "country": "Iraq",
+    "coordinates": [
+      31.99,
+      44.93
+    ],
+    "day": 32,
+    "dateNote": "Feb 1 — Talmudic academies at Sura & Pumbeditha founded"
+  },
+  {
+    "id": "candia",
+    "rank": 195,
+    "name": "Candia (Heraklion, Crete)",
+    "region": "ottoman-balkans",
+    "country": "Greece",
+    "coordinates": [
+      35.34,
+      25.13
+    ],
+    "day": 33
+  },
+  {
+    "id": "jaffa",
+    "rank": 77,
+    "name": "Jaffa",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      32.05,
+      34.75
+    ],
+    "day": 34,
+    "dateNote": "Feb 3 — ancient port; first aliyah settlement nearby"
+  },
+  {
+    "id": "baghdad",
+    "rank": 19,
+    "name": "Baghdad",
+    "region": "babylonia-mesopotamia",
+    "country": "Iraq",
+    "coordinates": [
+      33.34,
+      44.4
+    ],
+    "day": 35,
+    "dateNote": "Feb 4 — Exilarch seat; Geonim led world Jewry from Baghdad"
+  },
+  {
+    "id": "ioannina",
+    "rank": 196,
+    "name": "Ioannina",
+    "region": "ottoman-balkans",
+    "country": "Greece",
+    "coordinates": [
+      39.66,
+      20.85
+    ],
+    "day": 36
+  },
+  {
+    "id": "haifa",
+    "rank": 78,
+    "name": "Haifa",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      32.82,
+      35.0
+    ],
+    "day": 37,
+    "dateNote": "Feb 6 — Carmel mountain community; modern port city"
+  },
+  {
+    "id": "monastir",
+    "rank": 197,
+    "name": "Monastir (Bitola)",
+    "region": "ottoman-balkans",
+    "country": "North Macedonia",
+    "coordinates": [
+      41.03,
+      21.33
+    ],
+    "day": 38
+  },
+  {
+    "id": "ruschuk",
+    "rank": 198,
+    "name": "Ruschuk (Ruse)",
+    "region": "ottoman-balkans",
+    "country": "Bulgaria",
+    "coordinates": [
+      43.85,
+      25.95
+    ],
+    "day": 39
+  },
+  {
+    "id": "gaza",
+    "rank": 79,
+    "name": "Gaza",
+    "region": "holy-land",
+    "country": "Israel/Palestine",
+    "coordinates": [
+      31.51,
+      34.46
+    ],
+    "day": 40,
+    "dateNote": "Feb 9 — rabbinic community; Nathan of Gaza born here"
+  },
+  {
+    "id": "dupnitsa",
+    "rank": 200,
+    "name": "Dupnitsa",
+    "region": "ottoman-balkans",
+    "country": "Bulgaria",
+    "coordinates": [
+      42.27,
+      23.12
+    ],
+    "day": 41
+  },
+  {
+    "id": "serres",
+    "rank": 201,
+    "name": "Serres",
+    "region": "ottoman-balkans",
+    "country": "Greece",
+    "coordinates": [
+      41.09,
+      23.55
+    ],
+    "day": 42
+  },
+  {
+    "id": "ashkelon",
+    "rank": 80,
+    "name": "Ashkelon",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      31.67,
+      34.57
+    ],
+    "day": 43,
+    "dateNote": "Feb 12 — Philistine-era Jewish presence; Roman synagogue"
+  },
+  {
+    "id": "prague",
+    "rank": 16,
+    "name": "Prague",
+    "region": "austro-hungarian",
+    "country": "Czech Republic",
+    "coordinates": [
+      50.08,
+      14.44
+    ],
+    "day": 44,
+    "dateNote": "Feb 13 — first records of Prague Jewish community"
+  },
+  {
+    "id": "larissa",
+    "rank": 202,
+    "name": "Larissa",
+    "region": "ottoman-balkans",
+    "country": "Greece",
+    "coordinates": [
+      39.64,
+      22.42
+    ],
+    "day": 45
+  },
+  {
+    "id": "acre",
+    "rank": 81,
+    "name": "Acre (Akko)",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      32.92,
+      35.07
+    ],
+    "day": 46,
+    "dateNote": "Feb 15 — Crusader-era center; Nachmanides' port"
+  },
+  {
+    "id": "demotika",
+    "rank": 203,
+    "name": "Demotika (Didymoticho)",
+    "region": "ottoman-balkans",
+    "country": "Greece",
+    "coordinates": [
+      41.35,
+      26.49
+    ],
+    "day": 47
+  },
+  {
+    "id": "komotini",
+    "rank": 204,
+    "name": "Komotini (Gumuldjina)",
+    "region": "ottoman-balkans",
+    "country": "Greece",
+    "coordinates": [
+      41.12,
+      25.4
+    ],
+    "day": 48
+  },
+  {
+    "id": "beth-alpha",
+    "rank": 82,
+    "name": "Beth Alpha",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      32.52,
+      35.42
+    ],
+    "day": 49,
+    "dateNote": "Feb 18 — stunning mosaic zodiac synagogue, 6th century CE"
+  },
+  {
+    "id": "hania",
+    "rank": 205,
+    "name": "Hania (Chania)",
+    "region": "ottoman-balkans",
+    "country": "Greece",
+    "coordinates": [
+      35.51,
+      24.02
+    ],
+    "day": 50
+  },
+  {
+    "id": "gallipoli",
+    "rank": 206,
+    "name": "Gallipoli",
+    "region": "ottoman-balkans",
+    "country": "Turkey",
+    "coordinates": [
+      40.4,
+      26.67
+    ],
+    "day": 51
+  },
+  {
+    "id": "ein-gedi",
+    "rank": 83,
+    "name": "Ein Gedi",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      31.46,
+      35.39
+    ],
+    "day": 52,
+    "dateNote": "Feb 21 — Dead Sea oasis community; ancient synagogue"
+  },
+  {
+    "id": "dulcigno",
+    "rank": 207,
+    "name": "Dulcigno (Ulcinj)",
+    "region": "ottoman-balkans",
+    "country": "Montenegro",
+    "coordinates": [
+      41.92,
+      19.22
+    ],
+    "day": 53
+  },
+  {
+    "id": "tangier",
+    "rank": 211,
+    "name": "Tangier",
+    "region": "egypt-north-africa",
+    "country": "Morocco",
+    "coordinates": [
+      35.76,
+      -5.8
+    ],
+    "day": 54
+  },
+  {
+    "id": "qumran",
+    "rank": 84,
+    "name": "Qumran",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      31.74,
+      35.46
+    ],
+    "day": 55,
+    "dateNote": "Feb 24 — Dead Sea Scrolls discovered here 1947"
+  },
+  {
+    "id": "ashdod",
+    "rank": 225,
+    "name": "Ashdod",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      31.8,
+      34.65
+    ],
+    "day": 56
+  },
+  {
+    "id": "rehov",
+    "rank": 226,
+    "name": "Rehov",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      32.49,
+      35.51
+    ],
+    "day": 57
+  },
+  {
+    "id": "bethlehem",
+    "rank": 85,
+    "name": "Bethlehem",
+    "region": "holy-land",
+    "country": "Israel/Palestine",
+    "coordinates": [
+      31.7,
+      35.21
+    ],
+    "day": 58,
+    "dateNote": "Feb 27 — birthplace of King David; tomb of Rachel"
+  },
+  {
+    "id": "gamala",
+    "rank": 227,
+    "name": "Gamla (Gamala)",
+    "region": "holy-land",
+    "country": "Israel/Syria",
+    "coordinates": [
+      32.9,
+      35.76
+    ],
+    "day": 59
+  },
+  {
+    "id": "hippos",
+    "rank": 228,
+    "name": "Hippos (Sussita)",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      32.77,
+      35.67
+    ],
+    "day": 60
+  },
+  {
+    "id": "hammat-tiberias",
+    "rank": 86,
+    "name": "Hammat Tiberias",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      32.77,
+      35.55
+    ],
+    "day": 61,
+    "dateNote": "March 2 — ancient synagogue; hot springs; Roman-era community"
+  },
+  {
+    "id": "nazareth",
+    "rank": 229,
+    "name": "Nazareth",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      32.7,
+      35.3
+    ],
+    "day": 62
+  },
+  {
+    "id": "isfahan",
+    "rank": 93,
+    "name": "Isfahan",
+    "region": "persia-central-asia",
+    "country": "Iran",
+    "coordinates": [
+      32.66,
+      51.68
+    ],
+    "day": 63,
+    "dateNote": "March 4 — royal capital; Judeo-Persian poets"
+  },
+  {
+    "id": "kufa",
+    "rank": 87,
+    "name": "Kufa",
+    "region": "babylonia-mesopotamia",
+    "country": "Iraq",
+    "coordinates": [
+      32.03,
+      44.4
+    ],
+    "day": 64,
+    "dateNote": "March 5 — major early Islamic-era Jewish center near Sura"
+  },
+  {
+    "id": "modiin",
+    "rank": 230,
+    "name": "Modi'in",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      31.9,
+      35.01
+    ],
+    "day": 65
+  },
+  {
+    "id": "mashhad",
+    "rank": 94,
+    "name": "Mashhad",
+    "region": "persia-central-asia",
+    "country": "Iran",
+    "coordinates": [
+      36.3,
+      59.6
+    ],
+    "day": 66,
+    "dateNote": "March 7 — forced conversion 1839; Anusim (crypto-Jews) of Mashhad"
+  },
+  {
+    "id": "hillah",
+    "rank": 88,
+    "name": "Hillah",
+    "region": "babylonia-mesopotamia",
+    "country": "Iraq",
+    "coordinates": [
+      32.47,
+      44.43
+    ],
+    "day": 67,
+    "dateNote": "March 8 — near ancient Babylon; prominent Jewish community"
+  },
+  {
+    "id": "gadara",
+    "rank": 234,
+    "name": "Gadara",
+    "region": "holy-land",
+    "country": "Jordan",
+    "coordinates": [
+      32.65,
+      35.68
+    ],
+    "day": 68
+  },
+  {
+    "id": "hamadan",
+    "rank": 95,
+    "name": "Hamadan",
+    "region": "persia-central-asia",
+    "country": "Iran",
+    "coordinates": [
+      34.8,
+      48.52
+    ],
+    "day": 69,
+    "dateNote": "March 10 — tomb of Mordecai and Esther; ancient capital of Medes"
+  },
+  {
+    "id": "nisibis",
+    "rank": 89,
+    "name": "Nisibis",
+    "region": "babylonia-mesopotamia",
+    "country": "Iraq/Turkey",
+    "coordinates": [
+      37.07,
+      41.22
+    ],
+    "day": 70,
+    "dateNote": "March 11 — great academy before Babylonian centers rose"
+  },
+  {
+    "id": "aphrodisias",
+    "rank": 237,
+    "name": "Aphrodisias",
+    "region": "ottoman-balkans",
+    "country": "Turkey",
+    "coordinates": [
+      37.71,
+      28.73
+    ],
+    "day": 71
+  },
+  {
+    "id": "aden",
+    "rank": 96,
+    "name": "Aden",
+    "region": "persia-central-asia",
+    "country": "Yemen",
+    "coordinates": [
+      12.78,
+      45.02
+    ],
+    "day": 72,
+    "dateNote": "March 13 — major port; Yemenite Jewish trading outpost"
+  },
+  {
+    "id": "callinicum",
+    "rank": 90,
+    "name": "Callinicum (Raqqa)",
+    "region": "babylonia-mesopotamia",
+    "country": "Syria",
+    "coordinates": [
+      35.95,
+      39.01
+    ],
+    "day": 73,
+    "dateNote": "March 14 — ancient Syriac Jewish community; 5th century synagogue"
+  },
+  {
+    "id": "salonika",
+    "rank": 21,
+    "name": "Salonica (Thessaloniki)",
+    "region": "ottoman-balkans",
+    "country": "Greece",
+    "coordinates": [
+      40.64,
+      22.94
+    ],
+    "day": 74,
+    "dateNote": "March 15 — Purim de los Christianos, local Purim of Salonika"
+  },
+  {
+    "id": "mokka",
+    "rank": 97,
+    "name": "Mokha (Mokka)",
+    "region": "persia-central-asia",
+    "country": "Yemen",
+    "coordinates": [
+      13.32,
+      43.25
+    ],
+    "day": 75,
+    "dateNote": "March 16 — coffee trade; ancient Yemenite Jewish port"
+  },
+  {
+    "id": "tadmor",
+    "rank": 91,
+    "name": "Tadmor (Palmyra)",
+    "region": "babylonia-mesopotamia",
+    "country": "Syria",
+    "coordinates": [
+      34.55,
+      38.27
+    ],
+    "day": 76,
+    "dateNote": "March 17 — Queen Zenobia had Jewish minister Longinus"
+  },
+  {
+    "id": "beit-jibrin",
+    "rank": 242,
+    "name": "Beit Jibrin",
+    "region": "holy-land",
+    "country": "Israel/Palestine",
+    "coordinates": [
+      31.61,
+      34.9
+    ],
+    "day": 77
+  },
+  {
+    "id": "bukhara",
+    "rank": 100,
+    "name": "Bukhara",
+    "region": "persia-central-asia",
+    "country": "Uzbekistan",
+    "coordinates": [
+      39.77,
+      64.42
+    ],
+    "day": 78,
+    "dateNote": "March 19 — Bukharan Jews; Silk Road hub; synagogue from 14th c."
+  },
+  {
+    "id": "basra",
+    "rank": 92,
+    "name": "Basra",
+    "region": "babylonia-mesopotamia",
+    "country": "Iraq",
+    "coordinates": [
+      30.51,
+      47.81
+    ],
+    "day": 79,
+    "dateNote": "March 20 — major port community; trading hub of Iraqi Jews"
+  },
+  {
+    "id": "eishyshok",
+    "rank": 250,
+    "name": "Eishyshok",
+    "region": "eastern-europe-poland",
+    "country": "Lithuania",
+    "coordinates": [
+      54.23,
+      24.98
+    ],
+    "day": 80
+  },
+  {
+    "id": "herat",
+    "rank": 101,
+    "name": "Herat",
+    "region": "persia-central-asia",
+    "country": "Afghanistan",
+    "coordinates": [
+      34.35,
+      62.2
+    ],
+    "day": 81,
+    "dateNote": "March 22 — ancient Jewish community; Afghan Jewry center"
+  },
+  {
+    "id": "herodium",
+    "rank": 231,
+    "name": "Herodium",
+    "region": "holy-land",
+    "country": "Israel/Palestine",
+    "coordinates": [
+      31.66,
+      35.24
+    ],
+    "day": 82,
+    "dateNote": "March 23 — Herod's palace; Jewish rebels' fortress 66–71 CE"
+  },
+  {
+    "id": "sanaa",
+    "rank": 68,
+    "name": "Sana'a",
+    "region": "persia-central-asia",
+    "country": "Yemen",
+    "coordinates": [
+      15.36,
+      44.19
+    ],
+    "day": 83,
+    "dateNote": "March 24 — oldest documented Yemenite Jewish community"
+  },
+  {
+    "id": "hormuz",
+    "rank": 248,
+    "name": "Hormuz",
+    "region": "persia-central-asia",
+    "country": "Iran",
+    "coordinates": [
+      27.08,
+      56.46
+    ],
+    "day": 84,
+    "dateNote": "March 25 — Persian Gulf trade; Jewish merchants"
+  },
+  {
+    "id": "beth-shean",
+    "rank": 232,
+    "name": "Beth Shean (Scythopolis)",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      32.5,
+      35.5
+    ],
+    "day": 85,
+    "dateNote": "March 26 — crossroads; Roman-era synagogue mosaics"
+  },
+  {
+    "id": "lomza",
+    "rank": 253,
+    "name": "Łomża",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      53.18,
+      22.06
+    ],
+    "day": 86
+  },
+  {
+    "id": "siedlce",
+    "rank": 255,
+    "name": "Siedlce",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      52.17,
+      22.28
+    ],
+    "day": 87
+  },
+  {
+    "id": "narbata",
+    "rank": 233,
+    "name": "Narbata",
+    "region": "holy-land",
+    "country": "Israel/Palestine",
+    "coordinates": [
+      32.23,
+      35.12
+    ],
+    "day": 88,
+    "dateNote": "March 29 — Roman-era fortified Jewish town"
+  },
+  {
+    "id": "wlodzimierzec",
+    "rank": 257,
+    "name": "Włodzimierzec",
+    "region": "eastern-europe-poland",
+    "country": "Ukraine",
+    "coordinates": [
+      51.47,
+      25.85
+    ],
+    "day": 89
+  },
+  {
+    "id": "tulchin",
+    "rank": 258,
+    "name": "Tulchin",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      48.68,
+      28.86
+    ],
+    "day": 90
+  },
+  {
+    "id": "cairo",
+    "rank": 17,
+    "name": "Cairo (Fustat)",
+    "region": "egypt-north-africa",
+    "country": "Egypt",
+    "coordinates": [
+      30.05,
+      31.25
+    ],
+    "day": 91,
+    "dateNote": "April 1 — Maimonides settled in Fustat; Cairo Geniza discovered"
+  },
+  {
+    "id": "shepetovka",
+    "rank": 259,
+    "name": "Shepetovka",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      50.19,
+      27.06
+    ],
+    "day": 92
+  },
+  {
+    "id": "druya",
+    "rank": 260,
+    "name": "Druya",
+    "region": "russia-ukraine-pale",
+    "country": "Belarus",
+    "coordinates": [
+      55.79,
+      27.46
+    ],
+    "day": 93
+  },
+  {
+    "id": "oxyrhynchus",
+    "rank": 235,
+    "name": "Oxyrhynchus",
+    "region": "egypt-north-africa",
+    "country": "Egypt",
+    "coordinates": [
+      28.54,
+      30.67
+    ],
+    "day": 94,
+    "dateNote": "April 4 — papyrus finds include Jewish documents"
+  },
+  {
+    "id": "alexandria",
+    "rank": 18,
+    "name": "Alexandria",
+    "region": "egypt-north-africa",
+    "country": "Egypt",
+    "coordinates": [
+      31.2,
+      29.92
+    ],
+    "day": 95,
+    "dateNote": "April 5 — largest Jewish Diaspora community in Hellenistic era"
+  },
+  {
+    "id": "rakhmistrivka",
+    "rank": 261,
+    "name": "Rakhmistrivka",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      49.56,
+      29.57
+    ],
+    "day": 96
+  },
+  {
+    "id": "nag-hammadi",
+    "rank": 236,
+    "name": "Nag Hammadi",
+    "region": "egypt-north-africa",
+    "country": "Egypt",
+    "coordinates": [
+      26.05,
+      32.25
+    ],
+    "day": 97,
+    "dateNote": "April 7 — early Jewish-Christian manuscript finds"
+  },
+  {
+    "id": "zlatopolie",
+    "rank": 262,
+    "name": "Zlatopolie",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      48.63,
+      31.45
+    ],
+    "day": 98
+  },
+  {
+    "id": "zhinkovets",
+    "rank": 263,
+    "name": "Zhinkovets",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      49.28,
+      27.4
+    ],
+    "day": 99
+  },
+  {
+    "id": "ramla",
+    "rank": 238,
+    "name": "Ramleh (Ramla)",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      31.93,
+      34.87
+    ],
+    "day": 100,
+    "dateNote": "April 10 — Karaite center; medieval Arab-era community"
+  },
+  {
+    "id": "kairouan",
+    "rank": 65,
+    "name": "Kairouan",
+    "region": "egypt-north-africa",
+    "country": "Tunisia",
+    "coordinates": [
+      35.68,
+      10.1
+    ],
+    "day": 101,
+    "dateNote": "April 11 — R. Chananel; Jewish golden age under Aghlabids"
+  },
+  {
+    "id": "khodorovka",
+    "rank": 264,
+    "name": "Khodorovka",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      49.58,
+      28.52
+    ],
+    "day": 102
+  },
+  {
+    "id": "fayyum",
+    "rank": 239,
+    "name": "Fayyum (Pithom)",
+    "region": "egypt-north-africa",
+    "country": "Egypt",
+    "coordinates": [
+      29.31,
+      30.84
+    ],
+    "day": 103,
+    "dateNote": "April 13 — papyrus documents; ancient community near Goshen"
+  },
+  {
+    "id": "djerba",
+    "rank": 66,
+    "name": "Djerba",
+    "region": "egypt-north-africa",
+    "country": "Tunisia",
+    "coordinates": [
+      33.81,
+      10.85
+    ],
+    "day": 104,
+    "dateNote": "April 14 — ancient synagogue El-Ghriba; 2,600-year-old community"
+  },
+  {
+    "id": "borshchagovka",
+    "rank": 265,
+    "name": "Borshchagovka",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      49.46,
+      29.58
+    ],
+    "day": 105
+  },
+  {
+    "id": "gibeon",
+    "rank": 241,
+    "name": "Gibeon",
+    "region": "holy-land",
+    "country": "Israel/Palestine",
+    "coordinates": [
+      31.87,
+      35.18
+    ],
+    "day": 106,
+    "dateNote": "April 16 — biblical settlement; Gibeonites and Israelites"
+  },
+  {
+    "id": "fez",
+    "rank": 67,
+    "name": "Fez",
+    "region": "egypt-north-africa",
+    "country": "Morocco",
+    "coordinates": [
+      34.04,
+      -5.0
+    ],
+    "day": 107,
+    "dateNote": "April 17 — R. Yehuda ibn Tibbon; Maimonides spent years here"
+  },
+  {
+    "id": "novofastov",
+    "rank": 266,
+    "name": "Novofastov",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      49.76,
+      29.91
+    ],
+    "day": 108
+  },
+  {
+    "id": "warsaw",
+    "rank": 13,
+    "name": "Warsaw",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      52.23,
+      21.01
+    ],
+    "day": 109,
+    "dateNote": "April 19 — Warsaw Ghetto Uprising 1943"
+  },
+  {
+    "id": "marrakech",
+    "rank": 208,
+    "name": "Marrakech",
+    "region": "egypt-north-africa",
+    "country": "Morocco",
+    "coordinates": [
+      31.63,
+      -7.99
+    ],
+    "day": 110,
+    "dateNote": "April 20 — Mellah (Jewish quarter) established 1558"
+  },
+  {
+    "id": "pavoloch",
+    "rank": 267,
+    "name": "Pavoloch",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      49.82,
+      29.48
+    ],
+    "day": 111
+  },
+  {
+    "id": "shiloh",
+    "rank": 243,
+    "name": "Shiloh",
+    "region": "holy-land",
+    "country": "Israel/Palestine",
+    "coordinates": [
+      32.05,
+      35.29
+    ],
+    "day": 112,
+    "dateNote": "April 22 — Tabernacle housed here 369 years; Hannah prayed here"
+  },
+  {
+    "id": "essaouira",
+    "rank": 209,
+    "name": "Essaouira (Mogador)",
+    "region": "egypt-north-africa",
+    "country": "Morocco",
+    "coordinates": [
+      31.51,
+      -9.77
+    ],
+    "day": 113,
+    "dateNote": "April 23 — major Sephardic port; Corcos family of diplomats"
+  },
+  {
+    "id": "ruzhin",
+    "rank": 268,
+    "name": "Ruzhin",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      50.02,
+      29.4
+    ],
+    "day": 114
+  },
+  {
+    "id": "almah",
+    "rank": 244,
+    "name": "Almah",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      33.1,
+      35.57
+    ],
+    "day": 115,
+    "dateNote": "April 25 — ancient Galilean village; Byzantine-era synagogue"
+  },
+  {
+    "id": "meknes",
+    "rank": 210,
+    "name": "Meknès",
+    "region": "egypt-north-africa",
+    "country": "Morocco",
+    "coordinates": [
+      33.89,
+      -5.55
+    ],
+    "day": 116,
+    "dateNote": "April 26 — imperial capital; Meknes pogrom 1728"
+  },
+  {
+    "id": "cherkassy",
+    "rank": 269,
+    "name": "Cherkas (Cherkassy)",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      49.44,
+      32.06
+    ],
+    "day": 117
+  },
+  {
+    "id": "banias",
+    "rank": 245,
+    "name": "Banias (Caesarea Philippi)",
+    "region": "holy-land",
+    "country": "Israel/Syria",
+    "coordinates": [
+      33.25,
+      35.69
+    ],
+    "day": 118,
+    "dateNote": "April 28 — Panias shrine; Jewish community"
+  },
+  {
+    "id": "tel-aviv",
+    "rank": 73,
+    "name": "Tel Aviv",
+    "region": "holy-land",
+    "country": "Israel",
+    "coordinates": [
+      32.07,
+      34.78
+    ],
+    "day": 119,
+    "dateNote": "April 29 — Tel Aviv founded 1909"
+  },
+  {
+    "id": "kremenets",
+    "rank": 270,
+    "name": "Kremenets",
+    "region": "eastern-europe-poland",
+    "country": "Ukraine",
+    "coordinates": [
+      50.1,
+      25.73
+    ],
+    "day": 120
+  },
+  {
+    "id": "silwan",
+    "rank": 246,
+    "name": "Silwan",
+    "region": "holy-land",
+    "country": "Israel/Palestine",
+    "coordinates": [
+      31.77,
+      35.23
+    ],
+    "day": 121,
+    "dateNote": "May 1 — City of David area; ancient water system"
+  },
+  {
+    "id": "casablanca",
+    "rank": 212,
+    "name": "Casablanca",
+    "region": "egypt-north-africa",
+    "country": "Morocco",
+    "coordinates": [
+      33.59,
+      -7.62
+    ],
+    "day": 122,
+    "dateNote": "May 2 — modern Moroccan Jewish hub; 80,000 Jews in 1950s"
+  },
+  {
+    "id": "trzebinia",
+    "rank": 273,
+    "name": "Trzebinia",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      50.16,
+      19.47
+    ],
+    "day": 123
+  },
+  {
+    "id": "rafah",
+    "rank": 247,
+    "name": "Rafah",
+    "region": "holy-land",
+    "country": "Israel/Palestine",
+    "coordinates": [
+      31.3,
+      34.25
+    ],
+    "day": 124,
+    "dateNote": "May 4 — ancient boundary city; Roman-era community"
+  },
+  {
+    "id": "rabat",
+    "rank": 213,
+    "name": "Rabat",
+    "region": "egypt-north-africa",
+    "country": "Morocco",
+    "coordinates": [
+      34.02,
+      -6.84
+    ],
+    "day": 125,
+    "dateNote": "May 5 — Moroccan capital; Jewish quarter (mellah) community"
+  },
+  {
+    "id": "letichev",
+    "rank": 279,
+    "name": "Letichev",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      49.38,
+      27.64
+    ],
+    "day": 126
+  },
+  {
+    "id": "kalisz",
+    "rank": 280,
+    "name": "Kalisz",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      51.76,
+      18.09
+    ],
+    "day": 127
+  },
+  {
+    "id": "tetuan",
+    "rank": 214,
+    "name": "Tetuán",
+    "region": "egypt-north-africa",
+    "country": "Morocco",
+    "coordinates": [
+      35.57,
+      -5.37
+    ],
+    "day": 128,
+    "dateNote": "May 8 — Sephardic Jews from Spain settled 1492; Jerusalem of Morocco"
+  },
+  {
+    "id": "cordoba",
+    "rank": 10,
+    "name": "Córdoba",
+    "region": "iberian-sephardic",
+    "country": "Spain",
+    "coordinates": [
+      37.89,
+      -4.78
+    ],
+    "day": 129,
+    "dateNote": "May 9 — birthplace of Maimonides, 1138"
+  },
+  {
+    "id": "nowy-sacz",
+    "rank": 292,
+    "name": "Nowy Sącz",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      49.62,
+      20.69
+    ],
+    "day": 130
+  },
+  {
+    "id": "safi",
+    "rank": 215,
+    "name": "Safi",
+    "region": "egypt-north-africa",
+    "country": "Morocco",
+    "coordinates": [
+      32.3,
+      -9.23
+    ],
+    "day": 131,
+    "dateNote": "May 11 — Atlantic port; Sephardic trading families"
+  },
+  {
+    "id": "barcelona",
+    "rank": 36,
+    "name": "Barcelona",
+    "region": "iberian-sephardic",
+    "country": "Spain",
+    "coordinates": [
+      41.39,
+      2.15
+    ],
+    "day": 132,
+    "dateNote": "May 12 — Call (Jewish quarter) destroyed 1391 pogrom"
+  },
+  {
+    "id": "kobryn",
+    "rank": 294,
+    "name": "Kobryń (Kobrin)",
+    "region": "eastern-europe-poland",
+    "country": "Belarus",
+    "coordinates": [
+      52.21,
+      24.36
+    ],
+    "day": 133
+  },
+  {
+    "id": "agadir",
+    "rank": 216,
+    "name": "Agadir",
+    "region": "egypt-north-africa",
+    "country": "Morocco",
+    "coordinates": [
+      30.42,
+      -9.6
+    ],
+    "day": 134,
+    "dateNote": "May 14 — Berber-Jewish community; Souss region"
+  },
+  {
+    "id": "girona",
+    "rank": 37,
+    "name": "Girona",
+    "region": "iberian-sephardic",
+    "country": "Spain",
+    "coordinates": [
+      41.98,
+      2.82
+    ],
+    "day": 135,
+    "dateNote": "May 15 — Nahmanides' academy; great Kabbalistic center"
+  },
+  {
+    "id": "pruzana",
+    "rank": 295,
+    "name": "Prużana (Pruzhany)",
+    "region": "eastern-europe-poland",
+    "country": "Belarus",
+    "coordinates": [
+      52.56,
+      24.45
+    ],
+    "day": 136
+  },
+  {
+    "id": "tarudant",
+    "rank": 217,
+    "name": "Tarudant",
+    "region": "egypt-north-africa",
+    "country": "Morocco",
+    "coordinates": [
+      30.47,
+      -8.88
+    ],
+    "day": 137,
+    "dateNote": "May 17 — ancient Moroccan community; Tachelhit-speaking Jews"
+  },
+  {
+    "id": "lisbon",
+    "rank": 38,
+    "name": "Lisbon",
+    "region": "iberian-sephardic",
+    "country": "Portugal",
+    "coordinates": [
+      38.72,
+      -9.14
+    ],
+    "day": 138,
+    "dateNote": "May 18 — center of Portuguese Jewry before 1497 expulsion"
+  },
+  {
+    "id": "kleck",
+    "rank": 296,
+    "name": "Kleck",
+    "region": "eastern-europe-poland",
+    "country": "Belarus",
+    "coordinates": [
+      53.07,
+      26.64
+    ],
+    "day": 139
+  },
+  {
+    "id": "tiznit",
+    "rank": 218,
+    "name": "Tiznit",
+    "region": "egypt-north-africa",
+    "country": "Morocco",
+    "coordinates": [
+      29.7,
+      -9.73
+    ],
+    "day": 140,
+    "dateNote": "May 20 — southern Moroccan community; silversmith tradition"
+  },
+  {
+    "id": "seville",
+    "rank": 39,
+    "name": "Seville",
+    "region": "iberian-sephardic",
+    "country": "Spain",
+    "coordinates": [
+      37.39,
+      -5.99
+    ],
+    "day": 141,
+    "dateNote": "May 21 — largest Sephardic community; 1391 massacre triggered mass conversions"
+  },
+  {
+    "id": "otwock",
+    "rank": 298,
+    "name": "Otwock",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      52.11,
+      21.26
+    ],
+    "day": 142
+  },
+  {
+    "id": "algiers",
+    "rank": 219,
+    "name": "Algiers",
+    "region": "egypt-north-africa",
+    "country": "Algeria",
+    "coordinates": [
+      36.74,
+      3.06
+    ],
+    "day": 143,
+    "dateNote": "May 23 — Ben Zakai family; Algerian Jewish intellectuals; Derrida"
+  },
+  {
+    "id": "granada",
+    "rank": 40,
+    "name": "Granada",
+    "region": "iberian-sephardic",
+    "country": "Spain",
+    "coordinates": [
+      37.18,
+      -3.6
+    ],
+    "day": 144,
+    "dateNote": "May 24 — Samuel HaNagid, vizier and poet; Nasrid-era Jews"
+  },
+  {
+    "id": "plock",
+    "rank": 299,
+    "name": "Płock",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      52.55,
+      19.71
+    ],
+    "day": 145
+  },
+  {
+    "id": "oran",
+    "rank": 220,
+    "name": "Oran",
+    "region": "egypt-north-africa",
+    "country": "Algeria",
+    "coordinates": [
+      35.7,
+      -0.63
+    ],
+    "day": 146,
+    "dateNote": "May 26 — major Algerian Jewish community; Camus's city"
+  },
+  {
+    "id": "saragossa",
+    "rank": 41,
+    "name": "Saragossa (Zaragoza)",
+    "region": "iberian-sephardic",
+    "country": "Spain",
+    "coordinates": [
+      41.65,
+      -0.88
+    ],
+    "day": 147,
+    "dateNote": "May 27 — major Aragonese Jewish community; Bahya ibn Paquda"
+  },
+  {
+    "id": "wilicka",
+    "rank": 300,
+    "name": "Wilicka",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      49.99,
+      20.07
+    ],
+    "day": 148
+  },
+  {
+    "id": "constantine",
+    "rank": 221,
+    "name": "Constantine",
+    "region": "egypt-north-africa",
+    "country": "Algeria",
+    "coordinates": [
+      36.37,
+      6.61
+    ],
+    "day": 149,
+    "dateNote": "May 29 — ancient Cirta; oldest North African Jewish settlement"
+  },
+  {
+    "id": "narbonne",
+    "rank": 147,
+    "name": "Narbonne",
+    "region": "iberian-sephardic",
+    "country": "France",
+    "coordinates": [
+      43.18,
+      3.0
+    ],
+    "day": 150,
+    "dateNote": "May 30 — exilarchic family ruled; great Torah academy"
+  },
+  {
+    "id": "zywiec",
+    "rank": 301,
+    "name": "Żywiec",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      49.69,
+      19.19
+    ],
+    "day": 151
+  },
+  {
+    "id": "tlemcen",
+    "rank": 222,
+    "name": "Tlemcen",
+    "region": "egypt-north-africa",
+    "country": "Algeria",
+    "coordinates": [
+      34.88,
+      -1.32
+    ],
+    "day": 152,
+    "dateNote": "June 1 — Zayyanid capital; Sephardic refugees 1492"
+  },
+  {
+    "id": "lunel",
+    "rank": 148,
+    "name": "Lunel",
+    "region": "iberian-sephardic",
+    "country": "France",
+    "coordinates": [
+      43.67,
+      4.14
+    ],
+    "day": 153,
+    "dateNote": "June 2 — Provence Torah center; translated Arab science to Hebrew"
+  },
+  {
+    "id": "zawiercie",
+    "rank": 302,
+    "name": "Zawiercie",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      50.49,
+      19.42
+    ],
+    "day": 154
+  },
+  {
+    "id": "tripoli",
+    "rank": 223,
+    "name": "Tripoli",
+    "region": "egypt-north-africa",
+    "country": "Libya",
+    "coordinates": [
+      32.9,
+      13.18
+    ],
+    "day": 155,
+    "dateNote": "June 4 — ancient Jewish port; 1945 pogrom; Libyan Jewry"
+  },
+  {
+    "id": "istanbul",
+    "rank": 22,
+    "name": "Istanbul (Constantinople)",
+    "region": "ottoman-balkans",
+    "country": "Turkey",
+    "coordinates": [
+      41.01,
+      28.98
+    ],
+    "day": 156,
+    "dateNote": "June 5 — Mehmed II welcomed Jewish refugees 1453"
+  },
+  {
+    "id": "koluszki",
+    "rank": 303,
+    "name": "Koluszki",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      51.74,
+      19.82
+    ],
+    "day": 157
+  },
+  {
+    "id": "benghazi",
+    "rank": 224,
+    "name": "Benghazi",
+    "region": "egypt-north-africa",
+    "country": "Libya",
+    "coordinates": [
+      32.12,
+      20.07
+    ],
+    "day": 158,
+    "dateNote": "June 7 — second Libyan Jewish center; 1948 pogrom"
+  },
+  {
+    "id": "izmir",
+    "rank": 42,
+    "name": "İzmir (Smyrna)",
+    "region": "ottoman-balkans",
+    "country": "Turkey",
+    "coordinates": [
+      38.42,
+      27.14
+    ],
+    "day": 159,
+    "dateNote": "June 8 — Sabbatai Zevi born here 1626; major Sephardic port"
+  },
+  {
+    "id": "kolki",
+    "rank": 304,
+    "name": "Kolki",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      51.14,
+      25.77
+    ],
+    "day": 160
+  },
+  {
+    "id": "timbuktu",
+    "rank": 341,
+    "name": "Timbuktu",
+    "region": "egypt-north-africa",
+    "country": "Mali",
+    "coordinates": [
+      16.77,
+      -3.01
+    ],
+    "day": 161,
+    "dateNote": "June 10 — trans-Saharan trade; R. Ahmad Baba mentioned Jewish merchants"
+  },
+  {
+    "id": "aleppo",
+    "rank": 76,
+    "name": "Aleppo",
+    "region": "ottoman-balkans",
+    "country": "Syria",
+    "coordinates": [
+      36.2,
+      37.16
+    ],
+    "day": 162,
+    "dateNote": "June 11 — Aleppo Codex; ancient Syrian-Jewish community"
+  },
+  {
+    "id": "anopol",
+    "rank": 305,
+    "name": "Anopol (Hannopil)",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      51.14,
+      26.46
+    ],
+    "day": 163
+  },
+  {
+    "id": "balta",
+    "rank": 306,
+    "name": "Balte (Balta)",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      47.93,
+      29.63
+    ],
+    "day": 164
+  },
+  {
+    "id": "mecca",
+    "rank": 98,
+    "name": "Mecca",
+    "region": "ottoman-balkans",
+    "country": "Saudi Arabia",
+    "coordinates": [
+      21.39,
+      39.86
+    ],
+    "day": 165,
+    "dateNote": "June 14 — pre-Islamic Jewish tribes; Banu Qaynuqa"
+  },
+  {
+    "id": "starokostiantyniv",
+    "rank": 307,
+    "name": "Olt-Kosntin (Starokostiantyniv)",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      49.74,
+      27.22
+    ],
+    "day": 166
+  },
+  {
+    "id": "polonne",
+    "rank": 308,
+    "name": "Polona (Polonne)",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      50.11,
+      27.52
+    ],
+    "day": 167
+  },
+  {
+    "id": "medina",
+    "rank": 99,
+    "name": "Medina",
+    "region": "ottoman-balkans",
+    "country": "Saudi Arabia",
+    "coordinates": [
+      24.47,
+      39.61
+    ],
+    "day": 168,
+    "dateNote": "June 17 — three Jewish tribes: Nadir, Qaynuqa, Qurayza"
+  },
+  {
+    "id": "pryluky",
+    "rank": 309,
+    "name": "Priluki (Pryluky)",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      50.59,
+      32.39
+    ],
+    "day": 169
+  },
+  {
+    "id": "hrytsiv",
+    "rank": 310,
+    "name": "Ritzev (Hrytsiv)",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      49.99,
+      27.81
+    ],
+    "day": 170
+  },
+  {
+    "id": "almeria",
+    "rank": 189,
+    "name": "Almería",
+    "region": "iberian-sephardic",
+    "country": "Spain",
+    "coordinates": [
+      36.84,
+      -2.46
+    ],
+    "day": 171,
+    "dateNote": "June 20 — taifa kingdom's Jewish viziers"
+  },
+  {
+    "id": "kropyvnytskyi",
+    "rank": 311,
+    "name": "Yelisavetgrod (Kropyvnytskyi)",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      48.51,
+      32.27
+    ],
+    "day": 172
+  },
+  {
+    "id": "iziaslav",
+    "rank": 312,
+    "name": "Zaslov (Iziaslav)",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      50.13,
+      26.82
+    ],
+    "day": 173
+  },
+  {
+    "id": "burgos",
+    "rank": 190,
+    "name": "Burgos",
+    "region": "iberian-sephardic",
+    "country": "Spain",
+    "coordinates": [
+      42.34,
+      -3.7
+    ],
+    "day": 174,
+    "dateNote": "June 23 — Pablo de Santa María; converso capital"
+  },
+  {
+    "id": "warka",
+    "rank": 313,
+    "name": "Vurke (Warka)",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      51.78,
+      21.21
+    ],
+    "day": 175
+  },
+  {
+    "id": "radeshits",
+    "rank": 314,
+    "name": "Radeshits",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      50.69,
+      21.89
+    ],
+    "day": 176
+  },
+  {
+    "id": "mallorca",
+    "rank": 191,
+    "name": "Mallorca",
+    "region": "iberian-sephardic",
+    "country": "Spain",
+    "coordinates": [
+      39.57,
+      2.65
+    ],
+    "day": 177,
+    "dateNote": "June 26 — Chuetas (Xuetes); crypto-Jews who survived to present"
+  },
+  {
+    "id": "zhidachov",
+    "rank": 315,
+    "name": "Zhidachov",
+    "region": "austro-hungarian",
+    "country": "Ukraine",
+    "coordinates": [
+      49.39,
+      24.14
+    ],
+    "day": 178
+  },
+  {
+    "id": "kaliv",
+    "rank": 316,
+    "name": "Kaliv",
+    "region": "austro-hungarian",
+    "country": "Hungary",
+    "coordinates": [
+      46.82,
+      18.59
+    ],
+    "day": 179
+  },
+  {
+    "id": "xativa",
+    "rank": 192,
+    "name": "Xàtiva",
+    "region": "iberian-sephardic",
+    "country": "Spain",
+    "coordinates": [
+      38.99,
+      -0.52
+    ],
+    "day": 180,
+    "dateNote": "June 29 — Kabbalistic community; R. Samuel ben Meshullam"
+  },
+  {
+    "id": "katowice",
+    "rank": 317,
+    "name": "Kattowitz (Katowice)",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      50.26,
+      19.02
+    ],
+    "day": 181
+  },
+  {
+    "id": "jedwabne",
+    "rank": 319,
+    "name": "Jedwabne",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      53.29,
+      22.32
+    ],
+    "day": 182
+  },
+  {
+    "id": "huesca",
+    "rank": 193,
+    "name": "Huesca",
+    "region": "iberian-sephardic",
+    "country": "Spain",
+    "coordinates": [
+      42.14,
+      -0.41
+    ],
+    "day": 183,
+    "dateNote": "July 2 — Petrus Alfonsi born here; major Aragonese community"
+  },
+  {
+    "id": "venice",
+    "rank": 34,
+    "name": "Venice",
+    "region": "western-europe",
+    "country": "Italy",
+    "coordinates": [
+      45.44,
+      12.33
+    ],
+    "day": 184,
+    "dateNote": "July 3 — world's first ghetto established 1516; printing of Talmud"
+  },
+  {
+    "id": "rome",
+    "rank": 20,
+    "name": "Rome",
+    "region": "western-europe",
+    "country": "Italy",
+    "coordinates": [
+      41.9,
+      12.5
+    ],
+    "day": 185,
+    "dateNote": "July 4 — oldest continuous Jewish community in diaspora (~2,000 years)"
+  },
+  {
+    "id": "plovdiv",
+    "rank": 199,
+    "name": "Plovdiv",
+    "region": "ottoman-balkans",
+    "country": "Bulgaria",
+    "coordinates": [
+      42.14,
+      24.75
+    ],
+    "day": 186,
+    "dateNote": "July 5 — ancient Thracian community; Philippopolis Jews"
+  },
+  {
+    "id": "bilgoraj",
+    "rank": 320,
+    "name": "Bilgoraj (Biłgoraj)",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      50.54,
+      22.72
+    ],
+    "day": 187
+  },
+  {
+    "id": "livorno",
+    "rank": 35,
+    "name": "Livorno (Leghorn)",
+    "region": "western-europe",
+    "country": "Italy",
+    "coordinates": [
+      43.55,
+      10.31
+    ],
+    "day": 188,
+    "dateNote": "July 7 — Sephardic refuge; free port; Mediterranean trade hub"
+  },
+  {
+    "id": "mainz",
+    "rank": 24,
+    "name": "Mainz",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      49.99,
+      8.27
+    ],
+    "day": 189,
+    "dateNote": "July 8 — Rhineland Jewish communities (ShUM) established"
+  },
+  {
+    "id": "melitopol",
+    "rank": 321,
+    "name": "Melitopol",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      46.85,
+      35.37
+    ],
+    "day": 190
+  },
+  {
+    "id": "zvenigorodka",
+    "rank": 322,
+    "name": "Zvenigorodka",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      49.07,
+      30.97
+    ],
+    "day": 191
+  },
+  {
+    "id": "worms",
+    "rank": 25,
+    "name": "Worms",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      49.63,
+      8.36
+    ],
+    "day": 192,
+    "dateNote": "July 11 — Rashi's seat; ancient synagogue built 1034"
+  },
+  {
+    "id": "jozefow",
+    "rank": 323,
+    "name": "Yozefov (Jozefow)",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      50.62,
+      22.46
+    ],
+    "day": 193
+  },
+  {
+    "id": "mszczonow",
+    "rank": 324,
+    "name": "Amshinov (Mszczonów)",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      51.97,
+      20.52
+    ],
+    "day": 194
+  },
+  {
+    "id": "speyer",
+    "rank": 26,
+    "name": "Speyer",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      49.32,
+      8.44
+    ],
+    "day": 195,
+    "dateNote": "July 14 — Bishop Rüdiger granted Speyer Jews protections 1084"
+  },
+  {
+    "id": "andrychow",
+    "rank": 325,
+    "name": "Andrychów",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      49.85,
+      19.34
+    ],
+    "day": 196
+  },
+  {
+    "id": "baligrod",
+    "rank": 326,
+    "name": "Baligrod",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      49.33,
+      22.28
+    ],
+    "day": 197
+  },
+  {
+    "id": "troyes",
+    "rank": 27,
+    "name": "Troyes",
+    "region": "western-europe",
+    "country": "France",
+    "coordinates": [
+      48.3,
+      4.08
+    ],
+    "day": 198,
+    "dateNote": "July 17 — Rashi's birthplace and academy; center of French Jewry"
+  },
+  {
+    "id": "bransk",
+    "rank": 327,
+    "name": "Brańsk",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      52.74,
+      22.85
+    ],
+    "day": 199
+  },
+  {
+    "id": "halle",
+    "rank": 158,
+    "name": "Halle",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      51.48,
+      11.97
+    ],
+    "day": 200,
+    "dateNote": "July 19 — court Jews; early Haskalah salon culture"
+  },
+  {
+    "id": "sens",
+    "rank": 28,
+    "name": "Sens",
+    "region": "western-europe",
+    "country": "France",
+    "coordinates": [
+      48.2,
+      3.28
+    ],
+    "day": 201,
+    "dateNote": "July 20 — Rabbeinu Tam held the Synod of Sens c. 1150"
+  },
+  {
+    "id": "frampol",
+    "rank": 328,
+    "name": "Frampol",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      50.67,
+      22.67
+    ],
+    "day": 202
+  },
+  {
+    "id": "bonn",
+    "rank": 159,
+    "name": "Bonn",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      50.74,
+      7.1
+    ],
+    "day": 203,
+    "dateNote": "July 22 — medieval Rhineland Jewish life"
+  },
+  {
+    "id": "regensburg",
+    "rank": 29,
+    "name": "Regensburg",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      49.01,
+      12.1
+    ],
+    "day": 204,
+    "dateNote": "July 23 — major medieval Bavarian Jewish center"
+  },
+  {
+    "id": "makow-mazowiecki",
+    "rank": 330,
+    "name": "Maków Mazowiecki",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      52.86,
+      21.1
+    ],
+    "day": 205
+  },
+  {
+    "id": "marburg",
+    "rank": 160,
+    "name": "Marburg",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      50.81,
+      8.77
+    ],
+    "day": 206,
+    "dateNote": "July 25 — university town; medieval Jewish presence"
+  },
+  {
+    "id": "frankfurt",
+    "rank": 30,
+    "name": "Frankfurt am Main",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      50.11,
+      8.68
+    ],
+    "day": 207,
+    "dateNote": "July 26 — Rothschild family; printing press; major communal seat"
+  },
+  {
+    "id": "gateshead",
+    "rank": 335,
+    "name": "Gateshead",
+    "region": "british-isles-asia",
+    "country": "United Kingdom",
+    "coordinates": [
+      54.96,
+      -1.6
+    ],
+    "day": 208
+  },
+  {
+    "id": "hildesheim",
+    "rank": 161,
+    "name": "Hildesheim",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      52.15,
+      9.95
+    ],
+    "day": 209,
+    "dateNote": "July 28 — early medieval community; cathedral city Jews"
+  },
+  {
+    "id": "berlin",
+    "rank": 31,
+    "name": "Berlin",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      52.52,
+      13.4
+    ],
+    "day": 210,
+    "dateNote": "July 29 — center of Haskalah (Jewish Enlightenment) and Reform"
+  },
+  {
+    "id": "cranganore",
+    "rank": 336,
+    "name": "Cranganore (Shingly)",
+    "region": "british-isles-asia",
+    "country": "India",
+    "coordinates": [
+      10.22,
+      76.21
+    ],
+    "day": 211
+  },
+  {
+    "id": "paris",
+    "rank": 72,
+    "name": "Paris",
+    "region": "western-europe",
+    "country": "France",
+    "coordinates": [
+      48.86,
+      2.35
+    ],
+    "day": 212,
+    "dateNote": "July 31 — Alliance Israélite Universelle founded 1860"
+  },
+  {
+    "id": "vienna",
+    "rank": 32,
+    "name": "Vienna",
+    "region": "austro-hungarian",
+    "country": "Austria",
+    "coordinates": [
+      48.21,
+      16.37
+    ],
+    "day": 213,
+    "dateNote": "July 32 — Herzl, Freud, Zweig; Jewish intellectual capital"
+  },
+  {
+    "id": "quilon",
+    "rank": 337,
+    "name": "Quilon (Kollam)",
+    "region": "british-isles-asia",
+    "country": "India",
+    "coordinates": [
+      8.89,
+      76.6
+    ],
+    "day": 214
+  },
+  {
+    "id": "basel",
+    "rank": 142,
+    "name": "Basel",
+    "region": "western-europe",
+    "country": "Switzerland",
+    "coordinates": [
+      47.56,
+      7.59
+    ],
+    "day": 215,
+    "dateNote": "Aug 3 — First Zionist Congress 1897; Herzl's vision"
+  },
+  {
+    "id": "pressburg",
+    "rank": 64,
+    "name": "Pressburg (Bratislava)",
+    "region": "austro-hungarian",
+    "country": "Slovakia",
+    "coordinates": [
+      48.15,
+      17.11
+    ],
+    "day": 216,
+    "dateNote": "Aug 4 — Chatam Sofer's bastion of Orthodoxy; famous yeshiva"
+  },
+  {
+    "id": "pune",
+    "rank": 338,
+    "name": "Pune",
+    "region": "british-isles-asia",
+    "country": "India",
+    "coordinates": [
+      18.52,
+      73.86
+    ],
+    "day": 217
+  },
+  {
+    "id": "hamburg",
+    "rank": 143,
+    "name": "Hamburg",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      53.55,
+      10.0
+    ],
+    "day": 218,
+    "dateNote": "Aug 6 — Portuguese Jews; reform movement pioneer; Haskala"
+  },
+  {
+    "id": "breslau",
+    "rank": 62,
+    "name": "Breslau (Wrocław)",
+    "region": "austro-hungarian",
+    "country": "Poland",
+    "coordinates": [
+      51.11,
+      17.04
+    ],
+    "day": 219,
+    "dateNote": "Aug 7 — Breslau Seminary; Frankel and Positive-Historical school"
+  },
+  {
+    "id": "ningbo",
+    "rank": 339,
+    "name": "Ningbo",
+    "region": "british-isles-asia",
+    "country": "China",
+    "coordinates": [
+      29.87,
+      121.54
+    ],
+    "day": 220
+  },
+  {
+    "id": "toledo",
+    "rank": 11,
+    "name": "Toledo",
+    "region": "iberian-sephardic",
+    "country": "Spain",
+    "coordinates": [
+      39.86,
+      -4.03
+    ],
+    "day": 221,
+    "dateNote": "Aug 9 — Tisha B'Av; Spanish Jewry's greatest medieval center"
+  },
+  {
+    "id": "glusk",
+    "rank": 329,
+    "name": "Głusk",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      51.24,
+      22.67
+    ],
+    "day": 222,
+    "dateNote": "Aug 10 — Lublin suburb community"
+  },
+  {
+    "id": "amadiya",
+    "rank": 340,
+    "name": "Amadiya",
+    "region": "babylonia-mesopotamia",
+    "country": "Iraq",
+    "coordinates": [
+      37.09,
+      43.49
+    ],
+    "day": 223
+  },
+  {
+    "id": "cologne",
+    "rank": 145,
+    "name": "Cologne",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      50.94,
+      6.96
+    ],
+    "day": 224,
+    "dateNote": "Aug 12 — oldest Roman-German Jewish inscription 321 CE"
+  },
+  {
+    "id": "budapest",
+    "rank": 33,
+    "name": "Budapest",
+    "region": "austro-hungarian",
+    "country": "Hungary",
+    "coordinates": [
+      47.5,
+      19.05
+    ],
+    "day": 225,
+    "dateNote": "Aug 13 — Neolog Jewry; Dohány Street Synagogue"
+  },
+  {
+    "id": "san-nicandro",
+    "rank": 342,
+    "name": "San Nicandro",
+    "region": "western-europe",
+    "country": "Italy",
+    "coordinates": [
+      41.83,
+      15.93
+    ],
+    "day": 226
+  },
+  {
+    "id": "metz",
+    "rank": 146,
+    "name": "Metz",
+    "region": "western-europe",
+    "country": "France",
+    "coordinates": [
+      49.12,
+      6.18
+    ],
+    "day": 227,
+    "dateNote": "Aug 15 — major French-Ashkenaz center; R. Gershom Me'or HaGolah"
+  },
+  {
+    "id": "radashkovichy",
+    "rank": 331,
+    "name": "Radashkovichy",
+    "region": "russia-ukraine-pale",
+    "country": "Belarus",
+    "coordinates": [
+      54.12,
+      27.23
+    ],
+    "day": 228,
+    "dateNote": "Aug 16 — Belarusian shtetl near Minsk"
+  },
+  {
+    "id": "madeira",
+    "rank": 343,
+    "name": "Madeira",
+    "region": "iberian-sephardic",
+    "country": "Portugal",
+    "coordinates": [
+      32.75,
+      -17.0
+    ],
+    "day": 229
+  },
+  {
+    "id": "marseille",
+    "rank": 151,
+    "name": "Marseille",
+    "region": "western-europe",
+    "country": "France",
+    "coordinates": [
+      43.3,
+      5.37
+    ],
+    "day": 230,
+    "dateNote": "Aug 18 — Provençal Jewish merchants; ancient port community"
+  },
+  {
+    "id": "wislowiec",
+    "rank": 332,
+    "name": "Wislowiec",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      50.47,
+      21.86
+    ],
+    "day": 231,
+    "dateNote": "Aug 19 — small Polish Jewish community"
+  },
+  {
+    "id": "czernowitz",
+    "rank": 51,
+    "name": "Czernowitz (Chernivtsi)",
+    "region": "austro-hungarian",
+    "country": "Ukraine",
+    "coordinates": [
+      48.29,
+      25.94
+    ],
+    "day": 232,
+    "dateNote": "Aug 20 — First World Yiddish Conference held here 1908; Paul Celan"
+  },
+  {
+    "id": "bordeaux",
+    "rank": 152,
+    "name": "Bordeaux",
+    "region": "western-europe",
+    "country": "France",
+    "coordinates": [
+      44.84,
+      -0.58
+    ],
+    "day": 233,
+    "dateNote": "Aug 21 — Portuguese New Christians; Montaigne's Jewish roots"
+  },
+  {
+    "id": "zolochiv",
+    "rank": 333,
+    "name": "Zolochiv",
+    "region": "austro-hungarian",
+    "country": "Ukraine",
+    "coordinates": [
+      49.81,
+      24.9
+    ],
+    "day": 234,
+    "dateNote": "Aug 22 — Galician Jewish community; R. Yechiel Michel of Zlotchov"
+  },
+  {
+    "id": "belz",
+    "rank": 58,
+    "name": "Belz",
+    "region": "austro-hungarian",
+    "country": "Ukraine",
+    "coordinates": [
+      50.38,
+      24.01
+    ],
+    "day": 235,
+    "dateNote": "Aug 23 — Belzer Rebbe; Galician Hasidism's great dynasty"
+  },
+  {
+    "id": "blois",
+    "rank": 153,
+    "name": "Blois",
+    "region": "western-europe",
+    "country": "France",
+    "coordinates": [
+      47.59,
+      1.34
+    ],
+    "day": 236,
+    "dateNote": "Aug 24 — 1171 blood libel; first martyrdom in northern France"
+  },
+  {
+    "id": "curacao",
+    "rank": 344,
+    "name": "Curaçao",
+    "region": "the-americas",
+    "country": "Netherlands Antilles",
+    "coordinates": [
+      12.17,
+      -69.0
+    ],
+    "day": 237
+  },
+  {
+    "id": "munkacs",
+    "rank": 59,
+    "name": "Munkács (Mukacheve)",
+    "region": "austro-hungarian",
+    "country": "Ukraine",
+    "coordinates": [
+      48.44,
+      22.71
+    ],
+    "day": 238,
+    "dateNote": "Aug 26 — Munkacser Rebbe; ultra-Orthodox anti-Zionist stronghold"
+  },
+  {
+    "id": "limoges",
+    "rank": 154,
+    "name": "Limoges",
+    "region": "western-europe",
+    "country": "France",
+    "coordinates": [
+      45.83,
+      1.26
+    ],
+    "day": 239,
+    "dateNote": "Aug 27 — early medieval Jewish community; expelled 992"
+  },
+  {
+    "id": "barbados",
+    "rank": 345,
+    "name": "Barbados",
+    "region": "the-americas",
+    "country": "Barbados",
+    "coordinates": [
+      13.19,
+      -59.54
+    ],
+    "day": 240
+  },
+  {
+    "id": "sighet",
+    "rank": 60,
+    "name": "Sighet",
+    "region": "austro-hungarian",
+    "country": "Romania",
+    "coordinates": [
+      47.92,
+      23.9
+    ],
+    "day": 241,
+    "dateNote": "Aug 29 — Elie Wiesel born here; Satmar dynasty seat"
+  },
+  {
+    "id": "trier",
+    "rank": 156,
+    "name": "Trier",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      49.75,
+      6.64
+    ],
+    "day": 242,
+    "dateNote": "Aug 30 — oldest German city; Roman-era Jewish community"
+  },
+  {
+    "id": "jamaica",
+    "rank": 346,
+    "name": "Jamaica",
+    "region": "the-americas",
+    "country": "Jamaica",
+    "coordinates": [
+      17.99,
+      -76.8
+    ],
+    "day": 243
+  },
+  {
+    "id": "satmar",
+    "rank": 61,
+    "name": "Satu-Mare (Satmar)",
+    "region": "austro-hungarian",
+    "country": "Romania",
+    "coordinates": [
+      47.8,
+      22.88
+    ],
+    "day": 244,
+    "dateNote": "Sept 1 — Satmarer Rebbe; anti-Zionist Hasidic stronghold"
+  },
+  {
+    "id": "vilna",
+    "rank": 12,
+    "name": "Vilna (Vilnius)",
+    "region": "eastern-europe-poland",
+    "country": "Lithuania",
+    "coordinates": [
+      54.68,
+      25.28
+    ],
+    "day": 245,
+    "dateNote": "Sept 2 — Vilna Ghetto liquidation 1943"
+  },
+  {
+    "id": "recife",
+    "rank": 348,
+    "name": "Recife",
+    "region": "the-americas",
+    "country": "Brazil",
+    "coordinates": [
+      8.05,
+      -34.88
+    ],
+    "day": 246
+  },
+  {
+    "id": "charleston",
+    "rank": 349,
+    "name": "Charleston",
+    "region": "the-americas",
+    "country": "USA",
+    "coordinates": [
+      32.78,
+      -79.93
+    ],
+    "day": 247
+  },
+  {
+    "id": "jassy",
+    "rank": 109,
+    "name": "Jassy (Iași)",
+    "region": "austro-hungarian",
+    "country": "Romania",
+    "coordinates": [
+      47.16,
+      27.59
+    ],
+    "day": 248,
+    "dateNote": "Sept 5 — largest Romanian Jewish community; 1941 pogrom"
+  },
+  {
+    "id": "volozhin",
+    "rank": 43,
+    "name": "Volozhin",
+    "region": "eastern-europe-poland",
+    "country": "Belarus",
+    "coordinates": [
+      53.95,
+      26.52
+    ],
+    "day": 249,
+    "dateNote": "Sept 6 — mother of all Lithuanian yeshivot, est. 1803"
+  },
+  {
+    "id": "newport",
+    "rank": 350,
+    "name": "Newport",
+    "region": "the-americas",
+    "country": "USA",
+    "coordinates": [
+      41.49,
+      -71.31
+    ],
+    "day": 250
+  },
+  {
+    "id": "bucharest",
+    "rank": 110,
+    "name": "Bucharest",
+    "region": "austro-hungarian",
+    "country": "Romania",
+    "coordinates": [
+      44.44,
+      26.1
+    ],
+    "day": 251,
+    "dateNote": "Sept 8 — Romanian Jewish capital; Alliance schools"
+  },
+  {
+    "id": "mir",
+    "rank": 44,
+    "name": "Mir",
+    "region": "eastern-europe-poland",
+    "country": "Belarus",
+    "coordinates": [
+      53.46,
+      26.47
+    ],
+    "day": 252,
+    "dateNote": "Sept 9 — Mir Yeshiva, world-famous; survived Holocaust in Shanghai"
+  },
+  {
+    "id": "philadelphia",
+    "rank": 351,
+    "name": "Philadelphia",
+    "region": "the-americas",
+    "country": "USA",
+    "coordinates": [
+      39.95,
+      -75.17
+    ],
+    "day": 253
+  },
+  {
+    "id": "lodz",
+    "rank": 111,
+    "name": "Łódź",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      51.76,
+      19.46
+    ],
+    "day": 254,
+    "dateNote": "Sept 11 — second largest Polish ghetto; textile industry Jews"
+  },
+  {
+    "id": "brest-litovsk",
+    "rank": 45,
+    "name": "Brest-Litovsk (Brisk)",
+    "region": "eastern-europe-poland",
+    "country": "Belarus",
+    "coordinates": [
+      52.1,
+      23.71
+    ],
+    "day": 255,
+    "dateNote": "Sept 12 — R. Yosef Ber Soloveitchik; bastion of Lithuanian halacha"
+  },
+  {
+    "id": "baltimore",
+    "rank": 352,
+    "name": "Baltimore",
+    "region": "the-americas",
+    "country": "USA",
+    "coordinates": [
+      39.29,
+      -76.61
+    ],
+    "day": 256
+  },
+  {
+    "id": "bialystok",
+    "rank": 112,
+    "name": "Białystok",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      53.13,
+      23.17
+    ],
+    "day": 257,
+    "dateNote": "Sept 14 — major textile center; Bialystoker Jews in New York"
+  },
+  {
+    "id": "cracow",
+    "rank": 15,
+    "name": "Cracow (Kraków / Kazimierz)",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      50.06,
+      19.94
+    ],
+    "day": 258,
+    "dateNote": "Sept 15 — Kazimierz Jewish quarter established c. 1495"
+  },
+  {
+    "id": "boston",
+    "rank": 353,
+    "name": "Boston",
+    "region": "the-americas",
+    "country": "USA",
+    "coordinates": [
+      42.36,
+      -71.06
+    ],
+    "day": 259
+  },
+  {
+    "id": "poznan",
+    "rank": 113,
+    "name": "Poznań",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      52.41,
+      16.93
+    ],
+    "day": 260,
+    "dateNote": "Sept 17 — oldest Polish Jewish community; expelled 1940"
+  },
+  {
+    "id": "grodno",
+    "rank": 48,
+    "name": "Grodno",
+    "region": "eastern-europe-poland",
+    "country": "Belarus",
+    "coordinates": [
+      53.68,
+      23.83
+    ],
+    "day": 261,
+    "dateNote": "Sept 18 — R. Avigdor Karo; major Jewish community"
+  },
+  {
+    "id": "savannah",
+    "rank": 354,
+    "name": "Savannah",
+    "region": "the-americas",
+    "country": "USA",
+    "coordinates": [
+      32.08,
+      -81.09
+    ],
+    "day": 262
+  },
+  {
+    "id": "danzig",
+    "rank": 114,
+    "name": "Danzig (Gdańsk)",
+    "region": "eastern-europe-poland",
+    "country": "Poland/Germany",
+    "coordinates": [
+      54.35,
+      18.65
+    ],
+    "day": 263,
+    "dateNote": "Sept 20 — Free City Jews; expelled by Nazis 1939"
+  },
+  {
+    "id": "lwow",
+    "rank": 49,
+    "name": "Lwów (Lemberg / Lviv)",
+    "region": "eastern-europe-poland",
+    "country": "Ukraine",
+    "coordinates": [
+      49.84,
+      24.03
+    ],
+    "day": 264,
+    "dateNote": "Sept 21 — Golden Rose Synagogue; Galician capital"
+  },
+  {
+    "id": "lublin",
+    "rank": 14,
+    "name": "Lublin",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      51.25,
+      22.57
+    ],
+    "day": 265,
+    "dateNote": "Sept 22 — liquidation of Lublin Ghetto 1942"
+  },
+  {
+    "id": "tarnow",
+    "rank": 115,
+    "name": "Tarnów",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      50.01,
+      20.99
+    ],
+    "day": 266,
+    "dateNote": "Sept 23 — 45% Jewish population; Tarnów Ghetto liquidated 1942"
+  },
+  {
+    "id": "brody",
+    "rank": 50,
+    "name": "Brody",
+    "region": "eastern-europe-poland",
+    "country": "Ukraine",
+    "coordinates": [
+      50.09,
+      25.15
+    ],
+    "day": 267,
+    "dateNote": "Sept 24 — great trading city; Haskalah center; R. Nachman"
+  },
+  {
+    "id": "richmond",
+    "rank": 355,
+    "name": "Richmond",
+    "region": "the-americas",
+    "country": "USA",
+    "coordinates": [
+      37.54,
+      -77.43
+    ],
+    "day": 268
+  },
+  {
+    "id": "czestochowa",
+    "rank": 116,
+    "name": "Częstochowa",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      50.81,
+      19.12
+    ],
+    "day": 269,
+    "dateNote": "Sept 26 — industrial city; Jasna Gora proximity"
+  },
+  {
+    "id": "cincinnati",
+    "rank": 356,
+    "name": "Cincinnati",
+    "region": "the-americas",
+    "country": "USA",
+    "coordinates": [
+      39.1,
+      -84.51
+    ],
+    "day": 270
+  },
+  {
+    "id": "kaunas",
+    "rank": 63,
+    "name": "Kaunas (Kovno)",
+    "region": "eastern-europe-poland",
+    "country": "Lithuania",
+    "coordinates": [
+      54.9,
+      23.9
+    ],
+    "day": 271,
+    "dateNote": "Sept 28 — Slobodka Yeshiva; R. Yisroel Salanter's Mussar"
+  },
+  {
+    "id": "radom",
+    "rank": 117,
+    "name": "Radom",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      51.4,
+      21.15
+    ],
+    "day": 272,
+    "dateNote": "Sept 29 — major Jewish community; liquidated 1942"
+  },
+  {
+    "id": "washington-dc",
+    "rank": 357,
+    "name": "Washington, D.C.",
+    "region": "the-americas",
+    "country": "USA",
+    "coordinates": [
+      38.91,
+      -77.04
+    ],
+    "day": 273
+  },
+  {
+    "id": "kotsk",
+    "rank": 56,
+    "name": "Kotsk",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      51.96,
+      22.42
+    ],
+    "day": 274,
+    "dateNote": "Oct 1 — Kotsker Rebbe; radical Hasidic honesty tradition"
+  },
+  {
+    "id": "kielce",
+    "rank": 118,
+    "name": "Kielce",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      50.87,
+      20.63
+    ],
+    "day": 275,
+    "dateNote": "Oct 2 — Kielce pogrom 1946 after the Holocaust"
+  },
+  {
+    "id": "pittsburgh",
+    "rank": 358,
+    "name": "Pittsburgh",
+    "region": "the-americas",
+    "country": "USA",
+    "coordinates": [
+      40.44,
+      -79.98
+    ],
+    "day": 276
+  },
+  {
+    "id": "ger",
+    "rank": 57,
+    "name": "Ger (Góra Kalwaria)",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      51.97,
+      21.22
+    ],
+    "day": 277,
+    "dateNote": "Oct 4 — Gerer Rebbe; largest Hasidic dynasty in Poland"
+  },
+  {
+    "id": "lubartow",
+    "rank": 119,
+    "name": "Lubartów",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      51.46,
+      22.61
+    ],
+    "day": 278,
+    "dateNote": "Oct 5 — small Hasidic community; 70% Jewish before war"
+  },
+  {
+    "id": "detroit",
+    "rank": 359,
+    "name": "Detroit",
+    "region": "the-americas",
+    "country": "USA",
+    "coordinates": [
+      42.33,
+      -83.05
+    ],
+    "day": 279
+  },
+  {
+    "id": "minsk",
+    "rank": 47,
+    "name": "Minsk",
+    "region": "russia-ukraine-pale",
+    "country": "Belarus",
+    "coordinates": [
+      53.9,
+      27.57
+    ],
+    "day": 280,
+    "dateNote": "Oct 7 — historic capital of Byelorussian Jewry"
+  },
+  {
+    "id": "bedzin",
+    "rank": 120,
+    "name": "Będzin",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      50.32,
+      19.14
+    ],
+    "day": 281,
+    "dateNote": "Oct 8 — Upper Silesian Jewish community; ghetto liquidated 1943"
+  },
+  {
+    "id": "st-louis",
+    "rank": 360,
+    "name": "St. Louis",
+    "region": "the-americas",
+    "country": "USA",
+    "coordinates": [
+      38.63,
+      -90.2
+    ],
+    "day": 282
+  },
+  {
+    "id": "kutz",
+    "rank": 240,
+    "name": "Kutz (Kotz)",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      51.96,
+      22.42
+    ],
+    "day": 283,
+    "dateNote": "Oct 10 — Kotzker Rebbe's dynasty"
+  },
+  {
+    "id": "odessa",
+    "rank": 52,
+    "name": "Odessa",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      46.48,
+      30.73
+    ],
+    "day": 284,
+    "dateNote": "Oct 11 — Zionism's nursery; Bialik, Jabotinsky, Ahad Ha'am"
+  },
+  {
+    "id": "zhitomir",
+    "rank": 121,
+    "name": "Zhitomir",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      50.25,
+      28.66
+    ],
+    "day": 285,
+    "dateNote": "Oct 12 — printing center; major Volhynian community"
+  },
+  {
+    "id": "kowel",
+    "rank": 252,
+    "name": "Kowel (Kovel)",
+    "region": "eastern-europe-poland",
+    "country": "Ukraine",
+    "coordinates": [
+      51.22,
+      24.71
+    ],
+    "day": 286,
+    "dateNote": "Oct 13 — Volhynian Jewish community; mass murder site"
+  },
+  {
+    "id": "miami",
+    "rank": 361,
+    "name": "Miami",
+    "region": "the-americas",
+    "country": "USA",
+    "coordinates": [
+      25.77,
+      -80.2
+    ],
+    "day": 287
+  },
+  {
+    "id": "berdichev",
+    "rank": 53,
+    "name": "Berdichev",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      49.89,
+      28.59
+    ],
+    "day": 288,
+    "dateNote": "Oct 15 — R. Levi Yitzchak of Berdichev; heart of Podolian Hasidism"
+  },
+  {
+    "id": "uman",
+    "rank": 122,
+    "name": "Uman",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      48.75,
+      30.22
+    ],
+    "day": 289,
+    "dateNote": "Oct 16 — R. Nachman of Bratslav buried here; annual 100,000 pilgrimage"
+  },
+  {
+    "id": "los-angeles",
+    "rank": 362,
+    "name": "Los Angeles",
+    "region": "the-americas",
+    "country": "USA",
+    "coordinates": [
+      34.05,
+      -118.24
+    ],
+    "day": 290
+  },
+  {
+    "id": "medzhibozh",
+    "rank": 54,
+    "name": "Medzhibozh (Międzybóż)",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      49.43,
+      27.41
+    ],
+    "day": 291,
+    "dateNote": "Oct 18 — birthplace of Baal Shem Tov and Hasidism"
+  },
+  {
+    "id": "lowicz",
+    "rank": 254,
+    "name": "Łowicz",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      52.1,
+      19.94
+    ],
+    "day": 292,
+    "dateNote": "Oct 19 — Mazovian market town; Jewish artisans"
+  },
+  {
+    "id": "bratslav",
+    "rank": 123,
+    "name": "Bratslav (Breslov)",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      48.53,
+      28.98
+    ],
+    "day": 293,
+    "dateNote": "Oct 20 — Bratslaver Hasidism birthplace; Na-Nachs"
+  },
+  {
+    "id": "montreal",
+    "rank": 363,
+    "name": "Montréal",
+    "region": "the-americas",
+    "country": "Canada",
+    "coordinates": [
+      45.5,
+      -73.57
+    ],
+    "day": 294
+  },
+  {
+    "id": "lubavich",
+    "rank": 55,
+    "name": "Lubavich",
+    "region": "russia-ukraine-pale",
+    "country": "Russia",
+    "coordinates": [
+      54.34,
+      32.04
+    ],
+    "day": 295,
+    "dateNote": "Oct 22 — birthplace of Chabad movement; Schneerson dynasty"
+  },
+  {
+    "id": "toronto",
+    "rank": 364,
+    "name": "Toronto",
+    "region": "the-americas",
+    "country": "Canada",
+    "coordinates": [
+      43.65,
+      -79.38
+    ],
+    "day": 296
+  },
+  {
+    "id": "polonnoye",
+    "rank": 124,
+    "name": "Polonnoye",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      50.11,
+      27.52
+    ],
+    "day": 297,
+    "dateNote": "Oct 24 — R. Yaakov Yosef of Polonnoye; first printed Hasidic book"
+  },
+  {
+    "id": "sieradz",
+    "rank": 256,
+    "name": "Sieradz",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      51.6,
+      18.73
+    ],
+    "day": 298,
+    "dateNote": "Oct 25 — ancient Polish community; R. Samuel of Sieradz"
+  },
+  {
+    "id": "johannesburg",
+    "rank": 365,
+    "name": "Johannesburg",
+    "region": "the-americas",
+    "country": "South Africa",
+    "coordinates": [
+      -26.2,
+      28.04
+    ],
+    "day": 299
+  },
+  {
+    "id": "manchester",
+    "rank": 334,
+    "name": "Manchester",
+    "region": "british-isles-asia",
+    "country": "United Kingdom",
+    "coordinates": [
+      53.48,
+      -2.24
+    ],
+    "day": 300,
+    "dateNote": "Oct 27 — refugee Ashkenazim; Reform Judaism in England"
+  },
+  {
+    "id": "mezeritch",
+    "rank": 125,
+    "name": "Mezeritch (Mezritch)",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      51.37,
+      26.01
+    ],
+    "day": 301,
+    "dateNote": "Oct 28 — Maggid of Mezeritch; Hasidism's great teacher after Besht"
+  },
+  {
+    "id": "ostrowiec",
+    "rank": 287,
+    "name": "Ostrowiec-Świętokrzyski",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      50.93,
+      21.39
+    ],
+    "day": 302,
+    "dateNote": "Oct 29 — industrial town; Ostrowiec Hasidism"
+  },
+  {
+    "id": "copenhagen",
+    "rank": 141,
+    "name": "Copenhagen",
+    "region": "western-europe",
+    "country": "Denmark",
+    "coordinates": [
+      55.68,
+      12.57
+    ],
+    "day": 303,
+    "dateNote": "Oct 29 — Danish Jews rescued 1943; complete community saved"
+  },
+  {
+    "id": "milan",
+    "rank": 175,
+    "name": "Milan",
+    "region": "western-europe",
+    "country": "Italy",
+    "coordinates": [
+      45.47,
+      9.19
+    ],
+    "day": 304,
+    "dateNote": "Oct 31 — center of Italian Jewish intellectualism"
+  },
+  {
+    "id": "amsterdam",
+    "rank": 23,
+    "name": "Amsterdam",
+    "region": "western-europe",
+    "country": "Netherlands",
+    "coordinates": [
+      52.37,
+      4.9
+    ],
+    "day": 305,
+    "dateNote": "Nov 1 — Portuguese Jewish community re-established 1602"
+  },
+  {
+    "id": "dessau",
+    "rank": 163,
+    "name": "Dessau",
+    "region": "western-europe",
+    "country": "Germany",
+    "coordinates": [
+      51.84,
+      12.24
+    ],
+    "day": 306,
+    "dateNote": "Nov 2 — Moses Mendelssohn born here 1729; Haskalah founder"
+  },
+  {
+    "id": "padua",
+    "rank": 176,
+    "name": "Padua",
+    "region": "western-europe",
+    "country": "Italy",
+    "coordinates": [
+      45.41,
+      11.88
+    ],
+    "day": 307,
+    "dateNote": "Nov 3 — University medical school; Leon Modena; Cato da Pisa"
+  },
+  {
+    "id": "lizhansk",
+    "rank": 127,
+    "name": "Lizhansk (Leżajsk)",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      50.26,
+      22.42
+    ],
+    "day": 308,
+    "dateNote": "Nov 4 — R. Elimelech of Lizhansk; major Galician Hasidic center"
+  },
+  {
+    "id": "cochin",
+    "rank": 102,
+    "name": "Cochin (Kerala)",
+    "region": "british-isles-asia",
+    "country": "India",
+    "coordinates": [
+      9.93,
+      76.27
+    ],
+    "day": 309,
+    "dateNote": "Nov 5 — oldest Indian Jewish community; Paradesi Synagogue 1568"
+  },
+  {
+    "id": "verona",
+    "rank": 177,
+    "name": "Verona",
+    "region": "western-europe",
+    "country": "Italy",
+    "coordinates": [
+      45.44,
+      10.99
+    ],
+    "day": 310,
+    "dateNote": "Nov 6 — ancient Roman-era Jewish community"
+  },
+  {
+    "id": "opatow",
+    "rank": 128,
+    "name": "Opatów (Apt)",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      50.8,
+      21.43
+    ],
+    "day": 311,
+    "dateNote": "Nov 7 — R. Meir of Apt; prosperous kehilla"
+  },
+  {
+    "id": "bombay",
+    "rank": 103,
+    "name": "Bombay (Mumbai)",
+    "region": "british-isles-asia",
+    "country": "India",
+    "coordinates": [
+      19.08,
+      72.88
+    ],
+    "day": 312,
+    "dateNote": "Nov 8 — Baghdadi Jews; Bene Israel; major Sephardic hub"
+  },
+  {
+    "id": "ferrara",
+    "rank": 178,
+    "name": "Ferrara",
+    "region": "western-europe",
+    "country": "Italy",
+    "coordinates": [
+      44.84,
+      11.62
+    ],
+    "day": 313,
+    "dateNote": "Nov 9 — Este dukes' refuge; first Hebrew Bible printed 1477"
+  },
+  {
+    "id": "telsiai",
+    "rank": 130,
+    "name": "Tels (Telšiai)",
+    "region": "eastern-europe-poland",
+    "country": "Lithuania",
+    "coordinates": [
+      55.98,
+      22.26
+    ],
+    "day": 314,
+    "dateNote": "Nov 10 — Telz Yeshiva; Lithuanian Mussar tradition"
+  },
+  {
+    "id": "calcutta",
+    "rank": 104,
+    "name": "Calcutta",
+    "region": "british-isles-asia",
+    "country": "India",
+    "coordinates": [
+      22.57,
+      88.36
+    ],
+    "day": 315,
+    "dateNote": "Nov 11 — Baghdadi Jewish families; Sassoon dynasty"
+  },
+  {
+    "id": "bari",
+    "rank": 179,
+    "name": "Bari",
+    "region": "western-europe",
+    "country": "Italy",
+    "coordinates": [
+      41.12,
+      16.87
+    ],
+    "day": 316,
+    "dateNote": "Nov 12 — Apulian port; Ahimaaz ben Paltiel chronicle"
+  },
+  {
+    "id": "radun",
+    "rank": 131,
+    "name": "Raduń (Radin)",
+    "region": "eastern-europe-poland",
+    "country": "Belarus",
+    "coordinates": [
+      53.71,
+      25.12
+    ],
+    "day": 317,
+    "dateNote": "Nov 13 — home of Chofetz Chaim; musar and kashrut authority"
+  },
+  {
+    "id": "kaifeng",
+    "rank": 105,
+    "name": "Kaifeng",
+    "region": "british-isles-asia",
+    "country": "China",
+    "coordinates": [
+      34.79,
+      114.31
+    ],
+    "day": 318,
+    "dateNote": "Nov 14 — oldest known Chinese Jewish community, ~960 CE"
+  },
+  {
+    "id": "otranto",
+    "rank": 180,
+    "name": "Otranto",
+    "region": "western-europe",
+    "country": "Italy",
+    "coordinates": [
+      40.15,
+      18.49
+    ],
+    "day": 319,
+    "dateNote": "Nov 15 — R. Shabbetai Donnolo; Byzantine-era Jewish scholars"
+  },
+  {
+    "id": "lida",
+    "rank": 132,
+    "name": "Lida",
+    "region": "eastern-europe-poland",
+    "country": "Belarus",
+    "coordinates": [
+      53.89,
+      25.3
+    ],
+    "day": 320,
+    "dateNote": "Nov 16 — R. Yitzchak Reines; Mizrachi Zionism founded here"
+  },
+  {
+    "id": "shanghai",
+    "rank": 106,
+    "name": "Shanghai",
+    "region": "british-isles-asia",
+    "country": "China",
+    "coordinates": [
+      31.23,
+      121.47
+    ],
+    "day": 321,
+    "dateNote": "Nov 17 — refuge during Holocaust; Baghdadi trading elite"
+  },
+  {
+    "id": "palermo",
+    "rank": 181,
+    "name": "Palermo",
+    "region": "western-europe",
+    "country": "Italy",
+    "coordinates": [
+      38.12,
+      13.36
+    ],
+    "day": 322,
+    "dateNote": "Nov 18 — Norman Sicily's Jews; expelled 1493 with Aragon"
+  },
+  {
+    "id": "navahrudak",
+    "rank": 133,
+    "name": "Navahrudak",
+    "region": "eastern-europe-poland",
+    "country": "Belarus",
+    "coordinates": [
+      53.6,
+      25.83
+    ],
+    "day": 323,
+    "dateNote": "Nov 19 — Novardok Mussar movement; R. Yosef Yoizel Horowitz"
+  },
+  {
+    "id": "harbin",
+    "rank": 107,
+    "name": "Harbin",
+    "region": "british-isles-asia",
+    "country": "China",
+    "coordinates": [
+      45.75,
+      126.64
+    ],
+    "day": 324,
+    "dateNote": "Nov 20 — Russian Jewish refugees; Far Eastern Jewish hub"
+  },
+  {
+    "id": "syracuse",
+    "rank": 182,
+    "name": "Syracuse (Sicily)",
+    "region": "western-europe",
+    "country": "Italy",
+    "coordinates": [
+      37.07,
+      15.29
+    ],
+    "day": 325,
+    "dateNote": "Nov 21 — ancient Jewish catacomb; Sicilian Jewish seat"
+  },
+  {
+    "id": "vitebsk",
+    "rank": 135,
+    "name": "Vitebsk",
+    "region": "russia-ukraine-pale",
+    "country": "Belarus",
+    "coordinates": [
+      55.19,
+      30.2
+    ],
+    "day": 326,
+    "dateNote": "Nov 22 — Marc Chagall's birthplace; vibrant Jewish culture"
+  },
+  {
+    "id": "hong-kong",
+    "rank": 108,
+    "name": "Hong Kong",
+    "region": "british-isles-asia",
+    "country": "China",
+    "coordinates": [
+      22.32,
+      114.17
+    ],
+    "day": 327,
+    "dateNote": "Nov 23 — Sassoon and Kadoorie families; British colonial Jewry"
+  },
+  {
+    "id": "messina",
+    "rank": 183,
+    "name": "Messina",
+    "region": "western-europe",
+    "country": "Italy",
+    "coordinates": [
+      38.19,
+      15.55
+    ],
+    "day": 328,
+    "dateNote": "Nov 24 — Sicilian Jewish community; Jonah ibn Janah born nearby"
+  },
+  {
+    "id": "kiev",
+    "rank": 136,
+    "name": "Kiev (Kyiv)",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      50.45,
+      30.52
+    ],
+    "day": 329,
+    "dateNote": "Nov 25 — Babi Yar massacre site; Jewish intellectual center"
+  },
+  {
+    "id": "marienbad",
+    "rank": 171,
+    "name": "Marienbad (Mariánské Lázně)",
+    "region": "austro-hungarian",
+    "country": "Czech Republic",
+    "coordinates": [
+      49.96,
+      12.7
+    ],
+    "day": 330,
+    "dateNote": "Nov 26 — spa resort where great rabbis convened"
+  },
+  {
+    "id": "trani",
+    "rank": 184,
+    "name": "Trani",
+    "region": "western-europe",
+    "country": "Italy",
+    "coordinates": [
+      41.28,
+      16.42
+    ],
+    "day": 331,
+    "dateNote": "Nov 27 — Apulian sea-port; famous medieval synagogue"
+  },
+  {
+    "id": "moscow",
+    "rank": 137,
+    "name": "Moscow",
+    "region": "russia-ukraine-pale",
+    "country": "Russia",
+    "coordinates": [
+      55.75,
+      37.62
+    ],
+    "day": 332,
+    "dateNote": "Nov 28 — Choral Synagogue; 20th century Soviet Jewry hub"
+  },
+  {
+    "id": "graz",
+    "rank": 173,
+    "name": "Graz",
+    "region": "austro-hungarian",
+    "country": "Austria",
+    "coordinates": [
+      47.07,
+      15.44
+    ],
+    "day": 333,
+    "dateNote": "Nov 29 — Styrian capital; medieval Jewish center, expelled 1496"
+  },
+  {
+    "id": "capua",
+    "rank": 185,
+    "name": "Capua",
+    "region": "western-europe",
+    "country": "Italy",
+    "coordinates": [
+      41.1,
+      14.21
+    ],
+    "day": 334,
+    "dateNote": "Dec 1 — early medieval community; R. Shabbetai Donnolo resided nearby"
+  },
+  {
+    "id": "st-petersburg",
+    "rank": 138,
+    "name": "St. Petersburg (Petrograd)",
+    "region": "russia-ukraine-pale",
+    "country": "Russia",
+    "coordinates": [
+      59.95,
+      30.32
+    ],
+    "day": 335,
+    "dateNote": "Dec 1 — Haskalah and Russian Jewish intelligentsia"
+  },
+  {
+    "id": "eisenstadt",
+    "rank": 174,
+    "name": "Eisenstadt",
+    "region": "austro-hungarian",
+    "country": "Austria",
+    "coordinates": [
+      47.85,
+      16.52
+    ],
+    "day": 336,
+    "dateNote": "Dec 2 — R. Samson Raphael Hirsch connection; old Burgenland community"
+  },
+  {
+    "id": "ancona",
+    "rank": 186,
+    "name": "Ancona",
+    "region": "western-europe",
+    "country": "Italy",
+    "coordinates": [
+      43.62,
+      13.51
+    ],
+    "day": 337,
+    "dateNote": "Dec 3 — Marranos rescued here; papal persecution 1556"
+  },
+  {
+    "id": "yekaterinoslav",
+    "rank": 139,
+    "name": "Yekaterinoslav (Dnipro)",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      48.46,
+      34.99
+    ],
+    "day": 338,
+    "dateNote": "Dec 4 — industrial Jewish city; R. Levi Yitzchak Schneerson"
+  },
+  {
+    "id": "saint-eustatius",
+    "rank": 347,
+    "name": "Saint Eustatius",
+    "region": "the-americas",
+    "country": "Netherlands",
+    "coordinates": [
+      17.49,
+      -62.97
+    ],
+    "day": 339,
+    "dateNote": "Dec 5 — Golden Rock; Jewish merchants in the 18th century"
+  },
+  {
+    "id": "new-york",
+    "rank": 69,
+    "name": "New York City (Lower East Side)",
+    "region": "the-americas",
+    "country": "USA",
+    "coordinates": [
+      40.72,
+      -73.99
+    ],
+    "day": 340,
+    "dateNote": "Dec 6 — Lower East Side peak population 1910; Yiddish press capital"
+  },
+  {
+    "id": "riga",
+    "rank": 140,
+    "name": "Riga",
+    "region": "russia-ukraine-pale",
+    "country": "Latvia",
+    "coordinates": [
+      56.95,
+      24.11
+    ],
+    "day": 341,
+    "dateNote": "Dec 7 — Baltic Jewish center; Latvian Jewish intelligentsia"
+  },
+  {
+    "id": "stolpce",
+    "rank": 297,
+    "name": "Stołpce (Stoubcy)",
+    "region": "russia-ukraine-pale",
+    "country": "Belarus",
+    "coordinates": [
+      53.49,
+      26.74
+    ],
+    "day": 342,
+    "dateNote": "Dec 8 — Nesvizh/Stolpce Jewish communities"
+  },
+  {
+    "id": "dinov",
+    "rank": 271,
+    "name": "Dinov (Dynów)",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      49.82,
+      22.22
+    ],
+    "day": 343,
+    "dateNote": "Dec 9 — R. Tzvi Elimelech of Dinov; Benei Yissaschar"
+  },
+  {
+    "id": "akhaltsikhe",
+    "rank": 249,
+    "name": "Akhaltsikhe",
+    "region": "russia-ukraine-pale",
+    "country": "Georgia",
+    "coordinates": [
+      41.64,
+      43.0
+    ],
+    "day": 344,
+    "dateNote": "Dec 10 — Georgian Jewish community; ancient Meskheti Jews"
+  },
+  {
+    "id": "brooklyn",
+    "rank": 70,
+    "name": "Brooklyn (Williamsburg, Crown Heights, Borough Park)",
+    "region": "the-americas",
+    "country": "USA",
+    "coordinates": [
+      40.65,
+      -73.95
+    ],
+    "day": 345,
+    "dateNote": "Dec 11 — largest ultra-Orthodox community outside Israel"
+  },
+  {
+    "id": "buczacz",
+    "rank": 272,
+    "name": "Buczacz (Buchach)",
+    "region": "eastern-europe-poland",
+    "country": "Ukraine",
+    "coordinates": [
+      49.06,
+      25.39
+    ],
+    "day": 346,
+    "dateNote": "Dec 12 — S.Y. Agnon's birthplace; Nobel Prize in Literature"
+  },
+  {
+    "id": "birobidzhan",
+    "rank": 251,
+    "name": "Birobidzhan",
+    "region": "russia-ukraine-pale",
+    "country": "Russia",
+    "coordinates": [
+      48.8,
+      132.93
+    ],
+    "day": 347,
+    "dateNote": "Dec 13 — Soviet Jewish Autonomous Region; Yiddish in Siberia"
+  },
+  {
+    "id": "bielsko",
+    "rank": 281,
+    "name": "Bielsko",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      49.82,
+      19.05
+    ],
+    "day": 348,
+    "dateNote": "Dec 14 — Silesian textile city; Jewish industrialists"
+  },
+  {
+    "id": "buenos-aires",
+    "rank": 74,
+    "name": "Buenos Aires",
+    "region": "the-americas",
+    "country": "Argentina",
+    "coordinates": [
+      34.61,
+      -58.38
+    ],
+    "day": 349,
+    "dateNote": "Dec 15 — largest Jewish community in Latin America"
+  },
+  {
+    "id": "kosow",
+    "rank": 291,
+    "name": "Kosów (Kosiv)",
+    "region": "austro-hungarian",
+    "country": "Ukraine",
+    "coordinates": [
+      48.32,
+      25.1
+    ],
+    "day": 350,
+    "dateNote": "Dec 16 — Kosover Rebbe; Carpathian Hasidism"
+  },
+  {
+    "id": "piatnica",
+    "rank": 282,
+    "name": "Piątnica",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      53.21,
+      22.0
+    ],
+    "day": 351,
+    "dateNote": "Dec 17 — Łomżański district shtetl"
+  },
+  {
+    "id": "zychlin",
+    "rank": 274,
+    "name": "Zychlin",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      52.25,
+      19.62
+    ],
+    "day": 352,
+    "dateNote": "Dec 18 — Jewish community liquidated 1942"
+  },
+  {
+    "id": "chicago",
+    "rank": 75,
+    "name": "Chicago",
+    "region": "the-americas",
+    "country": "USA",
+    "coordinates": [
+      41.88,
+      -87.63
+    ],
+    "day": 353,
+    "dateNote": "Dec 19 — major American Jewish center; garment industry hub"
+  },
+  {
+    "id": "czyzew",
+    "rank": 283,
+    "name": "Czyżew-Osada",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      52.82,
+      22.31
+    ],
+    "day": 354,
+    "dateNote": "Dec 20 — small Polish community; Treblinka area"
+  },
+  {
+    "id": "krasyliv",
+    "rank": 275,
+    "name": "Kresilev (Krasyliv)",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      49.83,
+      27.08
+    ],
+    "day": 355,
+    "dateNote": "Dec 21 — Podolian market town"
+  },
+  {
+    "id": "lebiedziew",
+    "rank": 288,
+    "name": "Lebiedziew",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      52.28,
+      23.36
+    ],
+    "day": 356,
+    "dateNote": "Dec 22 — Bug River area community"
+  },
+  {
+    "id": "bielsk-podlaski",
+    "rank": 284,
+    "name": "Bielsk Podlaski",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      52.77,
+      23.19
+    ],
+    "day": 357,
+    "dateNote": "Dec 23 — Podlaskie Jewish community"
+  },
+  {
+    "id": "kurenets",
+    "rank": 276,
+    "name": "Kurenets (Kureniec)",
+    "region": "russia-ukraine-pale",
+    "country": "Belarus",
+    "coordinates": [
+      54.58,
+      26.94
+    ],
+    "day": 358,
+    "dateNote": "Dec 24 — Belarusian shtetl; entirely annihilated in Holocaust"
+  },
+  {
+    "id": "smorgonie",
+    "rank": 289,
+    "name": "Smorgonie (Smarhon)",
+    "region": "russia-ukraine-pale",
+    "country": "Belarus",
+    "coordinates": [
+      54.48,
+      26.4
+    ],
+    "day": 359,
+    "dateNote": "Dec 25 — Belarusian Jewish town; bear-trainers community"
+  },
+  {
+    "id": "blonie",
+    "rank": 285,
+    "name": "Błonie",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      52.2,
+      20.63
+    ],
+    "day": 360,
+    "dateNote": "Dec 26 — Mazovian Jewish community; near Warsaw"
+  },
+  {
+    "id": "lachovitz",
+    "rank": 277,
+    "name": "Lachovitz (Bilohiria)",
+    "region": "russia-ukraine-pale",
+    "country": "Belarus",
+    "coordinates": [
+      52.42,
+      25.34
+    ],
+    "day": 361,
+    "dateNote": "Dec 27 — R. Aharon of Karlin's community"
+  },
+  {
+    "id": "sosnowiec",
+    "rank": 290,
+    "name": "Sosnowiec",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      50.29,
+      19.1
+    ],
+    "day": 362,
+    "dateNote": "Dec 28 — Upper Silesian Jewish community"
+  },
+  {
+    "id": "belchatow",
+    "rank": 286,
+    "name": "Bełchatów",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      51.37,
+      19.37
+    ],
+    "day": 363,
+    "dateNote": "Dec 29 — weaving town; large Jewish artisan community"
+  },
+  {
+    "id": "ladyzhyn",
+    "rank": 278,
+    "name": "Ladizhin (Ladyzhyn)",
+    "region": "russia-ukraine-pale",
+    "country": "Ukraine",
+    "coordinates": [
+      48.68,
+      29.24
+    ],
+    "day": 364,
+    "dateNote": "Dec 30 — Podolian community; last of the year"
+  },
+  {
+    "id": "osowa-wyszka",
+    "rank": 293,
+    "name": "Osowa Wyszka",
+    "region": "eastern-europe-poland",
+    "country": "Poland",
+    "coordinates": [
+      52.68,
+      22.21
+    ],
+    "day": 365,
+    "dateNote": "Dec 31 — last day; memory of all unnamed communities"
+  }
+]

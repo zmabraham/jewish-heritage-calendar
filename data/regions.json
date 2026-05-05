@@ -1,0 +1,206 @@
+[
+  {
+    "id": "holy-land",
+    "name": "Holy Land & Ancient Israel",
+    "month": 1,
+    "monthName": "January",
+    "modernCountries": ["Israel", "Palestinian Territories"],
+    "historicalPeriods": ["Biblical Era", "First Temple", "Second Temple", "Roman-Byzantine", "Crusader", "Ottoman", "British Mandate", "Modern Israel"],
+    "communities": 31,
+    "tagline": "Where Jewish history began — and endures",
+    "heroDescription": "The cradle of Jewish civilization, from the ancient kingdoms of Israel and Judah through the glories of the First and Second Temple periods, the Roman exile, the Byzantine and Crusader eras, and the extraordinary modern return to Zion. For three thousand years, the cities, towns, and villages of the Land of Israel have anchored Jewish prayer, yearning, and identity. Even in centuries of exile, communities from Safed to Tiberias to Hebron maintained an unbroken Jewish presence in the ancestral homeland.",
+    "keyFacts": [
+      "Site of the Temple Mount, holiest place in Judaism, focus of daily prayer for 3,000 years",
+      "Home to the great Talmudic academies of Yavneh, Tiberias, and Caesarea Maritima",
+      "The Zionist movement established over 30 new Jewish communities here between 1878–1920"
+    ],
+    "color": "#1a5276"
+  },
+  {
+    "id": "babylonia-mesopotamia",
+    "name": "Babylonia & Mesopotamia",
+    "month": 2,
+    "monthName": "February",
+    "modernCountries": ["Iraq", "Syria", "Turkey"],
+    "historicalPeriods": ["Biblical Exile", "Persian Period", "Hellenistic", "Parthian", "Sassanid", "Geonic Era", "Islamic Caliphates", "Ottoman", "Modern Iraq"],
+    "communities": 28,
+    "tagline": "Birthplace of the Talmud, home of the Geonim",
+    "heroDescription": "When the Babylonian exile began in 586 BCE, it created not a graveyard but a second great center of Jewish civilization. For over a millennium, the academies of Sura, Pumbedita, and Nehardea shaped the entire Jewish world, producing the Babylonian Talmud — the foundational text of rabbinic Judaism. The Exilarch in Baghdad commanded the loyalty of Jews across the Islamic world, and the great Geonim issued responsa that reached from Spain to Persia. Iraq's Jews preserved traditions tracing directly to the prophets and the first exile.",
+    "keyFacts": [
+      "The Babylonian Talmud, compiled in Mesopotamia c. 500 CE, remains the central text of Jewish law",
+      "Baghdad's Jewish community numbered over 100,000 in the early 20th century — roughly a third of the city",
+      "The Exilarchate (Resh Galuta) maintained Jewish self-governance in Iraq for nearly 1,500 years"
+    ],
+    "color": "#784212"
+  },
+  {
+    "id": "persia-central-asia",
+    "name": "Persia & Central Asia",
+    "month": 3,
+    "monthName": "March",
+    "modernCountries": ["Iran", "Uzbekistan", "Tajikistan", "Turkmenistan", "Afghanistan", "Kyrgyzstan", "China"],
+    "historicalPeriods": ["Achaemenid Persian", "Hellenistic", "Parthian", "Sassanid", "Islamic Conquest", "Mongol", "Timurid", "Safavid", "Russian Imperial", "Soviet", "Modern"],
+    "communities": 31,
+    "tagline": "Ancient communities along the Silk Road",
+    "heroDescription": "From the court of Cyrus the Great — who freed the Jews from Babylon — to the storied bazaars of Isfahan, Bukhara, and Samarkand, Persia and Central Asia hosted Jewish communities of extraordinary antiquity and distinctiveness. The Purim story unfolded in Persian Shushan; Esther and Mordecai are buried in Hamadan. Bukharan Jews developed their own vibrant culture, language, and musical traditions along the Silk Road, while Persian Jews in Isfahan, Shiraz, and Yazd preserved ancient customs that differ markedly from both Ashkenaz and mainstream Sephardic practice.",
+    "keyFacts": [
+      "Persian King Cyrus the Great issued the first decree of Jewish return in 538 BCE",
+      "Bukharan Jews developed a distinct dialect (Bukhori/Judeo-Tajik) and unique musical tradition",
+      "Iran's Jewish community, centered in Tehran and Isfahan, numbered ~100,000 before the 1979 revolution"
+    ],
+    "color": "#117a65"
+  },
+  {
+    "id": "egypt-north-africa",
+    "name": "Egypt & North Africa",
+    "month": 4,
+    "monthName": "April",
+    "modernCountries": ["Egypt", "Libya", "Tunisia", "Algeria", "Morocco"],
+    "historicalPeriods": ["Biblical Egypt", "Persian", "Hellenistic", "Roman", "Byzantine", "Islamic", "Ottoman", "French Colonial", "Modern Independence"],
+    "communities": 30,
+    "tagline": "From the Nile to the Atlantic, millennia of Jewish life",
+    "heroDescription": "North Africa's Jewish communities rank among the oldest in the diaspora. At Elephantine on the Nile, a Jewish military colony flourished in the 5th century BCE; at Alexandria, Philo philosophized and the Torah was translated into Greek. The Cairo Geniza — half a million documents hidden in a synagogue storeroom — revolutionized our understanding of medieval Jewish life. Morocco's Jews trace their roots to before the Roman era, Djerba's El Ghriba synagogue claims direct descent from Temple-era priests, and Kairouan produced the great codifier Rabbenu Chananel.",
+    "keyFacts": [
+      "The Cairo Geniza, discovered 1896, preserved 400,000 manuscript fragments illuminating 1,000 years of Jewish life",
+      "Morocco's mellah system, originating in Fez in 1438, became the model for Jewish quarters across North Africa",
+      "The combined Jewish population of North Africa exceeded 600,000 before the mass emigrations of 1948–1970"
+    ],
+    "color": "#b7950b"
+  },
+  {
+    "id": "iberian-sephardic",
+    "name": "Iberian Peninsula & Sephardic Diaspora",
+    "month": 5,
+    "monthName": "May",
+    "modernCountries": ["Spain", "Portugal", "France", "Gibraltar"],
+    "historicalPeriods": ["Roman Hispania", "Visigothic", "Islamic Al-Andalus", "Reconquista", "Catholic Kingdoms", "Inquisition", "Expulsion 1492", "Converso Era", "Marranos"],
+    "communities": 31,
+    "tagline": "The golden age of Sefarad — and its long shadow",
+    "heroDescription": "Medieval Spain was the site of the greatest Jewish cultural flowering in the diaspora — the age of Maimonides, Judah Halevi, Ibn Gabirol, Samuel HaNagid, and Nachmanides. Under Islamic and then Christian rule, Sephardic Jews achieved extraordinary heights in philosophy, poetry, medicine, astronomy, and statecraft. The Alhambra Decree of 1492 expelled 200,000 Jews in a single blow, scattering them across the Mediterranean world and creating a Sephardic diaspora whose Ladino language, liturgy, and culture persist to this day. The crypto-Jews (Anusim/Marranos) who remained left an equally remarkable story of hidden identity.",
+    "keyFacts": [
+      "The 1492 Alhambra Decree expelled an estimated 100,000–300,000 Jews from Spain in a single year",
+      "Ladino (Judeo-Spanish) survived as a living language for 500 years after the expulsion",
+      "Belmonte, Portugal is home to crypto-Jews who secretly maintained Jewish practice for over 500 years"
+    ],
+    "color": "#76448a"
+  },
+  {
+    "id": "ottoman-balkans",
+    "name": "Ottoman Empire & Balkans",
+    "month": 6,
+    "monthName": "June",
+    "modernCountries": ["Turkey", "Greece", "Bulgaria", "Serbia", "Bosnia", "Croatia", "Romania", "Albania", "North Macedonia"],
+    "historicalPeriods": ["Byzantine", "Ottoman", "Post-Ottoman Nation-States", "WWII", "Communist Era", "Modern"],
+    "communities": 30,
+    "tagline": "The Ottoman refuge and the Balkan mosaic",
+    "heroDescription": "When Spain expelled its Jews in 1492, Sultan Bayezid II of the Ottoman Empire welcomed them with open arms, reportedly saying the Spanish king had 'impoverished his own country and enriched mine.' The Ottoman Empire became the great refuge of Sephardic Jewry — Salonika became a majority-Jewish city where Ladino was the language of the marketplace, Istanbul's Jewish community thrived under the millet system, and communities from Sarajevo to Rhodes developed rich multicultural identities. The Romaniote Jews of Greece, however, predate even the Sephardic arrival, representing the oldest continuous Jewish community in Europe.",
+    "keyFacts": [
+      "Salonika (Thessaloniki) was a majority-Jewish city for much of the 16th–19th centuries, with Ladino as its commercial language",
+      "The Ottoman Empire absorbed an estimated 150,000 Jewish refugees after the 1492 Spanish expulsion",
+      "Sarajevo's Haggadah (c. 1350) is one of the most beautiful illuminated Hebrew manuscripts ever produced"
+    ],
+    "color": "#c0392b"
+  },
+  {
+    "id": "western-europe",
+    "name": "Western Europe",
+    "month": 7,
+    "monthName": "July",
+    "modernCountries": ["Germany", "Netherlands", "France", "Belgium", "Austria (western)"],
+    "historicalPeriods": ["Roman", "Carolingian", "Medieval", "Crusades", "Black Death", "Early Modern", "Haskalah", "Emancipation", "Holocaust", "Postwar"],
+    "communities": 31,
+    "tagline": "From the Rhine to the Rhine — expulsions, renaissance, tragedy",
+    "heroDescription": "The ShUM cities of Mainz, Worms, and Speyer gave birth to Ashkenazic civilization in the early Middle Ages; Rashi studied in Worms before transforming Jewish scholarship from Troyes. Amsterdam became the 'Jerusalem of the North,' sheltering Sephardic refugees and hosting Spinoza's radical philosophy. Frankfurt's Judengasse, despite its cramped conditions, produced the Rothschild dynasty. The Haskalah (Jewish Enlightenment) emerged in Berlin under Moses Mendelssohn, reshaping the relationship between Jews and modernity. And yet this region also produced the Crusader massacres of 1096, the Black Death pogroms of 1349, and ultimately the Holocaust.",
+    "keyFacts": [
+      "The ShUM cities (Mainz, Worms, Speyer) produced the foundational legal codes of Ashkenazic Jewry in the 11th–12th centuries",
+      "Amsterdam's Portuguese Synagogue (1675) is the largest 17th-century synagogue in the world, still in active use",
+      "Moses Mendelssohn's Berlin circle launched the Haskalah, transforming Jewish engagement with modernity"
+    ],
+    "color": "#2e86c1"
+  },
+  {
+    "id": "austro-hungarian",
+    "name": "Austro-Hungarian Empire",
+    "month": 8,
+    "monthName": "August",
+    "modernCountries": ["Austria", "Czech Republic", "Slovakia", "Hungary", "Romania (Transylvania)", "Ukraine (Galicia)", "Croatia"],
+    "historicalPeriods": ["Habsburg Medieval", "Counter-Reformation", "Maria Theresa", "Joseph II Toleranzpatent", "Emancipation", "Franz Joseph Era", "WWI Collapse", "Interwar", "Holocaust", "Communist Era"],
+    "communities": 31,
+    "tagline": "Vienna, Prague, Budapest — the Habsburg Jewish world",
+    "heroDescription": "The Austro-Hungarian Empire hosted one of the most culturally vibrant Jewish communities in modern history. Vienna was home to Herzl, Freud, Mahler, Wittgenstein, and Stefan Zweig; Prague's Maharal created the legendary Golem and its Old-New Synagogue has stood since the 13th century; Budapest built the world's largest synagogue. The Chatam Sofer in Bratislava founded the Orthodox resistance to modernity. Galicia, encompassing Kraków, Lviv, and hundreds of shtetlach, was the heartland of Hasidism and the great yeshiva world. The empire's collapse in 1918 left its Jews exposed to the nationalisms that would culminate in the Holocaust.",
+    "keyFacts": [
+      "Vienna's Jewish community peaked at 200,000 (10% of the population) before the Nazi annexation in 1938",
+      "Prague's Old-New Synagogue, built c. 1270, is the oldest active synagogue in Europe",
+      "Galicia, the eastern Habsburg province, was the heartland of both Hasidism and the Lithuanian yeshiva tradition"
+    ],
+    "color": "#0e6655"
+  },
+  {
+    "id": "eastern-europe-poland-lithuania",
+    "name": "Eastern Europe — Poland & Lithuania",
+    "month": 9,
+    "monthName": "September",
+    "modernCountries": ["Poland", "Lithuania", "Belarus", "Latvia"],
+    "historicalPeriods": ["Casimir the Great", "Polish-Lithuanian Commonwealth", "Partition Era", "Russian Rule", "WWI", "Interwar Independence", "Holocaust", "Communist Poland", "Post-1989"],
+    "communities": 30,
+    "tagline": "The great heartland of Ashkenazic Jewry",
+    "heroDescription": "Poland and Lithuania formed the core of the Ashkenazic world for five centuries. The Polish-Lithuanian Commonwealth, at its height, sheltered the largest Jewish population on earth — a world of yeshivot, Hasidic courts, Bundist politics, Hebrew newspapers, Yiddish theater, and vibrant urban kehillot. Vilna was the 'Jerusalem of Lithuania,' home to the Vilna Gaon and a center of rabbinic scholarship and secular Jewish culture alike. Warsaw's Jewish community of 370,000 was the second largest in the world. The Holocaust destroyed this world in three years, but its legacy — in language, law, literature, and religious life — shapes Jewish civilization to this day.",
+    "keyFacts": [
+      "Poland hosted 3.3 million Jews on the eve of WWII — the largest Jewish population in Europe",
+      "The Volozhin Yeshiva, founded 1803, became the model for all modern Lithuanian-style yeshivot worldwide",
+      "Yiddish, the daily language of Ashkenazic Jews, reached its highest literary and cultural development in Poland"
+    ],
+    "color": "#6e2f1a"
+  },
+  {
+    "id": "russia-ukraine-pale",
+    "name": "Russia, Ukraine & Eastern Pale",
+    "month": 10,
+    "monthName": "October",
+    "modernCountries": ["Russia", "Ukraine", "Moldova", "Belarus", "Latvia", "Estonia"],
+    "historicalPeriods": ["Kievan Rus", "Mongol Period", "Cossack Massacres", "Russian Empire", "Pale of Settlement", "Pogroms", "Revolution", "Soviet Union", "Post-Soviet"],
+    "communities": 31,
+    "tagline": "The Pale of Settlement — five million Jewish lives",
+    "heroDescription": "The Pale of Settlement — the western borderlands of the Russian Empire where Jews were legally permitted to reside — contained five million Jews by 1900, the largest concentration in the world. Here Hasidism was born in the courts of Berdichev and Uman; here the great Hebrew and Yiddish literature of modernity emerged; here waves of pogroms in 1881–1882, 1903–1906, and 1918–1921 drove millions westward to America. Odessa was the cosmopolitan birthplace of Zionism and Hebrew literature; Kishinev became a byword for antisemitic barbarism; Babi Yar outside Kyiv was the site of the single largest massacre of the Holocaust.",
+    "keyFacts": [
+      "The Pale of Settlement (1791–1917) confined 5 million Jews to specific western provinces of the Russian Empire",
+      "Babi Yar, September 29–30, 1941: 33,771 Jews shot by the Nazis — the largest two-day massacre of the Holocaust",
+      "Over 2 million Jews emigrated from the Russian Empire to America between 1881 and 1924"
+    ],
+    "color": "#922b21"
+  },
+  {
+    "id": "british-isles-anglo",
+    "name": "British Isles & Anglo Communities",
+    "month": 11,
+    "monthName": "November",
+    "modernCountries": ["United Kingdom", "Ireland"],
+    "historicalPeriods": ["Norman Conquest", "Medieval", "Expulsion 1290", "Readmission 1656", "Sephardic Settlement", "Ashkenaz Immigration", "Victorian Era", "East End", "WWII", "Modern"],
+    "communities": 30,
+    "tagline": "From the medieval martyrs of York to the East End of London",
+    "heroDescription": "England's Jewish history spans the dramatic arc of medieval martyrdom, expulsion, and triumphant readmission. The Jews of York perished in the Clifford's Tower massacre of 1190; Aaron of Lincoln was medieval England's wealthiest man; the entire community was expelled in 1290. Oliver Cromwell's readmission of Jews in 1656 opened a new chapter, with Sephardic merchants from Amsterdam establishing Bevis Marks Synagogue in London. Victorian emancipation brought Jewish peers, a Jewish prime minister (Disraeli), and the Rothschild banking dynasty. The East End of London became the heartland of Ashkenazic immigrant culture, producing generations of artists, thinkers, and Labour politicians.",
+    "keyFacts": [
+      "England expelled all Jews in 1290 — the first national expulsion in European history; Cromwell readmitted them 366 years later",
+      "Benjamin Disraeli (1804–1881) became Britain's first (and only) Jewish-born Prime Minister",
+      "Ramsgate's Sir Moses Montefiore made 7 trips to the Land of Israel and championed Jewish rights worldwide from age 40 to 100"
+    ],
+    "color": "#1f618d"
+  },
+  {
+    "id": "the-americas",
+    "name": "The Americas",
+    "month": 12,
+    "monthName": "December",
+    "modernCountries": ["United States", "Canada", "Argentina", "Brazil", "Mexico", "Uruguay", "Chile", "Colombia", "Peru", "Cuba", "Jamaica", "Barbados", "Suriname", "Panama", "Curaçao"],
+    "historicalPeriods": ["Colonial Sephardic", "Early Republic", "19th Century Immigration", "East European Mass Immigration 1880–1924", "Holocaust Refugees", "Post-WWII", "Israeli Diaspora", "Contemporary"],
+    "communities": 31,
+    "tagline": "The New World — refuge, reinvention, and the largest Jewish communities on earth",
+    "heroDescription": "The Americas became the great refuge and reinvention of the Jewish people. The first Jews arrived in Recife, Brazil in 1630; when the Dutch lost Brazil to Portugal in 1654, twenty-three refugees sailed north to New Amsterdam — planting the seed of the New York Jewish community that would eventually number two million. Newport, Rhode Island's Touro Synagogue (1763) received George Washington's famous letter promising liberty of conscience. A century later, the Lower East Side of Manhattan became the most densely Jewish neighborhood in history, as two million Eastern Europeans fled the pogroms. Today, North and South America together host more Jews than any other region of the world.",
+    "keyFacts": [
+      "New York City's Jewish population peaked at approximately 2 million in the 1950s — the largest Jewish community in all of history",
+      "The Touro Synagogue in Newport, RI (1763) is the oldest surviving synagogue building in the United States",
+      "Argentina's Baron Hirsch agricultural colonies, established 1891, resettled 35,000 Russian Jewish refugees on the pampas"
+    ],
+    "color": "#1e8449"
+  }
+]
