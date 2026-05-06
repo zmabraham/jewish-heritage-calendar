@@ -433,8 +433,8 @@ def generate_community_page(community: dict, regions: list, template_html: str,
     region_color = region.get("color", "#1a3a5c")
 
     # Find prev/next communities by dayOfYear
-    day = community.get("dayOfYear", 1)
-    sorted_communities = sorted(all_communities, key=lambda c: c.get("dayOfYear", 0))
+    day = community.get("dayOfYear", community.get("day", 1))
+    sorted_communities = sorted(all_communities, key=lambda c: c.get("dayOfYear", c.get("day", 0)))
     total = len(sorted_communities)
     current_idx = next((i for i, c in enumerate(sorted_communities)
                         if c.get("id") == community_id), 0)
@@ -754,7 +754,7 @@ def generate_communities(communities, regions, template_html, verbose=True):
     generated = 0
     skipped = 0
 
-    for i, community in enumerate(sorted(communities, key=lambda c: c.get("dayOfYear", 0)), 1):
+    for i, community in enumerate(sorted(communities, key=lambda c: c.get("dayOfYear", c.get("day", 0))), 1):
         community_id = community.get("id", f"community-{i}")
         out_path = COMMUNITY_OUT_DIR / f"{community_id}.html"
 

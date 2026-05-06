@@ -192,6 +192,42 @@
     color: #6b5d4f;
   }
 
+  /* Wikipedia community image */
+  .community-image {
+    float: right;
+    margin: 0 0 1.5rem 2rem;
+    max-width: 320px;
+    border: 1px solid #e8d5a3;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .community-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .community-image figcaption {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+    color: #6b5d4f;
+    line-height: 1.4;
+    background: #faf8f5;
+  }
+
+  .community-image figcaption a {
+    color: #1a3a5c;
+  }
+
+  @media (max-width: 600px) {
+    .community-image {
+      float: none;
+      margin: 0 0 1.5rem 0;
+      max-width: 100%;
+    }
+  }
+
   /* Notable Figures Grid */
   .figures-grid {
     display: grid;
@@ -415,7 +451,7 @@
   <!-- Community Hero -->
   <div class="community-hero">
     <div class="community-hero-inner">
-      <div class="heritage-date-headline">January 1, 2026 — Halle Jewish Heritage Day</div>
+      <div class="heritage-date-headline">July 19, 2026 — Halle Jewish Heritage Day</div>
       <h1>Halle</h1>
       <div class="community-meta">
         <span>Holy Land & Ancient Israel</span>
@@ -502,8 +538,8 @@
     <aside class="sidebar">
       <!-- Jewish Heritage Day Badge -->
       <div class="heritage-day-badge">
-        <div class="heritage-day-month">January</div>
-        <div class="heritage-day-number">1</div>
+        <div class="heritage-day-month">July</div>
+        <div class="heritage-day-number">19</div>
         <div class="heritage-day-year">2026</div>
         <div class="heritage-day-label">Halle<br>Jewish Heritage Day</div>
       </div>
@@ -547,7 +583,7 @@
         <div class="share-buttons">
           <button class="share-btn share-btn-copy" onclick="copyLink()">Copy Link</button>
           <button class="share-btn share-btn-twitter"
-            onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('January 1, 2026 — Today is Halle Jewish Heritage Day! ' + window.location.href))">
+            onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent('July 19, 2026 — Today is Halle Jewish Heritage Day! ' + window.location.href))">
             Share on X (Twitter)
           </button>
         </div>
