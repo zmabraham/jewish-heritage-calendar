@@ -3,6 +3,10 @@ id: lerida
 name: Lleida/Lérida, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Lleida_-_La_Seu_Vella.jpg/640px-Lleida_-_La_Seu_Vella.jpg"
+    caption: "Lleida (Lérida) Old Cathedral"
+    wiki_url: "https://en.wikipedia.org/wiki/Lleida"
 ---
 
 # Lleida/Lérida

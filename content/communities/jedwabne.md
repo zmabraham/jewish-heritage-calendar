@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [53.29, 22.31]
 day: 192
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Jedwabne_-_Kosciol.JPG/640px-Jedwabne_-_Kosciol.JPG"
+    caption: "Jedwabne church"
+    wiki_url: "https://en.wikipedia.org/wiki/Jedwabne"
 ---
 
 # Jedwabne

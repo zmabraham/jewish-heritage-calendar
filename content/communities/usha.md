@@ -5,6 +5,10 @@ region: holy-land
 country: Israel
 coordinates: [32.81, 35.09]
 day: 15
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Katzrin.jpg/640px-Katzrin.jpg"
+    caption: "Katzrin (near ancient Usha)"
+    wiki_url: "https://en.wikipedia.org/wiki/Usha"
 ---
 
 # Usha

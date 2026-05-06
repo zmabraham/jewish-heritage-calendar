@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [49.86, 28.35]
 day: 99
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Khodoriv.jpg/640px-Khodoriv.jpg"
+    caption: "Khodoriv (Khodorovka)"
+    wiki_url: "https://en.wikipedia.org/wiki/Khodoriv"
 ---
 
 # Khodorovka

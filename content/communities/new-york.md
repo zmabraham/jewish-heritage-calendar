@@ -5,6 +5,10 @@ region: the-americas
 country: USA
 coordinates: [40.72, -73.99]
 day: 63
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/New_York_City_Montage_2.jpg/640px-New_York_City_Montage_2.jpg"
+    caption: "New York City skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/New_York_City"
 ---
 
 # New York City (Lower East Side)

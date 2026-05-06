@@ -5,6 +5,10 @@ region: holy-land
 country: Israel/Palestine
 coordinates: [31.66, 34.92]
 day: 10
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/PikiWiki_Israel_12065_Beit_Govrin.jpg/640px-PikiWiki_Israel_12065_Beit_Govrin.jpg"
+    caption: "Beit Guvrin archaeological site"
+    wiki_url: "https://en.wikipedia.org/wiki/Beit_Guvrin"
 ---
 
 # Beit Jibrin

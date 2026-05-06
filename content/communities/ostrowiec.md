@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [50.94, 21.38]
 day: 303
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Ostrowiec_%C5%9Awi%C4%99tokrzyski_-_rynek.jpg/640px-Ostrowiec_%C5%9Awi%C4%99tokrzyski_-_rynek.jpg"
+    caption: "Ostrowiec Świętokrzyski market"
+    wiki_url: "https://en.wikipedia.org/wiki/Ostrowiec_%C5%9Awi%C4%99tokrzyski"
 ---
 
 # Ostrowiec-Świętokrzyski

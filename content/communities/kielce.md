@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [50.87, 20.63]
 day: 188
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Kielce_-_Palac_Biskupow.jpg/640px-Kielce_-_Palac_Biskupow.jpg"
+    caption: "Bishops' Palace, Kielce"
+    wiki_url: "https://en.wikipedia.org/wiki/Kielce"
 ---
 
 # Kielce

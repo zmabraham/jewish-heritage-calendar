@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Herodium_1.jpg/640px-Herodium_1.jpg"
+    caption: "Herodium (Herodion) fortress"
+    wiki_url: "https://en.wikipedia.org/wiki/Herodium"
 ---
 
 # Herodium

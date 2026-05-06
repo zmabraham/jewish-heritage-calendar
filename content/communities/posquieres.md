@@ -5,6 +5,10 @@ region: iberian-sephardic
 country: France
 coordinates: [43.69, 4.27]
 day: 1
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/P%C3%A9zenas_-_Jewish_Cemetery.jpg/640px-P%C3%A9zenas_-_Jewish_Cemetery.jpg"
+    caption: "Pézenas (Posquières)"
+    wiki_url: "https://en.wikipedia.org/wiki/P%C3%A9zenas"
 ---
 
 # Posquières (Vauvert)

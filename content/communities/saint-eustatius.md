@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Sint_Eustatius_Oranjestad.jpg/640px-Sint_Eustatius_Oranjestad.jpg"
+    caption: "Sint Eustatius (Saint Eustatius)"
+    wiki_url: "https://en.wikipedia.org/wiki/Sint_Eustatius"
 ---
 
 # Saint Eustatius

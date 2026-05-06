@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [52.87, 21.10]
 day: 261
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Mak%C3%B3w_Mazowiecki_-_Ratusz.jpg/640px-Mak%C3%B3w_Mazowiecki_-_Ratusz.jpg"
+    caption: "Maków Mazowiecki town hall"
+    wiki_url: "https://en.wikipedia.org/wiki/Mak%C3%B3w_Mazowiecki"
 ---
 
 # Maków Mazowiecki

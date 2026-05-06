@@ -5,6 +5,10 @@ region: the-americas
 country: USA
 coordinates: [39.95, -75.17]
 day: 69
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Philadelphia_Montage.jpg/640px-Philadelphia_Montage.jpg"
+    caption: "Philadelphia skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Philadelphia"
 ---
 
 # Philadelphia

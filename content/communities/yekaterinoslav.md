@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [48.46, 35.04]
 day: 238
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Orthodox_Church_of_Saint_Nicholas_Kamianske_2.jpg/640px-Orthodox_Church_of_Saint_Nicholas_Kamianske_2.jpg"
+    caption: "Dnipro region — Orthodox Church of Saint Nicholas"
+    wiki_url: "https://en.wikipedia.org/wiki/Kamianske"
 ---
 
 # Yekaterinoslav (Dnipro / Dnipropetrovsk)

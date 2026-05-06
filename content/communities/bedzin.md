@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [50.32, 19.13]
 day: 216
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/B%C4%99dzin_-_Zamek_obronny_z_XIVw..jpg/640px-B%C4%99dzin_-_Zamek_obronny_z_XIVw..jpg"
+    caption: "Będzin Castle, 14th century"
+    wiki_url: "https://en.wikipedia.org/wiki/B%C4%99dzin"
 ---
 
 # Będzin

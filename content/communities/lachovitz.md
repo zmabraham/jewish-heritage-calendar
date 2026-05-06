@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Liakhavichy_Palace.jpg/640px-Liakhavichy_Palace.jpg"
+    caption: "Lyakhavichy (Lachovitz)"
+    wiki_url: "https://en.wikipedia.org/wiki/Lyakhavichy"
 ---
 
 # Lachovitz (Bilohiria)

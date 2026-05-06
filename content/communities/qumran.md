@@ -5,6 +5,10 @@ region: holy-land
 country: Israel
 coordinates: [31.74, 35.46]
 day: 3
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Qumran_caves.jpg/640px-Qumran_caves.jpg"
+    caption: "Qumran caves"
+    wiki_url: "https://en.wikipedia.org/wiki/Qumran"
 ---
 
 # Qumran

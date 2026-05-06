@@ -3,6 +3,10 @@ id: volozhin
 name: Volozhin, Belarus
 region: eastern-europe-poland-lithuania
 country: Belarus
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Volo%C5%BCyn_Palace.jpg/640px-Volo%C5%BCyn_Palace.jpg"
+    caption: "Vałožyn (Volozhin) Palace"
+    wiki_url: "https://en.wikipedia.org/wiki/Va%C5%82o%C5%BCyn"
 ---
 
 # Volozhin

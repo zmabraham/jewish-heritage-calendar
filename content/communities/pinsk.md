@@ -3,6 +3,10 @@ id: pinsk
 name: Pinsk, Belarus
 region: eastern-europe-poland-lithuania
 country: Belarus
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Pinsk_-_Jesuit_Church.jpg/640px-Pinsk_-_Jesuit_Church.jpg"
+    caption: "Pinsk Jesuit Church"
+    wiki_url: "https://en.wikipedia.org/wiki/Pinsk"
 ---
 
 # Pinsk

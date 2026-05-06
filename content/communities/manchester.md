@@ -3,6 +3,10 @@ id: manchester
 name: Manchester, United Kingdom
 region: british-isles-anglo
 country: United Kingdom
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Manchester_town_hall_2012.jpg/640px-Manchester_town_hall_2012.jpg"
+    caption: "Manchester Town Hall"
+    wiki_url: "https://en.wikipedia.org/wiki/Manchester"
 ---
 
 # Manchester

@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Toronto_Skyline_from_Snake_Island%2C_February_28_2026_%2808%29.jpg/640px-Toronto_Skyline_from_Snake_Island%2C_February_28_2026_%2808%29.jpg"
+    caption: "Toronto skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Toronto"
 ---
 
 # Toronto

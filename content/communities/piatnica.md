@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [53.20, 22.06]
 day: 163
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Pi%C4%85tnica_-_Kości%C3%B3l.jpg/640px-Pi%C4%85tnica_-_Kości%C3%B3l.jpg"
+    caption: "Piątnica church"
+    wiki_url: "https://en.wikipedia.org/wiki/Pi%C4%85tnica"
 ---
 
 # Piątnica

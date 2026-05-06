@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Algeria
 coordinates: [34.88, -1.31]
 day: 110
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tlemcen_Grand_Mosque.jpg/640px-Tlemcen_Grand_Mosque.jpg"
+    caption: "Tlemcen Grand Mosque"
+    wiki_url: "https://en.wikipedia.org/wiki/Tlemcen"
 ---
 
 # Tlemcen

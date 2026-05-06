@@ -5,6 +5,10 @@ region: ottoman-balkans
 country: Greece
 coordinates: [41.35, 26.50]
 day: 227
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/20100523_view_of_city_castles_Didymoteicho_Evros_Greece.jpg/640px-20100523_view_of_city_castles_Didymoteicho_Evros_Greece.jpg"
+    caption: "Didymoteicho (Demotika)"
+    wiki_url: "https://en.wikipedia.org/wiki/Didymoteicho"
 ---
 
 # Demotika (Didymoticho)

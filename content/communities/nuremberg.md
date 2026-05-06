@@ -3,6 +3,10 @@ id: nuremberg
 name: Nuremberg (Nürnberg)
 region: western-europe
 country: Germany
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Nuernberg_Burg.jpg/640px-Nuernberg_Burg.jpg"
+    caption: "Nuremberg Castle"
+    wiki_url: "https://en.wikipedia.org/wiki/Nuremberg"
 ---
 
 # Nuremberg

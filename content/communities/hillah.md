@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Hillah_Iraq.jpg/640px-Hillah_Iraq.jpg"
+    caption: "Hillah, Iraq"
+    wiki_url: "https://en.wikipedia.org/wiki/Hillah"
 ---
 
 # Hillah

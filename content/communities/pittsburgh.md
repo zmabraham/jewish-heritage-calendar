@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Pittsburgh_Montage_2020.jpg/640px-Pittsburgh_Montage_2020.jpg"
+    caption: "Pittsburgh skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Pittsburgh"
 ---
 
 # Pittsburgh

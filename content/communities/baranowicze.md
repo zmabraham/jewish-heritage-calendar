@@ -3,6 +3,10 @@ id: baranowicze
 name: Baranowicze, Belarus
 region: eastern-europe-poland-lithuania
 country: Belarus
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Bank_Baranavichy.jpg/640px-Bank_Baranavichy.jpg"
+    caption: "Baranovichi city center"
+    wiki_url: "https://en.wikipedia.org/wiki/Baranovichi"
 ---
 
 # Baranowicze

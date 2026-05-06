@@ -3,6 +3,10 @@ id: worms
 name: Worms
 region: western-europe
 country: Germany
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Worms_-_Dom_und_Lieberfrauenkirche.jpg/640px-Worms_-_Dom_und_Lieberfrauenkirche.jpg"
+    caption: "Worms Cathedral"
+    wiki_url: "https://en.wikipedia.org/wiki/Worms,_Germany"
 ---
 
 # Worms

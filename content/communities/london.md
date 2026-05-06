@@ -3,6 +3,10 @@ id: london
 name: London, United Kingdom
 region: british-isles-anglo
 country: United Kingdom
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/London_Skyline_%2825525491579%29.jpg/640px-London_Skyline_%2825525491579%29.jpg"
+    caption: "London skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/London"
 ---
 
 # London

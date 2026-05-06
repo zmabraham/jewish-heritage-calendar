@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Mali
 coordinates: [16.77, -3.01]
 day: 116
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Timbuktu-mosque-2007.jpg/640px-Timbuktu-mosque-2007.jpg"
+    caption: "Timbuktu mosque"
+    wiki_url: "https://en.wikipedia.org/wiki/Timbuktu"
 ---
 
 # Timbuktu

@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Boston_skyline_from_Longfellow_Bridge_September_2017_panorama_2.jpg"
+    caption: "Boston skyline from Longfellow Bridge"
+    wiki_url: "https://en.wikipedia.org/wiki/Boston"
 ---
 
 # Boston

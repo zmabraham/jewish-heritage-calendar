@@ -3,6 +3,10 @@ id: ramla
 name: Ramla
 region: holy-land
 country: Israel
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Ramla_-_White_Tower.jpg/640px-Ramla_-_White_Tower.jpg"
+    caption: "Ramla White Tower"
+    wiki_url: "https://en.wikipedia.org/wiki/Ramla"
 ---
 
 # Ramla

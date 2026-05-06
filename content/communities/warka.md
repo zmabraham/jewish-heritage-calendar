@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [51.78, 21.20]
 day: 267
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Warka_-_church.jpg/640px-Warka_-_church.jpg"
+    caption: "Warka church"
+    wiki_url: "https://en.wikipedia.org/wiki/Warka"
 ---
 
 # Vurke (Warka)

@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [48.75, 30.22]
 day: 1
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%D0%9A%D0%BE%D1%81%D1%82%D0%B5%D0%BB_%D1%96_%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BD%D0%B0_%D0%B3%D0%B0%D0%BB%D0%B5%D1%80%D0%B5%D1%8F-2.jpg/640px-%D0%9A%D0%BE%D1%81%D1%82%D0%B5%D0%BB_%D1%96_%D0%9A%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BD%D0%B0_%D0%B3%D0%B0%D0%BB%D0%B5%D1%80%D0%B5%D1%8F-2.jpg"
+    caption: "Uman — Castle and Gallery"
+    wiki_url: "https://en.wikipedia.org/wiki/Uman"
 ---
 
 # Uman

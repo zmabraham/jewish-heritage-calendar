@@ -5,6 +5,10 @@ region: austro-hungarian
 country: Romania
 coordinates: [47.16, 27.59]
 day: 49
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Iasi_-_Palatul_Culturii.jpg/640px-Iasi_-_Palatul_Culturii.jpg"
+    caption: "Iași (Jassy) Palace of Culture"
+    wiki_url: "https://en.wikipedia.org/wiki/Ia%C8%99i"
 ---
 
 # Jassy (Iași)

@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Shilo_synagogue.jpg/640px-Shilo_synagogue.jpg"
+    caption: "Shiloh synagogue"
+    wiki_url: "https://en.wikipedia.org/wiki/Shiloh"
 ---
 
 # Shiloh

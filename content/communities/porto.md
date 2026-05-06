@@ -3,6 +3,10 @@ id: porto
 name: Porto, Portugal
 region: iberian-sephardic
 country: Portugal
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Ribeira_-_Porto.jpg/640px-Ribeira_-_Porto.jpg"
+    caption: "Porto Ribeira district"
+    wiki_url: "https://en.wikipedia.org/wiki/Porto"
 ---
 
 # Porto

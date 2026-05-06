@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Melitopol%27_Budivlya_Tovarystva_Vzaemnogo_Kredytu_04_K.Marksa_7_%28YDS_6823%29.JPG/640px-Melitopol%27_Budivlya_Tovarystva_Vzaemnogo_Kredytu_04_K.Marksa_7_%28YDS_6823%29.JPG"
+    caption: "Melitopol — historic Mutual Credit Society building"
+    wiki_url: "https://en.wikipedia.org/wiki/Melitopol"
 ---
 
 # Melitopol

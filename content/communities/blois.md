@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Blois_Loire_Panorama_-_July_2011.jpg/640px-Blois_Loire_Panorama_-_July_2011.jpg"
+    caption: "Blois along the Loire River"
+    wiki_url: "https://en.wikipedia.org/wiki/Blois"
 ---
 
 # Blois

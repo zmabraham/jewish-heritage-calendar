@@ -164,6 +164,9 @@ def parse_frontmatter(content: str) -> tuple[dict, str]:
         list_key:
           - item1
           - item2
+        nested_list:
+          - url: "value"
+            caption: "text"
         ---
     """
     if not content.startswith("---"):
@@ -179,34 +182,111 @@ def parse_frontmatter(content: str) -> tuple[dict, str]:
     metadata = {}
     current_key = None
     current_list = None
+    current_dict = None  # For nested dict items in lists
+    in_nested_list = False
 
-    for line in frontmatter_text.split("\n"):
-        # List item under a key
-        if line.startswith("  - ") or line.startswith("- "):
-            item = line.lstrip("- ").strip()
+    lines = frontmatter_text.split("\n")
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        stripped = line.lstrip()
+        indent = len(line) - len(stripped)
+
+        # Nested dict item (like "url: ..." or "caption: ...")
+        if stripped.startswith(("url:", "caption:", "wiki_url:")) and in_nested_list:
+            key, _, value = stripped.partition(":")
+            key = key.strip()
+            value = value.strip().strip('"\'')
+            if current_dict is not None:
+                current_dict[key] = value
+            i += 1
+            continue
+
+        # List item with nested dict (starts with "- ")
+        if stripped.startswith("- ") and ":" in stripped:
+            in_nested_list = True
+            current_dict = {}
+            if current_list is not None:
+                current_list.append(current_dict)
+            # Parse inline key: value if present
+            item_part = stripped[2:].strip()
+            if ":" in item_part:
+                k, _, v = item_part.partition(":")
+                current_dict[k.strip()] = v.strip().strip('"\'')
+            i += 1
+            continue
+
+        # Regular list item
+        if stripped.startswith("- "):
+            in_nested_list = False
+            current_dict = None
+            item = stripped[2:].strip().strip('"\'')
             if current_list is not None:
                 current_list.append(item)
+            i += 1
             continue
 
         # Key: value pair
-        if ":" in line:
-            key, _, value = line.partition(":")
+        if ":" in stripped:
+            key, _, value = stripped.partition(":")
             key = key.strip()
             value = value.strip()
 
-            # If value is empty, this is a list key
+            # If value is empty, this starts a list
             if not value:
                 current_list = []
+                in_nested_list = False
                 metadata[key] = current_list
                 current_key = key
+                current_dict = None
             else:
                 current_key = key
                 current_list = None
+                in_nested_list = False
                 # Remove surrounding quotes
                 value = value.strip('"\'')
                 metadata[key] = value
 
+        i += 1
+
     return metadata, body
+
+
+# ─── Images HTML ──────────────────────────────────────────────────────────────
+
+def build_images_html(images: list, community_name: str) -> str:
+    """Build HTML for community images from a list of image dicts or URL strings.
+
+    Each item may be:
+      - a plain string URL
+      - a dict with keys: url, caption, wiki_url (all optional)
+    """
+    if not images:
+        return ""
+    parts = []
+    for img in images:
+        if isinstance(img, str):
+            url = img
+            caption = community_name
+            wiki_url = ""
+        else:
+            url = img.get("url", "")
+            caption = img.get("caption", community_name)
+            wiki_url = img.get("wiki_url", "")
+        if not url:
+            continue
+        via = ""
+        if wiki_url:
+            via = f' — via <a href="{wiki_url}" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons'
+        else:
+            via = " — via Wikipedia / Wikimedia Commons"
+        parts.append(
+            f'        <figure class="community-image">\n'
+            f'          <img src="{url}" alt="{caption}" loading="lazy" onerror="this.parentElement.style.display=\'none\'">\n'
+            f'          <figcaption>{caption}{via}</figcaption>\n'
+            f'        </figure>'
+        )
+    return "\n".join(parts)
 
 
 # ─── Figures HTML ─────────────────────────────────────────────────────────────
@@ -408,8 +488,91 @@ def generate_community_page(community: dict, regions: list, template_html: str,
             current_lines.append(line)
     sections[current_section] = "\n".join(current_lines).strip()
 
+    # ── Section aliases: map variant headings → canonical keys ──────────────
+    # Many articles use slightly different heading names; this normalises them
+    # so all content is rendered rather than silently dropped.
+    SECTION_ALIASES: dict[str, list[str]] = {
+        "historical-origins": [
+            "historical-background",
+            "historical-origins",
+            "origins",
+            "early-history",
+            "historical-context",
+        ],
+        "golden-age":         ["golden-age", "the-golden-age"],
+        "institutions-sacred-spaces": [
+            "institutions-sacred-spaces",
+            "institutions-synagogues",
+            "institutions",
+            "synagogues-and-institutions",
+            "sacred-spaces",
+        ],
+        "cultural-life": [
+            "cultural-life",
+            "cultural-and-religious-contributions",
+            "cultural-and-religious-life",
+            "cultural-contributions",
+            "communal-life",
+            "community-life-and-institutions",
+        ],
+        "decline-and-transformation": [
+            "decline-and-transformation",
+            "decline-dispersal",
+            "decline-and-dispersal",
+            "deportation-and-destruction",
+            "the-holocaust",
+            "the-wartime-crisis-and-rescue",
+        ],
+        "legacy-and-diaspora": [
+            "legacy-and-diaspora",
+            "legacy-today",
+            "legacy",
+            "legacy-and-transformation",
+            "emigration-to-israel",
+        ],
+    }
+
+    # Build a reverse lookup: raw key → canonical key
+    _alias_map: dict[str, str] = {}
+    for canonical, aliases in SECTION_ALIASES.items():
+        for alias in aliases:
+            _alias_map[alias] = canonical
+
+    # Merge aliased sections into their canonical counterparts, preserving order
+    # Any section NOT matched by an alias or canonical name is appended to the
+    # nearest canonical bucket defined below.
+    CANONICAL_KEYS = list(SECTION_ALIASES.keys())
+    _OVERFLOW_TARGET: dict[str, str] = {
+        # Unrecognised custom sub-sections get bucketed here:
+        # We'll append them to golden-age (general history material)
+        "golden-age": "golden-age",
+    }
+
+    canonical_sections: dict[str, list[str]] = {k: [] for k in CANONICAL_KEYS}
+    canonical_sections["overview"] = []
+    canonical_sections["notable-figures"] = []   # text from ## Notable Figures section
+
+    for raw_key, content in sections.items():
+        if not content:
+            continue
+        target = _alias_map.get(raw_key, raw_key)
+        if target in canonical_sections:
+            canonical_sections[target].append(content)
+        elif raw_key in ("overview",):
+            canonical_sections["overview"].append(content)
+        elif raw_key in ("notable-figures", "notable-figures-and-legacy"):
+            canonical_sections["notable-figures"].append(content)
+        elif raw_key in ("further-reading", "further-research", "key-facts",
+                         "bibliography", "sources"):
+            pass  # silently drop reference sections — they are not displayed
+        else:
+            # Unknown section — append to golden-age bucket to preserve content
+            canonical_sections["golden-age"].append(content)
+
     def get_section(key: str) -> str:
-        return markdown_to_html(sections.get(key, ""))
+        parts = canonical_sections.get(key, [])
+        combined = "\n\n".join(p for p in parts if p)
+        return markdown_to_html(combined)
 
     # Build figures HTML
     figures = meta.get("figures", [])
@@ -464,12 +627,16 @@ def generate_community_page(community: dict, regions: list, template_html: str,
         "OVERVIEW_CONTENT": get_section("overview"),
         "ORIGINS_CONTENT": get_section("historical-origins"),
         "GOLDEN_AGE_CONTENT": get_section("golden-age"),
-        "FIGURES_INTRO": figures_intro,
+        "FIGURES_INTRO": figures_intro or get_section("notable-figures"),
         "FIGURES_HTML": figures_html,
         "INSTITUTIONS_CONTENT": get_section("institutions-sacred-spaces"),
         "CULTURAL_CONTENT": get_section("cultural-life"),
         "DECLINE_CONTENT": get_section("decline-and-transformation"),
         "LEGACY_CONTENT": get_section("legacy-and-diaspora"),
+        "IMAGES_HTML": build_images_html(
+            meta.get("images", []),
+            community.get("name", "Heritage Community"),
+        ),
     }
 
     return render_template(template_html, replacements)

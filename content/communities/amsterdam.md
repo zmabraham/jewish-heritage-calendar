@@ -3,6 +3,10 @@ id: amsterdam
 name: Amsterdam
 region: western-europe
 country: Netherlands
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png/640px-Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png"
+    caption: "Amsterdam canals"
+    wiki_url: "https://en.wikipedia.org/wiki/Amsterdam"
 ---
 
 # Amsterdam

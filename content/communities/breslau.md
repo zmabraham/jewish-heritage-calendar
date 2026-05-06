@@ -5,6 +5,10 @@ region: austro-hungarian
 country: Poland
 coordinates: [51.11, 17.02]
 day: 48
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Wroclaw-_Most_Grunwaldzki.jpg/640px-Wroclaw-_Most_Grunwaldzki.jpg"
+    caption: "Wrocław (Breslau) with Grunwald Bridge"
+    wiki_url: "https://en.wikipedia.org/wiki/Wroc%C5%82aw"
 ---
 
 # Breslau (Wrocław)

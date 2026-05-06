@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Herat_Citadel_2006.jpg/640px-Herat_Citadel_2006.jpg"
+    caption: "Herat Citadel"
+    wiki_url: "https://en.wikipedia.org/wiki/Herat"
 ---
 
 # Herat

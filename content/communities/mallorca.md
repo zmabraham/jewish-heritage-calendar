@@ -5,6 +5,10 @@ region: iberian-sephardic
 country: Spain
 coordinates: [39.57, 2.65]
 day: 29
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Palma_de_Mallorca_-_Panorama.jpg/640px-Palma_de_Mallorca_-_Panorama.jpg"
+    caption: "Palma, Mallorca"
+    wiki_url: "https://en.wikipedia.org/wiki/Mallorca"
 ---
 
 # Mallorca

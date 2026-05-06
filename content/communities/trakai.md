@@ -3,6 +3,10 @@ id: trakai
 name: Trakai, Lithuania
 region: eastern-europe-poland-lithuania
 country: Lithuania
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Traku_pilis_by_Augustas_Didzgalvis.jpg/640px-Traku_pilis_by_Augustas_Didzgalvis.jpg"
+    caption: "Trakai Island Castle"
+    wiki_url: "https://en.wikipedia.org/wiki/Trakai"
 ---
 
 # Trakai

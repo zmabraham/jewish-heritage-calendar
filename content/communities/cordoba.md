@@ -3,6 +3,10 @@ id: cordoba
 name: Córdoba, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Cordoba_Caliphate_City_World_Heritage_site.jpg/640px-Cordoba_Caliphate_City_World_Heritage_site.jpg"
+    caption: "Córdoba Mezquita"
+    wiki_url: "https://en.wikipedia.org/wiki/C%C3%B3rdoba%2C_Spain"
 ---
 
 # Córdoba

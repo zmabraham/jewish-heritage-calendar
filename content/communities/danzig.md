@@ -3,6 +3,10 @@ id: danzig
 name: Danzig (Gdańsk)
 region: western-europe
 country: Poland
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Calle_Dlugie_Pobrzeze%2C_Gdansk%2C_Polonia%2C_2013-05-20%2C_DD_06.jpg/640px-Calle_Dlugie_Pobrzeze%2C_Gdansk%2C_Polonia%2C_2013-05-20%2C_DD_06.jpg"
+    caption: "Danzig (Gdańsk) — Long Market street"
+    wiki_url: "https://en.wikipedia.org/wiki/Gda%C5%84sk"
 ---
 
 # Danzig

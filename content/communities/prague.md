@@ -5,6 +5,10 @@ region: austro-hungarian
 country: Czech Republic
 coordinates: [50.08, 14.44]
 day: 44
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Prague_2015-07-18_Panorama_01.jpg/640px-Prague_2015-07-18_Panorama_01.jpg"
+    caption: "Prague skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Prague"
 ---
 
 # Prague

@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [48.67, 29.32]
 day: 96
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%A2%D1%83%D0%BB%D1%8C%D1%87%D0%B8%D0%BD_%D0%B7_%D0%BF%D0%B0%D0%B3%D0%BE%D1%80%D0%B1%D1%96%D0%B2.jpg/640px-%D0%92%D0%B8%D0%B4_%D0%BD%D0%B0_%D0%A2%D1%83%D0%BB%D1%8C%D1%87%D0%B8%D0%BD_%D0%B7_%D0%BF%D0%B0%D0%B3%D0%BE%D1%80%D0%B1%D1%96%D0%B2.jpg"
+    caption: "Tulchyn view from hills"
+    wiki_url: "https://en.wikipedia.org/wiki/Tulchyn"
 ---
 
 # Tulchin

@@ -3,6 +3,10 @@ id: antwerp
 name: Antwerp
 region: western-europe
 country: Belgium
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Amberes%3B_vistas_MAS_2.jpg/640px-Amberes%3B_vistas_MAS_2.jpg"
+    caption: "Antwerp skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Antwerp"
 ---
 
 # Antwerp

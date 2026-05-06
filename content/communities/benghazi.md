@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Libya
 coordinates: [32.11, 20.07]
 day: 112
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Al_Daawa_alIslamiyah2.JPG/640px-Al_Daawa_alIslamiyah2.JPG"
+    caption: "Benghazi cityscape"
+    wiki_url: "https://en.wikipedia.org/wiki/Benghazi"
 ---
 
 # Benghazi

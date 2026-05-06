@@ -5,6 +5,10 @@ region: holy-land
 country: Jordan
 coordinates: [32.65, 35.67]
 day: 22
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Umm_Qais-13.jpg/640px-Umm_Qais-13.jpg"
+    caption: "Umm Qais (ancient Gadara)"
+    wiki_url: "https://en.wikipedia.org/wiki/Umm_Qais"
 ---
 
 # Gadara

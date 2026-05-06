@@ -3,6 +3,10 @@ id: perpignan
 name: Perpignan, France
 region: iberian-sephardic
 country: France
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Perpignan_-_Le_Castillet.jpg/640px-Perpignan_-_Le_Castillet.jpg"
+    caption: "Perpignan Castillet"
+    wiki_url: "https://en.wikipedia.org/wiki/Perpignan"
 ---
 
 # Perpignan

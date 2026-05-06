@@ -3,6 +3,10 @@ id: grodno
 name: Grodno, Belarus
 region: eastern-europe-poland-lithuania
 country: Belarus
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Hrodna_Stary_Zamak.jpg/640px-Hrodna_Stary_Zamak.jpg"
+    caption: "Grodno (Hrodna) Old Castle"
+    wiki_url: "https://en.wikipedia.org/wiki/Grodno"
 ---
 
 # Grodno

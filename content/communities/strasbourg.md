@@ -3,6 +3,10 @@ id: strasbourg
 name: Strasbourg (Strassburg)
 region: western-europe
 country: France
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Strasbourg_Panorama_2013.jpg/640px-Strasbourg_Panorama_2013.jpg"
+    caption: "Strasbourg Cathedral"
+    wiki_url: "https://en.wikipedia.org/wiki/Strasbourg"
 ---
 
 # Strasbourg

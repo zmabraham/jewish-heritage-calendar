@@ -5,6 +5,10 @@ region: eastern-europe-ukraine
 country: Ukraine
 coordinates: [51.21, 24.71]
 day: 143
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Kowel_-_pomnik_mickiewicza.jpg/640px-Kowel_-_pomnik_mickiewicza.jpg"
+    caption: "Kovel (Kowel) Mickiewicz monument"
+    wiki_url: "https://en.wikipedia.org/wiki/Kovel"
 ---
 
 # Kowel (Kovel)

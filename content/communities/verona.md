@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Tramonto_a_Verona.jpg/640px-Tramonto_a_Verona.jpg"
+    caption: "Verona at sunset"
+    wiki_url: "https://en.wikipedia.org/wiki/Verona"
 ---
 
 # Verona

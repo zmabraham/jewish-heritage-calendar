@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Otwock_-_rynek.jpg/640px-Otwock_-_rynek.jpg"
+    caption: "Otwock market square"
+    wiki_url: "https://en.wikipedia.org/wiki/Otwock"
 ---
 
 # Otwock

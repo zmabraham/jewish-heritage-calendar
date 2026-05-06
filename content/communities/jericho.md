@@ -3,6 +3,10 @@ id: jericho
 name: Jericho
 region: holy-land
 country: Palestinian Authority
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Tell_es-sultan.jpg/640px-Tell_es-sultan.jpg"
+    caption: "Tell es-Sultan (ancient Jericho)"
+    wiki_url: "https://en.wikipedia.org/wiki/Jericho"
 ---
 
 # Jericho

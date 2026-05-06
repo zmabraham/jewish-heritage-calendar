@@ -5,6 +5,10 @@ region: austro-hungarian
 country: Hungary
 coordinates: [47.50, 19.04]
 day: 45
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/View_from_Gell%C3%A9rt_Hill_to_the_Danube%2C_Hungary_-_Budapest_%2828493220635%29.jpg/640px-View_from_Gell%C3%A9rt_Hill_to_the_Danube%2C_Hungary_-_Budapest_%2828493220635%29.jpg"
+    caption: "Budapest from Gellért Hill"
+    wiki_url: "https://en.wikipedia.org/wiki/Budapest"
 ---
 
 # Budapest

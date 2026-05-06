@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [49.33, 22.28]
 day: 229
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Baligr%C3%B3d_%28HB3%29.jpg/640px-Baligr%C3%B3d_%28HB3%29.jpg"
+    caption: "Baligród (Baligrod)"
+    wiki_url: "https://en.wikipedia.org/wiki/Baligr%C3%B3d"
 ---
 
 # Baligrod

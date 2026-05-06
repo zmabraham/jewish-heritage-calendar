@@ -5,6 +5,10 @@ region: eastern-europe-ukraine
 country: Ukraine
 coordinates: [49.84, 24.03]
 day: 212
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Oper_a_Lviv.jpg/640px-Oper_a_Lviv.jpg"
+    caption: "Lviv (Lwów) Opera House"
+    wiki_url: "https://en.wikipedia.org/wiki/Lviv"
 ---
 
 # Lwów (Lemberg / Lviv)

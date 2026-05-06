@@ -3,6 +3,10 @@ id: rishon-lezion
 name: Rishon LeZion
 region: holy-land
 country: Israel
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Rishon_LeZion_2017.jpg/640px-Rishon_LeZion_2017.jpg"
+    caption: "Rishon LeZion"
+    wiki_url: "https://en.wikipedia.org/wiki/Rishon_LeZion"
 ---
 
 # Rishon LeZion

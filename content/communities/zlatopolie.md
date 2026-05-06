@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [48.78, 31.11]
 day: 232
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Novomyrhorod.jpg/640px-Novomyrhorod.jpg"
+    caption: "Novomyrhor (Zlatopolie)"
+    wiki_url: "https://en.wikipedia.org/wiki/Novomyrhorod"
 ---
 
 # Zlatopolie

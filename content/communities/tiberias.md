@@ -3,6 +3,10 @@ id: tiberias
 name: Tiberias
 region: holy-land
 country: Israel
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/92250_tiberias_PikiWiki_Israel.jpg/640px-92250_tiberias_PikiWiki_Israel.jpg"
+    caption: "Tiberias and the Sea of Galilee"
+    wiki_url: "https://en.wikipedia.org/wiki/Tiberias"
 ---
 
 # Tiberias

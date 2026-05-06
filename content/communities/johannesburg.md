@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Johannesburg_Skyline.jpg/640px-Johannesburg_Skyline.jpg"
+    caption: "Johannesburg skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Johannesburg"
 ---
 
 # Johannesburg

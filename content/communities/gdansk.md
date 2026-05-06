@@ -3,6 +3,10 @@ id: gdansk
 name: Gdańsk (Danzig), Poland
 region: eastern-europe-poland-lithuania
 country: Poland
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Gdansk_Montage_2019.jpg/640px-Gdansk_Montage_2019.jpg"
+    caption: "Gdańsk (Danzig) skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Gda%C5%84sk"
 ---
 
 # Gdańsk (Danzig)

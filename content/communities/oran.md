@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Algeria
 coordinates: [35.70, -0.64]
 day: 108
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Oran_city.jpg/640px-Oran_city.jpg"
+    caption: "Oran, Algeria"
+    wiki_url: "https://en.wikipedia.org/wiki/Oran"
 ---
 
 # Oran

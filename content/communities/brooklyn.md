@@ -5,6 +5,10 @@ region: the-americas
 country: USA
 coordinates: [40.65, -73.95]
 day: 64
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Brooklyn_skyline.jpg/640px-Brooklyn_skyline.jpg"
+    caption: "Brooklyn, New York skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Brooklyn"
 ---
 
 # Brooklyn (Williamsburg, Crown Heights, Borough Park)

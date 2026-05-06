@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [51.96, 22.42]
 day: 274
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Kock_-_palac.jpg/640px-Kock_-_palac.jpg"
+    caption: "Kock (Kotsk) Palace"
+    wiki_url: "https://en.wikipedia.org/wiki/Kock"
 ---
 
 # Kotsk

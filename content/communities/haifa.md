@@ -3,6 +3,10 @@ id: haifa
 name: Haifa
 region: holy-land
 country: Israel
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Haifa_2023.jpg/640px-Haifa_2023.jpg"
+    caption: "Haifa skyline and Baháʼí Gardens"
+    wiki_url: "https://en.wikipedia.org/wiki/Haifa"
 ---
 
 # Haifa

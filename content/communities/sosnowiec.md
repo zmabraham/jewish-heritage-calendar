@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sosnowiec_-_pa%C5%82ac_Sch%C3%B6na.jpg/640px-Sosnowiec_-_pa%C5%82ac_Sch%C3%B6na.jpg"
+    caption: "Sosnowiec Schoen Palace"
+    wiki_url: "https://en.wikipedia.org/wiki/Sosnowiec"
 ---
 
 # Sosnowiec

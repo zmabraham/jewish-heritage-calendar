@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Angel_of_the_North%2C_Gateshead%2C_United_Kingdom.jpg/640px-Angel_of_the_North%2C_Gateshead%2C_United_Kingdom.jpg"
+    caption: "Angel of the North, Gateshead"
+    wiki_url: "https://en.wikipedia.org/wiki/Gateshead"
 ---
 
 # Gateshead

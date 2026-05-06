@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/SM_%C5%BBywiec_Ratusz_2021.jpg/640px-SM_%C5%BBywiec_Ratusz_2021.jpg"
+    caption: "Żywiec Town Hall"
+    wiki_url: "https://en.wikipedia.org/wiki/%C5%BBywiec"
 ---
 
 # Żywiec

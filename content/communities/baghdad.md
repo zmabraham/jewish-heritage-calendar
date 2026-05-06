@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Baghdad_International_Fair_Zone.jpg/640px-Baghdad_International_Fair_Zone.jpg"
+    caption: "Baghdad city"
+    wiki_url: "https://en.wikipedia.org/wiki/Baghdad"
 ---
 
 # Baghdad

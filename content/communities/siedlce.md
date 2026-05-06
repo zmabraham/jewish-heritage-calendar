@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [52.17, 22.27]
 day: 311
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Siedlce_-_Pa%C5%82ac_Ogi%C5%84skich.jpg/640px-Siedlce_-_Pa%C5%82ac_Ogi%C5%84skich.jpg"
+    caption: "Siedlce Ogiński Palace"
+    wiki_url: "https://en.wikipedia.org/wiki/Siedlce"
 ---
 
 # Siedlce

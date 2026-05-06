@@ -5,6 +5,10 @@ region: western-europe
 country: Italy
 coordinates: [45.44, 12.33]
 day: 7
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Venezia_-_Canal_Grande_-_Dorsoduro_-_panorama_02.jpg/640px-Venezia_-_Canal_Grande_-_Dorsoduro_-_panorama_02.jpg"
+    caption: "Venice Grand Canal"
+    wiki_url: "https://en.wikipedia.org/wiki/Venice"
 ---
 
 # Venice

@@ -5,6 +5,10 @@ region: austro-hungarian
 country: Austria
 coordinates: [47.85, 16.52]
 day: 55
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Kismarton_l%C3%A9gifot%C3%B33.jpg/640px-Kismarton_l%C3%A9gifot%C3%B33.jpg"
+    caption: "Eisenstadt (Kismarton)"
+    wiki_url: "https://en.wikipedia.org/wiki/Eisenstadt"
 ---
 
 # Eisenstadt

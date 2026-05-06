@@ -5,6 +5,10 @@ region: austro-hungarian
 country: Romania
 coordinates: [47.80, 22.89]
 day: 59
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Satu_Mare_-_city_centre.jpg/640px-Satu_Mare_-_city_centre.jpg"
+    caption: "Satu Mare (Satmar)"
+    wiki_url: "https://en.wikipedia.org/wiki/Satu_Mare"
 ---
 
 # Satu-Mare (Satmar)

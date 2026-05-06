@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Pryluky.jpg/640px-Pryluky.jpg"
+    caption: "Pryluky, Ukraine"
+    wiki_url: "https://en.wikipedia.org/wiki/Pryluky"
 ---
 
 # Priluki (Pryluky)

@@ -5,6 +5,10 @@ region: holy-land
 country: Israel
 coordinates: [31.46, 35.39]
 day: 17
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Ein_Gedi_-_Ma%27aleit_Akab.jpg/640px-Ein_Gedi_-_Ma%27aleit_Akab.jpg"
+    caption: "Ein Gedi oasis"
+    wiki_url: "https://en.wikipedia.org/wiki/Ein_Gedi"
 ---
 
 # Ein Gedi

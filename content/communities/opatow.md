@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [50.80, 21.43]
 day: 112
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/MOs810_WG_25_2024_%28Kielce-Wis%C5%82a%29_Town_Hall_Opat%C3%B3w.jpg/640px-MOs810_WG_25_2024_%28Kielce-Wis%C5%82a%29_Town_Hall_Opat%C3%B3w.jpg"
+    caption: "Opatów — historic town hall"
+    wiki_url: "https://en.wikipedia.org/wiki/Opat%C3%B3w"
 ---
 
 # Opatów (Apt)

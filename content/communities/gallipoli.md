@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Gallipoli_peninsula_from_space.png/640px-Gallipoli_peninsula_from_space.png"
+    caption: "Gallipoli Peninsula"
+    wiki_url: "https://en.wikipedia.org/wiki/Gallipoli"
 ---
 
 # Gallipoli

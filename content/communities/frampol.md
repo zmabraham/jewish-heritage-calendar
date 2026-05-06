@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [50.67, 22.67]
 day: 241
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Frampol_z_lotu_ptaka.jpg/640px-Frampol_z_lotu_ptaka.jpg"
+    caption: "Frampol aerial view"
+    wiki_url: "https://en.wikipedia.org/wiki/Frampol"
 ---
 
 # Frampol

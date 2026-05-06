@@ -5,6 +5,10 @@ region: western-europe
 country: Germany
 coordinates: [53.55, 9.93]
 day: 1
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Black_Form_White_House.jpg/640px-Black_Form_White_House.jpg"
+    caption: "Altona district, Hamburg"
+    wiki_url: "https://en.wikipedia.org/wiki/Altona,_Hamburg"
 ---
 
 # Altona

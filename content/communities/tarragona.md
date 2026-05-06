@@ -3,6 +3,10 @@ id: tarragona
 name: Tarragona, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tarragona Amphitheatre.jpg/640px-Tarragona_Amphitheatre.jpg"
+    caption: "Tarragona Roman Amphitheatre"
+    wiki_url: "https://en.wikipedia.org/wiki/Tarragona"
 ---
 
 # Tarragona

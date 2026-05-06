@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Palmyra_-_Collins.jpg/640px-Palmyra_-_Collins.jpg"
+    caption: "Palmyra (Tadmor)"
+    wiki_url: "https://en.wikipedia.org/wiki/Palmyra"
 ---
 
 # Tadmor (Palmyra)

@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [52.74, 22.85]
 day: 253
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Bra%C5%84sk_-_ Rynek.jpg/640px-Bra%C5%84sk_-_Rynek.jpg"
+    caption: "Market square in Brańsk"
+    wiki_url: "https://en.wikipedia.org/wiki/Bra%C5%84sk"
 ---
 
 # Brańsk

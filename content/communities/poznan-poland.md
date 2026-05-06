@@ -3,6 +3,10 @@ id: poznan-poland
 name: Poznań, Poland
 region: eastern-europe-poland-lithuania
 country: Poland
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Poznan_Montage_2.jpg/640px-Poznan_Montage_2.jpg"
+    caption: "Poznań city center"
+    wiki_url: "https://en.wikipedia.org/wiki/Pozna%C5%84"
 ---
 
 # Poznań

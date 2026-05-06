@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Ladyzhyn.jpg/640px-Ladyzhyn.jpg"
+    caption: "Ladyzhyn, Ukraine"
+    wiki_url: "https://en.wikipedia.org/wiki/Ladyzhyn"
 ---
 
 # Ladizhin (Ladyzhyn)

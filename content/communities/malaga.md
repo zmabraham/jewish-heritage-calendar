@@ -5,6 +5,10 @@ region: iberian-sephardic
 country: Spain
 coordinates: [36.72, -4.42]
 day: 15
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/M%C3%A1laga_-_Vista_de_la_ciudad_desde_el_Gibralfaro.jpg/640px-M%C3%A1laga_-_Vista_de_la_ciudad_desde_el_Gibralfaro.jpg"
+    caption: "Málaga from Gibralfaro"
+    wiki_url: "https://en.wikipedia.org/wiki/M%C3%A1laga"
 ---
 
 # Málaga

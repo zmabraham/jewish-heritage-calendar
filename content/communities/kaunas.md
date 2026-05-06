@@ -3,6 +3,10 @@ id: kaunas
 name: Kaunas (Kovno), Lithuania
 region: eastern-europe-poland-lithuania
 country: Lithuania
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Kaunas_Old_Town_2015.jpg/640px-Kaunas_Old_Town_2015.jpg"
+    caption: "Kaunas Old Town"
+    wiki_url: "https://en.wikipedia.org/wiki/Kaunas"
 ---
 
 # Kaunas (Kovno)

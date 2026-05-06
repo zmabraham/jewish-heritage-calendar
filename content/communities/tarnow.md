@@ -3,6 +3,10 @@ id: tarnow
 name: Tarnów, Poland
 region: eastern-europe-poland-lithuania
 country: Poland
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tarn%C3%B3w_-_rynek.jpg/640px-Tarn%C3%B3w_-_rynek.jpg"
+    caption: "Tarnów market square"
+    wiki_url: "https://en.wikipedia.org/wiki/Tarn%C3%B3w"
 ---
 
 # Tarnów

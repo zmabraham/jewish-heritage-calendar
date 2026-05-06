@@ -3,6 +3,10 @@ id: istanbul
 name: Istanbul (Constantinople), Turkey
 region: ottoman-balkans
 country: Turkey
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Historical_peninsula_and_modern_skyline_of_Istanbul.jpg/640px-Historical_peninsula_and_modern_skyline_of_Istanbul.jpg"
+    caption: "Istanbul historical peninsula"
+    wiki_url: "https://en.wikipedia.org/wiki/Istanbul"
 ---
 
 # Istanbul

@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [50.45, 30.52]
 day: 272
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/P1130119-1.JPG/640px-P1130119-1.JPG"
+    caption: "Kyiv (Kiev)"
+    wiki_url: "https://en.wikipedia.org/wiki/Kyiv"
 ---
 
 # Kiev (Kyiv)

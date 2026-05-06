@@ -5,6 +5,10 @@ region: eastern-europe-ukraine
 country: Ukraine
 coordinates: [50.10, 25.73]
 day: 167
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Kremenets.jpg/640px-Kremenets.jpg"
+    caption: "Kremenets castle ruins"
+    wiki_url: "https://en.wikipedia.org/wiki/Kremenets"
 ---
 
 # Kremenets

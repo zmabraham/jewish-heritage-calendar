@@ -5,6 +5,10 @@ region: eastern-europe-ukraine
 country: Ukraine
 coordinates: [50.09, 25.13]
 day: 178
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D0%B0098.jpg/640px-%D0%97%D0%BE%D0%BB%D0%BE%D1%82%D0%B0098.jpg"
+    caption: "Brody town center, Ukraine"
+    wiki_url: "https://en.wikipedia.org/wiki/Brody"
 ---
 
 # Brody

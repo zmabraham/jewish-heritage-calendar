@@ -3,6 +3,10 @@ id: berlin
 name: Berlin
 region: western-europe
 country: Germany
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Berlin_Skyline_at_night_-_2.jpg/640px-Berlin_Skyline_at_night_-_2.jpg"
+    caption: "Berlin skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Berlin"
 ---
 
 # Berlin

@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Osowa_Wyszka.jpg/640px-Osowa_Wyszka.jpg"
+    caption: "Osowa Wyszka"
+    wiki_url: "https://en.wikipedia.org/wiki/Osowa_Wyszka"
 ---
 
 # Osowa Wyszka

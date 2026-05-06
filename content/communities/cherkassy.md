@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [49.44, 32.06]
 day: 167
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/71-101-0109_Cherkasy_SAM_7160.jpg/640px-71-101-0109_Cherkasy_SAM_7160.jpg"
+    caption: "Cherkassy cityscape"
+    wiki_url: "https://en.wikipedia.org/wiki/Cherkasy"
 ---
 
 # Cherkas (Cherkassy)

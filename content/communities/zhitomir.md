@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [50.26, 28.67]
 day: 145
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B2%D0%B7%D0%B0%D1%94%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%D1%83_%28%D0%BC%D1%96%D1%81%D1%8C%D0%BA%D0%B0_%D1%80%D0%B0%D0%B4%D0%B0%29_.jpg/640px-%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B2%D0%B7%D0%B0%D1%94%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B5%D0%B4%D0%B8%D1%82%D1%83_%28%D0%BC%D1%96%D1%81%D1%8C%D0%BA%D0%B0_%D1%80%D0%B0%D0%B4%D0%B0%29_.jpg"
+    caption: "Zhytomyr — Ukrainian Radio building"
+    wiki_url: "https://en.wikipedia.org/wiki/Zhytomyr"
 ---
 
 # Zhitomir

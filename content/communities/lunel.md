@@ -5,6 +5,10 @@ region: iberian-sephardic
 country: France
 coordinates: [43.68, 4.13]
 day: 22
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Lunel_-_Office_de_tourisme.jpg/640px-Lunel_-_Office_de_tourisme.jpg"
+    caption: "Lunel, France"
+    wiki_url: "https://en.wikipedia.org/wiki/Lunel"
 ---
 
 # Lunel

@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Russia
 coordinates: [55.75, 37.62]
 day: 187
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg/640px-Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg"
+    caption: "Moscow — Saint Basil's Cathedral and Red Square"
+    wiki_url: "https://en.wikipedia.org/wiki/Moscow"
 ---
 
 # Moscow

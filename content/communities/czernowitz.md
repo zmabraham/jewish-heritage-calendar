@@ -5,6 +5,10 @@ region: austro-hungarian
 country: Ukraine
 coordinates: [48.29, 25.94]
 day: 47
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96_%D0%A2%D0%B5%D0%B0%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D1%87%D0%B5%D1%80%D0%B2%D1%8F.jpg/640px-%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96_%D0%A2%D0%B5%D0%B0%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D1%87%D0%B5%D1%80%D0%B2%D1%8F.jpg"
+    caption: "Chernivtsi (Czernowitz) theater"
+    wiki_url: "https://en.wikipedia.org/wiki/Chernivtsi"
 ---
 
 # Czernowitz (Chernivtsi)

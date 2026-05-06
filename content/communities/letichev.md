@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Lebedyn.jpg/640px-Lebedyn.jpg"
+    caption: "Letichev (Letychiv)"
+    wiki_url: "https://en.wikipedia.org/wiki/Letychiv"
 ---
 
 # Letichev

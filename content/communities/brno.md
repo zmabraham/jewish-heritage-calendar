@@ -5,6 +5,10 @@ region: austro-hungarian
 country: Czech Republic
 coordinates: [49.20, 16.62]
 day: 51
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Brno_Montage_IV.png/640px-Brno_Montage_IV.png"
+    caption: "Brno city skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Brno"
 ---
 
 # Brno

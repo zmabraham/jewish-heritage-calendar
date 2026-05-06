@@ -5,6 +5,10 @@ region: holy-land
 country: Israel
 coordinates: [32.77, 35.54]
 day: 9
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Tiberias_Hammat_hot_springs.jpg/640px-Tiberias_Hammat_hot_springs.jpg"
+    caption: "Hamat Tiberias hot springs"
+    wiki_url: "https://en.wikipedia.org/wiki/Hamat_Tiberias"
 ---
 
 # Hammat Tiberias

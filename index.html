@@ -100,16 +100,6 @@
     opacity: 0.1;
   }
 
-  .star-of-david {
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 400px;
-    height: 400px;
-    opacity: 0.15;
-  }
-
   .hero-content {
     position: relative;
     max-width: 800px;
@@ -432,11 +422,6 @@
       gap: 1rem;
     }
 
-    .star-of-david {
-      width: 200px;
-      height: 200px;
-      opacity: 0.08;
-    }
   }
 
   @media (max-width: 480px) {
@@ -455,7 +440,6 @@
   <!-- Navigation -->
   <nav>
     <div class="nav-logo">
-      <span>✡</span>
       <span>Jewish Heritage Calendar</span>
     </div>
     <div class="nav-links">
@@ -469,12 +453,6 @@
 
   <!-- Hero Section -->
   <section class="hero" id="hero">
-    <!-- Star of David decorative background -->
-    <svg class="star-of-david" viewBox="0 0 100 100">
-      <polygon points="50,5 95,75 5,75" fill="none" stroke="#c9a227" stroke-width="1"/>
-      <polygon points="50,95 5,25 95,25" fill="none" stroke="#c9a227" stroke-width="1"/>
-    </svg>
-
     <!-- Loading skeleton (shown while fetching) -->
     <div class="hero-content loading-skeleton" id="hero-loading">
       <div class="skeleton-line" style="width: 200px; height: 30px;"></div>

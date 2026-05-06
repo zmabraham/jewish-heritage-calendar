@@ -3,6 +3,10 @@ id: minsk
 name: Minsk, Belarus
 region: russia-ukraine-pale
 country: Belarus
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Minsk_City_Gate.jpg/640px-Minsk_City_Gate.jpg"
+    caption: "Minsk City Gate"
+    wiki_url: "https://en.wikipedia.org/wiki/Minsk"
 ---
 
 # Minsk

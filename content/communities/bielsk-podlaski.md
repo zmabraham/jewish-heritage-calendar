@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [52.77, 23.20]
 day: 134
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Podlaskie_-_Bielsk_Podlaski_-_Bielsk_Podlaski_-_Mickiewicza_45_-_Ratusz_01.JPG/640px-Podlaskie_-_Bielsk_Podlaski_-_Bielsk_Podlaski_-_Mickiewicza_45_-_Ratusz_01.JPG"
+    caption: "Town hall of Bielsk Podlaski"
+    wiki_url: "https://en.wikipedia.org/wiki/Bielsk_Podlaski"
 ---
 
 # Bielsk Podlaski

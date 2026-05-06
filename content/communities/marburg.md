@@ -5,6 +5,10 @@ region: western-europe
 country: Germany
 coordinates: [50.80, 8.77]
 day: 14
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Marburg_Castle_and_Oberstadt.jpg/640px-Marburg_Castle_and_Oberstadt.jpg"
+    caption: "Marburg Castle"
+    wiki_url: "https://en.wikipedia.org/wiki/Marburg"
 ---
 
 # Marburg

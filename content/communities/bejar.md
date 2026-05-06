@@ -3,6 +3,10 @@ id: bejar
 name: Béjar, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Spain-B%C3%A9jar-P1170419_%2825772759942%29.jpg/640px-Spain-B%C3%A9jar-P1170419_%2825772759942%29.jpg"
+    caption: "Béjar, Spain"
+    wiki_url: "https://en.wikipedia.org/wiki/B%C3%A9jar"
 ---
 
 # Béjar

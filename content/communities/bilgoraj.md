@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Urz%C4%85d_Miasta_Bi%C5%82goraj.jpg/640px-Urz%C4%85d_Miasta_Bi%C5%82goraj.jpg"
+    caption: "City hall of Biłgoraj"
+    wiki_url: "https://en.wikipedia.org/wiki/Bi%C5%82goraj"
 ---
 
 # Bilgoraj (Biłgoraj)

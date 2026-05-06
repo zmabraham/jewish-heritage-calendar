@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Los_Angeles_with_Mount_Baldy_as_background.jpg/640px-Los_Angeles_with_Mount_Baldy_as_background.jpg"
+    caption: "Los Angeles skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Los_Angeles"
 ---
 
 # Los Angeles

@@ -3,6 +3,10 @@ id: segovia
 name: Segovia, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Segovia_Aqueduct_01.jpg/640px-Segovia_Aqueduct_01.jpg"
+    caption: "Segovia Aqueduct"
+    wiki_url: "https://en.wikipedia.org/wiki/Segovia"
 ---
 
 # Segovia

@@ -3,6 +3,10 @@ id: zaragoza
 name: Zaragoza, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Zaragoza_Basilica_del_Pilar.jpg/640px-Zaragoza_Basilica_del_Pilar.jpg"
+    caption: "Zaragoza (Saragossa) Basilica"
+    wiki_url: "https://en.wikipedia.org/wiki/Zaragoza"
 ---
 
 # Zaragoza

@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sana_a_Old_City_001.jpg/640px-Sana_a_Old_City_001.jpg"
+    caption: "Sana'a Old City"
+    wiki_url: "https://en.wikipedia.org/wiki/Sana'a"
 ---
 
 # Sana'a

@@ -3,6 +3,10 @@ id: warsaw
 name: Warsaw, Poland
 region: eastern-europe-poland-lithuania
 country: Poland
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Aleja_Niepdleglosci_Warsaw_2022_aerial_%28cropped%29.jpg/640px-Aleja_Niepdleglosci_Warsaw_2022_aerial_%28cropped%29.jpg"
+    caption: "Warsaw aerial view"
+    wiki_url: "https://en.wikipedia.org/wiki/Warsaw"
 ---
 
 # Warsaw

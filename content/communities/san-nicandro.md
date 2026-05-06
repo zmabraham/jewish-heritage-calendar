@@ -5,6 +5,10 @@ region: western-europe
 country: Italy
 coordinates: [41.83, 15.57]
 day: 17
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/San_Nicandro_Garganico_-_Panorama.jpg/640px-San_Nicandro_Garganico_-_Panorama.jpg"
+    caption: "San Nicandro Garganico"
+    wiki_url: "https://en.wikipedia.org/wiki/San_Nicandro_Garganico"
 ---
 
 # San Nicandro

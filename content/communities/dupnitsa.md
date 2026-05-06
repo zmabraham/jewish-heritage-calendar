@@ -5,6 +5,10 @@ region: ottoman-balkans
 country: Bulgaria
 coordinates: [42.27, 23.12]
 day: 206
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Panorama_of_Dupnitsa_and_Rila_Mountain%2C_Bulgaria.jpg/640px-Panorama_of_Dupnitsa_and_Rila_Mountain%2C_Bulgaria.jpg"
+    caption: "Dupnitsa — panoramic view with Rila Mountains"
+    wiki_url: "https://en.wikipedia.org/wiki/Dupnitsa"
 ---
 
 # Dupnitsa

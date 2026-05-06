@@ -3,6 +3,10 @@ id: kharkiv
 name: Kharkiv, Ukraine
 region: russia-ukraine-pale
 country: Ukraine
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Kharkiv_Derzhprom_2021.jpg/640px-Kharkiv_Derzhprom_2021.jpg"
+    caption: "Kharkiv Derzhprom building"
+    wiki_url: "https://en.wikipedia.org/wiki/Kharkiv"
 ---
 
 # Kharkiv

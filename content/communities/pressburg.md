@@ -5,6 +5,10 @@ region: austro-hungarian
 country: Slovakia
 coordinates: [48.15, 17.11]
 day: 46
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bratislava_New_Bridge_Panorama.jpg/640px-Bratislava_New_Bridge_Panorama.jpg"
+    caption: "Bratislava (Pressburg)"
+    wiki_url: "https://en.wikipedia.org/wiki/Bratislava"
 ---
 
 # Pressburg (Bratislava)

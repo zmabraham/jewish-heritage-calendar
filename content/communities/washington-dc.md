@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/12-07-13-washington-by-RalfR-08.jpg/640px-12-07-13-washington-by-RalfR-08.jpg"
+    caption: "Washington, D.C. skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Washington,_D.C."
 ---
 
 # Washington, D.C.

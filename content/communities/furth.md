@@ -3,6 +3,10 @@ id: furth
 name: Fürth
 region: western-europe
 country: Germany
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/F%C3%BCrth_Königsplatz_2017.jpg/640px-F%C3%BCrth_K%C3%B6nigsplatz_2017.jpg"
+    caption: "Fürth (Furth) Königplatz"
+    wiki_url: "https://en.wikipedia.org/wiki/F%C3%BCrth"
 ---
 
 # Fürth

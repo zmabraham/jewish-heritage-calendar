@@ -3,6 +3,10 @@ id: avila
 name: Ávila, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/%C3%81vila_-_Murallas.jpg/640px-%C3%81vila_-_Murallas.jpg"
+    caption: "Ávila city walls"
+    wiki_url: "https://en.wikipedia.org/wiki/%C3%81vila"
 ---
 
 # Ávila

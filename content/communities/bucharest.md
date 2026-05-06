@@ -5,6 +5,10 @@ region: austro-hungarian
 country: Romania
 coordinates: [44.43, 26.10]
 day: 50
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bucharest_University_Square_%28cropped%29.jpg/640px-Bucharest_University_Square_%28cropped%29.jpg"
+    caption: "Bucharest University Square"
+    wiki_url: "https://en.wikipedia.org/wiki/Bucharest"
 ---
 
 # Bucharest

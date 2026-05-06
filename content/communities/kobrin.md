@@ -3,6 +3,10 @@ id: kobrin
 name: Kobrin, Belarus
 region: eastern-europe-poland-lithuania
 country: Belarus
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Kobryn.jpg/640px-Kobryn.jpg"
+    caption: "Kobryn (Kobrin), Belarus"
+    wiki_url: "https://en.wikipedia.org/wiki/Kobryn"
 ---
 
 # Kobrin

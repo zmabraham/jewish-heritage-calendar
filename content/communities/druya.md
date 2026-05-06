@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Belarus
 coordinates: [55.78, 27.45]
 day: 255
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/%D0%9A%D0%BE%D1%81%D1%82%D1%91%D0%BB_%D0%B8_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D1%8B%D1%80%D1%8C_-_panoramio.jpg/640px-%D0%9A%D0%BE%D1%81%D1%82%D1%91%D0%BB_%D0%B8_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D1%8B%D1%80%D1%8C_-_panoramio.jpg"
+    caption: "Druya — Catholic church and monastery"
+    wiki_url: "https://en.wikipedia.org/wiki/Druya"
 ---
 
 # Druya

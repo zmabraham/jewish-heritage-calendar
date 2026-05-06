@@ -3,6 +3,10 @@ id: zagare
 name: Žagarė, Lithuania
 region: eastern-europe-poland-lithuania
 country: Lithuania
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Zagares_dvaras.2009-06-11.jpg/640px-Zagares_dvaras.2009-06-11.jpg"
+    caption: "Žagarė Manor"
+    wiki_url: "https://en.wikipedia.org/wiki/%C5%BDagar%C4%97"
 ---
 
 # Žagarė

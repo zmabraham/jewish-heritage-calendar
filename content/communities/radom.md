@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [51.40, 21.15]
 day: 237
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Radom_-_rynek.jpg/640px-Radom_-_rynek.jpg"
+    caption: "Radom market square"
+    wiki_url: "https://en.wikipedia.org/wiki/Radom"
 ---
 
 # Radom

@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Chania_harbour.jpg/640px-Chania_harbour.jpg"
+    caption: "Chania (Hania) harbor"
+    wiki_url: "https://en.wikipedia.org/wiki/Chania"
 ---
 
 # Hania (Chania)

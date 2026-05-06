@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [50.26, 19.02]
 day: 201
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Katowice_-_Spodek.jpg/640px-Katowice_-_Spodek.jpg"
+    caption: "Katowice Spodek arena"
+    wiki_url: "https://en.wikipedia.org/wiki/Katowice"
 ---
 
 # Kattowitz (Katowice)

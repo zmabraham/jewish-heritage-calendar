@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Rafah_broken_road.jpg/640px-Rafah_broken_road.jpg"
+    caption: "Rafah, Gaza"
+    wiki_url: "https://en.wikipedia.org/wiki/Rafah"
 ---
 
 # Rafah

@@ -5,6 +5,10 @@ region: austro-hungarian
 country: Romania
 coordinates: [47.93, 23.90]
 day: 58
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Sighetu_Marma%C8%9Biei_Center.jpg/640px-Sighetu_Marma%C8%9Biei_Center.jpg"
+    caption: "Sighetu Marmației (Sighet)"
+    wiki_url: "https://en.wikipedia.org/wiki/Sighetu_Marma%C8%9Biei"
 ---
 
 # Sighet

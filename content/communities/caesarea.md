@@ -3,6 +3,10 @@ id: caesarea
 name: Caesarea Maritima
 region: holy-land
 country: Israel
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Caesarea_-_Roman_aqueduct.jpg/640px-Caesarea_-_Roman_aqueduct.jpg"
+    caption: "Caesarea Roman aqueduct"
+    wiki_url: "https://en.wikipedia.org/wiki/Caesarea_Maritima"
 ---
 
 # Caesarea Maritima

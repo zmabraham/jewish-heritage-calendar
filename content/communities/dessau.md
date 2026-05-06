@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Dessau_asv2022-08_img28_Hbf_und_Umgebung.jpg/640px-Dessau_asv2022-08_img28_Hbf_und_Umgebung.jpg"
+    caption: "Dessau main station"
+    wiki_url: "https://en.wikipedia.org/wiki/Dessau"
 ---
 
 # Dessau

@@ -3,6 +3,10 @@ id: hebron
 name: Hebron
 region: holy-land
 country: Israel/Palestinian Authority
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Hebron_Cave_of_the_Patriarchs_2.jpg/640px-Hebron_Cave_of_the_Patriarchs_2.jpg"
+    caption: "Cave of the Patriarchs, Hebron"
+    wiki_url: "https://en.wikipedia.org/wiki/Hebron"
 ---
 
 # Hebron

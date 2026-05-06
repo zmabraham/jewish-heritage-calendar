@@ -5,6 +5,10 @@ region: eastern-europe-belarus
 country: Belarus
 coordinates: [52.21, 24.36]
 day: 134
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Kobryn_-_Targowica.jpg/640px-Kobryn_-_Targowica.jpg"
+    caption: "Kobryn market square"
+    wiki_url: "https://en.wikipedia.org/wiki/Kobryn"
 ---
 
 # Kobryń (Kobrin)

@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Libya
 coordinates: [32.90, 13.18]
 day: 111
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tripoli_-_Clock_tower.jpg/640px-Tripoli_-_Clock_tower.jpg"
+    caption: "Tripoli clock tower"
+    wiki_url: "https://en.wikipedia.org/wiki/Tripoli"
 ---
 
 # Tripoli

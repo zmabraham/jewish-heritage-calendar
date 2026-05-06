@@ -5,6 +5,10 @@ region: holy-land
 country: Israel
 coordinates: [32.48, 35.52]
 day: 14
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Le_Havre_montage.jpg/640px-Le_Havre_montage.jpg"
+    caption: "Le Havre"
+    wiki_url: "https://en.wikipedia.org/wiki/Le_Havre"
 ---
 
 # Rehov

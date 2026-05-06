@@ -3,6 +3,10 @@ id: hamadan
 name: Jewish Community of Hamadan
 region: persia-central-asia
 country: Iran
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Hamadan_bazaar_alley.jpg/640px-Hamadan_bazaar_alley.jpg"
+    caption: "Hamadan bazaar"
+    wiki_url: "https://en.wikipedia.org/wiki/Hamadan"
 ---
 
 # Jewish Community of Hamadan

@@ -3,6 +3,10 @@ id: the-hague
 name: The Hague (Den Haag)
 region: western-europe
 country: Netherlands
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Den_Haag_Montage_2019.jpg/640px-Den_Haag_Montage_2019.jpg"
+    caption: "The Hague (Den Haag)"
+    wiki_url: "https://en.wikipedia.org/wiki/The_Hague"
 ---
 
 # The Hague

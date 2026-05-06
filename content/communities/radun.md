@@ -5,6 +5,10 @@ region: eastern-europe-belarus
 country: Belarus
 coordinates: [53.68, 25.15]
 day: 38
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Radun_Palace.jpg/640px-Radun_Palace.jpg"
+    caption: "Raduń (Radun) Palace"
+    wiki_url: "https://en.wikipedia.org/wiki/Radun"
 ---
 
 # Raduń (Radin)

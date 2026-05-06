@@ -3,6 +3,10 @@ id: almeria
 name: Almería, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Alcazaba_1%2C_Almeria%2C_Spain.jpg/640px-Alcazaba_1%2C_Almeria%2C_Spain.jpg"
+    caption: "The Alcazaba fortress of Almería"
+    wiki_url: "https://en.wikipedia.org/wiki/Almer%C3%ADa"
 ---
 
 # Almería

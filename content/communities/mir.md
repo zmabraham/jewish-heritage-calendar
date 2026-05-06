@@ -3,6 +3,10 @@ id: mir
 name: Mir, Belarus
 region: eastern-europe-poland-lithuania
 country: Belarus
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Mir_Castle.jpg/640px-Mir_Castle.jpg"
+    caption: "Mir Castle"
+    wiki_url: "https://en.wikipedia.org/wiki/Mir_Castle_Complex"
 ---
 
 # Mir

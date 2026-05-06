@@ -3,6 +3,10 @@ id: leon
 name: León, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Leon_-_Catedral.jpg/640px-Leon_-_Catedral.jpg"
+    caption: "León Cathedral"
+    wiki_url: "https://en.wikipedia.org/wiki/Le%C3%B3n%2C_Spain"
 ---
 
 # León

@@ -5,6 +5,10 @@ region: western-europe
 country: France
 coordinates: [48.30, 4.08]
 day: 10
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Troyes_centre_ville1.JPG/640px-Troyes_centre_ville1.JPG"
+    caption: "Troyes city center"
+    wiki_url: "https://en.wikipedia.org/wiki/Troyes"
 ---
 
 # Troyes

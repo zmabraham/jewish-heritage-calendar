@@ -5,6 +5,10 @@ region: the-americas
 country: USA
 coordinates: [32.77, -79.93]
 day: 70
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Rainbow_row_charleston_sc.jpg/640px-Rainbow_row_charleston_sc.jpg"
+    caption: "Rainbow Row, Charleston SC"
+    wiki_url: "https://en.wikipedia.org/wiki/Charleston,_South_Carolina"
 ---
 
 # Charleston

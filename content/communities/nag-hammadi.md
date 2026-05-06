@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Egypt
 coordinates: [26.05, 32.25]
 day: 114
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Nag_Hammadi.jpg/640px-Nag_Hammadi.jpg"
+    caption: "Nag Hammadi"
+    wiki_url: "https://en.wikipedia.org/wiki/Nag_Hammadi"
 ---
 
 # Nag Hammadi

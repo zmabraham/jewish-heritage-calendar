@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Richmond_Virginia_Montage.jpg/640px-Richmond_Virginia_Montage.jpg"
+    caption: "Richmond, Virginia skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Richmond,_Virginia"
 ---
 
 # Richmond

@@ -3,6 +3,10 @@ id: safed
 name: Safed (Tzfat)
 region: holy-land
 country: Israel
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Tzfat.jpg/640px-Tzfat.jpg"
+    caption: "Safed (Tzfat) old city"
+    wiki_url: "https://en.wikipedia.org/wiki/Safed"
 ---
 
 # Safed (Tzfat)

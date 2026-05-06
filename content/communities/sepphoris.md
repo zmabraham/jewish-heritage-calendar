@@ -5,6 +5,10 @@ region: holy-land
 country: Israel
 coordinates: [32.75, 35.27]
 day: 8
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Tzippori_mosaic.jpg/640px-Tzippori_mosaic.jpg"
+    caption: "Sepphoris (Tzippori) mosaics"
+    wiki_url: "https://en.wikipedia.org/wiki/Sepphoris"
 ---
 
 # Sepphoris (Tzippori)

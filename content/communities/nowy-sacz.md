@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Nowy_Sacz_-_Basilica_01.jpg/640px-Nowy_Sacz_-_Basilica_01.jpg"
+    caption: "Nowy Sącz Basilica"
+    wiki_url: "https://en.wikipedia.org/wiki/Nowy_S%C4%85cz"
 ---
 
 # Nowy Sącz

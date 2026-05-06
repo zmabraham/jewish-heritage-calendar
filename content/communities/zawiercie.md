@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Pa%C5%82acyk-Szyma%C5%84skiego.jpg/640px-Pa%C5%82acyk-Szyma%C5%84skiego.jpg"
+    caption: "Zawiercie — Szymański Palace"
+    wiki_url: "https://en.wikipedia.org/wiki/Zawiercie"
 ---
 
 # Zawiercie

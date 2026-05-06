@@ -5,6 +5,10 @@ region: holy-land
 country: Israel
 coordinates: [32.88, 35.74]
 day: 21
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Golan_Heights_-_Gamla_view.jpg/640px-Golan_Heights_-_Gamla_view.jpg"
+    caption: "Gamla archaeological site"
+    wiki_url: "https://en.wikipedia.org/wiki/Gamla"
 ---
 
 # Gamla (Gamala)

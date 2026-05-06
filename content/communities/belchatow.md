@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [51.36, 19.36]
 day: 102
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Plac_Narutowicza_w_Be%C5%82chatowie.jpg/640px-Plac_Narutowicza_w_Be%C5%82chatowie.jpg"
+    caption: "Plac Narutowicza, Bełchatów"
+    wiki_url: "https://en.wikipedia.org/wiki/Be%C5%82chat%C3%B3w"
 ---
 
 # Bełchatów

@@ -3,6 +3,10 @@ id: tehran
 name: Jewish Community of Tehran
 region: persia-central-asia
 country: Iran
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tehran_Montage_2021.jpg/640px-Tehran_Montage_2021.jpg"
+    caption: "Tehran skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Tehran"
 ---
 
 # Jewish Community of Tehran

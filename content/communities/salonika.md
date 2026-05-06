@@ -3,6 +3,10 @@ id: salonika
 name: Salonika (Thessaloniki), Greece
 region: ottoman-balkans
 country: Greece
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Thessaloniki_Archeaologiko_Mouseio_01.jpg/640px-Thessaloniki_Archeaologiko_Mouseio_01.jpg"
+    caption: "Thessaloniki (Salonika)"
+    wiki_url: "https://en.wikipedia.org/wiki/Thessaloniki"
 ---
 
 # Salonika

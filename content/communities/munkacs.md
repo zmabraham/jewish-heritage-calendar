@@ -5,6 +5,10 @@ region: austro-hungarian
 country: Ukraine
 coordinates: [48.44, 22.72]
 day: 57
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Munkacsivar.jpg/640px-Munkacsivar.jpg"
+    caption: "Munkács — historic city view"
+    wiki_url: "https://en.wikipedia.org/wiki/Mukacheve"
 ---
 
 # Munkács (Mukacheve)

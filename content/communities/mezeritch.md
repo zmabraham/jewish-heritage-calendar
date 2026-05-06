@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [50.60, 26.73]
 day: 45
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Voronovytsia_River.jpg/640px-Voronovytsia_River.jpg"
+    caption: "Voronovytsia (Mezeritch)"
+    wiki_url: "https://en.wikipedia.org/wiki/Voronovytsia"
 ---
 
 # Mezeritch (Mezritch / Mezhyrichi)

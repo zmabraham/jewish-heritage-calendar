@@ -3,6 +3,10 @@ id: montpellier
 name: Montpellier, France
 region: iberian-sephardic
 country: France
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Montpellier_Place_de_la_Com%C3%A9die_sculpture.jpg/640px-Montpellier_Place_de_la_Com%C3%A9die_sculpture.jpg"
+    caption: "Montpellier Place de la Comédie"
+    wiki_url: "https://en.wikipedia.org/wiki/Montpellier"
 ---
 
 # Montpellier

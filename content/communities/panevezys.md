@@ -3,6 +3,10 @@ id: panevezys
 name: Panevėžys (Ponevezh), Lithuania
 region: eastern-europe-poland-lithuania
 country: Lithuania
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Panev%C4%97%C5%BEys_-_Laisv%C4%97s_aik%C5%A1t%C4%97.jpg/640px-Panev%C4%97%C5%BEys_-_Laisv%C4%97s_aik%C5%A1t%C4%97.jpg"
+    caption: "Panevėžys Freedom Square"
+    wiki_url: "https://en.wikipedia.org/wiki/Panev%C4%97%C5%BEys"
 ---
 
 # Panevėžys (Ponevezh)

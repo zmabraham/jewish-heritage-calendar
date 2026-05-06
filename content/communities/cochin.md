@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kochi_Skyline.jpg/640px-Kochi_Skyline.jpg"
+    caption: "Cochin (Kochi) — city skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Kochi"
 ---
 
 # Cochin (Kerala)

@@ -5,6 +5,10 @@ region: eastern-europe-lithuania
 country: Lithuania
 coordinates: [54.18, 24.98]
 day: 269
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Ei%C5%A1i%C5%A1k%C4%97s%2C_centras.JPG/640px-Ei%C5%A1i%C5%A1k%C4%97s%2C_centras.JPG"
+    caption: "Eišiškės (Eishyshok) town center"
+    wiki_url: "https://en.wikipedia.org/wiki/Ei%C5%A1i%C5%A1k%C4%97s"
 ---
 
 # Eishyshok

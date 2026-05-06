@@ -3,6 +3,10 @@ id: izmir
 name: İzmir (Smyrna), Turkey
 region: ottoman-balkans
 country: Turkey
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Konak_Square_Izmir.jpg/640px-Konak_Square_Izmir.jpg"
+    caption: "Konak Square, İzmir"
+    wiki_url: "https://en.wikipedia.org/wiki/%C4%B0zmir"
 ---
 
 # İzmir

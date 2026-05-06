@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [51.60, 18.73]
 day: 297
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Sieradz_-_Rynek.jpg/640px-Sieradz_-_Rynek.jpg"
+    caption: "Sieradz market square"
+    wiki_url: "https://en.wikipedia.org/wiki/Sieradz"
 ---
 
 # Sieradz

@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Banias_Spring_Cliff_Pan%27s_Cave.JPG/640px-Banias_Spring_Cliff_Pan%27s_Cave.JPG"
+    caption: "Banias Spring and Pan's Cave at Caesarea Philippi"
+    wiki_url: "https://en.wikipedia.org/wiki/Banias"
 ---
 
 # Banias (Caesarea Philippi)

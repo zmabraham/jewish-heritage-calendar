@@ -5,6 +5,10 @@ region: austro-hungarian
 country: Czech Republic
 coordinates: [49.97, 12.70]
 day: 53
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Mari%C3%A1nsk%C3%A9_L%C3%A1zn%C4%9B_-_Kolon%C3%A1da.jpg/640px-Mari%C3%A1nsk%C3%A9_L%C3%A1zn%C4%9B_-_Kolon%C3%A1da.jpg"
+    caption: "Marienbad (Mariánské Lázně) colonnade"
+    wiki_url: "https://en.wikipedia.org/wiki/Mari%C3%A1nsk%C3%A9_L%C3%A1zn%C4%9B"
 ---
 
 # Marienbad (Mariánské Lázně)

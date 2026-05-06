@@ -5,6 +5,10 @@ region: the-americas
 country: USA
 coordinates: [32.08, -81.10]
 day: 71
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Savannah_Montage.jpg/640px-Savannah_Montage.jpg"
+    caption: "Savannah, Georgia"
+    wiki_url: "https://en.wikipedia.org/wiki/Savannah,_Georgia"
 ---
 
 # Savannah

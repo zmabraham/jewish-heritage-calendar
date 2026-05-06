@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [51.93, 23.58]
 day: 177
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Lebedzev.jpg/640px-Lebedzev.jpg"
+    caption: "Lebedzev (Lebiedziew)"
+    wiki_url: "https://en.wikipedia.org/wiki/Lebedzev"
 ---
 
 # Lebiedziew

@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Kurenets.jpg/640px-Kurenets.jpg"
+    caption: "Kurenets (Karelichy)"
+    wiki_url: "https://en.wikipedia.org/wiki/Kurenets"
 ---
 
 # Kurenets (Kureniec)

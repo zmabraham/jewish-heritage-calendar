@@ -3,6 +3,10 @@ id: burgos
 name: Burgos, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Burgos_city_view_facing_south_east.jpg/640px-Burgos_city_view_facing_south_east.jpg"
+    caption: "Burgos city view"
+    wiki_url: "https://en.wikipedia.org/wiki/Burgos"
 ---
 
 # Burgos

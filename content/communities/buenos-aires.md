@@ -5,6 +5,10 @@ region: the-americas
 country: Argentina
 coordinates: [-34.61, -58.38]
 day: 66
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Puerto_Madero%2C_Buenos_Aires_%2840689219792%29_%28cropped%29.jpg/640px-Puerto_Madero%2C_Buenos_Aires_%2840689219792%29_%28cropped%29.jpg"
+    caption: "Puerto Madero waterfront, Buenos Aires"
+    wiki_url: "https://en.wikipedia.org/wiki/Buenos_Aires"
 ---
 
 # Buenos Aires

@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Latvia
 coordinates: [56.95, 24.11]
 day: 260
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Riga_Skyline_at_Dusk.jpg/640px-Riga_Skyline_at_Dusk.jpg"
+    caption: "Riga skyline at dusk"
+    wiki_url: "https://en.wikipedia.org/wiki/Riga"
 ---
 
 # Riga

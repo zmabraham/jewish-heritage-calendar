@@ -5,6 +5,10 @@ region: eastern-europe-ukraine
 country: Ukraine
 coordinates: [50.67, 25.77]
 day: 321
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Vladimirets_train_station.jpg/640px-Vladimirets_train_station.jpg"
+    caption: "Volodymyrets train station"
+    wiki_url: "https://en.wikipedia.org/wiki/Volodymyrets"
 ---
 
 # Włodzimierzec

@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Morocco
 coordinates: [35.78, -5.80]
 day: 99
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Tanger_medina.jpg/640px-Tanger_medina.jpg"
+    caption: "Tangier medina"
+    wiki_url: "https://en.wikipedia.org/wiki/Tangier"
 ---
 
 # Tangier

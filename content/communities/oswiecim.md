@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [50.03, 19.21]
 day: 265
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/O%C5%9Bwi%C4%99cim_-_Zamek.jpg/640px-O%C5%9Bwi%C4%99cim_-_Zamek.jpg"
+    caption: "Oświęcim (Auschwitz) Castle"
+    wiki_url: "https://en.wikipedia.org/wiki/O%C5%9Bwi%C4%99cim"
 ---
 
 # Auschwitz (Oświęcim)

@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Padua_-_Piazza_delle_Erbe_08.jpg/640px-Padua_-_Piazza_delle_Erbe_08.jpg"
+    caption: "Padua Piazza delle Erbe"
+    wiki_url: "https://en.wikipedia.org/wiki/Padua"
 ---
 
 # Padua

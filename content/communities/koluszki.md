@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Koluszki_-_dworzec_kolejowy.jpg/640px-Koluszki_-_dworzec_kolejowy.jpg"
+    caption: "Koluszki railway station"
+    wiki_url: "https://en.wikipedia.org/wiki/Koluszki"
 ---
 
 # Koluszki

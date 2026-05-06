@@ -3,6 +3,10 @@ id: lydda
 name: Lydda (Lod)
 region: holy-land
 country: Israel
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Lod_1.jpg/640px-Lod_1.jpg"
+    caption: "Lod (Lydda)"
+    wiki_url: "https://en.wikipedia.org/wiki/Lod"
 ---
 
 # Lydda (Lod)

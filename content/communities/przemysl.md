@@ -3,6 +3,10 @@ id: przemysl
 name: Przemyśl, Poland
 region: eastern-europe-poland-lithuania
 country: Poland
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Przemy%C5%9Bl_-_zamek_kazimierzowski.jpg/640px-Przemy%C5%9Bl_-_zamek_kazimierzowski.jpg"
+    caption: "Przemyśl Castle"
+    wiki_url: "https://en.wikipedia.org/wiki/Przemy%C5%9Bl"
 ---
 
 # Przemyśl

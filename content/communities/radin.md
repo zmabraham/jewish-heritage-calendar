@@ -3,6 +3,10 @@ id: radin
 name: Radin, Belarus
 region: eastern-europe-poland-lithuania
 country: Belarus
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Radun_Palace.jpg/640px-Radun_Palace.jpg"
+    caption: "Raduń (Radin)"
+    wiki_url: "https://en.wikipedia.org/wiki/Radun"
 ---
 
 # Radin

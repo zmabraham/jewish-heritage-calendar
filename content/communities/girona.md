@@ -3,6 +3,10 @@ id: gerona
 name: Gerona (Girona), Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Girona_Catedral_i_la_Riera.jpg/640px-Girona_Catedral_i_la_Riera.jpg"
+    caption: "Girona Cathedral"
+    wiki_url: "https://en.wikipedia.org/wiki/Girona"
 ---
 
 # Gerona

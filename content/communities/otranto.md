@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Otranto_cathedral_facade.jpg/640px-Otranto_cathedral_facade.jpg"
+    caption: "Otranto Cathedral"
+    wiki_url: "https://en.wikipedia.org/wiki/Otranto"
 ---
 
 # Otranto

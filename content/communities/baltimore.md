@@ -5,6 +5,10 @@ region: the-americas
 country: USA
 coordinates: [39.28, -76.62]
 day: 72
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Fell%27s_Point_Aerial_2022.jpg/640px-Fell%27s_Point_Aerial_2022.jpg"
+    caption: "Fell's Point neighborhood, Baltimore"
+    wiki_url: "https://en.wikipedia.org/wiki/Baltimore"
 ---
 
 # Baltimore

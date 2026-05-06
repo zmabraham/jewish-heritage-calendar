@@ -5,6 +5,10 @@ region: austro-hungarian
 country: Czech Republic
 coordinates: [50.64, 13.83]
 day: 52
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Teplice_11.jpg/640px-Teplice_11.jpg"
+    caption: "Teplice (Teplitz)"
+    wiki_url: "https://en.wikipedia.org/wiki/Teplice"
 ---
 
 # Teplitz (Teplice)

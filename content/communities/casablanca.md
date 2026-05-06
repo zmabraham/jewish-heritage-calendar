@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Morocco
 coordinates: [33.59, -7.62]
 day: 100
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Casa_finance_city_6_%28cropped%29.jpg/640px-Casa_finance_city_6_%28cropped%29.jpg"
+    caption: "Casablanca Finance City skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Casablanca"
 ---
 
 # Casablanca

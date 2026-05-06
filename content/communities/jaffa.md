@@ -3,6 +3,10 @@ id: jaffa
 name: Jaffa (Yafo)
 region: holy-land
 country: Israel
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Jaffa_Ariel_1.jpg/640px-Jaffa_Ariel_1.jpg"
+    caption: "Jaffa old city and port"
+    wiki_url: "https://en.wikipedia.org/wiki/Jaffa"
 ---
 
 # Jaffa (Yafo)

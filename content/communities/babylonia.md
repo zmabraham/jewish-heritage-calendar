@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Hammurabi%27s_Babylonia_1.svg/640px-Hammurabi%27s_Babylonia_1.svg.png"
+    caption: "Map of Babylonia under Hammurabi"
+    wiki_url: "https://en.wikipedia.org/wiki/Babylonia"
 ---
 
 # Babylonia (Sura, Pumbeditha, Nehardea)

@@ -5,6 +5,10 @@ region: eastern-europe-belarus
 country: Belarus
 coordinates: [53.58, 25.83]
 day: 55
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Novogrudok_Castle_01.jpg/640px-Novogrudok_Castle_01.jpg"
+    caption: "Navahrudak (Novogrudok) Castle"
+    wiki_url: "https://en.wikipedia.org/wiki/Navahrudak"
 ---
 
 # Navahrudak (Novardok)

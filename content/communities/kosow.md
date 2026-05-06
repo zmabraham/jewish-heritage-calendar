@@ -5,6 +5,10 @@ region: austro-hungarian
 country: Ukraine
 coordinates: [48.32, 25.09]
 day: 62
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Kosiv,_Ukraine.jpg/640px-Kosiv,_Ukraine.jpg"
+    caption: "Kosiv (Kosow)"
+    wiki_url: "https://en.wikipedia.org/wiki/Kosiv"
 ---
 
 # Kosów (Kosiv)

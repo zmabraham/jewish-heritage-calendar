@@ -3,6 +3,10 @@ id: paris
 name: Paris
 region: western-europe
 country: France
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Paris_Montage_2.jpg/640px-Paris_Montage_2.jpg"
+    caption: "Paris skyline with Eiffel Tower"
+    wiki_url: "https://en.wikipedia.org/wiki/Paris"
 ---
 
 # Paris

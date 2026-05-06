@@ -3,6 +3,10 @@ id: lyon
 name: Lyon
 region: western-europe
 country: France
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Lyon_France_-_Confluence_district.jpg/640px-Lyon_France_-_Confluence_district.jpg"
+    caption: "Lyon Confluence district"
+    wiki_url: "https://en.wikipedia.org/wiki/Lyon"
 ---
 
 # Lyon

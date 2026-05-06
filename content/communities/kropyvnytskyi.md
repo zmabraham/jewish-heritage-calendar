@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Kropyvnytskyi_Opera_Theatre.jpg/640px-Kropyvnytskyi_Opera_Theatre.jpg"
+    caption: "Kropyvnytskyi Opera Theatre"
+    wiki_url: "https://en.wikipedia.org/wiki/Kropyvnytskyi"
 ---
 
 # Yelisavetgrod (Kropyvnytskyi)

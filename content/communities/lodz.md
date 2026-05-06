@@ -3,6 +3,10 @@ id: lodz
 name: Łódź, Poland
 region: eastern-europe-poland-lithuania
 country: Poland
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Ko%C5%9Bci%C3%B3%C5%82_Zes%C5%82ania_Ducha_%C5%9Awi%C4%99tego.jpg/640px-Ko%C5%9Bci%C3%B3%C5%82_Zes%C5%82ania_Ducha_%C5%9Awi%C4%99tego.jpg"
+    caption: "Łódź (Lodz)"
+    wiki_url: "https://en.wikipedia.org/wiki/%C5%81%C3%B3d%C5%BA"
 ---
 
 # Łódź

@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Kaifeng_Iron_Pagoda.jpg/640px-Kaifeng_Iron_Pagoda.jpg"
+    caption: "Kaifeng Iron Pagoda"
+    wiki_url: "https://en.wikipedia.org/wiki/Kaifeng"
 ---
 
 # Kaifeng

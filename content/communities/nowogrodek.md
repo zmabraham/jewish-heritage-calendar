@@ -3,6 +3,10 @@ id: nowogrodek
 name: Nowogródek, Belarus
 region: eastern-europe-poland-lithuania
 country: Belarus
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Novogrudok_Castle_01.jpg/640px-Novogrudok_Castle_01.jpg"
+    caption: "Navahrudak (Nowogrodek) Castle"
+    wiki_url: "https://en.wikipedia.org/wiki/Navahrudak"
 ---
 
 # Nowogródek

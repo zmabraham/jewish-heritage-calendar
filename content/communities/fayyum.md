@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Egypt
 coordinates: [29.31, 30.84]
 day: 115
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/MadinatFayyumWaterWheel.jpg/640px-MadinatFayyumWaterWheel.jpg"
+    caption: "Faiyum water wheel"
+    wiki_url: "https://en.wikipedia.org/wiki/Faiyum"
 ---
 
 # Fayyum (Pithom)

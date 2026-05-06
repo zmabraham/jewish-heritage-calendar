@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [49.25, 31.58]
 day: 88
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Rakhnytsia.jpg/640px-Rakhnytsia.jpg"
+    caption: "Rakhnytsia (Rakhmistrivka)"
+    wiki_url: "https://en.wikipedia.org/wiki/Rakhnytsia"
 ---
 
 # Rakhmistrivka

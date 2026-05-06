@@ -3,6 +3,10 @@ id: gaza
 name: Gaza
 region: holy-land
 country: Gaza Strip
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gaza_skyline.jpg/640px-Gaza_skyline.jpg"
+    caption: "Gaza City skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Gaza_City"
 ---
 
 # Gaza

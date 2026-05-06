@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Raqqa_Castle_Syria.jpg/640px-Raqqa_Castle_Syria.jpg"
+    caption: "Raqqa Castle (ancient Callinicum)"
+    wiki_url: "https://en.wikipedia.org/wiki/Callinicum"
 ---
 
 # Callinicum (Raqqa)

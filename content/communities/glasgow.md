@@ -3,6 +3,10 @@ id: glasgow
 name: Glasgow, Scotland
 region: british-isles-anglo
 country: United Kingdom
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Glasgow_Science_Centre_and_Finnieston_Crane.jpg/640px-Glasgow_Science_Centre_and_Finnieston_Crane.jpg"
+    caption: "Glasgow Science Centre"
+    wiki_url: "https://en.wikipedia.org/wiki/Glasgow"
 ---
 
 # Glasgow

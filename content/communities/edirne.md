@@ -3,6 +3,10 @@ id: edirne
 name: Edirne (Adrianople), Turkey
 region: ottoman-balkans
 country: Turkey
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Selimiye_Mosque_and_The_Statue_of_Architect_Sinan_-_panoramio.jpg/640px-Selimiye_Mosque_and_The_Statue_of_Architect_Sinan_-_panoramio.jpg"
+    caption: "Selimiye Mosque, Edirne"
+    wiki_url: "https://en.wikipedia.org/wiki/Edirne"
 ---
 
 # Edirne

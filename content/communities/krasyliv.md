@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Krasyliv.jpg/640px-Krasyliv.jpg"
+    caption: "Krasyliv, Ukraine"
+    wiki_url: "https://en.wikipedia.org/wiki/Krasyliv"
 ---
 
 # Kresilev (Krasyliv)

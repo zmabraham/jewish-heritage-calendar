@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Al_Mukha_port.jpg/640px-Al_Mukha_port.jpg"
+    caption: "Mocha (Al Mukha) port"
+    wiki_url: "https://en.wikipedia.org/wiki/Mocha,_Yemen"
 ---
 
 # Mokha (Mokka)

@@ -3,6 +3,10 @@ id: vienna
 name: Vienna (Wien)
 region: austro-hungarian
 country: Austria
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Schoenbrunn_philharmoniker_2012.jpg/640px-Schoenbrunn_philharmoniker_2012.jpg"
+    caption: "Vienna — Schönbrunn Palace"
+    wiki_url: "https://en.wikipedia.org/wiki/Vienna"
 ---
 
 # Vienna

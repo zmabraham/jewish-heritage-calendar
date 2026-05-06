@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [49.43, 27.41]
 day: 291
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Medzhybizh_Castle.jpg/640px-Medzhybizh_Castle.jpg"
+    caption: "Medzhybizh (Medzhibozh) Castle"
+    wiki_url: "https://en.wikipedia.org/wiki/Medzhybizh"
 ---
 
 # Medzhibozh (Międzybóż)

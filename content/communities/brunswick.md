@@ -5,6 +5,10 @@ region: western-europe
 country: Germany
 coordinates: [52.27, 10.52]
 day: 6
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/20180102_Braunschweig_Burgplatz_Panorama_DSC07785_mid_equiRect_PtrQs.jpg/640px-20180102_Braunschweig_Burgplatz_Panorama_DSC07785_mid_equiRect_PtrQs.jpg"
+    caption: "Braunschweig (Brunswick) Burgplatz panorama"
+    wiki_url: "https://en.wikipedia.org/wiki/Braunschweig"
 ---
 
 # Brunswick

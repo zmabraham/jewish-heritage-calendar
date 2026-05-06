@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Egypt
 coordinates: [31.20, 29.92]
 day: 92
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/San_Stefano_Grand_Plaza.JPG/640px-San_Stefano_Grand_Plaza.JPG"
+    caption: "Alexandria skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Alexandria"
 ---
 
 # Alexandria

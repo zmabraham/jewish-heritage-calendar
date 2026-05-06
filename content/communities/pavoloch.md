@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [49.91, 29.78]
 day: 176
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Pavoloch.jpg/640px-Pavoloch.jpg"
+    caption: "Pavoloch, Ukraine"
+    wiki_url: "https://en.wikipedia.org/wiki/Pavoloch"
 ---
 
 # Pavoloch

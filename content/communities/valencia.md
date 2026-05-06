@@ -3,6 +3,10 @@ id: valencia
 name: Valencia, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Ciudad_de_las_Artes_y_las_Ciencias_-_Valencia_-_DSC06761.jpg/640px-Ciudad_de_las_Artes_y_las_Ciencias_-_Valencia_-_DSC06761.jpg"
+    caption: "Valencia City of Arts"
+    wiki_url: "https://en.wikipedia.org/wiki/Valencia"
 ---
 
 # Valencia

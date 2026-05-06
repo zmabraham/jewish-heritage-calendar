@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Aleppo_Citadel_entrance_-_seen_from_southeast_9933.jpg/640px-Aleppo_Citadel_entrance_-_seen_from_southeast_9933.jpg"
+    caption: "The Citadel of Aleppo"
+    wiki_url: "https://en.wikipedia.org/wiki/Aleppo"
 ---
 
 # Aleppo

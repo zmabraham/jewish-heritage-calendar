@@ -3,6 +3,10 @@ id: avignon
 name: Avignon
 region: western-europe
 country: France
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Avignon_-_Palais_des_Papes_et_Pont_d%27Avignon.jpg/640px-Avignon_-_Palais_des_Papes_et_Pont_d%27Avignon.jpg"
+    caption: "Avignon Palace of the Popes"
+    wiki_url: "https://en.wikipedia.org/wiki/Avignon"
 ---
 
 # Avignon

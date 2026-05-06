@@ -5,6 +5,10 @@ region: holy-land
 country: Israel
 coordinates: [31.88, 34.74]
 day: 22
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Yavne_panoramic_view2.JPG/640px-Yavne_panoramic_view2.JPG"
+    caption: "Yavne panoramic view"
+    wiki_url: "https://en.wikipedia.org/wiki/Yavne"
 ---
 
 # Yavneh (Jabneh)

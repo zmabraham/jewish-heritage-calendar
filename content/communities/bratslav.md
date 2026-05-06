@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [48.82, 28.97]
 day: 108
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/%D0%91%D1%80%D0%B0%D1%86%D0%BB%D0%B0%D0%B2._%D0%9A%D0%BE%D1%81%D1%82%D0%B5%D0%BB_%D0%9C%D0%B0%D1%82%D0%B5%D1%80%D1%96_%D0%91%D0%BE%D0%B6%D0%BE%D1%97_DSC_0070.jpg/640px-%D0%91%D1%80%D0%B0%D1%86%D0%BB%D0%B0%D0%B2._%D0%9A%D0%BE%D1%81%D1%82%D0%B5%D0%BB_%D0%9C%D0%B0%D1%82%D0%B5%D1%80%D1%96_%D0%91%D0%BE%D0%B6%D0%BE%D1%97_DSC_0070.jpg"
+    caption: "Bratslav, Ukraine — historic castle ruins"
+    wiki_url: "https://en.wikipedia.org/wiki/Bratslav"
 ---
 
 # Bratslav (Breslov / Bracław)

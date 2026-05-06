@@ -3,6 +3,10 @@ id: bordeaux
 name: Bordeaux
 region: western-europe
 country: France
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bordeaux_Place_de_la_Bourse_de_nuit.jpg/640px-Bordeaux_Place_de_la_Bourse_de_nuit.jpg"
+    caption: "Place de la Bourse, Bordeaux"
+    wiki_url: "https://en.wikipedia.org/wiki/Bordeaux"
 ---
 
 # Bordeaux

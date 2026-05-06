@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [49.81, 22.23]
 day: 98
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Dyn%C3%B3w_-_rynek.jpg/640px-Dyn%C3%B3w_-_rynek.jpg"
+    caption: "Dynów town square"
+    wiki_url: "https://en.wikipedia.org/wiki/Dyn%C3%B3w"
 ---
 
 # Dinov (Dynów)

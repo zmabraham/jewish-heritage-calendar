@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Capua_%28ponte%29.jpg/640px-Capua_%28ponte%29.jpg"
+    caption: "Capua bridge"
+    wiki_url: "https://en.wikipedia.org/wiki/Capua"
 ---
 
 # Capua

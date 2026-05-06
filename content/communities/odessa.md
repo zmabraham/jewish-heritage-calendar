@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [46.48, 30.73]
 day: 155
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Odessa_Opera_Theater.jpg/640px-Odessa_Opera_Theater.jpg"
+    caption: "Odessa Opera Theater"
+    wiki_url: "https://en.wikipedia.org/wiki/Odessa"
 ---
 
 # Odessa

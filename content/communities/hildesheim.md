@@ -5,6 +5,10 @@ region: western-europe
 country: Germany
 coordinates: [52.15, 9.95]
 day: 15
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Hildesheim_Markt_2014.jpg/640px-Hildesheim_Markt_2014.jpg"
+    caption: "Hildesheim market square"
+    wiki_url: "https://en.wikipedia.org/wiki/Hildesheim"
 ---
 
 # Hildesheim

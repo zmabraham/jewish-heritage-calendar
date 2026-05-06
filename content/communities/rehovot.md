@@ -3,6 +3,10 @@ id: rehovot
 name: Rehovot
 region: holy-land
 country: Israel
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Rehovot_2017a.jpg/640px-Rehovot_2017a.jpg"
+    caption: "Rehovot city"
+    wiki_url: "https://en.wikipedia.org/wiki/Rehovot"
 ---
 
 # Rehovot

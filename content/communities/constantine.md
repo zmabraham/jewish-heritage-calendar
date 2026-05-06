@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Algeria
 coordinates: [36.37, 6.61]
 day: 109
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Constantine_1.jpg/640px-Constantine_1.jpg"
+    caption: "Constantine, Algeria"
+    wiki_url: "https://en.wikipedia.org/wiki/Constantine,_Algeria"
 ---
 
 # Constantine

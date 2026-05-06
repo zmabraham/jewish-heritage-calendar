@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Russia
 coordinates: [54.17, 32.70]
 day: 19
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Liubavicy.jpg/640px-Liubavicy.jpg"
+    caption: "Lyubavichi (Lubavich)"
+    wiki_url: "https://en.wikipedia.org/wiki/Lyubavichi"
 ---
 
 # Lubavich (Lubavitchi)

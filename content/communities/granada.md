@@ -3,6 +3,10 @@ id: granada
 name: Granada, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Alhambra_-_Granada_%28Espa%C3%B1a%29.jpg/640px-Alhambra_-_Granada_%28Espa%C3%B1a%29.jpg"
+    caption: "Alhambra, Granada"
+    wiki_url: "https://en.wikipedia.org/wiki/Granada"
 ---
 
 # Granada

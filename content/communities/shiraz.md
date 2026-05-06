@@ -3,6 +3,10 @@ id: shiraz
 name: Jewish Community of Shiraz
 region: persia-central-asia
 country: Iran
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Shiraz_Arg_e_Karim_Khan.jpg/640px-Shiraz_Arg_e_Karim_Khan.jpg"
+    caption: "Shiraz Karim Khan Citadel"
+    wiki_url: "https://en.wikipedia.org/wiki/Shiraz"
 ---
 
 # Jewish Community of Shiraz

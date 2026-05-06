@@ -5,6 +5,10 @@ region: iberian-sephardic
 country: Spain
 coordinates: [38.99, -0.52]
 day: 36
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Xativa_cityview-2_web.jpg/640px-Xativa_cityview-2_web.jpg"
+    caption: "Xàtiva cityscape"
+    wiki_url: "https://en.wikipedia.org/wiki/X%C3%A0tiva"
 ---
 
 # Xàtiva

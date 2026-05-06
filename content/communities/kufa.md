@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Kufa_Mosque.jpg/640px-Kufa_Mosque.jpg"
+    caption: "Great Mosque of Kufa"
+    wiki_url: "https://en.wikipedia.org/wiki/Kufa"
 ---
 
 # Kufa

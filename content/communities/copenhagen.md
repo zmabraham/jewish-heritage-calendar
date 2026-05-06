@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/2018_-_Christiansborg_from_the_Marble_Bridge.jpg/640px-2018_-_Christiansborg_from_the_Marble_Bridge.jpg"
+    caption: "Christiansborg Palace, Copenhagen"
+    wiki_url: "https://en.wikipedia.org/wiki/Copenhagen"
 ---
 
 # Copenhagen

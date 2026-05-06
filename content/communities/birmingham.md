@@ -3,6 +3,10 @@ id: birmingham
 name: Birmingham, United Kingdom
 region: british-isles-anglo
 country: United Kingdom
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Birmingham_Council_House_and_103_Colmore_Row.jpg/640px-Birmingham_Council_House_and_103_Colmore_Row.jpg"
+    caption: "Birmingham Council House"
+    wiki_url: "https://en.wikipedia.org/wiki/Birmingham"
 ---
 
 # Birmingham

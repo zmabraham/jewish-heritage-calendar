@@ -3,6 +3,10 @@ id: jerusalem
 name: Jerusalem
 region: holy-land
 country: Israel
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Old_City_of_Jerusalem.jpg/640px-Old_City_of_Jerusalem.jpg"
+    caption: "Jerusalem Old City"
+    wiki_url: "https://en.wikipedia.org/wiki/Jerusalem"
 ---
 
 # Jerusalem

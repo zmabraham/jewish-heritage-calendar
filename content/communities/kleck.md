@@ -5,6 +5,10 @@ region: eastern-europe-belarus
 country: Belarus
 coordinates: [53.06, 26.64]
 day: 127
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Kleck_Palace_Kosciuszko.jpg/640px-Kleck_Palace_Kosciuszko.jpg"
+    caption: "Kleck (Klecko) Palace"
+    wiki_url: "https://en.wikipedia.org/wiki/Kleck"
 ---
 
 # Kleck

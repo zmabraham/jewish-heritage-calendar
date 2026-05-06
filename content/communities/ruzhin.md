@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [49.97, 29.53]
 day: 121
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Pryluky.jpg/640px-Pryluky.jpg"
+    caption: "Pryluky area"
+    wiki_url: "https://en.wikipedia.org/wiki/Ruzhin"
 ---
 
 # Ruzhin

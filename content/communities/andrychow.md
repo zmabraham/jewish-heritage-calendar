@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [49.74, 19.35]
 day: 216
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Andrychow_4.jpg/640px-Andrychow_4.jpg"
+    caption: "Andrychów town center"
+    wiki_url: "https://en.wikipedia.org/wiki/Andrych%C3%B3w"
 ---
 
 # Andrychów

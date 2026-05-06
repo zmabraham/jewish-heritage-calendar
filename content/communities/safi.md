@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Morocco
 coordinates: [32.30, -9.24]
 day: 103
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Safi_Marocco.jpg/640px-Safi_Marocco.jpg"
+    caption: "Safi, Morocco"
+    wiki_url: "https://en.wikipedia.org/wiki/Safi,_Morocco"
 ---
 
 # Safi

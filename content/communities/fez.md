@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Morocco
 coordinates: [34.03, -5.00]
 day: 95
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/University_karaouiyine_of_fes.jpg/640px-University_karaouiyine_of_fes.jpg"
+    caption: "University of Al Quaraouiyine, Fez"
+    wiki_url: "https://en.wikipedia.org/wiki/Fes"
 ---
 
 # Fez

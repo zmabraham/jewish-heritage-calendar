@@ -3,6 +3,10 @@ id: dresden
 name: Dresden
 region: western-europe
 country: Germany
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Dresden-neustadt-markt.jpg/640px-Dresden-neustadt-markt.jpg"
+    caption: "Dresden Neumarkt"
+    wiki_url: "https://en.wikipedia.org/wiki/Dresden"
 ---
 
 # Dresden

@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [52.25, 19.62]
 day: 89
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Kamieniczki_w_centrum_miasta.jpg/640px-Kamieniczki_w_centrum_miasta.jpg"
+    caption: "Historic buildings in Zychlin town center"
+    wiki_url: "https://en.wikipedia.org/wiki/Zychlin"
 ---
 
 # Zychlin

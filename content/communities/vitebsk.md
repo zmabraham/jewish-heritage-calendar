@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Belarus
 coordinates: [55.19, 30.20]
 day: 220
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/%D0%92%D1%96%D1%86%D0%B5%D0%B1%D1%81%D0%BA%D1%96%D1%8F_%D0%BA%D1%80%D0%B0%D1%8F%D0%B2%D1%96%D0%B4%D1%8B_03.jpg/640px-%D0%92%D1%96%D1%86%D0%B5%D0%B1%D1%81%D0%BA%D1%96%D1%8F_%D0%BA%D1%80%D0%B0%D1%8F%D0%B2%D1%96%D0%B4%D1%8B_03.jpg"
+    caption: "Vitebsk riverfront"
+    wiki_url: "https://en.wikipedia.org/wiki/Vitebsk"
 ---
 
 # Vitebsk

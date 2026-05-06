@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Radziejowice.jpg/640px-Radziejowice.jpg"
+    caption: "Radziejowice (Radeshits)"
+    wiki_url: "https://en.wikipedia.org/wiki/Radziejowice"
 ---
 
 # Radeshits

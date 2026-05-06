@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [50.90, 21.88]
 day: 191
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/61-224-9002_Vyshnivets_Palace_RB.jpg/640px-61-224-9002_Vyshnivets_Palace_RB.jpg"
+    caption: "Vyshnivets Palace"
+    wiki_url: "https://en.wikipedia.org/wiki/Vyshnivets"
 ---
 
 # Wislowiec

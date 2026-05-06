@@ -5,6 +5,10 @@ region: iberian-sephardic
 country: France
 coordinates: [44.05, 5.05]
 day: 8
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Hotel_de_Ville_de_Carpentras.JPG/640px-Hotel_de_Ville_de_Carpentras.JPG"
+    caption: "Carpentras city hall"
+    wiki_url: "https://en.wikipedia.org/wiki/Carpentras"
 ---
 
 # Carpentras

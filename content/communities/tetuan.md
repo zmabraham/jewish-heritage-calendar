@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Morocco
 coordinates: [35.57, -5.37]
 day: 102
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Tetouan_-_city_view.jpg/640px-Tetouan_-_city_view.jpg"
+    caption: "Tetouan (Tetuan)"
+    wiki_url: "https://en.wikipedia.org/wiki/Tetouan"
 ---
 
 # Tetuán

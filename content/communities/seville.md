@@ -3,6 +3,10 @@ id: seville
 name: Seville, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Seville_-_Plaza_de_Espa%C3%B1a.JPG/640px-Seville_-_Plaza_de_Espa%C3%B1a.JPG"
+    caption: "Seville Plaza de España"
+    wiki_url: "https://en.wikipedia.org/wiki/Seville"
 ---
 
 # Seville

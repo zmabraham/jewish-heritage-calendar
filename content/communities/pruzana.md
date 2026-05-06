@@ -5,6 +5,10 @@ region: eastern-europe-belarus
 country: Belarus
 coordinates: [52.56, 24.46]
 day: 139
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Pruzhany_-_palats.jpg/640px-Pruzhany_-_palats.jpg"
+    caption: "Pruzhany (Prużana) Palace"
+    wiki_url: "https://en.wikipedia.org/wiki/Pruzhany"
 ---
 
 # Prużana (Pruzhany)

@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Polonne.jpg/640px-Polonne.jpg"
+    caption: "Polonne, Ukraine"
+    wiki_url: "https://en.wikipedia.org/wiki/Polonne"
 ---
 
 # Polona (Polonne)

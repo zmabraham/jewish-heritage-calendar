@@ -3,6 +3,10 @@ id: regensburg
 name: Regensburg (Ratisbon)
 region: western-europe
 country: Germany
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Regensburg_Dom_St_Peter_und_Georg.jpg/640px-Regensburg_Dom_St_Peter_und_Georg.jpg"
+    caption: "Regensburg Cathedral"
+    wiki_url: "https://en.wikipedia.org/wiki/Regensburg"
 ---
 
 # Regensburg

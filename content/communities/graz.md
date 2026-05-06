@@ -5,6 +5,10 @@ region: austro-hungarian
 country: Austria
 coordinates: [47.07, 15.44]
 day: 54
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Graz_Murinsel_Rathaus.jpg/640px-Graz_Murinsel_Rathaus.jpg"
+    caption: "Graz Murinsel"
+    wiki_url: "https://en.wikipedia.org/wiki/Graz"
 ---
 
 # Graz

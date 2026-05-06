@@ -3,6 +3,10 @@ id: ashkelon
 name: Ashkelon
 region: holy-land
 country: Israel
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/93439_marina_ashkelon_PikiWiki_Israel.jpg/640px-93439_marina_ashkelon_PikiWiki_Israel.jpg"
+    caption: "Ashkelon marina"
+    wiki_url: "https://en.wikipedia.org/wiki/Ashkelon"
 ---
 
 # Ashkelon

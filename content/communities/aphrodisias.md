@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/The_Temple_of_Aphrodite%2C_built_in_the_Ionic_order_in_stages_during_the_Roman_period_%28from_1st_century_BC_to_2nd_century_AD%29_and_later_converted_into_a_Christian_basilica%2C_Aphrodisias%2C_Caria%2C_Turkey_%2820300922019%29.jpg/640px-thumbnail.jpg"
+    caption: "The Temple of Aphrodite at Aphrodisias, Turkey"
+    wiki_url: "https://en.wikipedia.org/wiki/Aphrodisias"
 ---
 
 # Aphrodisias

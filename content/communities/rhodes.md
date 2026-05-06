@@ -5,6 +5,10 @@ region: ottoman-balkans
 country: Greece
 coordinates: [36.44, 28.22]
 day: 171
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Rhodes_Kastello.jpg/640px-Rhodes_Kastello.jpg"
+    caption: "Rhodes Old Town"
+    wiki_url: "https://en.wikipedia.org/wiki/Rhodes"
 ---
 
 # Rhodes

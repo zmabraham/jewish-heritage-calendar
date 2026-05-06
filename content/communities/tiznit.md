@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Morocco
 coordinates: [29.68, -9.75]
 day: 106
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Tiznit_remparts.jpg/640px-Tiznit_ramparts.jpg"
+    caption: "Tiznit ramparts"
+    wiki_url: "https://en.wikipedia.org/wiki/Tiznit"
 ---
 
 # Tiznit

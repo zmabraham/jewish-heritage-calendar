@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Plovdiv_Tsarevets_hill.jpg/640px-Plovdiv_Tsarevets_hill.jpg"
+    caption: "Plovdiv ancient theater"
+    wiki_url: "https://en.wikipedia.org/wiki/Plovdiv"
 ---
 
 # Plovdiv

@@ -3,6 +3,10 @@ id: evora
 name: Évora, Portugal
 region: iberian-sephardic
 country: Portugal
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Pra%C3%A7a_de_Giraldo%2C_Evora_%2810250693386%29_%28cropped%29.jpg/640px-Pra%C3%A7a_de_Giraldo%2C_Evora_%2810250693386%29_%28cropped%29.jpg"
+    caption: "Praça do Giraldo, Évora"
+    wiki_url: "https://en.wikipedia.org/wiki/%C3%89vora"
 ---
 
 # Évora

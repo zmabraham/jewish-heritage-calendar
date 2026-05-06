@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/%D0%91%D0%BE%D1%80%D1%89%D0%B0%D0%B3%D0%BE%D0%B2%D0%BA%D0%B0%2C_%D0%9A%D0%B8%D0%B5%D0%B2%2C_%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0.jpg/640px-%D0%91%D0%BE%D1%80%D1%89%D0%B0%D0%B3%D0%BE%D0%B2%D0%BA%D0%B0%2C_%D0%9A%D0%B8%D0%B5%D0%B2%2C_%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0.jpg"
+    caption: "Borshchagovka, Kyiv, Ukraine"
+    wiki_url: "https://en.wikipedia.org/wiki/Borshchahivka"
 ---
 
 # Borshchagovka

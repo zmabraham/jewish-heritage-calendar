@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [51.46, 22.61]
 day: 145
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Lubart%C3%B3w_-_rynek.jpg/640px-Lubart%C3%B3w_-_rynek.jpg"
+    caption: "Lubartów market square"
+    wiki_url: "https://en.wikipedia.org/wiki/Lubart%C3%B3w"
 ---
 
 # Lubartów

@@ -3,6 +3,10 @@ id: leipzig
 name: Leipzig
 region: western-europe
 country: Germany
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Leipzig-November-2021-1347.jpg/640px-Leipzig-November-2021-1347.jpg"
+    caption: "Leipzig city center"
+    wiki_url: "https://en.wikipedia.org/wiki/Leipzig"
 ---
 
 # Leipzig

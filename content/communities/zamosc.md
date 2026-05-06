@@ -3,6 +3,10 @@ id: zamosc
 name: Zamość, Poland
 region: eastern-europe-poland-lithuania
 country: Poland
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Zamojski_ratusz_2.jpg/640px-Zamojski_ratusz_2.jpg"
+    caption: "Zamość Town Hall"
+    wiki_url: "https://en.wikipedia.org/wiki/Zamo%C5%9B%C4%87"
 ---
 
 # Zamość

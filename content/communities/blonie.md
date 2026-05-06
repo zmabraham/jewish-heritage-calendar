@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [52.19, 20.62]
 day: 118
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/B%C5%81ONIE_Urz%C4%85d_Miasta_i_Gminy_01.jpg/640px-B%C5%81ONIE_Urz%C4%85d_Miasta_i_Gminy_01.jpg"
+    caption: "Town hall of Błonie"
+    wiki_url: "https://en.wikipedia.org/wiki/B%C5%82onie"
 ---
 
 # Błonie

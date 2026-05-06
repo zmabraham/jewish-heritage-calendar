@@ -3,6 +3,10 @@ id: slonim
 name: Slonim, Belarus
 region: eastern-europe-poland-lithuania
 country: Belarus
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Slonim_-_church_of_St._Michael.jpg/640px-Slonim_-_church_of_St._Michael.jpg"
+    caption: "Slonim St. Michael Church"
+    wiki_url: "https://en.wikipedia.org/wiki/Slonim"
 ---
 
 # Slonim

@@ -3,6 +3,10 @@ id: siauliai
 name: Šiauliai (Shavl), Lithuania
 region: eastern-europe-poland-lithuania
 country: Lithuania
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/%C5%A0iauliai_Arch_Cathedral_2016.jpg/640px-%C5%A0iauliai_Arch_Cathedral_2016.jpg"
+    caption: "Šiauliai Arch Cathedral"
+    wiki_url: "https://en.wikipedia.org/wiki/%C5%A0iauliai"
 ---
 
 # Šiauliai (Shavl)

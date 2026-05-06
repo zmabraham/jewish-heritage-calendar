@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Tunisia
 coordinates: [33.87, 10.85]
 day: 94
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Djerba_Island.jpeg/640px-Djerba_Island.jpeg"
+    caption: "Djerba Island"
+    wiki_url: "https://en.wikipedia.org/wiki/Djerba"
 ---
 
 # Djerba

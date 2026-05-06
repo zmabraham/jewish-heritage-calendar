@@ -6,6 +6,10 @@ country: Morocco
 coordinates: [34.02, -6.84]
 day: 125
 dateNote: May 5 — Moroccan capital; Jewish quarter (mellah) community
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Rabat_Mausoleum_of_Ma5_El_Hassan_II.jpg/640px-Rabat_Mausoleum_of_Ma5_El_Hassan_II.jpg"
+    caption: "Rabat Mausoleum"
+    wiki_url: "https://en.wikipedia.org/wiki/Rabat"
 ---
 
 # Rabat

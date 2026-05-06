@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [48.92, 28.88]
 day: 214
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Zinkiv.jpg/640px-Zinkiv.jpg"
+    caption: "Zinkiv (Zhinkovets)"
+    wiki_url: "https://en.wikipedia.org/wiki/Zinkiv"
 ---
 
 # Zhinkovets

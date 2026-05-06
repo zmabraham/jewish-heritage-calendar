@@ -5,6 +5,10 @@ region: western-europe
 country: Germany
 coordinates: [51.31, 9.50]
 day: 5
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Kassel_Bergpark_Wilhelmsh%C3%B6he_Herkules.jpg/640px-Kassel_Bergpark_Wilhelmsh%C3%B6he_Herkules.jpg"
+    caption: "Kassel Hercules monument"
+    wiki_url: "https://en.wikipedia.org/wiki/Kassel"
 ---
 
 # Kassel

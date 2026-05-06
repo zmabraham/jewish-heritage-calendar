@@ -3,6 +3,10 @@ id: cologne
 name: Cologne (Köln)
 region: western-europe
 country: Germany
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Kranh%C3%A4user_Cologne%2C_April_2018_-01.jpg/640px-Kranh%C3%A4user_Cologne%2C_April_2018_-01.jpg"
+    caption: "Cologne Cathedral"
+    wiki_url: "https://en.wikipedia.org/wiki/Cologne"
 ---
 
 # Cologne

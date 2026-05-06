@@ -3,6 +3,10 @@ id: mainz
 name: Mainz (Magenza)
 region: western-europe
 country: Germany
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Mainz_-_Kaiserstrasse_und_Dom.jpg/640px-Mainz_-_Kaiserstrasse_und_Dom.jpg"
+    caption: "Mainz Cathedral"
+    wiki_url: "https://en.wikipedia.org/wiki/Mainz"
 ---
 
 # Mainz

@@ -3,6 +3,10 @@ id: isfahan
 name: Jewish Community of Isfahan
 region: persia-central-asia
 country: Iran
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Naqsh-e_Jahan_Square.jpg/640px-Naqsh-e_Jahan_Square.jpg"
+    caption: "Naqsh-e Jahan Square, Isfahan"
+    wiki_url: "https://en.wikipedia.org/wiki/Isfahan"
 ---
 
 # Jewish Community of Isfahan

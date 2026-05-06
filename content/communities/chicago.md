@@ -5,6 +5,10 @@ region: the-americas
 country: USA
 coordinates: [41.85, -87.65]
 day: 65
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Chicago_River_ferry_b.jpg/640px-Chicago_River_ferry_b.jpg"
+    caption: "Chicago River"
+    wiki_url: "https://en.wikipedia.org/wiki/Chicago"
 ---
 
 # Chicago

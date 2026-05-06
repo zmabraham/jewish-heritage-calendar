@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Egypt
 coordinates: [30.05, 31.25]
 day: 91
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Cairo_Opera_House%2C_Al_Hurriyah_Park_and_the_Nile_river_%2814797782354%29.jpg/640px-Cairo_Opera_House%2C_Al_Hurriyah_Park_and_the_Nile_river_%2814797782354%29.jpg"
+    caption: "Cairo Opera House and the Nile"
+    wiki_url: "https://en.wikipedia.org/wiki/Cairo"
 ---
 
 # Cairo (Fustat)

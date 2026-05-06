@@ -3,6 +3,10 @@ id: edinburgh
 name: Edinburgh, Scotland
 region: british-isles-anglo
 country: United Kingdom
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Skyline_of_Edinburgh.jpg/640px-Skyline_of_Edinburgh.jpg"
+    caption: "Edinburgh skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Edinburgh"
 ---
 
 # Edinburgh

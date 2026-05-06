@@ -3,6 +3,10 @@ id: lida
 name: Lida, Belarus
 region: eastern-europe-poland-lithuania
 country: Belarus
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Lida_castle.jpg/640px-Lida_castle.jpg"
+    caption: "Lida Castle"
+    wiki_url: "https://en.wikipedia.org/wiki/Lida"
 ---
 
 # Lida

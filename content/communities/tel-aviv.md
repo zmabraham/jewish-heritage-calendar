@@ -3,6 +3,10 @@ id: tel-aviv
 name: Tel Aviv
 region: holy-land
 country: Israel
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sarona_CBD_01_%28cropped%29.jpg/640px-Sarona_CBD_01_%28cropped%29.jpg"
+    caption: "Tel Aviv skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Tel_Aviv"
 ---
 
 # Tel Aviv

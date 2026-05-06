@@ -5,6 +5,10 @@ region: eastern-europe-ukraine
 country: Ukraine
 coordinates: [49.80, 24.90]
 day: 67
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Zolochiv_Castle.jpg/640px-Zolochiv_Castle.jpg"
+    caption: "Zolochiv Castle"
+    wiki_url: "https://en.wikipedia.org/wiki/Zolochiv"
 ---
 
 # Zolochiv (Zolochev / Zlotchov)

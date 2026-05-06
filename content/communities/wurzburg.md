@@ -5,6 +5,10 @@ region: western-europe
 country: Germany
 coordinates: [49.79, 9.94]
 day: 2
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Marienberg_wuerzburg.jpg/640px-Marienberg_wuerzburg.jpg"
+    caption: "Würzburg — Marienberg Fortress"
+    wiki_url: "https://en.wikipedia.org/wiki/W%C3%BCrzburg"
 ---
 
 # Würzburg

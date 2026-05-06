@@ -5,6 +5,10 @@ region: ottoman-balkans
 country: Greece
 coordinates: [35.34, 25.13]
 day: 178
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Koules_Heraklion_2021.jpg/640px-Koules_Heraklion_2021.jpg"
+    caption: "Heraklion (Candia) fortress Koules"
+    wiki_url: "https://en.wikipedia.org/wiki/Heraklion"
 ---
 
 # Candia (Heraklion, Crete)

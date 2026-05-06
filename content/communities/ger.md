@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [51.97, 21.22]
 day: 12
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/G%C3%B3ra_Kalwaria_-_synagoga_01.jpg/640px-G%C3%B3ra_Kalwaria_-_synagoga_01.jpg"
+    caption: "Góra Kalwaria (Ger)"
+    wiki_url: "https://en.wikipedia.org/wiki/G%C3%B3ra_Kalwaria"
 ---
 
 # Ger (Góra Kalwaria)

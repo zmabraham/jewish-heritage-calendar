@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Morocco
 coordinates: [33.89, -5.55]
 day: 98
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Meknes_Bab_Mansour_El_Alej.jpg/640px-Meknes_Bab_Mansour_El_Alej.jpg"
+    caption: "Bab Mansour, Meknes"
+    wiki_url: "https://en.wikipedia.org/wiki/Meknes"
 ---
 
 # Meknès

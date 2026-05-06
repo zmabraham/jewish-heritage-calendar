@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [52.80, 22.31]
 day: 149
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Czy%C5%BCew_-_stacja_kolejowa.jpg/640px-Czy%C5%BCew_-_stacja_kolejowa.jpg"
+    caption: "Czyżew railway station"
+    wiki_url: "https://en.wikipedia.org/wiki/Czy%C5%BCew"
 ---
 
 # Czyżew-Osada

@@ -5,6 +5,10 @@ region: western-europe
 country: France
 coordinates: [43.30, 5.37]
 day: 18
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Vieux_port_de_Marseille.jpg/640px-Vieux_port_de_Marseille.jpg"
+    caption: "Old Port of Marseille"
+    wiki_url: "https://en.wikipedia.org/wiki/Marseille"
 ---
 
 # Marseille

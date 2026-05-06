@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Ancona_-_Lungomare.jpg/640px-Ancona_-_Lungomare.jpg"
+    caption: "Ancona waterfront"
+    wiki_url: "https://en.wikipedia.org/wiki/Ancona"
 ---
 
 # Ancona

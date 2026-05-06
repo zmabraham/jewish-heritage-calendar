@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [50.06, 19.94]
 day: 258
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Krakow_-_Wawel_-_Kopiec.jpg/640px-Krakow_-_Wawel_-_Kopiec.jpg"
+    caption: "Kraków (Cracow) Wawel Castle"
+    wiki_url: "https://en.wikipedia.org/wiki/Krak%C3%B3w"
 ---
 
 # Cracow (Kraków / Kazimierz)

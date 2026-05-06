@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Morocco
 coordinates: [31.51, -9.77]
 day: 97
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Morocco_-_Essaouira_Part_2_%2831679848385%29.jpg/640px-Morocco_-_Essaouira_Part_2_%2831679848385%29.jpg"
+    caption: "Essaouira, Morocco"
+    wiki_url: "https://en.wikipedia.org/wiki/Essaouira"
 ---
 
 # Essaouira (Mogador)

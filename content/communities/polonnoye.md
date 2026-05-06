@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [50.12, 27.52]
 day: 334
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Polonnoe.jpg/640px-Polonnoe.jpg"
+    caption: "Polonne (Polonnoye)"
+    wiki_url: "https://en.wikipedia.org/wiki/Polonne"
 ---
 
 # Polonnoye

@@ -23,6 +23,10 @@ figures:
   - name: "Bedřich Fritta"
     dates: "1906–1944"
     description: "A gifted cartoonist and artist who clandestinely documented the horrific reality of ghetto life in detailed drawings."
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Terezin_Pevna_Pevnost_2009_11_27_01.jpg/640px-Terezin_Pevna_Pevnost_2009_11_27_01.jpg"
+    caption: "Terezín (Theresienstadt)"
+    wiki_url: "https://en.wikipedia.org/wiki/Terez%C3%ADn"
 ---
 
 # Theresienstadt

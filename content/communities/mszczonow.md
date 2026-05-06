@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Mszczon%C3%B3w_-_rynek.jpg/640px-Mszczon%C3%B3w_-_rynek.jpg"
+    caption: "Mszczonów market square"
+    wiki_url: "https://en.wikipedia.org/wiki/Mszczon%C3%B3w"
 ---
 
 # Amshinov (Mszczonów)

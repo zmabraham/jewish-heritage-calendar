@@ -5,6 +5,10 @@ region: ottoman-balkans
 country: Greece
 coordinates: [39.64, 22.42]
 day: 220
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Larissa_theater.jpg/640px-Larissa_theater.jpg"
+    caption: "Larissa theater, Greece"
+    wiki_url: "https://en.wikipedia.org/wiki/Larissa"
 ---
 
 # Larissa

@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [51.18, 22.57]
 day: 203
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Hlyusk.jpg/640px-Hlyusk.jpg"
+    caption: "Hlusk (Glusk), Belarus"
+    wiki_url: "https://en.wikipedia.org/wiki/Hlusk"
 ---
 
 # Głusk

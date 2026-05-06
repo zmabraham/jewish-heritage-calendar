@@ -3,6 +3,10 @@ id: frankfurt
 name: Frankfurt am Main
 region: western-europe
 country: Germany
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Frankfurt_Main_August_2020_1.jpg/640px-Frankfurt_Main_August_2020_1.jpg"
+    caption: "Frankfurt am Main skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Frankfurt"
 ---
 
 # Frankfurt am Main

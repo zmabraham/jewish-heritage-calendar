@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [50.18, 27.06]
 day: 198
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Shepetivka.jpg/640px-Shepetivka.jpg"
+    caption: "Shepetivka (Shepetovka)"
+    wiki_url: "https://en.wikipedia.org/wiki/Shepetivka"
 ---
 
 # Shepetovka

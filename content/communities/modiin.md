@@ -5,6 +5,10 @@ region: holy-land
 country: Israel
 coordinates: [31.89, 34.99]
 day: 25
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Modi%27in_-_Rabin_Square.jpg/640px-Modi%27in_-_Rabin_Square.jpg"
+    caption: "Modi'in city center"
+    wiki_url: "https://en.wikipedia.org/wiki/Modi%27in-Maccabim-Re%27ut"
 ---
 
 # Modi'in

@@ -5,6 +5,10 @@ region: ottoman-balkans
 country: Greece
 coordinates: [39.67, 20.85]
 day: 185
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Ioannina_-_Lake_Pamvotida_-_060620.jpg/640px-Ioannina_-_Lake_Pamvotida_-_060620.jpg"
+    caption: "Ioannina and Lake Pamvotida"
+    wiki_url: "https://en.wikipedia.org/wiki/Ioannina"
 ---
 
 # Ioannina

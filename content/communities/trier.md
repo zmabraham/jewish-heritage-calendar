@@ -3,6 +3,10 @@ id: trier
 name: Trier (Treveris)
 region: western-europe
 country: Germany
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Trier-Blick-vom_Weishaus.JPG/640px-Trier-Blick-vom_Weishaus.JPG"
+    caption: "Trier city view"
+    wiki_url: "https://en.wikipedia.org/wiki/Trier"
 ---
 
 # Trier

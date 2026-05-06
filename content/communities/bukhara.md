@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/2012_Bukhara_7515821196_cropped.jpg/640px-2012_Bukhara_7515821196_cropped.jpg"
+    caption: "Bukhara old city"
+    wiki_url: "https://en.wikipedia.org/wiki/Bukhara"
 ---
 
 # Bukhara

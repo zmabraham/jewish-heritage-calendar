@@ -3,6 +3,10 @@ id: murcia
 name: Murcia, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Murcia_catedral_y_glorieta.jpg/640px-Murcia_catedral_y_glorieta.jpg"
+    caption: "Murcia Cathedral"
+    wiki_url: "https://en.wikipedia.org/wiki/Murcia"
 ---
 
 # Murcia

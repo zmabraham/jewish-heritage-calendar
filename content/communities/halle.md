@@ -5,6 +5,10 @@ region: western-europe
 country: Germany
 coordinates: [51.48, 11.97]
 day: 11
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Halle_Saale_Markt_2019.jpg/640px-Halle_Saale_Markt_2019.jpg"
+    caption: "Halle (Saale) market square"
+    wiki_url: "https://en.wikipedia.org/wiki/Halle_%28Saale%29"
 ---
 
 # Halle

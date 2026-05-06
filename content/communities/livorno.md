@@ -5,6 +5,10 @@ region: western-europe
 country: Italy
 coordinates: [43.55, 10.31]
 day: 9
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Livorno_vecchio_fortress.jpg/640px-Livorno_vecchio_fortress.jpg"
+    caption: "Livorno Old Fortress"
+    wiki_url: "https://en.wikipedia.org/wiki/Livorno"
 ---
 
 # Livorno (Leghorn)

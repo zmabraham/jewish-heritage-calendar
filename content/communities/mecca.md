@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Mecca_City_Saudia.jpg/640px-Mecca_City_Saudia.jpg"
+    caption: "Mecca cityscape"
+    wiki_url: "https://en.wikipedia.org/wiki/Mecca"
 ---
 
 # Mecca

@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Kafr_Qara.jpg/640px-Kafr_Qara.jpg"
+    caption: "Kafr Qara (site of ancient Narbata)"
+    wiki_url: "https://en.wikipedia.org/wiki/Kafr_Qara"
 ---
 
 # Narbata

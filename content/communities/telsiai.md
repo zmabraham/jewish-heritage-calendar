@@ -3,6 +3,10 @@ id: telsiai
 name: Telšiai (Telz), Lithuania
 region: eastern-europe-poland-lithuania
 country: Lithuania
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tel%C5%A1iai_Cathedral_2014.jpg/640px-Tel%C5%A1iai_Cathedral_2014.jpg"
+    caption: "Telšiai Cathedral"
+    wiki_url: "https://en.wikipedia.org/wiki/Tel%C5%A1iai"
 ---
 
 # Telšiai (Telz)

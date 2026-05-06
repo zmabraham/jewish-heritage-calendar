@@ -5,6 +5,10 @@ region: the-americas
 country: Brazil
 coordinates: [-8.05, -34.88]
 day: 67
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Recife_Montagem.jpg/640px-Recife_Montagem.jpg"
+    caption: "Recife skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Recife"
 ---
 
 # Recife

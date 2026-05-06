@@ -3,6 +3,10 @@ id: rotterdam
 name: Rotterdam
 region: western-europe
 country: Netherlands
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Rotterdam_Skyline_Erasmusbrug_2020.jpg/640px-Rotterdam_Skyline_Erasmusbrug_2020.jpg"
+    caption: "Rotterdam skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Rotterdam"
 ---
 
 # Rotterdam

@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [50.81, 19.12]
 day: 223
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Cz%C4%99stochowa_klasztor_Jasna_G%C3%B3ra-2162.jpg/640px-Cz%C4%99stochowa_klasztor_Jasna_G%C3%B3ra-2162.jpg"
+    caption: "Jasna Góra Monastery, Częstochowa"
+    wiki_url: "https://en.wikipedia.org/wiki/Cz%C4%99stochowa"
 ---
 
 # Częstochowa

@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Tunisia
 coordinates: [35.68, 10.10]
 day: 93
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Grande_Mosquee_de_Kairouan_1.jpg/640px-Grande_Mosquee_de_Kairouan_1.jpg"
+    caption: "Great Mosque of Kairouan"
+    wiki_url: "https://en.wikipedia.org/wiki/Kairouan"
 ---
 
 # Kairouan

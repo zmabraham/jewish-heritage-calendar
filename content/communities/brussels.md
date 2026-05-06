@@ -3,6 +3,10 @@ id: brussels
 name: Brussels
 region: western-europe
 country: Belgium
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Grand_Place_Bruselas_2.jpg/640px-Grand_Place_Bruselas_2.jpg"
+    caption: "Brussels Grand Place"
+    wiki_url: "https://en.wikipedia.org/wiki/Brussels"
 ---
 
 # Brussels

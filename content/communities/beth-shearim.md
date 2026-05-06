@@ -3,6 +3,10 @@ id: beth-shearim
 name: Beth She'arim
 region: holy-land
 country: Israel
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Bet_Shearim_Necropolis.jpg/640px-Bet_Shearim_Necropolis.jpg"
+    caption: "Bet She'arim National Park"
+    wiki_url: "https://en.wikipedia.org/wiki/Bet_She%27arim_National_Park"
 ---
 
 # Beth She'arim

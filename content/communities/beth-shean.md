@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Beit_shean.jpg/640px-Beit_shean.jpg"
+    caption: "Ancient ruins of Beth Shean"
+    wiki_url: "https://en.wikipedia.org/wiki/Beit_She%27an"
 ---
 
 # Beth Shean (Scythopolis)

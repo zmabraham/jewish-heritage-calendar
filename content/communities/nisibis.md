@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Nusaybin_-_1.jpg/640px-Nusaybin_-_1.jpg"
+    caption: "Nusaybin (ancient Nisibis)"
+    wiki_url: "https://en.wikipedia.org/wiki/Nusaybin"
 ---
 
 # Nisibis

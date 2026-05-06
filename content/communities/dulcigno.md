@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Ulcinj%2C_Montenegro_-_Sept._2010.jpg/640px-Ulcinj%2C_Montenegro_-_Sept._2010.jpg"
+    caption: "Ulcinj (Dulcigno), Montenegro"
+    wiki_url: "https://en.wikipedia.org/wiki/Ulcinj"
 ---
 
 # Dulcigno (Ulcinj)

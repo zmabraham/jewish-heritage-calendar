@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Masjid_al-Nabawi._Medina.jpg/640px-Masjid_al-Nabawi._Medina.jpg"
+    caption: "Al-Masjid an-Nabawi, Medina"
+    wiki_url: "https://en.wikipedia.org/wiki/Medina"
 ---
 
 # Medina

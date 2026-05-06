@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Detroit_Skyline_from_Windsor_2025-09-01.jpg/640px-Detroit_Skyline_from_Windsor_2025-09-01.jpg"
+    caption: "Detroit skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Detroit"
 ---
 
 # Detroit

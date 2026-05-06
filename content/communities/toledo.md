@@ -3,6 +3,10 @@ id: toledo
 name: Toledo, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Toledo_%2837737041515%29.jpg/640px-Toledo_%2837737041515%29.jpg"
+    caption: "Toledo historic city"
+    wiki_url: "https://en.wikipedia.org/wiki/Toledo,_Spain"
 ---
 
 # Toledo

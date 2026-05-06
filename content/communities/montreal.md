@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mtl_from_mont_royal_%28cropped%29.jpg/640px-Mtl_from_mont_royal_%28cropped%29.jpg"
+    caption: "Montréal — skyline view from Mount Royal"
+    wiki_url: "https://en.wikipedia.org/wiki/Montreal"
 ---
 
 # Montréal

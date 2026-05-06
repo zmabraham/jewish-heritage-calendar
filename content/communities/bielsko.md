@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [49.82, 19.05]
 day: 285
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Rynek_w_Bielsku.jpg/640px-Rynek_w_Bielsku.jpg"
+    caption: "Market square of Bielsko-Biała"
+    wiki_url: "https://en.wikipedia.org/wiki/Bielsko-Bia%C5%82a"
 ---
 
 # Bielsko

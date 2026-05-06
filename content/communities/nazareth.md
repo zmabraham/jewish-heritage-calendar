@@ -3,6 +3,10 @@ id: nazareth
 name: Nazareth
 region: holy-land
 country: Israel
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nazareth_Panorama_Dafna_Tal_IMOT_%2814532097313%29.jpg/640px-Nazareth_Panorama_Dafna_Tal_IMOT_%2814532097313%29.jpg"
+    caption: "Nazareth — panoramic view of the historic city"
+    wiki_url: "https://en.wikipedia.org/wiki/Nazareth"
 ---
 
 # Nazareth

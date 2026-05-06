@@ -5,6 +5,10 @@ region: persia-central-asia
 country: Iran
 coordinates: [36.32, 59.57]
 day: 117
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Imam_Reza_Shrine_-_3.jpg/640px-Imam_Reza_Shrine_-_3.jpg"
+    caption: "Imam Reza Shrine, Mashhad"
+    wiki_url: "https://en.wikipedia.org/wiki/Mashhad"
 ---
 
 # Mashhad

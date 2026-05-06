@@ -5,6 +5,10 @@ region: ottoman-balkans
 country: Greece
 coordinates: [41.09, 23.55]
 day: 213
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Serres_Greece.jpg/640px-Serres_Greece.jpg"
+    caption: "Serres, Greece"
+    wiki_url: "https://en.wikipedia.org/wiki/Serres"
 ---
 
 # Serres

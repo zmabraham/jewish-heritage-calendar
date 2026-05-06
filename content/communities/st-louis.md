@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Runner_Fountain_and_Old_Courthouse_and_Arch_%285618845531%29.jpg/640px-Runner_Fountain_and_Old_Courthouse_and_Arch_%285618845531%29.jpg"
+    caption: "St. Louis — Gateway Arch and Old Courthouse"
+    wiki_url: "https://en.wikipedia.org/wiki/St._Louis"
 ---
 
 # St. Louis

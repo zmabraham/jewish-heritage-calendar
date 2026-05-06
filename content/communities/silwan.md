@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Silwan_in_East_Jerusalem_2.jpg/640px-Silwan_in_East_Jerusalem_2.jpg"
+    caption: "Silwan, East Jerusalem"
+    wiki_url: "https://en.wikipedia.org/wiki/Silwan"
 ---
 
 # Silwan

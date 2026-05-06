@@ -3,6 +3,10 @@ id: beersheba
 name: Beersheba
 region: holy-land
 country: Israel
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Beersheba_2015.jpg/640px-Beersheba_2015.jpg"
+    caption: "Beersheba city"
+    wiki_url: "https://en.wikipedia.org/wiki/Beersheba"
 ---
 
 # Beersheba

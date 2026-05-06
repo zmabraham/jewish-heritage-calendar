@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Smorgon.jpg/640px-Smorgon.jpg"
+    caption: "Smorgon (Smorgonie)"
+    wiki_url: "https://en.wikipedia.org/wiki/Smorgon"
 ---
 
 # Smorgonie (Smarhon)

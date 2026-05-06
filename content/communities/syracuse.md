@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Syracuse_Montage.jpg/640px-Syracuse_Montage.jpg"
+    caption: "Syracuse, New York"
+    wiki_url: "https://en.wikipedia.org/wiki/Syracuse,_New_York"
 ---
 
 # Syracuse (Sicily)

@@ -5,6 +5,10 @@ region: the-americas
 country: USA
 coordinates: [41.49, -71.31]
 day: 68
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Newport_Rhode_Island_View.jpg/640px-Newport_Rhode_Island_View.jpg"
+    caption: "Newport, Rhode Island"
+    wiki_url: "https://en.wikipedia.org/wiki/Newport,_Rhode_Island"
 ---
 
 # Newport

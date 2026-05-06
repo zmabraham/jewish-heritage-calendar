@@ -5,6 +5,10 @@ region: ottoman-balkans
 country: North Macedonia
 coordinates: [41.03, 21.33]
 day: 192
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Monastir_Ribat_05.jpg/640px-Monastir_Ribat_05.jpg"
+    caption: "Monastir Ribat"
+    wiki_url: "https://en.wikipedia.org/wiki/Monastir,_Tunisia"
 ---
 
 # Monastir (Bitola)

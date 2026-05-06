@@ -3,6 +3,10 @@ id: barcelona
 name: Barcelona, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Aerial_view_of_Barcelona%2C_Spain_%2851227309370%29_edited.jpg/640px-Aerial_view_of_Barcelona%2C_Spain_%2851227309370%29_edited.jpg"
+    caption: "Barcelona aerial view"
+    wiki_url: "https://en.wikipedia.org/wiki/Barcelona"
 ---
 
 # Barcelona

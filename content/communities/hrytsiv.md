@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hrytsiv.jpg/640px-Hrytsiv.jpg"
+    caption: "Hrytsiv, Ukraine"
+    wiki_url: "https://en.wikipedia.org/wiki/Hrytsiv"
 ---
 
 # Ritzev (Hrytsiv)

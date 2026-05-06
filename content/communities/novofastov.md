@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Ukraine
 coordinates: [49.90, 29.90]
 day: 283
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Novograd-Volynskyi.jpg/640px-Novograd-Volynskyi.jpg"
+    caption: "Zviahel (Novograd-Volynskyi)"
+    wiki_url: "https://en.wikipedia.org/wiki/Zviahel"
 ---
 
 # Novofastov

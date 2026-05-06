@@ -5,6 +5,10 @@ region: ottoman-balkans
 country: Bulgaria
 coordinates: [43.85, 25.95]
 day: 199
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Ruse_Overview-27_Sep_2009.jpg/640px-Ruse_Overview-27_Sep_2009.jpg"
+    caption: "Ruse (Ruschuk)"
+    wiki_url: "https://en.wikipedia.org/wiki/Ruse,_Bulgaria"
 ---
 
 # Ruschuk (Ruse)

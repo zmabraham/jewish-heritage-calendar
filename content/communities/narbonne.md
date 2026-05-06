@@ -3,6 +3,10 @@ id: narbonne
 name: Narbonne, France
 region: iberian-sephardic
 country: France
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Narbonne_-_Palais_des_Ducs_-_Horloge.jpg/640px-Narbonne_-_Palais_des_Ducs_-_Horloge.jpg"
+    caption: "Narbonne Palace of the Dukes"
+    wiki_url: "https://en.wikipedia.org/wiki/Narbonne"
 ---
 
 # Narbonne

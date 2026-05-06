@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Ningbo_City_God_Temple%2C_2021-10-23_06.jpg/640px-Ningbo_City_God_Temple%2C_2021-10-23_06.jpg"
+    caption: "Ningbo — City God Temple, traditional architecture"
+    wiki_url: "https://en.wikipedia.org/wiki/Ningbo"
 ---
 
 # Ningbo

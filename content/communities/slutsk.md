@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Belarus
 coordinates: [53.03, 27.54]
 day: 279
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Slutsk.jpg/640px-Slutsk.jpg"
+    caption: "Slutsk, Belarus"
+    wiki_url: "https://en.wikipedia.org/wiki/Slutsk"
 ---
 
 # Slutsk

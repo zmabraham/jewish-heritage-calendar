@@ -3,6 +3,10 @@ id: bialystok
 name: Białystok, Poland
 region: eastern-europe-poland-lithuania
 country: Poland
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/20250501_143353_May_2025_in_Bia%C5%82ystok.jpg/640px-20250501_143353_May_2025_in_Bia%C5%82ystok.jpg"
+    caption: "Białystok city center"
+    wiki_url: "https://en.wikipedia.org/wiki/Bia%C5%82ystok"
 ---
 
 # Białystok

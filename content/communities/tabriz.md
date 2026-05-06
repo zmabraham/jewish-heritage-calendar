@@ -3,6 +3,10 @@ id: tabriz
 name: Jewish Community of Tabriz
 region: persia-central-asia
 country: Iran
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Tabriz_bazaar.jpg/640px-Tabriz_bazaar.jpg"
+    caption: "Tabriz Bazaar"
+    wiki_url: "https://en.wikipedia.org/wiki/Tabriz"
 ---
 
 # Jewish Community of Tabriz

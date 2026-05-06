@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/173606_The_picturesque_village_of_Amedye%2C_Iraq_in_2009.jpg/640px-173606_The_picturesque_village_of_Amedye%2C_Iraq_in_2009.jpg"
+    caption: "The ancient mountain town of Amadiya, Iraq"
+    wiki_url: "https://en.wikipedia.org/wiki/Amadiya"
 ---
 
 # Amadiya

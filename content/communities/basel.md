@@ -5,6 +5,10 @@ region: western-europe
 country: Switzerland
 coordinates: [47.56, 7.59]
 day: 16
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basel_-_M%C3%BCnsterpfalz1.jpg/640px-Basel_-_M%C3%BCnsterpfalz1.jpg"
+    caption: "Basel Münster"
+    wiki_url: "https://en.wikipedia.org/wiki/Basel"
 ---
 
 # Basel

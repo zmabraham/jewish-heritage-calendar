@@ -3,6 +3,10 @@ id: rzeszow
 name: Rzeszów, Poland
 region: eastern-europe-poland-lithuania
 country: Poland
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Rzesz%C3%B3w_-_Rynek.jpg/640px-Rzesz%C3%B3w_-_Rynek.jpg"
+    caption: "Rzeszów market square"
+    wiki_url: "https://en.wikipedia.org/wiki/Rzesz%C3%B3w"
 ---
 
 # Rzeszów

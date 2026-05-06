@@ -3,6 +3,10 @@ id: vilna
 name: Vilna (Vilnius), Lithuania
 region: eastern-europe-poland-lithuania
 country: Lithuania
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Vilnius_Montage_2021.jpg/640px-Vilnius_Montage_2021.jpg"
+    caption: "Vilnius (Vilna)"
+    wiki_url: "https://en.wikipedia.org/wiki/Vilnius"
 ---
 
 # Vilna

@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Mumbai_Bandra-Worli_Sea_Link.jpg/640px-Mumbai_Bandra-Worli_Sea_Link.jpg"
+    caption: "Mumbai (Bombay) skyline with Bandra-Worli Sea Link"
+    wiki_url: "https://en.wikipedia.org/wiki/Mumbai"
 ---
 
 # Bombay (Mumbai)

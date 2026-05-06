@@ -5,6 +5,10 @@ region: western-europe
 country: Germany
 coordinates: [50.10, 8.76]
 day: 4
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Offenbach_am_Main_Kaiserleistra%C3%9Fe_1.jpg/640px-Offenbach_am_Main_Kaiserleistra%C3%9Fe_1.jpg"
+    caption: "Offenbach am Main"
+    wiki_url: "https://en.wikipedia.org/wiki/Offenbach_am_Main"
 ---
 
 # Offenbach

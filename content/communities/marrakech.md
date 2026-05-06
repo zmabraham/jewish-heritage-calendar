@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Morocco
 coordinates: [31.63, -8.00]
 day: 96
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Marrakesh_menara_2013.jpg/640px-Marrakesh_menara_2013.jpg"
+    caption: "Marrakesh Menara Gardens"
+    wiki_url: "https://en.wikipedia.org/wiki/Marrakech"
 ---
 
 # Marrakech

@@ -5,6 +5,10 @@ region: western-europe
 country: Italy
 coordinates: [41.90, 12.50]
 day: 8
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Collage_Roma.jpg/640px-Collage_Roma.jpg"
+    caption: "Rome Colosseum and city"
+    wiki_url: "https://en.wikipedia.org/wiki/Rome"
 ---
 
 # Rome

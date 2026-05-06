@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Iziaslav_Castle.jpg/640px-Iziaslav_Castle.jpg"
+    caption: "Iziaslav (Zaslav) Castle"
+    wiki_url: "https://en.wikipedia.org/wiki/Iziaslav"
 ---
 
 # Zaslov (Iziaslav)

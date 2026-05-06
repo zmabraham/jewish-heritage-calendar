@@ -5,6 +5,10 @@ region: eastern-europe-poland
 country: Poland
 coordinates: [52.55, 19.71]
 day: 172
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/P%C5%82ock_-_Tumskie_Wzg%C3%B3rze.jpg/640px-P%C5%82ock_-_Tumskie_Wzg%C3%B3rze.jpg"
+    caption: "PłOCK Tumskie Hill"
+    wiki_url: "https://en.wikipedia.org/wiki/P%C5%82ock"
 ---
 
 # Płock

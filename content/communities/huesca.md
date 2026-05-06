@@ -3,6 +3,10 @@ id: huesca
 name: Huesca, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Huesca_Catedral_02.jpg/640px-Huesca_Catedral_02.jpg"
+    caption: "Huesca Cathedral"
+    wiki_url: "https://en.wikipedia.org/wiki/Huesca"
 ---
 
 # Huesca

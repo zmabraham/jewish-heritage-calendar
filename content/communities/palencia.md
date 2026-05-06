@@ -3,6 +3,10 @@ id: palencia
 name: Palencia, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Catedral_de_Palencia.jpg/640px-Catedral_de_Palencia.jpg"
+    caption: "Palencia Cathedral"
+    wiki_url: "https://en.wikipedia.org/wiki/Palencia"
 ---
 
 # Palencia

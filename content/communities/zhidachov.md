@@ -5,6 +5,10 @@ region: austro-hungarian
 country: Ukraine
 coordinates: [49.38, 24.53]
 day: 60
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Church_of_the_martyrs_of_Boris_and_Hlib._Zhydachiv._Lviv_region..JPG/640px-Church_of_the_martyrs_of_Boris_and_Hlib._Zhydachiv._Lviv_region..JPG"
+    caption: "Zhydachiv — Church of the Martyrs Boris and Hlib"
+    wiki_url: "https://en.wikipedia.org/wiki/Zhydachiv"
 ---
 
 # Zhidachov

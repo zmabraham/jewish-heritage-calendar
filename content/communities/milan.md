@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Milan_-_Scala_-_Facade.jpg/640px-Milan_-_Scala_-_Facade.jpg"
+    caption: "Milan — Teatro alla Scala facade"
+    wiki_url: "https://en.wikipedia.org/wiki/Milan"
 ---
 
 # Milan

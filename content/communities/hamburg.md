@@ -3,6 +3,10 @@ id: hamburg
 name: Hamburg
 region: western-europe
 country: Germany
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Hamburg%2C_Landungsbr%C3%BCcken_--_2016_--_3131-7.jpg/640px-Hamburg%2C_Landungsbr%C3%BCcken_--_2016_--_3131-7.jpg"
+    caption: "Hamburg Landungsbrücken"
+    wiki_url: "https://en.wikipedia.org/wiki/Hamburg"
 ---
 
 # Hamburg

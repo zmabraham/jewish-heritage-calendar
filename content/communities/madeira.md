@@ -5,6 +5,10 @@ region: iberian-sephardic
 country: Portugal
 coordinates: [32.76, -16.96]
 day: 43
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Madeira_Funchal_from_Monte.jpg/640px-Madeira_Funchal_from_Monte.jpg"
+    caption: "Funchal, Madeira"
+    wiki_url: "https://en.wikipedia.org/wiki/Madeira"
 ---
 
 # Madeira

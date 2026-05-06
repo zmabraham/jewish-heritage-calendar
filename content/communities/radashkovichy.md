@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Radashkovichi.jpg/640px-Radashkovichi.jpg"
+    caption: "Radashkovichy, Belarus"
+    wiki_url: "https://en.wikipedia.org/wiki/Radashkovichy"
 ---
 
 # Radashkovichy

@@ -3,6 +3,10 @@ id: pekin
 name: Peki'in
 region: holy-land
 country: Israel
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Beijing_Collage.jpg/640px-Beijing_Collage.jpg"
+    caption: "Beijing (Peking)"
+    wiki_url: "https://en.wikipedia.org/wiki/Beijing"
 ---
 
 # Peki'in

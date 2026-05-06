@@ -3,6 +3,10 @@ id: munich
 name: Munich (München)
 region: western-europe
 country: Germany
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Munich_Skyline.jpg/640px-Munich_Skyline.jpg"
+    caption: "Munich skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Munich"
 ---
 
 # Munich

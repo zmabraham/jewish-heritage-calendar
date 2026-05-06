@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Egypt
 coordinates: [28.54, 30.66]
 day: 113
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Behnesa_-_1.jpg/640px-Behnesa_-_1.jpg"
+    caption: "Behnesa (Oxyrhynchus)"
+    wiki_url: "https://en.wikipedia.org/wiki/Oxyrhynchus"
 ---
 
 # Oxyrhynchus

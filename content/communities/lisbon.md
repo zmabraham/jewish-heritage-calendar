@@ -3,6 +3,10 @@ id: lisbon
 name: Lisbon, Portugal
 region: iberian-sephardic
 country: Portugal
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/ComercioSquareLisbon.jpg/640px-ComercioSquareLisbon.jpg"
+    caption: "Praça do Comércio, Lisbon"
+    wiki_url: "https://en.wikipedia.org/wiki/Lisbon"
 ---
 
 # Lisbon

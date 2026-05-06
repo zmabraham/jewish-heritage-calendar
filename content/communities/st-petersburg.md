@@ -5,6 +5,10 @@ region: russia-ukraine-pale
 country: Russia
 coordinates: [59.95, 30.32]
 day: 203
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Saint_Petersburg_Montage_2021.jpg/640px-Saint_Petersburg_Montage_2021.jpg"
+    caption: "Saint Petersburg skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Saint_Petersburg"
 ---
 
 # St. Petersburg (Petrograd / Leningrad)

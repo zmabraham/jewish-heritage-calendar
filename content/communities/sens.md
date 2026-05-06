@@ -5,6 +5,10 @@ region: western-europe
 country: France
 coordinates: [48.20, 3.28]
 day: 12
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Sens_-_Cath%C3%A9drale_Saint-%C3%89tienne.jpg/640px-Sens_-_Cath%C3%A9drale_Saint-%C3%89tienne.jpg"
+    caption: "Sens Cathedral"
+    wiki_url: "https://en.wikipedia.org/wiki/Sens"
 ---
 
 # Sens

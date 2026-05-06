@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Bari_-_Lungomare_Imperatore_Augusto_%26_Mare.jpg/640px-Bari_-_Lungomare_Imperatore_Augusto_%26_Mare.jpg"
+    caption: "Bari waterfront along the Adriatic Sea"
+    wiki_url: "https://en.wikipedia.org/wiki/Bari"
 ---
 
 # Bari

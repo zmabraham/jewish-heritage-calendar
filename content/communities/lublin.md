@@ -3,6 +3,10 @@ id: lublin
 name: Lublin, Poland
 region: eastern-europe-poland-lithuania
 country: Poland
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Lublin_-_Zamek.jpg/640px-Lublin_-_Zamek.jpg"
+    caption: "Lublin Castle"
+    wiki_url: "https://en.wikipedia.org/wiki/Lublin"
 ---
 
 # Lublin

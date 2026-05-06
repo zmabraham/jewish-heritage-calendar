@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Hormuz_Island_1.jpg/640px-Hormuz_Island_1.jpg"
+    caption: "Hormuz Island"
+    wiki_url: "https://en.wikipedia.org/wiki/Hormuz_Island"
 ---
 
 # Hormuz

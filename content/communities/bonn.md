@@ -5,6 +5,10 @@ region: western-europe
 country: Germany
 coordinates: [50.73, 7.10]
 day: 13
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/General_view_over_bonn_%28cropped%29.jpg/640px-General_view_over_bonn_%28cropped%29.jpg"
+    caption: "Bonn cityscape along the Rhine"
+    wiki_url: "https://en.wikipedia.org/wiki/Bonn"
 ---
 
 # Bonn

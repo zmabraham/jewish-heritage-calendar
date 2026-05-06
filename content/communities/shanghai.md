@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Huangpu_Park_20124-Shanghai_%2832208802494%29.jpg/640px-Huangpu_Park_20124-Shanghai_%2832208802494%29.jpg"
+    caption: "Shanghai skyline and Huangpu Park"
+    wiki_url: "https://en.wikipedia.org/wiki/Shanghai"
 ---
 
 # Shanghai

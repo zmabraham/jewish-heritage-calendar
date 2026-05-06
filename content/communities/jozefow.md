@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/J%C3%B3zef%C3%B3w_-_Ratusz.jpg/640px-J%C3%B3zef%C3%B3w_-_Ratusz.jpg"
+    caption: "Józefów town hall"
+    wiki_url: "https://en.wikipedia.org/wiki/J%C3%B3zef%C3%B3w"
 ---
 
 # Yozefov (Jozefow)

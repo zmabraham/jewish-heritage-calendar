@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Akhaltsike%2C_view_from_Rabati.jpg/640px-Akhaltsike%2C_view_from_Rabati.jpg"
+    caption: "Akhaltsikhe, view from Rabati Castle"
+    wiki_url: "https://en.wikipedia.org/wiki/Akhaltsikhe"
 ---
 
 # Akhaltsikhe

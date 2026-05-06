@@ -5,6 +5,10 @@ region: western-europe
 country: Germany
 coordinates: [52.10, 9.36]
 day: 3
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Hameln_Weserbruecke_2006.jpg/640px-Hameln_Weserbruecke_2006.jpg"
+    caption: "Hameln Weser bridge"
+    wiki_url: "https://en.wikipedia.org/wiki/Hameln"
 ---
 
 # Hameln

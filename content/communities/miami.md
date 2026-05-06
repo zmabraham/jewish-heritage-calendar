@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Villa_Vizcaya_20110228.jpg/640px-Villa_Vizcaya_20110228.jpg"
+    caption: "Miami — Villa Vizcaya, historic estate"
+    wiki_url: "https://en.wikipedia.org/wiki/Miami"
 ---
 
 # Miami

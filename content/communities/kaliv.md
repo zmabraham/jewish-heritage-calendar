@@ -5,6 +5,10 @@ region: austro-hungarian
 country: Hungary
 coordinates: [47.52, 17.78]
 day: 61
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Kolo_%28town_-_main_square%29.jpg/640px-Kolo_%28town_-_main_square%29.jpg"
+    caption: "Koło (Kaliv)"
+    wiki_url: "https://en.wikipedia.org/wiki/Ko%C5%82o"
 ---
 
 # Kaliv

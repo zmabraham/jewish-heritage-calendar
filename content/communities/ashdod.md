@@ -5,6 +5,10 @@ region: holy-land
 country: Israel
 coordinates: [31.80, 34.65]
 day: 19
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/%D7%A4%D7%90%D7%A8%D7%A7_%D7%95%D7%90%D7%92%D7%9D_%D7%94%D7%9E%D7%A8%D7%99%D7%A0%D7%94_%D7%9C%D7%A7%D7%A8%D7%90%D7%AA_%D7%A1%D7%95%D7%A3_%D7%A2%D7%91%D7%95%D7%93%D7%95%D7%AA_%D7%94%D7%91%D7%A0%D7%99%D7%99%D7%94%2C_%D7%9E%D7%A8%D7%A5_2024.jpg_03.jpg/640px-%D7%A4%D7%90%D7%A8%D7%A7_%D7%95%D7%90%D7%92%D7%9D_%D7%94%D7%9E%D7%A8%D7%99%D7%A0%D7%94_%D7%9C%D7%A7%D7%A8%D7%90%D7%AA_%D7%A1%D7%95%D7%A3_%D7%A2%D7%91%D7%95%D7%93%D7%95%D7%AA_%D7%94%D7%91%D7%A0%D7%99%D7%99%D7%94%2C_%D7%9E%D7%A8%D7%A5_2024.jpg_03.jpg"
+    caption: "Ashdod marina and waterfront"
+    wiki_url: "https://en.wikipedia.org/wiki/Ashdod"
 ---
 
 # Ashdod

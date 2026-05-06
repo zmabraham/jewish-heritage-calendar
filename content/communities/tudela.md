@@ -3,6 +3,10 @@ id: tudela
 name: Tudela, Spain
 region: iberian-sephardic
 country: Spain
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Tudela_-_Catedral_de_Santa_Maria.jpg/640px-Tudela_-_Catedral_de_Santa_Maria.jpg"
+    caption: "Tudela Cathedral"
+    wiki_url: "https://en.wikipedia.org/wiki/Tudela%2C_Navarre"
 ---
 
 # Tudela

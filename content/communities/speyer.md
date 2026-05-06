@@ -3,6 +3,10 @@ id: speyer
 name: Speyer (Shpira)
 region: western-europe
 country: Germany
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Speyer_-_Dom_und_Altp%C3%B6rtel.jpg/640px-Speyer_-_Dom_und_Altp%C3%B6rtel.jpg"
+    caption: "Speyer Cathedral"
+    wiki_url: "https://en.wikipedia.org/wiki/Speyer"
 ---
 
 # Speyer

@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Morocco
 coordinates: [30.47, -8.88]
 day: 105
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Taroudant_-_remparts.jpg/640px-Taroudant_-_remparts.jpg"
+    caption: "Taroudant ramparts"
+    wiki_url: "https://en.wikipedia.org/wiki/Taroudant"
 ---
 
 # Tarudant

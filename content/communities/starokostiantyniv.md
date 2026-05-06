@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Starokostiantyniv_Castle.jpg/640px-Starokostiantyniv_Castle.jpg"
+    caption: "Starokostiantyniv Castle"
+    wiki_url: "https://en.wikipedia.org/wiki/Starokostiantyniv"
 ---
 
 # Olt-Kosntin (Starokostiantyniv)

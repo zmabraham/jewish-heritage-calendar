@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Downtown_Cincinnati_viewed_from_Devou_Park_%28cropped%29.jpg/640px-Downtown_Cincinnati_viewed_from_Devou_Park_%28cropped%29.jpg"
+    caption: "Downtown Cincinnati skyline"
+    wiki_url: "https://en.wikipedia.org/wiki/Cincinnati"
 ---
 
 # Cincinnati

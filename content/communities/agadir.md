@@ -5,6 +5,10 @@ region: egypt-north-africa
 country: Morocco
 coordinates: [30.42, -9.60]
 day: 104
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/South_view_sea_side_from_Kasbah_of_Agadir_Oufella.jpg/640px-South_view_sea_side_from_Kasbah_of_Agadir_Oufella.jpg"
+    caption: "View from the Kasbah of Agadir Oufella"
+    wiki_url: "https://en.wikipedia.org/wiki/Agadir"
 ---
 
 # Agadir

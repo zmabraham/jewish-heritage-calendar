@@ -3,6 +3,10 @@ id: dublin
 name: Dublin, Ireland
 region: british-isles-anglo
 country: Ireland
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Dublin_-_aerial_-_2025-07-07_01.jpg/640px-Dublin_-_aerial_-_2025-07-07_01.jpg"
+    caption: "Dublin aerial view"
+    wiki_url: "https://en.wikipedia.org/wiki/Dublin"
 ---
 
 # Dublin

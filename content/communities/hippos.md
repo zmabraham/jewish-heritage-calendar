@@ -5,6 +5,10 @@ region: holy-land
 country: Israel
 coordinates: [32.78, 35.64]
 day: 25
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Hippos_-__Sussita.jpg/640px-Hippos_-__Sussita.jpg"
+    caption: "Hippos (Sussita) archaeological site"
+    wiki_url: "https://en.wikipedia.org/wiki/Hippos"
 ---
 
 # Hippos (Sussita)

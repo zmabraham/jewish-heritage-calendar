@@ -8,6 +8,10 @@ peak_population: "Unknown"
 languages: "Hebrew, Aramaic, local languages"
 status: "Historical"
 figures: []
+images:
+  - url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Tramonto_sulla_cattedrale.jpg/640px-Tramonto_sulla_cattedrale.jpg"
+    caption: "Trani cathedral at sunset"
+    wiki_url: "https://en.wikipedia.org/wiki/Trani"
 ---
 
 # Trani
