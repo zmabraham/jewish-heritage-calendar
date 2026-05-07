@@ -277,6 +277,9 @@ def build_images_html(images: list, community_name: str) -> str:
             wiki_url = img.get("wiki_url", "")
         if not url:
             continue
+        # Wikimedia only pre-generates specific thumbnail sizes; 640px returns 400.
+        # Normalize to 500px which is always available.
+        url = re.sub(r'/(\d+)px-', lambda m: '/500px-' if int(m.group(1)) > 500 else m.group(0), url)
         if wiki_url:
             via = f' — via <a href="{wiki_url}" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons'
         else:
