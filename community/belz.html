@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,21 +482,24 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/%D0%91%D0%B5%D0%BB%D0%B7._%D0%92%D0%B8%D0%B3%D0%BB%D1%8F%D0%B4_%D0%BD%D0%B0_%D1%80%D0%B0%D1%82%D1%83%D1%88%D1%83.jpg/640px-%D0%91%D0%B5%D0%BB%D0%B7._%D0%92%D0%B8%D0%B3%D0%BB%D1%8F%D0%B4_%D0%BD%D0%B0_%D1%80%D0%B0%D1%82%D1%83%D1%88%D1%83.jpg" alt="View of Belz, Ukraine" loading="eager">
+      <figcaption>View of Belz, Ukraine — via <a href="https://en.wikipedia.org/wiki/Belz" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Belz — a small town in Galicia, today in western Ukraine — punches far above its weight in Jewish history as the birthplace and center of one of the most powerful Hasidic dynasties in the world. The Belzer Rebbes built a following of hundreds of thousands of Hasidim, erected a shul that became legendary for its grandeur, and survived the Holocaust in miraculous circumstances that have entered Hasidic lore. Today the Belzer dynasty, headquartered in Jerusalem, is one of the largest Hasidic movements in existence.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/%D0%91%D0%B5%D0%BB%D0%B7._%D0%92%D0%B8%D0%B3%D0%BB%D1%8F%D0%B4_%D0%BD%D0%B0_%D1%80%D0%B0%D1%82%D1%83%D1%88%D1%83.jpg/500px-%D0%91%D0%B5%D0%BB%D0%B7._%D0%92%D0%B8%D0%B3%D0%BB%D1%8F%D0%B4_%D0%BD%D0%B0_%D1%80%D0%B0%D1%82%D1%83%D1%88%D1%83.jpg" alt="View of Belz, Ukraine" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>View of Belz, Ukraine — via <a href="https://en.wikipedia.org/wiki/Belz" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Belz was a typical small Galician town under Habsburg rule, part of the Austrian province of Galicia and Lodomeria acquired in the First Partition of Poland (1772). The region was overwhelmingly Jewish-majority in its commercial life; small towns like Belz depended on Jewish merchants and artisans. Under Habsburg administration, Galician Jews lived under a complex system of regulations that gradually liberalized through the nineteenth century.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The dynasty began with Rabbi Shlomel Rokeach (1779–1855), the first Belzer Rebbe, who established his court in Belz in the early nineteenth century. Rabbi Shlomel attracted a following through his reputation for holiness, his miraculous deeds, and his approach to Hasidism — an approach characterized by simplicity of prayer, intense devotion, and the supreme importance of joy in divine service. The Rokeach family name derived from a connection to the medieval Sefer HaRokeach of Rabbi Eleazar of Worms.</p>
 <p>The second Rebbe, Rabbi Yehoshua Rokeach (1825–1894), and particularly the third, Rabbi Yissachar Dov Rokeach (1854–1926), expanded the dynasty's influence enormously. Under the third Rebbe, Belz became one of the largest and most influential Hasidic courts in Galicia, with thousands of Hasidim traveling for the High Holidays and other occasions to be near their Rebbe.</p>
@@ -490,32 +507,26 @@
 <p>The original Belz shul was destroyed during World War II. In Jerusalem, under Rabbi Issachar Dov Rokeach (the fifth Rebbe, born 1948), the dynasty constructed a new great synagogue in the Kiryat Belz neighborhood that is among the largest synagogues in the world — a deliberate recreation and surpassing of the Belz original, completed in 2000. This building, seating over 6,000 worshippers, stands as testimony to the dynasty's remarkable resurrection.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Rabbi Aharon Rokeach (1880–1957), the fourth Belzer Rebbe, became one of the central figures of Holocaust-era Jewish history. When the Nazis occupied Galicia in 1941, a systematic effort was made to liquidate the Jews of the region, including the Hasidic courts. Rabbi Aharon and his brother survived a series of miraculous escapes, hidden by devoted Hasidim, moving from hiding place to hiding place. In 1944, in one of the most remarkable rescue operations of the war, Rabbi Aharon and his brother were smuggled out of occupied Poland in a daring operation organized by Hungarian Hasidim, eventually reaching Budapest and then Palestine.</p>
 <p>The escape of the Belzer Rebbe became legendary — seen by Hasidim as divine intervention, proof that the dynasty's spiritual power extended to miraculous protection. Nearly all of Rabbi Aharon's family had been murdered; his own son perished. The Rebbe arrived in the Land of Israel broken in body but spiritually resolute.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>The Belzer approach to Hasidism emphasizes the simplicity and purity of prayer, the joy of Shabbat and festivals, and the centrality of the Rebbe as spiritual guide and intercessor. Belzer nusach (liturgical melody) is distinctive and cherished by Hasidim worldwide. The dynasty has always maintained a strong emphasis on education, supporting networks of Talmud Torah schools and yeshivot.</p>
 <p>Belzer Hasidism is known for a certain openness relative to some other ultra-Orthodox movements; the fifth Rebbe has been more accommodating of Zionism and Israeli civic life than, for example, the Satmar dynasty.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The Belz community in Galicia was annihilated during the Holocaust. Of the hundreds of thousands of Belzer Hasidim who existed before the war, a tiny remnant survived. The town of Belz itself, in present-day Ukraine, retains no Jewish community. The dynasty was rebuilt entirely from survivors and their descendants.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The Belzer dynasty in Jerusalem is one of the largest Hasidic movements in the world, with communities in Bnei Brak, New York, London, Antwerp, and elsewhere. The magnificent Jerusalem synagogue attracts thousands of worshippers every Shabbat and holiday. The dynasty's rebuilding from ashes to glory is one of the most dramatic stories of post-Holocaust Jewish renewal.</p>
       </section>

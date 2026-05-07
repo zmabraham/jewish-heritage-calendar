@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,23 +482,26 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Haifa_2023.jpg/640px-Haifa_2023.jpg" alt="Haifa skyline and Baháʼí Gardens" loading="eager">
+      <figcaption>Haifa skyline and Baháʼí Gardens — via <a href="https://en.wikipedia.org/wiki/Haifa" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Haifa sits at the foot and slope of Mount Carmel, where the ridge meets the bay in a crescent of incomparable natural beauty. The bay's deep curve and the mountain's shelter create a natural harbor that has been used since antiquity, and the city that grew around it became the principal deep-water port of Ottoman and Mandate Palestine and then of the State of Israel. For Jews, Haifa carries a double identity: it is the practical city — the working port, the industrial hub, the headquarters of the Baha'i World Centre, famously described as the city "where Jews work and Arabs eat and Christians sleep" — and at the same time it is Mount Carmel, Elijah's mountain, the site of the prophet's confrontation with the prophets of Baal, a landscape saturated with prophetic meaning.</p>
 <p>The modern Jewish community of Haifa is primarily a creation of the late Ottoman and British Mandate periods, when the city grew from a modest coastal town into a major metropolis. It became a center of the Jewish labor movement, of socialist Zionism, and of the practical, engineering-minded strand of Zionist culture. The German Templers' colony in Haifa introduced modern urban planning; the Technion (founded 1912), Israel's first technology university, made Haifa the center of Jewish scientific and technological education.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/The_Hanging_Gardens_of_Haifa%2C_Israel_%2850099173503%29_%28cropped%29.jpg/500px-The_Hanging_Gardens_of_Haifa%2C_Israel_%2850099173503%29_%28cropped%29.jpg" alt="Haifa skyline and Baháʼí Gardens" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Haifa skyline and Baháʼí Gardens — via <a href="https://en.wikipedia.org/wiki/Haifa" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>The Carmel ridge is one of the most significant landscapes in the Hebrew Bible. The Prophet Elijah's confrontation with the four hundred and fifty prophets of Baal on Mount Carmel (1 Kings 18) is one of the Bible's most dramatic scenes. The Carmelite monastic tradition takes its name and inspiration from this prophetic landscape. Ancient Jewish communities in the Carmel area are documented from the Roman period; the village of Shikmona at the foot of the Carmel promontory had a Jewish population in the Byzantine era.</p>
 <p>The town of Haifa itself — rather than the broader Carmel region — emerged as a significant settlement in the medieval period. Under the Crusaders, it was a modest port. In the Ottoman period, the town slowly grew, and the Jewish community appears in Ottoman records from the seventeenth century. The construction of the Hejaz Railway (1905) and the development of the harbor gave Haifa its modern economic significance.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Haifa's golden age as a Jewish center runs roughly from 1880 to 1948, the period of Zionist immigration and British Mandate rule. The Jewish population grew from a few hundred in 1880 to approximately 74,000 by 1948 — about 35% of the city's population. During this period, Haifa became the most industrialized city in Palestine, with port facilities, oil refineries, chemical plants, and metal works employing both Jewish and Arab workers.</p>
 <p>The <strong>Technion — Israel Institute of Technology</strong>, founded in 1912 and opened officially in 1924 (after a celebrated controversy over whether instruction should be in Hebrew or German), became the backbone of the Jewish technical intelligentsia. Its graduates built the infrastructure of the Jewish national home and later of the State of Israel. The intellectual atmosphere of Haifa combined labor socialist ideology with practical scientific ambition — an unusual and productive combination.</p>
@@ -494,35 +511,29 @@
 <p>The <strong>Haifa Port</strong>, developed by the British from the 1920s onward, was the gateway through which hundreds of thousands of Jewish immigrants arrived, including survivors of the Holocaust. Ships filled with immigrants — some turned away by British immigration restrictions, others sneaking through the blockade — approached this port as their first sight of the Jewish homeland.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p><strong>Rabbi Avraham ben Dov (17th–18th century)</strong>, a Hasidic master whose tomb on Mount Carmel became a pilgrimage site and focal point of the Haifa Jewish community in the Ottoman period.</p>
 <p><strong>Eliyahu Golomb (1893–1945)</strong>, founder of the Haganah — the Jewish self-defense organization that became the foundation of the Israel Defense Forces. Though not exclusively a Haifa figure, his organization of Jewish defense in Palestine centered partly on the labor movement of which Haifa was the heartland.</p>
 <p><strong>David Shimoni (1886–1956)</strong>, a Hebrew poet of the Second Aliyah generation who settled in Haifa and is associated with the city's cultural life. His pastoral poetry of the Land of Israel landscapes was deeply beloved.</p>
 <p><strong>Abba Hushi (1898–1969)</strong>, the dominant political figure of Haifa during the 1940s–1960s, served as mayor from 1951 to 1969. He was a labor Zionist leader who shaped modern Haifa's character as a workers' city and a model of Jewish-Arab coexistence (imperfect, but real).</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Haifa's Jewish culture was distinctly labor-oriented and Ashkenazic in its early character — the Second Aliyah immigrants who dominated the Jewish working class came largely from Russia and Poland, bringing socialist ideology, Yiddish culture, and Hebrew revival enthusiasm. The city had a rich Yiddish and Hebrew literary and theatrical life in the 1920s–1940s.</p>
 <p>The German Templer colony's contribution to Haifa was architectural and technological: they introduced European-style stone buildings, roads, and eventually motor transport that transformed the city's physical fabric. The Baha'i World Centre, established in Haifa from the late nineteenth century, gave the city an internationalist, peace-oriented presence that aligned well with its labor pluralist ethos.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The 1948 Arab-Israeli War brought dramatic change to Haifa. The Arab population — approximately 65,000 before the war — fled or was expelled in April 1948, transforming the mixed city into a Jewish-majority city virtually overnight. The ancient Arab neighborhoods of Wadi Nisnas and the lower city retained some Arab residents, and Haifa developed a modest tradition of Jewish-Arab coexistence — symbolized by the fact that Arab residents stayed and have been part of the city's fabric ever since.</p>
 <p>The development of Israel after 1948 confirmed Haifa's industrial and technological character. The port, the Technion, and later the development of high-technology industry made Haifa a prosperous, if sometimes overlooked, metropolis — less glamorous than Tel Aviv, less holy than Jerusalem, but enormously productive.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Haifa's legacy is embedded in the infrastructure of the Jewish state: the Technion's graduates built Israel's technology sector, its water infrastructure, its military technology, and its cities. The port of Haifa received the Jewish people's refugees — from Europe, from the Arab world, from Ethiopia and the former Soviet Union. The view from Mount Carmel — over the bay, over the Jezreel Valley, over the curve of the coast — has become one of the defining panoramas of Israeli life.</p>
       </section>

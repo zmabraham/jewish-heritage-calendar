@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,23 +482,26 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Ramla_-_White_Tower.jpg/640px-Ramla_-_White_Tower.jpg" alt="Ramla White Tower" loading="eager">
+      <figcaption>Ramla White Tower — via <a href="https://en.wikipedia.org/wiki/Ramla" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Ramla is the only city in the Land of Israel founded by the Arab conquerors — established around 716 CE by the Umayyad governor Suleiman ibn Abd al-Malik as the new capital of Jund Filastin (the province of Palestine). It is unique among the cities discussed in this calendar in that it has no pre-Arab foundation myth: it was built on open land between the ancient cities of Lydda and Jaffa, deliberately constructed to be the administrative center of Arab Palestine. For Jews, Ramla is significant primarily as a center of the Karaite movement — the Jewish sect that rejected rabbinic tradition and sought to base Jewish law solely on the biblical text — and as a Jewish community that persisted through the full span of Islamic rule of Palestine.</p>
 <p>The Karaite connection gives Ramla a distinctive place in Jewish intellectual history. While the rabbinic mainstream and the Karaites fought bitterly over the nature of Jewish law and authority, both communities existed in Ramla, and the city's intellectual atmosphere — shaped by the proximity of two Jewish traditions in tension — may have contributed to the vigor of both.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/%D7%9B%D7%A0%D7%A1%D7%99%D7%99%D7%AA_%D7%98%D7%A8%D7%94_%D7%A1%D7%A0%D7%98%D7%94_%D7%91%D7%9E%D7%91%D7%98_%D7%9E%D7%94%D7%9E%D7%92%D7%93%D7%9C_%D7%94%D7%9C%D7%91%D7%9F_-_%D7%9E%D7%A9%D7%9E%D7%90%D7%9C_%D7%A7%D7%A8%D7%99%D7%99%D7%AA_%D7%94%D7%9E%D7%9E%D7%A9%D7%9C%D7%94%2C_%D7%9E%D7%99%D7%9E%D7%99%D7%9F_%D7%94%D7%9E%D7%A1%D7%92%D7%93_%D7%94%D7%9C%D7%91%D7%9F_%D7%95%D7%91%D7%A8%D7%A7%D7%A2_%D7%94%D7%A2%D7%99%D7%A8_%D7%9E%D7%95%D7%93%D7%99%D7%A2%D7%99%D7%9F.JPG/500px-%D7%9B%D7%A0%D7%A1%D7%99%D7%99%D7%AA_%D7%98%D7%A8%D7%94_%D7%A1%D7%A0%D7%98%D7%94_%D7%91%D7%9E%D7%91%D7%98_%D7%9E%D7%94%D7%9E%D7%92%D7%93%D7%9C_%D7%94%D7%9C%D7%91%D7%9F_-_%D7%9E%D7%A9%D7%9E%D7%90%D7%9C_%D7%A7%D7%A8%D7%99%D7%99%D7%AA_%D7%94%D7%9E%D7%9E%D7%A9%D7%9C%D7%94%2C_%D7%9E%D7%99%D7%9E%D7%99%D7%9F_%D7%94%D7%9E%D7%A1%D7%92%D7%93_%D7%94%D7%9C%D7%91%D7%9F_%D7%95%D7%91%D7%A8%D7%A7%D7%A2_%D7%94%D7%A2%D7%99%D7%A8_%D7%9E%D7%95%D7%93%D7%99%D7%A2%D7%99%D7%9F.JPG" alt="Ramla White Tower" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Ramla White Tower — via <a href="https://en.wikipedia.org/wiki/Ramleh" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>The Jewish community in Ramla grew up essentially with the city itself, from the early eighth century onward. Jews lived among the Muslim majority and the Christian minority in the new city, occupying a quarter in the urban fabric typical of medieval Islamic cities. The community was under the jurisdiction of the Jerusalem Gaonate (the Palestinian academy of Torah learning in nearby Jerusalem and later Ramla), which recognized Ramla as an important community deserving scholarly attention.</p>
 <p>In the ninth and tenth centuries, Ramla became a significant city of the Islamic world — a cosmopolitan administrative center with marketplaces, mosques, churches, and synagogues. The Jewish community benefited from the commercial opportunities of a prosperous provincial capital and was connected to the broader network of Jewish communities in Egypt and the Levant through trade and correspondence.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Ramla's Jewish golden age coincides with its political golden age: the ninth and tenth centuries under Abbasid rule, and particularly the period when the Jerusalem Gaonate was at its height. Ramla served as a way station and often as a residence for the leading scholars of Palestinian Jewry. The Palestinian Gaonate, though nominally in Jerusalem, often functioned from Ramla when political conditions made Jerusalem inaccessible or unsafe.</p>
 <p>But it was as a Karaite center that Ramla was most distinctive. The Karaite movement, founded in the ninth century (traditionally by Anan ben David, though the movement's actual origins are more complex), rejected the Oral Torah of the rabbis and insisted on literal biblical interpretation. Karaite scholars settled in Ramla, and the city hosted an active Karaite community that produced scholars engaged in fierce literary battles with the rabbinic Geonim. The Gaon Saadia ben Yosef (Saadia Gaon, 882–942), the greatest rabbinic scholar of the period, wrote major polemics against Karaism, partly in response to the Karaite presence in the Land of Israel.</p>
@@ -492,35 +509,29 @@
 <p>The <strong>Jewish cemetery</strong> of medieval Ramla has been partially identified. Some Geniza letters concern burial practices and the maintenance of the cemetery — an ongoing communal responsibility that speaks to the community's stability across generations.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p><strong>Daniel ben Moses al-Qumisi (9th century CE)</strong>, one of the earliest systematic Karaite scholars and polemicists, was associated with the Palestinian Karaite community and likely spent time in Ramla. He wrote biblical commentaries and polemical works attacking rabbinic tradition, and his letters called Karaites worldwide to immigrate to Jerusalem as mourners for Zion.</p>
 <p><strong>Salmon ben Yerucham (10th century CE)</strong>, a Karaite scholar who wrote extensive biblical commentaries and polemical poems attacking Saadia Gaon. His works were written partly in Palestine, and Ramla's Karaite community provided the intellectual context.</p>
 <p><strong>Yefet ben Eli (10th century CE)</strong>, another major Karaite scholar associated with the Palestinian community, wrote Arabic-language commentaries on the entire Hebrew Bible. Though based partly in Jerusalem, the broader Karaite community of the Palestine region — including Ramla — was his world.</p>
 <p><strong>Rabbi Solomon ben Judah (died 1051)</strong>, Gaon of the Jerusalem academy in its final great period, corresponded with communities including Ramla's. His letters (many preserved in the Cairo Geniza) provide the most detailed picture available of the Palestinian Jewish community of the eleventh century, including Ramla's.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Ramla's Jewish culture was Arabic-speaking and cosmopolitan. The Jewish community used Judeo-Arabic (Arabic written in Hebrew script) as its vernacular and for much of its scholarly production. The Karaite community's contribution to Hebrew biblical scholarship — detailed grammatical and lexical analysis — was substantial, and several Karaite scholars of the Palestinian community contributed to the development of Hebrew linguistics.</p>
 <p>The proximity of the Karaite and rabbinic communities in Ramla created an environment of fierce debate but also of mutual awareness and occasional cross-pollination. Some scholars believe that the rabbinic Geonim sharpened their own biblical interpretation partly in response to the Karaite challenge concentrated in the Land of Israel — a competition that ultimately enriched both traditions.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The Crusader conquest of 1099 disrupted Ramla's Jewish community severely. Crusader policy toward Jews was generally hostile; the community was expelled or fled, and the city's administrative importance shifted to Crusader institutions. Some Jewish presence may have continued intermittently, but the vibrant medieval community effectively ended with the Crusader period.</p>
 <p>The subsequent Mamluk and Ottoman periods saw Ramla as a way station rather than a Jewish center. Small Jewish communities existed there in the later Ottoman period, documented by travelers. The 1948 Arab-Israeli War resulted in the evacuation of Ramla's Arab population and the city's subsequent repopulation with Jewish immigrants, primarily from North Africa and later from the former Soviet Union and Ethiopia.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Ramla's most enduring legacy is its role as a center of Karaite scholarship. The Karaite community that flourished in and around Ramla (and Jerusalem) produced a body of biblical commentary, Hebrew grammar, and polemical literature that influenced both Karaite and rabbinic scholarship permanently. The Karaite community today — concentrated in Israel, with significant communities in the United States — maintains its distinct identity and traces its spiritual heritage in part to the great scholars of medieval Palestine, including those who worked in Ramla. The Cairo Geniza documents that illuminate Ramla's history are themselves among the most remarkable archival discoveries in the history of scholarship.</p>
       </section>

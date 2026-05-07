@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Recife_Montagem.jpg/640px-Recife_Montagem.jpg" alt="Recife skyline" loading="eager">
+      <figcaption>Recife skyline — via <a href="https://en.wikipedia.org/wiki/Recife" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Recife holds a foundational place in Jewish history as the site of the first Jewish community in the Americas. Established under Dutch colonial rule in the 1630s, the Zur Israel congregation of Recife became the mother community of American Jewry: when the Dutch were expelled by the Portuguese in 1654, twenty-three Jewish refugees sailed north, eventually arriving in New Amsterdam (New York), where they founded what would become the Jewish community of North America.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Antonio_Vaz_island_-_Recife%2C_Pernambuco%2C_Brazil_%28cropped%29.jpg/500px-Antonio_Vaz_island_-_Recife%2C_Pernambuco%2C_Brazil_%28cropped%29.jpg" alt="Recife skyline" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Recife skyline — via <a href="https://en.wikipedia.org/wiki/Recife" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Recife (then also called Pernambuco, for its province) became Dutch when the Dutch West India Company conquered the sugar-rich northeast of Brazil in 1630. The Dutch Republic, though Calvinist in its state religion, had a tradition of relative religious tolerance that derived partly from the republic's own experience of religious persecution under Spanish Habsburg rule. Sephardic Jews — conversos who had secretly maintained Jewish practice under Portuguese and Spanish rule, or their openly Jewish descendants who had fled to Amsterdam — were permitted to settle in Dutch Brazil and practice Judaism openly.</p>
 <p>This was not merely tolerance but calculation: the Dutch needed skilled merchants and financiers who understood the Brazilian sugar economy, and the Sephardic Jewish community had precisely this expertise. Jewish merchants served as intermediaries in the sugar trade, as plantation managers, and as commercial agents linking Recife to Amsterdam.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>By the 1640s, Recife had a Jewish community of approximately 1,500 — a substantial number for a colonial town — centered on the Zur Israel congregation. This was the first openly functioning Jewish congregation in the Western Hemisphere. The community built a synagogue, established a bet din (rabbinical court), imported a Torah scroll and religious books from Amsterdam, and created the institutional infrastructure of Jewish communal life.</p>
 <p>The Zur Israel congregation functioned under the supervision of the Amsterdam rabbinate and maintained close connections to the Sephardic Jewish world of Amsterdam, Hamburg, and the Caribbean. It was a frontier outpost of the Sephardic Atlantic world.</p>
@@ -491,31 +508,25 @@
 <p>The community also maintained a cemetery, a mikveh, and the administrative structures of a functioning Jewish kehilla.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Rabbi Isaac Aboab da Fonseca (1605–1693) served as the rabbi of the Recife congregation and is thus the first rabbi in the Western Hemisphere. Born in Amsterdam to a family of Portuguese conversos who had returned to Judaism, Aboab da Fonseca was a serious kabbalist and halakhic scholar who also wrote the first Hebrew poem in the Americas. When the Portuguese reconquered Recife in 1654, he returned to Amsterdam and eventually became one of the Parnassim (leaders) of the Amsterdam Jewish community — ironically, the same community that was simultaneously dealing with the excommunication of Baruch Spinoza.</p>
 <p>Moses de Aguilar, another scholar associated with the Recife community, wrote poetry and conducted the community's religious affairs alongside Aboab da Fonseca.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>The Recife community's most important contribution to Jewish history was indirect but world-transforming: the 23 refugees who sailed north after the Portuguese reconquest of 1654 arrived in New Amsterdam and became the founding members of what would become the most important Jewish community in history. Asser Levy, among the twenty-three, became the first Jewish tradesman and later the first Jewish real estate owner in New Amsterdam. The community's dogged insistence on their right to remain — over the objections of Governor Peter Stuyvesant — set a precedent for American Jewish civic equality.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The Portuguese recapture of Recife in January 1654 ended the Dutch experiment and with it the Jewish community. Jews were given three months to leave. Most returned to Amsterdam; others scattered to Dutch Caribbean colonies in Curaçao, Surinam, and elsewhere. The twenty-three who arrived in New Amsterdam that September carried nothing but their determination to remain and practice Judaism freely.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Recife today marks its role in American Jewish history with increasing pride. The archaeological discoveries of the late 1990s that uncovered the original Zur Israel synagogue site brought international attention. The Kahal Zur Israel Synagogue Museum, established in the 1990s, commemorates the community and the role Recife played in the founding of American Jewry. Delegations from American Jewish organizations regularly visit Recife to honor the community's unique historical significance.</p>
       </section>

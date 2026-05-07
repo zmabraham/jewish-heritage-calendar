@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Mainz_-_Kaiserstrasse_und_Dom.jpg/640px-Mainz_-_Kaiserstrasse_und_Dom.jpg" alt="Mainz Cathedral" loading="eager">
+      <figcaption>Mainz Cathedral — via <a href="https://en.wikipedia.org/wiki/Mainz" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Mainz — Magenza in Hebrew — is one of the founding cities of Ashkenazic Jewry, one of the ShUM cities (Speyer, Worms, Mainz) whose scholars, institutions, and liturgical practices shaped Jewish civilization across Central and Eastern Europe for a millennium. Here, the great teacher of Rashi studied; here, the Ashkenazic rite was formulated; here, the Crusade massacres of 1096 revealed the horrors of religious violence, the memory of which would shape Jewish historical consciousness forever. The burned scrolls and martyred scholars of Mainz echo through every subsequent history of Jewish suffering and resilience.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Mainz_-_Kaiserstrasse_und_Dom.jpg/640px-Mainz_-_Kaiserstrasse_und_Dom.jpg" alt="Mainz Cathedral" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Mainz Cathedral — via <a href="https://en.wikipedia.org/wiki/Mainz" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews lived in the Roman city of Mogontiacum and are documented in the Merovingian and Carolingian periods. But the community that would shape Ashkenazic history emerged in the tenth and eleventh centuries as Mainz developed into a major ecclesiastical and political center of the Holy Roman Empire. The community's rise is linked to the relationship with the imperial court; Jews served as diplomats, physicians, and traders under the Ottonian and Salian emperors.</p>
 <p>The Mainz community was distinguished from the beginning by its rabbinic scholarship. Rabbi Gershom ben Judah (c.960–1040), known as "Meor HaGolah" (Light of the Exile), established the yeshiva at Mainz and issued legal enactments that became binding across much of the Ashkenazic world — including, most famously, the prohibition against polygamy. His student Rashi, though based in Troyes in Champagne, studied at Mainz and carried Mainz's scholarly tradition into the canon of Jewish learning.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The eleventh century was the community's apogee. Mainz's yeshiva attracted students from across the Jewish world; its scholars produced Talmud commentaries, responsa, and liturgical poems (piyyutim) that shaped the emerging Ashkenazic rite. The community maintained close ties with the other great Rhineland centers, Worms and Speyer, forming the ShUM association (from the Hebrew initials: Shin for Speyer, Vav for Worms, Mem for Mainz). The three cities developed a common liturgical rite, shared legal customs, and a collective scholarly identity that would be carried eastward by German Jewish migrants to Poland, Lithuania, and Hungary.</p>
 <p>The Crusade massacres of 1096 shattered this world. Crusaders passing through the Rhineland on their way to the Holy Land attacked Jewish communities in Mainz, Worms, and Cologne. In Mainz, Jews who had taken refuge in the episcopal palace, where they believed the bishop would protect them, were slaughtered; many died by their own hands in kiddush HaShem (sanctification of the Divine Name) rather than accept forced conversion. The chronicles of these events — written by survivors — contain some of the most searing testimony in Jewish literature, language and imagery that would echo through centuries of commemoration.</p>
@@ -492,34 +509,28 @@
 <p>The Old Synagogue of Mainz, consecrated in the eleventh century, became one of the most revered Jewish buildings in Europe, rebuilt after each disaster until its final destruction in the Nazi period. Archaeological excavations in the late twentieth century uncovered the foundations.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Rabbi Gershom ben Judah, "Light of the Exile," remains the most renowned scholar associated with Mainz. His enactments and his students shaped Ashkenazic halakhic practice.</p>
 <p>Rabbi Judah ben Kalonymus, a member of the renowned Kalonymus family that produced several generations of Mainz scholars, wrote about martyrdom and penance, reflecting the trauma of 1096.</p>
 <p>The community gave the Jewish world teachers whose influence was carried eastward: the Mainz scholars who taught Rashi, who in turn taught his sons and grandsons, whose commentaries became foundational texts of Jewish study everywhere.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Mainz Jewry created the distinctive Ashkenazic rite — the prayer liturgy, chant melodies, and synagogue customs that would characterize Jewish worship from Germany through Poland to Russia. The piyyutim (liturgical poems) composed in Mainz, including works by Rabbi Eliezer ben Nathan, became part of the standard Ashkenazic liturgy, read and chanted on fast days commemorating persecution.</p>
 <p>The community's intellectual life was deeply engaged with both Jewish tradition and the broader world of medieval learning. Mainz scholars corresponded with colleagues across the Jewish diaspora and had access to imperial libraries and Christian Hebraists.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>By the late Middle Ages, Mainz's Jewish community had entered a long decline. Repeated expulsions — 1012, 1438, 1471, and a final expulsion in the 1460s — drove many Jews eastward. Those who returned later never regained the community's former prominence. The Reformation initially improved conditions for some Jews, but by the seventeenth century, Mainz Jewry was a shadow of its medieval self.</p>
 <p>The nineteenth century brought gradual legal emancipation and renewal, but the Nazi era brought final destruction. Mainz's Jews were deported beginning in 1942; very few survived. The medieval synagogue was destroyed in 1943 or 1944.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The main legacy of Mainz Jewry lies in the Ashkenazic civilization it helped create: the prayer rites, legal traditions, and intellectual culture that persisted across Central and Eastern Europe into the modern period. The phrase "Mayence" — the French name for Mainz — appears repeatedly in Jewish texts as a byword for rabbinic authority.</p>
 <p>Today, Mainz has a small but active Jewish community, rebuilt largely by post-Soviet immigrants. The community maintains a modern synagogue and the old cemetery, a monument to nearly a thousand years of Jewish presence.</p>

@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Perpignan_-_Le_Castillet.jpg/640px-Perpignan_-_Le_Castillet.jpg" alt="Perpignan Castillet" loading="eager">
+      <figcaption>Perpignan Castillet — via <a href="https://en.wikipedia.org/wiki/Perpignan" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Perpignan, the historical capital of Roussillon and today the largest city of French Catalonia, was for much of the medieval period a major center of the Crown of Aragon — and its Jewish community shared in the character of the broader Catalan Jewish world. Situated at the Mediterranean foot of the Pyrenees where the Iberian Peninsula opens to France, Perpignan's Jewish community connected the Sephardic world of the south with the Provençal and French Jewish communities to the north, producing scholars of lasting importance and participating in the theological controversies that shaped medieval Jewry.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Perpignan_-_panoramio.jpg/500px-Perpignan_-_panoramio.jpg" alt="Perpignan Castillet" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Perpignan Castillet — via <a href="https://en.wikipedia.org/wiki/Perpignan" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jewish settlement in Perpignan is documented from the late eleventh century, when the city was already under the counts of Roussillon. The Jewish quarter, the Call, was located near the city center. When Roussillon came under Aragonese rule in the twelfth century, Perpignan's Jews fell under the same legal framework as their coreligionists in Barcelona, Zaragoza, and Girona.</p>
 <p>The city's position as a trading hub connecting Catalonia and Languedoc gave its Jewish community commercial significance. Jewish merchants participated in the cloth and spice trades and in financial services.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Perpignan's intellectual peak came in the thirteenth and fourteenth centuries, when the city's yeshiva produced scholars of distinction and when Perpignan briefly served as the capital of the independent Kingdom of Mallorca (1276–1344) — a period that enhanced its commercial and cultural importance.</p>
 <p>The city was particularly notable for its engagement with the Maimonidean controversy — the great debate over the permissibility of philosophical study that divided Sephardic Jewry in the early fourteenth century. Perpignan scholars took positions on both sides of the debate, and the city was a significant battleground in this intellectual conflict.</p>
@@ -491,33 +508,27 @@
 <p>Some archaeological evidence of the medieval Jewish quarter survives, and Perpignan has developed heritage routes documenting its Jewish past.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Menahem ha-Meiri (1249–1316), born in Perpignan, is one of the most original and practically important halakhic authorities of the medieval period. His Beit haBehira, a comprehensive Talmudic commentary unprecedented in scope and systematic organization, represents the largest single-author halakhic work of the medieval Sephardic tradition. HaMeiri's rulings were particularly notable for their enlightened treatment of non-Jews — he argued that peoples "constrained by ways of religion" (i.e., Christians and Muslims who follow moral codes) were not subject to the Talmudic discriminatory rulings regarding pagans. This position, radical for its time, was so far ahead of its context that HaMeiri's works were rarely cited in his own era and were rediscovered only in modern times, when his approach to interfaith relations has been extensively discussed by contemporary halakhists.</p>
 <p>Aaron ha-Levi of Barcelona (the Ra'ah, c. 1235–c. 1290), though not from Perpignan itself, worked in the broader Catalan-Roussillon region and was a major halakhic figure connected to Perpignan's scholarly networks.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Perpignan's cultural life bridged Catalan and Provençal Jewish worlds. The community used Catalan as its vernacular while maintaining Hebrew for scholarship, and its scholars were in constant contact with both the Catalan communities to the south and the larger Provençal communities — Montpellier, Narbonne, Lunel — to the north. This connection made Perpignan a crucial node in the network through which ideas circulated between Sephardic and Provençal Jewry.</p>
 <p>The controversy over Maimonidean philosophy, the role of aggadah in halakhic reasoning, and the appropriate limits of secular learning all found vigorous expression in Perpignan's scholarly community.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The 1391 pogroms affected Perpignan, though the city was by then within the borders of the Kingdom of Aragon rather than Castile. The community was attacked and forced conversions occurred. The community partially reconstituted itself but was permanently weakened.</p>
 <p>The eventual transfer of Roussillon to France (formally in 1659) placed Perpignan under French rather than Spanish jurisdiction, but by that time Jewish life in the city had long ended. The Expulsion of 1492 from the Spanish-controlled territories had expelled whatever remaining Jewish community existed.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>HaMeiri's Beit haBehira, rediscovered and published in full only in the twentieth century, has become one of the most discussed medieval halakhic works in contemporary Jewish scholarship. His inclusive approach to non-Jews has made him a touchstone figure in discussions of Jewish-Christian and Jewish-Muslim relations.</p>
 <p>Modern Perpignan, now a French city with strong Catalan cultural identity, acknowledges its Jewish heritage through historical markers and the documentation of the medieval Call.</p>

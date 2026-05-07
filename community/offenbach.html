@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,21 +482,24 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Offenbach_am_Main_Kaiserleistra%C3%9Fe_1.jpg/640px-Offenbach_am_Main_Kaiserleistra%C3%9Fe_1.jpg" alt="Offenbach am Main" loading="eager">
+      <figcaption>Offenbach am Main — via <a href="https://en.wikipedia.org/wiki/Offenbach_am_Main" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Offenbach am Main, a manufacturing town on the southern bank of the Main River just downstream from Frankfurt, occupies a singular and deeply strange place in Jewish history. It was here that Jacob Frank (1726–1791), the last and most theatrical of the Sabbatian false messiahs, spent the final years of his life holding court in a mock royal establishment; here that his Frankist followers gathered in a bizarre twilight community blending apostasy, esotericism, and a shadow Judaism; and here that a legitimate Hebrew printing industry developed, making Offenbach one of the more active centers of Hebrew book production in late eighteenth- and early nineteenth-century Germany.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Offenbach_am_Main_Kaiserleistra%C3%9Fe_1.jpg/640px-Offenbach_am_Main_Kaiserleistra%C3%9Fe_1.jpg" alt="Offenbach am Main" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Offenbach am Main — via <a href="https://en.wikipedia.org/wiki/Offenbach_am_Main" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Offenbach lay within the territory of the Counts (later Princes) of Isenburg, whose relatively permissive policies allowed Jews to settle when neighboring Frankfurt severely restricted Jewish residence and movement. A Jewish community had existed in Offenbach from the seventeenth century, and the town's position adjacent to Frankfurt made it a satellite of the larger, more famous Jewish community there. Jews in Offenbach engaged in trade, finance, and crafts, benefiting from their proximity to Frankfurt's commercial networks while subject to somewhat lighter restrictions.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Jacob Frank was born Jacob Leibowicz in Podolia (present-day Ukraine) and spent his early career as an itinerant trader in the Ottoman Empire and Poland. Absorbing Sabbatian ideas — the antinomian theology that the coming of the messiah had inverted or abrogated the traditional commandments — he gathered followers in Poland and presented himself as the successor to Shabbetai Tzvi. After a complex career that included mass conversion to Christianity in Poland under pressure from Catholic authorities (1759), imprisonment in the Częstochowa fortress (1760–1773), and release following the first partition of Poland, Frank re-emerged in the West.</p>
 <p>He arrived in Offenbach in 1788 and established himself there with considerable pomp, styling himself a nobleman (the "Baron Frank") with a household, a court, and a following of several hundred devotees. His daughter Eva, beautiful and charismatic, served as a focal point of the community's quasi-mystical veneration. Frank drew support from Polish Frankist families who followed him to Offenbach and from German sympathizers, financing his extravagant establishment through donations he solicited from Jewish communities on the premise — largely fraudulent — that he had access to esoteric treasures.</p>
@@ -491,32 +508,26 @@
 <p>The mainstream Jewish community of Offenbach maintained a synagogue and communal institutions in the usual pattern of German Jewish life. The Frankist court was separate from — and deeply resented by — mainstream Jewish communal leadership, who viewed Frank and his followers as apostates and enemies.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Jacob Frank (1726–1791) dominates Offenbach's Jewish historical memory, though his relationship to Judaism was deeply ambiguous — he represented its most radical anti-establishment fringe. Eva Frank (1754–1816), his daughter, carried on the court after his death.</p>
 <p>Within the mainstream Jewish community, figures associated with the Hebrew printing trade left a more conventional legacy. The printer Israel bar Abraham produced editions that are still consulted by scholars of early modern Jewish texts.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>The Frankist episode in Offenbach, however repugnant to mainstream Jewish sensibility, is of immense historical significance as a case study in messianic movements, religious antinomianism, and the social psychology of sectarian communities. Scholars including Gershom Scholem and his successor Moshe Idel have analyzed Frankism as the final and most destructive expression of the Sabbatian impulse within Jewish history.</p>
 <p>The Hebrew printing activity of Offenbach contributed more straightforwardly to Jewish cultural life, disseminating texts — including early Hasidic works — to communities across Europe.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>After Eva Frank's death in 1816, the last embers of organized Frankism in Offenbach expired. The mainstream Jewish community continued through the nineteenth century, benefiting from emancipation and integrating into German civic life. The community was destroyed under the Nazi regime; the synagogue was burned during Kristallnacht in 1938, and community members were deported and murdered.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Offenbach's Jewish history is commemorated through a local museum and memorial sites. Academically, the Frankist community remains an object of intense scholarly fascination, explored in depth in Scholem's <em>Sabbatai Sevi</em> and the extensive literature on Sabbatianism and its aftermath. The Hebrew books printed in Offenbach survive in libraries worldwide, some quite rare.</p>
       </section>

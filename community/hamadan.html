@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,25 +482,28 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Hamadan_bazaar_alley.jpg/640px-Hamadan_bazaar_alley.jpg" alt="Hamadan bazaar" loading="eager">
+      <figcaption>Hamadan bazaar — via <a href="https://en.wikipedia.org/wiki/Hamadan" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Hamadan holds a place in Jewish consciousness that few cities outside the Land of Israel can match. Identified by tradition with ancient Ecbatana, the Median capital where the Book of Tobit is set and where Jewish exiles settled following the Assyrian and Babylonian deportations, Hamadan is also believed to be the burial place of Esther and Mordecai — heroes of the Purim story — whose reputed tombs have drawn Jewish pilgrims for centuries. This convergence of biblical memory, physical monument, and living community made Hamadan one of the most symbolically charged sites in the Jewish world, a city where the narrative of exile and preservation seemed written directly into the landscape.</p>
 <p>Situated at an elevation of nearly 1,800 meters in the Zagros Mountains of western Iran, Hamadan was a major city of the ancient Near East long before the Common Era. Its Jewish community is among the oldest continuously documented in the diaspora, with traditions of settlement going back to the deportations of the 8th and 6th centuries BCE. Through the rise and fall of empires — Median, Achaemenid, Seleucid, Parthian, Sassanid, Islamic — Hamadan's Jews maintained their communal identity, finding in the tombs of Esther and Mordecai a tangible link to their biblical past.</p>
 <p>The modern community, though much reduced from its earlier size, maintained Hamadan's status as a pilgrimage center. Even after most Iranian Jews emigrated following 1979, the shrine of Esther and Mordecai continued to draw Jewish visitors from Israel and around the world, a reminder that place-memory outlasts population.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Hamadan_bazaar_alley.jpg/640px-Hamadan_bazaar_alley.jpg" alt="Hamadan bazaar" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Hamadan bazaar — via <a href="https://en.wikipedia.org/wiki/Hamadan" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>The biblical and post-biblical evidence for Hamadan as a Jewish site is substantial. Ecbatana appears in the Book of Tobit as a city where the hero's family lived in exile, reflecting knowledge of a Jewish community in the region. The Achaemenid court's use of Ecbatana as a summer capital (it appears in the Books of Ezra and Nehemiah as the location of a decree authorizing the Temple's rebuilding) placed Jews at or near royal power.</p>
 <p>The Book of Esther, while set in Susa (another significant Persian Jewish site), has Mordecai as a Benjaminite exile in the Persian capital — and tradition, going back at least to the early medieval period, locates his tomb and that of Esther in Hamadan. The historicity of this identification cannot be confirmed, but the cultural weight of the belief is immense. Medieval Jewish travelers, including Benjamin of Tudela (12th century), report visiting the tomb in Hamadan and describe a thriving community there.</p>
 <p>The Sassanid period brought Hamadan within a major Persian urban network, and Jewish communities in the region participated in the broader life of the Jewish Babylonian academic world centered around the great yeshivot of Mesopotamia.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The medieval Islamic period saw Hamadan develop as a significant intellectual center. The philosopher and physician Ibn Sina (Avicenna, 980–1037) lived and worked in Hamadan, and Jewish physicians and scholars in the city participated in the same learned culture, translating and commenting on medical and philosophical texts. The city's position on trade routes connecting Baghdad and the Mesopotamian Jewish world with the Persian plateau gave its Jewish community commercial vibrancy.</p>
 <p>By the 18th and 19th centuries, Hamadan's Jewish community was well-established, with several synagogues, a rabbinic court, and strong connections to the Jewish communities of Baghdad (then under Ottoman rule). The tomb of Esther and Mordecai attracted pilgrims from across the Jewish world, and the community hosted visitors, providing lodging and guidance to those who came on pilgrimage.</p>
@@ -496,37 +513,31 @@
 <p>The Alliance Israélite Universelle school, established in the late 19th century, provided modern education and became a center of cultural change, producing graduates who went on to careers in medicine, law, and commerce.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p><strong>Esther and Mordecai</strong> (traditional, c. 5th century BCE), though biblical figures whose historical existence remains debated, are the defining presence of Hamadan's Jewish identity. The tomb attributed to them, housed in a building that has been rebuilt and modified many times over the centuries, remains the community's most sacred site and the primary reason Hamadan occupies a unique place in global Jewish consciousness.</p>
 <p><strong>Rabbi Binyamin of Hamadan</strong> (medieval), a scholar mentioned in responsa literature, represents the community's connection to the broader network of Jewish legal authority centered in the yeshivot of Babylonia.</p>
 <p><strong>Mullah Moshe Hakohen</strong> (18th–19th century), a prominent rabbinic leader, oversaw the community's religious institutions during a period of Qajar rule and maintained the ritual traditions associated with the tomb complex.</p>
 <p><strong>Joseph Katz</strong> (19th century), a merchant and communal philanthropist, funded repairs to the shrine of Esther and Mordecai and contributed to the establishment of charitable institutions in the community.</p>
 <p><strong>Yitzhak Levi</strong> (early 20th century), a teacher trained in Alliance schools, became one of the first Hamadani Jews to achieve a modern professional education, symbolizing the transition between traditional community life and modernity.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Hamadan's Jews spoke a Judeo-Persian dialect with influences from the Zagros mountain communities and the Kurdish-speaking neighboring populations. Unlike the Jews of Isfahan or Shiraz, Hamadani Jews lived in closer proximity to Kurdish and Luri communities, and their folk traditions showed some corresponding influences.</p>
 <p>The community's religious life was oriented intensely around the shrine of Esther and Mordecai, which gave Purim a special significance in Hamadan. Local traditions held that certain prayers said at the tomb were particularly efficacious, and the annual Purim pilgrimage drew Jews from neighboring towns and cities.</p>
 <p>Hamadani Jewish craftsmen were known for their work in textiles and leather, trades that connected them to the city's broader artisan economy. The community's women were particularly noted for their embroidery work, which incorporated both Persian floral patterns and Hebrew letter designs.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The 20th century brought steady attrition to Hamadan's Jewish population. Economic modernization drew young people toward Tehran, and the Zionist movement offered the possibility of emigration to Palestine/Israel. The community's size declined from several thousand in the early 20th century to a few hundred by the 1970s.</p>
 <p>The Islamic Revolution of 1979 precipitated the final departure of most remaining community members. The shrine of Esther and Mordecai was, after some uncertainty, recognized by the Islamic Republic as a protected site of religious minority heritage, and it has continued to function as a pilgrimage destination. Iranian Jewish organizations, particularly from Israel and Los Angeles, have organized visits to the shrine, and the Islamic Republic has at various times used the shrine's maintenance as evidence of its stated policy of protecting recognized religious minorities.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Hamadani Jews in diaspora settled primarily in Israel and in the Iranian Jewish communities of North America. The tomb of Esther and Mordecai continues to draw Jewish pilgrims from around the world, making Hamadan unique among Iranian Jewish sites in maintaining an active connection between the diaspora and the ancestral city.</p>
 <p>The community's deep association with the Purim narrative has given it a symbolic importance in Jewish education that far exceeds its actual historical size. Children around the Jewish world learn about Esther and Mordecai without necessarily knowing that their story is connected to a real place where Jews lived continuously for more than two millennia.</p>

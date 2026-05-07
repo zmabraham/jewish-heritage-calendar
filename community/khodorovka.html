@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,21 +482,24 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Khodoriv.jpg/640px-Khodoriv.jpg" alt="Khodoriv (Khodorovka)" loading="eager">
+      <figcaption>Khodoriv (Khodorovka) — via <a href="https://en.wikipedia.org/wiki/Khodoriv" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Khodorovka — a small shtetl in the Khmelnytskyi Oblast of western Ukraine — was a typical Podolian Jewish community whose economy was shaped by the lumber and grain trades that sustained much of the Jewish population in this forested, agricultural region. Its history reflects the economic specialization that often defined Jewish life in the Pale of Settlement: the position of Jews as commercial intermediaries in a rural economy, managing the trade in forest products, grain, and other commodities that moved between the Ukrainian countryside and broader markets.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Khodoriv.jpg/640px-Khodoriv.jpg" alt="Khodoriv (Khodorovka)" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Khodoriv (Khodorovka) — via <a href="https://en.wikipedia.org/wiki/Khodoriv" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Khodorovka sat in a region of mixed forest and agriculture in northern Podolia. The surrounding forests provided timber — cut, milled, and transported by Jewish lumber merchants who operated sawmills and managed the lumber trade. The agricultural land produced grain, stored, shipped, and sold through a network of Jewish middlemen. This economic role — as intermediaries between Ukrainian peasant producers and distant markets — was typical of Jewish communities throughout the Pale.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The lumber trade in Podolia was characteristically Jewish. Jewish families owned or leased sawmills, employed Jewish and non-Jewish workers, and managed the complex logistics of cutting timber, transporting it by wagon or river, and selling it in regional markets or for export. This business required capital, expertise, and networks of credit and trust — all of which Jewish communities provided through internal lending mechanisms and family-based partnerships.</p>
 <p>The grain trade operated similarly. Jewish grain dealers bought wheat, rye, and other crops from Ukrainian peasants at harvest, stored it in granaries, and shipped it by wagon to larger commercial centers or to river transport. The seasonal rhythm of the grain and lumber cycles shaped Jewish economic life: the busy seasons of harvest and cutting, the slower winter months, the annual cycle of credit extended and repaid.</p>
@@ -490,30 +507,24 @@
 <p>Khodorovka maintained a synagogue, a study house, and the charitable and educational institutions of a small kehilla. The community's economic strength, derived from the lumber and grain trades, would have supported these institutions through the standard system of communal taxation and philanthropy that characterized Jewish communal finance.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Khodorovka was not associated with famous historical figures but produced its share of merchants, tradesmen, and emigrants who carried the memory of the town to new destinations in America and Palestine.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>The Jewish contribution to the regional economy through the lumber and grain trades was substantial. Jewish management of these commercial networks facilitated the flow of goods from rural Podolia to urban markets and beyond. This economic role — though frequently misunderstood and resented by others — was a real service to the broader society and a source of Jewish communal viability.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Soviet nationalization of private property in the 1920s destroyed the economic foundation of Jewish merchant life. The German occupation of 1941 brought mass murder of the remaining Jewish population.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Khodorovka today is a small Ukrainian village. Its Jewish past is preserved in family histories and community memory.</p>
       </section>

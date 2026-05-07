@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/General_view_over_bonn_%28cropped%29.jpg/640px-General_view_over_bonn_%28cropped%29.jpg" alt="Bonn cityscape along the Rhine" loading="eager">
+      <figcaption>Bonn cityscape along the Rhine — via <a href="https://en.wikipedia.org/wiki/Bonn" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Bonn, an ancient Roman city on the Rhine that would later become the capital of West Germany, was home to a medieval Jewish community that formed part of the dense web of Rhineland Jewish settlements. Like its neighbors Cologne, Koblenz, and Mainz, Bonn's Jewish community was part of the central heartland of Ashkenazic Jewry — and, like them, suffered catastrophically in the Black Death persecutions of 1348–1350, when mobs destroyed the community based on the accusation that Jews had poisoned wells to spread the plague.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/General_view_over_bonn_%28cropped%29.jpg/500px-General_view_over_bonn_%28cropped%29.jpg" alt="Bonn cityscape along the Rhine" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Bonn cityscape along the Rhine — via <a href="https://en.wikipedia.org/wiki/Bonn" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jewish settlement in Bonn is attested from the twelfth century, though the community may have been present earlier given the city's Roman origins and its position on the Rhine — the river highway along which Jewish merchants and settlers had moved from the earliest Ashkenazic migrations. Bonn fell under the authority of the Archbishop of Cologne, one of the most powerful ecclesiastical princes in the Holy Roman Empire.</p>
 <p>The archbishops' relationship with their Jewish subjects was typical of the medieval pattern: Jews were permitted to settle, engage in finance and commerce, maintain synagogues and cemeteries, and conduct religious life, in exchange for substantial financial payments and periodic extraordinary levies. They were subject to the archbishop's protection — which could be extended or withdrawn based on political circumstances — and were increasingly subject to pressure from Christian townsmen who resented Jewish commercial competition and moneylending.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The defining catastrophe of medieval Bonn Jewish history was the massacre of 1349, part of the wave of violence that swept through Rhineland communities during the Black Death. As bubonic plague devastated European populations (killing perhaps a third of Europe's people), Jews were accused of causing the epidemic by poisoning wells — a charge of transparent absurdity (Jews drank the same water and died in comparable proportions) but one that provided a pretext for violence against a vulnerable minority.</p>
 <p>In the Rhineland, the pogroms began even before the plague had arrived in some areas, suggesting that economic resentment and religious hostility were the real drivers. Jewish communities were massacred or burned in Cologne, Frankfurt, Mainz, and dozens of other cities. Bonn's Jewish community was destroyed in 1349. Survivors fled; some were killed.</p>
@@ -494,31 +511,25 @@
 <p>The nineteenth-century community built a substantial synagogue appropriate to its emancipated status. This building was destroyed during Kristallnacht in November 1938.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>The medieval community of Bonn was not associated with named scholars of the same prominence as the communities of Mainz, Worms, or Troyes. Its contribution was rather as part of the dense fabric of Rhineland Jewish life that supported the great centers of learning.</p>
 <p>In the modern period, Karl Marx (1818–1883) studied briefly at the University of Bonn before moving to Berlin — though he had already been baptized as a child and identified primarily as a secular German intellectual rather than as a Jew.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Bonn's Jewish community participated in the broader Rhineland Jewish culture — the world that produced the great codes, commentaries, and martyrological literature of Ashkenazic Jewry. The memorial books (memorbuchs) of Rhineland communities recorded the names of martyrs from Bonn alongside those of other communities, preserving their memory in the liturgical recitation of Yizkor.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The medieval community's end in 1349 was followed by reconstruction and later difficulties. The modern community was destroyed during the Nazi period. On Kristallnacht, 9–10 November 1938, the Bonn synagogue was burned. Jews were subsequently deported and murdered. After World War II, a small Jewish community was reestablished in Bonn, and as the city became West Germany's capital (1949–1990), the community had some visibility in the political life of the new German democracy.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Bonn today has a small but active Jewish community centered in a modern synagogue. The destroyed medieval community is commemorated through archaeological research and historical scholarship. The medieval Jewish cemetery site has been investigated. The Rhineland Jewish communities collectively — including Bonn — are honored through the "ShUM" cities UNESCO designation (Speyer, Worms, Mainz received UNESCO World Heritage status in 2021), and the broader network of Rhineland communities of which Bonn was part.</p>
       </section>

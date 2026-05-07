@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Volo%C5%BCyn_Palace.jpg/640px-Volo%C5%BCyn_Palace.jpg" alt="Vałožyn (Volozhin) Palace" loading="eager">
+      <figcaption>Vałožyn (Volozhin) Palace — via <a href="https://en.wikipedia.org/wiki/Va%C5%82o%C5%BCyn" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Volozhin is a small Belarusian town whose name reverberates through the entire world of Jewish scholarship. The Etz Chaim Yeshiva, founded here in 1803 by Rabbi Chaim of Volozhin (a leading disciple of the Vilna Gaon), became the model and mother of all modern yeshivot — the institutional template from which every subsequent yeshiva, from those of Eastern Europe to Israel to America, descended directly or indirectly. For nearly a century, Volozhin's yeshiva was the supreme institution of Ashkenazic Torah scholarship, the place where the Gaon's intellectual legacy was institutionalized and transmitted. To study in Volozhin was the highest aspiration of Lithuanian Jewish youth; to teach there was the greatest rabbinic honor.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/St._Joseph_Roman_Catholic_Church_in_Valozhyn_town.jpg/500px-St._Joseph_Roman_Catholic_Church_in_Valozhyn_town.jpg" alt="Vałožyn (Volozhin) Palace" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Vałožyn (Volozhin) Palace — via <a href="https://en.wikipedia.org/wiki/Volozhin" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Volozhin was a small market town in the Minsk region, part of the Russian Empire's Pale of Settlement. Jews lived there from the eighteenth century in modest circumstances as merchants and craftsmen. The town's transformation came through Rabbi Chaim of Volozhin (1749–1821), born in Volozhin and a devoted student of the Vilna Gaon for many years. When the Gaon died in 1797, Rabbi Chaim determined to institutionalize the Gaon's approach to Torah study — rigorous textual analysis, mastery of the entire Talmudic corpus, and learning for its own sake (<em>Torah lishmah</em>) — in a structured institution.</p>
 <p>In 1803, Rabbi Chaim opened the Etz Chaim Yeshiva in Volozhin. Unlike earlier yeshivot, which were typically attached to local communities and primarily served local students, the Volozhin Yeshiva was explicitly designed to attract students from across Eastern Europe, to be funded by communities throughout the Jewish world, and to have no financial obligation to its students' home towns. It was a supracommunal institution — the first of its kind.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The Volozhin Yeshiva was organized around a radical principle: study Torah day and night, without interruption, for its own sake — not for professional advancement, not for communal obligation, but as a supreme religious value in itself. The concept of <em>Torah lishmah</em> was transformed from an abstract ideal into an institutional practice. The yeshiva maintained continuous Talmud study: students studied in rotating shifts so that the sound of Torah study never ceased, day or night. This idea — the <em>beis midrash</em> as a vessel for unbroken connection with the divine — became the foundational ideology of the modern yeshiva world.</p>
 <p>Students came from across Lithuania, Belorussia, Poland, and eventually from Western Europe and America. The yeshiva could have 400 or more students at peak periods. Its roshei yeshiva were among the greatest Torah scholars of their generation: Rabbi Chaim's son Rabbi Yitzchak of Volozhin continued the institution, followed by Rabbi Eliezer Yitzchak Fried, and then the towering figure of Rabbi Naftali Tzvi Yehudah Berlin, known as the <em>Netziv</em> (1817–1893), who led the yeshiva for nearly forty years and brought it to its greatest height.</p>
@@ -491,31 +508,25 @@
 <p>The Volozhin Yeshiva complex was modest in physical terms — study halls, dormitories, a dining hall supported by charitable funds from Jewish communities across the world. The Rabbi's residence doubled as administrative headquarters. The town had a synagogue, prayer houses, elementary schools, and the standard communal infrastructure. The yeshiva's library was distinguished, though vulnerable to the upheavals of war.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p><strong>Rabbi Chaim of Volozhin</strong> (1749–1821) — founder, leading disciple of the Vilna Gaon, author of <em>Nefesh HaChaim</em>, the great theological treatise of Lithuanian Judaism. <strong>Rabbi Yitzchak of Volozhin</strong> — son and successor. <strong>Rabbi Naftali Tzvi Yehudah Berlin (Netziv)</strong> (1817–1893) — greatest dean of the yeshiva, prodigious scholar, Zionist sympathizer in his later years. <strong>Rabbi Chaim Soloveitchik</strong> of Brisk — studied in Volozhin. <strong>Chaim Nachman Bialik</strong> — studied briefly in Volozhin; commemorated it in <em>Ha-Matmid</em>. <strong>Rabbi Yosef Ber Soloveitchik</strong> (the Beis HaLevi) — son-in-law of the Netziv.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>The cultural life of Volozhin was entirely defined by the yeshiva. The town was a <em>yeshiva shtetl</em> — its economy, its social fabric, its intellectual life all oriented around the needs and rhythms of the institution. Visiting parents, merchants supplying the yeshiva's needs, and locals who hosted students shaped a community deeply identified with Torah study. The tension between this traditional world and the forces of modernity — Zionism, Haskalah, socialism — was felt acutely by students like Bialik who arrived with traditional backgrounds and departed with transformed worldviews.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The Russian government closed the Volozhin Yeshiva in 1892, objecting to the yeshiva's refusal to incorporate secular studies into its curriculum as required by new Russian educational regulations. The Netziv and the yeshiva's leadership chose closure over compromise. The institution reopened briefly under more restricted conditions but never fully recovered its former stature. The Netziv moved to Warsaw, where he died in 1893. The yeshiva continued intermittently until World War I devastated the town and Jewish life in the region.</p>
 <p>During the interwar period the yeshiva reopened and functioned until World War II. The German occupation in 1941 brought mass murder: the Jewish community of Volozhin, several thousand people, was killed in a series of shootings in 1941 and 1942.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The legacy of Volozhin is the entire modern yeshiva world. Every major yeshiva in Eastern Europe — Mir, Slobodka, Telz, Radin, Ponevezh — was either founded by Volozhin alumni or modeled on its institutional structure. Every contemporary yeshiva in Israel and America descends from this tradition. The ideal of <em>Torah lishmah</em> as the supreme value of Jewish education, the organizational model of the supracommunal yeshiva, the culture of continuous study — all derive from Volozhin. Rabbi Chaim's great theological work <em>Nefesh HaChaim</em> is a cornerstone of Lithuanian Jewish thought, studied in yeshivot today.</p>
       </section>

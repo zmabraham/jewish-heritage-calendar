@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,52 +482,49 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Vilnius_Montage_2021.jpg/640px-Vilnius_Montage_2021.jpg" alt="Vilnius (Vilna)" loading="eager">
+      <figcaption>Vilnius (Vilna) — via <a href="https://en.wikipedia.org/wiki/Vilnius" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>"Jerusalem of Lithuania" — the title bestowed upon Vilna by Napoleon himself when he passed through in 1812 and marveled at its Jewish learning — captures the singular stature this city occupied in the Jewish world for three centuries. Vilna was not merely a center of Jewish life; it was the intellectual and spiritual capital of Ashkenazic Jewry, the city that produced the Vilna Gaon and shaped the character of Lithuanian Jewish scholarship, the city where the Haskalah and secular Jewish culture found their most refined expression, where YIVO was born, where Yiddish language and literature were championed with academic rigor. Its destruction in the Holocaust was the annihilation not just of a community but of a civilization's nerve center.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/The_White_Bridge_and_%C5%A0nipi%C5%A1k%C4%97s_district_in_Vilnius_in_2023_by_Augustas_Did%C5%BEgalvis.jpg/500px-The_White_Bridge_and_%C5%A0nipi%C5%A1k%C4%97s_district_in_Vilnius_in_2023_by_Augustas_Did%C5%BEgalvis.jpg" alt="Vilnius (Vilna)" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Vilnius (Vilna) — via <a href="https://en.wikipedia.org/wiki/Vilna" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews settled in Vilna from at least the early sixteenth century, when the city was a major capital of the Grand Duchy of Lithuania. Despite periodic expulsions — including a notorious expulsion in 1527 — the community reconstituted itself and grew steadily. By the seventeenth century Vilna had established a reputation for exceptional Torah scholarship. The community was governed by a <em>kahal</em> (communal council) that maintained a complex institutional structure of courts, welfare organizations, and educational systems. The city's position at the intersection of major trade routes made it economically dynamic, while its patronage by Polish-Lithuanian magnates provided a measure of protection.</p>
 <p>The mid-seventeenth century brought catastrophe: the Cossack and Swedish wars left Vilna devastated and the Jewish community decimated. Recovery was slow but profound, and by the early eighteenth century Vilna had rebuilt itself into one of the preeminent Jewish communities in Europe.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The towering figure who defined Vilna's golden age was Rabbi Elijah ben Solomon Zalman (1720–1797), universally known as the Vilna Gaon (the <em>GRA</em>). A child prodigy of almost supernatural intellectual gifts, the Gaon mastered not only the Talmud and legal codes but pursued mathematics, astronomy, grammar, and Kabbalah with equal rigor. His method of Talmudic study — meticulous textual criticism, recovery of original readings, systematic and rational analysis — became the paradigm for Lithuanian yeshiva scholarship for two centuries. The Gaon wrote commentaries on virtually the entire corpus of rabbinic literature and became the single most influential rabbinic figure of the modern era. His fierce opposition to the nascent Hasidic movement, which he viewed as theologically dangerous and socially disruptive, defined one of the great fault lines of eighteenth-century Jewish life and shaped Vilna's identity as a bastion of <em>mitnagdic</em> (anti-Hasidic) rationalism.</p>
 <p>In the nineteenth century, Vilna became a center of the Haskalah (Jewish Enlightenment). The city's maskilim produced Hebrew literature, scientific works, and Reform-oriented scholarship. Simultaneously, Vilna remained a great center of traditional learning — a paradox that gave the city its particular creative tension.</p>
 <p>The Great Synagogue of Vilna was one of the architectural glories of the Jewish world — a massive Baroque structure built in the seventeenth century, expanded and rebuilt over the centuries, whose interior housed the Gaon's study and prayer space. It was demolished by the Germans and Soviets after the war; a school stands on its site today. Vilna's Jewish quarter, centered on Žydų (Jews') Street, contained dozens of synagogues and prayer houses. The Strashun Library, founded by Mattityahu Strashun in the nineteenth century, was one of the great Jewish public libraries of Europe. YIVO — the Yiddish Scientific Institute, founded in 1925 — became the foremost academic institution devoted to Yiddish language and culture.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Beyond the Gaon, Vilna produced remarkable figures across every generation. <strong>Avraham Danzig</strong> (1748–1820) wrote the <em>Chayei Adam</em>, one of the most widely used legal codes. <strong>Shmuel Yosef Fuenn</strong> was a pioneering Hebrew scholar and historian of Vilna Jewry. In the modern period, <strong>Zalman Shazar</strong> (later Israel's third president) was born in the Vilna region. <strong>Vilna's YIVO</strong> was co-founded by <strong>Max Weinreich</strong>, the great Yiddish linguist. <strong>Chaim Grade</strong> and <strong>Abraham Sutzkever</strong>, two of the greatest Yiddish poets of the twentieth century, were Vilna born. Sutzkever, a member of the famous <em>Paper Brigade</em> who smuggled books and manuscripts out of the German-occupied city, survived the war and became the most celebrated Yiddish poet of the postwar era.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Vilna in the interwar years was a city of extraordinary Jewish intellectual vitality. It had passed between German, Polish, and Lithuanian control (it was formally part of Poland between the wars, over Lithuanian protests) and contained a multilingual Jewish population writing in Yiddish, Hebrew, Polish, and Russian. The YIVO building on Wiwulskiego Street hummed with lexicographers, folklorists, historians, and sociologists. Young Writers' circles (<em>Yung Vilne</em>) produced some of the finest Yiddish poetry of the century. Zionist youth movements competed with Bundist youth in intensity if not always in numbers. The Vilna theater scene, Vilna Jewish press, and Vilna literary cafes made the city feel — to those who lived in it — like a Jewish Paris.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The Soviet occupation of 1939–1941 brought arrests, deportations of activists to Siberia, and the dismantling of Jewish institutions. The German invasion of June 1941 was followed immediately by mass shootings at Ponary (Paneriai), a forest outside the city, where German <em>Einsatzgruppen</em> and Lithuanian collaborators murdered approximately 70,000 Jews — the majority of Vilna's Jewish population — between 1941 and 1944. The ghetto established in September 1941 was liquidated by September 1943. Resistance was organized by the United Partisan Organization (FPO) under <strong>Abba Kovner</strong>, whose members escaped to the forests and fought as partisans. Of approximately 80,000 Vilna Jews, around 2,000–3,000 survived.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Vilna survivors carried its culture to Israel, where Yiddish literature and YIVO scholarship continued. The YIVO Institute transferred to New York during the war, becoming the world's leading archive of Ashkenazic Jewish civilization. Abraham Sutzkever settled in Tel Aviv and edited the Yiddish literary journal <em>Di Goldene Keyt</em> for decades. Today Vilnius has a small Jewish community and the Vilna Gaon Jewish State Museum. The site of the Great Synagogue has been partially excavated and memorialized. Ponary is a recognized memorial site. The legacy of the Vilna Gaon continues to shape Orthodox Judaism worldwide.</p>
       </section>

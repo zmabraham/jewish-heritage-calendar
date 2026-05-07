@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Regensburg_Dom_St_Peter_und_Georg.jpg/640px-Regensburg_Dom_St_Peter_und_Georg.jpg" alt="Regensburg Cathedral" loading="eager">
+      <figcaption>Regensburg Cathedral — via <a href="https://en.wikipedia.org/wiki/Regensburg" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Regensburg — known in Latin as Ratisbon and in Hebrew as Regenspurg — was one of the most important medieval Jewish communities in the German-speaking world, a city on the Danube that served as a major trading crossroads and intellectual center. The community produced one of the greatest Talmudic scholars of the Middle Ages, Rabbi Judah he-Hasid, and served as a key node in the transmission of Ashkenazic learning from the Rhineland eastward to Austria, Bohemia, and Poland. Its story ends, as so many great medieval communities do, with expulsion and eventual oblivion.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Regensburger_Altstadt_von_oben_.jpg/500px-Regensburger_Altstadt_von_oben_.jpg" alt="Regensburg Cathedral" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Regensburg Cathedral — via <a href="https://en.wikipedia.org/wiki/Regensburg" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jewish presence in Regensburg is documented from the ninth century, when the city was one of the most important commercial and political centers of the Carolingian and early Ottonian world. The city's position at the highest navigable point of the Danube made it the natural eastern gateway of the German trading network. Jewish merchants were integral to the long-distance trade that passed through Regensburg — particularly the trade with the Byzantine Empire and the Near East.</p>
 <p>The community grew through the eleventh and twelfth centuries, developing a synagogue, a yeshiva, and communal institutions. The Jews of Regensburg participated in the intellectual life of Ashkenazic Jewry, corresponding with scholars in Mainz, Worms, and other centers.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Regensburg's Jewish community reached its apogee in the twelfth and thirteenth centuries. The city was a significant stop on the route between the Rhineland and the eastern lands; it served as a meeting point and transit hub for Jewish merchants and scholars traveling between Western and Eastern Europe.</p>
 <p>Rabbi Judah ben Samuel he-Hasid (d. 1217), though he eventually settled in Regensburg only briefly before his death, is the most celebrated figure associated with the community. His Sefer Hasidim — Book of the Pious — is the foundational text of the German Jewish pietist movement (Hasidei Ashkenaz). This remarkable work, combining legal discussion with ethical instruction, folk tales, and mystical speculation, had an enormous influence on subsequent Jewish thought and popular piety. Through its wide circulation, Regensburg's intellectual output shaped Jewish communities across Europe.</p>
@@ -492,33 +509,27 @@
 <p>When the community was expelled in 1519, the synagogue was immediately demolished; within days, the building had been torn down and a chapel to Mary was constructed on the site. The haste of the demolition reflected the intensity of local anti-Jewish sentiment.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Rabbi Judah he-Hasid dominates Regensburg's Jewish legacy. His father Rabbi Samuel he-Hasid of Speyer and the broader Pietist circle of which the family was the center created a distinctive approach to Jewish spirituality — emphasizing ethical perfectionism, mystical contemplation, and a heightened sensitivity to divine Providence — that left lasting marks on Ashkenazic Judaism.</p>
 <p>Rabbi Isaac ben Moses of Vienna (c.1180–c.1250), author of the legal compilation Or Zarua, studied in Regensburg and elsewhere in Germany; his work reflects the rich intellectual environment of the German Jewish world.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Regensburg's Jewish culture was deeply embedded in the broader German Jewish intellectual tradition. The Pietist movement that Rabbi Judah he-Hasid represented brought a distinctive emotional and ethical intensity to Jewish piety, emphasizing sincere prayer over mere formal observance, charitable giving, and the cultivation of shame as a spiritual virtue. These teachings spread far beyond Regensburg, influencing Jewish communities across the German-speaking world.</p>
 <p>The community was also a commercial center, with Jewish merchants involved in trade along the Danube, maintaining the eastward expansion of the Jewish network toward Vienna, Prague, and Cracow.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Regensburg's Jewish community was expelled in February 1519 in one of the most brutal acts of late medieval anti-Jewish violence. The pretext was the death of a construction worker who had been working on the bishop's residence — which the guilds and local population attributed to Jewish malice. The city council voted for expulsion; within days, several hundred Jews were driven out with minimal possessions. The cemetery was leveled.</p>
 <p>The expulsion was accompanied by the immediate destruction of the synagogue and the confiscation of Jewish property. A pamphlet war followed, with humanists like Johannes Reuchlin condemning the expulsion while others celebrated it. Regensburg remained closed to Jews for centuries.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The expelled Jews of Regensburg scattered to Vienna, Prague, and other Central European cities, bringing their traditions and memories with them. The Sefer Hasidim continued to circulate widely, ensuring that Regensburg's intellectual legacy outlived the community.</p>
 <p>Regensburg today has a tiny Jewish community. The site of the medieval synagogue is marked archaeologically. The medieval stone house (Steinerne Haus), adjacent to where the synagogue stood, survives and commemorates the community's presence.</p>

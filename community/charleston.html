@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Rainbow_row_charleston_sc.jpg/640px-Rainbow_row_charleston_sc.jpg" alt="Rainbow Row, Charleston SC" loading="eager">
+      <figcaption>Rainbow Row, Charleston SC — via <a href="https://en.wikipedia.org/wiki/Charleston,_South_Carolina" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Charleston, South Carolina, was home to the largest Jewish community in colonial America and the site of some of the earliest stirrings of American Reform Judaism. The city's Kahal Kadosh Beth Elohim (Holy Congregation of the Living God), founded in 1749, is both the oldest synagogue in continuous use in the United States and the birthplace of one of the most consequential movements in American Jewish history.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Rainbow_row_charleston_sc.jpg/640px-Rainbow_row_charleston_sc.jpg" alt="Rainbow Row, Charleston SC" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Rainbow Row, Charleston SC — via <a href="https://en.wikipedia.org/wiki/Charleston,_South_Carolina" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Charleston in the colonial period was the largest city in the American South, a major port, and a center of the plantation economy. Sephardic Jewish merchants from England and the Caribbean began settling there in the late seventeenth century, and by the 1740s a sufficient number of Jews were present to form a congregation. Beth Elohim was formally established in 1749, and the congregation constructed its first synagogue building in 1794 (rebuilt after a fire in 1838).</p>
 <p>The Charleston Jewish community was unusually large for its time: by 1800, an estimated 500 Jews lived in the city, making it the largest Jewish community in America. The Jews of Charleston were integrated into the economic and social life of the city — successful merchants, some as plantation owners, others as professionals. The Reform movement's origins in Charleston reflect a community confident enough in its American identity to imagine new forms of Judaism adequate to the New World.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The period from 1800 through the 1820s represents Charleston Jewry's greatest flourishing. The community produced remarkable intellectual and religious leaders who began to question whether traditional Judaism as practiced in Europe was adequate to American conditions.</p>
 <p>In 1824, 47 members of Beth Elohim petitioned the congregational leadership for changes in the liturgy: elimination of the "prayer for the government" which petitioned for a "return to Jerusalem" (as potentially unpatriotic), introduction of English along with Hebrew in prayers, and a sermon in the vernacular. When the congregation's traditionalist leadership rejected these requests, the reformers split and formed the Reformed Society of Israelites — the first Reform Jewish congregation in the United States.</p>
@@ -492,32 +509,26 @@
 <p>The Coming Street Cemetery is the oldest surviving Jewish cemetery in the South and one of the oldest in America; its graves tell the story of Charleston Jewish families across generations.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Isaac Harby (1788–1828), a journalist and educator of Sephardic descent, was the intellectual leader of the Charleston Reformers. His writings on the need for a Judaism adapted to American conditions were prescient, arguing that the traditional liturgy was incomprehensible to American Jews and that Judaism must reform or lose the younger generation.</p>
 <p>Harby and his colleagues formulated the "Theosophy of Reform," which included modified ritual, vernacular preaching, and an ethical-rational approach to Jewish doctrine rather than traditionalist belief. These positions anticipated virtually every subsequent development in American Reform Judaism.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Charleston Jewry's most important contribution was the birth of Reform Judaism. The Reformed Society of Israelites' "Theosophy of Reform" was published in 1830 and circulated among American Jews, influencing later Reform leaders. The principle that Judaism could be adapted to American cultural conditions — that Jewish tradition could speak English, that Jews could be both fully American and authentically Jewish — was established here.</p>
 <p>Charleston also illustrates the complex relationship between Jews and American slavery: some Jewish Charlestonians owned slaves or participated in the slave economy, reflecting the broader failure of American Jews to reject the institution despite their own historical experience of persecution. The story of Charleston Jews is thus inseparable from the larger story of American complicity.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Charleston's Jewish population declined in the mid-nineteenth century as New York, Philadelphia, and other northern cities grew. The Civil War and the economic decline of Charleston thereafter reduced the community's prominence. Yet Beth Elohim remained an important congregation, and Charleston continued to have a small but significant Jewish population.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Beth Elohim continues to function as a Reform congregation in its historic building. Charleston's Jewish community, though smaller than in its colonial heyday, maintains Jewish institutions and participates in the city's cultural life. The city's Jewish heritage is commemorated through museum exhibits and heritage tourism that tell the story of this foundational American Jewish community.</p>
       </section>

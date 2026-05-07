@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Philadelphia_Montage.jpg/640px-Philadelphia_Montage.jpg" alt="Philadelphia skyline" loading="eager">
+      <figcaption>Philadelphia skyline — via <a href="https://en.wikipedia.org/wiki/Philadelphia" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Philadelphia is home to the oldest continuously functioning Jewish congregation in the United States, to one of the great patriots of the American Revolution (Haym Salomon), and to a Jewish community that helped establish the parameters of American Jewish religious life. The "City of Brotherly Love" — Benjamin Franklin's adopted home and the birthplace of American independence — also birthed an American Jewish tradition of learning and philanthropy that continues to shape Jewish life.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Philadelphia_skyline_20240528_%28cropped_2-1%29.jpg/500px-Philadelphia_skyline_20240528_%28cropped_2-1%29.jpg" alt="Philadelphia skyline" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Philadelphia skyline — via <a href="https://en.wikipedia.org/wiki/Philadelphia" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews lived in Philadelphia from the earliest decades of the eighteenth century, but it was in the 1740s that a permanent community coalesced. The Mikveh Israel congregation (Holy Congregation of the Hope of Israel) was formally established in 1740 by Sephardic Jews following the Spanish-Portuguese rite. The congregation secured a plot of ground for a cemetery in 1740 — a crucial first step in establishing communal permanence.</p>
 <p>Philadelphia in the revolutionary era was the second-largest city in British America and the political capital of the incipient United States. Its Jewish community, though small, participated centrally in the patriot cause and in the commercial life of the new republic.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The period from the 1780s through the 1830s represents the golden age of early Philadelphia Jewry. Mikveh Israel constructed its first synagogue building in 1782 (a year before the conclusion of the Revolutionary War) — a modest structure on Cherry Street. The community grew slowly through the early nineteenth century, augmented by immigration from England, the Caribbean, and the German states.</p>
 <p>Haym Salomon (1740–1785), born in Poland and a refugee from European antisemitism, became the legendary Jewish patriot of the American Revolution. A financier and broker, Salomon personally funded the American government at critical moments during the war, lending money to the Continental Congress and to individual officers including James Madison. He died penniless at age 44 after having been repaid only a fraction of what he was owed. His legend — the Jewish patriot whose financial sacrifices made possible American independence — became a staple of American Jewish civic memory.</p>
@@ -491,31 +508,25 @@
 <p>Mikveh Israel, still functioning today, has been joined by numerous other congregations. Congregation Rodeph Shalom, founded in 1795, eventually became Reform. The Jewish Publication Society of America was founded in Philadelphia in 1888 and remains one of the most important Jewish publishing houses in the world. Dropsie College (later Dropsie University), founded in 1907, was one of the first institutions of advanced Jewish learning in America.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>The Gratz family were central figures in Philadelphia Jewish life. Rebecca Gratz's brothers and cousins were successful merchants, her sister the matriarch of a distinguished Jewish family. Their descendants populated American Jewish philanthropy and communal leadership for generations.</p>
 <p>Isaac Leeser (1806–1868), who served as hazzan (cantor) and then de facto rabbi at Mikveh Israel, was perhaps the most important American Jewish religious figure of the mid-nineteenth century. Leeser founded <em>The Occident</em>, the first successful English-language Jewish periodical in America; he published the first American translation of the Bible into English; and he trained the first generation of American-born rabbis. His death in 1868 marked the end of an era.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Philadelphia Jewry contributed significantly to early American religious diversity. The community's established presence and civic engagement helped make Philadelphia a model of religious toleration. Rebecca Gratz's work in Jewish education helped establish Sunday schools as a fixture of American Jewish life; her work also influenced Protestant Sunday school education, with Christian educators observing and adapting the Hebrew School model.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Philadelphia's Jewish population has remained stable but geographically mobile — moving from the center city to the neighborhoods of West Philadelphia, then to the northern suburbs, to the mainline, and to Cherry Hill, New Jersey, across the river. The Jewish community's center of gravity has shifted but not collapsed. Today Philadelphia has approximately 250,000 Jewish residents in the metropolitan area.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Mikveh Israel continues to function in Center City Philadelphia. The Rebecca Gratz Club and the institutions she founded survive in altered forms. The city's Jewish heritage sites — including the Mikveh Israel cemetery and other colonial-era locations — attract visitors interested in American Jewish history. The Jewish community of Greater Philadelphia is one of the most active in the United States.</p>
       </section>

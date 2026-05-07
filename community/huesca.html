@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Huesca_Catedral_02.jpg/640px-Huesca_Catedral_02.jpg" alt="Huesca Cathedral" loading="eager">
+      <figcaption>Huesca Cathedral — via <a href="https://en.wikipedia.org/wiki/Huesca" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Huesca, a provincial capital nestled in the foothills of the Pyrenees in Aragon, maintained one of the most significant Jewish communities of medieval northeastern Spain. Its position as an early royal capital of the kingdom of Aragon and as a gateway between the Iberian Peninsula and southern France gave its Jewish community both strategic importance and cultural connections reaching across the Pyrenees. The city's scholars contributed to Hebrew grammatical and philosophical tradition, and its community maintained a long existence under Aragonese protection until the final expulsion.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Huesca_Catedral_02.jpg/640px-Huesca_Catedral_02.jpg" alt="Huesca Cathedral" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Huesca Cathedral — via <a href="https://en.wikipedia.org/wiki/Huesca" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews were present in Wasqa (Muslim Huesca) before the Christian conquest of 1096, when Pedro I of Aragon captured the city. The Muslim city had a substantial Jewish quarter, and the transition to Christian rule proved smooth for the Jewish community: the Aragonese kings, beginning with the conquest, valued their Jewish subjects for administrative, medical, and commercial services.</p>
 <p>The city served as the early capital of the Kingdom of Aragon before the court moved to Zaragoza, giving the Jewish community early access to royal favor and patronage.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Huesca's golden age corresponds to the twelfth through fourteenth centuries, when the community was well-organized, well-protected under Aragonese law, and producing scholars of distinction. The city's yeshiva trained students in Talmudic learning, and its philosophical tradition was notable.</p>
 <p>Petrus Alfonsi (c. 1062–1110), born Moses Sephardi in Huesca, converted to Christianity but represents the remarkable intellectual output of the city's Jewish intellectual culture even in departure from it. His Disciplina Clericalis — a collection of tales drawn from Arabic, Persian, and Jewish sources — was one of the most widely read books of the twelfth century in Latin Europe and helped transmit Eastern narrative traditions to Western literature.</p>
@@ -492,34 +509,28 @@
 <p>The Diocesan Museum of Huesca houses several significant pieces of Jewish interest excavated from the city's medieval layers, and local archaeological work has mapped the extent of the former Jewish quarter.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Petrus Alfonsi (Moses Sephardi, c. 1062–1110), though a convert, began his intellectual formation in Huesca's Jewish community and brought its Arabic and Hebrew learning traditions into Latin scholarship. His Disciplina Clericalis and his astronomical and medical works made him one of the most influential intellectual transmitters of the twelfth century.</p>
 <p>Joseph ibn Tzaddik (c. 1075–1149), philosopher and poet, was born in Córdoba but spent time in the Huesca region. His philosophical work The Microcosm (Olam Katan) applied Neoplatonic cosmology to Jewish themes.</p>
 <p>The community also contributed Talmudic scholars and poskim (halakhic decisors) whose influence was felt throughout Aragonese Jewry.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Huesca's location near the Pyrenean passes connecting Iberia to Provence and southern France gave its community particular connections to the Jewish communities of Languedoc and the Midi. Scholars from Huesca corresponded with Provençal colleagues, and ideas flowed both directions across the mountains. This connection made Huesca a node in the network through which Andalusian learning traveled northward into Christian Europe.</p>
 <p>The community's culture was Aragonese in vernacular orientation, with Hebrew as the language of scholarship. Liturgical practice followed the Aragonese rite, with some blending of Catalan and Castilian influences given the community's intermediate geographic position.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The 1391 pogroms struck Huesca as they struck communities across Aragon. The community was attacked, and forced conversions occurred. The community reconstituted itself partially but was significantly diminished. Throughout the fifteenth century, the Inquisition in Aragon investigated numerous converso families from Huesca, pursuing those suspected of maintaining Jewish practices.</p>
 <p>The 1492 Expulsion ended Jewish life in the city. Huesca's remaining Jews chose between exile and conversion, and those who departed joined the Sephardic diaspora concentrated in the Ottoman Empire, North Africa, and Italy.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The intellectual traditions of Huesca's Jewish community flowed into Europe through figures like Petrus Alfonsi, whose narrative and scientific works influenced Latin letters for centuries. The community's contributions to Hebrew linguistics and its transmission of Andalusian learning represent lasting achievements.</p>
 <p>Modern Huesca has modest heritage documentation of its Jewish past. The city's Jewish heritage trail has been developed in recent years as part of Spain's growing engagement with its Sephardic history.</p>

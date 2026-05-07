@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Radom_-_rynek.jpg/640px-Radom_-_rynek.jpg" alt="Radom market square" loading="eager">
+      <figcaption>Radom market square — via <a href="https://en.wikipedia.org/wiki/Radom" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Radom was a major industrial city in central Poland with one of the most important Jewish communities in the Congress Kingdom. Famous for its leather and shoe manufacturing industry — in which Jewish entrepreneurs, workers, and craftsmen played a dominant role — Radom's Jews built a rich communal life over three centuries before the Holocaust consumed them. The city is also remembered for the poignant documentary record left by its Jews in the final months before deportation: letters, diaries, and last messages smuggled out of the ghetto that form one of the most intimate testimonies to what was lost.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Moniuszki_Street_in_Radom_01_%28cropped%29.jpg/500px-Moniuszki_Street_in_Radom_01_%28cropped%29.jpg" alt="Radom market square" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Radom market square — via <a href="https://en.wikipedia.org/wiki/Radom" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews settled in Radom in the seventeenth and eighteenth centuries, gradually overcoming the restrictions that had long kept them from the city's center. By the end of the eighteenth century, when Poland was partitioned and Radom came under Russian control, the Jewish community was well-established. Under Russian rule in the Pale of Settlement, the community grew rapidly through the nineteenth century, reaching approximately 25,000 by the eve of World War II — nearly one-third of Radom's total population.</p>
 <p>The Congress Kingdom — the rump Polish state established by the Congress of Vienna in 1815 under Russian sovereignty — allowed Jews relatively more economic freedom than the Russian interior, and Radom's industrialization benefited from Jewish entrepreneurship. The 1860s–1880s brought railway connections that integrated Radom into the larger Russian imperial economy and expanded the leather and arms industries.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Radom's Jewish community was closely identified with the leather trade and shoe manufacturing. Jewish tanneries, shoe factories, and leather goods workshops were central to the local economy from the eighteenth century onward. By the early twentieth century, major shoe manufacturing firms with hundreds of employees operated under Jewish ownership or management. The Bata company's Polish operations had a significant Radom component. Jewish cobblers, tanners, saddlers, and harness-makers were present in every dimension of the leather economy.</p>
 <p>The arms industry — Radom housed a major state arms factory (Fabryka Broni) — brought a different population of workers and engineers, some of them Jewish. The city's economic diversity made it an important regional center, and its Jews served as merchants and professionals throughout the surrounding Kielce region.</p>
@@ -493,31 +510,19 @@
 <p>Among the most affecting documents of the Radom Holocaust are the letters written by Jews in the ghetto to relatives abroad — in Palestine, America, and elsewhere — knowing they might be their last communications. These "last letters," collected and published after the war, give intimate voice to the community's final months.</p>
       </section>
 
-      <section id="notable-figures">
-        <h2>Notable Figures</h2>
-        
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
-      </section>
+      
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>The Radom rabbinate produced respected scholars in the nineteenth and early twentieth centuries. The Hassidic life of the community was vibrant: the Alexander shtibel drew large crowds to the rebbe's tisch (festive table), holiday prayers drew thousands, and the Hasidic movement shaped the emotional and devotional life of a large portion of the traditional community.</p>
 <p>The Zionist movement was powerful in Radom. Various Zionist parties operated training farms (hachshara) in the Radom region preparing youth for agricultural work in Palestine; Hechalutz, Hashomer Hatzair, and Beitar each had substantial local organizations. The years between the wars were marked by intense political mobilization alongside growing economic depression and antisemitic boycotts.</p>
       </section>
 
-      <section id="decline">
-        <h2>Decline &amp; Transformation</h2>
-        
-      </section>
+      
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>A memorial marks the main deportation site in Radom. The Jewish cemetery survives partially. The Radom Yizkor book and survivor memoirs preserve detailed accounts of community life and destruction. Descendants of Radom Jews in Israel and North America maintain memorial organizations. The "last letters" of Radom Jews have been published and studied as documents of Holocaust testimony.</p>
       </section>

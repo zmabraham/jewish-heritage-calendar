@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,21 +482,19 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Balta — today in the Odessa Oblast of southern Ukraine — was a Podolian market town that entered the consciousness of world Jewry through a single catastrophic event: the pogrom of March 29–31, 1882, one of a series of anti-Jewish riots that swept through southern Russia and Ukraine in the aftermath of Tsar Alexander II's assassination. The Balta pogrom was among the most severe of its wave, and its consequences extended far beyond the town itself — it became a direct trigger for mass Jewish emigration to America and helped launch organized Jewish self-defense movements.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Balta_sobor_2.jpg/500px-Balta_sobor_2.jpg" alt="Balta, Ukraine" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Balta, Ukraine — via <a href="https://en.wikipedia.org/wiki/Balta,_Ukraine" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Balta sat on the border between the Russian Empire and the Romanian principality of Moldavia, making it a significant trading and transit point. Its Jewish community, typical of Podolian towns, was engaged in trade, crafts, innkeeping, and money-lending. By the late nineteenth century, Jews constituted a majority or near-majority of the town's population. The community had a synagogue, study houses, a market square economy, and all the institutions of a functioning Jewish kehilla.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The Balta pogrom of March 29–31, 1882, was one of the most violent episodes of the first wave of modern Russian pogroms. Triggered by rumors and incited by local anti-Jewish sentiment in the aftermath of the general atmosphere of scapegoating that followed Alexander II's assassination (for which Jews were falsely blamed), the riot involved looting, violence, and destruction on a massive scale. Over 1,000 Jewish homes and businesses were destroyed. Dozens of Jews were killed or wounded. Women were assaulted. The local and provincial authorities were slow to intervene and in some cases facilitated the violence.</p>
 <p>The Russian government's response — slow, inadequate, and accompanied by measures that restricted rather than protected Jews (the "May Laws" of 1882, which tightened existing Pale restrictions) — made clear to Jewish communities throughout the empire that the state could not or would not protect them. The Balta pogrom thus became a symbol of a new reality: the Jewish question in Russia was entering a phase where mere survival required action, not patience.</p>
@@ -490,30 +502,24 @@
 <p>Balta maintained a typical mid-size kehilla structure: a main synagogue, several Hasidic shtieblach, a chevra kadisha, and charitable societies. The market economy that supported the community was severely damaged by the pogrom and did not fully recover. Many of the town's most capable and entrepreneurial Jews departed in the emigration wave.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>The Balta community, though not a center of famous personalities, contributed its share of emigrants who built lives in America and Palestine. The pogrom itself created figures of importance: the defense committees formed by Balta Jews in 1882 were among the earliest experiments in organized Jewish self-protection, a forerunner of the self-defense organizations that would develop more fully after the 1903 Kishinev pogrom.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Balta's primary contribution to Jewish history is as a symbol and a catalyst. The pogrom's severity and the inadequacy of the governmental response helped crystallize the argument — made most powerfully by Leon Pinsker in "Auto-Emancipation" (1882), written in Odessa partly in response to the pogrom wave — that Jews could not rely on the goodwill of host nations. This crystallization of consciousness accelerated both emigration to America and the development of Zionism.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The emigration wave of 1882–1924 substantially reduced Balta's Jewish community. Those who remained faced continued difficulties under Soviet rule and then the Nazi occupation of 1941–1944, during which most of the remaining Jewish population was murdered.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Balta today is a small Ukrainian town. Its Jewish cemetery and the memory of the 1882 pogrom are preserved in the historical record and in the family memories of the diaspora communities descended from Balta emigrants.</p>
       </section>

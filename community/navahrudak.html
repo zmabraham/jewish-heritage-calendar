@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,21 +482,24 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Novogrudok_Castle_01.jpg/640px-Novogrudok_Castle_01.jpg" alt="Navahrudak (Novogrudok) Castle" loading="eager">
+      <figcaption>Navahrudak (Novogrudok) Castle — via <a href="https://en.wikipedia.org/wiki/Navahrudak" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Navahrudak — known in Jewish religious culture as Novardok — was a city in what is now western Belarus, historically part of the Grand Duchy of Lithuania. It achieved global significance in the Jewish world as the birthplace and headquarters of the most radical branch of the Mussar movement, founded by Rabbi Yosef Yoizel Horowitz (1847–1919). The "Novardoker" approach to character refinement through deliberate self-confrontation shaped thousands of young men and left an indelible mark on the yeshiva world.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Belarus_Navahrudak_IMG_1730_2175.jpg/500px-Belarus_Navahrudak_IMG_1730_2175.jpg" alt="Navahrudak (Novogrudok) Castle" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Navahrudak (Novogrudok) Castle — via <a href="https://en.wikipedia.org/wiki/Navahrudak" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Navahrudak's Jewish community was old and substantial, dating to the fifteenth century under Lithuanian rule. Located at the intersection of trade routes, the city developed a stable mercantile Jewish population. The region passed through Polish, Swedish, Russian, and briefly French control over the centuries, and Navahrudak's Jews navigated each transition with the resilience characteristic of Lithuanian Jewry. By the late nineteenth century, Jews formed roughly a third of the city's population of approximately 8,000, involved in trade, crafts, and the learned professions.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The city's spiritual transformation began when Rabbi Yosef Yoizel Horowitz — known as "Der Alter fun Novardok," the Elder of Novardok — arrived in the 1890s and established his <em>beit midrash</em>. Horowitz had been a successful merchant before undergoing a spiritual crisis that led him to spend extended periods in solitary retreat (<em>hitbodedut</em>) in a forest hermitage. His encounter with Rabbi Yisrael Salanter, the founder of the Mussar movement, redirected his energy toward the institutional training of others.</p>
 <p>The Novardok approach to Mussar was distinctive and controversial. Where other Mussar schools (Slobodka, Kelm) emphasized self-awareness and refinement, Novardok demanded <em>biṭul</em> — the nullification of the ego through radical, often uncomfortable self-exposure. Students were assigned exercises designed to humiliate the self-protective ego: going into a hardware store and asking for bread, dressing in rags, requesting items they knew the shopkeeper did not carry. The goal was to break the tyranny of social approval, to free the student from the prison of <em>kavod</em> (honor-seeking) and <em>bizyonot</em> (fear of shame).</p>
@@ -490,7 +507,7 @@
 <p>The central yeshiva in Navahrudak — the "mother house" of the movement — occupied a prominent position in the city's Jewish quarter. By the interwar period, the Novardok network in Poland had re-established itself with major yeshivot in Warsaw, Białystok, Pinsk, and dozens of smaller towns. Each yeshiva maintained the distinctive Novardok curriculum: intense Talmud study combined with structured periods of Mussar contemplation and the character-confrontation exercises that made the movement famous.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <ul>
   <li><strong>Rabbi Yosef Yoizel Horowitz (1847–1919)</strong>: Founder; his <em>Madreigas HaAdam</em> (The Level of the Person) is a foundational Mussar text.</li>
@@ -498,27 +515,21 @@
   <li><strong>Rabbi David Bliacher</strong>: Key figure in spreading the movement through interwar Poland.</li>
 </ul>
 <p>Navahrudak was also the birthplace of the Hebrew poet and novelist Chaim Grade (1910–1982), whose autobiographical fiction, especially <em>The Yeshiva</em> and <em>My Mother's Sabbath Days</em>, constitutes one of the great literary portraits of Eastern European Jewish life and the world of Mussar study.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Novardok introduced a psychological radicalism into traditional Jewish education that has no real parallel. Its insistence that true service of God requires dismantling the ego — not merely refining behavior — anticipated themes later explored in existentialist philosophy and modern psychotherapy. The movement's willingness to maintain yeshivot under wartime conditions, including during the Russian Revolution, established a model of educational resilience that influenced the post-Holocaust rebuilding of the yeshiva world.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The German invasion of the Soviet Union in June 1941 brought immediate catastrophe. The Jews of Navahrudak were subjected to mass shootings in December 1941 and August 1942. Of approximately 6,000 Jews in the city, only a small number survived — many through a dramatic prisoner revolt and escape from the local Gestapo jail in September 1943, one of the few successful armed resistance actions in occupied Eastern Europe.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The Novardok yeshiva was transplanted to Brooklyn, New York, where it continues to operate as Yeshivas Novominsk. The <em>Madreigas HaAdam</em> remains in print and is studied in Mussar circles worldwide. Chaim Grade's literary legacy ensures that Novardok's spiritual world is accessible to general readers as well as scholars.</p>
       </section>

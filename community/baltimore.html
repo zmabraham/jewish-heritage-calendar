@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,53 +482,50 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Fell%27s_Point_Aerial_2022.jpg/640px-Fell%27s_Point_Aerial_2022.jpg" alt="Fell's Point neighborhood, Baltimore" loading="eager">
+      <figcaption>Fell's Point neighborhood, Baltimore — via <a href="https://en.wikipedia.org/wiki/Baltimore" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Baltimore developed as a major American Jewish community at the intersection of Southern and Northern Jewish cultures, a border city where Jews participated in the commercial life of a port city while building institutions that contributed to American Jewish religious and intellectual development. The community that produced Rabbi Benjamin Szold and his daughter Henrietta Szold, founder of Hadassah, illustrates the trajectory from immigrant settlement to national Jewish leadership.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Fell%27s_Point_Aerial_2022.jpg/500px-Fell%27s_Point_Aerial_2022.jpg" alt="Fell's Point neighborhood, Baltimore" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Fell's Point neighborhood, Baltimore — via <a href="https://en.wikipedia.org/wiki/Baltimore" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews arrived in Baltimore in the late eighteenth century, establishing a small community that by 1830 numbered perhaps 100 families. The real growth came in the middle decades of the nineteenth century as German Jewish immigrants arrived. The Baltimore Hebrew Congregation (Nidche Israel), founded in 1830, was the first permanent congregation.</p>
 <p>Baltimore's geography as a port city and manufacturing center made it an attractive destination for immigrants. The German Jewish community of the mid-nineteenth century established the synagogues, charities, and schools that would absorb the massive Eastern European Jewish immigration of the 1880s–1920s.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The period from the 1870s through the 1920s represents the peak of Baltimore Jewish population and cultural development. The community centered around the Lombard Street ghetto — the dense immigrant neighborhood where Yiddish was the language of the street and where Jewish merchants, garment workers, and religious leaders built a complete communal infrastructure.</p>
 <p>Baltimore was particularly significant in the development of Conservative Judaism. Rabbi Benjamin Szold (1829–1902), who arrived in Baltimore as rabbi of Oheb Shalom congregation in 1859, was a leading advocate of what would become the Conservative approach to Judaism — maintaining halakhic observance while accommodating English in the liturgy, modern sermons, and critical study of Jewish texts. He was an early supporter of the Jewish Theological Seminary and helped shape the early Conservative movement.</p>
 <p>Congregation Beth Israel (1871), the Lloyd Street Synagogue (1845, the oldest synagogue building in Maryland), and numerous other congregations served Baltimore's diverse Jewish population. The Baltimore Hebrew University, founded in 1919 and later affiliated with the University of Maryland, contributed to Jewish higher education. The Jewish Museum of Maryland preserves the community's heritage.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Henrietta Szold (1860–1945), daughter of Rabbi Benjamin Szold, is Baltimore's most consequential Jewish figure. Born and raised in Baltimore, she began her career in Jewish education in the city, organizing evening classes for immigrant Jews and working with the Jewish Publication Society. Her greatest achievement was the founding of Hadassah, the Women's Zionist Organization of America, in 1912. Under her leadership, Hadassah became one of the most important Zionist organizations in the world, funding hospitals and medical services in Palestine that formed the basis of Israel's health system. Szold herself moved to Palestine in the 1920s and became a major figure in the Yishuv's social services; she died in Jerusalem in 1945 and is buried there.</p>
 <p>Mencken-era Baltimore saw H.L. Mencken (1880–1956), the great journalist and critic, writing extensively about Jewish life with a mixture of fascination and the antisemitic stereotypes common among Gentile intellectuals of his generation. His diaries reveal the complexities of Jewish-Gentile interaction in early twentieth-century Baltimore.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Baltimore Jewry contributed to the intellectual life of American Judaism. The scholars associated with Baltimore's synagogues and educational institutions — including Rabbi Szold and his circle — participated in the development of Conservative Judaism and American Jewish religious thought more broadly. The city's position as a midpoint between North and South gave it a distinctive character, absorbing Jewish migration from both regions.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Baltimore's Jewish population has remained relatively stable at approximately 100,000, but the geography has shifted: from the dense urban neighborhoods of the early twentieth century to the northwest suburbs, particularly Pikesville. The old Jewish neighborhoods have been transformed through demographic change, but the suburban Jewish institutions remain vigorous.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The Jewish Museum of Maryland, located on Lloyd Street in the historic Jewish neighborhood, preserves and interprets Baltimore Jewish history for visitors. The Henrietta Szold Hadassah organization continues its work in Israel and the United States. Baltimore's Jewish community remains active and engaged in Jewish and civic life.</p>
       </section>

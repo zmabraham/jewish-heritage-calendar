@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Jedwabne_-_Kosciol.JPG/640px-Jedwabne_-_Kosciol.JPG" alt="Jedwabne church" loading="eager">
+      <figcaption>Jedwabne church — via <a href="https://en.wikipedia.org/wiki/Jedwabne" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Jedwabne is a small town in the Łomża region of northeastern Poland whose name became, at the beginning of the twenty-first century, one of the most painful and contested sites in the history of Polish-Jewish relations. On July 10, 1941 — a warm summer day in the first weeks of the German occupation — the Polish townspeople of Jedwabne murdered their Jewish neighbors. Approximately 340 Jewish men, women, and children were herded into a barn by Polish civilians and burned alive. The event was documented, initially concealed, and eventually brought to global attention by the historian Jan T. Gross in his 2001 book Neighbors. It forced Poland to confront a history of Polish complicity in the Holocaust that had long been suppressed beneath the narrative of Polish victimhood.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Jedwabne_-_Kosciol.JPG/640px-Jedwabne_-_Kosciol.JPG" alt="Jedwabne church" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Jedwabne church — via <a href="https://en.wikipedia.org/wiki/Jedwabne" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews had lived in Jedwabne since the seventeenth century, making up a significant portion of the town's population. The community was typical of northeastern Polish Jewish life: merchants, craftsmen, innkeepers, and small traders who maintained traditional religious institutions — a synagogue, cheder, beit midrash — alongside the Polish Catholic majority. Relations were the normal mixture of economic interdependence, social separation, mutual suspicion, and occasional friendship characteristic of Polish-Jewish coexistence.</p>
 <p>In the late nineteenth and early twentieth centuries, Jedwabne Jews participated in the broader currents of Jewish political and cultural modernization: Zionist organizations, Hebrew education, and the Hebrew and Yiddish press connected the small town to a wider Jewish world. The community numbered approximately 1,600 on the eve of World War II, comprising roughly half the town's population.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The Soviet occupation of eastern Poland following the Ribbentrop-Molotov Pact of August 1939 brought the Red Army to Jedwabne in September 1939. Soviet policy involved the dissolution of private property, the arrests of "class enemies" and political opponents, and the deportation of Polish elites, landowners, and activists to Siberia. Some Jews in Jedwabne and throughout eastern Poland cooperated with Soviet authorities — as translators, informants, and minor functionaries — which generated deep Polish resentment. Polish nationalists and later German propagandists exploited this real but exaggerated Jewish collaboration with Soviets to frame the Jews as enemies of Poland, fueling the violence that followed.</p>
 <p>German forces entered the Łomża region in late June 1941 as Operation Barbarossa swept through the Soviet-occupied territories. In the following days, Germans and local Poles conducted a series of pogroms in the region. In Jedwabne on July 10, 1941, Polish townspeople — not German soldiers — organized and carried out the massacre with minimal German involvement. The number of Polish perpetrators was significant; the killing was a community act.</p>
@@ -494,30 +511,15 @@
 <p>Jedwabne's synagogue and beit midrash, typical of northeastern Polish Jewish architecture, no longer exist. The site of the barn is marked by a monument. The Jewish cemetery of Jedwabne was vandalized and neglected for decades.</p>
       </section>
 
-      <section id="notable-figures">
-        <h2>Notable Figures</h2>
-        
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
-      </section>
+      
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
-        <h2>Cultural Life</h2>
-        
-      </section>
+      
 
-      <section id="decline">
-        <h2>Decline &amp; Transformation</h2>
-        
-      </section>
+      
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The Jedwabne memorial, rebuilt and rededicated in 2001, reads: "In memory of the Jews of Jedwabne and the surrounding area — men, women, children, co-inhabitants of this land — murdered, burned alive here on July 10, 1941." The investigation conducted by Poland's Institute of National Remembrance (IPN) confirmed the Polish civilian role in the massacre. The case remains a touchstone in discussions of Polish antisemitism, the complexity of Holocaust collaboration and victimhood, and the challenges of historical memory.</p>
       </section>

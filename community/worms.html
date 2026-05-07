@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Worms_-_Dom_und_Lieberfrauenkirche.jpg/640px-Worms_-_Dom_und_Lieberfrauenkirche.jpg" alt="Worms Cathedral" loading="eager">
+      <figcaption>Worms Cathedral — via <a href="https://en.wikipedia.org/wiki/Worms,_Germany" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Worms — Varmaisa in Hebrew — is a sacred city of Jewish memory, the oldest Jewish community in Germany north of the Alps, and the site of the oldest surviving Ashkenazic synagogue in Europe. Here, Rashi studied, and here the ShUM league of Speyer, Worms, and Mainz forged the civilization of Ashkenazic Jewry. The ancient Jewish quarter, its medieval synagogue restored after the Holocaust, remains today a place of pilgrimage — a living link to a thousand-year story of scholarship, piety, and martyrdom.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Worms_-_Dom_und_Lieberfrauenkirche.jpg/640px-Worms_-_Dom_und_Lieberfrauenkirche.jpg" alt="Worms Cathedral" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Worms Cathedral — via <a href="https://en.wikipedia.org/wiki/Worms,_Germany" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jewish presence in Worms is attested from the early tenth century, though legends push the community's origins back to Roman times. What is certain is that by the early eleventh century, Worms had become one of the three great Rhineland Jewish centers — the ShUM cities — that would define Ashkenazic culture for a millennium. The community received imperial protection and thrived under the Salian emperors, particularly Conrad II (1024–1039), whose wife Gisela showed favor to the Jews.</p>
 <p>Worms's first synagogue was consecrated in 1034. The community's scholars became renowned for their Talmudic learning, their liturgical compositions, and their halakhic rulings. The city's Jews were prominently involved in trade, medicine, and money-lending, and maintained relations with Jewish communities across Europe.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Worms's golden age in the eleventh and twelfth centuries made it one of the preeminent centers of Jewish learning in Europe. Rashi (Rabbi Shlomo Yitzchaki, 1040–1105), the greatest medieval commentator on the Bible and Talmud, studied at the Worms yeshiva. His teacher, Rabbi Jacob ben Yakar, and his colleagues in Worms shaped Rashi's intellectual formation, and through Rashi, Worms influenced the entire subsequent tradition of Jewish textual study.</p>
 <p>The Crusade massacres of 1096 devastated the Worms community. Crusaders attacked the Jews, who were sheltering in the episcopal palace; when they realized there was no escape, many chose martyrdom, killing themselves and their families rather than convert. The chronicles of these events, written in Hebrew, form one of the most powerful narratives of Jewish martyrdom and would be recited annually on fast days.</p>
@@ -493,33 +510,27 @@
 <p>The Mikveh (ritual bath) adjacent to the synagogue, dating to the twelfth century, is among the oldest surviving Jewish ritual structures in Europe.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Rabbi Eleazar ben Judah of Worms (c.1165–c.1230), a leading Hasidic thinker and kabbalist, wrote influential works including the Rokeach, a comprehensive guide to Jewish law and ethics. His mystical and ethical writings shaped German-Jewish pietism.</p>
 <p>The Kalonymus family, scholars who spanned several generations and the cities of Mainz, Speyer, and Worms, contributed to the intellectual flowering of the ShUM region.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Worms Jewry contributed substantially to the formation of the Ashkenazic rite. The community's liturgical customs — the order of prayers, the melodies, the piyyutim (liturgical poems) — became the standard practice of Ashkenazic Jews across Central and Eastern Europe. On the fast day of 20 Sivan, commemorating the 1096 Crusade massacres, Worms's memorial liturgy was recited across the Jewish world.</p>
 <p>The community supported a yeshiva, a Talmud Torah school, and communal welfare institutions. Manuscript production and Hebrew printing flourished.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The early modern period saw Worms's community decline but not disappear. The Thirty Years' War (1618–1648) and subsequent conflicts reduced the community's size. By the eighteenth century, Worms Jewry numbered only a few hundred. The community persisted, but the golden age was long past.</p>
 <p>The Nazi era brought final destruction. On Kristallnacht (November 9–10, 1938), the synagogue was set on fire and burned; the cemetery was desecrated. The remaining Jews were deported beginning in 1940 and 1942. Very few Worms Jews survived the Holocaust.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Worms is, more than any other medieval Jewish community, a site of memory. The restored synagogue and preserved cemetery attract visitors from around the world, making it one of the most important pilgrimage sites in Jewish Europe. For the global Jewish diaspora whose ancestors migrated eastward from the Rhineland in the Middle Ages, Worms is the ancestral home.</p>
 <p>The small Jewish community that returned to Worms after the war — numbering only a handful today — maintains the old synagogue and cares for the cemetery, ensuring that this sacred landscape endures.</p>

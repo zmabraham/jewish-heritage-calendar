@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Tzippori_mosaic.jpg/640px-Tzippori_mosaic.jpg" alt="Sepphoris (Tzippori) mosaics" loading="eager">
+      <figcaption>Sepphoris (Tzippori) mosaics — via <a href="https://en.wikipedia.org/wiki/Sepphoris" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Sepphoris — known in Hebrew as Tzippori, "the bird" — was the Roman-era capital of the Galilee and one of the most important Jewish cities in the ancient world. Its skyline commanded the Beit Netofa Valley from a prominent hill, and within its streets the Jewish and Greco-Roman worlds met in a remarkable synthesis. It was here that Rabbi Judah HaNasi, the great Patriarch (Nasi) of the Jewish people, spent the final seventeen years of his life and produced the Mishnah — the foundational legal code that would anchor Jewish civilization for all subsequent generations. The synagogue mosaics discovered at Sepphoris rank among the most extraordinary achievements of ancient Jewish art.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/%D7%AA%D7%9E%D7%95%D7%A0%D7%94_134.jpg/500px-%D7%AA%D7%9E%D7%95%D7%A0%D7%94_134.jpg" alt="Sepphoris (Tzippori) mosaics" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Sepphoris (Tzippori) mosaics — via <a href="https://en.wikipedia.org/wiki/Sepphoris_" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>The city was founded or substantially developed during the Hasmonean period and became the administrative center of the Galilee under Herod Antipas, son of Herod the Great. When Josephus Flavius arrived in the Galilee to lead the Jewish revolt in 66 CE, Sepphoris was the only major city that refused to join — its leadership having calculated, correctly, that Rome would prevail. This pragmatic decision preserved the city and its population while Jerusalem burned.</p>
 <p>By the 2nd century CE, Sepphoris was home to a large and prosperous Jewish community living alongside a significant Gentile population. The city had Roman-style public buildings — a theater seating four to five thousand spectators, colonnaded streets (a cardo), public baths, a sophisticated water system, and elaborate private mansions — yet remained a center of Torah scholarship. This combination of Hellenistic urbanism and Jewish learning made Sepphoris unique.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The golden age of Sepphoris arrived with Rabbi Judah HaNasi (c. 135–217 CE), who relocated there from Beth She'arim and spent the last portion of his patriarchate in the city. His redaction of the Mishnah at Sepphoris was one of the most consequential editorial acts in Jewish history: taking the accumulated oral traditions of generations of tannaim (Mishnaic sages), organizing them into six Orders (sedarim) and sixty-three tractates, and producing a text that would serve as the basis for both the Jerusalem and Babylonian Talmuds.</p>
 <p>The 4th and 5th centuries CE brought further florescence. The synagogue built during this period, discovered by archaeologists in the 1990s, contained a spectacular mosaic floor featuring a complete zodiac wheel, biblical scenes (the Binding of Isaac, the giving of the Torah), and a portrait of the sun god Helios driving his chariot — a remarkable instance of Jewish appropriation of pagan iconography in service of synagogue decoration.</p>
@@ -492,35 +509,29 @@
 <p>The <strong>"Mona Lisa of the Galilee"</strong> — a magnificent 3rd-century floor mosaic from a wealthy private home depicting the head of a woman — is among the finest examples of Roman mosaic art found in Israel, testifying to the wealth and cosmopolitan culture of the city's elite.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p><strong>Rabbi Judah HaNasi</strong> (c. 135–217 CE), known simply as "Rabbi" in the Talmud (a mark of supreme respect), was the Nasi (Patriarch) of the Jewish people and the redactor of the Mishnah. Born into the family of Rabban Gamliel, he combined extraordinary rabbinic authority with close relationships with Roman officials — the Talmud records a friendship with the Roman emperor "Antoninus" (possibly Caracalla or another Antonine emperor). His Mishnah synthesized centuries of legal development into a coherent code that is still studied daily worldwide.</p>
 <p><strong>Rabbi Yose ben Kisma</strong> was a Sepphoris sage who appears in Pirkei Avot with the famous teaching: "I come from a great city of scholars and sages" — scholars debate whether this refers to Sepphoris itself. His emphasis on the primacy of Torah scholarship over material wealth reflects Sepphoris's self-image as a center of learning.</p>
 <p><strong>Reish Lakish (Shimon ben Lakish)</strong> (fl. 3rd century CE) was a major amora (Talmudic-era sage) associated with Sepphoris. A former gladiator or circus athlete, according to talmudic legend, who returned to Torah study, he became one of the towering figures of the Jerusalem Talmud. His debates with his brother-in-law Rabbi Yochanan are among the most intellectually stimulating exchanges in all of talmudic literature.</p>
 <p><strong>Rabbi Yochanan bar Nappacha</strong> (c. 180–279 CE), though primarily associated with Tiberias, had deep connections to Sepphoris and was a dominant figure in the Land of Israel's academies. He is often credited as the primary editor of the Jerusalem Talmud.</p>
 <p><strong>Rav</strong> (Abba Arikha, c. 175–247 CE) studied in Sepphoris under Rabbi Judah HaNasi before emigrating to Babylonia, where he founded the great academy of Sura. The transmission of the Mishnah's legal tradition from Sepphoris to Babylonia through Rav was pivotal for the development of the Babylonian Talmud.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>The redaction of the Mishnah at Sepphoris was the city's supreme contribution to Jewish civilization. The Mishnah's six orders — Zeraim (agriculture/prayer), Moed (festivals), Nashim (family law), Nezikin (civil law), Kodashim (Temple service), Tohorot (ritual purity) — created a comprehensive legal encyclopedia that preserved pre-Temple traditions while adapting them for a world without the Temple.</p>
 <p>The synagogue mosaics of Sepphoris represent a distinct tradition of Jewish visual culture that embraced Hellenistic artistic conventions while investing them with Jewish meaning. The zodiac, for instance, was reinterpreted with Hebrew month names and biblical associations, making it a Jewish calendar in artistic form.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Sepphoris declined as Tiberias grew in importance as the administrative center of Byzantine Palaestina. The Arab conquest of the 7th century CE brought political change but not immediate communal destruction; a Jewish community persisted. The Crusader period saw the city, renamed "La Saphorie," serve as a staging ground before the disastrous Battle of Hattin (1187 CE). The medieval Jewish community faded, and the site was eventually abandoned.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Modern Tzipori National Park preserves extensive ruins of the ancient city, including the synagogue mosaic, the Roman theater, the Dionysiac villa mosaic, and the water cistern system. The park attracts hundreds of thousands of visitors annually. The Mishnah, redacted here nearly two thousand years ago, remains the cornerstone of Jewish legal study; every daily page of Talmud study (daf yomi) ultimately traces back to Rabbi Judah HaNasi's editorial work in this Galilean city.</p>
       </section>

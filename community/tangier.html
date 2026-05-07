@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Tanger_medina.jpg/640px-Tanger_medina.jpg" alt="Tangier medina" loading="eager">
+      <figcaption>Tangier medina — via <a href="https://en.wikipedia.org/wiki/Tangier" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Tangier, the northernmost Moroccan city and gateway between Africa and Europe, was home to a Jewish community of remarkable cosmopolitanism and diplomatic significance. Located at the Strait of Gibraltar where Mediterranean and Atlantic meet, Tangier's Jews navigated between Moroccan, European, and Ottoman worlds with exceptional fluency. During the International Zone period (1923–1956), the city became one of the most open and multicultural spaces in the Islamic world, and its Jewish community — Sephardic, indigenous Moroccan, and immigrant European — achieved unusual prosperity and civic prominence.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Tanger_cor.jpg/500px-Tanger_cor.jpg" alt="Tangier medina" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Tangier medina — via <a href="https://en.wikipedia.org/wiki/Tangier" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jewish presence in Tangier is ancient; Roman-era inscriptions and artifacts attest to a Jewish population in the region during the classical period. Medieval Arab geographers mention Jews among the city's inhabitants. After 1492, the community received Spanish exile families who brought Castilian culture and rabbinic learning. The city's strategic position made it a perennial object of European desire: Portugal held Tangier from 1471 to 1661, England from 1661 to 1684, before it reverted to Moroccan control.</p>
 <p>Under English rule, Jews in Tangier enjoyed relatively liberal treatment compared to their status in Morocco proper. Samuel Pepys noted the presence of Jews in Tangier in his diary, and English military records confirm Jewish merchants providing supplies to the garrison. This early exposure to European legal norms shaped the Tangier Jewish community's expectations.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The late 19th and early 20th centuries brought a new phase of prosperity. European powers competed for influence in Morocco, and Tangier's Jews — many of whom held European protégé status, exempting them from Moroccan jurisdiction — were positioned to benefit from this rivalry. The Benchimol, Nahon, Braunschweig, and other families built commercial empires connecting Tangier to Gibraltar, London, Marseille, and Casablanca.</p>
 <p>The International Zone era (1923–1956), when Tangier was jointly administered by Spain, France, and Britain (later with other powers), created a uniquely permissive environment. Currency controls were absent, censorship was minimal, and legal pluralism reigned. Tangier became a haven for artists, writers, spies, and expatriates; the Beat Generation writers — Paul Bowles, William S. Burroughs, Allen Ginsberg — famously gathered here in the 1950s. Jews participated fully in this cosmopolitan culture and dominated sectors of the city's banking, insurance, and import-export trade.</p>
@@ -491,34 +508,28 @@
 <p>The Alliance Israélite Universelle established schools in Tangier among its earliest Moroccan outposts, transforming the educational landscape and producing graduates who went on to prominent careers throughout the Mediterranean world.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Abraham Nahon (19th century) was among the most prominent Tangier Jewish merchants and diplomatic agents, serving as an intermediary between the Moroccan sultan and European consulates.</p>
 <p>Moses Pariente (19th–20th century) was a leading figure in the community who combined commercial success with philanthropic activity and communal leadership.</p>
 <p>The Benchimol family, prominent across multiple generations, included figures who served simultaneously as Moroccan subjects, holders of foreign protection, and leaders of the Jewish communal council.</p>
 <p>In the 20th century, Samuel Levy (later generations) represented the community's integration into Tangier's international business elite.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Tangier Jews spoke a distinctive dialect of Haketia (Judeo-Spanish), flavored with Moroccan Arabic and increasingly with French in the 20th century. This linguistic plurality reflected the community's cultural position as intermediaries. The community maintained the Spanish exile liturgical rite, with its distinctive melodies and pronunciations.</p>
 <p>Tangier's openness to European influence made it an early adopter of modern institutions: schools with secular curriculum, women's education, newspapers, and eventually Zionist organizational activity all appeared earlier in Tangier than in Morocco's interior cities.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Moroccan independence in 1956 ended the International Zone and integrated Tangier into the new Moroccan state. The unique privileges of the international era vanished. Most Tangier Jews emigrated to Spain (particularly Gibraltar and Málaga), France, Venezuela, and Israel over the following decades. By the 1970s the community was small; by the 21st century, only a few dozen elderly Jews remained.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The Tangier Jewish cemetery remains open and is maintained by the Moroccan-Jewish Tangier Association. The community's history is documented in the Musée de la Communauté Juive de Tanger. Tangier's Jewish heritage receives increasing scholarly and tourist attention as part of Morocco's broader effort to acknowledge its multicultural history.</p>
       </section>

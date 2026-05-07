@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,51 +482,48 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Orthodox_Church_of_Saint_Nicholas_Kamianske_2.jpg/640px-Orthodox_Church_of_Saint_Nicholas_Kamianske_2.jpg" alt="Dnipro region — Orthodox Church of Saint Nicholas" loading="eager">
+      <figcaption>Dnipro region — Orthodox Church of Saint Nicholas — via <a href="https://en.wikipedia.org/wiki/Kamianske" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Yekaterinoslav — renamed Dnipropetrovsk in the Soviet era and now simply Dnipro — is a major industrial city on the Dnieper River in central Ukraine. Founded by Catherine the Great in 1776 as one of her grand imperial projects, the city grew into a center of iron and steel production in the nineteenth century. For Jewish history, it holds a special significance as the city where Rabbi Levi Yitzchak Schneerson (1878–1944) — father of the seventh Lubavitcher Rebbe, Rabbi Menachem Mendel Schneerson — served as chief rabbi and as a site of remarkable Jewish resilience in the Soviet era.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Dnipropetrovsk_view_2015_tov-tob.jpg/500px-Dnipropetrovsk_view_2015_tov-tob.jpg" alt="Dnipro region — Orthodox Church of Saint Nicholas" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Dnipro region — Orthodox Church of Saint Nicholas — via <a href="https://en.wikipedia.org/wiki/Dnipro" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews began settling in Yekaterinoslav in significant numbers in the early nineteenth century. The city's position in southern Ukraine, with its rapidly developing industrial and commercial economy, attracted Jewish merchants, craftsmen, and professionals. By the late nineteenth century, Jews constituted approximately 13–15 percent of the population, engaged in trade, manufacturing, and the professions. The city sat within the Pale of Settlement and was subject to all the restrictions and periodic violence that characterized Pale Jewish life.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The most historically significant Jewish figure in Yekaterinoslav's history is Rabbi Levi Yitzchak Schneerson (1878–1944), who served as the city's chief rabbi from 1909 until his arrest by the Soviet secret police in 1939. A scion of Chabad Hasidic royalty and a distinguished Kabbalistic scholar, Rabbi Levi Yitzchak maintained open Jewish life in the city throughout the tumultuous years of the revolution, the civil war, the terror, and the early Stalinist period — years when other rabbis were fleeing or compromising. He refused to close the synagogue, continued to teach Torah, oversaw ritual slaughter, and maintained the structures of Jewish communal life.</p>
 <p>In 1939 he was arrested by the NKVD on charges of "counter-revolutionary activity" and sentenced to five years of exile in the remote Kazakh town of Chiili. He died in exile in 1944, his health broken by the conditions of deportation. His wife Rebbetzin Chana recorded her memories of these years in memoirs that became an important testament to Soviet-era Jewish suffering. His son, the young Menachem Mendel Schneerson (1902–1994), was by then already in Paris and would eventually reach New York, where he would become the seventh Lubavitcher Rebbe and lead the most dramatic expansion of Chabad in history.</p>
 <p>At its height, Yekaterinoslav had several synagogues, a full kehilla structure, and the charitable and educational institutions of a major community. The Choral Synagogue served the acculturated community; various Hasidic shtieblach served more traditional worshippers. The Great Synagogue survived into the Soviet period. Under Soviet rule, the institutions were gradually closed or repurposed.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Yekaterinoslav/Dnipropetrovsk also had significant connections to the broader Jewish world. The city was home to a substantial Zionist community in the pre-Soviet period, with active chapters of various Zionist parties and youth movements. In the Soviet era, the city's Jews — like those throughout the USSR — maintained Jewish identity through underground channels. Rabbi Levi Yitzchak's example of public religious resistance, while exceptional, inspired generations.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>The city's Jewish community contributed to the regional economy and to Jewish cultural life throughout Ukraine. Its significance in Chabad history — through the Schneerson family connection — gives it a particular resonance for the global Chabad movement. Rabbi Levi Yitzchak's Kabbalistic writings, composed partly during his Soviet period and collected posthumously, represent important contributions to Hasidic thought.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The Soviet period brought systematic destruction of Jewish communal life. World War II brought the German occupation of Dnipropetrovsk from August 1941 to October 1943; approximately 30,000 Jews were murdered, including in mass shootings at Monastery Island and other sites. The postwar community rebuilt slowly but was subject to continued Soviet restrictions.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Dnipro today has one of the most active Jewish communities in Ukraine, a paradox of history given the community's near-total destruction in the 1940s. The Menorah Center, a massive Jewish community complex opened in 2012 and funded in part by local Jewish philanthropists, is one of the largest Jewish community centers in the world. The city's Jewish revival is in part a tribute to Rabbi Levi Yitzchak Schneerson, whose memory is deeply honored in Chabad circles worldwide.</p>
       </section>

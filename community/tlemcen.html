@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,57 +482,54 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tlemcen_Grand_Mosque.jpg/640px-Tlemcen_Grand_Mosque.jpg" alt="Tlemcen Grand Mosque" loading="eager">
+      <figcaption>Tlemcen Grand Mosque — via <a href="https://en.wikipedia.org/wiki/Tlemcen" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Tlemcen, western Algeria's ancient cultural capital, was home to one of the most distinguished Jewish communities in the medieval Maghreb. A city of gardens and fountains near the Moroccan border, Tlemcen served as the capital of the Zayyanid kingdom (1235–1554) and attracted Jewish scholars and merchants who flourished under court patronage. The arrival of Spanish exile families after 1492 brought distinguished rabbis to the city, including Rabbi Ephraim ibn Enkawa, one of the great Maghrebi sages of the early 16th century. Tlemcen represents the western Algerian Jewish tradition at its most intellectually refined.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Grande_Mosqu%C3%A9e_de_Tlemcen.jpg/500px-Grande_Mosqu%C3%A9e_de_Tlemcen.jpg" alt="Tlemcen Grand Mosque" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Tlemcen Grand Mosque — via <a href="https://en.wikipedia.org/wiki/Tlemcen" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jewish settlement in Tlemcen predates the Zayyanid period. The region of western Algeria (historically Tlemcen) had a Jewish population visible in medieval sources, and the city's position on the major trade route between Morocco and Algeria made it attractive for Jewish merchants.</p>
 <p>The Zayyanid dynasty, which ruled the central Maghreb from Tlemcen, was receptive to Jewish court service. Jewish physicians, financiers, and diplomatic agents served the Zayyanid rulers, occupying positions of influence unusual in many medieval Muslim states. This court-Jew role brought wealth and some security, though it also created vulnerability to political change.</p>
 <p>The 1391 Iberian pogroms sent the first wave of Spanish-Jewish refugees to Tlemcen. Rabbi Simon ben Zemah Duran passed through the city on his way to Algiers. More substantially, the 1492 expulsion from Spain brought a large community of Spanish Jewish exiles to Tlemcen, enriching the indigenous Jewish population with scholars, artisans, and merchants of Iberian formation.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Tlemcen's Jewish quarter housed multiple synagogues serving both the indigenous and Spanish exile communities. The two groups initially maintained separate institutions, but the smaller indigenous community was gradually absorbed into the larger Sephardic community within a few generations.</p>
 <p>The community's beth din, led by successive generations of scholars, handled the complex legal questions arising from the merger of different legal traditions. The yeshiva associated with ibn Enkawa and his successors was a center of learning that attracted students from across the western Maghreb.</p>
 <p>The tomb of Rabbi Ephraim ibn Enkawa, located in Tlemcen's old Jewish cemetery, became one of the most important pilgrimage sites in Algerian Jewish life, drawing visitors from across Algeria and the diaspora on the anniversary of his death.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Rabbi Ephraim ibn Enkawa (Avraham ibn Enkawa, c. 1460–1522) is Tlemcen's preeminent Jewish figure. Born in Spain, he arrived in Tlemcen after the 1492 expulsion and established himself as the leading rabbinical authority of western Algeria. His halakhic expertise, breadth of knowledge in Talmud, Kabbalah, and Jewish philosophy, and pastoral leadership of the exile community gave him an authority that stretched across the Maghreb. His major work, <em>Ner Hamaaravi</em> (Light of the West), addressed the halakhic questions arising from the community of exiles and established legal norms for the new Maghrebi-Sephardic synthesis. His tomb in Tlemcen became a major pilgrimage site, venerated as the grave of a sainted rabbi.</p>
 <p>Rabbi Solomon ben Simon Duran, son of the Rashbash and grandson of Rabbi Simon ben Zemah Duran of Algiers, maintained connections with Tlemcen as part of the broader Algerian rabbinic network.</p>
 <p>Rabbi Abraham Gavison (16th century) was another noted Tlemcen scholar, author of <em>Omer HaShikhecha</em> (The Forgotten Sheaf), a commentary on the Torah and an important source for the community's spiritual and intellectual life.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Tlemcen's geographical and cultural position — near Morocco, yet within Algeria — gave its Jewish community a distinctive synthesis identity. The community blended Moroccan Jewish practices with the Spanish exile traditions, creating a western Algerian Jewish rite that was distinct from both Algiers (more Tunisian-influenced) and Moroccan communities.</p>
 <p>The community's liturgical poetry tradition was substantial. Tlemcen scholars composed piyyutim in Hebrew and Judeo-Arabic that were performed at festivals and Shabbat tables. The Andalusian musical tradition brought from Spain was preserved in Tlemcen's synagogue music well into the 20th century.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The Ottoman conquest of Tlemcen in 1554 ended the Zayyanid kingdom and brought the city into a different political framework, with significant effects on the Jewish community's court-patronage relations. Under French rule (from 1842), Tlemcen's Jews underwent the same transformation as other Algerian communities: French education, Crémieux citizenship, growing integration into French colonial society.</p>
 <p>The 1934 anti-Jewish unrest affected western Algeria, and Tlemcen's community shared the anxieties of the period. The Algerian War and independence in 1962 ended the community's Algerian chapter; virtually all of Tlemcen's Jews emigrated to France (particularly to Marseille and Paris) within months of independence.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The tomb of Rabbi Ephraim ibn Enkawa in Tlemcen remains a pilgrimage site visited by Algerian Jews from France and Israel who travel back for the annual hillula. The Tlemcen Jewish cemetery has been maintained with some difficulty. French cities with large Algerian Jewish populations maintain organizations devoted to the memory of Tlemcen Jewish life.</p>
       </section>

@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,21 +482,24 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/%D0%9A%D0%BE%D1%81%D1%82%D1%91%D0%BB_%D0%B8_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D1%8B%D1%80%D1%8C_-_panoramio.jpg/640px-%D0%9A%D0%BE%D1%81%D1%82%D1%91%D0%BB_%D0%B8_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D1%8B%D1%80%D1%8C_-_panoramio.jpg" alt="Druya — Catholic church and monastery" loading="eager">
+      <figcaption>Druya — Catholic church and monastery — via <a href="https://en.wikipedia.org/wiki/Druya" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Druya — a small town on the Daugava (Western Dvina) River in the Braslav district of what is today the Vitebsk Oblast of Belarus, near the Lithuanian and Latvian borders — was a small Jewish community that was entirely liquidated on September 3, 1942, when German SS forces and their collaborators murdered the remaining Jewish residents. Its story is representative of hundreds of small Belarusian Jewish communities whose populations were annihilated with almost total completeness during the German occupation of 1941–1944.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/%D0%9A%D0%BE%D1%81%D1%82%D1%91%D0%BB_%D0%B8_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D1%8B%D1%80%D1%8C_-_panoramio.jpg/500px-%D0%9A%D0%BE%D1%81%D1%82%D1%91%D0%BB_%D0%B8_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D1%8B%D1%80%D1%8C_-_panoramio.jpg" alt="Druya — Catholic church and monastery" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Druya — Catholic church and monastery — via <a href="https://en.wikipedia.org/wiki/Druya" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Druya sits in the Braslav lake district of northern Belarus, a region of extraordinary natural beauty that was historically part of the Polish-Lithuanian Commonwealth before its incorporation into the Russian Empire. Jewish settlement in Druya dates to the seventeenth century at least. The town was small — several hundred Jewish families at its peak — and its economy was typical of Belarusian shtetlach: trade at the market fair, crafts, innkeeping, and some agriculture. The river position gave Druya modest commercial importance as a transit point for goods moving through the region.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The interwar period saw Druya's Jewish community under Polish rule (1918–1939) after the Polish-Soviet War settled the border of the new Polish state. Polish-Jewish relations in the Braslav district were complex: official antisemitism in the Polish state, expressed through various discriminatory economic measures, coexisted with day-to-day interactions between Jewish and Polish neighbors that were often mundane or even friendly. The Jewish community maintained a school, a synagogue, Zionist youth movements, and the full range of cultural and political organizations that characterized interwar Polish Jewish life.</p>
 <p>The Soviet occupation of eastern Poland following the Molotov-Ribbentrop Pact in September 1939 brought Druya under Soviet rule. Soviet authorities immediately began suppressing Jewish communal life: Zionist organizations were banned, Hebrew schools replaced with Yiddish Soviet schools, religious institutions subjected to increasing pressure. Many of the community's most active young people — Zionist leaders, merchants — were arrested or deported to Siberia. Paradoxically, this deportation saved some lives: those exiled to Siberia survived the war.</p>
@@ -491,30 +508,24 @@
 <p>Druya maintained a synagogue, a study house (beit midrash), and the communal institutions of a small kehilla — a burial society, a women's charitable organization, and a cheder for children's education. These institutions had sustained Jewish life in Druya for generations; they were eliminated in a single day in September 1942.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Druya was not associated with famous figures, but its small size makes the loss more intimate rather than less significant. Among those murdered were rabbis, teachers, craftsmen, merchants, children, and elderly people — the entire generational and social cross-section of a small Jewish town.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>The contribution of Druya to Jewish history is the same as that of hundreds of similar communities: the maintenance of Jewish life, tradition, and identity across centuries of difficult conditions, until external violence — not internal failure — ended it. The community's memory is preserved in a yizkor book compiled by survivors.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The community was liquidated on September 3, 1942. A handful of young people had managed to flee to the forests and join partisan units; a few others had been deported to Siberia before the German invasion and survived there.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The mass grave site near Druya is marked by a small memorial. The memory of the community is preserved in the Druya yizkor book and in Yad Vashem testimony. The town today is a quiet Belarusian village with no Jewish presence.</p>
       </section>

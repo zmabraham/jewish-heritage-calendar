@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,21 +482,24 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/P1130119-1.JPG/640px-P1130119-1.JPG" alt="Kyiv (Kiev)" loading="eager">
+      <figcaption>Kyiv (Kiev) — via <a href="https://en.wikipedia.org/wiki/Kyiv" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Kiev — Kyiv in modern Ukrainian spelling — is the ancient capital of the Kievan Rus and the contemporary capital of Ukraine. For Jews, it is a city of profound contradictions: a center of culture and intellectual life that simultaneously excluded Jews through much of its history under Tsarist law, and the site of Babi Yar, one of the single largest mass murder sites of the Holocaust, where 33,771 Jews were shot in two days in September 1941.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/P1130119-1.JPG/500px-P1130119-1.JPG" alt="Kyiv (Kiev)" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Kyiv (Kiev) — via <a href="https://en.wikipedia.org/wiki/Kyiv" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews had lived in Kiev since ancient times, but the city's relationship with its Jewish inhabitants was defined by repeated expulsions and restrictions. Under the Russian Empire, Kiev lay at the edge of the Pale of Settlement, and full Jewish residency was formally prohibited for much of the nineteenth century — only certain categories of "useful" Jews (merchants of the first guild, university graduates, craftsmen with special permits) were allowed to remain. This produced a community of educated, acculturated Jews who had, by definition, passed through the needle's eye of Tsarist tolerance. The result was a Jewish intelligentsia unlike that of typical Pale communities.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The late nineteenth and early twentieth centuries saw Kiev emerge as a center of Hebrew and Yiddish culture despite — or perhaps because of — the formal restrictions on Jewish residence. The city attracted writers, journalists, artists, and political thinkers. Sholem Aleichem (Solomon Naumovich Rabinovich, 1859–1916), the most beloved Yiddish writer in history, lived in Kiev from 1876 to 1905, working as a writer, unsuccessful businessman, and eventually the beloved "grandfather" of Yiddish literature. His stories of Tevye the Dairyman, Motl the Cantor's Son, and the residents of Kasrilevke drew on Ukrainian-Jewish life he observed directly. The 1905 pogroms drove him out of Kiev — as they drove tens of thousands of Jews toward emigration.</p>
 <p>On September 29–30, 1941, German Einsatzgruppen and German police units, assisted by Ukrainian auxiliary police, herded the Jews of Kiev to the ravine of Babi Yar (Babyn Yar in Ukrainian) on the city's northern edge. In two days of systematic shooting, 33,771 Jews were killed and thrown into the ravine — one of the highest death tolls of any single killing operation in the entire Holocaust. Babi Yar continued to be used as an execution site for Jews, Roma, Soviet POWs, and others throughout the occupation; total deaths may reach 100,000 or more.</p>
@@ -490,31 +507,22 @@
 <p>Despite restrictions, Kiev maintained a vibrant Jewish communal life. The Brodsky Synagogue (1898), a magnificent Moorish-style building funded by sugar magnate Lazar Brodsky, was the center of the city's acculturated Jewish elite. The Great Choral Synagogue served the broader community. The city had a Hebrew gymnasium, Jewish libraries, and political organizations spanning the spectrum from Bundists to Zionists.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>The Beilis Affair (1911–1913) brought Kiev international attention. Mendel Beilis, a Jew working in a brick factory, was accused of ritual murder — the medieval blood libel revived in the heart of the Russian Empire. The trial, held in Kiev, became an international cause célèbre, with lawyers and intellectuals from across the world watching as tsarist Russia attempted to use judicial murder to validate antisemitism. Beilis was acquitted by a Ukrainian jury in 1913, in a verdict that exposed the prosecution's absurdity. The affair accelerated the erosion of tsarist legitimacy and galvanized Jewish self-defense movements.</p>
 <p>Vladimir Jabotinsky, the founder of Revisionist Zionism, spent formative years in Kiev and Odessa. Vladimir (Ze'ev) Horowitz, later known as the pianist Vladimir Horowitz, was born in Kiev in 1903.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Kiev was a crucible for Jewish modernity — a place where Jews engaged with Russian culture while maintaining distinct identities. The Zionist movement, the Hebrew cultural renaissance, and the socialist Bund all had active presences here.</p>
       </section>
 
-      <section id="decline">
-        <h2>Decline &amp; Transformation</h2>
-        
-      </section>
+      
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Babi Yar is now a park and memorial site. The Babi Yar Holocaust Memorial Center, opened in phases since 2021, aims to create a world-class museum and memorial. Kyiv today has a significant Jewish community and active communal life.</p>
       </section>

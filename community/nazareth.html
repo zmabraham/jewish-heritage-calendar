@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,23 +482,26 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nazareth_Panorama_Dafna_Tal_IMOT_%2814532097313%29.jpg/640px-Nazareth_Panorama_Dafna_Tal_IMOT_%2814532097313%29.jpg" alt="Nazareth — panoramic view of the historic city" loading="eager">
+      <figcaption>Nazareth — panoramic view of the historic city — via <a href="https://en.wikipedia.org/wiki/Nazareth" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Nazareth occupies a unique and somewhat paradoxical place in Jewish history. Best known to the world as the hometown of Jesus of Nazareth and one of the most important Christian pilgrimage destinations in the world, the city had a Jewish community for centuries after the New Testament period — a community that often found itself living in the shadow of Christian pilgrimage institutions while maintaining its own Jewish identity and practice. The irony of a Jewish community persisting in a city that had become overwhelmingly associated with the origins of a religion that had diverged from Judaism is one of the more curious features of Holy Land Jewish history.</p>
 <p>Medieval Nazareth hosted a Jewish community documented in traveler accounts and rabbinic sources. The community was small, often vulnerable to Crusader and later Christian hostility, but sufficiently rooted to persist through multiple political changes. The medieval Jewish community of Nazareth was part of the broader network of Galilean Jewish life, connected to the communities of Safed, Tiberias, and the surrounding villages.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nazareth_Panorama_Dafna_Tal_IMOT_%2814532097313%29.jpg/500px-Nazareth_Panorama_Dafna_Tal_IMOT_%2814532097313%29.jpg" alt="Nazareth — panoramic view of the historic city" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Nazareth — panoramic view of the historic city — via <a href="https://en.wikipedia.org/wiki/Nazareth" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Nazareth's Jewish character in antiquity is often overlooked because of the city's overwhelming association with Christianity. But in the first century CE, Nazareth was a small Jewish village in the Galilee — probably no more than a few hundred people — part of the predominantly Jewish rural landscape of the region. Archaeological excavations have revealed first-century Jewish material culture: ritual baths (mikvaot), storage pits, agricultural installations, and household items consistent with a Jewish village.</p>
 <p>After the Temple's destruction and the reorganization of Jewish communities in the Galilee, Nazareth is mentioned in a priestly course inscription discovered at Caesarea: one of the twenty-four priestly families (mishmarot) assigned to Nazareth after the Temple's destruction, indicating that a priestly community settled there. This inscription confirms Jewish presence in Nazareth after 70 CE.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Nazareth's Jewish golden age, such as it was, falls in the early Byzantine period (3rd–4th centuries CE), when the Galilee was densely Jewish and Nazareth was part of a prosperous agricultural network. Origen visited in the early third century and reported a Jewish community there. The city's role as a priestly community continued to give it some distinction.</p>
 <p>The Crusader period (1099–1291) was difficult for the Jewish community, as Crusader policy generally excluded Jews from cities they considered Christian sacred sites. Nazareth, as the city of the Annunciation and one of the most important Christian sites in the Holy Land, was particularly subject to this pressure. Yet Jewish communities persisted in the vicinity, and the later medieval period saw a small Jewish presence return.</p>
@@ -492,33 +509,27 @@
 <p>The Byzantine and Crusader churches that came to define Nazareth's urban landscape — above all the Church of the Annunciation, the largest church in the Middle East today — were built over what tradition identified as sacred sites from Jesus's childhood. The Jewish community's institutions existed alongside these, in the margins of a Christianized urban space.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p><strong>The Priestly Families of Nazareth</strong> — the twenty-fourth mishmar (priestly course), named HaPizzo'z, is recorded as having settled in Nazareth after the Temple's destruction. These former Temple priests adapted to post-Temple Judaism while maintaining their priestly identity, and their presence gave Nazareth a distinction within the rabbinic ordering of the Land of Israel.</p>
 <p><strong>Medieval Jewish Travelers</strong> — figures like Benjamin of Tudela (12th century) documented the Jewish communities of the Galilee, and later travelers commented on the small Jewish presence in and around Nazareth. Their accounts preserve the record of a community that would otherwise be largely invisible.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Medieval Nazareth's Jewish community was Arabic-speaking, using Judeo-Arabic as its vernacular alongside Hebrew for religious purposes. The community was connected to the broader network of Galilean Jews — the pilgrims and merchants passing between the coast and the interior, the scholars of Safed and Tiberias. Their religious life followed the traditions maintained by the Palestinian Jewish communities of the medieval period.</p>
 <p>The peculiarity of living in a city that Christendom venerated above almost all others in the Holy Land — second only to Jerusalem — would have created a particular psychological dynamic: Jews maintaining their tradition in a space that had been claimed by another tradition as its origin point, navigating the politics of pilgrimage and the attentions of Christian visitors and rulers.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The Jewish community of Nazareth dwindled through the medieval period, as Crusader, Mamluk, and then Ottoman rule successively reshaped the population. By the late Ottoman period, Nazareth was overwhelmingly Christian Arab, with some Muslim Arab presence; the Jewish community, if it persisted at all, was minimal.</p>
 <p>The 1948 Arab-Israeli War left Nazareth under Israeli control (it was captured without significant fighting in July 1948, as the Israeli commander Moshe Carmel negotiated the surrender of the city with the Christian community, sparing it the destruction that befell other Arab towns). Nazareth remains today a predominantly Arab city (Christian and Muslim) within Israel, with a Jewish-majority suburb (Upper Nazareth / Nof HaGalil) built on the hill above.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Nazareth's legacy in Jewish consciousness is ambivalent: it is the city that gave birth to a movement that would eventually define itself against Judaism, yet the Jewish community that lived there before and after that birth maintained an unbroken thread of Jewish life. The priestly families who settled in Nazareth after the Temple's destruction represent the rabbinic project of preserving Jewish institutional identity even in the absence of the Temple. The modern Jewish suburb above old Nazareth is the latest chapter in a long story of Jewish presence in a place that history has insistently defined through another tradition.</p>
       </section>

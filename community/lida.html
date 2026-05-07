@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,21 +482,24 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Lida_castle.jpg/640px-Lida_castle.jpg" alt="Lida Castle" loading="eager">
+      <figcaption>Lida Castle — via <a href="https://en.wikipedia.org/wiki/Lida" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Lida was a border city in the Grodno region of what is now Belarus — a community positioned at the intersection of Polish, Lithuanian, Belarusian, and Jewish cultural currents. Though not among the very largest or most famous Jewish communities of Eastern Europe, Lida earned distinction through its yeshiva and especially through the towering personality of Rabbi Yitzchak Yaacov Reines, the founder of the Mizrachi religious Zionist movement. Lida's community exemplified the tensions of modernizing Eastern European Jewry, where the traditional yeshiva world confronted Zionism, socialism, and the forces of secularization in direct and often creative confrontation.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Lida_Montage_%282017%29.jpg/500px-Lida_Montage_%282017%29.jpg" alt="Lida Castle" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Lida Castle — via <a href="https://en.wikipedia.org/wiki/Lida" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews settled in Lida in the seventeenth and eighteenth centuries as the town developed as a regional commercial center. Located near the border between Lithuania and Belorussia, Lida served as a market hub for the surrounding agricultural region. The Jewish community engaged in commerce, crafts, and trade, following the typical Pale of Settlement pattern. Under Russian rule from the late eighteenth century, Lida became a district town in the Vilna Governorate, and its Jewish community grew steadily.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Lida's greatest claim to Jewish historical significance came with Rabbi Yitzchak Yaacov Reines (1839–1915), who served as rabbi of Lida from 1885 until his death. Reines was one of the most significant and controversial rabbis of his generation — a man who defied the conventional boundaries of Orthodox Jewish leadership by embracing political Zionism and founding the Mizrachi movement.</p>
 <p>The Mizrachi movement, which Reines founded in 1902, brought together Orthodox Judaism and Zionism — a combination that many traditionalists found threatening. Reines argued that Zionism was a practical political movement for Jewish survival that did not require any particular theological commitment, and that Orthodox Jews should participate in it without abandoning their religious principles. This position was opposed by both the Agudath Israel right (which rejected Zionism) and the secular Zionist left (which was often antireligious), but Mizrachi carved out a distinctive and enduring space in Jewish politics.</p>
@@ -490,30 +507,24 @@
 <p>The Lida Yeshiva was the community's premier institution. The Great Synagogue and numerous smaller prayer houses served different segments of the community. The community maintained schools (including the unusual curriculum incorporating secular subjects under Reines's influence), charitable organizations, a cemetery, and by the interwar period, modern cultural and political organizations including Zionist youth clubs and socialist groups.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p><strong>Rabbi Yitzchak Yaacov Reines</strong> (1839–1915) — rabbinic authority, founder of the Mizrachi movement, pioneer of religious Zionism. His work <em>Nod Shel Demaot</em> and other writings combined halachic scholarship with Zionist political thought. <strong>Rabbi Yechiel Michel Epstein</strong> (the <em>Aruch HaShulchan</em>), whose comprehensive and historically-minded code of Jewish law became a standard reference work, was rabbi of Novozybkov but had connections to Lida's scholarly circles. Several of Reines's students became significant rabbis and Mizrachi leaders in Israel and the diaspora.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Lida's Jewish culture was shaped by its position as a border community and by the modernizing influence of its rabbi. Political and cultural debates between traditionalists, Mizrachi supporters, secular Zionists, and Bundists were intense. The community was exposed to Lithuanian, Polish, and Belarusian cultural currents. Hebrew and Yiddish education coexisted. The interwar period saw Lida as part of the Polish Second Republic with a community of approximately 8,000 Jews engaged in commerce, crafts, and the professions.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Soviet occupation in 1939 brought suppression of religious and Zionist institutions. The German occupation in June 1941 established a ghetto with approximately 8,000 Jews. The ghetto was liquidated in March 1943, when the great majority were shot or transported to Majdanek. Approximately 200 Jews escaped to the forests, some joining partisan units. Of the prewar Jewish community, very few survived the war. The Lida Yeshiva, the Mizrachi organizations, and all the institutions Reines had built were destroyed.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Rabbi Reines's Mizrachi movement survived and flourished: it evolved into the National Religious Party (Mafdal) in Israel and remains a significant stream of religious Zionism. The Bnei Akiva youth movement, connected to Mizrachi, is today one of the world's largest Jewish youth organizations. In the contemporary Israeli yeshiva world, institutions combining Torah study with Zionist commitment — <em>yeshivot hesder</em> — reflect Reines's vision. The city of Lida in Belarus has a small memorial to its Jewish community. Descendants of Lida Jews maintain memorial organizations.</p>
       </section>

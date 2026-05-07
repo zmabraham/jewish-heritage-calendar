@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Mak%C3%B3w_Mazowiecki_-_Ratusz.jpg/640px-Mak%C3%B3w_Mazowiecki_-_Ratusz.jpg" alt="Maków Mazowiecki town hall" loading="eager">
+      <figcaption>Maków Mazowiecki town hall — via <a href="https://en.wikipedia.org/wiki/Mak%C3%B3w_Mazowiecki" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Maków Mazowiecki was a market town in the Mazovia region of northeastern Poland, situated north of Warsaw in the agricultural heartland of the Polish plain. Its Jewish community, numbering several thousand in the interwar period, was deeply influenced by the Gerer Hasidic dynasty — the dominant religious force in the broader Warsaw-Mazovia region — and was entirely destroyed in the Holocaust deportations of 1942.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Makow_maz_kosciol_bozego_ciala3.jpg/500px-Makow_maz_kosciol_bozego_ciala3.jpg" alt="Maków Mazowiecki town hall" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Maków Mazowiecki town hall — via <a href="https://en.wikipedia.org/wiki/Mak%C3%B3w_Mazowiecki" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews arrived in Maków Mazowiecki in the seventeenth and eighteenth centuries, establishing themselves in the market commerce that sustained the town. Located in a fertile agricultural region, the town's Jewish community served as intermediaries between rural farmers and larger urban markets, trading in grain, cattle, leather, and the manufactured goods that flowed in the opposite direction. The community grew steadily through the eighteenth and nineteenth centuries despite the disruptions of the Partitions and the Napoleonic wars.</p>
 <p>Under Russian rule as part of Congress Poland, Maków Mazowiecki's Jews were subject to the restrictions of the Pale but maintained a vigorous community life. The railway connections that linked the region to Warsaw in the late nineteenth century opened new commercial possibilities and connected the community to the capital's cultural and political life.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>By the interwar period, approximately 4,000 Jews lived in Maków Mazowiecki, comprising roughly half the total population. The community's institutional life was robust: the main synagogue, several Hasidic <em>shtiblach</em>, a <em>beit midrash</em> with a regular learning schedule, a Jewish school, Zionist youth organizations, and the full array of social and charitable institutions.</p>
 <p>The Gerer Hasidic influence was strong throughout Mazovia. Ger's combination of intellectual rigor and institutional discipline aligned well with the practical, commercially oriented communities of the Warsaw region. Many of Maków's Hasidic Jews were followers of the Gerer Rebbe, making the annual pilgrimages to Góra Kalwaria for the High Holidays and other occasions. The Gerer <em>shtiebl</em> in Maków was an active center of study and prayer.</p>
@@ -491,30 +508,24 @@
 <p>The Great Synagogue of Maków Mazowiecki was a wooden structure in the Baroque style common to Mazovian synagogue architecture. Multiple Hasidic <em>shtiblach</em> — Ger, Aleksander, and others — served different communities within the broader kehilla. A <em>mikveh</em>, Jewish hospital, <em>chevra kadisha</em>, and mutual aid society completed the welfare infrastructure. Jewish schools operated in both the traditional <em>cheder</em> model and the modern Tarbut (Hebrew-Zionist) framework.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Maków Mazowiecki is not known for a single dominant figure. Its community leaders — the town's rabbi, the <em>dayan</em> (rabbinical judge), the rosh yeshiva of the local <em>talmud torah</em>, the leader of the Zionist organization, the Bund organizer — together constituted the leadership of a community managing its own affairs. Several native sons made <em>aliyah</em> in the 1920s and 1930s; their descendants in Israel and the Americas carry the community forward.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>The community of Maków Mazowiecki contributed to Polish Jewry the full texture of a functioning kehilla: sustained Torah study, observant family life, organized charity, cultural creativity, and the raising of children who knew what it meant to be Jewish. In the context of this calendar, Maków represents the vast majority of Polish Jewish communities: not famous for a single rebbe or a singular institution, but alive in the fullest sense.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The German occupation in September 1939 was followed by persecution and ghettoization. The Maków Mazowiecki ghetto was established in 1940. In November 1942 the ghetto was liquidated: the Jewish population was transported to the Małkinia railway junction and from there to Treblinka. Of approximately 4,000 Jews, only a few dozen survived.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>A <em>yizkor</em> book, <em>Maków Mazowiecki: Sefer Zikaron</em>, was compiled by survivors and their descendants, preserving the community's history through photographs, testimony, and biographical records. The Jewish cemetery was damaged during the war; some gravestones survive. Yad Vashem records hundreds of testimonies submitted by survivors and their families.</p>
       </section>

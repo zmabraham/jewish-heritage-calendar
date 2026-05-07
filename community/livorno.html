@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Livorno_vecchio_fortress.jpg/640px-Livorno_vecchio_fortress.jpg" alt="Livorno Old Fortress" loading="eager">
+      <figcaption>Livorno Old Fortress — via <a href="https://en.wikipedia.org/wiki/Livorno" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Livorno (known in English and Jewish sources as Leghorn) was one of the most remarkable Jewish communities in early modern Europe: a genuinely open, free-port city where Jews lived without a ghetto, enjoyed extensive civic rights, and participated as full partners in Mediterranean and Atlantic commerce. Founded virtually from scratch by the Medici Grand Dukes of Tuscany in the late sixteenth century, Livorno became a magnet for Sephardic refugees, Converso families returning to Judaism, and Levantine merchants — creating a diverse, cosmopolitan, and commercially dynamic Jewish community that lasted until the twentieth century.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Livorno%2C_veduta_aerea_2015.jpg/500px-Livorno%2C_veduta_aerea_2015.jpg" alt="Livorno Old Fortress" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Livorno Old Fortress — via <a href="https://en.wikipedia.org/wiki/Livorno" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>In 1591 and 1593, Grand Duke Ferdinand I of Tuscany issued the <em>Livornina</em> — a series of charters offering extraordinary privileges to attract Jewish and New Christian (Converso) settlers to the new port city of Livorno. The charters guaranteed Jews freedom of worship, the right to trade in all goods, the right to own property, exemption from wearing the yellow badge, and protection from Inquisitorial investigation of their past religious practices — an implicit invitation to Conversos who had been compelled to practice Christianity in Iberia but wished to return openly to Judaism.</p>
 <p>The result was remarkable. Jewish settlers poured into Livorno from Portugal, Spain, North Africa, the Ottoman Empire, and other Italian cities. By the seventeenth century, Livorno's Jewish community was one of the largest and most prosperous in Italy. Uniquely among Italian communities, it had no ghetto: Jews lived throughout the city and participated in civic life alongside Christians.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The seventeenth and eighteenth centuries represented Livorno's peak of Jewish commercial and cultural vitality. Livornese Jewish merchants dominated large portions of Mediterranean trade — coral from Sardinia and Sicily, grain from North Africa, textiles from England, and spices from the East passed through their hands. Families like the Montefiore (before their move to England), Belilios, and Franco developed trading networks stretching from Morocco to India to the Netherlands and England.</p>
 <p>Livorno was also a major center of Hebrew printing, particularly of Kabbalistic literature. The Hebrew presses of Livorno produced editions of the Zohar and related mystical texts that circulated throughout the Mediterranean world and reached North African and Middle Eastern communities where Amsterdam and Venice editions were less accessible.</p>
@@ -491,34 +508,28 @@
 <p>The Livornese Sephardic rite — <em>Minhag Livorno</em> or <em>Minhag Sepharad</em> — was an influential liturgical tradition that was exported through Livornese mercantile networks to communities in North Africa (especially Tripoli, Tunisia, and Morocco), where it sometimes displaced older local rites.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Jacob Sasportas (1610–1698), a major Sephardic halakhist and fierce opponent of Sabbatianism, served as a rabbi in Livorno. His collection of anti-Sabbatian correspondence, <em>Tzitzat Novel Tzvi</em>, is a primary source for the Sabbatian movement.</p>
 <p>Joseph Ergas (1685–1730) was a distinguished Livornese Kabbalist and defender of Lurianic Kabbalah against philosophical criticism.</p>
 <p>Samuel Romanelli (1757–1814) was a Livornese Jewish writer and traveler whose account of his journeys in Morocco (<em>Massa b'Arav</em>, "Travail in an Arab Land," 1792) is an early example of Jewish travel literature and ethnography.</p>
 <p>The Montefiore family originated in Livorno before a branch moved to England; Sir Moses Montefiore (1784–1885), the great Victorian Jewish philanthropist and Palestine advocate, was of Livornese Sephardic origin.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Livorno's religious openness — a city without an Inquisition and without a ghetto — made it a place of unusual theological ferment. Conversos returning to Judaism grappled publicly with questions of Jewish identity, the validity of forced conversion, and the relationship between philosophical skepticism and religious observance. Uriel da Costa (not based in Livorno but known to its intellectual world) and Baruch Spinoza represent extreme cases of the religious questioning that this transitional environment could produce.</p>
 <p>The city's multilingual character — Hebrew, Portuguese, Ladino, Italian, and Arabic all in daily use — made it a cultural crossroads of exceptional richness.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The nineteenth century brought emancipation throughout Tuscany and Italy, reducing the special character of Livorno's Jewish community as Jews across Italy gained equal rights. Many Livornese Jewish families dispersed to other commercial centers. The community was severely damaged during World War II — both by Allied bombing of the port city and by German and Italian Fascist persecution.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Livorno retains a small but active Jewish community. The rebuilt Great Synagogue serves the community, and the city's Jewish historical heritage is documented in local archives and the work of scholars including Renzo Toaff. The Livornese Sephardic liturgical tradition survives in communities in North Africa and among Livornese-origin families worldwide.</p>
       </section>

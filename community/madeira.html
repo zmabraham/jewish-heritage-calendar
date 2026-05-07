@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Madeira_Funchal_from_Monte.jpg/640px-Madeira_Funchal_from_Monte.jpg" alt="Funchal, Madeira" loading="eager">
+      <figcaption>Funchal, Madeira — via <a href="https://en.wikipedia.org/wiki/Madeira" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>The island of Madeira, discovered and colonized by Portugal in the 1420s, became an unlikely refuge and prison for New Christians — conversos and their descendants — who were deported to the island or fled there in the aftermath of the Portuguese forced conversions of 1497. Isolated in the Atlantic Ocean, far from the Inquisition's heaviest reach, small communities of New Christians maintained varying degrees of crypto-Jewish practice, creating one of the most geographically remote chapters in the history of Iberian Jewry. Madeira thus represents a unique case of Jewish survival in an Atlantic colonial context, centuries before the Caribbean and Brazilian New Christian communities that would follow the same pattern.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_Madeira.svg/500px-Flag_of_Madeira.svg" alt="Funchal, Madeira" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Funchal, Madeira — via <a href="https://en.wikipedia.org/wiki/Madeira" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Portugal's forced conversion of its Jewish population in 1497 was among the most traumatic events in Sephardic history. Following the Spanish expulsion of 1492, tens of thousands of Spanish Jewish refugees had entered Portugal, paying a substantial fee to King John II for temporary refuge. When John II's successor, Manuel I, wished to marry the daughter of the Spanish monarchs Ferdinand and Isabella, he was required to rid Portugal of its Jews as a condition of the match. In March 1497, Manuel decreed that all Jews must convert or leave. Unlike Spain, he effectively made departure impossible: ships were withheld, children were seized and baptized, and mass forced conversions were performed. The entire Portuguese Jewish community — some 70,000–100,000 people — was nominally transformed into New Christians overnight.</p>
 <p>These New Christians were forbidden from leaving Portugal for twenty years (a prohibition repeatedly renewed), and many maintained clandestine Jewish practice, observing what rituals they could in secret. When the Portuguese Inquisition was established in 1536, the pressure intensified enormously.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Madeira played a dual role: it received both voluntary migrants fleeing inquisitorial scrutiny on the mainland and involuntary deportees sent by the crown to colonize the distant Atlantic islands. The island's sugar economy, booming in the fifteenth and sixteenth centuries, required labor and entrepreneurial capital; New Christian merchants and financiers were well represented among those who developed the sugar trade.</p>
 <p>The first deportations to Madeira may have begun as early as the 1490s, when Lisbon and other Portuguese cities expelled or exiled Jews who refused or delayed conversion. The island thus received a mixed population: sincere converts who simply wished to resettle; crypto-Jews maintaining Jewish practice as best they could in isolation; and individuals whose Jewish identity had become attenuated over a generation but who were still classified as New Christian by the surrounding society.</p>
@@ -492,33 +509,30 @@
 <p>The sugar trade connected Madeira's New Christians to the wider Atlantic world of converso commerce. Madeira served as a staging post for the developing Atlantic trade routes, and New Christian merchants on the island had business contacts in Lisbon, the Canary Islands, the Azores, and eventually Brazil and the Caribbean — all regions where crypto-Jewish communities would eventually form.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p><strong>Gonçalo Aires Ferreira (16th century)</strong> — A New Christian merchant and sugar producer whose family appears repeatedly in Inquisition records. The Ferreira name is common among Madeira's New Christians and illustrates the pattern of family-based crypto-Jewish transmission.</p>
 <p><strong>The Rodrigues network</strong> — Multiple families with the surname Rodrigues appear in sixteenth-century Madeiran Inquisition files as accused Judaizers, suggesting an extended family network maintaining Jewish practices in relative secrecy.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
+            <section id="institutions">
         <h2>Institutions &amp; Sacred Spaces</h2>
         <p>New Christians in Madeira worshipped in Catholic churches and participated in Catholic sacramental life as required. Their crypto-Jewish practice was necessarily domestic and informal: observing dietary laws as privately as possible, maintaining knowledge of Shabbat and the Jewish holidays, and passing traditions to children in the privacy of the home. No synagogue or formal Jewish institution existed on the island during this period.</p>
 <p>The Inquisition's local tribunals, operating from Funchal, conducted periodic investigations and trials. Records preserved in the Arquivo Nacional da Torre do Tombo in Lisbon document the extent of crypto-Jewish activity on the island through the seventeenth century.</p>
       </section>
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Madeira's crypto-Jewish community represents a case study in the resilience and adaptation of Jewish identity under extreme pressure. The New Christians of Madeira developed a version of Jewish practice stripped to its most portable and domestic elements — dietary observance, Sabbath marking, fasting on Yom Kippur (often observed as a fast for mysterious "ancestors"), and whispered prayers in corrupted but recognizable Hebrew. This form of Marranism, attenuated yet persistent, shows how Jewish identity could survive across generations even when formal Jewish education and community life were impossible.</p>
 <p>The Madeiran New Christian community was also economically significant. New Christian merchants dominated the Madeiran sugar export trade in the sixteenth century and connected the island to the Atlantic commercial networks through which Sephardic diaspora commerce flowed.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>By the seventeenth century, the crypto-Jewish community of Madeira had either been prosecuted into silence or had become sufficiently assimilated that identifiable Jewish practice disappeared. Some New Christian families emigrated to Brazil, the Netherlands, or the Caribbean, where they could practice Judaism openly or where the Inquisition's reach was less severe. The Amsterdam Sephardic community received members of families with Madeiran origins. Others simply assimilated into the Catholic majority, their Jewish origins forgotten within a few generations.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Madeira has no Jewish community today. The descendants of the New Christians are entirely assimilated into the Catholic Madeiran population, and most have no knowledge of or connection to their Jewish ancestry. Academic historians have worked to recover this history from Inquisition archives. A small interpretive effort has been made by Jewish heritage organizations, and the story of Madeira's New Christians is discussed in the broader literature on Sephardic Atlantic diaspora communities.</p>
       </section>

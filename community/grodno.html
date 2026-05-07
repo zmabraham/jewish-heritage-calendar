@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Hrodna_Stary_Zamak.jpg/640px-Hrodna_Stary_Zamak.jpg" alt="Grodno (Hrodna) Old Castle" loading="eager">
+      <figcaption>Grodno (Hrodna) Old Castle — via <a href="https://en.wikipedia.org/wiki/Grodno" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Grodno (Belarusian: Hrodna; Lithuanian: Gardinas; Polish: Grodno; Yiddish: Gardina) stood for centuries as one of the great historic Jewish communities of Lithuania and Poland. A major commercial and political center on the Neman River, Grodno attracted Jewish settlement from the medieval period and developed a reputation for Torah scholarship and vibrant communal life. The city was the site of the last Sejm (parliament) of the Polish-Lithuanian Commonwealth in 1793 and a bastion of Jewish religious and cultural life through the early modern period. Grodno's Jews produced rabbinic authorities, Hasidic courts, Zionist activists, and the Soviet Union's first Jewish collective farms before Nazi annihilation destroyed most of the community in the Holocaust.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Horadnia_%28Hrodna%29%2C_Vilienskaja._%D0%93%D0%BE%D1%80%D0%B0%D0%B4%D0%BD%D1%8F%2C_%D0%92%D1%96%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%282021%29_05.jpg/500px-Horadnia_%28Hrodna%29%2C_Vilienskaja._%D0%93%D0%BE%D1%80%D0%B0%D0%B4%D0%BD%D1%8F%2C_%D0%92%D1%96%D0%BB%D0%B5%D0%BD%D1%81%D0%BA%D0%B0%D1%8F_%282021%29_05.jpg" alt="Grodno (Hrodna) Old Castle" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Grodno (Hrodna) Old Castle — via <a href="https://en.wikipedia.org/wiki/Grodno" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews lived in Grodno from at least the fourteenth century, making it one of the oldest Jewish communities in Lithuania. The Grand Duchy of Lithuania's status as a tolerant, multiethnic realm (compared to much of medieval Europe) allowed Jews to settle and thrive. In 1389, Grand Duke Vytautas granted the Jews of Grodno and neighboring Troki a charter of privileges that guaranteed autonomy in religious and communal affairs, rights to trade, and protection from arbitrary persecution — one of the earliest and most favorable documents of Jewish rights in Eastern Europe.</p>
 <p>The community grew steadily through the fifteenth and sixteenth centuries. Grodno's position on the Neman made it a river port linking the Baltic Sea to inland trade routes; Jews were prominent in commerce, crafts, and finance. The community joined the Council of Lithuania (<em>Va'ad Medinat Lita</em>) as a founding member. Grodno suffered during the Cossack and Swedish invasions of the mid-seventeenth century but recovered to regain its status as one of Lithuania's leading Jewish centers.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The eighteenth and nineteenth centuries represented Grodno's golden age of Jewish life. The city became an important Hasidic center: the court of the Chernobyl dynasty in Grodno attracted followers from across the region, and later the Karlin-Stolin Hasidim established a presence. Meanwhile, Mitnagdic (opponents of Hasidism) Judaism remained strong, with traditional yeshivot and rabbinic scholarship flourishing.</p>
 <p>In the eighteenth century, Grodno gained historical significance as the site of the last Sejm of the Polish-Lithuanian Commonwealth (1793). The Sejm met in the New Castle and, under pressure from Russia, ratified the Second Partition of Poland — effectively ending Polish independence for over a century. Jewish communal leaders closely watched these events, which would bring Grodno under Russian rule.</p>
@@ -491,30 +508,24 @@
 <p>Grodno contained numerous synagogues and prayer houses. The Great Synagogue was an eighteenth-century Baroque stone structure with a distinctive design. The community maintained <em>cheders</em> for elementary religious education, a <em>yeshiva</em> for advanced Talmud study, a <em>gemilut chassadim</em> free-loan society, and a <em>hevra kaddisha</em> (burial society). Two Jewish cemeteries served the community: the Old Cemetery (established in the seventeenth century) and the New Cemetery (nineteenth century). The city also had Jewish hospitals, charitable institutions, and a variety of secular Jewish cultural organizations in the early twentieth century.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p><strong>Alexander Zederbaum</strong> (1816–1893), a pioneer of the modern Jewish press, was born in Grodno and founded the Hebrew newspaper <em>Ha-Maggid</em> and later the Yiddish <em>Kol Mevasser</em>, one of the first Yiddish newspapers. <strong>Rabbi Raphael of Bershad</strong> (the "Bershadker Rebbe"), a celebrated Hasidic leader, was active in the Grodno region. <strong>Meir Wilenskin</strong>, a Zionist activist, was born in Grodno. <strong>Moses Zebi (Moses Wolf) of Grodno</strong>, a 19th-century commentator, produced marginal glossa on the Talmud. The city also produced generations of lesser-known rabbinic scholars, community leaders, and merchants who contributed to Lithuanian Jewish civilization.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Grodno's Jews spoke primarily Yiddish, though the educated classes were fluent in Russian, Polish, and often Hebrew. The interwar period (when Grodno was part of Poland's Second Republic as <em>Grodno</em>) saw a vibrant pluralist culture: Zionist youth movements, the Bund, Agudath Israel, and secular Yiddish schools all competed for influence. The city had Yiddish newspapers and theater troupes, Hebrew-language libraries, and sports clubs. The tension between religious traditionalism and secular modernism gave Grodno's Jewish culture its particular character.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The Soviet period (1939–1941) saw the closure of religious institutions and arrests of communal leaders, though some Jews adapted to Soviet cultural norms. The German invasion of June 1941 brought mass murder: in November 1942, the Germans established a ghetto for approximately 25,000 Jews from Grodno and the surrounding region. The ghetto was gradually liquidated between February and March 1943, with deportations to Treblinka and mass shootings at nearby execution sites. Approximately 23,000 Grodno Jews perished in the Holocaust. A small number joined partisan units in the forests; some survived by hiding or fleeing east. The Soviet Red Army liberated the city in July 1944.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Grodno survivors scattered primarily to Israel, the United States, and the Americas, forming <em>landsmanshaftn</em> (mutual aid societies) in New York and elsewhere. The Chernobyl Hasidic court was reestablished in Israel and America. The Great Synagogue in Grodno survived the war (unlike most Belarusian synagogues, which were destroyed) and functioned intermittently in the Soviet period; today it is a recognized historical monument, and efforts have been made to restore it. The Jewish cemeteries, though damaged by war and neglect, contain historic gravestones. A small Jewish community exists in contemporary Grodno, and Holocaust memorials commemorate the victims.</p>
       </section>

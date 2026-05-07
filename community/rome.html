@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Collage_Roma.jpg/640px-Collage_Roma.jpg" alt="Rome Colosseum and city" loading="eager">
+      <figcaption>Rome Colosseum and city — via <a href="https://en.wikipedia.org/wiki/Rome" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>The Jewish community of Rome is the oldest continuous Jewish diaspora community in the world, with an unbroken presence stretching back at least 2,100 years. Roman Jews — known as Romaniot or simply Romani — trace their ancestry to Jews who arrived in the city before the destruction of the Second Temple (70 CE), and possibly as early as the Maccabean period (second century BCE). Through emperors and popes, sackings and plague, the Inquisition and the ghetto, Roman Jews have maintained their community in the Eternal City — a living link to the ancient world.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg/500px-Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg" alt="Rome Colosseum and city" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Rome Colosseum and city — via <a href="https://en.wikipedia.org/wiki/Rome" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>The first documented Jewish presence in Rome dates to 139 BCE, when the Roman praetor expelled Jewish missionaries who were allegedly proselytizing. By the first century BCE, a substantial Jewish community existed in the Trastevere neighborhood. Julius Caesar was reportedly so well-regarded by Rome's Jews that they mourned at his grave for several nights. The Emperor Augustus permitted Jewish religious observance and exempted Jews from military service on account of the Sabbath.</p>
 <p>The destruction of the Second Temple in 70 CE by Titus brought thousands of Jewish captives to Rome, paraded in triumph and displayed on the Arch of Titus (still standing in the Roman Forum) in a frieze showing the Menorah and Temple vessels being carried away. These captives and subsequent Jewish immigrants swelled the Roman Jewish population to perhaps 30,000–50,000 in the first centuries CE.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The relationship between Rome's Jews and the papacy was the central drama of Roman Jewish history for over a millennium. Popes alternated between protection (Jews were theological witnesses to Christian truth and must not be killed) and persecution (Jews must be humiliated and confined as punishment for rejecting Jesus). Pope Paul IV, in a catastrophic 1555 bull <em>Cum nimis absurdum</em>, established the Roman Ghetto — confining all Roman Jews to a small area near the Portico of Octavia on the Tiber riverbank, requiring Jews to wear yellow badges, and restricting them to rag trading and moneylending.</p>
 <p>The Roman Ghetto, occupying just a few city blocks and frequently flooded by the Tiber, was one of the most overcrowded and miserable in all of Italy. Yet within these cramped walls a full community life was maintained for over three centuries. The ghetto was abolished by Napoleon in 1798, restored under the restored papal government, and finally permanently abolished when Italian forces captured Rome in 1870.</p>
@@ -491,32 +508,26 @@
 <p>The community also maintained the Roman Talmud Torah, charitable confraternities, and a unique liturgical tradition — the <em>Minhag Roma</em> — one of the oldest documented Jewish prayer rites in the world, preserving liturgical features that predate the standardization associated with the Sephardic and Ashkenazic traditions.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>The Roman Jewish community produced scholars, physicians, and literary figures across centuries. Immanuel of Rome (c. 1261–c. 1335), a contemporary and acquaintance of Dante, wrote Hebrew poetry of remarkable wit and sensuality, including <em>Mahberot</em> (Notebooks), which includes a "hell and paradise" vision that some scholars see as influenced by the Divine Comedy. Moses of Rome (13th century) translated philosophical and scientific texts from Arabic into Hebrew.</p>
 <p>In the modern era, the community produced the historian Attilio Milano (1907–1969), whose <em>Storia degli Ebrei in Italia</em> remains the standard reference work for Italian Jewish history.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Roman Jewish cuisine is one of the most distinctive in the world: carciofi alla giudia (deep-fried artichokes), filetti di baccalà (fried salt cod), and concia (marinated zucchini) are dishes that originated in the ghetto's resource-constrained kitchen and have become iconic Roman foods. The persistence of this cuisine represents a form of cultural memory encoded in everyday life.</p>
 <p>The <em>Minhag Roma</em> (Roman rite) preserves ancient liturgical texts and melodies not found in other Jewish traditions. Roman Jewish piyyutim (liturgical poems) are among the oldest dated Hebrew literary texts in existence.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>On 16 October 1943, SS troops conducted a massive roundup of Roman Jews, arresting 1,259 people — many of them from families whose roots in the city predated Christianity. 1,023 were deported to Auschwitz; only 16 survived. This <em>razzia</em> (raid) remains a central trauma in Roman Jewish memory.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Rome's Jewish community today numbers approximately 13,000–15,000, the second-largest in Italy after Milan. The Great Synagogue, the Jewish Museum, and the ghetto neighborhood are major heritage sites visited by thousands annually. The community continues to observe the distinctive Roman rite and maintain the culinary traditions of the ghetto. October 16 is commemorated annually as a day of mourning and memory.</p>
       </section>

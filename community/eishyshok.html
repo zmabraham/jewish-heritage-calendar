@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Ei%C5%A1i%C5%A1k%C4%97s%2C_centras.JPG/640px-Ei%C5%A1i%C5%A1k%C4%97s%2C_centras.JPG" alt="Eišiškės (Eishyshok) town center" loading="eager">
+      <figcaption>Eišiškės (Eishyshok) town center — via <a href="https://en.wikipedia.org/wiki/Ei%C5%A1i%C5%A1k%C4%97s" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Eishyshok — Eisiskes in Lithuanian, Ejszyszki in Polish — was a shtetl in what is now southern Lithuania, near the Belarusian border, whose Jewish community stretched back nearly 900 years. On September 25–26, 1941, German Einsatzgruppen and Lithuanian collaborators murdered the entire Jewish community — approximately 3,500 people — in a single two-day killing action. The destruction of Eishyshok in a matter of hours became one of the most documented instances of the Holocaust's total annihilation of individual communities and was memorialized in one of the most powerful installations in Holocaust remembrance: the Tower of Faces at the United States Holocaust Memorial Museum in Washington, D.C.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Ei%C5%A1i%C5%A1k%C4%97s%2C_centras.JPG/500px-Ei%C5%A1i%C5%A1k%C4%97s%2C_centras.JPG" alt="Eišiškės (Eishyshok) town center" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Eišiškės (Eishyshok) town center — via <a href="https://en.wikipedia.org/wiki/Eishyshok" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>According to Jewish tradition, Jews first settled in Eishyshok around the year 1065, making it one of the oldest continuous Jewish communities in the region of Lithuania-Poland. Whether or not the precise date is accurate, the community was certainly ancient by European Jewish standards, and by the early modern period it had developed the full institutional apparatus of a self-governing kehilla: a synagogue, a beit midrash, charitable societies, rabbinical courts, and commercial networks.</p>
 <p>Eishyshok lay within the broader cultural orbit of Lithuanian Jewry and the Vilna rabbinate. Unlike the Hasidic-dominated communities of Poland and Galicia, Lithuanian shtetlach like Eishyshok were shaped more by the tradition of rigorous Talmudic scholarship, the yeshiva world, and the mitnagedim (opponents of Hasidism). The influence of the Vilna Gaon's intellectual legacy — emphasizing precise Torah text analysis and systematic Talmudic methodology — shaped local religious culture.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The near-millennium of Jewish life in Eishyshok encompassed enormous historical changes. The community survived Crusader-era migrations, the catastrophes of 1648–1649, multiple wars between Poland, Russia, and Sweden, and the upheavals of World War I — which brought German occupation, violence, and refugee displacement to the region.</p>
 <p>The shtetl of Eishyshok in the early twentieth century was a community of approximately 3,500 Jews, comprising nearly 90 percent of the town's population. Its economic life centered on commerce between the Jewish townspeople and the Lithuanian and Polish peasant farmers of the surrounding countryside. Jewish merchants, craftsmen, and shopkeepers served as the economic intermediaries of the region. The town's market days, held weekly, were the pulse of local economic life.</p>
@@ -496,30 +513,18 @@
 <p>On September 25–26, 1941, a Einsatzgruppe unit and Lithuanian auxiliary police rounded up the entire Jewish population of Eishyshok — men, women, and children. The Jews were held in the town's synagogues and in the surrounding area for two days without food or water. On September 26, they were marched to pits outside the town and shot. Approximately 3,500 people were murdered in two days. The 900-year community of Eishyshok ceased to exist.</p>
       </section>
 
-      <section id="notable-figures">
-        <h2>Notable Figures</h2>
-        
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
-      </section>
+      
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
-        <h2>Cultural Life</h2>
-        
-      </section>
+      
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Soviet occupation from 1939 to 1941 disrupted but did not destroy the community. Many Eishyshok Jews who had emigrated in previous decades to South Africa, the United States, Argentina, and Palestine survived the Holocaust; their descendants are the primary custodians of the community's memory today.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The Tower of Faces at the United States Holocaust Memorial Museum ensures that Eishyshok's memory reaches hundreds of thousands of visitors annually. Yaffa Eliach's book provides an incomparable record. The Jewish cemetery of Eishyshok has been preserved through the efforts of diaspora descendants. The town (today Eisiskes, Lithuania) has a monument at the mass murder site.</p>
       </section>

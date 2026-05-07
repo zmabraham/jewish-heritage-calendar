@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Toledo_%2837737041515%29.jpg/640px-Toledo_%2837737041515%29.jpg" alt="Toledo historic city" loading="eager">
+      <figcaption>Toledo historic city — via <a href="https://en.wikipedia.org/wiki/Toledo,_Spain" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Toledo stands as one of the most luminous centers of medieval Jewish civilization, a city where three faiths coexisted, clashed, and created an extraordinary cultural legacy. Perched above the Tagus River on an ancient rocky outcrop in central Castile, Toledo served for centuries as the intellectual and spiritual heartland of Sephardic Jewry. Its Jewish community produced translations that transmitted Greek philosophy to the Latin West, nurtured poets and philosophers of the first rank, and maintained institutions of Torah learning that drew scholars from across the Jewish world. The city's prominence in Jewish memory is such that "Toledo" remains synonymous with the golden age of Spanish Jewry.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Toledo_%2837737041515%29.jpg/500px-Toledo_%2837737041515%29.jpg" alt="Toledo historic city" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Toledo historic city — via <a href="https://en.wikipedia.org/wiki/Toledo,_Spain" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jewish settlement in Toledo may reach back to Roman antiquity. Local legend, partly preserved in later chronicles, claims a Jewish presence from the time of the Second Temple's destruction, though the earliest documented evidence dates to late antiquity. The Visigothic councils held in Toledo during the sixth and seventh centuries reveal a substantial and prosperous Jewish community through the legislation enacted to restrict it — Jews were barred from public office, from owning Christian slaves, and ultimately faced forced conversion under King Sisebut in 616 CE.</p>
 <p>The Arab conquest of 711 transformed Toledo's Jews from a persecuted minority into a tolerated community under Islamic rule. The city changed hands repeatedly over the following centuries, and with its conquest by Alfonso VI of Castile in 1085, Toledo entered its long golden age as a Christian city with a thriving Jewish quarter — the Judería — nestled near the royal alcázar.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Under Castilian rule, Toledo became the preeminent Jewish city of Christian Iberia. The Alfonsine translation projects of the thirteenth century, centered on the court of Alfonso X "the Wise," employed Jewish scholars as indispensable intermediaries between Arabic scientific and philosophical texts and Latin learning. Jewish translators in Toledo rendered works of astronomy, astrology, medicine, and mathematics, making Toledo a pivot point in the transmission of classical knowledge to medieval Europe.</p>
 <p>The Toledo Jewish community reached its apex in the thirteenth and early fourteenth centuries. The great Talmudic academy attracted students from across Spain and beyond. Scholars like Rabbi Asher ben Jehiel (the Rosh), who fled Germany following the Rindfleisch massacres and settled in Toledo around 1305, brought Ashkenazic legal rigor to blend with the Sephardic tradition already flourishing there. His son Rabbi Jacob ben Asher composed the Arba'ah Turim in Toledo, the foundational code of Jewish law that would eventually shape the Shulchan Aruch.</p>
@@ -493,34 +510,28 @@
 <p>Toledo's Jewish quarter also contained a famous Talmud Torah, a network of charitable institutions, and the home of Samuel Halevi Abulafia, partially preserved today as the Casa del Greco.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Toledo's connections to Jewish intellectual giants run deep. The family of Moses Maimonides traced its origins to Toledo before migrating south to Córdoba, giving the city an ancestral claim on the greatest Jewish philosopher of the medieval period. Joseph ibn Naghrela, son of Samuel HaNagid, maintained connections to Toledo's scholarly networks.</p>
 <p>Rabbi Asher ben Jehiel (c. 1250–1327) transformed Toledo's religious life after his arrival from Ashkenaz. His rigorous halakhic approach, combined with his administrative skills, made him the dominant authority in Spanish Jewry. His son Jacob ben Asher (c. 1269–1343), who compiled the Arba'ah Turim in Toledo, represents perhaps the city's single greatest contribution to normative Jewish law.</p>
 <p>The poet and philosopher Judah al-Harizi (c. 1165–1225) spent formative years in Toledo, as did numerous other figures of Hebrew letters. Don Abraham ibn Daud, the twelfth-century philosopher and historian, worked in Toledo, composing the Sefer ha-Kabbalah (Book of Tradition), the first systematic history of Jewish oral tradition.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Toledo was a city of books. Jewish scribes produced some of the finest illuminated Hebrew manuscripts of the medieval period. The community sustained a tradition of liturgical poetry, philosophical discourse, and biblical commentary that was simultaneously in conversation with Arabic learning and responsive to the demands of Talmudic scholarship. The coexistence of Arabized Sephardic culture with the increasingly Ashkenazic influence brought by the Rosh and his circle created an unusually rich intellectual environment.</p>
 <p>Astrology, medicine, and natural philosophy were pursued alongside Torah study. Jewish physicians served at the Castilian court, and Jewish merchants connected Toledo to trade networks spanning the Mediterranean.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The catastrophic pogrom of 1391, which swept across Castile and Aragon, devastated Toledo's Jewish community. Mobs attacked the Judería, killed hundreds, and forced mass conversions. Though a Jewish community reconstituted itself in the years that followed, it never recovered its former size or confidence. The converso population — those who converted under duress but often maintained Jewish practice in secret — became a major social and religious problem for the Castilian church and state.</p>
 <p>The final expulsion of 1492 ended Jewish life in Toledo entirely. Thousands of families who had called the city home for generations packed what they could carry and joined the great Sephardic exodus to North Africa, the Ottoman Empire, and Italy.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Toledo's expelled Jews carried their city's memory into diaspora. Sephardic families for generations identified themselves as "of Toledo" in their surnames and communal memories. The liturgical rite of Toledo influenced synagogue practice across the Sephardic world.</p>
 <p>Today, Toledo is one of Spain's most visited historical sites, and its Jewish heritage is prominently commemorated. The Museo Sefardí in El Tránsito and the restored Santa María la Blanca synagogue attract hundreds of thousands of visitors annually. Spain's 2015 law offering citizenship to descendants of expelled Sephardim has renewed interest in Toledo as a place of ancestral origin.</p>

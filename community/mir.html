@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,47 +482,44 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Mir_Castle.jpg/640px-Mir_Castle.jpg" alt="Mir Castle" loading="eager">
+      <figcaption>Mir Castle — via <a href="https://en.wikipedia.org/wiki/Mir_Castle_Complex" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Mir was a small Belarusian town of no great commercial or political significance. Its fame in the Jewish world rested entirely on a single institution: the Mir Yeshiva, which became one of the most celebrated yeshivot in Eastern Europe and is distinguished above all others for its extraordinary story of Holocaust survival. When virtually every other Lithuanian and Polish yeshiva was destroyed with its students, the Mir Yeshiva — through a series of extraordinary circumstances, desperate journeys, and courageous individual acts — escaped first to Vilna, then through Japanese territory to Shanghai, where it survived the war years intact. The Mir Yeshiva is the only yeshiva whose entire student body survived the Holocaust.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/STS089_Mir.jpg/500px-STS089_Mir.jpg" alt="Mir Castle" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Mir Castle — via <a href="https://en.wikipedia.org/wiki/Mir" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Mir was a small town in the Grodno region of the Polish-Lithuanian Commonwealth (later Russian Empire, then Poland). Jews had lived there since at least the seventeenth century, playing the standard roles of merchants, craftsmen, and innkeepers in the local economy. The town had no particular claim to distinction until 1815, when Rabbi Shmuel Tiktiner founded the Mir Yeshiva — initially a modest local institution for Talmud study.</p>
 <p>The yeshiva grew under successive roshei yeshiva (deans). Rabbi Shmuel's son Rabbi Avraham, and then his grandson Rabbi Chaim Leib Tiktiner, developed the institution. The watershed came when Rabbi Nosson Tzvi Finkel (the <em>Alter of Slobodka</em>) sent one of his greatest students, Rabbi Yerucham Levovitz, to Mir as <em>mashgiach</em> (spiritual supervisor). Under Levovitz, the Mussar movement's influence transformed Mir into a major institution with hundreds of students from across Eastern Europe and even America.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>By the 1920s and 1930s, Mir Yeshiva drew students from Poland, Lithuania, Hungary, Germany, and even the United States — a truly international institution. Students came for years-long programs of intensive Talmud study combined with the Mussar emphasis on ethical and spiritual development. The rosh yeshiva Rabbi Eliezer Yehudah Finkel (son of the Alter of Slobodka) and the mashgiach Rabbi Yerucham Levovitz created a culture of intense introspection and Torah scholarship. At its prewar peak, the yeshiva had approximately 400–500 students.</p>
 <p>The town of Mir itself was a small, poor place — a Pale of Settlement <em>shtetl</em> with a couple thousand Jewish residents living modest lives as merchants and craftsmen. Its identity was entirely wrapped up in the yeshiva. Students boarded with local families, who subsisted partly on the income of hosting. The town and the yeshiva were inseparable.</p>
 <p>The Mir Yeshiva's study hall was the institutional heart of the town. The yeshiva maintained dormitories, a dining hall, and administrative buildings. The broader town had a synagogue, prayer houses, elementary schools, and the standard communal institutions of a small Belarusian Jewish community. The community was poor by comparison with larger Jewish centers but rich in human capital — its sons were dispersed across the yeshiva world as scholars and rabbis.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p><strong>Rabbi Eliezer Yehudah Finkel</strong> (1879–1965) — rosh yeshiva who led the yeshiva through its escape and reestablishment in Jerusalem. <strong>Rabbi Yerucham Levovitz</strong> (1873–1936) — mashgiach whose ethical teachings shaped generations of students. <strong>Rabbi Chaim Shmulevitz</strong> (1902–1979) — rosh yeshiva in the postwar years in Jerusalem, whose Sichos Mussar (ethical discourses) are widely studied. <strong>Chiune Sugihara</strong> — the Japanese consul in Kaunas who issued thousands of transit visas to Jewish refugees including Mir Yeshiva students, enabling their escape; though not Jewish, he is celebrated as a Righteous Among the Nations. <strong>Jan Zwartendijk</strong> — the Dutch acting consul in Kaunas who stamped passports with the notation that Curaçao required no entry visa, providing the pretext for Sugihara's transit visas.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Mir's Jewish culture was almost entirely shaped by yeshiva life. The town had no great secular cultural institutions; it was not a Haskalah center, not a political hotbed, not a commercial hub. Its culture was the culture of the study hall — the cadences of Talmud study, the musar <em>shmuessn</em> (ethical talks), the conversations between students about ideas and texts. This singular focus gave the Mir community a coherence and intensity that, when the crisis of the Holocaust came, enabled the communal solidarity needed for collective survival.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>When Germany invaded Poland in September 1939, Mir — located in eastern Poland — was occupied by the Soviet Union under the Molotov-Ribbentrop Pact. The yeshiva was allowed to continue initially, though under difficult circumstances. When the Soviets occupied Lithuania in 1940, the yeshiva's leaders saw an opportunity: Soviet Lithuania still had access to foreign consulates. Rabbi Finkel moved the yeshiva to Vilna. There, with Soviet occupation tightening, Zeilig Kalmanowitz and others worked feverishly to secure visas.</p>
 <p>The miraculous escape unfolded through the diplomatic courage of Jan Zwartendijk (Dutch consul in Kaunas) and Chiune Sugihara (Japanese consul). Zwartendijk stamped passports claiming Curaçao required no entry visa; Sugihara, acting against Japanese Foreign Ministry orders, issued over 2,000 transit visas through Japan to holders of such stamps. The Mir Yeshiva students — carrying these visas and pooling resources — traveled across Siberia on the Trans-Siberian Railway to Kobe, Japan, and then to Shanghai, which as an international city did not require entry visas.</p>
@@ -516,7 +527,7 @@
 <p>After the war, most Mir students emigrated to the United States or Palestine. Rabbi Finkel reestablished the Mir Yeshiva in Jerusalem, where it became one of the largest yeshivot in the world. A separate Mir Yeshiva was established in Brooklyn, New York.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The Mir Yeshiva's survival is celebrated in the Jewish world as a miracle of the Holocaust era. Today the Mir Yeshiva in Jerusalem enrolls approximately 8,000 students — making it the largest yeshiva in the world. The Mir Yeshiva in Brooklyn is one of America's major Torah institutions. The story of the Shanghai escape has been the subject of books, films, and memorials to Chiune Sugihara, who is honored in Japan and Israel as a Righteous Among the Nations.</p>
       </section>

@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Ioannina_-_Lake_Pamvotida_-_060620.jpg/640px-Ioannina_-_Lake_Pamvotida_-_060620.jpg" alt="Ioannina and Lake Pamvotida" loading="eager">
+      <figcaption>Ioannina and Lake Pamvotida — via <a href="https://en.wikipedia.org/wiki/Ioannina" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Ioannina (Janina, Yannina), the capital of Epirus in northwestern Greece, was home to one of the oldest continuously inhabited Jewish communities in Greece — a Romaniote community whose roots stretched back to antiquity. Unlike most Greek Jewish communities, which were transformed or replaced by Sephardic immigrants after 1492, Ioannina's Jews maintained their ancient Romaniote identity, their Greek language, and their distinctive liturgical tradition throughout the Ottoman period and into the twentieth century. This extraordinary continuity ended in March 1944 when the German occupiers deported nearly 2,000 Jews to Auschwitz, ending a community of perhaps two millennia.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Ioannina_-_Lake_Pamvotida_-_060620.jpg/640px-Ioannina_-_Lake_Pamvotida_-_060620.jpg" alt="Ioannina and Lake Pamvotida" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Ioannina and Lake Pamvotida — via <a href="https://en.wikipedia.org/wiki/Ioannina" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>The Romaniote Jews — Jews who had lived in the Greek-speaking world since antiquity — represent the oldest stratum of Jewish settlement in Europe. Their presence in Epirus may date to the first centuries CE, and traditions associating the community with the destruction of the Second Temple (70 CE) or earlier periods are preserved in local memory. What is historically documented is a continuous Jewish presence in Ioannina from at least the Byzantine period.</p>
 <p>Under Ottoman rule, established in Epirus in 1430 when Sultan Murad II captured Ioannina, the Jewish community was recognized and given the standard Ottoman dhimmi status. Unlike many other Greek communities that were substantially reshaped by the influx of Sephardic refugees after 1492, Ioannina's community — geographically somewhat isolated in the mountains of Epirus — absorbed only a small Sephardic element and remained overwhelmingly Romaniote in character.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The Romaniote tradition of Ioannina is one of the most precious survivals in the Jewish liturgical world. The community's prayer rite — the Minhag Romania or Minhag Ioannina — differs significantly from both Sephardic and Ashkenazic practice. It preserves ancient Greek-Jewish liturgical elements, including poetic insertions (piyyutim) in Greek transliteration and distinctive melodic traditions that have been traced to Byzantine musical forms.</p>
 <p>The community spoke Judeo-Greek (a dialect of Greek with some Hebrew and Turkish loanwords) in daily life, not Ladino. Their Torah reading tradition followed the triennial cycle (reading the Torah over three years rather than one), a practice abandoned by most Jewish communities but preserved in Ioannina into the modern period. Their ketubbot (marriage documents) followed unique Romaniote formulas. These distinctions marked the Ioannina Jews as a community with an unbroken connection to the ancient Jewish world of the eastern Mediterranean.</p>
@@ -495,33 +512,24 @@
 <p>The community numbered approximately 1,950 persons at the outbreak of the Second World War.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p><strong>Rabbi Samuel Kalomiti (17th century)</strong> — A leading Talmudic authority of the Ioannina community whose responsa addressed questions arising from the community's distinctive position as a Romaniote enclave in a predominantly Sephardic Ottoman Jewish world.</p>
 <p><strong>Moses Halevi (19th century)</strong> — A community leader who navigated the transition from Ottoman to Greek rule (Ioannina became part of Greece in 1913) and worked to preserve the community's legal status in the new national framework.</p>
 <p><strong>Yitzhak Kabeli (1900–1978)</strong> — A survivor of the community and scholar who documented Romaniote literature and history, ensuring that knowledge of the Ioannina tradition was preserved in academic literature.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
-        <h2>Cultural Life</h2>
-        
-      </section>
+      
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The German occupation of Greece (1941–1944) initially affected Ioannina less severely than Salonika, which was under German military administration. Ioannina was in the Italian occupation zone, and the Italians — whatever their other failures — did not deport Jews to death camps. When Italy surrendered in September 1943 and German forces took over the Italian zone, the Ioannina community faced immediate danger.</p>
 <p>On March 25, 1944 — Greek Independence Day — the Germans arrested the entire Jewish population of Ioannina. Approximately 1,860 Jews were taken, transported to Athens, and then deported by train to Auschwitz-Birkenau. Fewer than 200 survived the war. The community that had existed continuously for perhaps two millennia was destroyed in a single day.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The Jewish Museum of Ioannina, housed in the former synagogue, documents the community's history and the Holocaust with exceptional care. A small number of Jews live in Ioannina today — mostly descendants of survivors and some recent immigrants. The museum has become a center for Romaniote studies and attracts visitors from the global diaspora of Ioannina families, who settled primarily in New York City (where the Kehila Kedosha Janina Synagogue on Broome Street on the Lower East Side continues to hold services in the Romaniote rite).</p>
 <p>The Romaniote tradition is one of the most endangered Jewish liturgical traditions in the world. Scholarly efforts to document and preserve it have intensified in recent decades.</p>

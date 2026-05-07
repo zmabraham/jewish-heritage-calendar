@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,53 +482,50 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Alcazaba_1%2C_Almeria%2C_Spain.jpg/640px-Alcazaba_1%2C_Almeria%2C_Spain.jpg" alt="The Alcazaba fortress of Almería" loading="eager">
+      <figcaption>The Alcazaba fortress of Almería — via <a href="https://en.wikipedia.org/wiki/Almer%C3%ADa" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Almería, the Mediterranean port city at the southeastern corner of the Iberian Peninsula, was one of the great commercial emporia of al-Andalus — a city whose harbor connected the silk and silver of the Muslim west to the broader Mediterranean trading world. Its Jewish community flourished in this commercial environment, participating in the maritime trade that made Almería prosperous, until the Almoravid and later Almohad invasions disrupted Andalusian Jewish life. The city's subsequent Christian history included a smaller Jewish community under Castilian rule.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Alcazaba_1%2C_Almeria%2C_Spain.jpg/640px-Alcazaba_1%2C_Almeria%2C_Spain.jpg" alt="The Alcazaba fortress of Almería" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>The Alcazaba fortress of Almería — via <a href="https://en.wikipedia.org/wiki/Almer%C3%ADa" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews settled in al-Mariyya (Arabic Almería) from the early period of Islamic rule, attracted by the city's commercial importance. The city became a major export center for Andalusian silk, and Jewish merchants were among the most active participants in the trade networks connecting Almería to North Africa, Egypt, and the Levant.</p>
 <p>The Cairo Genizah — the remarkable cache of medieval Jewish documents discovered in Cairo in the nineteenth century — contains numerous references to Almería and its merchants, providing unusually detailed documentation of Jewish commercial activity in the city during the tenth through twelfth centuries.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Almería's golden age as a Jewish center coincided with the city's commercial peak under the Zirid and independent taifa rulers of the eleventh century. The Jewish merchant community was wealthy, cosmopolitan, and well-connected to trade networks spanning the Mediterranean.</p>
 <p>Documentary evidence from the Cairo Genizah shows Almerian Jewish merchants trading in silk, flax, dyes, spices, and precious metals, operating partnerships with coreligionists in Egypt, Tunisia, Sicily, and elsewhere. These merchants were part of the extraordinary Genizah world — a pre-modern international trading network in which Jewish merchants from different ends of the Mediterranean maintained business relationships, shared market information, and enforced commercial agreements through the bonds of Jewish communal solidarity.</p>
 <p>Almería's Jewish quarter occupied a defined area of the city. Under Muslim rule the community maintained its own synagogues, courts, and institutions. After the Castilian reconquest of 1489 — one of the last major conquests before 1492 — the brief three-year period of Jewish life under Christian rule was too short for new institutions to develop before the Expulsion.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Almería's merchant community, while wealthy and commercially sophisticated, did not produce great scholars or poets. The community's leaders were merchants, not intellectuals in the mold of Córdoba or Granada. However, their commercial correspondence — preserved in the Cairo Genizah — reveals a sophisticated commercial culture with its own forms of expertise and authority.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Almería's Jewish culture was distinctively mercantile and maritime: a culture of trade fairs, commercial correspondence, and harbor commerce. The city's position as a departure point for North Africa made it a gateway between Iberia and the Maghreb, and its Jewish community reflected this orientation.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The Almoravid conquest disrupted Almería's Jewish community in the late eleventh century, and the Almohad conquest of 1147 effectively ended Jewish life in the city — as it did throughout al-Andalus. Many of Almería's Jewish merchants migrated to North Africa or to the Christian kingdoms.</p>
 <p>Almería was finally reconquered by the Catholic Monarchs in 1489, just three years before the general Expulsion. The tiny Jewish community present at reconquest had almost no time to develop before being expelled in 1492.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The Cairo Genizah documents make Almería unusually visible in the historical record of medieval Jewish commerce. Scholars like S.D. Goitein have used Genizah materials to reconstruct in remarkable detail the commercial activities of Almerían Jewish merchants, making the city an important case study in medieval Jewish economic history.</p>
       </section>

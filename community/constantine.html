@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,23 +482,26 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Constantine_1.jpg/640px-Constantine_1.jpg" alt="Constantine, Algeria" loading="eager">
+      <figcaption>Constantine, Algeria — via <a href="https://en.wikipedia.org/wiki/Constantine,_Algeria" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Constantine, perched dramatically on a high plateau in northeastern Algeria with gorges carved by the Rhumel River on three sides, is one of the oldest continuously inhabited cities in North Africa. Its Jewish community, which traces its roots to pre-Islamic antiquity — possibly to the Punic or Roman era — represents one of the most ancient strands of North African Jewish settlement. Known in antiquity as Cirta and later as Constantina (renamed for the Emperor Constantine in 313 CE), the city was a significant Jewish center under Roman, Byzantine, and Islamic rule before becoming a major Algerian community under Ottoman and French governance.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Constantine_1.jpg/640px-Constantine_1.jpg" alt="Constantine, Algeria" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Constantine, Algeria — via <a href="https://en.wikipedia.org/wiki/Constantine,_Algeria" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Constantine's Jewish history begins in Roman North Africa. Inscriptions and literary references confirm Jewish presence in Cirta by the 2nd–3rd centuries CE. The city served as the capital of the Numidia province and was an important commercial and administrative center; Jewish merchants and artisans participated in its economy from the early Roman period.</p>
 <p>The Vandal and Byzantine periods brought fluctuating conditions for Jews. The Arab conquest of North Africa in the 7th century CE brought Constantine under Islamic rule, and the Jewish community reorganized under the dhimmi system. Medieval Arab geographers document the presence of Jews in Constantine, and the community maintained connections with the Kairouan academy before that center's destruction.</p>
 <p>Following the 1492 Spanish expulsion and 1497 Portuguese forced conversion, Constantine received some Iberian Jewish refugees, adding a Sephardic element to the established indigenous community. The Ottoman conquest of eastern Algeria in the 16th century integrated Constantine into the Ottoman commercial networks in which Jews often played important mediating roles.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The Ottoman period (16th–19th centuries) and the early French colonial era represent Constantine's Jewish community at its most demographically substantial. The community was estimated at several thousand individuals by the early 19th century — significant for a pre-modern North African city. Constantine's Jews were concentrated in the goldsmith and textile trades, serving as commercial intermediaries between the city's Muslim ruling class and European traders.</p>
 <p>The French conquest of Constantine in 1837 (after a dramatic assault on the plateau fortifications) incorporated the city into French Algeria. As in Algiers and Oran, the Crémieux Decree of 1870 made Constantine's Jews French citizens, accelerating their entry into French educational and professional institutions.</p>
@@ -493,33 +510,27 @@
 <p>Constantine's main synagogue, constructed in the French colonial period in a central location, was one of the largest in Algeria. The community maintained the full institutional complement: Consistoire, Alliance Israélite schools, mutual aid societies, and Zionist youth organizations. A Jewish press operated briefly in Constantine during the French period.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Rabbi Shimon Sitruk (a name associated with the broader Algerian rabbinate) and other Constantine scholars contributed to the regional halakhic tradition, though Constantine's rabbis are less individually celebrated than those of Algiers or Tlemcen.</p>
 <p>In the 20th century, Constantine produced figures who became prominent in French Jewish intellectual and communal life following emigration.</p>
 <p>Saül Djian (late 19th–early 20th century) was among the community notables who navigated the complex politics of the French Protectorate era.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Constantine's Jewish community participated in the Algerian Jewish cultural synthesis — French language and education on the surface, with Judeo-Arabic, Judeo-Berber, and traditional Jewish religious practice underneath. The community preserved liturgical traditions of both Sephardic (post-1492) and indigenous North African character, and its piyyutim reflected the complex layering of its heritage.</p>
 <p>Constantine's position in eastern Algeria, closer to Tunisia than to Algiers, gave it cultural connections to Tunisian Jewry as well as to the broader Algerian community.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The Constantine pogrom of 1934, the Vichy period, and the Algerian War of Independence together prepared the community for its final exodus. In 1962, Constantine's Jews — along with virtually all Algerian Jews — left for France within months of independence. The community settled primarily in Paris and in the south of France, where it established synagogues, cultural organizations, and strong communal networks.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The Constantine synagogue was converted to a mosque after 1962. Jewish cemeteries remain, maintained intermittently. Constantine Jewish organizations in France and Israel preserve community memory and organize events commemorating the community's history. The Constantine pogrom of 1934 is memorialized in French Jewish historical consciousness.</p>
       </section>

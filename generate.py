@@ -260,6 +260,8 @@ def build_images_html(images: list, community_name: str) -> str:
     Each item may be:
       - a plain string URL
       - a dict with keys: url, caption, wiki_url (all optional)
+
+    Returns a full <div class="community-images"> block, or empty string if no images.
     """
     if not images:
         return ""
@@ -275,18 +277,38 @@ def build_images_html(images: list, community_name: str) -> str:
             wiki_url = img.get("wiki_url", "")
         if not url:
             continue
-        via = ""
         if wiki_url:
             via = f' — via <a href="{wiki_url}" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons'
         else:
             via = " — via Wikipedia / Wikimedia Commons"
         parts.append(
-            f'        <figure class="community-image">\n'
-            f'          <img src="{url}" alt="{caption}" loading="lazy" onerror="this.parentElement.style.display=\'none\'">\n'
-            f'          <figcaption>{caption}{via}</figcaption>\n'
-            f'        </figure>'
+            f'    <figure class="community-image">\n'
+            f'      <img src="{url}" alt="{caption}" loading="eager">\n'
+            f'      <figcaption>{caption}{via}</figcaption>\n'
+            f'    </figure>'
         )
-    return "\n".join(parts)
+    if not parts:
+        return ""
+    return '<div class="community-images">\n' + "\n".join(parts) + '\n</div>'
+
+
+def build_section(section_id: str, heading: str, content: str, extra_html: str = "") -> str:
+    """Build a <section> block only if content or extra_html is non-empty."""
+    has_content = bool(content and content.strip())
+    has_extra = bool(extra_html and extra_html.strip())
+    if not has_content and not has_extra:
+        return ""
+    inner = ""
+    if has_content:
+        inner += f"\n        {content}"
+    if has_extra:
+        inner += f"\n        {extra_html}"
+    return (
+        f'      <section id="{section_id}">\n'
+        f'        <h2>{heading}</h2>'
+        f'{inner}\n'
+        f'      </section>'
+    )
 
 
 # ─── Figures HTML ─────────────────────────────────────────────────────────────
@@ -601,6 +623,21 @@ def generate_community_page(community: dict, regions: list, template_html: str,
             return "Israel"
         return raw
 
+    # Build optional section HTML — only emitted when content exists
+    figures_section_extra = ""
+    if figures_intro or figures_html:
+        figures_section_extra = (
+            f"{figures_intro}\n"
+            f'        <div class="figures-grid" id="figures-grid">\n'
+            f'          {figures_html}\n'
+            f'        </div>'
+        )
+    notable_section = build_section(
+        "notable-figures", "Notable Figures",
+        get_section("notable-figures"),
+        figures_section_extra,
+    )
+
     # Build replacements dict
     replacements = {
         "COMMUNITY_NAME": community.get("name", "Heritage Community"),
@@ -625,14 +662,31 @@ def generate_community_page(community: dict, regions: list, template_html: str,
         "NEXT_COMMUNITY_ID": next_community.get("id", ""),
         "NEXT_COMMUNITY_NAME": next_community.get("name", "Next"),
         "OVERVIEW_CONTENT": get_section("overview"),
-        "ORIGINS_CONTENT": get_section("historical-origins"),
-        "GOLDEN_AGE_CONTENT": get_section("golden-age"),
-        "FIGURES_INTRO": figures_intro or get_section("notable-figures"),
-        "FIGURES_HTML": figures_html,
-        "INSTITUTIONS_CONTENT": get_section("institutions-sacred-spaces"),
-        "CULTURAL_CONTENT": get_section("cultural-life"),
-        "DECLINE_CONTENT": get_section("decline-and-transformation"),
-        "LEGACY_CONTENT": get_section("legacy-and-diaspora"),
+        "ORIGINS_SECTION": build_section(
+            "historical-origins", "Historical Origins",
+            get_section("historical-origins"),
+        ),
+        "GOLDEN_AGE_SECTION": build_section(
+            "golden-age", "Golden Age",
+            get_section("golden-age"),
+        ),
+        "NOTABLE_FIGURES_SECTION": notable_section,
+        "INSTITUTIONS_SECTION": build_section(
+            "institutions", "Institutions &amp; Sacred Spaces",
+            get_section("institutions-sacred-spaces"),
+        ),
+        "CULTURAL_SECTION": build_section(
+            "cultural-life", "Cultural Life",
+            get_section("cultural-life"),
+        ),
+        "DECLINE_SECTION": build_section(
+            "decline", "Decline &amp; Transformation",
+            get_section("decline-and-transformation"),
+        ),
+        "LEGACY_SECTION": build_section(
+            "legacy", "Legacy &amp; Diaspora",
+            get_section("legacy-and-diaspora"),
+        ),
         "IMAGES_HTML": build_images_html(
             meta.get("images", []),
             community.get("name", "Heritage Community"),

@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Rhodes_Kastello.jpg/640px-Rhodes_Kastello.jpg" alt="Rhodes Old Town" loading="eager">
+      <figcaption>Rhodes Old Town — via <a href="https://en.wikipedia.org/wiki/Rhodes" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>The island of Rhodes, commanding the sea lanes between the Aegean and the eastern Mediterranean, was home to one of the most distinctive Jewish communities of the Ottoman world. The Jews of Rhodes — known as <em>Rodeslis</em> — developed a culture that blended ancient Romaniote (Byzantine Greek Jewish) roots with the Ladino language and customs brought by Sephardic refugees after 1492, producing a uniquely hybrid community centered in the ancient walled city's Jewish quarter, La Judería. This community survived centuries of Ottoman rule, a period of Italian colonialism, and then met catastrophic destruction in July 1944, when the Nazis deported virtually the entire community to Auschwitz.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Rhodes_sentinel2_%28cropped%29.jpg/500px-Rhodes_sentinel2_%28cropped%29.jpg" alt="Rhodes Old Town" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Rhodes Old Town — via <a href="https://en.wikipedia.org/wiki/Rhodes" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jewish presence on Rhodes is attested from classical antiquity. A Jewish community existed on the island during the Hellenistic period, and the Talmud references contacts between Palestinian Jews and the Jews of Rhodes. During the Byzantine period, a Romaniote community maintained continuous residence, speaking Greek and following the ancient Greek-Jewish liturgical rite.</p>
 <p>The Knights Hospitaller (Knights of Saint John), who ruled Rhodes from 1309 to 1522, tolerated the Jewish community with characteristic medieval ambivalence: Jews were confined to a specific quarter, taxed heavily, and subjected to periodic restrictions, but were not expelled. The Jewish quarter — La Judería — occupied a corner of the medieval walled city, adjacent to the harbor, and its dense streets and whitewashed houses became the architectural matrix of Rhodian Jewish life.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The Ottoman conquest of Rhodes in 1522 under Suleiman the Magnificent transformed the community. The Ottomans were generally welcoming to Jews, and the island received Sephardic refugees from Spain and Portugal who arrived in the early sixteenth century. The newcomers' Ladino language (Judeo-Spanish), their customs, and their liturgical tradition gradually supplanted the older Romaniote rite, though traces of the Romaniote heritage persisted in local customs and in the collective memory of the community.</p>
 <p>Under Ottoman rule, the Jewish community of Rhodes flourished. The island occupied a strategic commercial position, and Rhodian Jews — like their counterparts in Salonica, Istanbul, and Izmir — engaged in maritime trade, commerce with the Ottoman interior, and craft production. The community spoke Ladino, maintained connections with other Sephardic communities throughout the Ottoman Empire, and developed a reputation for its textiles and merchants.</p>
@@ -495,33 +512,24 @@
 <p>Italy captured Rhodes in 1912, displacing Ottoman rule. The Italian period initially brought modernization and relative tolerance, but after Mussolini's racial laws of 1938, the Jews of Rhodes faced intensifying persecution. Their Italian citizenship was revoked, Jewish children were expelled from public schools, and Jewish professionals were barred from many occupations. The community's population had already declined through emigration — many Rhodian Jews had settled in the Americas, Africa, and elsewhere in the early twentieth century — and stood at approximately 1,700 when the Germans took control in September 1943.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p><strong>Rabbi Eliyahu Covo (18th century)</strong> — A leading rabbinic authority of Ottoman-era Rhodes whose responsa addressed questions of commercial law and maritime commerce.</p>
 <p><strong>Laura Varon (1900–1993)</strong> — A survivor of the 1944 deportation who became one of the most important memoirists of Rhodian Jewish life, preserving in English the texture of La Judería before its destruction.</p>
 <p><strong>Leon Sciaky (1893–1958)</strong> — Born in nearby Salonica but from a Rhodian-connected family, his memoir <em>Farewell to Salonica</em> (1946) preserves the Sephardic world of the Ottoman Balkans.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
-        <h2>Cultural Life</h2>
-        
-      </section>
+      
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>In July 1944, with the war clearly turning against Germany and Rhodes strategically irrelevant, the German command on the island organized the deportation of the Jewish community in an act of pure ideological murder. On July 23, 1944, the Jews of Rhodes (and the smaller community of Kos) were ordered to assemble. After days of detention in brutal summer heat without adequate food or water, they were loaded onto boats and transferred to the Greek mainland, then into cattle cars.</p>
 <p>After an agonizing journey of several weeks, approximately 1,673 Jews arrived at Auschwitz-Birkenau on August 16, 1944. The vast majority were gassed immediately upon arrival. Fewer than 200 survivors returned after liberation. It was one of the last large deportations of the Holocaust, carried out at enormous logistical cost when Germany's military situation was already desperate.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>La Judería in Rhodes Town is today a quiet, tourist-frequented neighborhood. The Kahal Shalom Synagogue is open to visitors and draws thousands annually, many of them descendants of Rhodian Jews who settled in the United States (particularly Seattle, Los Angeles, and New York), South America, and Africa. The Rhodes Jewish Museum, located in the former Jewish quarter, documents the community's history and the Holocaust. Annual memorial ceremonies are held in Rhodes for the victims of the 1944 deportation.</p>
       </section>

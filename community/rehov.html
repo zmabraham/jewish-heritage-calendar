@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Le_Havre_montage.jpg/640px-Le_Havre_montage.jpg" alt="Le Havre" loading="eager">
+      <figcaption>Le Havre — via <a href="https://en.wikipedia.org/wiki/Le_Havre" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>The ancient Jewish town of Rehov, located in the Beth Shean Valley south of the city of Beth Shean, is celebrated for one singular, extraordinary artifact: a large floor mosaic in the synagogue containing what is likely the longest inscription yet discovered in any ancient synagogue in the Land of Israel. This inscription — approximately 365 lines of text covering an area of seven square meters — is a halachic (legal) document embedded directly into the synagogue floor, recording detailed rulings about tithing obligations and the application of the biblical Sabbatical year (shmitta) to specific cities and agricultural products in the region. No other ancient synagogue floor inscription comes close to matching it for legal specificity and historical value.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Rehov_039a.jpg/500px-Rehov_039a.jpg" alt="Le Havre" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Le Havre — via <a href="https://en.wikipedia.org/wiki/Rehov" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Rehov (also spelled Rehob or Reḥov) is identified with Tel Rehov, a major Bronze and Iron Age site in the Jordan Valley, and with the nearby late antique settlement at Khirbet Rehov. The city appears in the biblical conquest narratives as a Canaanite city not fully conquered by the tribe of Asher (Judges 1:31). Egyptian New Kingdom sources (the Thutmosis III topographical lists) mention Rehob as a significant Canaanite town, and extensive excavations at Tel Rehov since 1997 by Amihai Mazar have revealed remarkable continuity of occupation.</p>
 <p>By the Byzantine period, the settlement had moved to a nearby location, and it was here that the Jewish community flourished and built its synagogue. The Beth Shean Valley in late antiquity was one of the most densely populated and agriculturally productive regions of Palestine, supporting multiple Jewish, Samaritan, and Christian communities in close proximity.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The synagogue inscription is dated on paleographic and archaeological grounds to approximately the 5th–6th century CE, placing Rehov's peak squarely in the Byzantine period. The legal text embedded in the floor draws on Jerusalem Talmud sources and represents an effort to make halachic rulings accessible and authoritative to ordinary community members.</p>
 <p>The Beth Shean Valley's agricultural richness — dates, figs, grain, and other crops — made questions of tithes and shmitta (the Sabbatical year, when the land must lie fallow and agricultural work is prohibited) immediately practical. The inscription lists specific cities and regions with rulings about which were considered "inside" or "outside" the halachic borders of the Land of Israel for purposes of applying shmitta laws — a question of enormous practical importance for farming communities.</p>
@@ -497,32 +514,26 @@
 <p>The text preserves material closely paralleled in the Jerusalem Talmud (tractates Demai and Sheviit) and in the later halachic work known as the "baraita de-tehume eretz yisrael" (the baraita on the borders of the Land of Israel), a text whose antiquity the Rehov inscription has helped establish.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>The rabbis whose opinions are recorded in the Rehov inscription are primarily tannaim and amoraim known from the Jerusalem Talmud, including references to rulings attributed to the academy at Caesarea. Rabbi Shimon bar Abba, Rabbi Yochanan, and other amoraic figures whose discussions of produce tithes and Sabbatical year laws are paralleled in the Jerusalem Talmud appear in the inscription. The local community leaders who commissioned this extraordinary legal floor mosaic are unknown by name, but their decision to embed a halachic text in their synagogue floor reflects a community that valued legal literacy and the public display of scholarly authority.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>The Rehov inscription is a document of cultural and legal history on multiple levels. Its existence demonstrates that agricultural legal discussions in the Talmud were not purely theoretical but had immediate practical application in communities like Rehov, where farmers needed clear guidance about which years required Sabbatical observance and which crops required tithing.</p>
 <p>The decision to inscribe legal rulings in a synagogue floor — making halachah literally something the community walked upon and encountered every time they entered to pray — reflects a conception of sacred space as a space of legal knowledge, not merely prayer or biblical narrative. This stands in contrast to the narrative mosaics (Akedah, zodiac) found at Beth Alpha and Hammat Tiberias.</p>
 <p>The inscription also preserves unique geographical data: the list of towns and cities provides information about settlement patterns in Byzantine Palestine that supplements archaeological surveys, naming communities that might otherwise be unknown.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The Rehov community, like other Byzantine-era Jewish villages in the Beth Shean Valley, declined following the Arab conquest of the 7th century CE. The valley's agricultural communities underwent significant demographic and religious change in the early Islamic period. The synagogue fell out of use and was eventually buried, preserving the inscription.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The Rehov inscription was published in detail by Joseph Sussmann, whose meticulous philological analysis established its importance for both halakhic history and the textual study of the Jerusalem Talmud. The inscription is now housed at the Israel Museum in Jerusalem, though a replica mosaic has been installed at the site. Tel Rehov National Park preserves the Bronze and Iron Age tell, and the synagogue site is accessible to visitors.</p>
 <p>The inscription's detailed mapping of the halachic geography of ancient Palestine has proved invaluable for scholars studying the Jerusalem Talmud and the application of biblical agricultural laws in late antiquity.</p>

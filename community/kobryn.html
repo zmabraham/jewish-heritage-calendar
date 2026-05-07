@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Kobryn_-_Targowica.jpg/640px-Kobryn_-_Targowica.jpg" alt="Kobryn market square" loading="eager">
+      <figcaption>Kobryn market square — via <a href="https://en.wikipedia.org/wiki/Kobryn" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Kobrin — Kobryń in Polish, Kobryn in Belarusian — was a Jewish community in the Polesia region of western Belarus (historically part of the Polish-Lithuanian Commonwealth and later divided between Russian-controlled and Austrian regions). The town is known in Hasidic history as the seat of Rabbi Moshe of Kobrin (1784–1858), the founder of the Kobriner dynasty, whose approach to Hasidism — emphasizing simple, wholehearted prayer and the accessibility of divine service to every Jew — left a lasting impression on the Belarusian Hasidic tradition.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Kobryn_street_Suvorovskaya.JPG/500px-Kobryn_street_Suvorovskaya.JPG" alt="Kobryn market square" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Kobryn market square — via <a href="https://en.wikipedia.org/wiki/Kobry%C5%84_" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Kobrin sits in the flat, marshy landscape of Polesia, a region of forests and rivers straddling present-day Belarus, Ukraine, and Poland. Jews settled here in the seventeenth century, attracted by the region's timber trade, river commerce, and the protection of local nobility. The community grew slowly and steadily, maintaining ties to both the Lithuanian rabbinic tradition (through proximity to Grodno and Brest-Litovsk) and the emerging Hasidic movement spreading from Ukraine and Volhynia.</p>
 <p>Under Russian rule following the Partitions, Kobrin fell within the Pale of Settlement. The community experienced the rhythms typical of Pale Jewry: periodic discrimination, military conscription, economic restriction, and the social pressure of Russification, balanced against the warmth of communal life, Hasidic enthusiasm, and the solidarity of a closely knit Jewish society.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Rabbi Moshe of Kobrin (1784–1858) was a disciple of Rabbi Mordechai of Lechovitch and, after the latter's death, of Rabbi Noach of Lechovitch — two foundational figures of the Belarusian Hasidic tradition that emphasized simple, heartfelt prayer over intellectual sophistication. Rabbi Moshe brought this tradition to Kobrin, where he served as rebbe for several decades and gathered a devoted following.</p>
 <p>The Kobriner approach to Hasidic service was characterized by radical simplicity. Rabbi Moshe taught that true prayer required complete self-nullification before God — that the worshiper must lose himself entirely in divine presence — but that this mystical achievement was available not only to scholars and mystics but to any sincere and simple Jew who prayed with a pure heart. His teachings were deliberately accessible, using plain language and homely metaphors to convey profound spiritual insights.</p>
@@ -493,31 +510,19 @@
 <p>German forces occupied Kobrin in late June 1941. The Jewish community of approximately 6,000 was subjected to immediate persecution. A Judenrat was established under German command. In June 1942, the Germans and their collaborators conducted the first mass Aktion, murdering approximately 2,000 Jews in pits outside the town. A second Aktion in October 1942 killed the remainder of the community. Virtually no Kobrin Jews survived the Holocaust.</p>
       </section>
 
-      <section id="notable-figures">
-        <h2>Notable Figures</h2>
-        
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
-      </section>
+      
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>The Kobriner tradition's emphasis on prayer as the central act of Jewish religious life — available and precious to every Jew, not only to scholars — gave it a democratic spiritual character. This democratization of mystical experience was among the original contributions of the Baal Shem Tov and his followers, and the Kobriner interpretation of it was among the most consistently accessible in the Hasidic world.</p>
 <p>Kobrin's Jews also participated in the commercial and cultural life of the Polesian region. Timber and river trade, grain commerce, and local crafts occupied the Jewish economic world. The relatively sparse and remote character of Polesia meant that Kobrin's Jews were more insular than the Jews of larger urban centers, maintaining traditional patterns of life well into the twentieth century.</p>
       </section>
 
-      <section id="decline">
-        <h2>Decline &amp; Transformation</h2>
-        
-      </section>
+      
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The Kobriner dynasty is perpetuated by small groups of followers in Israel who maintain the rebbe's grave as a pilgrimage site and study his collected teachings. The Jewish cemetery of Kobrin has been partially preserved. A memorial marks the mass murder site. The Kobrin Yizkor book, compiled by survivors in Israel, preserves the community's memory.</p>
       </section>

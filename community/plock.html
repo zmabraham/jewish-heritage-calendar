@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,23 +482,26 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/P%C5%82ock_-_Tumskie_Wzg%C3%B3rze.jpg/640px-P%C5%82ock_-_Tumskie_Wzg%C3%B3rze.jpg" alt="PłOCK Tumskie Hill" loading="eager">
+      <figcaption>PłOCK Tumskie Hill — via <a href="https://en.wikipedia.org/wiki/P%C5%82ock" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Płock — a city on the Vistula River in central Poland — hosts one of the oldest documented Jewish communities in the country. Sitting on a plateau above the river in the heart of the ancient Mazovian region, Płock was the seat of early Polish Piast dynasty kings and a historic ecclesiastical center. Its Jewish community, present since at least the eleventh or twelfth century, persisted through centuries of privilege and persecution to become a significant provincial kehilla in the modern period.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/P%C5%82ock_panorama.jpg/500px-P%C5%82ock_panorama.jpg" alt="PłOCK Tumskie Hill" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>PłOCK Tumskie Hill — via <a href="https://en.wikipedia.org/wiki/P%C5%82ock" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>The earliest evidence of Jews in Płock dates to the eleventh and twelfth centuries, placing the community among the oldest in Poland. The city's position as the capital of Mazovia — one of the original Polish duchies — gave it strategic and economic importance, and Jewish merchants were present from the earliest period of Polish urbanization. Medieval Płock Jews engaged in moneylending, trade, and commerce under the protection of successive Polish dukes.</p>
 <p>The community experienced the pattern common to medieval Ashkenazic Jewish life: charters of protection alternating with expulsions, accusations, and violence. The mid-fifteenth century brought severe restrictions; Jews were expelled from Płock at various points under pressure from the Catholic Church and Christian merchant guilds. The community was reestablished and grew again in the sixteenth and seventeenth centuries under more tolerant royal policies.</p>
 <p>Under Russian control following the Partition of 1795, Płock became an administrative center of Congress Poland. The Jewish community grew substantially through the nineteenth century, reaching approximately 8,000 by 1900 and approximately 11,000 by 1939 — roughly one-third of the city's total population.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Płock's Great Synagogue, built in the nineteenth century, was an imposing structure serving the kehilla. The city maintained a beit midrash, charitable organizations including a Jewish hospital and orphanage, and — in the twentieth century — a full range of modern schools and political organizations. The Jewish community of Płock participated in the Zionist movement, the Bund, and Orthodox politics.</p>
 <p>The Płock yeshiva had regional importance for Mazovian Jewry, training young men who went on to study at the great Lithuanian academies or who returned to serve local communities as rabbis and teachers.</p>
@@ -493,33 +510,24 @@
 <p>The scattered Płock Jews were subsequently caught up in the mass deportations of 1942, most being transported to the Auschwitz and Chelmno death camps. The organized Jewish community of Płock effectively ceased to exist by mid-1942.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Rabbi Meir of Płock (Maharam of Płock) was one of the earliest Ashkenazic rabbinic authorities associated with the city. His presence in medieval Płock testifies to the community's antiquity and scholastic ambitions. The tradition of maintaining a respected rabbinate continued into the modern period.</p>
 <p>Rabbi Shlomo Zalman Lifshitz (1765–1839), known as Chemdas Shlomo after his halakhic work, served as rabbi of Warsaw but had connections to the Mazovian rabbinic world of which Płock was a part. His responsa addressed questions from communities across the region.</p>
 <p>In the modern era, Płock was the birthplace of the philosopher and sociologist Stanisław Przybyszewski's circle, which included Jewish intellectuals. More significantly for Jewish history, Płock-born emigrants contributed to Jewish communities in America and Palestine.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>As one of the oldest Jewish communities in Poland, Płock carried a particular weight of historical memory. The community's records extended back centuries, and its rabbinic succession linked the present to the medieval past. Płock Jews participated in the great modern transformation of Polish Jewish life: the turn-of-the-century emigration wave that sent tens of thousands to New York and other American cities, the Zionist movements that sent a smaller number to Palestine, and the political mobilization of interwar Poland.</p>
 <p>Płock's position on the Vistula — a major transportation artery — gave it commercial connections to Warsaw upstream and to Danzig and the Baltic downstream. Jewish grain merchants and timber traders used the river network; Jewish agents and factors served the estates of the Mazovian nobility.</p>
       </section>
 
-      <section id="decline">
-        <h2>Decline &amp; Transformation</h2>
-        
-      </section>
+      
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The Jewish cemetery of Płock, one of the oldest in Poland with tombstones from the seventeenth century, has been partially preserved and is maintained as a historical site. A museum exhibition on Płock Jewish history exists in the city. The community's antiquity gives it a special place in the history of Polish Jewry that continues to attract historical interest.</p>
       </section>

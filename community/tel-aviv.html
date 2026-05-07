@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,23 +482,26 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sarona_CBD_01_%28cropped%29.jpg/640px-Sarona_CBD_01_%28cropped%29.jpg" alt="Tel Aviv skyline" loading="eager">
+      <figcaption>Tel Aviv skyline — via <a href="https://en.wikipedia.org/wiki/Tel_Aviv" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Tel Aviv — "Hill of Spring," a name coined by Nachum Sokolov for his Hebrew translation of Theodor Herzl's utopian novel Altneuland ("Old-New Land") — was founded on April 11, 1909, when sixty-six Jewish families gathered on the sand dunes north of Jaffa to conduct the famous lottery for plots of land. It was conceived as a Jewish suburb of Jaffa, a Hebrew neighborhood where Jewish families could live in modern European-style housing removed from the crowded Arab city. Within a generation it had become something entirely different: the "first Hebrew city," the metropolitan heart of Jewish Palestine, a booming, chaotic, creative, overwhelmingly modern urban landscape unlike anything Jewish civilization had built in two thousand years of exile.</p>
 <p>Tel Aviv's significance in Jewish history is almost impossible to overstate. It was the first modern city built by Jews for Jews from the ground up in the modern era. It was the city in which Hebrew became a fully urban language — not the language of prayer or scholarship, but of newspapers, cafes, theater, street arguments, and love letters. It was the city where Zionism proved that Jewish national culture could sustain and create an entire urban civilization, not just agricultural settlements. On May 14, 1948, David Ben-Gurion stood in what is now Independence Hall in Tel Aviv and proclaimed the State of Israel — making this city, on the sand dunes of the coastal plain, the birthplace of Jewish sovereignty.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sarona_CBD_01_%28cropped%29.jpg/500px-Sarona_CBD_01_%28cropped%29.jpg" alt="Tel Aviv skyline" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Tel Aviv skyline — via <a href="https://en.wikipedia.org/wiki/Tel_Aviv" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>The founding lottery of 1909 — documented in a famous photograph showing the families on the dunes, a table set up in the sand, and Akiva Aryeh Weiss (the chairman of the Ahuzat Bayit Society that organized the development) standing before them — has become one of the iconic images of Zionist history. The families distributed seashells, black and white, to determine who would receive which plot. The process was simultaneously modern (a legal lottery, a registered society, a planned neighborhood) and elemental (people standing on sand, claiming their stake in the ancient land).</p>
 <p>The first houses were built in 1909–1910, in a grid of streets named for Zionist figures and biblical references. The Herzl Street synagogue, the Herzliya Hebrew Gymnasium (high school), and the water tower marked the emerging urban landscape. Within five years, Ahuzat Bayit (the original neighborhood's name) had been renamed Tel Aviv, and the city was growing rapidly northward along the coast.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Tel Aviv's golden age is arguably its first fifty years — from 1909 to 1948 (or, in a different framing, from 1948 to the 1970s, when the city was the unambiguous capital of Jewish cultural life in Israel). In the 1920s and 1930s, Tel Aviv grew explosively, absorbing the Fourth and Fifth Aliyah immigrants (including large numbers of middle-class Polish and German Jews fleeing rising antisemitism). The city's population grew from 2,000 in 1914 to 150,000 by 1939.</p>
 <p>The influx of German Jewish architects and artists after 1933 gave Tel Aviv its most distinctive architectural identity: Bauhaus and International Style modernist buildings that earned the city UNESCO World Heritage designation in 2003 for its "White City" of modernist architecture. These buildings — flat roofs, rounded balconies, strip windows, pilotis (ground-floor openings) — lined the new streets of northern Tel Aviv, creating one of the world's great concentrations of modernist architecture.</p>
@@ -492,35 +509,29 @@
 <p>The <strong>Tel Aviv Museum of Art</strong>, <strong>Habima National Theater</strong>, and <strong>Mann Auditorium</strong> (home of the Israel Philharmonic Orchestra) constitute the cultural heart of Israeli high culture. The <strong>Bauhaus Center</strong> and the <strong>White City</strong> district of Dizengoff, Rothschild, and adjacent boulevards represent the world's largest concentration of International Style modernist buildings. The <strong>Carmel Market (Shuk HaCarmel)</strong> and the <strong>Old North neighborhoods</strong> are the living texture of secular Israeli urban life.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p><strong>Meir Dizengoff (1861–1936)</strong>, the first mayor of Tel Aviv, was one of the central figures of the city's founding generation. He helped organize the 1909 lottery, served as mayor from 1911 to 1936 (with a brief interruption), and shaped the city's early character. When his wife Zina was killed in an Arab terrorist attack in 1926, he donated the family house to the city as an art museum (the Tel Aviv Museum of Art began in Dizengoff House).</p>
 <p><strong>Chaim Nachman Bialik (1873–1934)</strong>, the national poet of Hebrew literature, settled in Tel Aviv in 1924 after leaving Russia and Odessa. His house on Bialik Street (now a museum) became a cultural salon, and his presence in the city consecrated it as the capital of Hebrew letters. He organized the Oneg Shabbat gatherings that brought together writers and intellectuals every Friday afternoon.</p>
 <p><strong>Shmuel Yosef Agnon (1888–1970)</strong>, Nobel Prize laureate in Literature (1966), lived in Tel Aviv for significant periods and set much of his fiction in the world of the Yishuv and its tensions between tradition and modernity. His Nobel Prize was the ultimate validation of Hebrew literature as a world literature.</p>
 <p><strong>Theodor Herzl (1860–1904)</strong> did not live to see Tel Aviv — he died in 1904, five years before its founding — but his utopian novel Altneuland gave the city its name, and his vision of a modern Jewish state in Palestine was the conceptual foundation on which Tel Aviv was built. His remains were transferred from Vienna to Mount Herzl in Jerusalem in 1949.</p>
 <p><strong>Moshe Sharett (1894–1965)</strong> and a galaxy of early Israeli statesmen lived in Tel Aviv, which served as the governmental capital of the pre-state Yishuv.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Tel Aviv defined secular Hebrew urban culture. The Hebrew press — HaAretz (founded 1918), Davar, and others — produced the public discourse of Jewish Palestine from Tel Aviv's printing houses. Hebrew theater (Habima) performed in the city; Hebrew cinema was pioneered there; Hebrew literature's most important publishing houses were Tel Aviv institutions.</p>
 <p>Tel Aviv's secular character was always in productive tension with the religious identity of the country. The city became the symbol of the non-religious, Mediterranean-oriented, culturally modern face of Israeli identity — a counterpoint to Jerusalem's religious intensity. This tension has been enormously generative: the encounter between tradition and modernity that Tel Aviv embodies is one of the defining creative tensions of Israeli culture.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Tel Aviv as a city has not declined; it has transformed. The municipal area of the original city (now "Tel Aviv proper") has stabilized at around 460,000, but the Tel Aviv metropolitan area (Gush Dan) of over 4 million people is the economic engine of Israel. The old North Tel Aviv neighborhoods have gentrified; the southern neighborhoods — once working-class, now fashionable — have been transformed. Tel Aviv is today consistently ranked as one of the world's most technologically innovative cities and one of the most LGBTQ-friendly.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Tel Aviv's legacy is the city itself — a living demonstration that Jewish civilization could create a fully modern urban culture in the ancient homeland. The Hebrew city, the Hebrew language, the Hebrew university and theater and press — all of these were tested and proven viable in Tel Aviv before they became the infrastructure of a state. The 1909 founding lottery has become one of the founding myths of modern Jewish history, the moment when a city was born in sand and faith.</p>
       </section>

@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,16 +482,19 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Umm_Qais-13.jpg/640px-Umm_Qais-13.jpg" alt="Umm Qais (ancient Gadara)" loading="eager">
+      <figcaption>Umm Qais (ancient Gadara) — via <a href="https://en.wikipedia.org/wiki/Umm_Qais" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Gadara was one of the most sophisticated cities of the Decapolis, a league of Hellenistic cities east of the Jordan River that represented Greek culture's easternmost penetration in the ancient world. Situated on a dramatic promontory overlooking the Sea of Galilee and the Yarmuk River valley, Gadara (modern Umm Qais in Jordan) was known for its philosophers, poets, and intellectuals — yet maintained a significant Jewish minority community. The city appears in the Gospels (Matthew 8:28; Mark 5:1; Luke 8:26) as the site of Jesus's healing of the Gerasene demoniac, though ancient sources place the event specifically at Gadara. For Jews, Gadara represents the complex reality of living as a religious minority in Hellenistic urban centers, navigating between Jewish law and the cultural demands of Greco-Roman civic life.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Umm_Qais-13.jpg/500px-Umm_Qais-13.jpg" alt="Umm Qais (ancient Gadara)" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Umm Qais (ancient Gadara) — via <a href="https://en.wikipedia.org/wiki/Gadara" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Gadara was founded as a Hellenistic polis, likely during the Seleucid period (3rd–2nd century BCE). The city controlled the routes from the Decapolis to the Mediterranean and prospered from trade. Pompey freed Gadara from Hasmonean control in 63 BCE and incorporated it into the Roman province of Syria as a free city. Augustus Caesar later gave Gadara to Herod the Great (reigned 37–4 BCE), but after Herod's death it reverted to the province of Syria.</p>
 <p>The city's Jewish population derived from several sources:</p>
@@ -489,7 +506,7 @@
 <p>Josephus reports that during the great revolt, the Gentile population of Gadara massacred its Jewish residents (66 CE), suggesting a sizable community. After the revolt, Jewish life in the Decapolis continued, though under changed conditions.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The 1st through 4th centuries CE represent Gadara's cultural peak. The city produced numerous intellectuals known from Greek literary sources: the poets Meleager and Philodemus, the satirist Menippus, the historian Nicholas of Damascus (tutor to Herod's children) — all Gadarenes whose work shaped Hellenistic culture.</p>
 <p>The Jewish community of the Roman and Byzantine periods participated in this sophisticated urban environment. Archaeological evidence and textual sources suggest Jews lived, traded, and maintained their religious practice alongside the pagan (and later Christian) majority. The community would have faced the characteristic dilemmas of diaspora Jewish life: could one eat at a neighbor's banquet? How to observe Shabbat when one's livelihood depended on operating in a pagan economy? What to do about civic festivals honoring pagan gods?</p>
@@ -504,34 +521,28 @@
 <p>Recent excavations at nearby <strong>Abila</strong> (another Decapolis city) have uncovered clear evidence of a synagogue, and the pattern suggests that similar structures existed at other Decapolis cities.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>The Jewish intellectuals and leaders of ancient Gadara are not individually named in surviving sources. The community's story emerges primarily through general references to Decapolis Jewry and archaeological finds.</p>
 <p><strong>Meleager of Gadara</strong> (1st century BCE) was a major Hellenistic poet whose <em>Greek Anthology</em> contributed enormously to that collection of epigrams. Though not Jewish, his work illustrates Gadara's literary culture.</p>
 <p><strong>Philodemus of Gadara</strong> (c. 110–40 BCE), an Epicurean philosopher whose writings on aesthetics and ethics were discovered among the carbonized papyri at Herculaneum, represents the philosophical sophistication of the city. His famous patron, Lucius Calpurnius Piso Caesoninus, was Julius Caesar's father-in-law.</p>
 <p>The New Testament's <strong>Gadarene demoniac</strong> (Mark 5:1–20; Luke 8:26–39) — called "Legion" for the demons possessing him — is healed by Jesus and told to return to his home and declare what God had done for him. The story illustrates Gadara's place on the east bank of the Sea of Galilee and its location within Decapolis territory.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Gadara's Jewish community contributed to the broader Jewish experience of diaspora life that shaped rabbinic legal development. The questions this community faced — about trade, partnership with pagans, residence in cities with idolatrous practices, observance of Jewish law in non-Jewish legal systems — appear throughout the Mishnah and Talmud. The <strong>Tractate Avodah Zarah</strong> (Idolatry) in particular contains legislation precisely addressing the situations of Jews living in pagan cities.</p>
 <p>The philosophical and literary culture of Gadara, more broadly, contributed to the Hellenistic context in which Second Temple Judaism developed and in which Christianity emerged. Jewish engagement with Hellenistic thought — documented in works of Philo of Alexandria (Egyptian, not Gadarene) and echoed in the Dead Sea Scrolls — was shaped by this cultural milieu.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The 7th century Arab conquest transformed the region. Gadara's importance gradually declined as trade routes shifted. An earthquake in 749 CE (the same that destroyed Hippos and other regional cities) contributed to the site's abandonment. The Jewish community, already a minority, dispersed over the early Islamic period.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Modern Umm Qais (the Arabic name for Gadara) is a Jordanian town that incorporates the ruins of the ancient city. The site offers spectacular views across the Sea of Galilee, the Golan Heights, and into Israel. Archaeological excavations have uncovered much of the Roman city, including a stunning black basalt theater, the basilica, and the colonnaded main street. Gadara remains one of the most visually impressive of the Decapolis sites, and its location on the borders of Israel, Jordan, and Syria makes it a poignant reminder of the interconnectedness of the ancient Near East.</p>
       </section>

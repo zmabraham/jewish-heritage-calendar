@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,55 +482,52 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Krakow_-_Wawel_-_Kopiec.jpg/640px-Krakow_-_Wawel_-_Kopiec.jpg" alt="Kraków (Cracow) Wawel Castle" loading="eager">
+      <figcaption>Kraków (Cracow) Wawel Castle — via <a href="https://en.wikipedia.org/wiki/Krak%C3%B3w" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Cracow — known in Jewish tradition as Krako — was for centuries the pre-eminent Jewish city of Poland and one of the great Jewish centers of Europe. Its Jewish quarter, Kazimierz, established in the late fifteenth century, became a world unto itself: a dense, vibrant community that produced towering rabbinic figures, flourishing commerce, and an unbroken chain of Torah scholarship spanning more than four hundred years. Cracow served as the cultural capital of Galician Jewry and its imprint on Jewish law, mysticism, and collective memory remains immense.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Krakow_Rynek_Glowny_panorama_2.jpg/500px-Krakow_Rynek_Glowny_panorama_2.jpg" alt="Kraków (Cracow) Wawel Castle" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Kraków (Cracow) Wawel Castle — via <a href="https://en.wikipedia.org/wiki/Cracow" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews had settled in Cracow as early as the eleventh century. In 1495, King Jan Olbracht expelled the Jews from the city itself, compelling them to resettle in the adjacent town of Kazimierz, which had been founded specifically to serve as a Polish royal township. Rather than destroying the community, the forced relocation concentrated it. Over the following century Kazimierz grew into a self-governing Jewish metropolis with its own elected council (kahal), courts, schools, printing presses, and philanthropic institutions.</p>
 <p>A defining feature of Cracow's Jewish life was the privilege of royal protection. Polish kings, recognizing the economic indispensability of Jewish merchants and financiers, extended charters that shielded the community from the worst of ecclesiastical hostility, though periodic blood libel accusations and violence still occurred. By the mid-sixteenth century Kazimierz housed thousands of Jews and ranked among the most populous Jewish communities in the world.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The sixteenth and early seventeenth centuries constituted Cracow's golden age. The city stood at the crossroads of trade routes linking Western Europe with the Ottoman Empire and the East, and Jewish merchants dominated commerce in textiles, spices, furs, and metal goods. The same era produced an explosion of rabbinic learning that defined Polish-Jewish scholarship for generations.</p>
 <p>The Cracow rabbinate attracted the greatest minds of the age. Yeshivot drew students from across Poland-Lithuania and beyond. The establishment of Hebrew printing presses in Kazimierz — beginning in the 1530s — gave Cracow a central role in disseminating Jewish texts across Europe. Works printed in Kazimierz circulated from Hamburg to Constantinople.</p>
 <p>The Remuh Synagogue, built around 1553 by the merchant Israel Isserles in honor of his son Moses, survives to this day as a functioning house of prayer. Adjacent to it lies the Remuh Cemetery, one of the oldest Jewish cemeteries in Poland, where the Rema's grave has been a pilgrimage site for centuries. The Old Synagogue (Stara Bożnica), dating to the fifteenth century in its current form, served as the main communal synagogue and doubled as a meeting hall for the kahal. The High Synagogue and Isaak Synagogue, both seventeenth-century structures, reflect the community's prosperity and architectural ambition during the Baroque period.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Rabbi Moses Isserles (c. 1520–1572), known universally as the Rema, stands as Cracow's most luminous rabbinic figure and one of the defining legal authorities of Ashkenazic Judaism. His glosses to the Shulchan Aruch — the "Mappah," or tablecloth spread over Joseph Karo's table — incorporated the customs and rulings of Ashkenazic Jewry, ensuring that the Shulchan Aruch would be accepted throughout the Polish and German communities. The Rema also wrote the philosophical work Torat HaOlah and corresponded with scholars across the Jewish world from his post as rabbi of Cracow.</p>
 <p>Rabbi Joel Sirkes (1561–1640), known as the Bach after his magnum opus Bayit Chadash, served as rabbi of Cracow and produced a comprehensive commentary on the Tur that remains a standard reference work in Jewish law.</p>
 <p>Rabbi Nathan Nata Spira (1585–1633) brought Kabbalistic thought into the Cracow orbit through his work Megaleh Amukot, a mystical commentary on the Torah that deeply influenced later Polish Hasidism.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Cracow's printing presses shaped the textual culture of European Jewry. The Helicz family and later the Prostitz press produced Talmuds, prayer books, halakhic codes, and kabbalistic texts that traveled far beyond Poland. The yeshiva system of Cracow trained rabbis who went on to lead communities from Frankfurt to Vilna. The city's merchants helped finance the Council of Four Lands (Va'ad Arba Aratzot), the Jewish self-governing body that regulated taxation and Jewish communal life across Poland-Lithuania from the sixteenth through eighteenth centuries.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The Chmielnicki massacres of 1648–1649, while striking hardest at Ukraine and eastern Poland, sent shockwaves through Cracow and impoverished the community. Swedish invasions in the 1650s brought further devastation. By the eighteenth century Kazimierz had been reabsorbed into the expanding city of Cracow and the community's character began to change, though it remained a major center.</p>
 <p>The twentieth century brought catastrophe. Following the German occupation of Cracow in September 1939, Jews were subjected to forced labor, humiliation, and expropriation. In 1941 the Germans established a ghetto in the Podgórze district across the river. Between 1942 and 1943 the ghetto's approximately 15,000 inhabitants were murdered — most in the gas chambers of Bełżec, with the remainder shot in the Płaszów concentration camp or in the streets. The story of Oskar Schindler, who saved approximately 1,200 Jews by employing them in his enamelware factory, brought Cracow's wartime history to global attention through Steven Spielberg's 1993 film Schindler's List.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The Remuh Synagogue continues to hold Shabbat services for a small Jewish community. Kazimierz has undergone a remarkable cultural revival since the 1990s, attracting Jewish tourists, festivals, klezmer concerts, and heritage organizations. The Galicia Jewish Museum in Kazimierz documents Jewish life in the region with particular attention to post-Holocaust remnants and memory. The Schindler Factory Museum preserves the history of the German occupation. Several of the historic synagogue buildings have been restored and opened to the public.</p>
       </section>

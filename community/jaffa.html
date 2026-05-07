@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,23 +482,26 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Jaffa_Ariel_1.jpg/640px-Jaffa_Ariel_1.jpg" alt="Jaffa old city and port" loading="eager">
+      <figcaption>Jaffa old city and port — via <a href="https://en.wikipedia.org/wiki/Jaffa" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Jaffa is one of the oldest continuously inhabited port cities in the world, its harbor sheltering ships since before recorded history. For Jews, it carries a particular resonance: this was the port through which Solomon's timber arrived from Lebanon for the Temple's construction; the port from which Jonah fled toward Tarshish; the landing point of medieval and early modern Jewish pilgrims approaching the Holy Land from Europe, Egypt, and the Ottoman world. It was also the port through which the first waves of Zionist immigrants — the pioneers of the First and Second Aliyah — arrived to begin the project of Jewish national revival.</p>
 <p>Standing at the entrance to the Land of Israel from the sea, Jaffa was the gateway through which the Jewish people in multiple eras passed from diaspora to homeland. The emotional charge of this threshold was felt by every traveler who approached the ancient harbor: the sandy shoreline, the minaret, the smell of salt and citrus, and then — the ground of the Land itself. Rabbi Judah HaLevi, the twelfth-century poet and philosopher, wrote of his longing to arrive here; the early Zionist writers described the moment of stepping ashore with barely contained exaltation.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Jaffa_Ariel_1.jpg/640px-Jaffa_Ariel_1.jpg" alt="Jaffa old city and port" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Jaffa old city and port — via <a href="https://en.wikipedia.org/wiki/Jaffa" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jaffa (Hebrew: Yafo; Greek: Joppa) appears in the historical record as far back as the fifteenth century BCE in Egyptian records. It was an important Canaanite port city captured by Pharaoh Thutmose III. The Hebrew Bible describes it as the allotment of the tribe of Dan and later references it as the port used for the cedar of Lebanon destined for Solomon's Temple and the Second Temple. The prophet Jonah's dramatic departure from Jaffa to flee divine command is one of the most famous scenes in the Hebrew Bible.</p>
 <p>Jewish presence in Jaffa in the Hellenistic period is documented by Maccabean sources. The city was taken by Simon the Hasmonean in 142 BCE and became an important Hasmonean port, significantly bolstering the Maccabees' strategic position. It remained a Jewish-controlled port through much of the Hasmonean period. During the Great Revolt against Rome (66–70 CE), Jaffa was a center of Jewish resistance and its harbor was the site of a naval engagement with Roman forces.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Jaffa experienced its most significant Jewish golden age during the late nineteenth and early twentieth centuries, when it became the principal entry point for Zionist immigration. The First Aliyah (1882–1903) brought approximately 25,000–30,000 Jews, most arriving through Jaffa. The Second Aliyah (1904–1914) brought another wave, including many who would become the founding generation of Israeli society. The Ottoman city of Jaffa had a substantial Jewish quarter (the area around Neve Tzedek), and the Jewish community grew rapidly.</p>
 <p>In 1909, on the sand dunes just north of Jaffa, sixty-six families participated in a lottery to allocate plots for a new Jewish neighborhood: this was the founding moment of Tel Aviv, billed as the "first Hebrew city." Jaffa and Tel Aviv were initially intertwined — a Jewish city growing out of and alongside the Arab port city. The symbiosis and tension between them defined the geography of Jewish Palestine.</p>
@@ -493,36 +510,30 @@
 <p>The <strong>Abulafia Bakery</strong>, a Muslim-owned institution beloved by Jews and Arabs alike, has served the people of Jaffa for generations — a symbol of the complex intimacy of the old port city.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p><strong>Jonah ben Amittai</strong> — the prophet whose story begins with his flight from the divine command, departing from Jaffa's harbor. Whether historical or parabolic, Jonah's association with Jaffa has made the city synonymous with the biblical sea-journey into reluctant prophecy.</p>
 <p><strong>Simon the Hasmonean (died 135 BCE)</strong> captured Jaffa and made it Judea's strategic seaport, a decisive move that gave the Hasmonean state direct access to Mediterranean trade and removed the city from Seleucid control.</p>
 <p><strong>Meir Dizengoff (1861–1936)</strong>, the first mayor of Tel Aviv, lived and organized in the Jaffa area before Tel Aviv's founding. His leadership of the new city — built from Jaffa's shadow — shaped the early character of the first Hebrew city.</p>
 <p><strong>Ahad Ha'am (Asher Ginzburg, 1856–1927)</strong>, the philosopher of "spiritual Zionism," passed through Jaffa multiple times and wrote his influential early essays from the perspective of someone witnessing the Zionist project at close quarters. His observations of the Jaffa-area colonies shaped his cultural critique of political Zionism.</p>
 <p><strong>Rachel Bluwstein ("Rachel the Poetess," 1890–1931)</strong> arrived through Jaffa in 1909 and became one of the Hebrew language's most beloved lyric poets. Her poems of longing, landscape, and loss — written in a pure, spare Hebrew — capture the emotional experience of the early pioneers.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Jaffa's Jewish culture in the early Zionist period was a vivid mix of old and new. The Sephardic Jewish families of Jaffa maintained centuries-old traditions — Ladino, traditional cuisine, Ottoman-era customs — while the newly arriving Ashkenazic pioneers brought their Eastern European energy and ideological ferment. Hebrew journalism was born in Jaffa: the first Hebrew newspapers of Palestine were published there. The cafes along Jaffa's streets were the gathering places of the Hebrew literary world — Bialik, Brenner, Agnon, and others frequented them.</p>
 <p>The citrus trade made Jaffa synonymous with "Jaffa oranges" — the distinctive navel oranges exported to Europe from the nineteenth century onward, many of them cultivated by Jewish agricultural settlements in the surrounding region.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The Arab-Israeli war of 1948 transformed Jaffa entirely. The Arab majority population fled or was expelled, and the ancient mixed city became overwhelmingly Jewish, soon to be formally united with adjacent Tel Aviv as "Tel Aviv-Yafo." The mixed character of old Jaffa — Arab, Jewish, Armenian, Greek Orthodox — largely dissolved, though remnants of each community survived.</p>
 <p>The old port area of Jaffa was gradually rehabilitated from the 1960s onward and became a center of galleries, restaurants, and tourism. Arab and Jewish families who remained created a more modest form of coexistence than the old city had known. The ancient city became, paradoxically, both more visible (as a heritage destination) and more displaced (as a working community).</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Jaffa's legacy is primarily that of the threshold — the place of arrival and beginning. Every Jewish immigrant who arrived through its port carried Jaffa's harbor in their memory as the first image of the homeland. The founding of Tel Aviv in Jaffa's shadow is one of the central creation myths of modern Israel. Today, old Jaffa is one of the most atmospheric corners of the Tel Aviv metropolitan area, its ancient port and Ottoman buildings juxtaposed with contemporary art galleries and restaurants, its layered history palpable in every stone.</p>
       </section>

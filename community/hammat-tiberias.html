@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Tiberias_Hammat_hot_springs.jpg/640px-Tiberias_Hammat_hot_springs.jpg" alt="Hamat Tiberias hot springs" loading="eager">
+      <figcaption>Hamat Tiberias hot springs — via <a href="https://en.wikipedia.org/wiki/Hamat_Tiberias" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Hammat Tiberias — "the hot springs of Tiberias" — is a site immediately south of ancient Tiberias on the western shore of the Sea of Galilee, famous for its therapeutic thermal springs (which remain active today) and for one of the most magnificent and historically important synagogue mosaics ever discovered in the Land of Israel. The synagogue mosaic at Hammat Tiberias, dated to the 3rd–4th century CE, predates the famous Beth Alpha mosaic by two centuries and represents an earlier, more refined stage of the Byzantine Jewish artistic tradition. Its zodiac panel, featuring a compelling portrait of Helios driving his solar chariot, helped establish that the incorporation of classical imagery in Jewish sacred spaces was not a late or aberrant development but a mainstream feature of Roman-era Jewish culture.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/130048_hamat_tiberias_national_park_floor_of_the_ancient_PikiWiki_Israel.jpg/500px-130048_hamat_tiberias_national_park_floor_of_the_ancient_PikiWiki_Israel.jpg" alt="Hamat Tiberias hot springs" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Hamat Tiberias hot springs — via <a href="https://en.wikipedia.org/wiki/Hammat_Tiberias" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>The hot springs of Hammat (Hebrew: chamam, "hot") were known and valued since antiquity. The site appears in biblical sources (Joshua 19:35) as a city in the territory of Naphtali. During the Second Temple period, Hammat was a distinct settlement from Tiberias, which was founded by Herod Antipas around 20 CE on a burial ground — making it ritually unclean by Jewish law, which ironically led to the city being initially populated by non-Jews, slaves, and forcibly relocated people.</p>
 <p>Tiberias gradually became a major center of Jewish learning after the Bar Kokhba revolt, and the Sanhedrin relocated there in the early 3rd century CE. Rabbi Judah HaNasi spent time in Tiberias, and the city became the center of the Jerusalem Talmud's final redaction. The proximity of Hammat's therapeutic springs meant that the settlement was frequented by the elite of Tiberias — wealthy merchants, Roman officials, and perhaps sages seeking the famous baths for their health.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The 3rd and 4th centuries CE represent Hammat Tiberias's peak. The synagogue mosaic discovered at the site dates to this period, representing the most sophisticated artistic program in any synagogue yet discovered from Roman-era Palestine.</p>
 <p>The mosaic was created in multiple phases, with the earliest phase (Stratum IIb) dated to the late 3rd century CE — during the period when the Severan dynasty showed considerable tolerance toward Jews and the patriarchate in Tiberias reached its height of influence under Rabbi Judah HaNasi II and his successors. Wealthy patrons — whose names are preserved in donor inscriptions — funded the synagogue's construction and decoration.</p>
@@ -498,22 +515,16 @@
 <p>The <strong>hot springs complex</strong> at Hammat Tiberias included bathing facilities that served both the local population and visitors from across the region. The combination of healing waters and a beautiful synagogue made Hammat Tiberias a destination for Jewish travelers throughout late antiquity.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p><strong>Severus</strong>, whose name appears in a donor inscription in the Hammat Tiberias synagogue mosaic, is identified by scholars as a high-ranking Roman official or a wealthy Jewish patron of Roman citizenship who helped fund the construction. The name and the Latin language of the inscription suggest a community that included or cultivated ties with highly Romanized individuals.</p>
 <p><strong>Rabbi Yochanan bar Nappacha</strong> (c. 180–279 CE), the dominant figure of the Jerusalem Talmud's composition, is associated primarily with Tiberias but would have been intimately connected with Hammat Tiberias as part of the same urban agglomeration. His academy in Tiberias was the center of Palestinian Jewish learning in the 3rd century.</p>
 <p><strong>Rabbi Ami</strong> and <strong>Rabbi Assi</strong>, the principal students of Rabbi Yochanan who led the Tiberias academy after his death, continued the scholarly tradition that made the Tiberias-Hammat Tiberias complex the most important center of Jewish learning in the Land of Israel for centuries.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>The Hammat Tiberias mosaic's use of the zodiac raises fundamental questions about late antique Jewish theology and aesthetics. The zodiac, with its Hellenistic and pagan associations, was clearly not seen as incompatible with Jewish worship — rather, it was reinterpreted within a Jewish theological framework. Scholars have proposed several interpretations:</p>
 <ul>
@@ -524,12 +535,12 @@
 <p>The proximity to Tiberias, the seat of the Jerusalem Talmud's composition, makes Hammat Tiberias particularly significant: this was not a provincial community making eccentric artistic choices, but a community at the heart of rabbinic civilization.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Hammat Tiberias continued as a Jewish settlement through the Byzantine and early Islamic periods. The hot springs remained operational and therapeutically valued. The synagogue's later phases (Strata IIa and I) represent rebuildings in the 4th–5th and 7th–8th centuries respectively, suggesting continuous use. The community gradually declined as Jewish institutional life shifted and the relative importance of specific sites changed under Islamic rule.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The Hammat Tiberias National Park, on the southern edge of modern Tiberias, preserves the synagogue ruins and mosaic (covered for protection, with a visible display). The hot springs continue to flow and are channeled into a modern spa and bathing complex immediately adjacent to the archaeological park — a striking continuity of use across two millennia. The mosaic is reproduced extensively in scholarly literature on ancient Jewish art, and Helios's compelling portrait from the central panel is one of the most reproduced images in the field.</p>
       </section>

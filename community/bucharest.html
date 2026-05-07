@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,56 +482,53 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bucharest_University_Square_%28cropped%29.jpg/640px-Bucharest_University_Square_%28cropped%29.jpg" alt="Bucharest University Square" loading="eager">
+      <figcaption>Bucharest University Square — via <a href="https://en.wikipedia.org/wiki/Bucharest" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Bucharest, the capital of Romania, served as the administrative and cultural center of Romanian Jewry, a community distinguished by its unique position between Sephardic and Ashkenazic traditions, by its engagement with Romanian national culture, and by its survival — partially — through the complexities of Romania's wartime conduct under Marshal Ion Antonescu.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bucharest_University_Square_%28cropped%29.jpg/500px-Bucharest_University_Square_%28cropped%29.jpg" alt="Bucharest University Square" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Bucharest University Square — via <a href="https://en.wikipedia.org/wiki/Bucharest" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews settled in the Wallachian principality centered on Bucharest from at least the sixteenth century. Sephardic Jews, descendants of the 1492 Spanish expulsion, arrived via Istanbul and the Ottoman trade routes, establishing synagogues and commercial networks in the city. Ashkenazic Jews followed, particularly from Galicia and Moldavia, creating a community of mixed heritage.</p>
 <p>Romanian Jews navigated legal disabilities throughout the nineteenth century. Romania was formally required by the Congress of Berlin (1878) to grant citizenship to all its inhabitants regardless of religion — a condition for international recognition of Romanian independence — but the Romanian government systematically circumvented this obligation for decades. Romanian Jews were classified as "subjects" rather than citizens, excluded from many professions, and subject to special taxes. Full emancipation came only with the revised Romanian constitution of 1923, forced upon Romania as a condition of postwar territorial expansion.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The interwar period (1918–1940) saw Bucharest Jewry at its peak of cultural productivity. Approximately 100,000 Jews lived in Bucharest in the 1930s, comprising a significant fraction of the population. Jewish writers, journalists, physicians, lawyers, and businessmen were central to Romanian civic life. The Alliance Israélite Universelle, the Paris-based Jewish educational organization, had established schools in Bucharest that educated generations of Jews in French-language curriculum alongside Jewish subjects.</p>
 <p>Romanian Jewish writers produced important contributions to Romanian literature. Mihail Sebastian (born Iosif Hechter, 1907–1945) was among Romania's finest dramatists and prose writers; his posthumously published diary, recording Jewish life under Antonescu's regime, has become an essential document of the period. Tudor Arghezi, one of Romania's greatest poets, had complex connections to the Jewish world.</p>
 <p>The Choral Temple (Templul Coral) of Bucharest, inaugurated in 1857 in the Moorish Revival style, was the community's most prestigious synagogue and seat of the Chief Rabbinate. Its mixed choir and decorous liturgy reflected the Neolog-influenced character of the urban Bucharest elite. The city also contained numerous Ashkenazic and Sephardic synagogues. The Jewish Community Center, the Federation of Jewish Communities, and an extensive network of schools, hospitals, and welfare organizations made Bucharest the administrative capital of Romanian Jewry.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Tristan Tzara (born Samuel Rosenstock, 1896–1963) grew up in Romania and is identified with Bucharest's Jewish intellectual world before he moved to Zurich and became a founder of Dadaism — one of the twentieth century's most provocative avant-garde movements. The nihilistic humor and creative destruction of Dada bore traces of the alienated Jewish intellectual expelled from conventional belonging.</p>
 <p>Eugen Ionesco (1909–1994), co-founder of the Theatre of the Absurd, was born in Slatina but identified with Romanian culture; his Jewish mother's heritage and Romania's antisemitism deeply influenced his sensibility of bureaucratic absurdity.</p>
 <p>Elie Wiesel spent time in Bucharest in the postwar years before his departure for Paris, and several other major Jewish intellectuals passed through the city's cultural milieu.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>The Federation of Jewish Communities in Romania, headquartered in Bucharest, coordinated Jewish life across the country through periods of oppression and reconstruction. Chief Rabbis of Romania — including the distinguished Rabbi Jacob Safran and his son Rabbi Alexander Safran (who served through the crucial wartime years) — operated from Bucharest, engaging in difficult negotiations with Romanian authorities to mitigate deportations and preserve Jewish life.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Romania's conduct during the Holocaust was uniquely complex. Under Marshal Antonescu, Romania participated actively in some of the worst massacres of the war — particularly in Bessarabia, Bukovina, and Transnistria, where Romanian forces murdered hundreds of thousands of Jews. Yet Antonescu also resisted Nazi pressure to deport the Jews of the Old Kingdom (including Bucharest) to Nazi death camps, apparently for a combination of economic and political reasons.</p>
 <p>Bucharest's Jews thus survived in large numbers relative to the Jewish communities of Northern and Eastern Romania. An estimated 280,000–380,000 Romanian Jews perished during the Holocaust; Bucharest's Jewish community, while diminished and traumatized, largely survived.</p>
 <p>After the war, Communist Romania nationalized Jewish communal property and suppressed Jewish religious and cultural life. Massive emigration to Israel — particularly after Israel's establishment in 1948 and in waves through the 1950s, 60s, and 70s — dramatically reduced Romanian Jewry from approximately 800,000 survivors to under 15,000 today.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Bucharest retains a small but active Jewish community centered on the Choral Temple and the Federation of Jewish Communities. The Jewish community museum preserves the history of Romanian Jewry. Bucharest-born Jews and their descendants have contributed substantially to Israeli intellectual and political life, and Romanian Jewish diaspora communities in Israel and elsewhere maintain connections to their Bucharest roots.</p>
       </section>

@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Burgos_city_view_facing_south_east.jpg/640px-Burgos_city_view_facing_south_east.jpg" alt="Burgos city view" loading="eager">
+      <figcaption>Burgos city view — via <a href="https://en.wikipedia.org/wiki/Burgos" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Burgos, the historic capital of Old Castile, was home to one of the most important Jewish communities of the Christian north of Spain. Situated on the major pilgrimage route to Santiago de Compostela and serving as a nexus of Castilian royal power, Burgos's Jewish community occupied a strategic position in the commercial and financial life of medieval Castile. The city later became notorious as a center of converso families — New Christians who converted from Judaism under pressure — many of whom rose to significant positions in the church and state, only to face investigation by the Inquisition.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Burgos_city_view_facing_south_east.jpg/500px-Burgos_city_view_facing_south_east.jpg" alt="Burgos city view" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Burgos city view — via <a href="https://en.wikipedia.org/wiki/Burgos" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews appear to have settled in Burgos in the early period of Castilian rule, shortly after the city's emergence as the capital of the county and later kingdom of Castile in the tenth century. The city's commercial importance on the pilgrim road made it attractive for Jewish merchants who traded in wool, cloth, and luxury goods.</p>
 <p>By the twelfth century, Burgos had a substantial Jewish community documented in royal charters and tax records. The community was organized as a formal aljama with its own courts, officials, and institutions, and maintained a direct relationship with the Castilian crown through taxes and services.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Burgos's golden age as a Jewish center extended from the twelfth through mid-fourteenth centuries. The community's strength lay in commerce and finance rather than scholarship: Burgos Jews were prominent in the wool trade that formed the basis of Castilian prosperity, financing the export of Castilian merino wool to the textile cities of Flanders and Italy. Jewish financiers also provided credit to the Castilian crown for its military campaigns and administrative needs.</p>
 <p>The community maintained a substantial Judería in the city, centered near the castle hill. Multiple synagogues served the population, and the aljama operated as a well-organized communal entity with judges, tax collectors, and charitable institutions.</p>
@@ -492,34 +509,28 @@
 <p>The community maintained its own cemetery, the location of which is documented in historical sources, along with bathhouses, schools, and the standard institutions of a major Sephardic community.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Burgos is perhaps best known for the converso families it produced. Pablo de Santa María (Solomon Halevi, c. 1353–1435) was born a Jew in Burgos to a prominent family, became the city's chief rabbi, and converted to Christianity in 1391 — possibly under pressure from the pogroms of that year, possibly for reasons of genuine conviction or opportunism. He subsequently rose to become Bishop of Burgos and one of the most influential churchmen in Castile, while using his position to advocate for strict anti-Jewish measures. His conversion represents the profound social disruption of the 1391 pogroms.</p>
 <p>His son Alonso de Cartagena (1384–1456) was born Christian and became an even more distinguished figure: bishop, diplomat, humanist scholar, and participant in the Council of Basel, where he argued successfully for Castile's precedence over England in the council's seating. The family of Santa María exemplifies the complex trajectories of converso families in fifteenth-century Castile.</p>
 <p>Rabbi Yitzhak ben Sheshet, the Rivash — though primarily associated with Valencia — had connections to the Burgos scholarly network.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Burgos's Jewish culture was primarily commercial and administrative, reflecting the city's identity as a mercantile capital. Wool merchants and their families were the community's backbone. Torah learning was maintained but not at the level that characterized more scholarly centers. The community observed the Castilian rite, maintained liturgical poets, and produced competent if not celebrated rabbinic scholars.</p>
 <p>The coexistence of Jewish merchants with Christian pilgrims on the Camino de Santiago created an unusual social environment — Jews as providers of services and goods to Christian pilgrims — that occasionally generated tension but also economic interdependence.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The 1391 pogroms hit Burgos severely. The Judería was attacked, and many Jews converted, including some of the community's leading figures (Pablo de Santa María among them). The community reconstituted itself partially but never regained its former prominence.</p>
 <p>The Spanish Inquisition was particularly active in Burgos, targeting the numerous converso families of the region. Many descendants of the community's former leaders found themselves investigated for Judaizing. The final expulsion of 1492 ended whatever remained of Jewish life in Burgos.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The converso families of Burgos scattered into Castilian Christian society, some rising to great prominence while others were pursued by the Inquisition. The story of Pablo de Santa María and his descendants illustrates the dramatic possibilities — and dangers — of converso life in fifteenth-century Spain.</p>
 <p>Today Burgos acknowledges its Jewish heritage through historical markers and growing heritage tourism. The city's magnificent Gothic cathedral, built with Castilian wealth partly generated by Jewish commerce, stands as an inadvertent monument to the Jewish contribution to medieval Castilian prosperity.</p>

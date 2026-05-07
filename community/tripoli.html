@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,23 +482,26 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Tripoli_-_Clock_tower.jpg/640px-Tripoli_-_Clock_tower.jpg" alt="Tripoli clock tower" loading="eager">
+      <figcaption>Tripoli clock tower — via <a href="https://en.wikipedia.org/wiki/Tripoli" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Tripoli, the capital of Libya on the Mediterranean coast, harbored one of the most ancient Jewish communities in the world — a community whose presence has been documented since the first century BCE and which maintained continuous residence for over two thousand years until catastrophic 20th-century violence ended Jewish life there. The Jews of Tripoli survived Roman rule, Arab conquest, Ottoman administration, Italian colonization, Nazi occupation, and British administration — only to be destroyed by pogroms in 1945 and 1948, with the remaining community fleeing after the 1967 Six-Day War.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Tripoli_at_night.jpg/500px-Tripoli_at_night.jpg" alt="Tripoli clock tower" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Tripoli clock tower — via <a href="https://en.wikipedia.org/wiki/Tripoli,_Libya" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jewish settlement near Tripoli dates to at least the 1st century BCE. The city of Tripolis ("three cities" in Greek — comprising Oea, Sabratha, and Leptis Magna) was an ancient Phoenician and later Roman urban center, and Jews settled there as part of the broader Jewish diaspora presence in Roman North Africa. Josephus mentions Jewish communities in Libya, and Roman-era inscriptions confirm Jewish presence in the region.</p>
 <p>Under Arab and later Ottoman rule, the community continued as a recognized minority. Tripoli's position on the Mediterranean made it a significant trading port, and Jewish merchants participated in trans-Mediterranean and trans-Saharan commerce. The community received Spanish exile families after 1492, though the Tripolitan community retained its own distinct customs alongside Sephardic influences.</p>
 <p>Italian colonization of Libya (1911–1943) brought new pressures. The Fascist racial laws of 1938, extended to Libya, stripped Jews of many rights and positions. The German-Italian occupation (1941–1943) brought actual Nazi rule to a Jewish community: British-passport holding Jews and those with Eretz Israel connections were sent to concentration camps in Germany. The community survived this period diminished and traumatized.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The Tripoli pogrom of November 1945 was one of the bloodiest anti-Jewish attacks in the Arab world in the 20th century. In three days of violence (November 4–7, 1945), rioters killed 130 Jews, injured hundreds more, looted and burned hundreds of Jewish homes and businesses, and destroyed five synagogues. The violence was part of a wave of anti-Jewish attacks that swept the Arab world in November 1945, following the end of World War II and amid rising tensions over Palestine.</p>
 <p>A second pogrom in June 1948 — coinciding with the Arab-Israeli War following Israel's independence — killed an additional 12 Jews and destroyed more property. These two catastrophic events broke the confidence of Tripolitan Jewry in their future in Libya and accelerated emigration.</p>
@@ -492,33 +509,27 @@
 <p>The community's language was Judeo-Tripolitanian Arabic (Judeo-Libyan Arabic), a dialect distinct from both Moroccan and Egyptian Jewish Arabic, which preserved features of its own linguistic history.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Rabbi Shimon Labi (c. 1486–1585) was the greatest Tripolitan Jewish scholar, a kabbalist and poet who settled in Tripoli after years in Spain and North Africa. His commentary on the Zohar is a major work of Kabbalistic scholarship; his piyyutim include "Bar Yochai," a hymn sung by Jews worldwide (particularly in Sephardic communities) on Lag B'Omer and Shabbat, praising Rabbi Shimon bar Yochai, the Zohar's attributed author. Bar Yochai is arguably the most widely sung Jewish hymn composed in North Africa.</p>
 <p>Rabbi Yisrael Moshe Hazan (1808–1863) was a significant 19th-century Tripolitan rabbinic figure whose responsa addressed questions of Jewish law in the Ottoman-Italian transition period.</p>
 <p>Rabbi Frija Zuaretz served as chief rabbi of Libya in the 20th century and was a voice for the community during the turbulent final decades.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>The Tripolitan Jewish rite was a distinctive synthesis of ancient North African practice, Spanish exile traditions, and local custom. The community's liturgical music, piyyutim, and religious practices have been documented by Israeli ethnomusicologists as a significant branch of the Sephardic musical tradition.</p>
 <p>The community also had its own food traditions, festivals, and folklore that reflected Libya's geographic position at the junction of Maghrebi and eastern Mediterranean cultures.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Following the 1948 pogrom, mass emigration to Israel began. The State of Israel absorbed most Libyan Jews through Operation Magic Carpet and other immigration operations. The 1967 Six-Day War brought new violence and the final expulsion of virtually all remaining Jews from Libya. Colonel Muammar Gaddafi, who came to power in 1969, confiscated all Jewish property and revoked citizenship of absent Jewish Libyans. By 1970, the ancient Jewish community of Tripoli had been extinguished.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Approximately 40–50 Libyan Jews of Tripolitan origin may remain (mostly elderly) in Tripoli, though exact numbers are unclear. The diaspora is concentrated in Rome (the largest community), Israel, and the United Kingdom. The hara in Tripoli still stands, its old synagogues silent. Tripolitan Jews in Rome have maintained extraordinary communal cohesion, preserving their distinctive liturgy, cuisine, and traditions. The Tripolitan Jewish community has produced significant Israeli cultural figures, including politicians, artists, and military officers.</p>
       </section>

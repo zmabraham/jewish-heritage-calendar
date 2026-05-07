@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,23 +482,21 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Metz was home to the most important Jewish community in the Lorraine region and one of the most significant in all of France, distinguished by its famous yeshiva — the Metz yeshiva was one of the great institutions of Ashkenazic learning in Western Europe — and by a long history as a bridge between German and French Jewish cultures. The community's story runs from medieval origins through a golden age of rabbinic scholarship to the complexities of the Franco-German frontier, ending in Holocaust devastation and modern renewal.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Grand_Synagogue_de_Metz.jpg/640px-Grand_Synagogue_de_Metz.jpg" alt="Grand Synagogue of Metz, France" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Grand Synagogue of Metz, France — via <a href="https://en.wikipedia.org/wiki/Grand_Synagogue_of_Metz" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jewish presence in Metz is documented from the eleventh century, when the city was one of the most important episcopal centers in the Lorraine region. The community grew under the protection of the bishops of Metz, who, like many ecclesiastical lords, found Jews useful for credit and commerce.</p>
 <p>Metz's Jews were subject to the usual medieval pattern of toleration punctuated by violence. The community survived the Crusade period with relatively less trauma than the Rhineland cities, though it was not untouched. In the late medieval period, Metz developed as a major free imperial city with a significant Jewish presence, and the community gained a measure of stability through good relations with the city's governing council.</p>
 <p>The French annexation of Metz in 1552 (confirmed by the Treaty of Westphalia in 1648) brought the community under French sovereignty, though it retained many German institutional characteristics. The seventeenth and eighteenth centuries saw the community reach its peak importance.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The seventeenth and eighteenth centuries were the golden age of Metz Jewry. The community obtained letters patent from French kings that guaranteed its rights and autonomy; it maintained a comprehensive system of self-government through the Council of Parnassim (community leaders). The community grew to approximately 1,500–2,000 in the eighteenth century, making it by some measures the largest Jewish community in France.</p>
 <p>The Metz yeshiva was the most prestigious institution of Ashkenazic learning in France and Lorraine. Students came from across Germany and France to study at Metz under the leading halakhic authorities of the time. The community produced responsa literature, biblical commentaries, and sermons of high quality.</p>
@@ -493,34 +505,28 @@
 <p>The community maintained a mikveh, a Jewish hospital, charitable foundations, and a network of educational institutions. The Consistoire of Moselle, established under Napoleon's system, has its headquarters in Metz.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Rabbi Jonathan Eybeschütz (1690–1764), before his controversial tenure in Hamburg, served as a preacher in Metz and was regarded as one of the greatest Talmudic intellects of his generation. Rabbi Yaakov Reischer (c.1661–1733), author of the responsa work Shevut Yaakov, served as rabbi of Metz and was among the foremost legal authorities of early eighteenth-century Jewry.</p>
 <p>Gershom Mendes Seixas (1746–1816), the first American-born rabbi and spiritual leader of Congregation Shearith Israel in New York during the Revolution, was of Metz family origin — a reminder of the transatlantic reach of Lorraine Jewry.</p>
 <p>Moses Ensheim (1750–1839), a student of Moses Mendelssohn and pioneer of the Haskalah in Lorraine, was born in Metz and helped bring Enlightenment thought to the Jewish community of northeastern France.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Metz's Jewish culture occupied a fascinating middle ground between German and French Jewish worlds. Culturally close to the Rhineland Ashkenazic tradition, politically loyal to France, the community negotiated between these identities with varying degrees of tension. Yiddish and a distinctive Lorraine Jewish dialect were the domestic languages of many families into the nineteenth century, while French was the language of civic life.</p>
 <p>The Haskalah reached Metz relatively early — Moses Mendelssohn corresponded with Metz scholars, and the ideas of the Jewish Enlightenment found willing receptors in a community that was already deeply engaged with French intellectual life. The Metz community produced early advocates of Jewish reform who would later influence the Consistorial system under Napoleon.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The German annexation of Alsace-Lorraine in 1871, following France's defeat in the Franco-Prussian War, placed Metz under German sovereignty until 1918. Many Metz Jews chose French citizenship and emigrated westward rather than live under German rule — a profound communal disruption. The community rebuilt under German rule, but the political situation was always uncomfortable.</p>
 <p>The return to France in 1918 brought relief. But the Nazi occupation from 1940, when Germany annexed Alsace-Lorraine outright, brought catastrophe. Metz Jews were expelled or fled; those who remained faced deportation. After the war, the community was rebuilt, though never to its pre-war size.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Metz today has a Jewish community of approximately 3,000–4,000. The Great Synagogue remains one of the most beautiful in France and receives visitors from across Europe. The Metz yeshiva tradition, though the institution itself no longer exists, is remembered as one of the great institutions of French Jewish learning.</p>
       </section>

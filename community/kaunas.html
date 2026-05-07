@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,52 +482,49 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Kaunas_Old_Town_2015.jpg/640px-Kaunas_Old_Town_2015.jpg" alt="Kaunas Old Town" loading="eager">
+      <figcaption>Kaunas Old Town — via <a href="https://en.wikipedia.org/wiki/Kaunas" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Kaunas — known to Jews as <em>Kovno</em> — served as the provisional capital of independent Lithuania between the world wars and was one of the major centers of Lithuanian Jewish civilization. It was a city of contradictory characters: the stronghold of the Slobodka Yeshiva, one of the greatest centers of Mussar (ethical) discipline in the Jewish world, and simultaneously a hotbed of secular Zionism, Hebrew education, and left-wing politics. Kovno was renowned for its rabbinic sages, its revolutionary activists, its intense Jewish cultural life, and ultimately its martyrdom in the Holocaust when the vast majority of Kovno Jewry was murdered at the Ninth Fort and other killing sites.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Kauno_senamiestis_by_Augustas_Didzgalvis.jpg/500px-Kauno_senamiestis_by_Augustas_Didzgalvis.jpg" alt="Kaunas Old Town" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Kaunas Old Town — via <a href="https://en.wikipedia.org/wiki/Kaunas" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews settled in Kaunas from at least the fifteenth century, though they were subject to restrictions and occasional expulsions. The community grew slowly through the early modern period and by the eighteenth century was one of the more substantial Jewish communities in the Grand Duchy of Lithuania. Kaunas's position on the Neman River made it a commercial center, and Jews were prominent in trade and crafts. The community suffered during the Great Northern War (1700–1721) and the subsequent plague years but recovered in the later eighteenth century.</p>
 <p>In 1843, the Russian Empire designated Kaunas (then called <em>Kovno</em>) as the capital of the Kovno Governorate — a province that included much of historic Lithuania. This administrative elevation brought new economic activity and demographic growth. Jews were drawn to Kovno from smaller towns in the region, and the community expanded significantly.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Kovno's golden age spanned the late nineteenth and early twentieth centuries. The establishment of the Slobodka Yeshiva in 1881 (officially named <em>Knesset Yisrael</em>) marked the city as a major Torah center. Slobodka was founded by disciples of Rabbi Yisrael Salanter, the founder of the Mussar movement, which emphasized ethical refinement, self-discipline, and introspection alongside Talmudic study. Under its legendary mashgichim (spiritual supervisors), notably Rabbi Nosson Tzvi Finkel (the <em>Alter of Slobodka</em>, 1849–1927), the yeshiva produced generations of rabbis and lay leaders who combined profound scholarship with moral sensitivity. The <em>Slobodka method</em> — structured self-examination, daily accounting, small study groups, and an emphasis on character development — influenced yeshivot worldwide.</p>
 <p>Simultaneously, Kovno was a bastion of secular Jewish nationalism. Zionist movements of all varieties — General Zionists, Socialist Zionists, Revisionist Zionists — were active. Hebrew schools (the <em>Tarbut</em> network) and Yiddish schools (CYSHO) competed for students. The city had a vibrant Jewish press with newspapers in Hebrew, Yiddish, and Lithuanian, theaters, libraries, and sports clubs. The Hebrew Gymnasium of Kovno was one of the most important Hebrew secondary schools in Europe.</p>
 <p>Kovno's Jewish quarter in the Slobodka district (across the Neman) contained the great Slobodka Yeshiva complex, with its study halls, dormitories, and dining hall. The Choral Synagogue (built in 1871) was the city's main Reform-style synagogue; numerous Hasidic shtiblakh and traditional batei midrash served other segments of the community. The community maintained hospitals, orphanages, schools, and charitable institutions. The city had a Jewish theater, Jewish banks, and a wide array of Zionist and cultural organizations. The Seventh Fort — part of the Kaunas fortress complex — became the Ninth Fort, which would become a notorious site of Nazi mass murder.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Kovno produced and attracted remarkable figures. <strong>Rabbi Nosson Tzvi Finkel</strong> (the Alter of Slobodka) made the yeshiva a Mussar powerhouse. <strong>Rabbi Yitzchak Yaacov Reines</strong> (1839–1915), the founder of the Mizrachi religious Zionist movement, served as rabbi of Kovno before moving to Lida. <strong>Rabbi Avraham Shapiro</strong> (the <em>Dvar Avraham</em>, 1870–1943) was the last rabbi of Kovno and perished in the Holocaust. <strong>Elchanan Wasserman</strong>, the great rosh yeshiva of Baranovich, had studied in Slobodka. The <strong>Ozharover</strong> (Novominsker) Hasidic dynasty had a court in Kovno. Zionist activists, writers, and intellectuals passed through the city's thriving institutions.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Kovno Jewish culture was intensely multifaceted. On one side were the yeshiva students and Hasidim living lives of intense piety and study; on another were secular Yiddishists writing poetry and prose; on a third were Zionist pioneers training for agricultural life in Palestine; on a fourth were Bundist labor organizers and trade unionists. All these groups shared the same streets and lived in a constant, sometimes fractious dialogue with one another. Hebrew culture was particularly strong in Kovno: the Hebrew Gymnasium was a flagship institution, and Hebrew language newspapers and literary magazines flourished.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Soviet occupation (1940–1941) brought the closure of religious institutions, arrests of Zionist and religious activists, and the suppression of Hebrew and Zionist organizations. The German invasion of June 1941 was followed almost immediately by mass murders. The Ninth Fort became one of the largest killing sites in Lithuania: over 30,000 Jews from Kovno and surrounding towns were shot there in 1941. The Kovno Ghetto was established in August 1941 and lasted until July 1944 — one of the longest-lasting ghettos in Eastern Europe. The ghetto maintained an active underground and preserved extensive documentation. When the ghetto was liquidated, its remaining inhabitants were deported to concentration camps; a handful escaped to join partisans. Of approximately 30,000 Kovno Jews, some 2,000–3,000 survived.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Kovno survivors and their descendants have maintained memorial organizations. The Slobodka Yeshiva was reestablished first in Hebron (1924) and later, after the Hebron massacre of 1929, in Jerusalem, where it continues to operate as one of Israel's great yeshivot. The Mussar movement's legacy remains influential in yeshiva education worldwide. Kovno's Hebrew Gymnasium alumni helped found educational institutions in Israel. The Ninth Fort is now a museum and memorial. In Kaunas today, a small Jewish community exists, and the Choral Synagogue (though heavily damaged) has been partially restored and occasionally functions.</p>
       </section>

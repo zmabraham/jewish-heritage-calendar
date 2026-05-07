@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Vieux_port_de_Marseille.jpg/640px-Vieux_port_de_Marseille.jpg" alt="Old Port of Marseille" loading="eager">
+      <figcaption>Old Port of Marseille — via <a href="https://en.wikipedia.org/wiki/Marseille" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Marseille, the great Mediterranean port at the mouth of the Rhône, has hosted a Jewish community for approximately two millennia — making it one of the oldest continuously documented Jewish settlements in Europe. A Jewish presence is attested from Roman times (first century CE), Marseille served as a major center of Provençal Jewry during the medieval period, played a crucial role in the rescue of Jewish refugees during World War II, and today hosts one of France's largest and most diverse Jewish communities.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Notre-Dame_de_la_Garde_aerial_view_2020.jpeg/500px-Notre-Dame_de_la_Garde_aerial_view_2020.jpeg" alt="Old Port of Marseille" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Old Port of Marseille — via <a href="https://en.wikipedia.org/wiki/Marseille" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews arrived in Marseille very early, likely accompanying Greek colonists to this ancient Phocaean foundation, or migrating along Roman trade routes. By the first century CE, Jewish traders were part of the city's commercial fabric. The community grew through late antiquity and the early Middle Ages, serving as a waystation between the Jewish communities of North Africa, Spain, Italy, and France proper.</p>
 <p>The medieval period saw Marseille's Jewish community — like those of other Provençal cities such as Arles, Avignon, and Carpentras — flourish under conditions of relative tolerance compared to northern France. Jewish merchants participated in Mediterranean trade, connecting the ports of the Levant with those of southern France. The community included rabbis, physicians, and scholars who participated in the broader culture of southern French Jewry.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Marseille's Jews were part of the network of Provençal communities that developed a distinctive tradition between Ashkenazic and Sephardic Jewry. The Provençal communities used a specific liturgical rite, produced Talmudic and legal commentaries, and maintained a position between the Franco-German Ashkenazic world and the Iberian Sephardic sphere. The Rabbis of Provence interacted with both traditions: they corresponded with Rashi's descendants in northern France and with the great scholars of al-Andalus.</p>
 <p>Marseille's port position meant it was a conduit for texts and ideas. Hebrew books printed in Italy, Spain, or North Africa passed through its harbors. Kabbalistic texts spread through Provençal channels.</p>
@@ -494,31 +511,25 @@
 <p>Marseille supports multiple synagogues today, reflecting the diversity of its Jewish population. The Great Synagogue (1864) in the Rue Breteuil was a major center. Sephardic immigrants from North Africa established their own institutions, as did Ashkenazic and Libyan Jewish communities. A Jewish school network, kosher food supply, and communal organizations serve the city's Jews.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>The medieval community produced several scholars, though Marseille was not a major center of Torah learning. The modern period saw the community swell through immigration, producing merchants, professionals, and intellectuals.</p>
 <p>During the Vichy period, Marseille was the base for rescue operations led by Varian Fry (American, non-Jewish), Albert Hirschmann, and others who risked their lives to save Jewish refugees. The American journalist Dorothy Thompson and other figures passed through Marseille during rescue efforts.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Marseille's contribution to Jewish culture lies in its role as a Mediterranean crossroads. The city's Jewish cuisine reflects its North African, Sephardic, and Provençal influences: dishes like fougasse (local bread) with charoset ingredients, couscous, and Mediterranean fish preparations prepared according to kashrut.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Marseille's Jewish community, far from declining, remains one of Europe's largest (estimated 60,000–80,000). It has, however, shifted demographically: North African Jews and their descendants now predominate over the earlier French and Ashkenazic elements.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Marseille remains one of the major centers of contemporary Jewish life in France. Its historic Jewish quarter (the Panier) has been preserved and renovated. Memorials commemorate the deportation of Marseille's Jews during the Holocaust. The community's diversity and vitality are part of the fabric of contemporary French Jewry.</p>
       </section>

@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,52 +482,49 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Pi%C4%85tnica_-_Kości%C3%B3l.jpg/640px-Pi%C4%85tnica_-_Kości%C3%B3l.jpg" alt="Piątnica church" loading="eager">
+      <figcaption>Piątnica church — via <a href="https://en.wikipedia.org/wiki/Pi%C4%85tnica" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Piątnica was a small village in the Łomża district of northeastern Poland, situated on the Narew River directly across from the city of Łomża. Its Jewish community was a satellite of the larger Łomża kehilla — connected by proximity, commerce, and family ties to one of the most celebrated yeshiva cities in Lithuania-influenced Poland. The village's Jews were modest in number but rooted in the landscape and rhythms of the Narew valley.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Pi%C4%85tnica%2C_%C5%81om%C5%BCa_-_widok_z_hotelu_Gromada.JPG/500px-Pi%C4%85tnica%2C_%C5%81om%C5%BCa_-_widok_z_hotelu_Gromada.JPG" alt="Piątnica church" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Piątnica church — via <a href="https://en.wikipedia.org/wiki/Pi%C4%85tnica" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Piątnica's Jews lived in a village setting uncommon for Jewish settlement: most Polish Jews concentrated in market towns (<em>shtetlach</em>), but Piątnica's position adjacent to Łomża made rural settlement viable. Jews here were engaged primarily in small-scale agriculture, river commerce, and trades serving the local population. The Narew River provided fishing and transportation, and some Jewish families engaged in river trade connecting the region to the broader Polish waterway network.</p>
 <p>The community fell under the religious jurisdiction of Łomża, whose rabbinate was distinguished and whose yeshiva — the famous Yeshivas Lomzhe, founded in 1883 by Rabbi Eliezer Shulevitz — trained hundreds of scholars who spread across the Jewish world. The proximity to this institution gave Piątnica's more scholarly families access to serious learning without requiring departure from the community.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>In the interwar period Piątnica had a small Jewish population of several hundred — certainly under 500 — in a predominantly Polish and Belarusian village setting. This small scale meant that communal institutions were minimal; families relied on Łomża, a short distance across the river, for synagogue, market, and yeshiva. The intimacy of a small community carried its own texture: everyone knew everyone, obligations were immediate and visible, the <em>chevra kadisha</em> was neighbors burying neighbors.</p>
 <p>The Jewish families of Piątnica — their names largely unknown to history except through <em>yizkor</em> testimony — engaged in trades and crafts: a miller, a blacksmith, a few shopkeepers, a carter, families who kept a garden and a cow alongside their Jewish observance.</p>
 <p>Given its small size, Piątnica likely had a single prayer house rather than a grand synagogue — a modest wooden building where the village's Jewish men gathered on Shabbat and holidays. A <em>sefer Torah</em> (Torah scroll), a few sacred books, and the basic liturgical items constituted its religious patrimony. The <em>mikveh</em> may have been maintained communally or shared with Łomża. The dead were buried in a small local cemetery.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Piątnica's significance in the broader Jewish world is indirect, flowing through its connection to the Łomża Yeshiva. The Łomża Yeshiva's leaders — Rabbi Yehoshua Yitzchak Shapiro and later his successors — shaped Lithuanian Jewish thought in the early twentieth century. Sons of Piątnica families who studied there carried that tradition.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>The cultural life of Piątnica's Jews was the culture of the Narew valley — an agricultural, river-connected world with deep Lithuanian Jewish roots. Talmud study, Shabbat observance, and the Jewish calendar structured time. The folk culture of Yiddish song, storytelling, and the seasonal celebrations of the Jewish year gave color to ordinary life. In this, Piątnica was not different from thousands of other small communities across Eastern Europe: ordinary Jewish life, lived fully.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The German invasion of September 1939 and the subsequent Soviet occupation (Piątnica fell within the Soviet zone until June 1941) disrupted the community. The German occupation from June 1941 brought violence and persecution. The Jews of Piątnica were concentrated with those of Łomża in the Łomża ghetto. The Łomża ghetto was liquidated in November 1942, with residents transported to the Zambrów transit camp and from there to Auschwitz-Birkenau. The Jews of Piątnica shared this fate.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Piątnica's Jewish dead are remembered as part of the Łomża community's memorial literature. The <em>Sefer Lomzhe</em> (Łomża memorial book) includes testimony from surrounding villages. No Jewish community remains. The village is today a municipal district of Łomża city.</p>
       </section>

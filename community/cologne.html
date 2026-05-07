@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Kranh%C3%A4user_Cologne%2C_April_2018_-01.jpg/640px-Kranh%C3%A4user_Cologne%2C_April_2018_-01.jpg" alt="Cologne Cathedral" loading="eager">
+      <figcaption>Cologne Cathedral — via <a href="https://en.wikipedia.org/wiki/Cologne" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Cologne's Jewish community is among the oldest in the German-speaking world, with origins reaching back to the Roman Empire. The city's position as the largest city north of the Alps in the early medieval period made it both a center of Jewish commerce and a focal point of Jewish persecution. The community was repeatedly expelled and readmitted, destroyed and rebuilt, its continuity interrupted but never permanently severed until the Holocaust brought final devastation to a community that had survived two thousand years.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Kranh%C3%A4user_Cologne%2C_April_2018_-01.jpg/500px-Kranh%C3%A4user_Cologne%2C_April_2018_-01.jpg" alt="Cologne Cathedral" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Cologne Cathedral — via <a href="https://en.wikipedia.org/wiki/Cologne" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>The earliest evidence of Jews in Cologne dates to 321 CE, when Emperor Constantine I issued a decree referring to Jews in the city's administration — the oldest documentary evidence of Jews in any German city. Cologne's status as the provincial capital of Lower Germania made it a natural home for Jewish traders participating in the imperial commercial network.</p>
 <p>The early medieval community appears in Carolingian documents: a Jewish community existed in Cologne in the ninth century, when Archbishop Agobard of Lyon's anti-Jewish campaign brought the Jews of the Rhineland to imperial attention. The community survived the transition from Carolingian to Ottonian rule and grew significantly in the tenth and eleventh centuries.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>By the eleventh century, Cologne's Jewish community was significant in size and scholarly importance. The community participated in the intellectual life of the ShUM region, though it was not formally part of the ShUM alliance of Speyer, Worms, and Mainz. Cologne's Jewish scholars corresponded with the leading sages of the Rhineland.</p>
 <p>The Crusade massacres of 1096 struck Cologne with particular ferocity. Crusader mobs attacked the community; the bishop attempted to protect the Jews by dispersing them to villages in his territory, but many were hunted down and killed. The Cologne community, like those in Mainz and Worms, was devastated but eventually rebuilt.</p>
@@ -492,34 +509,28 @@
 <p>Cologne's Jewish quarter occupied land near the present Cathedral, an imposing physical presence that also proved dangerous — proximity to the major Church institution made the Jewish community perpetually vulnerable to clerical hostility.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Rabbi Eliezer ben Nathan, the Ra'avan (1090–1170), though primarily associated with Mainz, had close connections to the Cologne community. Various scholars passed through Cologne on their way between the major Rhineland centers.</p>
 <p>The community was known more for its commercial than its scholarly eminence, though it produced capable rabbis and communal leaders across the medieval period.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Cologne's Jewish culture reflected the community's commercial orientation. Merchants, traders, and financiers dominated the community's leadership. The community nonetheless maintained a full range of Jewish religious and educational institutions: synagogue, yeshiva, Talmud Torah, mikveh, and burial society.</p>
 <p>The community maintained connections to the broader world of Rhineland Jewish scholarship. Liturgical compositions and responsa from Cologne appear in the broader Ashkenazic tradition, though Cologne never dominated the ShUM region's scholarship in the way Mainz and Worms did.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Cologne's Jews were expelled in 1424 — one of the earliest municipal expulsions of Jews in Germany — and the community was not formally reestablished until the early nineteenth century. During the nearly four centuries of absence, only passing Jewish merchants had any presence in the city.</p>
 <p>Modern resettlement began after the French Revolutionary armies occupied the Rhineland in 1796–1797 and abolished legal discrimination against Jews. Cologne's nineteenth-century community grew rapidly as emancipation opened German cities to Jewish settlement. By 1900, the community numbered over 11,000 and was a significant presence in Cologne's commercial and civic life.</p>
 <p>The Nazi period brought renewed catastrophe. Cologne had approximately 16,000 Jews in 1933; Kristallnacht burned the city's synagogues in November 1938; deportations began in 1941 and continued through 1944. Of the 16,000 Jews of 1933, approximately 11,000 were murdered in the Holocaust or died as a direct result of persecution.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Cologne today has a Jewish community of approximately 5,000–6,000, rebuilt largely by immigrants from the former Soviet Union. The Roonstrasse Synagogue, restored after Kristallnacht, serves as the community's main house of worship. The archaeological museum beneath the Cologne City Hall includes the excavated remains of the medieval Jewish quarter — mikveh, synagogue foundations, and a medieval document cache — integrated into a permanent exhibition that situates Cologne in two thousand years of Jewish history.</p>
 <p>In 2021, UNESCO inscribed the ShUM Sites of Speyer, Worms, and Mainz as World Heritage Sites, acknowledging the broader Rhineland Jewish civilization of which Cologne was a part.</p>

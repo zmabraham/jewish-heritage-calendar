@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Dyn%C3%B3w_-_rynek.jpg/640px-Dyn%C3%B3w_-_rynek.jpg" alt="Dynów town square" loading="eager">
+      <figcaption>Dynów town square — via <a href="https://en.wikipedia.org/wiki/Dyn%C3%B3w" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Dynów — known in Jewish tradition as Dinov — is a small town in the Subcarpathian region of southeastern Poland, historically part of Galicia, situated on the San River. Its Jewish community is remembered primarily through the figure of Rabbi Tzvi Elimelech Shapira of Dinov (1783–1841), the author of the Benei Yissaschar, one of the most studied works of Kabbalistic-Hasidic literature. Though the town itself was modest in size, its contribution to the Jewish library and to the mystical theology of the Hasidic movement is immense.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Dyn%C3%B3w_-_rynek.jpg/640px-Dyn%C3%B3w_-_rynek.jpg" alt="Dynów town square" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Dynów town square — via <a href="https://en.wikipedia.org/wiki/Dyn%C3%B3w" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews settled in Dynów in the seventeenth century as Galician Jewry spread through the smaller towns and villages of the Carpathian foothills. The community occupied a marginal but stable position in the regional economy, dealing in lumber from the abundant Carpathian forests, agricultural products, and local trade. Under Austrian Habsburgs after 1772, Dynów Jews participated in the modernizing pressures of Josephinian reform while maintaining strong attachment to traditional life and the emerging Hasidic movement.</p>
 <p>The region of Subcarpathian Galicia became fertile ground for Hasidism in the late eighteenth and early nineteenth centuries, with multiple rabbinic courts establishing themselves in the mountain towns. Dynów gained its place on this map through the arrival and settlement of Rabbi Tzvi Elimelech.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Rabbi Tzvi Elimelech Shapira (1783–1841) was born in Dynów and served there as the town's rebbe from approximately 1820 until his death. He had been a disciple of some of the greatest figures of Polish-Galician Hasidism, including Rabbi Menachem Mendel of Rimanov, Rabbi Abraham Joshua Heschel of Apt (the Apter Rebbe), and the Seer of Lublin. This remarkable chain of discipleship placed him at the confluence of the major currents of early Polish Hasidism.</p>
 <p>Rabbi Tzvi Elimelech was a prolific author of rare intellectual depth. His works combined rigorous Kabbalistic learning — particularly the Lurianic Kabbalah of Rabbi Isaac Luria — with Hasidic theology, halakhic discussion, and ethical instruction. He was equally at home in the mystical and the practical dimensions of Jewish religious life.</p>
@@ -494,31 +511,22 @@
 <p>The synagogue and beit midrash of Dynów served as gathering places for the rebbe's disciples and the broader community. The town's Jewish institutions — cheder, yeshiva, charitable societies, and burial organization (chevra kadisha) — functioned through the nineteenth and early twentieth centuries. By the interwar period, political modernization had touched even Dynów: Zionist organizations operated alongside traditional institutions.</p>
       </section>
 
-      <section id="notable-figures">
-        <h2>Notable Figures</h2>
-        
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
-      </section>
+      
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Rabbi Tzvi Elimelech's synthesis of Kabbalah and Hasidism in an accessible, calendar-structured format was his lasting contribution to Jewish religious culture. The Benei Yissaschar demonstrated that the Kabbalistic tradition's understanding of sacred time — the idea that different periods of the year carry different spiritual energies and require different modes of divine service — could be communicated not only to scholars but to any educated Hasidic reader.</p>
 <p>His emphasis on the mystical dimension of Jewish holidays — showing how each festival is not merely a historical commemoration but a recurrence of cosmic spiritual events — deepened popular Hasidic understanding of the Jewish year.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The German occupation of Dynów in September 1939 brought immediate persecution. By 1942, the town's approximately 1,500 Jews were concentrated in a ghetto and deported to the Bełżec extermination camp. Virtually none survived. The synagogue and beit midrash were destroyed.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The Benei Yissaschar ensures that the name of Dinov resonates in every Hasidic home and study hall where the Jewish calendar is studied with mystical intention. Multiple modern editions of the work — with Hebrew commentary, English translation, and digital formats — have extended its reach to new generations. A small monument marks the site of the Dynów Jewish community's destruction.</p>
       </section>

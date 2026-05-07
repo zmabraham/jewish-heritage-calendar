@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,53 +482,45 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Brest-Litovsk — known in Jewish tradition as <em>Brisk</em> — was one of the great border cities of Eastern Europe and one of the most consequential Jewish communities in Lithuanian-Polish history. Situated at the confluence of the Bug and Mukhavets rivers on the border between Poland-Lithuania and later Russia, the city was a strategic military and commercial nexus. To the Jewish world, however, "Brisk" meant above all the great yeshiva tradition and the towering dynasty of the Soloveitchik family — the <em>Brisker</em> method of Talmudic analysis that revolutionized Lithuanian scholarship and continues to shape elite yeshiva study worldwide. Brisk also lent its name to the Treaty of Brest-Litovsk (1918), signed in the city's fortress, which ended Russian participation in World War I.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Brest_BY_collage.jpg/500px-Brest_BY_collage.jpg" alt="Brest (Brest-Litovsk), Belarus" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Brest (Brest-Litovsk), Belarus — via <a href="https://en.wikipedia.org/wiki/Brest-Litovsk" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews settled in Brest-Litovsk in the late medieval period, and by the sixteenth century the community was among the most important in the Grand Duchy of Lithuania. In 1388, Grand Duke Vytautas of Lithuania issued a charter of Jewish rights at Brest, one of the earliest and most comprehensive documents of Jewish legal protection in the region. The city's position on major trade routes linking Poland-Lithuania with Moscow and the Ottoman Empire made it commercially vital, and Jews served as merchants, financiers, and craftsmen in the city's economy.</p>
 <p>Brest-Litovsk was a founding member of the Council of Lithuania (<em>Va'ad Medinat Lita</em>), the self-governing body of Lithuanian Jewry. It suffered grievously in the Cossack and Swedish wars of the mid-seventeenth century but recovered to regain its importance. Under Russian rule from 1795, the city became a significant administrative and military center in the western provinces.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Brest's greatest period of Torah scholarship came with the Soloveitchik dynasty in the nineteenth century. Rabbi Yosef Dov Soloveitchik (the <em>Beis HaLevi</em>, 1820–1892) served as rabbi of Brisk and developed the analytical method that would bear the city's name. The <em>Brisker method</em> — rigorous conceptual categorization of halachic categories, systematic application of logical distinctions (<em>chakirot</em>) to Talmudic problems, emphasis on precision over dialectical cleverness — was crystallized by his son Rabbi Chaim Soloveitchik (Reb Chaim Brisker, 1853–1918), who became the most influential Torah scholar of the twentieth century and whose approach transformed how the greatest yeshivot worldwide studied Talmud.</p>
 <p>Reb Chaim Brisker was not only a supreme intellectual but a social activist of the first order: he opened his home to the poor, instituted free communal meals, and expressed his religious values through extraordinary acts of <em>chesed</em> (lovingkindness). His student body included virtually every major Torah figure of the next generation. His son Rabbi Velvel Soloveitchik (the Brisker Rav, 1886–1959) continued the dynasty in Brisk before fleeing to Palestine in 1939; another grandson, Rabbi Joseph B. Soloveitchik (the <em>Rav</em>, 1903–1993), became the preeminent Orthodox Jewish philosopher of twentieth-century America.</p>
 <p>Brest contained a major synagogue complex in its Jewish quarter, numerous batei midrash, and the celebrated Brisker Yeshiva associated with the Soloveitchik family. The community maintained a <em>gemilut chassadim</em> (free loan) society that under Reb Chaim Brisker became legendary for its generosity. The Brest fortress, built by Russian imperial engineers, was separate from the Jewish quarter; the city center was entirely redesigned around the fortress in the nineteenth century, displacing much of the older urban fabric.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>The Soloveitchik dynasty stands supreme: <strong>Reb Chaim Brisker</strong> transformed Talmudic methodology; his son <strong>Rabbi Velvel (Yitzchak Ze'ev) Soloveitchik</strong> continued as Brisker Rav; his grandson <strong>Rabbi Joseph B. Soloveitchik</strong> shaped American Modern Orthodoxy and wrote <em>Halakhic Man</em> and <em>The Lonely Man of Faith</em>. <strong>Rabbi Chaim Halberstam</strong> of Sanz passed through the city's orbit. The Zionist leader <strong>Menachem Ussishkin</strong> was associated with the Brest region. The <strong>Zohar</strong>, pseudepigraphically attributed to Rabbi Shimon bar Yochai, was first printed in part in nearby Brisk in the 16th century — the 1559–1560 Cremona edition drew on manuscripts circulating in this region.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Brest's Jewish community encompassed a wide range of religious and political orientations. The dominant character was traditional-Orthodox, shaped by the Soloveitchik influence, but Zionist movements, the Bund, and the Haskalah all had followings. The city had Yiddish and Hebrew schools, a Jewish press, and cultural organizations. Brest's geographical position — on the border of Russia and Poland — gave its Jews an awareness of broader political currents and produced emigrants who settled across both the Russian Empire and in America.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>World War I brought intense fighting to the Brest region. The fortress of Brest-Litovsk was the site where Germany and the Central Powers signed the treaty with Bolshevik Russia in March 1918 ending the Eastern Front. Jewish residents experienced occupation, forced labor, and displacement. The interwar period saw Brest as part of the Polish Second Republic (as Brześć nad Bugiem), with a Jewish community of some 21,000.</p>
 <p>The Soviet occupation of 1939–1941 brought arrests and deportations of Jewish activists to Siberia — a fate that, ironically, saved many lives. The German invasion of June 1941 was followed by mass shootings and the establishment of a ghetto. The Brest Ghetto was liquidated in October 1942: approximately 20,000 Jews were taken to pits at Bronna Góra and shot. Rabbi Velvel Soloveitchik had fled to Palestine in 1939; those who remained perished. Fewer than a few hundred Brest Jews survived the war.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The Brisker method of Talmud study continues to define elite Torah scholarship worldwide. The Brisk Yeshiva in Jerusalem, led by descendants of the Soloveitchik family, is one of the most distinguished yeshivot in Israel. The <em>Beis HaLevi</em> on the Torah remains a standard work of biblical commentary. Rabbi Joseph B. Soloveitchik's writings continue to be studied and debated by serious Orthodox thinkers. The city of Brest in Belarus today has a modest Jewish community; there is a memorial at the Bronna Góra mass grave site.</p>
       </section>

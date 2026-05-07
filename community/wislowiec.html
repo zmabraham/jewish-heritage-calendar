@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,52 +482,49 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/61-224-9002_Vyshnivets_Palace_RB.jpg/640px-61-224-9002_Vyshnivets_Palace_RB.jpg" alt="Vyshnivets Palace" loading="eager">
+      <figcaption>Vyshnivets Palace — via <a href="https://en.wikipedia.org/wiki/Vyshnivets" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Wislowiec was a small Jewish community in the Radom or Kielce region of central Poland — a village-level settlement whose Jewish residents formed part of the dense network of Galician-type small communities that characterized Jewish life in the Kielce gubernia. Like many such communities, Wislowiec maintained a complete if modest Jewish institutional life that was erased during the Holocaust.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/61-224-9002_Vyshnivets_Palace_RB.jpg/640px-61-224-9002_Vyshnivets_Palace_RB.jpg" alt="Vyshnivets Palace" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Vyshnivets Palace — via <a href="https://en.wikipedia.org/wiki/Vyshnivets" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>The Kielce-Radom region was a zone of older Polish Jewish settlement, with communities tracing their roots to the sixteenth and seventeenth centuries. Jews in this region were typically involved in trade with the surrounding agricultural population, leasing activities, innkeeping, and crafts. The area was part of the Congress Kingdom of Poland under Russian rule from 1815 to 1918, then incorporated into independent Poland. Small villages throughout the region had Jewish communities of varying sizes — some merely a handful of families, others several hundred residents.</p>
 <p>Jewish life in village communities like Wislowiec operated in close dependence on the nearest market town, which provided access to a rabbi, a <em>mikveh</em>, formal educational institutions, and the larger markets necessary for significant commerce. The village itself was the site of primary kinship and neighborhood relations.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The interwar period represented the community's most organized era. Even in small villages, the period of Polish independence brought formal civil status for Jews, the right to vote and to organize, and participation in the broad cultural and political movements that animated Polish Jewish life. Youth movements, Zionist organizations, and religious parties all reached into communities of this size through itinerant organizers, newspapers, and annual events.</p>
 <p>The Jewish families of Wislowiec — likely fewer than 200–300 souls in the interwar period — sustained themselves in the local economy while maintaining connection to the broader Jewish world through the Yiddish press, through family connections in larger cities, and through the periodic presence of itinerant teachers and merchants.</p>
 <p>A small prayer house — likely a converted private home or a small purpose-built wooden structure — served the community's worship. Religious authority was provided by the rabbi of the nearest town. A small school, whether a traditional <em>cheder</em> or an organized Jewish school, educated children. The community maintained a cemetery and a burial society.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>The Jewish families of Wislowiec are largely unknown to history by name, preserved only in memorial testimony. Small communities produced no published authors, no famous rabbis, no internationally recognized figures — and yet they were fully realized human communities, with their own internal hierarchies, their distinguished families, their community characters, their locally famous craftsmen and scholars.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Wislowiec contributed what every Jewish community contributed: the maintenance of Jewish life in a specific place, the raising of Jewish children, the observance of the commandments in a particular landscape and social context. The specificity of this contribution — rooted in this soil, this market, these neighbors, these family stories — constitutes the irreplaceable particularity of every community. No general history of Judaism can substitute for the particular history of Wislowiec.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The German occupation of the Kielce-Radom region from September 1939 initiated the same terrible progression experienced across occupied Poland. Forced labor, property confiscation, and ghettoization preceded the final deportations. In 1942, during the mass deportations of Operation Reinhard, the Jews of Wislowiec and the surrounding region were deported to the Treblinka extermination camp. The community was annihilated.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The memory of Wislowiec's Jewish community is preserved through the general memorial literature of the Radom-Kielce region and through individual Pages of Testimony submitted to Yad Vashem. No Jewish community remains. The Jewish cemetery, if it survives at all, is the last physical marker of the community's presence.</p>
       </section>

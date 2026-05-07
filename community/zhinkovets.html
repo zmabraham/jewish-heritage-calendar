@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,21 +482,24 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Zinkiv.jpg/640px-Zinkiv.jpg" alt="Zinkiv (Zhinkovets)" loading="eager">
+      <figcaption>Zinkiv (Zhinkovets) — via <a href="https://en.wikipedia.org/wiki/Zinkiv" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Zhinkovets — a small village in the Khmelnytskyi Oblast of western Ukraine — was one of the hundreds of small Jewish communities in Podolia that maintained kehilla life in the face of chronic vulnerability. Its story is the story of Podolian Jewish shtetlach: commerce in an agricultural region, participation in the Hasidic movements that swept through Podolia, and the perpetual awareness that violence had come before and could come again.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Zinkiv.jpg/640px-Zinkiv.jpg" alt="Zinkiv (Zhinkovets)" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Zinkiv (Zhinkovets) — via <a href="https://en.wikipedia.org/wiki/Zinkiv" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Podolia — the region between the Dniester and Southern Bug rivers in what is today west-central Ukraine — was one of the most densely Jewish regions of Europe. Towns like Zhinkovets formed a network of Jewish communities across this fertile agricultural zone. Zhinkovets itself was small — probably never more than a few hundred Jewish families — but its existence alongside similar nearby communities created a regional Jewish culture that was self-sustaining across generations.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Jewish life in Podolian towns like Zhinkovets had a distinctive character shaped by the region's particular geography and history. The land was fertile, the agricultural economy robust, and the Jewish merchant class served as intermediaries between the Ukrainian peasantry, Polish nobility, and broader regional markets. Podolia was also the cradle of Hasidism: the Baal Shem Tov's court in nearby Medzhibozh radiated influence throughout the region, and subsequent generations of Hasidic masters — R. DovBer of Mezeritch, R. Levi Yitzchak of Berdichev, R. Nachman of Breslov — all operated within a day or two's journey of Zhinkovets.</p>
 <p>The Hasidic influence made Podolian Jewry distinctive in its emotional expressiveness, its joy in worship, and its attachment to the rebbe's court as a spiritual and social center. Zhinkovek's Jews would likely have identified with the Berdichev or Uman Hasidic traditions, traveling to those courts for the High Holidays or for life-cycle events.</p>
@@ -490,30 +507,24 @@
 <p>What is remarkable, in historical perspective, is not that violence occurred but that communities like Zhinkovets rebuilt each time — that Jewish families returned to the same towns and villages across Podolia, generation after generation, despite the objective danger. This attachment to place — this stubborn refusal to abandon a town that had been home for centuries — is one of the defining features of eastern European Jewish history.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Zhinkovets was not associated with famous personalities. Its significance lies in its ordinariness — it represents the majority experience of Ukrainian Jewish life, which was lived in small towns, not major cities, by people whose names do not appear in history books.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Zhinkovets maintained a synagogue, a study house, and the charitable and educational institutions necessary for Jewish communal life. The chevra kadisha buried the dead; charitable societies supported brides and provided loans; the cheder educated children. The market economy that supported the community operated on a weekly rhythm of commerce with Ukrainian peasants and regional merchants.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Soviet rule brought the suppression of religious and Zionist institutions. The German occupation of 1941 resulted in the mass murder of the Jewish community, shot and buried in mass graves outside the village.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Zhinkovets today is a small Ukrainian village. The memory of its Jewish community is preserved in regional Jewish histories and in Yad Vashem testimony.</p>
       </section>

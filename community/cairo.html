@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Cairo_Opera_House%2C_Al_Hurriyah_Park_and_the_Nile_river_%2814797782354%29.jpg/640px-Cairo_Opera_House%2C_Al_Hurriyah_Park_and_the_Nile_river_%2814797782354%29.jpg" alt="Cairo Opera House and the Nile" loading="eager">
+      <figcaption>Cairo Opera House and the Nile — via <a href="https://en.wikipedia.org/wiki/Cairo" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Cairo — and its predecessor, the garrison city of Fustat — stands as one of the most consequential centers of Jewish civilization in the medieval world. For nearly five centuries, from the Fatimid conquest of 969 CE through the Mamluk period, Cairo's Jewish community produced luminaries whose writings shaped halakha, philosophy, and communal organization across the entire diaspora. Its greatest monument is not a building but an archive: the Cairo Geniza, a trove of over 300,000 manuscript fragments deposited in the Ben Ezra Synagogue, which has revolutionized our understanding of medieval Jewish life.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Cairo_Opera_House%2C_Al_Hurriyah_Park_and_the_Nile_river_%2814797782354%29.jpg/500px-Cairo_Opera_House%2C_Al_Hurriyah_Park_and_the_Nile_river_%2814797782354%29.jpg" alt="Cairo Opera House and the Nile" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Cairo Opera House and the Nile — via <a href="https://en.wikipedia.org/wiki/Cairo" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jewish settlement in and around the Nile Delta reaches back to antiquity. Following the Babylonian conquest of Judea in 586 BCE, significant Jewish populations established themselves throughout Egypt. The city of Fustat was founded in 641 CE by the Arab general Amr ibn al-As shortly after the Muslim conquest of Egypt, and Jews were among its earliest inhabitants. Fustat served as the administrative capital and commercial hub of Egypt until the founding of Cairo (al-Qahira) in 969 CE by the Fatimid caliph al-Muizz; thereafter the two cities coexisted as a conurbation, with much of the Jewish communal life centered in the older Fustat quarter.</p>
 <p>Under the Fatimids (969–1171), the Jewish community enjoyed a period of relative tolerance and prosperity. The Fatimids, themselves a heterodox Shia dynasty, were notably less restrictive toward dhimmi populations than many contemporaries, and Jewish merchants, physicians, and courtiers achieved positions of considerable influence. The Nagid (Head of the Jews) served as the official Jewish leader recognized by the Fatimid court, a role that gave the community institutional stability.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The apogee of Cairene Jewish life coincided with the reign of the Fatimid caliphs and the subsequent Ayyubid period. Cairo sat at the intersection of Indian Ocean and Mediterranean trade networks, and Jewish merchants — documented extensively in the Geniza letters — conducted business from Spain to India, using Arabic-script Judeo-Arabic correspondence and sophisticated instruments of commercial credit. S.D. Goitein's monumental six-volume study, <em>A Mediterranean Society</em>, reconstructed this commercial and social world in exhaustive detail from the Geniza documents.</p>
 <p>The Geniza letters reveal a community of astonishing cosmopolitanism: merchants writing from Aden to Cairo describe spice shipments; responsa from Babylon and Andalusia are quoted and analyzed; ordinary Jews discuss betrothals, business disputes, and charitable obligations with a directness that no later source equals. The Ben Ezra Synagogue, traditionally associated with the prophet Elijah, served as the depository where worn or sacred documents were stored rather than destroyed — a practice that inadvertently preserved centuries of communal memory.</p>
@@ -491,32 +508,26 @@
 <p>A second major congregation, the Palestinian rite synagogue (as distinct from the Babylonian rite), maintained a separate communal structure reflecting the two great streams of Jewish legal tradition that competed for authority in medieval Egypt. The Maimonides Synagogue, established in a building in Cairo's old Jewish quarter (Haret al-Yahud), remains a site of pilgrimage.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>The towering figure of Cairene Jewry is Rabbi Moshe ben Maimon, known universally as Maimonides (Rambam, 1138–1204). Fleeing the Almohad persecution in his native Córdoba and spending years in Fez and the Land of Israel, Maimonides settled in Fustat around 1166 and remained there until his death. He served as court physician to Saladin's vizier al-Qadi al-Fadil and as the Nagid of Egyptian Jewry. In Cairo he completed his three masterworks: the <em>Mishneh Torah</em> (the comprehensive codification of Jewish law), the <em>Moreh Nevuchim</em> (Guide for the Perplexed, a synthesis of Aristotelian philosophy and Jewish theology), and his <em>Commentary on the Mishnah</em>. He is buried in Tiberias, as his body was later transferred there, but his intellectual legacy is inseparable from Cairo.</p>
 <p>Among other notable figures: Rabbi David ben Maimon (Maimonides' brother, lost at sea on a trading voyage, whose death Maimonides mourned for years); Rabbi Abraham Maimonides (1186–1237), Maimonides' son and successor as Nagid, who developed a distinctive pietist movement drawing on Sufi devotional practices; and Rabbi David II Maimonides, who continued the dynastic Nagidship.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Cairo's Jewish community produced a rich body of Judeo-Arabic literature — philosophical works, legal responsa, liturgical poetry, and commercial correspondence — that constitutes the single largest body of medieval Jewish writing outside the Talmud itself. The Geniza documents include biblical manuscripts predating the standard Masoretic text, medical prescriptions, children's writing exercises, marriage contracts, and court records, offering an incomparable window into daily life.</p>
 <p>The Maimonidean pietist movement under Abraham Maimonides introduced elements of Islamic devotional practice — prostration, contemplative vigils, rhythmic prayer — into Jewish worship in a deliberate attempt to recover what Abraham believed was the original prophetic religion. This cross-cultural religious creativity is uniquely Egyptian.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The Mamluk and later Ottoman periods saw a gradual narrowing of Jewish opportunity and periodic violence. The 19th and early 20th centuries brought a revival, as Sephardic Jews from the Levant and Western Europe settled in Cairo and Alexandria, and Egypt's Jewish population reached approximately 80,000 by World War II. The 1948 Arab-Israeli War, anti-Jewish riots in Cairo and Alexandria, and the Nasser era nationalization policies of the 1950s caused a rapid exodus. The 1956 Suez Crisis and 1967 war effectively ended Jewish communal life in Cairo. The last residents of the Haret al-Yahud departed by the 1970s.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Fewer than a dozen Jews remain in Cairo today. The Ben Ezra Synagogue has been restored and operates as a heritage site under Egyptian Antiquities. The Cairo Geniza materials, distributed across Cambridge, New York, and other archives, continue to yield new scholarship; the Friedberg Genizah Project aims to digitize and catalog the entire collection. Egyptian Jewish descendants maintain diaspora organizations in Israel, France, and the Americas.</p>
       </section>

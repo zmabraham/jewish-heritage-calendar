@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,52 +482,49 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Plac_Narutowicza_w_Be%C5%82chatowie.jpg/640px-Plac_Narutowicza_w_Be%C5%82chatowie.jpg" alt="Plac Narutowicza, Bełchatów" loading="eager">
+      <figcaption>Plac Narutowicza, Bełchatów — via <a href="https://en.wikipedia.org/wiki/Be%C5%82chat%C3%B3w" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Bełchatów was a weaving and textile town in the Łódź region of central Poland whose Jewish community, comprising a large portion of the town's population, was nearly entirely annihilated in 1942 through deportations to the Chełmno extermination camp. Before its destruction, Bełchatów's Jewish artisan community represented generations of skilled labor and vibrant cultural life.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Plac_Narutowicza_w_Be%C5%82chatowie.jpg/500px-Plac_Narutowicza_w_Be%C5%82chatowie.jpg" alt="Plac Narutowicza, Bełchatów" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Plac Narutowicza, Bełchatów — via <a href="https://en.wikipedia.org/wiki/Be%C5%82chat%C3%B3w" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews settled in Bełchatów from the early nineteenth century, drawn by the developing textile economy of the region around Łódź — Poland's industrial heartland. As the town industrialized through the nineteenth century, Jews became central to the weaving and cloth-finishing trades. By the early twentieth century, the Jewish community had grown to several thousand residents, comprising roughly half the town's population. Bełchatów's Jews spoke Yiddish as their daily language, maintained separate social institutions, and participated in the full spectrum of Jewish political and cultural life that characterized this era.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The interwar period (1919–1939) was Bełchatów's most complex and energized chapter. The town's Jewish population reached approximately 4,500 — nearly half the total population of roughly 10,000. Jewish artisans dominated the weaving industry: handloom weavers, textile merchants, and finishing workers formed the backbone of the Jewish labor force. This proletarian character distinguished Bełchatów from more commercially oriented communities and made it fertile ground for the Jewish labor movement.</p>
 <p>The Bund (General Jewish Labor Bund) was a major presence, organizing workers and providing Yiddish-language cultural institutions including schools and libraries. Zionist organizations competed for the loyalties of the young. The Agudat Israel maintained Orthodox political organization. Hasidic prayer houses (<em>shtiblach</em>) of the Gerer, Aleksander, and other dynasties served the religiously traditional population. Daily life unfolded in Yiddish; the textile workshop and the study house were the twin anchors of existence.</p>
 <p>Bełchatów had a main synagogue, several <em>batei midrash</em> (houses of study), and numerous Hasidic <em>shtiblach</em>. A Jewish school network operated in both the traditional (<em>cheder</em>) and modern secular-Yiddish traditions. The community maintained a <em>mikveh</em>, a <em>chevra kadisha</em> (burial society), a Jewish hospital ward, and charitable funds. Zionist youth movements — Hashomer Hatzair, Betar, Gordonia — provided education and community for young people who increasingly looked toward Palestine.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Bełchatów's most significant figures were its community leaders, rabbis, and labor organizers whose names are preserved in the town's <em>yizkor</em> (memorial) literature. Rabbi Pinchas Menachem Yustman, who later became the Piaseczno Rebbe, had connections to the broader region. The community's rabbinate served its congregants faithfully through generations without producing figures of international renown — a reminder that the greatness of Jewish civilization resided not only in its great scholars but in the unnamed millions who lived its teaching.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>The weaving culture of Bełchatów's Jews represented a living synthesis of artisan skill and religious life. The rhythm of the weaving week was punctuated by Shabbat, when looms fell silent and the town's Jews gathered in prayer. The labor movement culture introduced secular Yiddish literature, theater, and song into a community that had been shaped primarily by religious tradition. This tension between the old world and the new was the creative friction of interwar Jewish life.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The German occupation of Bełchatów in September 1939 initiated a period of persecution: forced labor, property confiscation, the wearing of the yellow star, curfews. A ghetto was established in 1940 concentrating the Jewish population in a restricted area. Conditions deteriorated sharply through 1941.</p>
 <p>In August 1942, the German authorities liquidated the Bełchatów ghetto. Approximately 4,000 Jews were assembled, loaded onto wagons, and transported to the Chełmno extermination camp. As in Zychlin, deportees were gassed in mobile vans on arrival. A small number of young people were selected for forced labor and perished in labor camps later in the war. The Jewish community of Bełchatów ceased to exist.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Bełchatów today is known primarily as the site of the largest open-pit coal mine and thermal power plant in Poland — a massive industrial transformation that has reshaped the landscape entirely. The pre-war Jewish town is gone. A <em>yizkor</em> book compiled by survivors and their descendants, <em>Sefer Belchatow</em>, preserves the community's memory. A small memorial marks the site of the synagogue.</p>
       </section>

@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Rabat_Mausoleum_of_Ma5_El_Hassan_II.jpg/640px-Rabat_Mausoleum_of_Ma5_El_Hassan_II.jpg" alt="Rabat Mausoleum" loading="eager">
+      <figcaption>Rabat Mausoleum — via <a href="https://en.wikipedia.org/wiki/Rabat" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Rabat, the capital of Morocco, may be less celebrated than Fez or Marrakech in Jewish historical memory, yet its Jewish community left an indelible mark on the Atlantic coast of North Africa. Nestled where the Bou Regreg River meets the Atlantic Ocean, Rabat's mellah — the Jewish quarter established in the seventeenth century — housed a community of merchants, artisans, and scholars who served as intermediaries between the Moroccan sultanate and the European powers. Across the river from its sister city Salé, Rabat developed a Jewish presence that combined the ancient Maghrebi Jewish traditions with the Sephardic culture brought by the 1492 expellees from Spain, creating a distinctive community of considerable learning and commercial acumen.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Morocco_-_Rabat_%2831387775324%29.jpg/500px-Morocco_-_Rabat_%2831387775324%29.jpg" alt="Rabat Mausoleum" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Rabat Mausoleum — via <a href="https://en.wikipedia.org/wiki/Rabat" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jewish settlement in the Rabat-Salé region predates the Arab conquest of the seventh century. Ancient Berber Jewish communities dotted the Atlantic coast, and when the Almohad persecutions of the twelfth century devastated established centers further inland, some refugees made their way to coastal towns. The modern Jewish community of Rabat, however, took its characteristic shape in the sixteenth and especially seventeenth centuries, when Sultan Moulay Zidan (r. 1608–1627) and his successors formalized the mellah system and encouraged Jewish settlement to serve the court's commercial and diplomatic needs.</p>
 <p>The geographical position of Rabat gave its Jews a unique role. Facing the Atlantic, the city was Morocco's gateway for trade with Europe — with Dutch, English, and French merchants all seeking reliable brokers who spoke their languages and understood their commercial customs. Jewish merchants of Rabat became indispensable as agents, translators, and trade intermediaries. The court Jews (tujjar al-sultan, "merchants of the sultan") arranged imports of weapons, textiles, and luxury goods while handling the export of Moroccan agricultural products, leather, and crafts.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Rabat's mellah was established in the seventeenth century as a walled quarter adjacent to the royal palace — a typical pattern in Moroccan Jewish urban geography that simultaneously offered royal protection and enforced separation. The mellah's streets were narrow and intimate, lined with three-story houses whose elaborate ornamental woodwork and tilework reflected the prosperity of the community's merchant class. The quarter contained several synagogues, a mikveh (ritual bath), a Jewish cemetery, and communal institutions for the welfare of the poor and the education of children.</p>
 <p>Life in the mellah followed the rhythms of Jewish law and the Moroccan seasons. The weekly markets and the great festivals — particularly the elaborate Moroccan celebrations of Mimouna (the post-Passover outdoor festival) and the hillula (pilgrimage festivals to the tombs of holy men) — defined the communal calendar. The Mimouna, celebrated on the night after Passover ended, was a uniquely Moroccan Jewish tradition in which homes were open to all, tables laden with milk, honey, and green herbs as symbols of spring and prosperity, with neighbors — Jewish and Muslim — exchanging blessings.</p>
@@ -500,30 +517,15 @@
 </ul>
       </section>
 
-      <section id="notable-figures">
-        <h2>Notable Figures</h2>
-        
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
-      </section>
+      
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
-        <h2>Cultural Life</h2>
-        
-      </section>
+      
 
-      <section id="decline">
-        <h2>Decline &amp; Transformation</h2>
-        
-      </section>
+      
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The diaspora of Moroccan Jews from Rabat and across Morocco created one of the world's most vibrant émigré communities. In Israel, Moroccan Jews constitute the largest single ethnic group, and their cultural contributions — Mizrahi music, distinctive cuisine, the Mimouna celebration (now a national Israeli holiday), and the veneration of kabbalistic saints — have profoundly shaped Israeli popular culture. In France, Sephardic Jews from Morocco became the backbone of the French Jewish community after the 1960s. In Canada, particularly in Montreal and Toronto, Moroccan Jewish communities established French-speaking synagogues and cultural institutions preserving their distinctive heritage.</p>
 <p>The old mellah of Rabat still stands, its synagogues carefully preserved by the Moroccan government as cultural heritage sites — a physical reminder of the centuries-long partnership between the Moroccan throne and its Jewish subjects that distinguished Moroccan Jewish history.</p>

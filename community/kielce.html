@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Kielce_-_Palac_Biskupow.jpg/640px-Kielce_-_Palac_Biskupow.jpg" alt="Bishops' Palace, Kielce" loading="eager">
+      <figcaption>Bishops' Palace, Kielce — via <a href="https://en.wikipedia.org/wiki/Kielce" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Kielce is a regional capital in south-central Poland whose Jewish community, while not among the largest in Poland, is remembered above all for a single devastating event that occurred after the Holocaust had ended: the Kielce pogrom of July 4, 1946. On that day, a Polish mob — incited by a false blood libel accusation — murdered 42 Jewish Holocaust survivors and wounded more than 40 others. The Kielce pogrom was the most lethal antisemitic massacre in postwar Europe and precipitated the mass emigration of the remaining Jewish survivors from Poland, most of them making their way to Palestine. It remains one of the defining events in the history of Polish-Jewish relations and in the story of Jewish postwar reconstruction.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Kielce%2C_Pa%C5%82ac_Biskup%C3%B3w_Krakowskich_w_Kielcach%2C_KsP_02_%28cropped%292.jpg/640px-Kielce%2C_Pa%C5%82ac_Biskup%C3%B3w_Krakowskich_w_Kielcach%2C_KsP_02_%28cropped%292.jpg" alt="Bishops' Palace, Kielce" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Bishops' Palace, Kielce — via <a href="https://en.wikipedia.org/wiki/Kielce" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews had lived in Kielce since at least the seventeenth century, though they were long subject to restrictions that limited their numbers and economic activities. By the late nineteenth and early twentieth centuries the community had grown substantially. Kielce was the capital of Kielce Governorate, a significant administrative and economic center for the surrounding region.</p>
 <p>By 1939 Kielce's Jewish population numbered approximately 25,000, about one-third of the city's total population. The community was engaged in trade, crafts, and professions; it maintained synagogues, schools, and political organizations spanning the full spectrum of Jewish political life.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>German forces occupied Kielce in September 1939. The Kielce ghetto was established in April 1941, concentrating the city's Jews and thousands more from surrounding communities. On August 20–24, 1942, the Germans conducted a mass deportation of approximately 21,000 Jews from the Kielce ghetto to the Treblinka extermination camp, where they were murdered. Additional deportations and shootings followed. By the time Soviet forces liberated Kielce in January 1945, the pre-war Jewish community had been almost entirely annihilated.</p>
 <p>By July 1946 approximately 200 Jewish survivors had returned to Kielce, living in a building at 7 Planty Street that served as the local office of the Jewish Committee. Many were trying to retrieve property, locate surviving family members, or arrange emigration. They were fragile survivors of the camps and hiding places, attempting to rebuild their lives.</p>
@@ -495,30 +512,15 @@
 <p>Kielce's prewar synagogue, built in 1903, was a significant structure serving the kehilla. It was damaged during the war and subsequently demolished. The Jewish cemetery survived partially. The building at 7 Planty Street, site of the 1946 pogrom, became a memorial site.</p>
       </section>
 
-      <section id="notable-figures">
-        <h2>Notable Figures</h2>
-        
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
-      </section>
+      
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
-        <h2>Cultural Life</h2>
-        
-      </section>
+      
 
-      <section id="decline">
-        <h2>Decline &amp; Transformation</h2>
-        
-      </section>
+      
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The 7 Planty Street building in Kielce is now a museum and memorial dedicated to the victims of the 1946 pogrom. Annual ceremonies mark the anniversary. Polish historians and public intellectuals have engaged in ongoing debate about the pogrom's causes — Communist provocation, traditional antisemitism, resentment over property restitution — and its place in Polish historical memory. In 2001, Polish President Aleksander Kwaśniewski apologized for Jedwabne; the Kielce pogrom has been part of the same reckoning with Polish complicity in wartime and postwar anti-Jewish violence.</p>
       </section>

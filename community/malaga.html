@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/M%C3%A1laga_-_Vista_de_la_ciudad_desde_el_Gibralfaro.jpg/640px-M%C3%A1laga_-_Vista_de_la_ciudad_desde_el_Gibralfaro.jpg" alt="Málaga from Gibralfaro" loading="eager">
+      <figcaption>Málaga from Gibralfaro — via <a href="https://en.wikipedia.org/wiki/M%C3%A1laga" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Málaga, the great port city on the southern coast of Spain, was home to a Jewish community that flourished under the successive Muslim dynasties of al-Andalus and reached particular prominence under the Nasrid kingdom of Granada (1232–1492). Positioned at the intersection of Mediterranean maritime trade and the overland routes connecting the Iberian interior to North Africa, Málaga's Jews served as merchants, physicians, diplomats, and financiers in a multiconfessional society that, at its best, permitted a remarkable degree of cultural and commercial exchange. The fall of Málaga to the Catholic Monarchs in 1487 presaged the final expulsion of Iberian Jewry five years later.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Da_Gibralfaro_%28cropped%292.jpg/500px-Da_Gibralfaro_%28cropped%292.jpg" alt="Málaga from Gibralfaro" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Málaga from Gibralfaro — via <a href="https://en.wikipedia.org/wiki/M%C3%A1laga" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jewish settlement in Málaga likely predates the Islamic conquest of Iberia (711 CE). Ancient traditions hold that Jews accompanied Phoenician traders to the Malagan coast centuries before the Common Era, and there is documentary evidence of a Jewish presence in the region during the Visigothic period, though Visigothic laws were harshly anti-Jewish. The Arab conquest brought a significant improvement: under the Umayyad Emirate and later Caliphate of Córdoba, Jews were recognized as dhimmis (protected people) with legal status and the right to practice their religion, subject to discriminatory but not eliminatory policies.</p>
 <p>Málaga emerged as a significant port under the Taifa period (11th century), when the fragmentation of the caliphate produced a series of small Muslim kingdoms that competed for Jewish talent. The city's natural harbor made it indispensable for trade connecting al-Andalus with North Africa, Egypt, and the eastern Mediterranean.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The Nasrid kingdom of Granada (1232–1492), the last Muslim polity in Iberia, governed Málaga as one of its major ports. Under the Nasrids, Jewish merchants played a crucial role in the Mediterranean trade networks that kept the kingdom economically viable. Málaga's Jewish community, while never as large as those of Granada, Seville, or Toledo, occupied a strategically important position in this commercial web.</p>
 <p>Jewish merchants from Málaga maintained active trading relationships with their coreligionists in North Africa — particularly in Fez, Tlemcen, and the coastal cities of present-day Morocco — and with the Jewish communities of Sicily, Naples, and the eastern Mediterranean. The goods traded included textiles, spices, metals, sugar (from Nasrid-era sugar mills in the Málaga hinterland), and dried fruits. These networks were fundamentally transnational and depended on trust relationships between Jewish partners across political boundaries.</p>
@@ -491,34 +508,28 @@
 <p>The Jewish quarter of Málaga — the judería — was situated in the lower city, close to the port and market areas, as was typical for commercially oriented Jewish communities in al-Andalus. The quarter contained at least one synagogue, a mikveh, and a cemetery outside the city walls. No physical remains of these medieval structures have been identified; the urban transformation of Málaga over subsequent centuries has obliterated the medieval Jewish quarter.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p><strong>Abraham ibn Hayyim</strong> — A fifteenth-century Málagan Jewish merchant whose commercial letters, preserved in the Cairo Geniza and in Moroccan archives, document the trade networks connecting Nasrid Málaga to North Africa. His correspondence reveals the complexity of Jewish commercial life under late Islamic rule.</p>
 <p><strong>Joseph ibn Miguash</strong> — Though primarily associated with Lucena, his influence reached Málagan Jews through his students and legal responsa, which addressed issues arising from the trade-intensive life of Andalusian port Jews.</p>
 <p><strong>Unnamed Jewish interpreters and diplomats</strong> — Several Málagan Jews served as diplomatic intermediaries between the Nasrid emirs and Castilian or Aragonese rulers, exploiting their linguistic skills (Arabic, Castilian, Hebrew, and often Catalan) and cross-border connections.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Málagan Jewry participated in the broader Andalusian Jewish cultural renaissance that produced Hebrew poetry, Talmudic scholarship, and philosophical inquiry alongside commercial success. The city's position as a port gave its Jewish community particular exposure to the wider Mediterranean Jewish world, and there is evidence of regular contact between Málagan Jews and the Jewish communities of North Africa, Sicily, and Egypt.</p>
 <p>The bilingual (Arabic-Hebrew) intellectual culture of al-Andalus found expression in Málaga as elsewhere: educated Jews composed poetry in both languages, translated Arabic scientific texts into Hebrew, and maintained the tradition of Hebrew grammatical study initiated by figures such as Dunash ben Labrat and Menahem ibn Saruq.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The fall of Málaga to Ferdinand and Isabella in August 1487 was one of the decisive military events of the Reconquista. The conquest was brutal: the Muslim population was enslaved or ransomed, and the Jewish population — already subject to intensifying pressure under the Nasrids as the kingdom contracted — faced an immediate crisis. Some Jews converted to Christianity to remain; others fled to North Africa or to the Ottoman Empire.</p>
 <p>The final expulsion decree of 1492 removed any remaining Jews from all Spanish territories. Those Málagan Jews who had not already fled or converted departed to North Africa, particularly to the cities of present-day Morocco, where they formed part of the communities of Fez, Tetuan, and Alcazarquivir. These communities long preserved the memory of their Andalusian origins.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Modern Málaga retains almost no physical trace of its medieval Jewish community. Archaeological work in the old city has occasionally uncovered evidence of medieval settlement, but no confirmed Jewish structures remain standing. The memory of Málaga's Jewish past has been partially recovered through academic research and through the Spanish government's "Network of Jewish Quarters" (Red de Juderías), which promotes heritage tourism in cities with significant Jewish histories. Málaga is a member of this network. A memorial plaque and interpretive materials have been installed near the site of the former judería.</p>
 <p>The descendants of Málagan Jews dispersed into the Sephardic diaspora — in Morocco, the Ottoman Empire, and eventually in the Americas — and most traces of their specific Málagan identity dissolved into the broader Sephardic world within a generation or two.</p>

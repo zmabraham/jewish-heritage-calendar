@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Speyer_-_Dom_und_Altp%C3%B6rtel.jpg/640px-Speyer_-_Dom_und_Altp%C3%B6rtel.jpg" alt="Speyer Cathedral" loading="eager">
+      <figcaption>Speyer Cathedral — via <a href="https://en.wikipedia.org/wiki/Speyer" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Speyer — Shpira in Hebrew — holds the distinction of being the oldest of the three ShUM cities and, by some accounts, the first formal medieval Ashkenazic community to receive a comprehensive charter of rights. Bishop Rüdiger of Speyer's remarkable grant of 1084 guaranteed Jews a range of protections and freedoms that served as the template for Jewish charters across the Holy Roman Empire. The community's story encompasses both this extraordinary moment of protection and the devastating violence of the Crusade massacres that followed.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Speyer_Dom_Luft.jpg/500px-Speyer_Dom_Luft.jpg" alt="Speyer Cathedral" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Speyer Cathedral — via <a href="https://en.wikipedia.org/wiki/Speyer" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>The first Jews settled in Speyer in the eleventh century, drawn by the city's importance as a cathedral city and Rhineland commercial center. The decisive moment came in 1084 when Bishop Rüdiger Huozmann issued a charter to the Jews he had invited to settle in Speyer, granting them rights to their own quarter, a synagogue, a cemetery, and protection of their persons and property. The bishop's motivation was openly economic: "I wished to honor the place one thousand times over by settling the Jews here."</p>
 <p>The Speyer charter was the first of its kind and established precedents followed across the empire. Within two years, Emperor Henry IV extended similar rights to Worms and other cities, and the Speyer model became the foundation of medieval Ashkenazic legal status. The community grew rapidly and became a significant center of Rhineland Jewish life.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Speyer's early twelfth century represented the community's intellectual and institutional apogee. The community participated fully in the ShUM alliance, contributing to the formulation of the Ashkenazic rite and the legal traditions that would shape Jewish life across Europe. Local scholars corresponded with Rashi and the leading sages of Mainz and Worms; the community's takkanot (communal regulations) were issued jointly with the other ShUM cities.</p>
 <p>The Crusade massacres of 1096 struck Speyer first among the Rhineland communities, though with less catastrophic effect than at Mainz and Worms. The bishop, Johannsen (João), protected the Jews in his palace, and Crusader violence killed only about twelve people before being suppressed. The community's relatively rapid response to the crisis saved it from the wholesale destruction suffered elsewhere.</p>
@@ -492,33 +509,27 @@
 <p>The Speyer Jewish quarter, enclosed within its own walls as the bishop had ordered, contained homes, a synagogue, a yeshiva, and a cemetery. The archaeological remains are among the best-preserved of any medieval European Jewish community.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Rabbi Judah ben Kalonymus of Speyer (twelfth century) was a leading scholar who wrote on liturgy, halakha, and the theology of martyrdom. The Kalonymus family, which spanned all three ShUM cities, produced generations of scholars in Speyer.</p>
 <p>Rabbi Eliakim ben Meshullam of Speyer contributed to the development of medieval Ashkenazic halakha.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Speyer's Jewish culture reflected the broader intellectual life of the ShUM region. Scholars engaged in Talmudic study, biblical commentary, liturgical composition, and legal codification. The community maintained a yeshiva, a Talmud Torah, and other educational institutions.</p>
 <p>The piyyutim (liturgical poems) composed in Speyer and the other ShUM cities became part of the standard Ashkenazic liturgical repertoire. Memorial liturgies for the Crusade martyrs were developed in Speyer and recited across the Jewish world.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>After the Black Death catastrophe of 1349, Speyer's Jewish community was expelled and readmitted repeatedly. A final expulsion came in 1405. When Jews eventually returned in small numbers in the early modern period, the community was a fraction of its medieval size. By the eighteenth century, Speyer had only a handful of Jewish residents.</p>
 <p>The modern community remained small. In the Nazi period, the few Jews who remained in Speyer were deported. The ancient synagogue ruins and mikveh survived, serving as monuments to the vanished community.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Speyer's greatest legacy is its architectural and documentary heritage. The ruins of the 1104 synagogue and the adjacent mikveh are now part of a UNESCO World Heritage Site (ShUM Sites of Speyer, Worms, and Mainz, inscribed in 2021), the first specifically Jewish World Heritage Site in Germany. This recognition acknowledges what scholars have long known: that the ShUM cities are foundational to Ashkenazic and, through Ashkenaz, to all modern Jewish civilization.</p>
       </section>

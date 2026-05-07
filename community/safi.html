@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Safi_Marocco.jpg/640px-Safi_Marocco.jpg" alt="Safi, Morocco" loading="eager">
+      <figcaption>Safi, Morocco — via <a href="https://en.wikipedia.org/wiki/Safi,_Morocco" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Safi (Asfi), a coastal Atlantic city in the Chaouia-Ouardigha region of Morocco, maintained a significant Jewish community from ancient times through the 20th century. As one of Morocco's principal Atlantic ports before the rise of Casablanca, Safi served as a conduit for trade between the Moroccan interior and European markets, and its Jews played central roles in this commerce. The community received Iberian exile families after 1492 and developed a layered identity that blended indigenous Moroccan Jewish customs with Sephardic legal and liturgical traditions.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Safi_Marocco.jpg/640px-Safi_Marocco.jpg" alt="Safi, Morocco" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Safi, Morocco — via <a href="https://en.wikipedia.org/wiki/Safi,_Morocco" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jewish settlement in the Safi region is ancient. The city's coastal position made it attractive for Mediterranean and Atlantic maritime trade, and Jews were involved in this commerce from an early period. Safi served as a significant Moroccan port under Portuguese control in the 16th century (Portugal held the city from 1508 to 1541), and during this period the Jewish community had complex dealings with the Portuguese colonial administration.</p>
 <p>After the Portuguese withdrawal, Safi reverted to Moroccan control and its Jewish community developed under the makhzen (royal court) patronage system. The mellah was established in the characteristic Moroccan pattern, adjacent to the casbah and under royal protection. The community received Spanish and Portuguese Jewish families — "megorashim" — after 1492 and 1497 (the Portuguese forced conversion), adding a Sephardic layer to the existing "toshav" community.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The 17th and 18th centuries represent Safi's commercial peak. The city was one of Morocco's primary export points for the grain, sugar, copper, and leather that European merchants sought. Jewish traders managed these export operations, serving as intermediaries between interior producers and foreign buyers. Commercial correspondence in Judeo-Arabic and early modern Spanish documents the extensive networks Safi Jews maintained.</p>
 <p>Several prominent families developed international connections: the Elmaleh, Toledano, and Aflalo families maintained agents in Livorno (Leghorn), London, and Amsterdam — the great Jewish trading diasporas of early modern Europe — creating transatlantic commercial chains.</p>
@@ -491,32 +508,26 @@
 <p>The community maintained connections with the great yeshivot of Fez and Meknes, sending students and consulting leading halakhic authorities on difficult legal questions.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Rabbi Haim Toledano (18th century) was among Safi's notable rabbinic figures, part of the broader Moroccan Toledano scholarly dynasty that produced important halakhic works across several generations and cities.</p>
 <p>The Aflalo merchant family was documented in European trading archives as significant commercial players in the Atlantic Morocco trade during the 17th–18th centuries.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Safi's Jewish community participated fully in the cultural life of Moroccan Jewry — celebrating the mimouna, venerating local tzaddikim, and composing piyyutim in Hebrew and Judeo-Arabic. The community's position as a port city meant exposure to a wider range of cultural influences than inland communities, and its educated members were conversant with European commercial culture and early modernity.</p>
 <p>The community maintained the saint pilgrimage tradition vigorously; local tzaddikim's graves in and around Safi attracted pilgrims from throughout the region, particularly during the summer hillula season.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Safi's Jewish community declined in the 19th and 20th centuries as the port's commercial importance diminished relative to Casablanca and Tangier. Many Safi Jews migrated internally to Casablanca in the interwar period. After 1948 and Moroccan independence, emigration accelerated to France and Israel. By the 1970s, the community had largely dispersed.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The Safi mellah retains some of its historic architecture. The Jewish cemetery is maintained, and annual pilgrimages to local saint graves draw diaspora visitors. Safi Jewish descendants are particularly concentrated in the Israeli city of Ashdod and in French cities, where they maintain cultural associations.</p>
       </section>

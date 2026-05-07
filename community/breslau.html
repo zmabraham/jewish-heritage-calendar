@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,53 +482,50 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Wroclaw-_Most_Grunwaldzki.jpg/640px-Wroclaw-_Most_Grunwaldzki.jpg" alt="Wrocław (Breslau) with Grunwald Bridge" loading="eager">
+      <figcaption>Wrocław (Breslau) with Grunwald Bridge — via <a href="https://en.wikipedia.org/wiki/Wroc%C5%82aw" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Breslau — today Wrocław, in southwestern Poland — was a crossroads city where Jewish intellectual life produced one of the most consequential institutional developments in modern Jewish history: the Jewish Theological Seminary, birthplace of Positive-Historical Judaism and the forerunner of the Conservative movement. The city that nurtured Rabbi Zacharias Frankel and Rabbi Heinrich Graetz shaped how millions of modern Jews relate to their tradition.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Wroclaw-_Most_Grunwaldzki.jpg/500px-Wroclaw-_Most_Grunwaldzki.jpg" alt="Wrocław (Breslau) with Grunwald Bridge" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Wrocław (Breslau) with Grunwald Bridge — via <a href="https://en.wikipedia.org/wiki/Wroc%C5%82aw" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Silesia, the region in which Breslau lies, passed between Polish, Bohemian, and Habsburg rulers before Frederick the Great of Prussia seized it in 1742. The Jewish community of Breslau dated to the twelfth century, suffering periodic expulsions — notably in 1453 under the influence of the Franciscan friar John of Capistrano — before achieving more stable residence in the early modern period.</p>
 <p>Under Prussian rule, Breslau Jews were subject to restrictive legislation that nonetheless allowed commercial activity. The community grew through the eighteenth and early nineteenth centuries as the Haskalah (Jewish Enlightenment) gained influence. By the time of German unification in 1871, Breslau Jews were German-speaking, university-educated, and deeply integrated into bourgeois German culture.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The founding of the Jewish Theological Seminary of Breslau (Jüdisch-Theologisches Seminar) in 1854 marks the intellectual pinnacle of Breslau Jewish life. Its founder, Rabbi Zacharias Frankel (1801–1875), had served as Chief Rabbi of Saxony and Dresden. Frankel attended the Frankfurt Rabbinical Assembly in 1845, famously walking out when the conference voted to remove Hebrew from the liturgy — an act that defined his theological position.</p>
 <p>Frankel developed "Positive-Historical Judaism": a method that took seriously both the historical development of Jewish law and the positive obligation to observe it as the living inheritance of the Jewish people. This middle path — neither radical Reform nor the absolute traditionalism of the Chatam Sofer — became enormously influential. The Seminary's graduates carried Frankel's approach across Germany and eventually to the United States, where Solomon Schechter built the Conservative movement on its foundations.</p>
 <p>The New Synagogue of Breslau, inaugurated in 1872, was a massive neo-Romanesque structure seating 2,000 — one of the grandest Jewish houses of worship in Germany. The White Stork Synagogue, built in 1829 in the Empire style, has survived and been restored as an active Jewish cultural center. The Jewish community also maintained hospitals, schools, and welfare institutions serving a community of approximately 20,000 at its peak.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Rabbi Heinrich Graetz (1817–1891) spent most of his career at the Breslau Seminary, writing his monumental eleven-volume <em>Geschichte der Juden</em> (History of the Jews), published between 1853 and 1876. This work — the first comprehensive critical history of the Jewish people — treated Jewish history as a serious subject worthy of rigorous scholarship while celebrating Jewish resilience. The <em>Geschichte</em> was translated into multiple languages and read worldwide, influencing the young Theodor Herzl among others.</p>
 <p>Ferdinand Lassalle (1825–1864), founder of the General German Workers' Association, was born in Breslau to a Jewish merchant family. His socialist activism, though secular, drew on traditions of justice rooted in his Jewish upbringing.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>The Breslau Seminary influenced Jewish thought across denominational lines. Its rigorous blend of philological scholarship and halakhic commitment produced generations of rabbi-scholars who transformed how Judaism engaged modernity. The city also produced scientists, physicians, and artists who shaped German cultural life in the Wilhelmine and Weimar eras.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The November 1938 pogrom (Kristallnacht) destroyed or damaged Breslau's synagogues. Most of Breslau's Jews — approximately 20,000 in 1933 — emigrated or were deported to death camps. Following World War II, Breslau was ceded to Poland as Wrocław, and the surviving Jewish community was dispersed.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The White Stork Synagogue has been beautifully restored and serves as a center of Jewish cultural life in Wrocław. The memory of the Breslau Seminary is honored in Conservative/Masorti Judaism worldwide. The city's Jewish heritage trails attract growing numbers of visitors seeking to understand this pivotal chapter in modern Jewish intellectual history.</p>
       </section>

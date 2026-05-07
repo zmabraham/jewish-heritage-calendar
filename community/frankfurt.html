@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Frankfurt_Main_August_2020_1.jpg/640px-Frankfurt_Main_August_2020_1.jpg" alt="Frankfurt am Main skyline" loading="eager">
+      <figcaption>Frankfurt am Main skyline — via <a href="https://en.wikipedia.org/wiki/Frankfurt" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Frankfurt am Main stands as one of the most consequential Jewish communities in the history of European Jewry. From the narrow lanes of the Judengasse — the oldest Jewish ghetto in German-speaking lands — to the rise of the Rothschild banking dynasty, Frankfurt's Jews shaped the financial, intellectual, and spiritual life of Central Europe for nearly eight centuries. The community produced towering rabbinic figures, pioneered Reform Judaism, and gave the world a family whose name became synonymous with modern finance.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Frankfurt_Main_August_2020_1.jpg/500px-Frankfurt_Main_August_2020_1.jpg" alt="Frankfurt am Main skyline" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Frankfurt am Main skyline — via <a href="https://en.wikipedia.org/wiki/Frankfurt" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews first settled in Frankfurt in the twelfth century, drawn by the city's position as a major trading crossroads along the Main River. The community rapidly grew in importance, and by 1241 it suffered its first major massacre when Crusade-inflamed mobs attacked the Jewish quarter. Despite recurring violence, the community rebuilt repeatedly, testament to Frankfurt's economic indispensability as a trade and fair city.</p>
 <p>In 1462, the city authorities confined all Jews to a single street: the Judengasse (Jews' Lane), a narrow, enclosed alleyway running along the old city wall. Here, Frankfurt's Jewish community would live for nearly four centuries — cramped, legally restricted, yet surprisingly vibrant. The Judengasse could hold several thousand residents in conditions that contemporaries described as extraordinarily overcrowded, its tall half-timbered houses pressed against each other, the street so narrow that two carts could barely pass.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Despite the physical constraints of ghetto life, the Frankfurt community flourished intellectually and commercially. The city's biannual trade fairs attracted Jewish merchants from across Europe, creating a cosmopolitan mercantile culture unparalleled in the German-speaking world. Frankfurt Jews became major financiers, currency exchangers, and commodity traders — skills honed by centuries of legal exclusion from most other occupations.</p>
 <p>The community's intellectual life was equally rich. The Frankfurt rabbinate attracted scholars of the first rank. Rabbi Jacob ben Moses Moelin (the Maharil, d. 1427), though based in Mainz, influenced Frankfurt's liturgical practices. The city's yeshiva trained generations of students and its printing houses published important rabbinic texts. The community maintained a complex internal governance structure, with elected parnas leaders negotiating the perennial tensions between communal autonomy and municipal authority.</p>
@@ -491,33 +508,27 @@
 <p>The Börneplatz Synagogue, built in 1882 after the emancipation of German Jews allowed construction outside the old ghetto, became a magnificent statement of confident modernity. The Jewish Museum Frankfurt, established in the Rothschild Palais, remains one of Europe's premier institutions for Jewish cultural history.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>The name most associated with Frankfurt Jewry is Mayer Amschel Rothschild (1744–1812), born in the Judengasse, who transformed a modest coin dealership into the foundation of what would become the world's most powerful banking empire. His five sons spread across Europe's capitals — London, Paris, Vienna, Naples, and Frankfurt itself — building a financial network that financed wars and governments alike. The Rothschilds became the preeminent symbol of Jewish emancipation and achievement, though their story also fueled antisemitic fantasies about Jewish financial power.</p>
 <p>Rabbi Pinchas Horowitz (the Ba'al HaFla'ah, 1731–1805) served as Frankfurt's chief rabbi and was among the great halakhic authorities of his generation. Nathan Marcus Adler (1803–1890), born in Frankfurt, went on to become Chief Rabbi of the British Empire. The poet and author Ludwig Börne (1786–1837), born Löb Baruch in the Judengasse, became one of Germany's leading liberal political journalists.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Frankfurt's Jewish community produced a distinctive synthesis of German and Jewish culture. The Wissenschaft des Judentums — the scholarly study of Jewish history and literature — had important representatives here. The Freies Jüdisches Lehrhaus (Free Jewish House of Learning), founded in 1920 by Franz Rosenzweig and supported by Martin Buber, offered adult Jewish education that became a model for Jewish renewal. Rosenzweig's Star of Redemption, completed in Frankfurt, became a cornerstone of modern Jewish philosophy.</p>
 <p>The community also engaged deeply with the Reform movement: Frankfurt hosted one of the first Reform rabbinical conferences in 1845, where leading reformers debated the nature of prayer, the role of Hebrew, and the relationship between Jewish tradition and modern German culture.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The Nazi seizure of power in 1933 rapidly dismantled Frankfurt's Jewish community. The Nuremberg Laws of 1935 stripped Jews of citizenship. Kristallnacht (November 9–10, 1938) saw Frankfurt's synagogues burned, Jewish businesses destroyed, and hundreds of men arrested and sent to concentration camps. By 1939, mass emigration had depleted the community drastically; those who remained were deported to ghettos and extermination camps in the east. Of Frankfurt's roughly 29,000 Jews in 1933, the vast majority perished or emigrated; fewer than 700 survived in hiding.</p>
 <p>The Judengasse was destroyed in Allied bombing raids in 1944. Archaeological excavations in the 1980s, during construction of a municipal building, uncovered the foundations of the old ghetto — prompting a major public debate about memory, development, and Jewish heritage that led to the creation of the Museum Judengasse.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Frankfurt's Jewish descendants scatter across every continent, their paths leading through Tel Aviv, New York, London, São Paulo, and Sydney. The Rothschild family, though largely assimilated into the non-Jewish European elite by the twentieth century, maintains institutions and philanthropies that reflect their Frankfurt origins.</p>
 <p>Today, Frankfurt has a Jewish community of approximately 7,000–8,000, many of them post-Soviet immigrants to Germany. The rebuilt community maintains synagogues, schools, and cultural institutions. The Museum Judengasse and the Jewish Museum in the Rothschild Palais attract hundreds of thousands of visitors yearly, ensuring that the memory of this extraordinary community endures.</p>

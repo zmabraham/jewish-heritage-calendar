@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Trier-Blick-vom_Weishaus.JPG/640px-Trier-Blick-vom_Weishaus.JPG" alt="Trier city view" loading="eager">
+      <figcaption>Trier city view — via <a href="https://en.wikipedia.org/wiki/Trier" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Trier — one of the oldest cities in Germany, the Roman imperial residence of Augusta Treverorum — was also home to one of the oldest Jewish communities in the German-speaking world. The city that gave the world Karl Marx (born 1818 to a family of converted Jews) witnessed the full sweep of Jewish history in the Western Rhineland: ancient settlement, medieval scholarship, Crusade massacres, and the final destruction under Nazism. Few cities in Europe offer so long a perspective on the Jewish experience.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Trier-Blick-vom_Weishaus.JPG/500px-Trier-Blick-vom_Weishaus.JPG" alt="Trier city view" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Trier city view — via <a href="https://en.wikipedia.org/wiki/Trier" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jewish presence in Trier is attested from the Roman period; the city served as an imperial capital of the Late Roman Empire, and Jews living in Roman cities were a widespread phenomenon. The fourth-century edicts of Constantine I, which referred to Jews in Cologne and other Rhineland cities, likely encompassed Trier as well.</p>
 <p>The Frankish and Carolingian periods saw the continuation of Jewish settlement; Trier's position as the seat of one of the most powerful archbishoprics in the Holy Roman Empire both threatened and sometimes protected its Jewish residents. The Archbishop of Trier was one of the most influential ecclesiastical princes in Germany, and the relationship between the Jewish community and the archiepiscopal court was central to the community's legal and practical position.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The medieval community grew significantly in the eleventh and twelfth centuries, participating in the broader intellectual renaissance of Rhineland Jewry. Trier was not among the top-tier ShUM cities, but it was part of the broader Rhineland Jewish world; its scholars corresponded with colleagues in Mainz, Worms, and Speyer, and its community participated in the formulation of Ashkenazic customs.</p>
 <p>The Crusade massacres of 1096 struck Trier as well, though with less catastrophic effect than in the major Rhineland centers. The community rebuilt but continued to face periodic violence and extortion. The Black Death persecutions of 1349 devastated the community; Jews were expelled and burned in many German cities, and Trier was not entirely spared.</p>
@@ -491,32 +508,26 @@
 <p>The modern community built a new synagogue in the nineteenth century, reflecting the growth that followed emancipation. This was destroyed on Kristallnacht in 1938. A new synagogue, built in 1957, serves the present-day community.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Karl Marx (1818–1883) was born in Trier to a family that had converted to Lutheranism in 1817 — his father Heinrich Marx was a Jewish lawyer who converted to avoid legal restrictions on Jewish professionals. Marx himself was baptized and never identified as Jewish, but his Jewish ancestry was central to the antisemitic attacks he faced throughout his life. Whether his Jewish background shaped his intellectual outlook is a question that historians have long debated; what is certain is that the Marx family's story illuminates the pressures of emancipation, conversion, and assimilation on German Jewish families in the early nineteenth century.</p>
 <p>Rabbi Meir of Rothenburg (c.1215–1293), though primarily associated with Rothenburg ob der Tauber, traveled and studied in the broader Rhineland region of which Trier was a part. Trier's medieval rabbinate produced respected scholars whose names appear in halakhic correspondence.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Trier's Jewish culture was shaped by its position in the Rhineland, its proximity to the French border (the city was under French control from 1794 to 1814), and the particular dynamics of a community living in the shadow of one of the most powerful archbishoprics in Germany. The French period brought temporary emancipation and profound social change; the post-Napoleonic restoration partially reversed these gains but left lasting marks.</p>
 <p>The Marx family's experience was paradigmatic: conversion as a survival strategy, intellectual achievement in the context of ongoing social discrimination, and the creation of a secular identity that attempted to transcend the limitations of the Jewish condition as it existed in nineteenth-century Germany.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Trier's Jewish community in 1933 numbered approximately 800–900. The Nazi years brought progressive exclusion and fear. Kristallnacht destroyed the synagogue and Jewish businesses. Deportations to Theresienstadt, Łódź, and Auschwitz followed in 1941–1942. Of the pre-war community, very few survived.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Trier today has a small Jewish community of approximately 500, maintained largely by immigrants from the former Soviet Union. The city markets itself heavily as the birthplace of Karl Marx, attracting visitors to the Karl-Marx-Haus museum; the Jewish dimensions of Marx's background are part of the story told there.</p>
 <p>The city's Roman Jewish heritage is documented in the museum collections of the Rheinisches Landesmuseum, which includes Roman-era artifacts related to Jewish life in Trier. The long history of the Trier community — from ancient Rome through medieval scholarship to modern catastrophe — represents in miniature the sweep of Rhineland Jewish experience.</p>

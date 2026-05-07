@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/B%C4%99dzin_-_Zamek_obronny_z_XIVw..jpg/640px-B%C4%99dzin_-_Zamek_obronny_z_XIVw..jpg" alt="Będzin Castle, 14th century" loading="eager">
+      <figcaption>Będzin Castle, 14th century — via <a href="https://en.wikipedia.org/wiki/B%C4%99dzin" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Będzin — pronounced approximately "Bendzhin" and known in Yiddish as Bendin — was a significant Jewish community in the Upper Silesian industrial region of southern Poland. Unlike many Polish Jewish communities, which had centuries of history under the Polish Crown, Będzin's major Jewish community developed primarily in the nineteenth century under Prussian/German and then Russian rule, in close proximity to the coal mines and ironworks of Upper Silesia. By the interwar period it had become a prosperous, politically active community — and one of the last major Jewish communities in occupied Poland to be liquidated, its Jews deported to Auschwitz-Birkenau in August 1943.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/B%C4%99dzin_-_Zamek_obronny_z_XIVw..jpg/640px-B%C4%99dzin_-_Zamek_obronny_z_XIVw..jpg" alt="Będzin Castle, 14th century" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Będzin Castle, 14th century — via <a href="https://en.wikipedia.org/wiki/B%C4%99dzin" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Będzin's position on the Czarna Przemsza River made it a natural commercial site, and Jews had been present from at least the early modern period. However, significant Jewish settlement expanded dramatically in the nineteenth century as industrial development attracted workers and entrepreneurs from across the Russian Pale of Settlement and from German Silesia. The city's growth as a coal-trade and textile center created commercial opportunities that Jewish merchants and industrialists were quick to seize.</p>
 <p>Under Russian rule in the second half of the nineteenth century, Będzin attracted Jews from the Pale who were permitted to settle in the industrialized Congress Kingdom zone. By 1897 the Jewish population was approximately 10,000; it grew to approximately 28,000 by 1939 — comprising nearly 45 percent of the total population, one of the highest ratios of any Polish industrial city.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Będzin's economic character was shaped by coal, iron, and textile industries. Jewish merchants served as middlemen in the coal trade, selling fuel mined by Polish workers to factories and households across the region. Jewish-owned textile mills and workshops produced cloth for regional markets. The commercial center of Będzin was heavily Jewish: dry goods stores, hardware dealers, food wholesalers, and professional services were dominated by Jewish families.</p>
 <p>The community was also notable for its political sophistication. The density of Jewish population and the industrial character of the city meant that labor Zionism, Bundist socialism, and competing Zionist parties all had vigorous local organizations. The Będzin youth were among the most politically mobilized in Jewish Poland.</p>
@@ -494,30 +511,18 @@
 <p>The final deportation of Będzin Jewry to Auschwitz-Birkenau took place on August 1–3, 1943. Approximately 10,000 Jews were taken directly to the gas chambers; a small number were selected for slave labor.</p>
       </section>
 
-      <section id="notable-figures">
-        <h2>Notable Figures</h2>
-        
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
-      </section>
+      
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Będzin's interwar Jewish cultural life was rich: Hebrew and Yiddish schools operated side by side; a Jewish library held thousands of volumes; dramatic societies performed theater; and the full range of Jewish political associations published newspapers and organized rallies. The competition between ideologies — Orthodox, Zionist, socialist, Bundist — gave Będzin Jewish public life an intensity typical of Polish industrial cities.</p>
       </section>
 
-      <section id="decline">
-        <h2>Decline &amp; Transformation</h2>
-        
-      </section>
+      
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>The site of the Great Synagogue in Będzin is marked by a small memorial. The Jewish cemetery survives partially. A growing interest in local Jewish history has produced exhibitions and educational programs at the Będzin Museum. Descendants of Będzin Jews have maintained memorial organizations primarily in Israel, where many survivors settled after the war. The story of the Będzin underground's resistance has been told in several survivor memoirs and historical studies.</p>
       </section>

@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Lublin_-_Zamek.jpg/640px-Lublin_-_Zamek.jpg" alt="Lublin Castle" loading="eager">
+      <figcaption>Lublin Castle — via <a href="https://en.wikipedia.org/wiki/Lublin" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Lublin earned its sobriquet "the Jewish Oxford" and "the city of scholars" from the density and eminence of its Torah academies over four centuries. From the sixteenth century onward, Lublin was one of the three or four greatest centers of Jewish learning in the world, the city where the Council of Four Lands — the supreme governing body of Polish Jewry — held its sessions, where Kabbalists and legal codifiers shaped the religious life of all Ashkenazic Jews, and where, in the twentieth century, both the Lublin Yeshiva and the chassidic court of the Seer of Lublin attracted pilgrims from across Eastern Europe. The city also contained one of the largest concentrations of Jewish life in prewar Poland and was the site of the Majdanek concentration and extermination camp on its outskirts.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Lublin_Panorama.jpg/500px-Lublin_Panorama.jpg" alt="Lublin Castle" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Lublin Castle — via <a href="https://en.wikipedia.org/wiki/Lublin" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Jews lived in Lublin from at least the mid-fourteenth century, when records document Jewish merchants active in the city's trade fairs. Lublin was ideally situated for commerce: it lay at the intersection of major trade routes connecting western and eastern Poland, and its annual fairs were among the most important in Central Europe. Jews played central roles in these fairs as merchants, moneylenders, and craftsmen. By the late fifteenth century the community was substantial enough to maintain organized religious institutions, and in 1567 King Sigismund II Augustus granted the Lublin Jewish community a privilege of self-governance that became one of the foundational charters of Polish Jewish autonomy.</p>
 <p>The sixteenth century established Lublin's scholarly reputation. Rabbi Shalom Shakhna of Lublin (c. 1490–1558) founded the first great yeshiva in Poland here, attracting students from across Eastern Europe and establishing the Polish method of Talmudic study known as <em>pilpul</em> — intricate dialectical reasoning. His academy became the model for Polish Jewish education.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>The apex of Lublin's influence came with the establishment of the Council of Four Lands (<em>Va'ad Arba Aratzot</em>), which from the late sixteenth century until its abolition by the Polish Sejm in 1764 served as the parliament and supreme court of Polish-Lithuanian Jewry. The Council met twice yearly, usually at the Lublin trade fair, to adjudicate disputes, allocate tax burdens, represent Jewish interests to the Polish crown, and issue religious rulings affecting all Polish Jews. Its sessions were attended by rabbinic authorities, lay leaders, and communal representatives from across the country; Lublin's centrality to Polish commerce made it the natural meeting place.</p>
 <p>Among Lublin's great scholars, Rabbi Meir ben Gedaliah of Lublin (the <em>Maharam of Lublin</em>, 1558–1616) was one of the foremost halachic authorities of his generation, whose responsa guided Jewish law across Europe. Rabbi Shlomo Luria (the <em>Maharshal</em>, 1510–1573) taught in Lublin and wrote one of the most searching critiques of the legal code <em>Shulchan Aruch</em>. The <em>Chozeh</em> (Seer) of Lublin, Rabbi Yaakov Yitzchak Horowitz (1745–1815), made Lublin the central court of Polish Hasidism and drew thousands of disciples to his <em>tish</em> (festive table). His court attracted such figures as Rabbi Menachem Mendel of Rimanov and the <em>Holy Yid</em> of Peshischa, making Lublin the seedbed from which much of Polish Hasidism grew.</p>
@@ -491,30 +508,24 @@
 <p>Lublin's Jewish quarter, the Podzamcze district beneath the castle, was one of the oldest in Poland. The Maharshals Synagogue (later called the Maharam Synagogue) dated to the sixteenth century. The great Yeshivat Chachmei Lublin building still stands and has been restored as a hotel and museum. The old Jewish cemetery on Kalinowszczyzna Street, established in the sixteenth century, contains tombstones of the Maharam and other great scholars. A newer cemetery on Walecznych Street served the community through the twentieth century.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p><strong>Rabbi Shalom Shakhna</strong> — founder of Polish yeshiva tradition. <strong>Maharam of Lublin</strong> — leading halachic decisor. <strong>Maharshal</strong> — critical scholar of Jewish law. <strong>The Chozeh (Seer) of Lublin</strong> — central figure of Polish Hasidism. <strong>Rabbi Meir Shapiro</strong> — founder of Daf Yomi and the grand Lublin Yeshiva. <strong>Rabbi Mordechai Yosef Leiner</strong> of Izbica was shaped by Lublin's Hasidic environment. <strong>Shmuel Zygelboim</strong>, the Bund representative in London who took his own life in 1943 to protest the world's indifference to the annihilation of Polish Jews, was from the Lublin region.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Lublin's Jewish population of approximately 40,000 on the eve of World War II sustained a rich communal life: a lively Yiddish press, political parties spanning the spectrum from Agudath Israel to the Bund, Zionist youth movements, Hebrew schools, libraries, and theaters. The city had a significant Jewish working class in crafts and small industry alongside a commercial middle class. The interplay between Hasidic piety, Lithuanian-style yeshiva scholarship, and secular modernism gave Lublin's Jewish culture an unusually layered character.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>Lublin was occupied by Germany in September 1939. Odilo Globocnik, the SS commander for Lublin district, made the city the headquarters for Operation Reinhard — the plan to murder all Jews in the General Government of occupied Poland. The Majdanek camp was built on the outskirts of Lublin and became both a concentration camp and extermination site. The Lublin ghetto was established in 1941 and liquidated in March–April 1942, when most of its inhabitants were transported to the Bełżec extermination camp. Majdanek continued to receive transports from across Europe until its liberation by Soviet forces in July 1944. Of Lublin's approximately 40,000 prewar Jews, the great majority perished.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Lublin survivors and their descendants maintain memorial organizations. The Yeshivat Chachmei Lublin building was restored in the early 2000s and today houses a hotel, kosher restaurant, and museum dedicated to the yeshiva and Rabbi Meir Shapiro. The Majdanek museum and memorial is one of the best-preserved former Nazi camps in the world. The Daf Yomi cycle — Shapiro's enduring contribution — completed its fourteenth cycle in 2020 with worldwide Siyum HaShas celebrations gathering tens of thousands. Lublin's old cemeteries have been partially restored and are visited by descendants and scholars.</p>
       </section>

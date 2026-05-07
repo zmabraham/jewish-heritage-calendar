@@ -192,19 +192,29 @@
     color: #6b5d4f;
   }
 
-  /* Wikipedia community image */
+  /* Wikipedia community images block — displayed at top of article */
+  .community-images {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e8d5a3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
   .community-image {
-    float: right;
-    margin: 0 0 1.5rem 2rem;
-    max-width: 320px;
+    flex: 1 1 280px;
+    max-width: 420px;
     border: 1px solid #e8d5a3;
     border-radius: 6px;
     overflow: hidden;
+    margin: 0;
   }
 
   .community-image img {
     width: 100%;
-    height: auto;
+    height: 240px;
+    object-fit: cover;
     display: block;
   }
 
@@ -221,10 +231,14 @@
   }
 
   @media (max-width: 600px) {
+    .community-images {
+      flex-direction: column;
+    }
     .community-image {
-      float: none;
-      margin: 0 0 1.5rem 0;
       max-width: 100%;
+    }
+    .community-image img {
+      height: 200px;
     }
   }
 
@@ -468,22 +482,25 @@
   <!-- Main Content -->
   <div class="page-content">
     <article>
+      <div class="community-images">
+    <figure class="community-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Zaragoza_Basilica_del_Pilar.jpg/640px-Zaragoza_Basilica_del_Pilar.jpg" alt="Zaragoza (Saragossa) Basilica" loading="eager">
+      <figcaption>Zaragoza (Saragossa) Basilica — via <a href="https://en.wikipedia.org/wiki/Zaragoza" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
+    </figure>
+</div>
+
       <section id="overview">
         <h2>Overview</h2>
         <p>Zaragoza, the capital of the Kingdom of Aragon and a major city on the Ebro River, was home to one of the most important Jewish communities of medieval Spain. Strategically located at the crossroads of Aragonese, Castilian, and Navarrese territories, the city's Jewish community flourished for centuries under the relatively tolerant policies of the Aragonese crown, producing scholars, physicians, philosophers, and poets of lasting significance. The community's legal protections under Aragonese law made Zaragoza a relative haven compared to communities under more volatile Castilian rule — though the events of 1391 and 1492 ultimately spared no one.</p>
-                <figure class="community-image">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Zaragoza_-_Bas%C3%ADlica_del_Pilar_y_r%C3%ADo_Ebro.jpg/500px-Zaragoza_-_Bas%C3%ADlica_del_Pilar_y_r%C3%ADo_Ebro.jpg" alt="Zaragoza (Saragossa) Basilica" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <figcaption>Zaragoza (Saragossa) Basilica — via <a href="https://en.wikipedia.org/wiki/Zaragoza" target="_blank" rel="noopener">Wikipedia</a> / Wikimedia Commons</figcaption>
-        </figure>
       </section>
 
-      <section id="historical-origins">
+            <section id="historical-origins">
         <h2>Historical Origins</h2>
         <p>Archaeological and documentary evidence places Jews in Caesaraugusta (Roman Zaragoza) from early in the Common Era. The city was a major Roman administrative center, and Jewish traders and settlers followed Roman commerce. Through the Visigothic period, Zaragoza's Jews suffered the same restrictions and forced conversion attempts as their coreligionists elsewhere in Hispania.</p>
 <p>The Arab conquest of 714 brought relief. Zaragoza (Saraqusta) became a major taifa city, and its Jewish community benefited from the general Andalusian pattern of Islamic tolerance toward dhimmi populations. The Reconquista brought Zaragoza under Aragonese rule in 1118, when Alfonso I captured the city. The Jewish community's continuity through this transition was largely uninterrupted, as the Aragonese kings valued their Jewish subjects' economic and administrative skills.</p>
       </section>
 
-      <section id="golden-age">
+            <section id="golden-age">
         <h2>Golden Age</h2>
         <p>Zaragoza's golden age as a Jewish center spans roughly the twelfth through fifteenth centuries. The Aragonese crown maintained a strong tradition of protecting its Jewish subjects, including the requirement that accusations against Jews be supported by multiple witnesses and the maintenance of royal judges (the batlle general) as a check on local persecution. This framework, while imperfect, gave Zaragoza's Jewish community a degree of stability unusual for medieval Iberia.</p>
 <p>The community produced notable figures in philosophy, science, and communal administration. Bahya ibn Paquda, the great eleventh-century moralist who composed Duties of the Heart (Hovot haLevavot), is associated with Zaragoza, where he served as a dayyan (rabbinical judge). His work, which synthesized Sufi spiritual psychology with Jewish theology, became one of the most widely read books of Jewish piety.</p>
@@ -493,35 +510,29 @@
 <p>No medieval synagogue survives intact in Zaragoza today, though archaeological investigations have located their foundations.</p>
       </section>
 
-      <section id="notable-figures">
+            <section id="notable-figures">
         <h2>Notable Figures</h2>
         <p>Bahya ibn Paquda (late 11th–early 12th century) served as a dayyan in Zaragoza and composed there his masterwork Hovot haLevavot (Duties of the Heart), the first systematic Jewish work on ethics and the inner life. Drawing on Neoplatonism, Sufi spirituality, and Talmudic tradition, Bahya argued for an inward religion of the heart to complement external observance. The book became a classic of Jewish devotional literature, translated into Hebrew by Judah ibn Tibbon and read continuously to the present day.</p>
 <p>Abraham bar Hiyya (c. 1065–1145), the mathematician and astronomer who worked in Barcelona and the Aragonese orbit, was connected to the Zaragoza scholarly network. His works on mathematics and astronomy, written in Hebrew rather than Arabic, helped transmit scientific knowledge to the Latin West.</p>
 <p>Solomon ibn Labi, a fifteenth-century Hebrew poet born in Zaragoza, composed the famous lament "Lecha Dodi" — wait, that attribution belongs to Shlomo Alkabetz of the later Ottoman period. Zaragoza's poets contributed to the liturgical and secular Hebrew literary tradition, though no single figure of HaNagid's stature emerged from the city.</p>
-        <div class="figures-grid" id="figures-grid">
-          
-        </div>
       </section>
 
-      <section id="institutions">
-        <h2>Institutions &amp; Sacred Spaces</h2>
-        
-      </section>
+      
 
-      <section id="cultural-life">
+            <section id="cultural-life">
         <h2>Cultural Life</h2>
         <p>Zaragoza's Jewish culture blended Andalusian sophistication with the increasingly dominant influence of Castilian and Aragonese vernacular culture. As the community aged under Christian rule, Hebrew literacy declined among the general population even as a scholarly elite maintained Talmudic and philosophical learning at a high level. The community used Aragonese as its daily vernacular alongside Hebrew for religious purposes.</p>
 <p>Philosophy was a contested ground: the community participated vigorously in the debates over the permissibility of Maimonidean rationalism that periodically erupted across Sephardic Jewry. Zaragoza's scholars generally supported a moderate rationalism that balanced philosophical inquiry with traditional observance.</p>
       </section>
 
-      <section id="decline">
+            <section id="decline">
         <h2>Decline &amp; Transformation</h2>
         <p>The 1391 pogroms struck Zaragoza, though with somewhat less devastating effect than in cities like Seville and Barcelona, partly due to stronger municipal and royal protection. Nonetheless, forced conversions occurred, and the converso population in the city grew substantially. The tension between Old Christians, New Christians, and the remaining Jewish community generated social instability throughout the fifteenth century.</p>
 <p>The Spanish Inquisition arrived in Zaragoza in 1484, targeting conversos suspected of Judaizing. The inquisitor Pedro Arbués was assassinated in the city's cathedral in 1485 by a group of conversos desperate to stop the persecution — an act that provoked massive popular fury and led to severe reprisals.</p>
 <p>The Expulsion of 1492 ended Zaragoza's Jewish community. Many families chose exile over conversion; others converted and remained, becoming the ancestors of Aragonese converso families who would be pursued by the Inquisition for generations.</p>
       </section>
 
-      <section id="legacy">
+            <section id="legacy">
         <h2>Legacy &amp; Diaspora</h2>
         <p>Zaragoza's expelled Jewish families scattered across the Sephardic world, with significant numbers reaching the Ottoman Empire and North Africa. Bahya ibn Paquda's Duties of the Heart endures as one of the most influential Jewish spiritual texts ever written, a remarkable legacy from a community that no longer exists.</p>
 <p>The city has undertaken archaeological and heritage work to document its Jewish past. The location of the medieval Judería is well established, and some foundations of communal structures have been excavated. Modern Zaragoza acknowledges its Jewish heritage as part of Spain's broader engagement with its Sephardic history.</p>
